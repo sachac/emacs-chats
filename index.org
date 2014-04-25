@@ -1,0 +1,28 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Conversations about an awesome text editor
+#+DATE: <2014-04-25 Fri>
+
+* Introduction
+
+The Emacs community has a lot of amazing people, although we rarely get to meet face to face. It’s great to get a sense of what people are like, so here are some casual chats with other Emacs geeks. =) Want to talk about Emacs? [[http://sachachua.com/contact][I’d love to hear from you!]]
+
+Want to subscribe to the podcast? Feed: http://sachachua.com/blog/tag/emacs-chat/podcast
+
+#+BEGIN_HTML
+<iframe src="http://www.youtube-nocookie.com/embed/videoseries?list=PL4th0AZixyRF8o3fdx68HGUrYKF2Pfvrp" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
+
+* Emacs chats
+
+Getting to know people who use Emacs
+
+-  [[file:chat-janis-mancevics.org][Emacs Chat: Jānis Mancēvičs]]
+-  [[file:chat-marble.org][Emacs Chat: Tom Marble]]
+-  [[file:chat-zannos.org][Emacs Chat: Iannis Zannos -- Emacs and SuperCollider]]
+-  [[file:chat-sveen.org][Emacs Chat: Magnar Sveen (Emacs Rocks)]]
+-  [[file:chat-sacha.org][Emacs Chat: Sacha Chua (with Bastien Guerry)]]
+-  [[file:chat-bastien.org][Emacs Chat: Bastien Guerry]]
+-  [[file:chat-carsten.org][Emacs Chat: Carsten Dominik]]
+-  [[file:chat-nilsson.org][Emacs chat: Thomas Kjeldahl Nilsson]]
+-  [[file:chat-avdi.org][Emacs Chat with Avdi Grimm (Org-mode, Ruby, etc.)]]
+-  [[file:chat-john-wiegley.org][Transcript: Emacs chat with John Wiegley]]
