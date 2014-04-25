@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Emacs Chat: Bastien Guerry &amp; Sacha Chua</title>
+<!-- 2014-04-25 Fri 13:53 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css"
+href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<a name="top" id="top"></a>
+</div>
+<div id="content">
+<h1 class="title">Emacs Chat: Bastien Guerry &amp; Sacha Chua</h1>
+<p>
+<a href="http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/">Source</a>
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Emacs Chat: Bastien Guerry &amp; Sach Chua</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+In this chat, Bastien tells stories about getting started in Emacs,
+reading his mail/news/blogs in Gnus, and hacking his life with Org. =)
+Enjoy!
+</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fnk0TJC7iJI" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Want just the audio? You can get MP3s or OGG from <a href="https://archive.org/details/EmacsChatBastienGuerryAndSachaChua">archive.org</a>.
+</p>
+
+<div class="powerpress_player" id="powerpress_player_8453">
+<audio class="powerpress-mejs-audio" controls="controls" src="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3" preload="none">
+<a href="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
+</div>
+
+<p>
+Podcast: <a href="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3">Play in new window</a> | <a href="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3">Download</a>
+</p>
+</div>
+
+<div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Transcript</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+<b>Sacha:</b> This is Sacha Chua talking with Bastien Guerry about Emacs.
+</p>
+
+<p>
+Thank you so much for maintaining Org. I'm looking forward to hearing the stories about how you got into Emacs, what are the cool things you are doing with it, and where you want to go with it.
+</p>
+
+<p>
+In this podcast, I've been wanting to show people the people behind Emacs&#x2013;the people who use it&#x2013;and give people more sense of what the community is like.
+</p>
+
+<p>
+So, what is your story? How did you get wrapped up into using Emacs in the first place?
+</p>
+
+<p>
+<b>Bastien:</b> First of all, I'm not maintaining Org Mode anymore.
+</p>
+
+<p>
+<b>Sacha:</b> Oh, this is what I get for not reading the release notes.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. Carsten there is in charge now.
+</p>
+
+<p>
+<b>Sacha:</b> Again? Okay, so he's back.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. I'm really grateful that he accepted to come back. I think it must be quite difficult to make this decision, to come back after spending the seven years that he spent on this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Bastien:</b> I've just spent two years and a half. That was quite an adventure. Now he's back in charge, and this is great.
+</p>
+
+<p>
+I wanted to go to the 8.0 version because that was long-awaited. The longer it takes, the more difficult it is to make a nice version. You know this.
+</p>
+
+<p>
+I wanted to thank you for this podcast and videocast because it's great. You discover people. For example by looking at Carsten's video, I discovered Calc code. So I went there and I started studying Calc code, understanding why Carsten was so amazed by the code and the machinery.
+</p>
+
+<p>
+My story with Emacs, I started 14 years ago. That was just before 2000. I was studying philosophy. I was bored and I wanted to try a new system that was just starting with GNU Linux at the time. There were this important book in France called, [inaudible] which means “Free Children of Free Culture”, something like that. This book was all about text from Richard Stallman, and so, and so. I was reading into this and I happen to be also – I had this feeling I wanted to try. So I installed Redhat 5.something at the time.
+</p>
+
+<p>
+<b>Sacha:</b> I remember that.
+</p>
+
+<p>
+<b>Bastien:</b> You remember that? When there were all these problems when you needed to connect the modem because your IBM/whatever/Redhat distribution wouldn't recognize the modem&#x2026; you had to recompile the kernel..
+</p>
+
+<p>
+I was taking the train one day reading this book about “Free Children Free Future”. A guy next to me told me, “What are you reading? What is this book? Are you interested in Linux?” I said, “Well, I would be interested but I don't have this module for the modem. I'm stuck. I screwed up the installation of my Windows machine. Now I'm stuck, I don't have the Internet, I have nothing.” He told me, “What is your machine?” I said, “This machine&#x2026;” He said, “Do this, and this, and this, and you can connect to the Internet.”
+</p>
+
+<p>
+So I went back home and it worked. That was magic and the first software for some reason – I don't know why – this software I tried was Emacs and that was the dark green background called the 19.7 version or something. I was amazed&#x2026;
+</p>
+
+<p>
+<b>Sacha:</b> Wow. That was 14 years ago.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. Sounds like yesterday but now even I have some gray hair.
+</p>
+
+<p>
+That was really fun. I love reading documentation. I think that's why I got stuck with Emacs because you have everything in the same place – documentation and the ability to try stuff, and to write down text, the code, and that's it. That was all about documentation [inaudible].
+</p>
+
+<p>
+I wasn't aware about manpages for the first year, I guess. I was just reading the Info pages. Everything about info, I was quite aware, but manpage, I just discovered later on. That happens when you learn by yourself.
+</p>
+
+<p>
+<b>Sacha:</b> What's in the manpage for Emacs and things like that isn't in the Info page? Because most of it is in Info.
+</p>
+
+<p>
+<b>Bastien:</b> Well, the info is both for accessing info documentation and man page is for some of them.
+</p>
+
+<p>
+<b>Sacha:</b> Oh, you didn’t know about the man command.
+</p>
+
+<p>
+<b>Bastien:</b> Yes, I didn't know. Then someone told me in the conference because there was this stupid joke about Man-WoMan and there is no manual entry for Org. Then I tried the M-x woman command. I was interested in what was in this WoMan command that's part of the – the silly way you discover stuff when you're not at a big university doing scientific discipline. All my friends were philosophers at the time, so I was quite alone, except this guy in the train.
+</p>
+
+<p>
+<b>Sacha:</b> That's amazing. It is really funny how much of Emacs you can learn about from jokes. Like accessing help without man and then there was Artist mode, Tetris, and all these things that I've also come across just because people were joking about them.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. One of my first creations in Emacs was also kind of a joke. It was just to write down notes, then export to HTML and LaTeX. Because I was so narcissistic, it was called Bastien HTML LaTeX. This acronym is also BHL which is the acronym for some philosopher in France. I thought it would be a nice joke to have but nobody understood it at the time, I guess.
+</p>
+
+<p>
+<b>Sacha:</b> I guess most Emacs users are not well-versed in French philosophy.
+</p>
+
+<p>
+<b>Bastien:</b> Hopefully not.
+</p>
+
+<p>
+<b>Sacha:</b> Since then, have you encountered a lot of other Emacs users? Since many people are getting into Emacs even outside computers, development, and system administration, for Org and things like that? Have you started running into lots of Org users and Emacs users?
+</p>
+
+<p>
+<b>Bastien:</b> I first met the first real person Org user in the meeting in France called the “Life Hacker” meeting.
+</p>
+
+<p>
+<b>Sacha:</b> Oh, yes?
+</p>
+
+<p>
+<b>Bastien:</b> It was like two years ago and people were interested in “life hacking.” As you can imagine, we spent half of the meeting trying to define “life hacking.” There was no good definition. I don't know.
+</p>
+
+<p>
+Then I know a few people there, like two or three, and there was a bunch of 20 people. So we were presenting ourselves and when I said, “I'm contributing to Org mode”, I could see the sparkle in the eyes. “Yes? Is that you? Hey!” That was great because that's the moment when I realize that this tiny little software I was contributing to, this small community at the time, there were real people out there and who were really fanatic about this, even more than me.
+</p>
+
+<p>
+I'm not a programmer. I'm just trying to learn how to program stuff with the Emacs Lisp and that's nearly the only language I know. I'm just a philosopher and joining, learning that stuff. I could see all these strong heavy hackers really deep into Org and really passionate about it. That was kind of a shock. It was cool because afterwards, I felt more important and I could answer requests by these people and that was great.
+</p>
+
+<p>
+<b>Sacha:</b> Wow. Basically, you spent 12 years without ever seeing another Emacs user face-to-face?
+</p>
+
+<p>
+<b>Bastien:</b> Yes. That explains why I'm so happy to discuss with you. I was following your blogs since very long, and same for John [Wiegley], and all these people.
+</p>
+
+<p>
+Yes, after this meeting about life hacking, I think that was six months after that, we had the first Org Camp where we were exchanging tweaks about Org. That was also good because we were 15 people sitting in the same room for three or four hours, just demonstrating the way we were using Org. That was great.
+</p>
+
+<p>
+I've met all kinds of great people with Org. I met Carsten for example like two years ago at FOSDEM. We had fun, and we met with several other users. Now it's great. Like, 10 days ago, I received a chocolate by [inaudible]. I received some chocolate because he was coming to France and he tried to give the chocolate, but I suppose for some reasons I couldn't, at the time. It's great to go to some bar and to get some chocolate because you try to do something right for [inaudable]
+</p>
+
+<p>
+<b>Sacha:</b> Yes. When I went to London for the Emacs conference&#x2013;at which you weren't there!&#x2013; it was great to meet all these Emacs people in person and connect with them. The community is fantastic.
+</p>
+
+<p>
+<b>Bastien:</b> I have this feeling that most Emacs users, even if they are computer scientists, or researchers, or programmers, I have this feeling they are quite alone in their environment.
+</p>
+
+<p>
+I know I've been alone for so many years. But apparently it's not an exception, just this usual mistreatment that Emacs users suffer for using the best editor out there.
+</p>
+
+<p>
+<b>Sacha:</b> People thinking, “Oh, you must be crazy. Why are you using that? It's so old, it's so weird.”
+</p>
+
+<p>
+<b>Bastien:</b> Yes.
+</p>
+
+<p>
+<b>Sacha:</b> I was curious because you say you're not a programmer. You've definitely got into Emacs Lisp to the extent that you spent some time maintaining Org. A lot of people find getting into customizing and coding for Emacs very intimidating. How did you get started?
+</p>
+
+<p>
+<b>Bastien:</b> First of all, I was interested in programming since very young and when I was a child, 10 years old or nine, we had a computer at home and my elder brothers used to program. So I started programming in Basic during those time. It somehow stayed there. Even when I was studying something else, I was programming the HP calculator. I thought it was beautiful.
+</p>
+
+<p>
+I think maybe you know that Carsten wrote a big book with someone else about HP calculation. So when I discovered this, I said, “This is where Carsten took all these great sense of usability.”
+</p>
+
+<p>
+I was into programming when I was a child. I wanted to program a Go computer. You know the game of Go?
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Bastien:</b> I didn't know it was such a hard task. So I started then. It was a way to explore many patterns and so on. It was very basic, of course. It's not as if I'm not a programmer at all. I used some languages. But I never learned anything about C, or about Java, or the core languages that people know when they study programming.
+</p>
+
+<p>
+I started by customizing, as you say. I think the second step was to – I don't know. I really wanted to have this BHL mode because my girlfriend at the time wanted to write in LaTeX but she didn't want to learn LaTeX. I was not satisfied with LyX. I thought LyX was somehow cool but that was the very early version of LyX. It was maybe 1.2 or 3. Maybe it's better now.
+</p>
+
+<p>
+So I thought it should be very straightforward to export into LaTeX, to have a template of pure free form text to export into LaTeX, if you have some conventions on headlines and so on. So I started to have this. I thought the manual, the Emacs Lisp introduction, was good enough to write a mode. That's basically it. I keep discovering new stuff that I cannot imagine and that maybe educated or maybe people have studied with computer science know better than me.
+</p>
+
+<p>
+For example I'll go with algorithm complexity. This is something I never studied. I study it when someone hit my fingers and say, “This is a stupid algorithm. It's log square. Complexity is [inaudible]. Stop it.” So I say, “What does that mean?” I need to study. I go and I try to study.
+</p>
+
+<p>
+That's basically how I get into Org itself. It's just, “Okay, this is a small challenge. More precisely, this is a challenge I just cannot know if it's hard or easy. Let's go and let's pray that it's easy.” Half of the time it's just hard, and I continue because otherwise, I would feel stupid.
+</p>
+
+<p>
+<b>Sacha:</b> You basically got through the challenge with a lot of determination and stubbornness?
+</p>
+
+<p>
+<b>Bastien:</b> Yes, exactly. I think, my experience as a maintainer&#x2026; Usually there is saying that one part is less intelligent than the whole thing. For me, it's worse than that. It's just that one part, me, is less intelligent than each other part.
+</p>
+
+<p>
+In the community, I'm sure I'm less an expert on LaTeX than 90% of the community. I'm less an expert on HTML 5 than 60% of the community. I'm less an expert on algorithm. But first of all, I try not to claim I'm an expert, because obviously, I'm not. I try to stay stubborn in the right way – because you can be stubborn in the wrong way. And I keep thinking of the users. I keep thinking, “Okay, who is the philosopher next to me who wants to discover Org mode and who doesn't care about this and this, that cares about the software to do the right thing first?”
+</p>
+
+<p>
+<b>Sacha:</b> Awesome.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. For example, Git. I just learned Git for Emacs in Org mode. I would have no other incentives to learn DVCS other than Org mode and that's that. I thought, “Okay, many people are learning this. I should learn it. Maybe it's hard, maybe it's easy. I don't know. Let's see.” That's it.
+</p>
+
+<p>
+<b>Sacha:</b> That's great. What else have you been learning about in terms of Emacs and all of that, and how do you learn it?
+</p>
+
+<p>
+<b>Bastien:</b> You mean within Emacs or other modules?
+</p>
+
+<p>
+<b>Sacha:</b> Yes, for example.
+</p>
+
+<p>
+<b>Bastien:</b> Magit is obviously a module that I've been learning. It's really handy, just a few commands. I've been learning lots about emails.
+</p>
+
+<p>
+When you're not a programmer, email is a nightmare. Like the difference between the MUA, MTA, the way it works, the delivery of emails, what are the headers, is your client adding new headers to your email, or is this the MTA?
+</p>
+
+<p>
+I was interested in this. I think it's fascinating, the whole email business, because the purpose is really simple. It's just writing something and sending it over the Internet, and the world machinery is complex with all these nice RFCs. So I spent some time reading RFCs about emails, about conventions. I still have a hard time convincing people that mailing list should be positioned under the sender for the reply-to header. Stuff like that.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, because then you can choose.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. So this is one of the useless thing I'm learning about because obviously I will not write new clients and Bash scripting… and of course [inaudible] and something else. Yes. I cannot think right now. Processes just hitting&#x2026; Now that there are processes in Emacs. Still trying to decipher all these. I'm trying to understand the one Unix environment or Unix-like environment. My entry point is Emacs usually.
+</p>
+
+<p>
+I discovered what it means to be multi-threaded just because of the discussions on Emacs and because people were angry that Emacs is single-threaded. But the whole notion was completely obscure to me before the lively discussion that brings people to fight about something. That's what interests me. Maybe I need some emotion or some fights to get involved in something.
+</p>
+
+<p>
+Also this passion for reading documentation and books.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. It sounds like you read a lot of mailing list messages and newsgroup discussions to get a sense of what else to learn. Do you have any favorite mailing lists that you look at?
+</p>
+
+<p>
+<b>Bastien:</b> Now I like reading the Clojure mailing list. First of all, there is a Phil Hagelberg [inaudible] and he’s maintaining lining [inaudible]. I have this feeling there is a rich diversity of people there. Phil is a link to Emacs because he's been contributing to Emacs a lot. I feel home, somehow. The diversity of contribution to Clojure is quite fascinating. I also feel home because people are really constructive. There are many new software released. There is this nice balance between what I can grasp, grok, just by reading the emails, and what is completely new to me.
+</p>
+
+<p>
+So I really feel really motivated to learn what is new just by reading one mail. I know that in one email, there will be many implicit references to something that I don't know, for example, atomic database, lock threads, and how the new system work for currency. I don't master currency at all but I just try to feel the concepts from now. I enjoy reading this list quite a lot. I'm not really into IRC. Ihe last year
+</p>
+
+<p>
+I was just reading the Org Mode mailing list, which was quite high for kinds of emails. I think the average was 40 and there was a spike. There was one, maybe five days in the last year when we had 120 emails per day for five days. That was it.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. This is where I'd just read it as a newsgroup and use Gmane or something like that so I don't have to get everything in my mailbox.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. But for me now, I use Gnus, Gmane and Gwene also for everything. So everything is an email, even blog entries.
+</p>
+
+<p>
+<b>Sacha:</b> Cool.
+</p>
+
+<p>
+<b>Bastien:</b> There is a conference right now on the Internet. I think it's quite popular, called “anti-bullshit stuff.” I'm going to send you the link.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, do send it.
+</p>
+
+<p>
+<b>Bastien:</b> Well, the point is really simple. It's just that the web is now full of stuff that we don't need. We need to try hard, to stop, to focus on some useful stuff, and to explain why we are using some stuff.
+</p>
+
+<p>
+My anti-bullshit stuff is Gnus because when I read blog entries from Emacs, I don't care about the visual stuff. I just see the picture that people have been describing. I'm not distracted by anything.
+</p>
+
+<p>
+<b>Sacha:</b> Then you can use the Gnus scoring to say, “Yes, I really don't want to read anything like this again.” Or, “I want to read more of this.”
+</p>
+
+<p>
+<b>Bastien:</b> Yes, exactly. Scoring against subjects is really handful for blog entries, for example, because first you have as many groups as new blogs or new feeds. I don't use virtual groups that much. But I do use scoring, and you can browse quickly through the blog entries. I found out that many people tried to fix problems that I never had just because I was using Emacs.
+</p>
+
+<p>
+<b>Sacha:</b> I've been hesitant about using NNRSS because I wasn't sure what the performance would be like for reading lots and lots of blogs, especially since Emacs is single-threaded. So how do you find it? How many blogs do you read with this?
+</p>
+
+<p>
+<b>Bastien:</b> Actually I don't use NNRSS. I use gwene.org. Do you know it?
+</p>
+
+<p>
+<b>Sacha:</b> Yes. Ah, so you use that for blogs.
+</p>
+
+<p>
+<b>Bastien:</b> Yes and then I subscribe to the groups.
+</p>
+
+<p>
+<b>Sacha:</b> That's much faster.
+</p>
+
+<p>
+<b>Bastien:</b> Really, I have two modes. That's much faster I guess because you're not shaking the RSS each time. So I have two modes for emails. One mode where this is just fetchmail. I've not installed OfflineIMAP for now and dovecot, but I want to get one day to this in the next month. It's just fetching emails and my first mode is just checking emails and going Inbox Zero like Merlin Mann talks. I do this everyday.
+</p>
+
+<p>
+The second one is when I activate Gmane and Gwene, and then I go check blogs, entries and mailing lists. It's a very basic email setup but it works.
+</p>
+
+<p>
+<b>Sacha:</b> Right. You have a primary select and a secondary select. Wow.
+</p>
+
+<p>
+<b>Bastien:</b> That's it. I'm not very disciplined about not checking my emails too often. I know it's going to be personal emails. I am disciplined about not checking blog entries too often. Once a day is enough. Otherwise we get lost quite quickly.
+</p>
+
+<p>
+<b>Sacha:</b> Awesome. So what other ways have you customized your environment? What other things that you do that fit the way that you work?
+</p>
+
+<p>
+<b>Bastien:</b> Yes.
+</p>
+
+<p>
+<b>Sacha:</b> You can share your screen if you want, although you might have other information there that can't be seen.
+</p>
+
+<p>
+<b>Bastien:</b> I don't think I do have information about passwords and that stuff.
+</p>
+
+<p>
+<b>Sacha:</b> There are some people who try to keep their Emacs configuration very minimal but a lot of people also end up really customizing it to fit them which is nice and it's always interesting to hear about how people customize. Because you're like, “Oh, that's an excellent idea, I want to steal that for my config.”
+</p>
+
+<p>
+<b>Bastien:</b> I think I stand in the middle. I want to keep my customization minimal. The reason for this, it was not a deliberate decision. It was something I started because I was fed up launching a new emacs -q when I have to test everything. I wanted to have my minimal set up and check to quickly check out bugs and so on.
+</p>
+
+<p>
+Then I happen to realize that it also suffices when you have to work on some machine when you don't have your configuration. The configuration nightmare, I try to solve it by having nearly zero configuration. The first step was to put everything in one file. That's something I did when I started using Org mode. I wanted everything in one file.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. It's much easier.
+</p>
+
+<p>
+<b>Bastien:</b> So that was cool. That was before I discovered about grep-find in Emacs. Now I'm a bit more agile and I allow myself to use more than one file. But the time I was only using the search facility. I try to stick to a very simple configuration. For the biggest part, I'm not religious about this. Sometimes I just add some stuff just to test a newer package, and I forget to clean up my configuration file afterwards. It's no big deal. I'm very liberal about this.
+</p>
+
+<p>
+<b>Sacha:</b> I'm starting to experiment using virtual machines to isolate development so I can say, “All right, my regular Emacs, I'm going to still be on Emacs 24 with a package version of Org but I'll have a virtual machine that's setup with CVS Emacs or CVS Org.”
+</p>
+
+<p>
+<b>Bastien:</b> All right. Good.
+</p>
+
+<p>
+<b>Sacha:</b> Then it’s completely separate. Might be something to try.
+</p>
+
+<p>
+<b>Bastien:</b> I should do that. That's why I should see more computer scientists. They have ideas like that, but I don't know how to reflect.
+</p>
+
+<p>
+<b>Sacha:</b> Do you publish your configuration file anywhere? Do you share it?
+</p>
+
+<p>
+<b>Bastien:</b> No.
+</p>
+
+<p>
+<b>Sacha:</b> Can you be persuaded to share it?
+</p>
+
+<p>
+<b>Bastien:</b> I will share it. I will share this simple configuration file. It's less than 1,000 lines, so maybe it's not that simple, but yes I will share it.
+</p>
+
+<p>
+<b>Sacha:</b> I'm looking forward to that.
+</p>
+
+<p>
+<b>Bastien:</b> But half of my configuration file is used by modules, configuration that I don't really use that much, like ERC. I don't know which lines are for ERC, but I'm using it once a month for something.
+</p>
+
+<p>
+Actually I have two configuration files. I have one for Emacs and one for Gnus because Gnus otherwise is the biggest one. I find it easier to just configure Gnus. I thought this could be the one that I need to transfer on some other machines if I want to set up emails quickly. Otherwise I don't need it.
+</p>
+
+<p>
+But yes, I will, I promise.
+</p>
+
+<p>
+<b>Sacha:</b> In this 1,000-line Emacs file and maybe your .gnus files that you will post at some point, what are some of the things that you're particularly happy about having customized?
+</p>
+
+<p>
+<b>Bastien:</b> Maybe I can share my screen now. I could try this. Is this it?
+</p>
+
+<p>
+<b>Sacha:</b> Yes, I can see your screen.
+</p>
+
+<p>
+<b>Bastien:</b> So you can see my Emacs screen right now?
+</p>
+
+<p>
+<b>Sacha:</b> I can see your Emacs screen. If you zoom in a little bit then it will be slightly easier for people to read.
+</p>
+
+<p>
+<b>Bastien:</b> Like this?
+</p>
+
+<p>
+<b>Sacha:</b> Yes, perfect.
+</p>
+
+<p>
+<b>Bastien:</b> Okay. This is it.
+</p>
+
+<p>
+This is the part where I use this functionality from Org 8.0 about orgstruct-heading-prefix-regexp which with the orgstruct-mode makes it easy to use headlines in comments and then you can fold and unfold very easily. Basically this is my configuration file. Most I disable or just use. The fonts, just Monospace 11. I had some stuff I don't use anymore but toggling some fonts.
+</p>
+
+<p>
+<b>Sacha:</b> You mentioned the color scheme that you're using as well, right? What color scheme do you use?
+</p>
+
+<p>
+<b>Bastien:</b> Yes. This one is Cyberpunk. I think this is by Sam Aaron. You met him at the Emacs conference.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, he had a performance, right.
+</p>
+
+<p>
+<b>Bastien:</b> I like this very colorful stuff. The other ones I was using were as Zen-and-art, Gentooish or something. But it's usually white on black. I don't know if you're going to see this. Do you see the change? No? Okay, I use Xcalib. Do you know this small utility?
+</p>
+
+<p>
+<b>Sacha:</b> No, I haven't looked into that.
+</p>
+
+<p>
+<b>Bastien:</b> This is just a tool to invert the colors quickly.
+</p>
+
+<p>
+When I want to see stuff black on white, I just press a key, and I have all the colors inverted. It's really useful. For example, if I'm reading some emails on Org mode right now, and I want to invert the colors because I find it easier to read, then I just have this keystroke, and it's easier because I'm not on white and black always. I find it sometimes easier for blog entries and for the web to read differently. That's it.
+</p>
+
+<p>
+<b>Sacha:</b> Wonderful. That will come really handy in presenting too.
+</p>
+
+<p>
+<b>Bastien:</b> On Gnus, this is my email box. I have this key for showing or hiding some stats about the emails. I find it intrusive and a bit stressful to see that I have too many emails. Anyway, emails, I have zero here. These are the ticked emails and these are the dormants. Do you know dormants?
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Bastien:</b> So I use this a lot. Dormants is my virtual to-do list.
+</p>
+
+<p>
+<b>Sacha:</b> I'm surprised you don't keep your TODO list in Org then.
+</p>
+
+<p>
+<b>Bastien:</b> That's how I manage to keep things quite clean with the Org mode list. I use this key a lot, about dormant emails, and especially because they show up in the thread if you tick. I try to have less&#x2013;as few emails as possible on the list.
+</p>
+
+<p>
+<b>Sacha:</b> That's cool.
+</p>
+
+<p>
+<b>Bastien:</b> That's it. And I don't want to see this information all the time. I want to hide it and to believe that I'm doing the Inbox Zero methodology. That's how I survive and by having those. Also I find it useful to just limit to the one level emails. Basically this is my email box when I start my day. It's just this.
+</p>
+
+<p>
+<b>Sacha:</b> Focused.
+</p>
+
+<p>
+<b>Bastien:</b> I don't have the newsgroup. Yes, and relaxed, because otherwise it's a nightmare.
+</p>
+
+<p>
+<b>Sacha:</b> I cannot imagine another mail client that will let you do this kind of crazy stuff. That's great.
+</p>
+
+<p>
+<b>Bastien:</b> Yes, this is good.
+</p>
+
+<p>
+In Gnus, I have some function to sort by number. I don't use it anymore. I wanted to contribute it to Gnus but maybe it's not that useful. I wanted to sort by the length and by the thread.
+</p>
+
+<p>
+<b>Sacha:</b> Right. Because you're learning some things that people are arguing about.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. While maintaining Org mode, I wanted to reply first to the one email thread because that's easier, and because that's more probably a nice bug, or something like that.
+</p>
+
+<p>
+Because long threads, I knew it would be long to read, long to pass, long to process, and long to decide.
+</p>
+
+<p>
+<b>Sacha:</b> That's some work.
+</p>
+
+<p>
+<b>Bastien:</b> I'm not using it because finally I found out that the chronological order is good enough because you have to show that you're here, you have to show that you're taking care and for this, the size of the thread doesn't matter that much.
+</p>
+
+<p>
+But maybe I can start using it nowadays and I wish we could have comments from blog entries in the form of gwene.org RSS feed. Maybe I should subscribe to some comment feeds but for now I wish I could just subscribe to one feed and have also the comments added as messages, as replies to a blog. But I think that's too much.
+</p>
+
+<p>
+<b>Sacha:</b> That will be a really interesting interface. Wow!
+</p>
+
+<p>
+<b>Bastien:</b> That's it. I don't have any fancy stuff.
+</p>
+
+<p>
+<b>Sacha:</b> That sounded pretty fancy actually. I would love it if you posted your Gnus and your Emacs configuration because those sound like really useful hacks.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. The way I was navigating in Org mode, so this is Org, and I was always using this code folding facility, and that was the way I could survive. The other thing I was doing everyday was also – I go here. Let me clean up stuff&#x2026;
+</p>
+
+<p>
+From here, I was always trying to find a new prefix for some command, doing this, navigating here, going through the defcustom and fixing things like this, so the grep-find is my survival kit. Here I could find there is a patch here&#x2026; and also about managing patches, we were using the patch work stuff, the white&#x2026;
+</p>
+
+<p>
+We're using the patch work. John Wiegley was installing it on the server for us. It was nice but it wouldn't fit into my workflow somehow. One of the reasons was that the messages, the changelog, were not really neat when you use the patch word. You have to reformat it. It's not that useful. Also I didn't like the automatic message that it sends to the one who has made the batch.
+</p>
+
+<p>
+Something I try to do on the Org mode mailing list is to say, “Hi” on every message I sent. I say, “Hi Sacha,” or “Hi Carsten,” and it's not automatic. It's just me taking the time to say hello, because I think it's important to show that you take the time to say, “Hello.” Just to be polite and nice. Half of the fights on the Internet start because you're not sure that the other one is nice or not. But it's so easy to show that you're nice, that it's stupid not to show that you're nice. That's it.
+</p>
+
+<p>
+<b>Sacha:</b> I had some code back when I was using Gnus and BBDB which is Big Brother DataBase. That would either say, “Hi” with whatever name it could find or it would use custom “Hi”s depending on what's in the person's contact record. For example, I would never address my mom as, “Hi [firstname]”. She gets, in her BBDB record, “Hi mom”, and then that's what Gnus uses whenever I reply to her.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. I think I played with this module. I use BBDB a lot. I'm still using the 2 version because it's good enough for me. I tried this module, but then I thought it's stupid. By the time you say, “Hi [name]” - even for the signature, sometimes you see “Best Regards” and it's automatic signature. Sometimes I said, “Cheers”, sometimes I said, “Best regards” but I try to mean it somehow. That's the same for “Hi.”
+</p>
+
+<p>
+<b>Sacha:</b> That's wonderful. That is very nice of you.
+</p>
+
+<p>
+<b>Bastien:</b> Well, I'm not doing just for me. I'm doing just to make sure that the other people on the list understand that it would be nice to say “Hi” and just to take care of the people there, because everyone is using their free time.
+</p>
+
+<p>
+For the patchwork, I thought sometimes the automated messages, they are fine. It's useful to have these notifications. It's just notifications, nobody gets hurt. But the whole system was too rigid for me, so I started having a manual directory where I could put all the patches and then create that task in Org mode in order to review the patch or to apply it.
+</p>
+
+<p>
+<b>Sacha:</b> That's nifty. So it would automatically create the Org entry, and so you would just add that file to your agenda files and work with that from there.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. I don't have this anymore but I used to have – this is basically my Org-capture stuff. Everything looks the same. I try to keep the dates when I capture stuff because I hope I'm going to use this date somehow, but I don't use it that much.
+</p>
+
+<p>
+<b>Sacha:</b> You can analyze it to see how long it takes from the time you thought of something to the time you finished it.
+</p>
+
+<p>
+<b>Bastien:</b> Yes. That was when I used to write Org-registry and the Org-expiry. After 200 days, for example, you would have Org-expiry telling you, “You need to expire this task.”
+</p>
+
+<p>
+<b>Sacha:</b> I see.
+</p>
+
+<p>
+<b>Bastien:</b> When I had a patch, I was storing it in the headline “mailing list” and there was just a tag “patch”, so I was just then looking for patches. Patch have a NEXT priority action. I think it should be NEXT here.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome.
+</p>
+
+<p>
+<b>Bastien:</b> That's it. That's what I was using for managing patches. I thought it was a lot easier than just to review the patch work.
+</p>
+
+<p>
+The patch work was great to make sure that nothing was overlooked – things that maybe, my system, I would review patches, but for some reason I missed something, then I could go to the patch work where I can see, “Okay, this has been in the patch work for so long and somebody says he wants to take care of this and we never processed this bug.”
+</p>
+
+<p>
+It was good for that, but not for my work flow somehow.
+</p>
+
+<p>
+<b>Sacha:</b> I noticed you seem to be using Org to manage your garden too. How does that work?
+</p>
+
+<p>
+<b>Bastien:</b> This is because I used to have this metaphor about managing my tasks as a house. Right. So in the house, you have the “Garden”, you have the “Living room”, you have the “Attic”, and you have the “Basement.” Things that you need to tidy go to the basement. Right? The “Garden” you have to play with. The “Living room” should be stuff you can show off, or current tasks,” and “Attic” is, “Done / I'll never do this / souvenirs.” I have a big attic, actually.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome!
+</p>
+
+<p>
+<b>Bastien:</b> I think the basement is something. My life stays here in the living room and attic, maybe that small.
+</p>
+
+<p>
+<b>Sacha:</b> That's an interesting metaphor.
+</p>
+
+<p>
+<b>Bastien:</b> I thought it was useful. I'm sticking to this. It doesn't have that much meaning because my basement is too big. I need to tidy too many stuff.
+</p>
+
+<p>
+There’s another system I want to try. I call it “WaMuCa”, this is some kind of mantra for “Want / Must / Can”. This is orthogonality. Everything is orthogonal here. The things you want, must and the things you can. Depending on your mood, you first do the thing you want and can, for example. That's when you don't want to work. For example, work, this is must and can, or must and somehow can, depending on the level of what you can.
+</p>
+
+<p>
+Then you could represent this using a cube. You have three dimensions. You can take the cube and you can see for one project what is the trajectory of your wants and you can. So for example here, the WaMuCa, I want this scaled from one to 10 and I must do this eight&#x2026;
+</p>
+
+<p>
+<b>Sacha:</b> That's clever to have them all in one.
+</p>
+
+<p>
+<b>Bastien:</b> &#x2026;I can see.
+</p>
+
+<p>
+<b>Sacha:</b> Right, and you can even come up with your own scoring functions, split apart the number and stuff.
+</p>
+
+<p>
+<b>Bastien:</b> Can be more explicit. I think it would be a nice way to sort out the thing I could do depending on my mood. Or to just track my habits in terms of, “Okay, I discover I always want to do the thing I cannot do and the thing I must not do.”
+</p>
+
+<p>
+<b>Sacha:</b> That's a great idea.
+</p>
+
+<p>
+<b>Bastien:</b> I think I will find something like that.
+</p>
+
+<p>
+<b>Sacha:</b> I think I'll experiment with that.
+</p>
+
+<p>
+<b>Bastien:</b> That's basically the two ideas I have. It's just this house metaphor and this WaMuCA system.
+</p>
+
+<p>
+<b>Sacha:</b> I'm glad I'm asked.
+</p>
+
+<p>
+We're getting to the end of the time we scheduled, although if you're free, I'm still free after this too. Are there any other parting thoughts? Any important things that I haven't asked you about, or anything that you'd really like to share with other people who will be listening to this?
+</p>
+
+<p>
+<b>Bastien:</b> Well, I've not been preparing enough to have more ideas. But no, I think it's great to have this ongoing conversations with everyone on video, and to have this long video when you need to put an Org task to say, “Okay, it's one hour long, so I need to have a task for one playing with new Emacs people.” I have a long list of Emacs wishes. For example I would like to be able to have multiple regions.
+</p>
+
+<p>
+<b>Sacha:</b> Multiple cursors and ielm are starting to go that way.
+</p>
+
+<p>
+<b>Bastien:</b> Yes and the same rectangles that you have for Vim. I'm a Vim user. I use Vim. I completely agree with what you say in the last blog entry about learning all the tools because that's good for social karma, and to show that you're liberal, and that it's not about computers but about people.
+</p>
+
+<p>
+I'm a Vim user and I've been impressed by the rectangle and the visual rectangle. I have been participating in a VimCamp and people were using Org mode there. They're opening an Emacs buffer just to have the tables. So displaying Org tables within Vim buffers and I think it tells a lot about who is the best editor. I don't know.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome.
+</p>
+
+<p>
+<b>Bastien:</b> To end with some provocating&#x2026;
+</p>
+
+<p>
+<b>Sacha:</b> Well, thank you so much. It was absolutely delightful to chat with you.
+</p>
+
+<p>
+<b>Bastien:</b> Thank you.
+</p>
+
+<p>
+<b>Sacha:</b> All right.
+</p>
+
+<p>
+<b>Bastien:</b> Yes, very nice. Thank you again.
+</p>
+
+<p>
+<b>Sacha:</b> All right. Thank you. Bye.
+</p>
+
+<p>
+<b>Bastien:</b> Bye Sacha.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+
+<style type="text/css">
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
+}
+</style>
+
+<div class="back-to-top">
+<a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a>
+</div>
+
+<script type="text/javascript">
+    var offset = 220;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+            jQuery('.back-to-top').fadeIn(duration);
+        } else {
+            jQuery('.back-to-top').fadeOut(duration);
+        }
+    });
+</script>
+</div>
+</body>
+</html>
