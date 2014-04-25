@@ -1,24 +1,23 @@
-#+OPTIONS: ':nil *:t -:t ::t <:nil H:3 \n:nil ^:t arch:headline
-#+OPTIONS: author:t c:nil creator:comment d:(not "LOGBOOK") date:t
-#+OPTIONS: e:t email:nil f:t inline:t num:t p:nil pri:nil prop:nil
-#+OPTIONS: stat:t tags:t tasks:t tex:t timestamp:t toc:t todo:t |:t
+#+SETUPFILE: setup.org
 #+TITLE: Emacs Chat: Conversations about an awesome text editor
 #+DATE: <2014-04-25 Fri>
-#+AUTHOR: Sacha Chua
-#+EMAIL: alexander.poslavsky@gmail.com
-#+DESCRIPTION:
-#+KEYWORDS:
-#+LANGUAGE: en
-#+SELECT_TAGS: export
-#+EXCLUDE_TAGS: noexport
-#+CREATOR: Emacs 24.4.50.4 (Org mode 8.2.5h)
+
+* Introduction
+
+The Emacs community has a lot of amazing people, although we rarely get to meet face to face. It’s great to get a sense of what people are like, so here are some casual chats with other Emacs geeks. =) Want to talk about Emacs? [[http://sachachua.com/contact][I’d love to hear from you!]]
+
+Want to subscribe to the podcast? Feed: http://sachachua.com/blog/tag/emacs-chat/podcast
+
+#+BEGIN_HTML
+<iframe src="http://www.youtube-nocookie.com/embed/videoseries?list=PL4th0AZixyRF8o3fdx68HGUrYKF2Pfvrp" width="640" height="360" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
 
 * Emacs chats
 
 Getting to know people who use Emacs
 
 -  [[file:chat-janis-mancevics.org][Emacs Chat: Jānis Mancēvičs]]
--  Emacs Chat: Tom Marble
+-  [[file:chat-marble.org][Emacs Chat: Tom Marble]]
 -  Emacs Chat: Iannis Zannos -- Emacs and SuperCollider
 -  Emacs Chat: Magnar Sveen (Emacs Rocks)
 -  Emacs Chat: Sacha Chua (with Bastien Guerry)

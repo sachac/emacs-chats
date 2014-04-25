@@ -1,3 +1,7 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Jānis Mancēvičs & Sacha Chua
+#+DATE: <2014-04-25 Fri>
+
 [[http://sachachua.com/blog/2014/04/emacs-chat-janis-mancevics/][Source]]
 
 * Emacs Chat: Jānis Mancēvičs & Sacha Chua
