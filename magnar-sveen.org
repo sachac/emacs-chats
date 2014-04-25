@@ -18,6 +18,7 @@ http://sachachua.com/blog/2013/11/emacs-chat-magnar-sveen-emacs-rocks/
 *Sacha:* Okay, wow!
 
 *Magnar:* That is the truth with some modifications because I use it for five years in the university but at that time I was only using it as a notepad with weird keybindings. In those five years I've programmed Java in Emacs and I never used it as anything else. Just saving, and copy-pasting with weird keybindings.
+
 I had some experience before I started using it for a few years ago.
 I use it mainly for work, I do programming both for work and as a hobby. I spend quite a lot of time in Emacs of course.
 
@@ -215,15 +216,7 @@ Okay, Emacs. This is init.el. I know some people who use Org-mode and Babel to g
 
 *Sacha:* I should try that out.
 
-*Magnar:* And I use technomancy's find-file-in-project.
-
-*Sacha:* Yes.
-
-*Magnar:* Along with i-do work going on. Let's see.
-
-*Sacha:* Yes. I did it.
-
-*Magnar:* I use flx-ido which gives me matching – Let's see multiple-cursors. So I'd use the M key.
+*Magnar:* And I use technomancy's find-file-in-project, along with ido work going on. Let's see... I use flx-ido which gives me matching – Let's see multiple-cursors. So I'd use the M key.
 
 *Sacha:* Okay. I see how it's doing that right.
 
@@ -237,6 +230,7 @@ Okay. So flx and ido, yes.
 *Sacha:* It listed down.
 
 *Magnar:* The thing I like about this is normally they're just stacked after each other that will write and then you can really see much of the names. You have to cut it down to just include the base filename and usually if you do a Rails project, those base filenames are pretty much the same in different folders.
+
 And of course the recent files, this is much easier to find what I'm looking for and I can include an entire path. It also helps with the flx-ido that I can do “Emacs.” Yes, you see, Elpa, melpa, archive contents was matched first because it always tries to include part of this search filename. So if I do just the just the C, then I get the core immediately.
 
 *Sacha:* Webspyder ask, “On your mode line, there are some things in the brackets on the very right side. Are those the project names? Is that the project context or is that [inaudible]?”
@@ -613,6 +607,7 @@ So we'll look forward to more videos from you and when you have that. In the mea
 *Magnar:* Yes, these two are very nice. If you are five or six players. Well, any number of players really except for two.
 
 *Sacha:* Yes. But for people listening, [inaudible] will have him play board games but don't play board games too much with Emacs. It's also fun in [inaudible].
+
 Again, thank you very much and I'll turn the video [inaudible] and I'll post it up in my blog and other places.
 
 *Magnar:* Cool.
