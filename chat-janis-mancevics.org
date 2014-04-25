@@ -1,0 +1,24 @@
+[[http://sachachua.com/blog/2014/04/emacs-chat-janis-mancevics/][Source]]
+
+* Emacs Chat: Jānis Mancēvičs & Sacha Chua
+
+Chatting with [[https://plus.google.com/u/0/114888672958382153886][Jānis Mancēvičs]] about literate programming, Unity game development, and code folding.
+
+#+BEGIN_HTML
+<iframe src="//www.youtube.com/embed/HOy4h0a_0TI?list=UUlT2UAbC6j7TqOWurVhkuHQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
+
+Want just the audio? [[https://archive.org/details/EmacsChatJanisMancevics][Get it from archive.org]]: [[https://ia902503.us.archive.org/11/items/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][MP3]]
+
+Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
+
+#+BEGIN_HTML
+<div class="powerpress_player" id="powerpress_player_8872">
+<audio class="powerpress-mejs-audio" controls="controls" src="http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3" preload="none">
+<a href="http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3']);" title="Play" target="_blank"></a></audio>
+</div>
+#+END_HTML
+
+Podcast: [[http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][Download]]
+
+More posts about: [[http://sachachua.com/blog/category/geek/emacs/][emacs]], [[http://sachachua.com/blog/category/podcast/emacs-chat-podcast/][Emacs Chat]], [[http://sachachua.com/blog/category/podcast/][podcast]] Tags: [[http://sachachua.com/blog/tag/emacs-chat/][emacs-chat]]
