@@ -1,0 +1,626 @@
+#+TITLE: Emacs Chat - Magnar Sveen
+http://www.youtube.com/watch?v=87tjF_mYvpE&feature=c4-overview&list=UUlT2UAbC6j7TqOWurVhkuHQ
+http://sachachua.com/blog/2013/11/emacs-chat-magnar-sveen-emacs-rocks/ 
+
+
+*Sacha:* Hello, Magnar Sveen, and thank you so much for joining us for Emacs chat. As I mentioned, there are people in the #Emacs-chat channel on IRC who will also ask questions and actually, hang on a second. Let me post that here in case they want to join us live in case they wanted to ask their questions in person.
+
+*Magnar:* Yes.
+
+*Sacha:* Again, thanks very much and I'd love to know a little bit more about who you are and what you do both in terms of Emacs and everything else that you're interested in. Aside from totally awesome Emacs Rocks screencast and the Whattheemacs.d blog for configuration snippets, what else do you do in terms of Emacs?
+
+*Magnar:* Well, basically I have been using Emacs for two years now.
+
+*Sacha:* Yes. Two?
+
+*Magnar:* Two years.
+
+*Sacha:* Okay, wow!
+
+*Magnar:* That is the truth with some modifications because I use it for five years in the university but at that time I was only using it as a notepad with weird keybindings. In those five years I've programmed Java in Emacs and I never used it as anything else. Just saving, and copy-pasting with weird keybindings.
+I had some experience before I started using it for a few years ago.
+I use it mainly for work, I do programming both for work and as a hobby. I spend quite a lot of time in Emacs of course.
+
+*Sacha:* Are there a lot of other people at work who use Emacs, or are you basically doing it on your own?
+
+*Magnar:* I have been spreading it some because at the place that I work right now, there are very many Java developers and they use IntelliJ. But IntelliJ pretty much sucks for frontend development, JavaScript and stuff like that. There have been quite a few frontend developers that have switched to Emacs after I goaded them into it.
+
+*Sacha:* What got you interested in starting with Emacs again two years ago?
+
+*Magnar:* Well, like many people I was using TextMate at the time. I really loved TextMate for a while. I quite remember the first Rails video that David Heinemeier Hansson put out where he showed off how you could create a blog with Rails. And the thing that really got me going with that Screencast. It wasn't really Rails, but the text editor he was using which was TextMate.
+
+*Sacha:* Yes.
+
+*Magnar:* And I loved all the things it could do. I guess the snippets really sold me on TextMate.
+
+*Sacha:* Yes.
+
+*Magnar:* I spent four years, maybe, using TextMate and really liking it, but as we all know it was abandonware pretty much and I have been looking for some other editor for quite a while. Maybe six months or so. I was quite unsure if I wanted the modal editing of Vim - or Emacs.
+The thing that really got me going with Emacs was the extensibility. I love tweaking my tools. I used to spend quite a lot of time playing World of Warcraft. I think two years on my life pretty much I went to World of Warcraft on the evenings and I think I spent almost as much time tweaking the UI of the World of Warcraft as I did playing it.
+
+*Sacha:* So Emacs was a perfect fit for you then?
+
+*Magnar:* Yes. But I didn't know it. I could have gone to Vim if it wasn't for a friend of mine who I actually got to work with for six months. We ended up in the same project. He was into Emacs. Well, he sat me down and showed me, and we pair-programmed alot together. His name is Christian Johansen. He has some blog posts about Emacs up and he's done a quite a lot of JavaScript work.
+I think that's the best way of learning Emacs. Sitting down with someone who really knows it and well then you can just ask anytime you're stuck. “How do I save again?” “Well, it's CTRL+X, S, Enter”. And that's it. You don't have to read up or look somewhere else. You can just move on.
+
+*Sacha:* Wow. It's really helpful to have that kind of side-by-side and also when they're watching you do something, you're doing it the way that you know and they're like, “No, no, no. You do it this way!”
+
+*Magnar:* Yes, exactly.
+
+*Sacha:* Keyboard shortcut or some tool. Yes.
+
+*Magnar:* Yes, that was really fun because at first, or maybe the first week, it was just learning how to do basic stuff. But then we got into a cool game which was ... if we did something that wasn't really efficient, we did it in a stupid way, the other one will say, “Hey, you should be doing some macros!” And you have to undo everything that you've done. Undo, undo, undo and do it right. That is a fun game.
+
+*Sacha:* I think our definition of fun is very weird but it's awesome.
+
+*Magnar:* Yes.
+
+*Sacha:* So that's how you got started with it and that's how you end up planning a lot. You've covered so much ground with your Emacs Rock screencast. I just assumed you've been working with it for a long time but it's fantastic.
+Aside from actually leaning over and asking people for help, what other resources or ways of learning did you find really useful?
+
+*Magnar:* Well, the thing that happened was since I was going to spend everyday programming eight hours a day with this Christian, I always loved spending my evenings, learning some new tricks that I could show in the next day. Impress them with, doing some cool stuff.
+
+*Sacha:* Yes.
+
+*Magnar:* So I started just Googling around looking for stuff around Emacs. The Emacs Wiki had a lot of cool stuff but the thing that really triggered me in some way was Tim Visher's videos. Tim Wisher made some videos where he did some Vimgolf episodes and he showed up some cool nice tricks. So I had lots of fun watching those.
+Of course there's quite a lot more Emacs material out there now. Emacs movies...
+
+*Sacha:* Yes, because you've been making it.
+
+*Magnar:* Yes, but not only my stuff. There's quite a lot more Emacs-related videos and stuff like that. Back in those days they were just the PeepCast and Tim Wisher's stuff that I could find.
+
+*Sacha:* I guess it's because a lot of people did search for Emacs after TextMate, right? You got all these people with video and podcasting really taking off as well. It's been the next portion of new material.
+What kind of tools do you use to make your Screencasts? Out of curiosity.
+
+*Magnar:* I use ScreenFlow. It's in OSX pay closed source. It's a little [inaudible] nasty but it's really simple to use.
+
+*Sacha:* It gets the job done.
+
+*Magnar:* Yes.
+
+*Sacha:* Yes. That's great. How long does it take you to make them? It seems such a labor of love and incredibly useful but how long do you invest in making one of those sessions?
+
+*Magnar:* Emacs Rocks?
+
+*Sacha:* Yes.
+
+*Magnar:* Well, they're about three minutes each. So I guess that's been half an hour making one.
+
+*Sacha:* Really?
+
+*Magnar:* Yes. [inaudible] because I can tell you the multiple-cursors video took quite a little bit more time because I had to make multiple-cursors first.
+The main problem of doing those are finding good examples. That could take some work. I usually have a folder, when I'm finding tools, stuff and some [inaudible] examples, I put them in there and when I get enough nice examples, I try and [inaudible] out of it.
+
+*Sacha:* Right. I usually come across all sort of good tips on Planet Emacsen. So it's always interesting to see other people's blog posts.
+
+*Magnar:* Yes.
+
+*Sacha:* Wow. Let me check if there are quick questions. So far so good. People really like ScreenFlow as well. There's a [inaudible] apparently that Webspyder likes.
+So you got into Emacs because of competitiveness and actually one thing to impress other people and learn from them as well. Certainly you've done a great job of learning and sharing about Emacs. What are some of the other things that you're curious about or you'd like to get Emacs to do but you haven't got around it yet?
+
+*Magnar:* Well, I'm not an expert on Org-mode, the Agenda, and Calendar stuff. I'm still using calendar in a UI and of course text is the preferred medium for everything. Even the beginning of podcasts, well, maybe not. But text is great.
+
+*Sacha:* Well, I didn't know. I wouldn't be surprised if somebody had written a podcast client for Emacs. I remember seeing an mp3 player and it's on Word, interfacing some command line tools.
+
+*Magnar:* Yes and the video editor.
+
+*Sacha:* Yes. Actually that's an interesting question to ask. What are the kinds of things that you use Emacs for that people might be surprised by? You said you started off using just the text [inaudible]. But now what else do you do with it?
+
+*Magnar:* I don't use Emacs for the most Word stuff. Maybe a little bit cool things that I do is I write the Emacs.d blog posts in it and even the publishing is done from Emacs. So I can just type it out and publish it out straight from Editor and I think that's pretty neat.
+Of course, before I used to use some Ruby script to do some batch processing or tweaking some text file, I of course use Emacs now. It doesn't make sense to use programming to do the changes to lots of the text anymore.
+
+*Sacha:* For sure. A lot of my batch scripts have become Emacs Lisp functions instead.
+
+*Magnar:* Yes.
+
+*Sacha:* Yes. It's funny how Emacs gradually just takes over the rest of your life.
+
+*Magnar:* Yes. I've got a Norwegian text adventure game that's online.
+
+*Sacha:* Okay.
+
+*Magnar:* Which is of course where I do. I am a nerd, I do very nerdy stuff and I've been writing in major mods editing that game and that's a lot of fun.
+
+*Sacha:* Wow.
+
+*Magnar:* I'm using [inaudible], that Clojure-repel thing to interrupt with the Clojure backend. It's an Emacs major-mode that uses like IntelliSense, multicompletion and stuff like that powered by a Clojure server basically.
+
+*Sacha:* Wow. So that's what you've been kind of into in terms of Emacs. Could you give us a quick idea of who you are outside Emacs? What else are you interested in or what do you do?
+
+*Magnar:* Well, I am a father and I have a daughter that's three-years-old and I am really into board games. There are my board games.
+
+*Sacha:* Oh, that's interesting.
+
+*Magnar:* I have maybe 120 board games in this room. I'm in my man cave of board game.
+
+*Sacha:* That's incredible.
+
+*Magnar:* These are nice. This is Take 6! and Coloretto which are really easy games to get into.
+
+*Sacha:* I've heard of Coloretto.
+This is part of our public service, an issue to this show that yes, Emacs geeks have other interest too.
+
+*Magnar:* Then there's the writing. My text game, it's a game where you read some text and then you choose what you do like alternatives.
+
+*Sacha:* Yes. I've played things like Zork before, choose your own adventure and books.
+
+*Magnar:* Yes. Choose your own adventures is pretty much what it's like but except it's about four times the size of the Lord of the Rings.
+
+*Sacha:* That sounds like an incredibly large sort of thing to work on. How do you keep all of that stuff organized in your head?
+
+*Magnar:* Well, I can't. There's no way. There are different players of the game that know more about it than me, I think. At least they know stuff that I've forgotten. It's not like the page in the book because that's pretty much long text. But one page is where you get the text and some alternatives. That's the page. In this game, there's 28,000 set-pages.
+
+*Sacha:* Wow!
+
+*Magnar:* It's quite large. It's one of the things that keep me up-to-date on programming technologies because I always got something to do. I think many people want to learn like say, “I really want to learn Clojure but I got no idea what I want to use it for so I never have a project.” Well, I always have a project.
+
+*Sacha:* So what kind of tips would you give someone who's maybe starting out with Emacs, or who wants to learn, and is feeling that kind of overwhelmed?
+
+*Magnar:* Well at least I would try and learn Emacs by itself. Very many people I've talked to, they would like to learn Clojure and Emacs at once and I think that's a really nice way of giving up. You're overwhelmed. Especially for Clojure, if you're not into Lisps or functional programming, it's already quite mind-boggling. So you'll also have to learn Emacs and you can't even save, well it's bound to go wrong somewhere.
+Just use your regular programming language and get working with learning Emacs first or the other way around, I think.
+
+*Sacha:* Right. Change one thing at a time.
+
+*Magnar:* Yes. The other thing is try and find someone that you can work with and learn from. That really would work for me at least.
+
+*Sacha:* Well we are lucky we have other people in the same office. We'll have to figure out what to do for all those people who are maybe the only Emacs geek in the city.
+
+*Magnar:* I don't think they are alone. I don't think so. It's surprising to me how many people are using Emacs.
+
+*Sacha:* It's true.
+
+*Magnar:* I was actually at a dinner a couple of months ago with just regular programmers and we're at the table and all four of us were using Emacs. That's doesn't happen a lot but it's pretty great.
+
+*Sacha:* Yes. Before we dive into, I guess explore your configuration, then learning more about the way that you work, let me just go through some questions here.
+Webspyder wanted to know if those are Grado's that you're wearing. I don't know what he means.
+
+*Magnar:* Yes, it's Grado's.
+
+*Sacha:* There you have it
+
+*Magnar:* Yes, these are great. They're headphones that are quite nice. They have a great sound but they're not closed. Meaning you can't really use them on the train so I have different ones for using on the train because I don't want to boulder on my co-passengers.
+
+*Sacha:* I think you pay attention to the kind of gear you have. Do you have there like a really favorite gear recommendations that you think are totally awesome for people?
+
+*Magnar:* Well I have a nice mic. If you're into making podcasts or screencasts but I can't remember the name. It's one of those USB – I think maybe Podcaster, something like that. That's pretty nice. Otherwise I'm just one of those Apple dudes. I use MacBook Pros and iPhones.
+I'm really considering switching to Android but I realized I was already living entrapped in the Apple bubble because I've got AirPlay, speakers, Apple TV, all my friends and relatives use iMessage and even in my car, I can play music from my iPhone in my car. So if I switch to Android now I would have to buy all the other stuff too. I'm pretty much stuck.
+
+*Sacha:* Yes, you are locked in. That's okay. A lot of people are really happy with that setup as well. That sounds pretty good.
+I think that's mostly for the questions for that now. Do you want to take us to some of the things that you've tweaked about your Emacs? Are you the kind of person who will remap everything or change a lot of defaults? Actually show us what you thought.
+
+*Magnar:* I can show you some of the things. First of all I think there is some percentage of the Emacs community that said, “You should never change the Emacs keybindings.” And by that I mean you should always use CTRL+M and CTRL+P to go to the next and previous line. I don't do any bind to that.
+I do do it now. I'm not sure why but I switched away from the arrow keys. But in my mind the great thing about Emacs is its extensibility and not the little keybindings. Because the little keybindings, I don't think they all have been made a mastermind in keybindings. Although it made a mastermind in programming.
+Okay, let's take a look at my Emacs. Here. Okay, I have to open Emacs.
+
+*Sacha:* All right. I can see your screen. Fantastic.
+
+*Magnar:* Is this better?
+
+*Sacha:* Hang on a second. I have no idea what that is. Okay there yes, that is fine. That is perfect actually.
+
+*Magnar:* Right. This is my presentation-mode.
+Okay, Emacs. This is init.el. I know some people who use Org-mode and Babel to get really nice documentation for settings. I've been thinking about it but I'm not there quite yet.
+
+*Sacha:* Well you've got commands so that's something at least.
+
+*Magnar:* Yes. Let's see what we can find. First of all I use project. I know there's projectile and I haven't really looked at projectile yet because I have got my own sort of project thing going. I use perspective-mode which changes – with keybinding I can switch to all of my different projects.
+
+*Sacha:* I see.
+
+*Magnar:* If I switch to this one...
+
+*Sacha:* That's very helpful
+
+*Magnar:* So I can switch easily between doing projects like this. Of course if I split this out and go to another file like this, I can switch over again to my kind of game.
+
+*Sacha:* I should try that out.
+
+*Magnar:* And I use technomancy's find-file-in-project.
+
+*Sacha:* Yes.
+
+*Magnar:* Along with i-do work going on. Let's see.
+
+*Sacha:* Yes. I did it.
+
+*Magnar:* I use flx-ido which gives me matching – Let's see multiple-cursors. So I'd use the M key.
+
+*Sacha:* Okay. I see how it's doing that right.
+
+*Magnar:* Yes. It's pretty great at finding what I want instead of the default flx which just wouldn't match any chars. The default flx [inaudible] in the file path. Well, flx prioritizes the starting point that works.
+
+*Sacha:* Right. Well, I'm glad I asked and I'm glad we're seeing this because I'm picking up a lot of things that I'm going to add to my own project soon.
+Okay. So flx and ido, yes.
+
+*Magnar:* Then there's ido-vertical-mode which gives me this one.
+
+*Sacha:* It listed down.
+
+*Magnar:* The thing I like about this is normally they're just stacked after each other that will write and then you can really see much of the names. You have to cut it down to just include the base filename and usually if you do a Rails project, those base filenames are pretty much the same in different folders.
+And of course the recent files, this is much easier to find what I'm looking for and I can include an entire path. It also helps with the flx-ido that I can do “Emacs.” Yes, you see, Elpa, melpa, archive contents was matched first because it always tries to include part of this search filename. So if I do just the just the C, then I get the core immediately.
+
+*Sacha:* Webspyder ask, “On your mode line, there are some things in the brackets on the very right side. Are those the project names? Is that the project context or is that [inaudible]?”
+
+*Magnar:* Yes.
+
+*Sacha:* Yes.
+
+*Magnar:* So I can switch between projects like this.
+
+*Sacha:* Oh, and they're clickable, even better. Will it save your window configuration when you're searching between them?
+
+*Magnar:* Yes.
+
+*Sacha:* Wow!
+
+*Magnar:* That is pretty nice. It also saves which buffers belong to each project. So you get at least when you switch buffer like this, it keeps them apart.
+
+*Sacha:* This is great.
+
+*Magnar:* That's pretty nice.
+
+*Sacha:* We're only 2% of the way for your setup. All right, let's go on.
+
+*Magnar:* I know there is projectile. I just haven't started looking at it yet because I got mine tweaked so much. It's pretty much thrown together and there are lots of different stuff.
+Of course I used to get sub-modules to include packages and I would just list it up here pretty much.
+Oh, I really like this one, guide-key.
+
+*Sacha:* What's that?
+
+*Magnar:* It's one of the things I added to my Emacs. These are the guide-key presses. So if I do C-x r, look what happens.
+
+*Sacha:* Holy cow! Yes, okay. I'll be using that one too.
+
+*Magnar:* Yes, I really like that one and then you just press the next one. So if you know it by heart, you can just press – it doesn't really interfere with whatever you're doing but if you can't quite remember what bookmark was, was it B or M for bookmark jump or bookmark set? Well it gets you covered. That's pretty nice.
+
+*Sacha:* Yes, that's incredible. It's much faster than hitting CTRL+H at the end.
+
+*Magnar:* Yes. Of course I have a rebound CTRL+H [inaudible] to help because in the terminal, CTRL+H is backspace. So I got CTRL+H as backspace as well.
+
+*Sacha:* Oh, I see.
+
+*Magnar:* I use the good old windows command for help which is, can you remember?
+
+*Sacha:* F1?
+
+*Magnar:* Yes. That's how. And I use both paredit and smartparens.
+
+*Sacha:* How do you stop them from fighting with each other? Do they conflict?
+
+*Magnar:* Well I just paredit and smartparens in different modes. I don't torn on global modes.
+
+*Sacha:* Oh, I see.
+
+*Magnar:* If I paredit, I use in Lisps and then I use smartparens for everything else.
+
+*Sacha:* Oh, well that's interesting. Why do you do that?
+
+*Magnar:* Well the main reason I want paredit, and of course smartparens are paredit are pretty much enriched feature paredit, sort of, but smartparens doesn't have the – the thing about paredit I really liked that lacks in smartparens is, a paredit attempts to keep your document in order but it won't let you delete parens that are necessary to keep the three intact. Also the paredit kill, CTRL+K in Lisp mode like this.
+
+*Sacha:* Right.
+
+*Magnar:* I am totally reliant on using paredit. I feel up to the point that I've been starting introducing it into other modes.
+
+*Sacha:* Wow.
+
+*Magnar:* Like HTML. I've been working on a paredit like-thing for HTML called tagedit and one of the first things that I've made was the tagedit kill command.
+
+*Sacha:* I had to confess I'm still trying to wrap my brain around either smartparens or paredit. Sometimes I'm okay with the slurping command and sometimes I'm like, just get parenthesis to go where I want them to. What was it like when you were learning this?
+
+*Magnar:* I gave up lots of times. I've heard over and over again that paredit was the thing to be using for Lisp and I just couldn't wrap my head around how it was working until technomancy it pretty much goaded me into it. I think it was in the IRC channel at #Emacs where I said that, “If you are not the kind of person that paredit is for, then you have to become that kind of person.”
+
+*Sacha:* That's it. “Emacs, a text editor that makes you become a better person.” So cool.
+Fuco would like to say that the paredit kill that you really like is actually in smartparens already.
+
+*Magnar:* Nice, that's very nice. If it also works and the other works in other modes, then I'm really happy.
+
+*Sacha:* Yes. He says that. “Smartparens strict-mode?”
+
+*Magnar:* Ah-ha, strict-mode. Fuco has been working really hard on making cool Emacs stuff. That's pretty nice.
+
+*Sacha:* It's a fantastic community.
+
+*Magnar:* I agree.
+
+*Sacha:* Okay, all right.
+
+*Magnar:* Let's see. More stuff. I've been trying to get my fingers to use visual-regexp. I don't know if you've seen it.
+
+*Sacha:* No, I never tried it.
+
+*Magnar:* There's query replace. If I do query replace require, and as I type now – it doesn't really work. Let's try the other one.
+
+*Sacha:* Oh, so you can see it. Right.
+
+*Magnar:* It shows you while you're typing. I think when I first saw it, I was really excited about it but I thought I have to use it for some time before I make an Emacs Rocks episode on it and I haven't gotten those keys into my hands at all.
+
+*Sacha:* Right. It's a real challenge because it's so easy to add stuff to your configuration and so hard to actually build the habits of using them.
+
+*Magnar:* Yes.
+
+*Sacha:* Do you do anything special to remind you what you would need to learn first with Emacs?
+
+*Magnar:* I have done some things. First of all, I sometimes just rebind the old keys. That works.
+What I have also made, annoying-arrows-mode. You can see I haven't got it installed but what that mode does is if you're using the make forward line, backward line, forward char, backward char commands too much. It would start beeping at you.
+
+*Sacha:* There was an Emacs expert-mode thing that also punish you for using arrow keys and other ways to do that.
+
+*Magnar:* Yes. There's like hardcore-mode which will just disable the keys as in beep at you when you use them. But this one, annoying-arrows mode, it lets you use them because sometimes it doesn't really enforce you to use CTRL+M, or CTRL+P, or anything like that. It just says, “Hey, if you're going to [inaudible] forward 10 times in a row, maybe you should go forward a word at a time or something.”
+
+*Sacha:* Total reminders.
+
+*Magnar:* Yes. It will remind you. It will also tell you alternatives. Let's try it out, annoying-arrow-mode. Let's do forward, forward, forward, now it starts blinking, that's annoying.
+
+*Sacha:* Interesting.
+
+*Magnar:* Yes. My Emacs eldoc is interfering with the error message.
+
+*Sacha:* Well, it is very annoying.
+
+*Magnar:* It is quite annoying and it's blinking at you and it's stopping you from doing or it says, “Hey, use right-word, or smart-forward.” or something like that.
+And one of the cool features its got is that it only suggests commands that are bound to a key.
+
+*Sacha:* Yes.
+
+*Magnar:* It's pretty nice.
+
+*Sacha:* Very cool.
+
+*Magnar:* I like to try that now because I'm going to scroll through here.
+This is another one that I really like. I start too many projects, I've got too many open-source projects [inaudible] but I got actually a command that start the project for me. Let's see, project-archetype
+
+*Sacha:* Pa-project?
+
+*Magnar:* Yes, pa-create-project. So I can create a clojure ring app, or JavaScript, or an Emacs snippets package, or an Emacs package.
+
+*Sacha:* Okay. [inaudible] and I guess it sets out the files.
+
+*Magnar:* Yes. “Create screencasts straight from Emacs”. I'm not going to make it.
+
+*Sacha:* No and you're getting your hopes up.
+
+*Magnar:* You see it creates some files for you.
+
+*Sacha:* Nice. It even sets up the initial command.
+
+*Magnar:* Yes. You see it's not updated. [inaudible] because Carton has been changed to Cast now. It creates some integration task thing, a README, and some stuff like that. That was fun making.
+
+*Sacha:* Wow, okay. All right.
+
+*Magnar:* That was the init-mode. It's full, I've got a lot of stuff going on. I'm not really sure what I should show you what's interesting. I haven't thought about it much.
+
+*Sacha:* Fuco says, “Your set up is insane.”  He needs to go but he doesn't want to lose this. I think it's really just the sense of – there's so much in a config and when we're looking over someone's shoulder like this, there's always something to try out and take.
+You've probably written about your programming configuration and all of that. We can just check out What the Emacs.d for your other config tips.
+So, you've got a lot of time saving shortcuts in your Emacs configuration. Are there still other inconveniences that you want to work on or things that you wish Emacs could do better that you'd like to do?
+
+*Magnar:* Well, the thing I think I most would like Emacs is to better its package management.
+
+*Sacha:* Yes.
+
+*Magnar:* Versions and being able to specify a specific version that you want to use and stuff like that. That's a bigger project and that's have to be done from the Emacs core team.
+Other than that, well I try and reduce the nagging annoyances as I go along and sometimes I've got lots of energy to do that and other times I just live with it. If you've got something at a noise, you can always write a macro to fix it or something like that.
+But I'm pretty happy with my setup now. I guess that's part of the reason that I haven't been doing lots of Emacs Rocks videos lately. It's working for me. I think someone in the #Emacs channel said that “Watching the Emacs Rocks videos from episode 1 to episode 14 is like looking at a journey through learning Emacs.”
+Because the first one, I was really happy about how the mark worked. I didn't realize there was a mark acting when the region wasn't showing and when I did that, CTRL+S, I search, the mark was set where I started and I can use that without activating the region.
+
+*Sacha:* You didn't at the back. Right.
+
+*Magnar:* That just blew my mind at the time.
+
+*Sacha:* Wow.
+
+*Magnar:* Of course I take lots of those things for granted now. I guess I think I can make 40 Emacs Rocks episodes out of the things that I take for granted right now which is sort of a shame but there's a limited amount of hours in there.
+
+*Sacha:* I guess I forgot but is your configuration as a whole shared anywhere?
+
+*Magnar:* Yes.
+
+*Sacha:* Okay.
+
+*Magnar:* It's [inaudible] and it's got way too many forks. I would really recommend for people, do not fork my Emacs and you use that as a base but instead, just read through it and pick out the things that you want instead because mine has been known to change quite drastically and it won't be easy keeping up with the changes over time.
+
+*Sacha:* So what do you mean by changing drastically?
+
+*Magnar:* Well I have been thinking about trying out Evil because when I chose between Emacs and the Vim, I was really kind of liking the idea of model editing but I like the idea of an extendable alter way more. But of course with Evil and being run on that, it's tempting just to see if it's something for me. Of course if at that time everyone is using and pulling from my Emacs, it's [inaudible] you'd be really surprised.
+
+*Sacha:* They're probably not loading it straight. They're probably forking.
+
+*Magnar:* I hope.
+
+*Sacha:* Have a coffee, look through it, and maybe...
+
+*Magnar:* I hope so. There was a friend of mine that said, “Using someone else's Emacs configuration is like using someone else's used shower...”
+
+*Sacha:* Towel?
+
+*Magnar:* Towel. Yes, thank you.
+
+*Sacha:* I guess for Emacs, sometimes even with my own configuration, I take a lot of things for granted because I'm used to them, or also because I don't know that there are better ways out there. So often people will write to me about something they've seen in my config because they're curious about something, and that becomes the reason to write a blog post.
+Or sometimes people have questions on the IRC or elsewhere, Twitter usually, and then that will prompt me to take [inaudible] some more.
+You settle into a comfortable environment and then you have to keep pushing yourself sometimes to keep learning more.
+
+*Magnar:* Exactly. I know some areas where I want to learn more but right now I'm kind of cozy in my config.
+
+*Sacha:* Yes. People are already having fun with the fact that your configuration has been forked a lot and they're like, “Fork all the things!”
+What kind of feedback do you get from your screencast, blog posts, and configuration? What do people usually say?
+
+*Magnar:* Well, I get lots of great feedback. It's kind of humbling really. I get lots of email, twitters, comments, so it makes my day pretty much. Puts a smile on my face when people tell me it's [inaudible].
+I think the best part where I get good feedback is when people say that they really started enjoying using Emacs again, or that they'll come back to Emacs. At least multiple-cursors, I think there's been quite a lot of people who didn't want to give up multiple-cursors after using Sublime for a while.
+
+*Sacha:* Yes.
+
+*Magnar:* So I got some emails from people who said that, “Since Emacs has multiple-cursors now, I can finally go home.”
+
+*Sacha:* Yes.
+
+*Magnar:* That's nice.
+
+*Sacha:* It's great that they're getting a sense of what features are out there because usually, people won't discover these things on their own and there's just so much that they won't come across it. That's cool.
+So, you started a long time ago but you really started with Emacs two years ago, you've dived into it, you've been configuring things and taking things, and now, two years after, you really started paying attention to it. You've got a great setup that you're pretty comfortable with. Wow.
+Then there are tips for people who are I guess once they've gotten started and all of that, there's usually a point where they're frustrated by how much work it is, or how much it is to learn, or whatever else, do you have any other ideas or tips to help them get past that and help them get to the point where they enjoy it like these people like you do?
+
+*Magnar:* Well for me it was all about the extensibility. For me the crush on Emacs that I got was basically after I wrote my first Emacs Lisp function and it was just a really minor thing. In JavaScript, when you have some object literals, or some array literals, you use commas at the end unlike Clojure. And when you're moving lines, you move these lines up and down, you have to make sure that the comma is still in the right place because the last one does not use a comma and everyone else does.
+
+*Sacha:* 'm really annoyed at that before.
+
+*Magnar:* The very first function I wrote for Emacs was one that kept those commas in the right position even as we moved lines up and down. There wasn't much but I had to learn some Emacs Lisp to do it and when I realized how easy it was to doing Emacs, that was the turning point.
+So I got the giraffe book.
+
+*Sacha:* Yes.
+
+*Magnar:* Recommended to me by Christian, my coworker in Emacs crime.
+I really like their giraffe book and I had lots of fun reading it. The cool stuff about getting the giraffe book at it is like really it's really old sort of textbook. It's ancient.
+
+*Sacha:* Yes, we don't really have any recent Emacs books. [inaudible] there's nothing out there.
+
+*Magnar:* No. The fun part is that the giraffe book is still pretty great. It's a little bit outdated but not much. You can still read it.
+How old is it? I'm going to find out. I think you can just google giraffe book and of course Google is home to Emacs for me. It's writing new Emacs extensions.
+It's from 1997.
+
+*Sacha:* Wow.
+
+*Magnar:* How old is that? That is 16-years-old? It's the 16-year-old textbook that you can still read today and get used out of it.
+
+*Sacha:* That is incredible. Actually speaking of core Emacs, [inaudible] had a question earlier about, “When do you consider getting some of your code?” He mentioned s.el as an example and in some of your code into Emacs core. If you've considered it but there have been things that have gone in the way, what are some of those obstacles if you have merged them in.
+
+*Magnar:* Yes, I was contacted by Stephan quite a while ago and I think maybe 18 months ago about getting expand-region into Emacs core. At that time I had 20 contributors and all of those 20 contributors have designed their Free Software Foundation papers. So I started working on that, getting all those 20 signatures. In the end I have 19.
+
+*Magnar:* One year after I started, I have managed to get 19/20 signatures and the last signature was from the guy who had written a Ruby-mode expansion. The Ruby-mode is perhaps the most advanced expansions because of [inaudible], and stuff like that.
+So I have been in my mind how I understood it. I couldn't do the mode from scratch because I have seen all these code. I talked to the Free Software Foundation and said, “Okay, we are unable to get hold of him.” He just stopped answering my emails, my twitters, my IRC requests.
+
+*Sacha:* I'm sorry to hear that.
+
+*Magnar:* Because he had tried twice to post these signatures and Free Software Foundation have lost them, or they were lost in the mail, or something. He tired on it.
+So I pretty much had given up at that point.
+
+*Sacha:* Well, that's understandable though.
+
+*Magnar:* But it turned out that most of the Ruby-mode expansions have been totally rewritten. I had some people from Free Software Foundation look at it and it has been really changed since the first version. So they're saying, “Okay, it's fine. It's within the rules to use it.”
+So I haven't started on getting a expand-region into the Emacs core.
+
+*Sacha:* Wow. That sounds like a lot of work.
+
+*Magnar:* It is and I don't have all the time to do it. I really want to do it but I've just been really really worked lately. That's where s.el and dash.el which are maybe the most useful things to have in Emacs core because they're libraries.
+I was initially very optimistic about getting stuff into Emacs core and of course these 19/20 soured me a bit on it but I think the main reason to keep it out of Emacs core is because we now have...
+
+*Sacha:* Packaged ones I guess?
+
+*Magnar:* ...one different environment with all packages.
+
+*Sacha:* Yes.
+
+*Magnar:* The melpa and the marmalade repositories have really made it possible to do stuff outside of Emacs core.
+
+*Sacha:* Right and then you can move faster also because you can update it without waiting as much.
+
+*Magnar:* Yes. While I really do support the Free Software Foundation both monetarily and politically, I think acquiring signatures on the paper really pampers the speed and collaboration on stuff.
+
+*Sacha:* Well, at least we have packages now and I hope they get better. Version dependencies and all of that, that would be nice. Okay.
+
+*Magnar:* I would like to get - and S into Emacs core. I have been reading the Emacs devel mailing list and it [inaudible] monitors and the enthusiasm about it at all. I don't end up ready to start hammering the Emacs devil list to get it in when it works nicely with the packages managers.
+
+*Sacha:* Yes. I guess that means [inaudible] going forward, Emacs core slims down again and then the packages will just take care of everything else.
+Webspyder has a suggestion. “In addition to your screencasts and projects, have you considered kicking off elisp koans?”
+
+*Magnar:* Yes, I have. Well it may be not koans but I have been thinking about doing some Emacs Lisp tutorials or stuff like that. There is extending Emacs Rocks which are some videos that I did with Christian and they're loud, and badly produced, but it shows off some of the workflow and stuff like that. But I have been thinking about doing some Emacs Lisp tutorial stuff.
+I know Nic Ferrier is [inaudible]?
+
+*Sacha:* Yes, he started some.
+
+*Magnar:* With Emacsbites?
+
+*Sacha:* Yes.
+
+*Magnar:* So if you think Emacsbites, down you go there and if you think Emacs Rocks, then you go off. Well there were still old [inaudible] thing of course.
+
+*Sacha:* Yes.
+
+*Magnar:* I guess Emacsbites is a fun name.
+
+*Sacha:* Webspyder elaborates. He says, “Kind of posting problems [inaudible] about.” and requiring you to fill in the blanks.
+
+*Magnar:* Yes, koens.
+
+*Sacha:* That would be fun to have these little exercises for people as well. We'll see because Elisp post is kind of a gateway for you to fall in love with Emacs. We'll see how we can get more people into it.
+
+*Magnar:* That's true. Of course using elnode, Emacs webserver would be great to make Emacs koans because then your server talks Emacs Lisp already. That's pretty cool.
+
+*Sacha:* It is. There are a lot of exciting developments.
+
+*Magnar:* I actually run an IRC bot on Emacs. We have an internal IRC channel at Kodemaker where I work and there we have a bot there that I had written in Emacs Lisp. It's running on my production server in a screen. So it just open a new screen, and I open Emacs, and I log into the IRC from the ERC, and just let the Emacs Lisp take over from there.
+In my mind, Emacs is the perfect Emacs IRC bot framework because you don't have to think about anything that has to do with IRC at all. You just have to send and read text in the buffer.
+
+*Sacha:* So you mentioned quite a other people at work also use Emacs. Now that you've gotten your start in Emacs and you’re pretty sorted out, what other things are you learning from them or are they learning from you in terms of what Emacs can do?
+Do you still talk about configuration?
+
+*Magnar:* We haven't been talking so much about configuration after the initial rush. I think most people are just happily rolling along with the things that they have right now.
+
+*Sacha:* Yes.
+
+*Magnar:* [Inaudible] a little over there in their Github repositories [inaudible].
+
+*Sacha:* That's really a [inaudble] sharing I guess internally.
+
+*Magnar:* Yes. They're all sharing it publicly and they also follow quite a few others Emacs configuration like that. Steve Purcell for instance has his online so of course I have to see what he's up to.
+
+*Sacha:* I should be sure to commit my config to Github. I’m just in Dropbox for easier publishing. That's cool.
+Okay, we're about to wrap up. Thank you so much for sharing all these stories. But before we end, what are the other interesting things that you'd like to share with people, or what is a great question that I should be asking you but I've forgotten?
+
+*Magnar:* I think you've asked some pretty good questions. I haven't prepared much for this interview of yours so I'm not sure. I was maybe anticipating the question, “Where are all the Emacs Rocks videos gone?” Because I haven't had the time to make any one lately.
+
+*Sacha:* I think I do but we try not to make people feel guilty about all the awesomeness they’ve created. Even if they could make more awesomeness if they have time. That's okay.
+
+*Magnar:* Okay, thank you.
+
+*Sacha:* That's actually very fine.
+
+*Magnar:* It's been work. My bad conscience, it's about all my open source projects. I've been opening-source too many things and I'm not good at following those up. I'm hoping to find more time to do more stuff like that, and create more videos, and more cool stuff. But it's hard sometimes. But [inaudible] all are cool questions. Which board of games would you like me playing?
+
+*Sacha:* I know you're balanced – Emacs, board games, hmm. Clearly you have to write a board game interface for Emacs and then you're back in Emacs and all sorted out again. At least you got your role-playing game.
+
+*Magnar:* I did write some board game really. I did Emacs Lisp codes just a few weeks ago.
+
+*Sacha:* I am not surprised.
+So we'll look forward to more videos from you and when you have that. In the meantime, your work so far has been much appreciated and thank you again for sharing your stories.
+
+*Magnar:* Thanks, it was great.
+
+*Sacha:* All right.
+
+*Magnar:* Hello. There's someone in the back.
+
+*Sacha:* My husband. He uses Vim.
+
+*Magnar:* No!
+
+*Sacha:* I know! But that's okay. He's not trying to convert me, I'm not trying to convert him... so much.
+
+*Magnar:* That's great. Vim is a pretty great editor.
+
+*Sacha:* Yes. I accept that as good.
+
+*Magnar:* [inaudible].
+
+*Sacha:* Sorry, [inaudible] has a quick question, “Board game recommendations?” You showed a couple earlier. What's your top 3 board games list right now?
+
+*Magnar:* The thing about board games is that they're very situational but for just having fun with four players, I would say Space Alert is really great. As for playing two-player games and if you're really into games, I would say Netrunner is pretty great.
+
+*Sacha:* Oh, I found Netrunner, that's a lot of fun, yes.
+
+*Magnar:* And these two I actually own.
+
+*Sacha:* Coloretto on the right.
+
+*Magnar:* Yes, these two are very nice. If you are five or six players. Well, any number of players really except for two.
+
+*Sacha:* Yes. But for people listening, [inaudible] will have him play board games but don't play board games too much with Emacs. It's also fun in [inaudible].
+Again, thank you very much and I'll turn the video [inaudible] and I'll post it up in my blog and other places.
+
+*Magnar:* Cool.
+
+*Sacha:* Thanks again.
+
+*Magnar:* Thank you.
+
+*Sacha:* All right, see you around.
+
+*Magnar:* See you.
