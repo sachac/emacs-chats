@@ -18,11 +18,11 @@ Getting to know people who use Emacs
 
 -  [[file:chat-janis-mancevics.org][Emacs Chat: Jānis Mancēvičs]]
 -  [[file:chat-marble.org][Emacs Chat: Tom Marble]]
--  Emacs Chat: Iannis Zannos -- Emacs and SuperCollider
--  Emacs Chat: Magnar Sveen (Emacs Rocks)
--  Emacs Chat: Sacha Chua (with Bastien Guerry)
--  Emacs Chat: Bastien Guerry
--  Emacs Chat: Carsten Dominik
--  Emacs chat: Thomas Kjeldahl Nilsson
--  Emacs Chat with Avdi Grimm (Org-mode, Ruby, etc.)
--  [[chat-john-wiegley.org][Transcript: Emacs chat with John Wiegley]]
+-  [[file:chat-zannos.org][Emacs Chat: Iannis Zannos -- Emacs and SuperCollider]]
+-  [[file:chat-sveen.org][Emacs Chat: Magnar Sveen (Emacs Rocks)]]
+-  [[file:chat-sacha.org][Emacs Chat: Sacha Chua (with Bastien Guerry)]]
+-  [[file:chat-bastien.org][Emacs Chat: Bastien Guerry]]
+-  [[file:chat-carsten.org][Emacs Chat: Carsten Dominik]]
+-  [[file:chat-nilsson.org][Emacs chat: Thomas Kjeldahl Nilsson]]
+-  [[file:chat-avdi.org][Emacs Chat with Avdi Grimm (Org-mode, Ruby, etc.)]]
+-  [[file:chat-john-wiegley.org][Transcript: Emacs chat with John Wiegley]]

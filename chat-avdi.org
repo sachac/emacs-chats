@@ -1,0 +1,30 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
+#+DATE: <2014-04-25 Fri>
+
+[[http://sachachua.com/blog/2013/03/emacs-chat-with-avdi-grimm-org-mode-ruby-etc/][Source]]
+
+* Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
+
+Thanks to Matthew Darling's comment on [[http://sachachua.com/blog/2013/01/helping-people-learn-more-about-programming/][my post about code coaching]], I came across Avdi Grimm's work with pair programming -- and was delighted to find that he uses Emacs too. =)
+
+Check out my Skype chat with Avdi about Org-mode literate programming,
+Ruby, and how he got started with Emacs.
+
+#+BEGIN_HTML
+<iframe src="http://player.vimeo.com/video/60848459?color=FFFFFF" height="326" width="580" allowfullscreen="" frameborder="0"></iframe>
+#+END_HTML
+
+[[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Get the MP3]] or [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.ogg][Ogg Vorbis]] files, or [[https://archive.org/details/EmacsSachaChuaAvdiGrimm][listen to them on archive.org]]!
+
+[[http://vimeo.com/60848459][Emacs Chat with Avdi Grimm]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]]. If you liked this, you might also like [[http://sachachua.com/blog/2012/06/emacs-chatting-with-john-wiegley-about-the-cool-things-he-does-with-emacs/][my chat with John Wiegley]]. Do you use Emacs? Want to share your story and
+the nifty things you think other people should know about? Comment below or [[http://sachachua.com/contact][get in touch]] with me!
+
+#+BEGIN_HTML
+<div class="powerpress_player" id="powerpress_player_5848">
+<audio class="powerpress-mejs-audio" controls="controls" src="https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3" preload="none">
+<a href="https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
+</div>
+#+END_HTML
+
+Podcast: [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Play in new window]] | [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Download]]
