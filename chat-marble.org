@@ -1,0 +1,34 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Tom Marble & Sacha Chua
+#+DATE: <2014-04-25 Fri>
+
+[[http://sachachua.com/blog/2014/04/emacs-chat-tom-marble/][Source]]
+
+* Emacs Chat: Tom Marble & Sacha Chua
+
+Emacs Chat: Tom Marble -- Invoicing with Org and LaTeX; Clojure
+
+Guest: [[https://plus.google.com/105460652849985930855][Tom Marble]]
+
+#+BEGIN_HTML
+<iframe src="//www.youtube.com/embed/-6bpx-6zyOI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
+
+Tom Marble's doing this pretty nifty thing with Org Mode, time tracking,
+LaTeX, and invoice generation. Also, Clojure %2B Emacs, and other good
+things. Enjoy!
+
+For the event page, you may [[https://plus.google.com/events/capebtcf9ihf98adcj57rvbfcc8][click here]].
+
+#+BEGIN_HTML
+<div class="powerpress_player" id="powerpress_player_1049">
+<audio class="powerpress-mejs-audio" controls="controls" src="http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3" preload="none">
+<a href="http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
+</div>
+#+END_HTML
+
+Want just the audio? [[https://archive.org/details/EmacsChatTomMarble][Get it from archive.org]]: [[https://ia902502.us.archive.org/16/items/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3][MP3]]
+
+Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
+
+Podcast: [[http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3][Download]]

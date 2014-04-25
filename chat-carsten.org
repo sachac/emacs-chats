@@ -1,0 +1,27 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Carsten Dominik & Sacha Chua
+#+DATE: <2014-04-25 Fri>
+
+[[http://sachachua.com/blog/2013/03/emacs-chat-carsten-dominik/][Source]]
+
+* Emacs Chat: Carsten Dominik & Sacha Chua
+
+In which Carsten shares how he got started with Emacs, the joys of Calc,
+and other cool things. =)
+
+#+BEGIN_HTML
+<iframe src="http://player.vimeo.com/video/62629506?color=ffffff" height="326" width="580" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+#+END_HTML
+
+[[http://vimeo.com/62629506][Carsten Dominik]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]].
+
+Want just the audio? [[http://archive.org/details/CarstenDominik][Get it from archive.org]]: [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3][MP3]] / [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.ogg][Ogg Vorbis]] (gosh, archive.org has been automatically converting to Ogg all this time? That'll simplify my post-production... )
+
+#+BEGIN_HTML
+<div class="powerpress_player" id="powerpress_player_7996">
+<audio class="powerpress-mejs-audio" controls="controls" src="http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3" preload="none">
+<a href="http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
+</div>
+#+END_HTML
+
+Podcast: [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3][Play in new window]] | [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3][Download]]

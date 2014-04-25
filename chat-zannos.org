@@ -1,0 +1,26 @@
+#+SETUPFILE: setup.org
+#+TITLE: Emacs Chat: Iannis Zannos – Emacs and SuperCollider
+#+DATE: <2014-04-25 Fri>
+
+[[http://sachachua.com/blog/2014/04/emacs-chat-iannis-zannos-emacs-supercollider/][Source]]
+
+* Emacs Chat: Iannis Zannos – Emacs and SuperCollider
+
+Emacs! Music! [[https://plus.google.com/114167753587024532473][Iannis Zannos]] shares how Emacs can be used for all sorts of awesomeness with Org Mode and SuperCollider.
+
+Check this [[https://plus.google.com/events/c092ip9f2vv6fhs6tbtid83h1sg][event page]] for details and comments =)
+
+#+BEGIN_HTML
+<iframe src="//www.youtube.com/embed/0F8aCbC9z3A" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
+#+END_HTML
+
+#+BEGIN_HTML
+<div class="powerpress_player" id="powerpress_player_9160">
+<audio class="powerpress-mejs-audio" controls="controls" src="http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3" preload="none">
+<a href="http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
+</div>
+#+END_HTML
+
+Podcast: [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Download]]
+
+Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
