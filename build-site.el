@@ -33,7 +33,7 @@
       `(("orgfiles"
          :base-directory "/Users/plovs/Documents/Chua/emacs-chats"
          :base-extension "org"
-         :exclude "setup.inc"       ; regexp
+         :exclude "tasks.org"       ; regexp
          :publishing-directory "/Users/plovs/Documents/Chua/emacs-chats"
          :publishing-function org-html-publish-to-html
          :recursive t
@@ -46,6 +46,7 @@
          :sitemap-filename "sitemap.org"  ; Call it sitemap.org (it's the default)...
          :sitemap-title "Sitemap"         ; With title 'Sitemap'.
          :makeindex t
+         :with-timestamp t
          )
         ("emchat" :components ("orgfiles"))
         ))

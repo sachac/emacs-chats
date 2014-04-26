@@ -4,15 +4,27 @@
 
 [[http://sachachua.com/blog/2014/04/emacs-chat-iannis-zannos-emacs-supercollider/][Source]]
 
-* Emacs Chat: Iannis Zannos – Emacs and SuperCollider
+* Chat with Iannis Zannos about Emacs and SuperCollider
+#+INDEX: SuperCollider
 
 Emacs! Music! [[https://plus.google.com/114167753587024532473][Iannis Zannos]] shares how Emacs can be used for all sorts of awesomeness with Org Mode and SuperCollider.
 
 Check this [[https://plus.google.com/events/c092ip9f2vv6fhs6tbtid83h1sg][event page]] for details and comments =)
 
+** Audio and Video
+
 #+BEGIN_HTML
 <iframe src="//www.youtube.com/embed/0F8aCbC9z3A" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
 #+END_HTML
+
+Some of the code mentioned in during the chat:
+
+- his [[https://github.com/iani/emacs-prelude][Emacs configuration]] (Prelude meets org-mode)
+- [[https://github.com/iani/tiny-sc][Compact but powerful tools for SuperCollider, with Emacs Org-mode intergration]]
+#+index: Prelude
+#+INDEX: Org-mode
+
+You just want the audio? Podcast: [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Download]]
 
 #+BEGIN_HTML
 <div class="powerpress_player" id="powerpress_player_9160">
@@ -21,6 +33,7 @@ Check this [[https://plus.google.com/events/c092ip9f2vv6fhs6tbtid83h1sg][event p
 </div>
 #+END_HTML
 
-Podcast: [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Download]]
+** Transcript: Coming soon
 
+#+HTML: <hr>
 Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
