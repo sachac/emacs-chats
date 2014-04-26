@@ -6,7 +6,7 @@
 
 * Emacs chat with John Wiegley
 
-Here is the video.
+** Audio and Video
 
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/44778543" height="375" width="500" allowfullscreen="" frameborder="0"></iframe>
@@ -822,3 +822,5 @@ sometime.
 *John:* Have a good night!
 
 (Transcription took me 2:35 for 0:44 of audio.)
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"

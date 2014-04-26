@@ -4,10 +4,12 @@
 
 [[http://sachachua.com/blog/2013/03/emacs-chat-carsten-dominik/][Source]]
 
-* Emacs Chat: Carsten Dominik & Sacha Chua
+* Chat with Carsten Dominik: the joy of Calc
 
 In which Carsten shares how he got started with Emacs, the joys of Calc,
 and other cool things. =)
+
+** Audio and Video
 
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/62629506?color=ffffff" height="326" width="580" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -25,3 +27,7 @@ Want just the audio? [[http://archive.org/details/CarstenDominik][Get it from ar
 #+END_HTML
 
 Podcast: [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3][Play in new window]] | [[http://archive.org/download/CarstenDominik/Carsten%20Dominik.mp3][Download]]
+
+** Transcript: Coming Soon
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"

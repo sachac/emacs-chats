@@ -687,3 +687,5 @@ Again, thank you very much and I'll turn the video [inaudible] and I'll post it 
 *Sacha:* All right, see you around.
 
 *Magnar:* See you.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
