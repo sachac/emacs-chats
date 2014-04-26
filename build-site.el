@@ -1,11 +1,10 @@
 ;; build site
-(require 'org)
+(package-initialize)
 (require 'ox-publish)
+(require 'htmlize)
 
-(setq make-backup-files nil) ;;rebuilding will crete backup-files otherwise
-
+(setq make-backup-files nil) ;;rebuilding will otherwise create backup-files
 (setq emacs-chats-dir (file-name-directory (or load-file-name buffer-file-name)))
-
 (setq org-html-validation-link nil)
 
 (defvar emchat-html-head
@@ -47,6 +46,7 @@
          :sitemap-title "Sitemap"         ; With title 'Sitemap'.
          :makeindex t
          :with-timestamp t
+         :htmlized-source t
          )
         ("emchat" :components ("orgfiles"))
         ))

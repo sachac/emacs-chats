@@ -10,15 +10,13 @@ I got to chat with Thomas about Emacs and picking up configuration
 snippets from EmacsWiki. He's so lucky -- he gets to work with lots of
 other Emacs geeks! =)
 
+** Audio and Video
+
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/61912848?color=990000" height="326" width="580" allowfullscreen="" frameborder="0"></iframe>
 #+END_HTML
 
 [[http://vimeo.com/61912848][Thomas Kjeldahl Nilsson -- Emacs chat]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]].
-
-[[http://kjeldahlnilsson.net/][More about Thomas on kjeldahlnilsson.net]]
-
-[[https://archive.org/details/EmacsThomasKjeldahlNilsson][Just want the audio? Get it from archive.org]]
 
 #+BEGIN_HTML
 <div class="powerpress_player" id="powerpress_player_2523">
@@ -26,5 +24,21 @@ other Emacs geeks! =)
 <a href="https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
 </div>
 #+END_HTML
+#+INDEX: Org-mode - outlining
+#+INDEX: ERC - at work
+
+Links:
+
+- [[https://github.com/thomanil?tab%3Drepositories][thomanil (Thomas Kjeldahl Nilsson)]] on GitHub
+- [[https://github.com/thomanil/dot-emacs][thomanil/dot-emacs]] on gitHub
+- [[http://kjeldahlnilsson.net/][More about Thomas on kjeldahlnilsson.net]]
+- [[https://github.com/thomanil/kjeldahlnilsson.net][Org source of kjeldahlnilsson.net]]
+
+[[https://archive.org/details/EmacsThomasKjeldahlNilsson][Just want the audio? Get it from archive.org]]
 
 Podcast: [[https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3][Play in new window]] | [[https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3][Download]]
+
+** Transcript: Coming Soon
+
+#+HTML: <hr>
+Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
