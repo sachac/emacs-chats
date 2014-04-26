@@ -1,10 +1,12 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
 #+DATE: <2014-04-25 Fri>
 
 [[http://sachachua.com/blog/2013/03/emacs-chat-with-avdi-grimm-org-mode-ruby-etc/][Source]]
 
 * Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
+#+index: Org-mode
+#+index: Definitions!Org-mode
 
 Thanks to Matthew Darling's comment on [[http://sachachua.com/blog/2013/01/helping-people-learn-more-about-programming/][my post about code coaching]], I came across Avdi Grimm's work with pair programming -- and was delighted to find that he uses Emacs too. =)
 

@@ -1,0 +1,8 @@
+#+SETUPFILE: setup.inc
+#+TITLE: Index
+
+This should be changed.
+
+#+INCLUDE: "theindex.inc"
+
+And we could also add a footer.

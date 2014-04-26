@@ -1,4 +1,4 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Transcript: Emacs chat with John Wiegley
 #+DATE: <2014-04-25 Fri>
 
@@ -34,6 +34,7 @@ also that's my Twitter client as well. So that's always running on the
 side as well. I spend a lot of time then in Eshell, all the programming
 modes... Most of my day work is in C and C%2B%2B when I'm not hacking
 elisp.
+#+index: ERC
 
 *Sacha:* Why do you keep your ERC in a separate Emacs? To minimize
 distraction, or...

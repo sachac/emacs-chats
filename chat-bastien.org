@@ -1,4 +1,4 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Bastien Guerry & Sacha Chua
 #+DATE: <2014-04-25 Fri>
 
