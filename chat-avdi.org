@@ -1,15 +1,19 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
 #+DATE: <2014-04-25 Fri>
 
 [[http://sachachua.com/blog/2013/03/emacs-chat-with-avdi-grimm-org-mode-ruby-etc/][Source]]
 
 * Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
+#+index: Org-mode
+#+index: Definitions!Org-mode
 
 Thanks to Matthew Darling's comment on [[http://sachachua.com/blog/2013/01/helping-people-learn-more-about-programming/][my post about code coaching]], I came across Avdi Grimm's work with pair programming -- and was delighted to find that he uses Emacs too. =)
 
 Check out my Skype chat with Avdi about Org-mode literate programming,
 Ruby, and how he got started with Emacs.
+
+** Audio and Video
 
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/60848459?color=FFFFFF" height="326" width="580" allowfullscreen="" frameborder="0"></iframe>
@@ -17,7 +21,7 @@ Ruby, and how he got started with Emacs.
 
 [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Get the MP3]] or [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.ogg][Ogg Vorbis]] files, or [[https://archive.org/details/EmacsSachaChuaAvdiGrimm][listen to them on archive.org]]!
 
-[[http://vimeo.com/60848459][Emacs Chat with Avdi Grimm]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]]. If you liked this, you might also like [[http://sachachua.com/blog/2012/06/emacs-chatting-with-john-wiegley-about-the-cool-things-he-does-with-emacs/][my chat with John Wiegley]]. Do you use Emacs? Want to share your story and
+[[http://vimeo.com/60848459][Emacs Chat with Avdi Grimm]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]]. If you liked this, you might also like [[file:chat-john-wiegley.org::*Emacs%20chat%20with%20John%20Wiegley][my chat with John Wiegley]]. Do you use Emacs? Want to share your story and
 the nifty things you think other people should know about? Comment below or [[http://sachachua.com/contact][get in touch]] with me!
 
 #+BEGIN_HTML
@@ -26,5 +30,25 @@ the nifty things you think other people should know about? Comment below or [[ht
 <a href="https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
 </div>
 #+END_HTML
+#+INDEX: Org-mode - writing e-books (Exceptional Ruby)
+#+INDEX: Ruby
+#+INDEX: Shell (Remote -)
+#+INDEX: Magit - drill in and out of changes
+#+INDEX: vc-annotate
+
+Links mentioned in the video:
+
+- [[http://rubygems.org/gems/rcodetools][rcodetools @ RubyGems.org]]
+- [[http://xiki.org/][Xiki]]
+- [[https://twitter.com/avdi][Avdi Grimm (avdi) on Twitter]]
+- [[https://github.com/avdi][avdi (Avdi Grimm)]]
+- [[http://www.rubytapas.com/][Ruby Tapas | Short Screencasts of Gourmet Ruby]]
+- [[http://devblog.avdi.org/category/emacs-reboot/][Emacs Reboot | Virtuous Code]]
+- [[http://kieranhealy.org/resources/emacs-starter-kit/][An Emacs Starter Kit for the Social Sciences]]
+- [[http://devblog.avdi.org/2012/06/22/use-revision-control-annotation-in-your-editor/][Use revision control annotation in your editor | Virtuous Code]]
 
 Podcast: [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Play in new window]] | [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Download]]
+
+** Transcript: Coming Soon
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"

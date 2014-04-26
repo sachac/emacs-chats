@@ -1,0 +1,38 @@
+/* Menu */
+body .top-bar {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  /* background: #0088cc; */
+  /* background: #900; */
+  /* border-bottom: 1px solid #004466; */
+  background: #fff;
+  border-bottom: 1px solid #ccc
+}
+body .top-bar .links {
+    margin: 0 auto;
+    width: 70%;
+}
+body #content {
+  margin-top: 70px;
+}
+
+/* Footer */
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 0px;
+    text-decoration: none;
+    color: #000000;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {
+    background-color: rgba(135, 135, 135, 0.50);
+}

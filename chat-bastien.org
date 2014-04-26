@@ -1,14 +1,16 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Bastien Guerry & Sacha Chua
 #+DATE: <2014-04-25 Fri>
 
 [[http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/][Source]]
 
-* Emacs Chat: Bastien Guerry & Sach Chua
+* Chat with Bastien Guerry about Gnus & hacking Org
 
 In this chat, Bastien tells stories about getting started in Emacs,
 reading his mail/news/blogs in Gnus, and hacking his life with Org. =)
 Enjoy!
+
+** Audio and Video
 
 #+BEGIN_HTML
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fnk0TJC7iJI" frameborder="0" allowfullscreen></iframe>
@@ -426,6 +428,9 @@ I'm a Vim user and I've been impressed by the rectangle and the visual rectangle
 *Sacha:* All right. Thank you. Bye.
 
 *Bastien:* Bye Sacha.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
+
 ** Comments
 
 #+BEGIN_HTML

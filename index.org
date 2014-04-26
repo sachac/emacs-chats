@@ -1,4 +1,4 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Conversations about an awesome text editor
 #+DATE: <2014-04-25 Fri>
 

@@ -1,4 +1,4 @@
-#+SETUPFILE: setup.org
+#+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Magnar Sveen (Emacs Rocks) & Sacha Chua
 #+DATE: <2014-04-25 Fri>
 
@@ -52,13 +52,13 @@ Here are the timed notes from my chat with Magnar Sveen, the creator of the
 | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=37m40s][37m40s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=37m40s][evil-mode]]                                            |
 | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=40m00s][40m00s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=40m00s][Feedback on Emacs Rocks]]                              |
 | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=42m00s][42m00s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=42m00s][Growing to appreciate Emacs because of extensibility]] |
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=43m15s][43m15s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=43m15s][The giraffe book]] |
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=44m57s][44m57s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=44m57s][Getting code into core]] |
-| [[http://www.youtube.com/watch?v%3D87tjF_mYvpE&t%3D49m39][49m39s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=49m39][Emacs koans?]] |
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=51m45s][51m45s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=51m45s][IRC bot]]|
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=52m50s][52m50s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=52m50s][Learning from other people in the office]] |
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=54m40s][54m40s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=54m40s][Other questions]] |
-| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=56m23s][56m23s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=56m23s][Board game recommendations]] |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=43m15s][43m15s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=43m15s][The giraffe book]]                                     |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=44m57s][44m57s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=44m57s][Getting code into core]]                               |
+| [[http://www.youtube.com/watch?v%3D87tjF_mYvpE&t%3D49m39][49m39s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=49m39][Emacs koans?]]                                         |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=51m45s][51m45s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=51m45s][IRC bot]]                                              |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=52m50s][52m50s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=52m50s][Learning from other people in the office]]             |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=54m40s][54m40s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=54m40s][Other questions]]                                      |
+| [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=56m23s][56m23s]] | [[http://www.youtube.com/watch?v=87tjF_mYvpE&t=56m23s][Board game recommendations]]                           |
 
 Check out [[http://sachachua.com/blog/emacs-chat][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
 
@@ -687,3 +687,5 @@ Again, thank you very much and I'll turn the video [inaudible] and I'll post it 
 *Sacha:* All right, see you around.
 
 *Magnar:* See you.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
