@@ -3,9 +3,7 @@
 (require 'ox-publish)
 (require 'htmlize)
 
-(setq make-backup-files nil) ;;rebuilding will otherwise create backup-files
-(setq emacs-chats-dir (file-name-directory (or load-file-name buffer-file-name)))
-(setq org-html-validation-link nil)
+(setq-default buffer-file-coding-system 'utf-8)
 
 (defvar emchat-html-head
 "<link rel=\"stylesheet\" type=\"text/css\" href=\"http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css\"></link>
@@ -26,14 +24,31 @@
 (defvar emchat-postamble "<div class=\"back-to-top\"><a href=\"#top\">Back to top</a> | <a href=\"mailto:sacha@sachachua.com\">E-mail me</a></div><hr>
 <nav clas='links'><a href='/emacs-chats/sitemap.html'>Sitemap</a></nav>")
 
-(defvar emchat-postamble-alternative "<div class='footer'>Copyright 2013 %a (%v HTML).<br>Last updated %C. <br>Built with %c.</div>")
+(defvar emchat-postamble-alternative "<div class='footer'>Copyright 2013-2014 %a (%v HTML) - Creative Commons Attribution License.<br>Last updated %C. <br>Built with %c.</div>")
 
-(setq org-publish-project-alist
-      `(("orgfiles"
-         :base-directory "/Users/plovs/Documents/Chua/emacs-chats"
+(defvar emchat-directory (file-name-directory (or load-file-name buffer-file-name))
+	"Location of files.")
+
+(defun emchat-org-publish-project (project &optional force async)
+	"Override some variables."
+	(let ((buffer-file-coding-system 'utf-8)
+				(select-safe-coding-system-accept-default-p t)
+				make-backup-files org-html-validation-link)
+		(org-publish-project project force async)))
+
+(defun emchat-org-html-publish-to-html (plist filename pub-dir)
+	"Publish without saving backup files."
+	(let ((buffer-file-coding-system 'utf-8)
+				(select-safe-coding-system-accept-default-p t)
+				make-backup-files org-html-validation-link)
+		(org-html-publish-to-html plist filename pub-dir)))
+
+(add-to-list 'org-publish-project-alist
+      `("orgfiles"
+         :base-directory ,emchat-directory
          :base-extension "org"
          :exclude "tasks.org"       ; regexp
-         :publishing-directory "/Users/plovs/Documents/Chua/emacs-chats"
+         :publishing-directory ,emchat-directory
          :publishing-function org-html-publish-to-html
          :recursive t
          :html-head-include-default-style nil
@@ -47,6 +62,6 @@
          :makeindex t
          :with-timestamp t
          :htmlized-source t
-         )
-        ("emchat" :components ("orgfiles"))
-        ))
+         ))
+(add-to-list 'org-publish-project-alist '("emchat" :components ("orgfiles")))
+
