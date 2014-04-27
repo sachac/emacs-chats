@@ -17,11 +17,11 @@
       <li><a id='home' class='replace home-design' href='/emacs-chats/'>Home</a></li>
       <li><a id='index' class='replace show-for-medium-up home-design' href='/emacs-chats/theindex.html'>Index</a></li>
       <li><a id='contact' class='replace home-design' href='http://sachachua.com/blog/contact'>Contact</a></li>
+      <li class=\"right\"><a href='/emacs-chats/sitemap.html'>Sitemap</a></li>
+      <li class=\"right\"><a href=\"https://github.com/sachac/emacs-chats\">Github</a></li>
     </ul></nav></div>")
 
-(defvar emchat-postamble "<div class=\"back-to-top\"><a href=\"#top\">Back to top</a> | <a href=\"mailto:sacha@sachachua.com\">E-mail me</a></div><hr>
-<nav clas='links'><a href='/emacs-chats/sitemap.html'>Sitemap</a></nav>")
-
+(defvar emchat-postamble "<div class=\"back-to-top\"><a href=\"#top\">Back to top</a> | <a href=\"mailto:sacha@sachachua.com\">E-mail me</a></div>")
 (defvar emchat-postamble-alternative "<div class='footer'>Copyright 2013-2014 %a (%v HTML) - Creative Commons Attribution License.<br>Last updated %C. <br>Built with %c.</div>")
 
 (defvar emchat-directory (file-name-directory (or load-file-name buffer-file-name))

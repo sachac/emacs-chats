@@ -26,3 +26,9 @@ Getting to know people who use Emacs
 - [[file:chat-sacha-chua.org][Sacha Chua]]
 - [[file:chat-thomas-kjeldahl-nilsson.org][Thomas Kjeldahl Nilsson]]
 - [[file:chat-tom-marble.org][Tom Marble]]
+
+You can find this site at http://pages.sachachua.com/emacs-chats . Source: http://sachac.github.com/emacs-chats - patches and pull requests much appreciated.
+
+Have a story to share about how you got started with Emacs and what you use it for? Please contact me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]] . Newbies welcome!
+
+Sacha

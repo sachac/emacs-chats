@@ -14,3 +14,5 @@
 .back-to-top:hover {
     background-color: rgba(135, 135, 135, 0.50);
 }
+
+.top-menu .top-bar .links li.right { margin-left: 1rem }
