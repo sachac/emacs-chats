@@ -1,12 +1,11 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Transcript: Emacs chat with John Wiegley
+#+TITLE: Emacs Chat: John Wiegley
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2012/07/transcript-emacs-chat-john-wiegley/
 
 [[http://sachachua.com/blog/2012/07/transcript-emacs-chat-john-wiegley/][Source]]
 
-* Emacs chat with John Wiegley
-
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/44778543" height="375" width="500" allowfullscreen="" frameborder="0"></iframe>
@@ -14,9 +13,9 @@
 
 [[http://vimeo.com/44778543][John Wiegley -- June 26, 2012]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]].
 
-** Transcript
+* Transcript
 
-*** A day in the life of John Wiegley
+** A day in the life of John Wiegley
 
 *Sacha:* One of the things I've always been curious about is all the
 different things that you use Emacs for. You've been one of our role
@@ -160,7 +159,7 @@ you use on your Mac. That's fantastic.
 *Sacha:* Being able to glue all these bits together and make things work...
 That's incredible.
 
-*** On wishlists and Emacs Lisp
+** On wishlists and Emacs Lisp
 
 *Sacha:* What are some of things you wish you could glue together? What's the
 John Wiegley to-code-some-point-in-the-future list?
@@ -203,7 +202,7 @@ Finding ways to hook parts of Emacs into all the different parts of
 Emacs... It's great to see so many people playing around with these
 ideas.
 
-*** The Emacs community
+** The Emacs community
 
 *John:* It's a great community. It's a good culture around Emacs.
 
@@ -246,7 +245,7 @@ Rails will let you open up classes, redefine functions, and then
 continue on with your work. The extensibility built into the very
 language is very very helpful. It also can be very intimidating.
 
-*** Learning Emacs
+** Learning Emacs
 
 *Sacha:* We've talked about this before. You're maybe one of a few Emacs users
 over there. I'll on occasion run into someone who's curious about Emacs
@@ -309,7 +308,7 @@ everything else.
 *Sacha:* If you ever get around to doing annotated source code, I'd definitely
 read that.
 
-*** Making money with Emacs
+** Making money with Emacs
 
 *Sacha:* I hear you're kinda on the hook for eshell documentation or whatever
 else people would like you to write.
@@ -352,7 +351,7 @@ documentation?” Do we have that?
 
 *Sacha:* That would be cool.
 
-*** New users and Emacs happiness
+** New users and Emacs happiness
 
 *Sacha:* You've been an awesomely prolific Emacs Lisp programmer, so it would
 be interesting...
@@ -481,7 +480,7 @@ books as well. There's the Org mode book. That might be another way for
 you to do it, right? You write your documentation and you say, here's a
 book that you can buy. But then it's very speculative work, I suppose.
 
-*** Back to earning
+** Back to earning
 
 *Sacha:* Speaking of other things that integrate into Emacs... Thank you for
 writing Ledger, by the way, because I still run all my finances with it.
@@ -525,7 +524,7 @@ famous.
 *John:* Yeah, seriously... Wow. Just propose that idea on the mailing list
 and see what a flamewar that would begin.
 
-*** The developer community
+** The developer community
 
 *Sacha:* But it is very nice to be able to play around with all these
 packages, and there are thousands... A lot of them will go and look for
@@ -589,7 +588,7 @@ this interesting command over here,” who knows what it'll spark?
 
 *John:* There's too much good stuff.
 
-*** More tips for new people
+** More tips for new people
 
 *Sacha:* So you recommend that if people are new, they should check out the
 IRC channel, EmacsWiki...
@@ -622,7 +621,7 @@ in Gnus into a virtual group, so I'm never aware of the actual source of
 any feed, I just get presented with one group that has all the current
 happenings in Emacs.
 
-*** Emacs blogs and reading with Gnus %2B Gwene
+** Emacs blogs and reading with Gnus %2B Gwene
 
 *Sacha:* Someday we should totally get your OPML and cross-reference it with
 everything that's syndicated there.
@@ -654,7 +653,7 @@ and some have CAPTCHAs... It would be tough. I really thank Lars for
 setting that server up, because it allows me to digest a lot of news
 about Emacs in a very short period of time each day.
 
-*** Dealing with data overload
+** Dealing with data overload
 
 *Sacha:* What are some of your other
 massive-amounts-of-information-how-do-I-deal-with-this tips?
@@ -752,7 +751,7 @@ indexing, disabling, etc.
 glimpse of your Emacs org file where you were listing all these things
 you were learning about Emacs, and that file looked really long.
 
-*** Maintaining your information
+** Maintaining your information
 
 *John:* It does require some investment, though. Maintaining structure like
 this requires always weeding and pruning, combing and going through the
@@ -788,7 +787,7 @@ browser too slow. But it would be nice to queue it out to a log file or
 a database where it just gives the link, a title, and a synopsis of the
 contents. That would be kinda nice. You're giving me ideas, Sacha.
 
-*** Wrapping up
+** Wrapping up
 
 *Sacha:* So, we'll see it next week, then? Okay. Lots of tips on all these
 different things you can do with Emacs, where to get started, how to
@@ -820,7 +819,5 @@ isn't he? Emacs appreciation cards.
 sometime.
 
 *John:* Have a good night!
-
-(Transcription took me 2:35 for 0:44 of audio.)
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"

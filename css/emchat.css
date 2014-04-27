@@ -12,10 +12,6 @@ body .top-bar {
   background: #fff;
   border-bottom: 1px solid #ccc
 }
-body .top-bar .links {
-    margin: 0 auto;
-    width: 70%;
-}
 body #content {
   margin-top: 70px;
 }

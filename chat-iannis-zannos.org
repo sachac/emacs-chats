@@ -1,17 +1,15 @@
 #+SETUPFILE: setup.inc
 #+TITLE: Emacs Chat: Iannis Zannos – Emacs and SuperCollider
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2014/04/emacs-chat-iannis-zannos-emacs-supercollider/
 
-[[http://sachachua.com/blog/2014/04/emacs-chat-iannis-zannos-emacs-supercollider/][Source]]
-
-* Chat with Iannis Zannos about Emacs and SuperCollider
 #+INDEX: SuperCollider
 
 Emacs! Music! [[https://plus.google.com/114167753587024532473][Iannis Zannos]] shares how Emacs can be used for all sorts of awesomeness with Org Mode and SuperCollider.
 
 Check this [[https://plus.google.com/events/c092ip9f2vv6fhs6tbtid83h1sg][event page]] for details and comments =)
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="//www.youtube.com/embed/0F8aCbC9z3A" height="315" width="560" allowfullscreen="" frameborder="0"></iframe>
@@ -24,7 +22,7 @@ Some of the code mentioned in during the chat:
 #+index: Prelude
 #+INDEX: Org-mode
 
-You just want the audio? Podcast: [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Download]]
+Just want the audio? [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][MP3]]
 
 #+BEGIN_HTML
 <div class="powerpress_player" id="powerpress_player_9160">
@@ -34,6 +32,6 @@ You just want the audio? Podcast: [[http://archive.org/download/EmacsChatIannisZ
 #+END_HTML
 
 
-** Transcript: Coming Soon
+* Transcript: Coming Soon
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"

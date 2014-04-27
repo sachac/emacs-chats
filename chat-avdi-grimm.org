@@ -1,10 +1,8 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
+#+TITLE: Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.)
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2013/03/emacs-chat-with-avdi-grimm-org-mode-ruby-etc/
 
-[[http://sachachua.com/blog/2013/03/emacs-chat-with-avdi-grimm-org-mode-ruby-etc/][Source]]
-
-* Emacs Chat: Avdi Grimm (Org-mode, Ruby, etc.) & Sacha Chua
 #+index: Org-mode
 #+index: Definitions!Org-mode
 
@@ -13,7 +11,7 @@ Thanks to Matthew Darling's comment on [[http://sachachua.com/blog/2013/01/helpi
 Check out my Skype chat with Avdi about Org-mode literate programming,
 Ruby, and how he got started with Emacs.
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="http://player.vimeo.com/video/60848459?color=FFFFFF" height="326" width="580" allowfullscreen="" frameborder="0"></iframe>
@@ -49,6 +47,6 @@ Links mentioned in the video:
 
 Podcast: [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Play in new window]] | [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Download]]
 
-** Transcript: Coming Soon
+* Transcript: Coming Soon
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"

@@ -1,15 +1,14 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Sacha Chua (with Bastien Guerry)
+#+TITLE: Emacs Chat: Sacha Chua
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2013/07/emacs-chat-sacha-chua-with-bastien-guerry/
 
 [[http://sachachua.com/blog/2013/07/emacs-chat-sacha-chua-with-bastien-guerry/][Source]]
-
-* Emacs Chat: Sacha Chua (with Bastien Guerry)
 
 After I [[http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/][chatted with Bastien Guerry about Emacs]], he asked me if he could interview me
 for the same series. =) So here it is!
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="//www.youtube-nocookie.com/embed/_Ro7VpzQNO4" height="480" width="640" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
@@ -19,7 +18,7 @@ Just want the audio? [[http://archive.org/details/EmacsChatSachaChuawithBastienG
 
 Podcast: [[https://archive.org/download/EmacsChatSachaChuawithBastienGuerry/Emacs%20Chat%20-%20Sacha%20Chua%20%28with%20Bastien%20Guerry%29.mp3][Play in new window]] | [[https://archive.org/download/EmacsChatSachaChuawithBastienGuerry/Emacs%20Chat%20-%20Sacha%20Chua%20%28with%20Bastien%20Guerry%29.mp3][Download]]
 
-** TRANSCRIPT: Emacs Chat Sacha Chua with Bastien Guerry
+* TRANSCRIPT: Emacs Chat Sacha Chua with Bastien Guerry
 
 *DURATION: 00:44:27*
 

@@ -1,16 +1,11 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Tom Marble & Sacha Chua
+#+TITLE: Emacs Chat: Tom Marble -- Invoicing with Org and LaTeX; Clojure
 #+DATE: <2014-04-25 Fri>
-
-[[http://sachachua.com/blog/2014/04/emacs-chat-tom-marble/][Source]]
-
-* Chat with Tom Marble about Invoicing with org and LateX
-
-Emacs Chat: Tom Marble -- Invoicing with Org and LaTeX; Clojure
+#+PROPERTY: DISQUS http://sachachua.com/blog/2014/04/emacs-chat-tom-marble/
 
 Guest: [[https://plus.google.com/105460652849985930855][Tom Marble]]
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="//www.youtube.com/embed/-6bpx-6zyOI" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -43,6 +38,6 @@ Podcast: [[http://archive.org/download/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.
 Want just the audio? [[https://archive.org/details/EmacsChatTomMarble][Get it from archive.org]]: [[https://ia902502.us.archive.org/16/items/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3][MP3]]
 
 
-** Transcript: Coming Soon
+* Transcript: Coming Soon
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"

@@ -1,16 +1,15 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Bastien Guerry & Sacha Chua
+#+TITLE: Emacs Chat: Bastien Guerry
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/
 
 [[http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/][Source]]
-
-* Chat with Bastien Guerry about Gnus & hacking Org
 
 In this chat, Bastien tells stories about getting started in Emacs,
 reading his mail/news/blogs in Gnus, and hacking his life with Org. =)
 Enjoy!
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fnk0TJC7iJI" frameborder="0" allowfullscreen></iframe>
@@ -27,7 +26,7 @@ Want just the audio? You can get MP3s or OGG from [[https://archive.org/details/
 
 Podcast: [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3][Play in new window]] | [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3][Download]]
 
-** Transcript
+* Transcript
 
 *Sacha:* This is Sacha Chua talking with Bastien Guerry about Emacs.
 
@@ -431,25 +430,3 @@ I'm a Vim user and I've been impressed by the rectangle and the visual rectangle
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
 
-** Comments
-
-#+BEGIN_HTML
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_url = 'http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/';
-    var disqus_shortname = 'sachac'; // Required - Replace example with your forum shortname
-    var disqus_identifier = '24857 http://sachachua.com/blog/?p=24857';
-    var disqus_container_id = 'disqus_thread';
-    var disqus_domain = 'disqus.com';
-    var disqus_title = "Emacs Chat: Bastien Guerry";
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-#+END_HTML

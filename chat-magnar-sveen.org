@@ -1,14 +1,11 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Magnar Sveen (Emacs Rocks) & Sacha Chua
+#+TITLE: Emacs Chat: Magnar Sveen (Emacs Rocks)
 #+DATE: <2014-04-25 Fri>
-
-[[http://sachachua.com/blog/2013/11/emacs-chat-magnar-sveen-emacs-rocks/][Source]]
-
-* Emacs Chat: Magnar Sveen (Emacs Rocks) & Sacha Chua
+#+PROPERTY: DISQUS http://sachachua.com/blog/2013/11/emacs-chat-magnar-sveen-emacs-rocks/
 
 Here are the notes from my chat with Magnar Sveen, the creator of the [[http://emacsrocks.com/][Emacs Rocks screencast series]] and a number of other great Emacs resources. Enjoy!
 
-** [[http://sachachua.com/blog/2013/11/emacs-chat-magnar-sveen-emacs-rocks/][Emacs Chat with Magnar Sveen (Emacs Rocks)]]
+* Audio and video
 
 #+BEGIN_HTML
 <iframe src="//www.youtube-nocookie.com/embed/87tjF_mYvpE" height="360" width="640" allowfullscreen="" frameborder="0"></iframe>

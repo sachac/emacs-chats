@@ -1,14 +1,13 @@
 #+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Jānis Mancēvičs & Sacha Chua
+#+TITLE: Emacs Chat: Jānis Mancēvičs - Org and literate programming
 #+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2014/04/emacs-chat-janis-mancevics/
 
 [[http://sachachua.com/blog/2014/04/emacs-chat-janis-mancevics/][Source]]
 
-* Emacs Chat: Jānis Mancēvičs & Sacha Chua
-
 Chatting with [[https://plus.google.com/u/0/114888672958382153886][Jānis Mancēvičs]] about literate programming, Unity game development, and code folding.
 
-** Audio and Video
+* Audio and Video
 
 #+BEGIN_HTML
 <iframe src="//www.youtube.com/embed/HOy4h0a_0TI?list=UUlT2UAbC6j7TqOWurVhkuHQ" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -27,6 +26,6 @@ Want just the audio? [[https://archive.org/details/EmacsChatJanisMancevics][Get 
 
 Podcast: [[http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][Play in new window]] | [[http://archive.org/download/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][Download]]
 
-** Transcript: Coming Soon
+* Transcript: Coming Soon
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
