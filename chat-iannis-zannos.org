@@ -32,6 +32,481 @@ Just want the audio? [[http://archive.org/download/EmacsChatIannisZannos/Emacs-C
 #+END_HTML
 
 
-* Transcript: Coming Soon
+* Transcript (not yet reviewed, patches welcome)
+
+Sacha Chua: Hello. I'm Sacha Chua and welcome to another episode of Emacs Chats.
+
+Today we're going to be talking to Iannis Zannos who is going to show us all sorts of cool things involving Emacs, Org Mode, music and other things you might discover from his configuration and from his story.
+
+Iannis, hello! Thanks for joining us.
+
+Iannis: Hello.
+
+Sacha: Tell us a little bit about who you are outside Emacs. What's your life like?
+
+Iannis: Yes. Well, I teach Interactive Arts, main in music, computer music here in Corfu which is an island at the northwestern corner of Greece and at the department of Audio and Visual Arts. I do SuperCollider a lot. Sometimes less and sometimes more, and I teach it. Besides that, I also dabble in other sorts of software like you can say notes processing, [inaudible 0:01:03] ChucK I like a lot and I share it with the students and that's what I do.
+
+Sacha: Okay, you go ahead and tell us a little bit more about whether you've gotten your students successfully using Emacs as well.
+
+Iannis: No.
+
+Sacha: No? Even after you show them all the fun stuff you can do?
+
+Iannis: You know, but it's changing.
+
+Sacha: Okay. When you reached out to me over LinkedIn, you mentioned that you started with MicroEMACS. Tell me a little bit more about how you got into Emacs in the first place and what that's been like for you through the years?
+
+Iannis: Well, that was back in '85 I think. Beginning of '85 and I was just beginning my PhD and together with other couple of friends in Germany in Hamburg - German people and one of them was more of a computer geek and he said, "Well, this is a cool thing called Atari and it's more accessible to map" which is a lot.
+
+We got Excels and very soon, MicroEmacs was out on it and I was very happy to have it as an editor. I started doing macro programming on MicroEmacs [inaudible 0:02:31].
+
+Sacha: Wow.
+
+Iannis: Then there was another guy who [inaudible 0:02:35] is now doing his ecology [inaudible 0:02:39] who was into Lisp like me. So we got some Lisp and scheme interpreters - whatever it was - and started practicing on that. Just 1MB of RAM and 1MB of floppy disks, and you can do all sorts of magic with that.
+
+Sacha: It's really old school.
+
+Iannis: Yes. A lot with that.
+
+I also build an APL interpreter and I programmed most system for transcribing, notating, printing and analyzing music on this little thing. Thinking back, [inaudible 0:03:19] languages. I just don't know how I did that. It wasn't even the topic over my PhD thesis but I used it for the PhD thesis. All my tablets were printed on it. Many tablets, hundreds of pages.
+
+Sacha: So you're no stranger to this making tools for yourself especially using [inaudible 0:03:40]?
+
+Iannis: I like it very much.
+
+Sacha: But you mentioned you had wondered away from Emacs for a while. How did that work out? Or do you always use Emacs [inaudible 0:03:54]?
+
+Iannis: For my next studies, I have a lot of work on Symbolics Lisp machine for three years and I was using [inaudible 0:04:04], and that was way cool. It's true. The myth that this is maybe the most advanced machine ever built. From one perspective, it's true, I think. It's very strange thing to experience.
+
+At the same time we have the Apollo Unix workstation, [inaudible 0:04:24] in my program from that and used it. I play also those very early pre-web online games with programming and I mentioned it because it [inaudible 0:04:39] me a lot. It was Star Trek. That was Star Trek and some undergrad university students have installed it somewhere in the east United States. I was sitting in the [inaudible 0:04:54] the Pacific there, and logging in, and playing that. It was very interesting experience because it had no graphical interface but with the text, you could program your own bots inside the game.
+
+That probably was a major experience for me because I got the idea that you can program bots to do music. I've been thinking about programming languages of music for a while before that even but that was the first time to see it actually happen. A game like music with other people all together, program your own tools, and let them like little machines like bots and they make music.
+
+I think it really set my frame of mind, I would say.
+
+Sacha: How do you [inaudible 0:05:51] experimenting with that?
+
+Iannis: We also had a Mac there, one of the more bigger ones at the lab and I was using it exclusively and after that, I went away and we only have Macs and there was no Emacs. Not many good Emacs. So, I was away for 10 or 15 years.
+
+Sacha: That's a long time.
+
+Iannis: Until my colleague Aries told me, as I said, 2007, "There is this cool thing, Org Mode out now" and that was it. It was a reason for coming back.
+
+Sacha: Wow and you're going to be showing us some of the cool things you're doing with Org and music.
+
+But I just wanted to ask when you started thinking about bots that make music, did you already start coding that or is that something that you have been exploring more recently with Org?
+
+Iannis: No. That was already part of that piece I was writing at the moment. The '93, very early. It took a while to mature.
+
+Sacha: All right. So that's how you got into Emacs. You started a long time ago with MicroEmacs and then you just got going with it. Unfortunately, though it wasn't really available at Mac but eventually you found out that Org Mode and Emacs on the Mac and here we are.
+
+Iannis: Yes. OS X being Unix which is good.
+
+Sacha: I want to jump into that lovely demo that you've started showing me the other day. Do you want to share your screen and show us the cool stuff you are working on?
+
+Iannis: This is what SuperCollider [inaudible 0:07:47].
+
+Sacha: Let me jump in here.
+
+By the way, if people have questions, you can use the Q&A link that you saw on the screen and then you start watching the video to ask questions. You can also ask in the Emacs chat channels, Emacs-chat on IRC.
+
+All right, take it away Iannis.
+
+Iannis: Okay. Normally what one does to make a sound or something like “a = {signosc.ar()” got autocomplete as you see and you write down the frequency and the phase, and the amlitude, and the play, and that's already a shortcut in a way considering the old-style SuperCollider. Then you get a sound and then you go “a.free” and you can free the sound or you can say, to start again it's got to go there. You get sound again and you can say, [inaudible 0:08:56] alternative syntax, maybe five seconds and now you got a fast-second release.
+
+This is the starting situation and I was interested in improving on it. Instead of having to write it here and access it later like this, I can use this which is called the “ChucK operator” which comes with the ChucK, a program language programmed by [inaudible 0:09:32] who is now in Stanford and he did it while he was in Princeton.
+
+It's already been taking out by [inaudible 0:09:41] SuperCollider but I found it quite interesting. The cool thing about it is that you can go write something like this and stop it. [inaudible 0:09:58] in SuperCollider and maybe a different one but I start two of them.
+
+Sacha: I see.
+
+Iannis: I can stop the last one that was ChucKed while the other one would continue. There, I could stop it by putting like this.
+
+Okay and looking to even shorter like with this one and use a special shortcut, one doesn't even have to write anything here. Then one can play.
+
+Sacha: I see because it's randomized.
+
+Iannis: This is what I'm looking at.
+
+Then move through the different snippets in the document which is not even the standard SuperCollider IDE. It usually needs the sounds of Collider IDE. You have to wrap your code in parenthesis here and then you have to go there with your mouse, and click, and try the special command, and then you can execute the whole code. But with this piece here, you can actually execute it once. Now, this is going to be a little bit dramatic.
+
+You get 10 bells together and then you [inaudible 0:12:18] and something even more disturbing than that.
+
+Sacha: Wow.
+
+Iannis: [inaudible 0:12:49], I guess. [inaudible 0:12:57].
+
+Now, this is something that I did almost exactly one month ago while I was still developing this and trying to do in all the other ideas. This is just an older kind part of it, not even the main meal.
+
+The main part is the SuperCollider-Org Mode integration.
+
+Sacha: You said you started working on this a month ago?
+
+Iannis: In the late January. The third major in duration. The first one was in 2003 and lasted on and off until 2006m and then there was another in midways around 2008-2010, and this is the third major duration. All the ideas and experience has accumulated.
+
+Sacha: I see.
+
+Iannis: I didn't even intend this to happen. I was just so inspired by ChucK which I like very much and I respect a lot and then I started to see the limits of both pieces of software - SuperCollider and ChucK. This notice in it gave me the idea to try a few things and see how far I could go. That's how I came about.
+
+Sacha: Naturally, you use Emacs because...
+
+Iannis: Yes. You can't do all of this without Emacs and Org Mode. No way you can program all these shortcuts and especially get the snippets, navigate with different parts of code.
+
+Sacha: Okay. Show us that part.
+
+Iannis: Let's see what are we going to do which may be this one. Here we are.
+
+One can play either a headline or the code. Here is the code and here is the headline. To play the headline, you just write this "!". This is going to be a short verse fast walkthrough and it's not working. Interesting.
+
+Sacha: As it always happen.
+
+Iannis: Interesting.
+
+Sacha: Here we are.
+
+Iannis: [inaudible 0:16:31]. Now I can play little keys like this.
+
+Then I can open and [inaudible 0:17:03] and I can even set the fade out time. At this point it should be around 50 per second, so it's very fast. [inaudible 0:17:30].
+
+Sacha: [inaudible 0:17:32] window.
+
+Is there another window that you have open that we don't see?
+
+Iannis: No, this is just one.
+
+Sacha: Okay, all right.
+
+Iannis: I'm typing “5” on the window itself and it responds [inaudible 0:17:52] nine-second fade off for example and it goes on. I get [inaudible 0:18:00] so I can control. This is going to get more interesting when I have more controls.
+
+Sacha: Sorry, is that Nav in “SnippetDemo01.org”? Or is there somewhere else?
+
+Iannis: No. This is not Emacs. This is SuperCollider user interface.
+
+Sacha: I see, okay.
+
+Iannis: So I can make it faster and more controls also appear at [inaudible 0:18:31].
+
+The next thing is to work with patterns which are sometimes difficult. [inaudible 0:18:38] sometimes complicated. To me it's easier to replace marks of patterns, inside patterns. Works in the strings typically sets the patterns which is something that was already achieved almost 10 years ago by major part of [inaudible 0:18:59], as major part of Collider by [inaudible 0:19:02] and it's called Jiggle it [inaudible 0:19:06].
+
+I've been thinking for a while of alternative approaches to this. That took me about three years on and off - not all the time to find the right approach for that. In fact I've been thinking even longer before that. It's how to achieve similar stuff. I think this time I have the right path.
+
+Let's listen to a pattern.
+
+Sacha: Yes.
+
+Iannis: Then next one, make it a little faster, a little bit louder. I can control the instrument and the duration independently. Here is the duration. So it's 1/10 of a second. Or I can change the pattern and see the time. We have two tones, four tones and [inaudible 0:21:03] next one which is a bit oriental. It would be interesting to try out the fade feature. Say, five seconds of fade time.
+
+Because I'm controlling a single parameter, you got the free. [inaudible 0:21:44] and I get the fade when I get to the next pattern which is this one. Now it's going to get dense. [inaudible 0:23:44] which is fun.
+
+Sacha: Okay.
+
+Iannis: And fade out I guess.
+
+Sacha: You can step through it and Org lets you label the patterns to make it more meaningful, I guess?
+
+Iannis: Yes.
+
+Sacha: You mentioned you swoop jump around as well. You didn't show us that but how do you do that?
+
+Iannis: Just the easiest one stop way to go through a file but it's not the only one I use. There's a lot quite a few others. You just type what you want to find. It's interesting if you want to work with code files which I can also show the other tools which I guess maybe what I'm using.
+
+For example, either open the latest file. We are in Org Mode anyway so this is not going to work. Or use a project file and I can go “PatternSynth”. I'm going to code and I can swoop through it. That's what I do several times a minute when I want to find the next method that I remember.
+
+Here we are. There is no new patterns but that's an exception. Now I can use the open late files so I can go something like this. Open them on recent file and choose another one, “Tree”. There we are and now it says “Tree”.Here I will probably find a new. There you go.
+
+Sacha: It's like an interactive occur.
+
+Iannis: It is occur. That's a Japanese guy, I don't know his name. It's an addition on [inaudible 0:27:15]. Of course there is a classic occur.
+
+Sacha: But swoop is much faster because you can see it right away.
+
+Iannis: It is faster. I prefer it. If you noticed, I also used a vertical [inaudible 0:27:33] which I discovered very recently and I think it's better. [inaudible 0:27:42] of those other one.
+
+Sacha: Yes. I learned about it through - I think it was Bastien's Emacs chat also or one of those.
+
+There are all sorts of interesting conveniences in Emacs packages that it's hard to come across because there's so many packages now.
+
+Actually, would you mind taking us through some of your configuration file and sharing any useful tips that you've talked about?
+
+Iannis: It's also [inaudible 0:28:05] same place that is where [inaudible 0:28:11] is. I use bookmarks for that. “Iani” is my configuration file and then I use also projectile. I'm right now automatically at that project so I can go find my init or startup init. This is the mother of all.
+
+This is file-name-directory of this file itself and this is loaded by prelude automatically anyway, and it looks for my custom old file under my name, my username. Then I get to the username file and this is it.
+
+Well, this isn't really lots of going off with this Guru mode. I don't know who did this Guru mode.
+
+Sacha: That's the one that forces you to use C-f or C-b, or things like that, right?
+
+Iannis: It certainly does it away with Org Mode because you needed to move through hierarchies all the time - things like that, the cursor keys so it doesn't work. Then “visible bell instead of beep”, and then “blink cursor”. On that I don't use my color theme.
+
+Sacha: When you have disabled - there's a tag there, does it automatically skip tangling it or do you also add that?
+
+Iannis: No. I just wrote it.
+
+Sacha: Okay. So the disable doesn't have anything.
+
+Iannis: Instead of writing “emacs lisp”, I write “elisp” and that's it.
+
+Sacha: I see.
+
+Iannis: It's a way to debug actually and for a while, in the beginning it didn't look like it was more pretty. I was also used to writing pretty neat files by using Org Mode. Then I was a bit suspicious about this and I'm trying to be [inaudible 0:30:42] and after several months of using Org Babel for init file, I still have my [inaudible 0:30:58]. But then something happened which consolidated it and that was something strange, broke inside the init file. I could use something like a tangled buffer - I think it's called, Org tangle buffer or something like that to recompile until I found the very block that was from. It actually stops. It goes with a cursor at the place where the block fails.
+
+This, you don't get when you compile a buffer. I think I've got something over 50 middle blocks here, 60, 70 blocks. It's quite a long file and it would have been two hours instead of 15 minutes if I didn't do it in Org Mode Babel.
+
+That absolutely convinced me that this is the way to go. I could go through and it would stop exactly where it had the problem. There is no question, Org Babel is the way to go especially for init files.
+
+Sacha: Yes. I searched over because I love the way that you could organize your init file into hierarchy because I have problems before where I would write a snippet and I would go to put it in my config file and I would realize it's actually already there because I completely forgotten about the code. But because it's on an outline, I know where things are.
+
+Iannis: Yes. The outline definitely is a virtue but you could do it in a more - if you are very well-disciplined as encoder, you can write a very beautiful Emacs Lisp init file too. Besides, there are couple of those inverted Org users inside of Emacs. I don't remember the names now but you're probably aware of them. There are some ways to reduce the version of Org Mode, organizing mode, or some mixture they're off inside your Emacs Lisp and then for a while I said, "Why not go there?" But I think besides the organization, is the debugging that's absolutely the killer alternate for using Org Mode.
+
+Sacha: I'm going to get into that more. I have to learn more about how to take advantage of Org Mode for debugging.
+
+You mentioned when you tangle, it will tell you which block is [inaudible 0:33:58].
+
+Iannis: Yes. “org-babel-tangle-file” or just “tangle”. I don't remember.
+
+Sacha: Cool.
+
+Iannis: I only did it once but it's something probably 10 minutes.
+
+Sacha: Excellent.
+
+Iannis: ...to do those.
+
+Sacha: You've got internationalization, font size...
+
+Iannis: Yes. I did this just for this here in 10 minutes after our initial talk. This is nothing. You can do it so fast and so nice.
+
+Let's go on. “Maximize/toggle frame”, I also did very recently. That's nice over its sentence I needed a lot for [inaudible 0:34:53].
+
+Time stamp is nice too for making notes when you do have an idea. You got the time stamp there.
+
+Sacha: This is for taking notes and things that are not Org files, I'm guessing?
+
+Iannis: No. This is to insert the time stamp when you want to insert it. Auto-update the time stamp. Not just [inaudible 0:35:17] automatically you can make your code and it inserts the time stamp when you create a new Org heading but this is just to you create one. If I update it now, it is 17:35. I can update the time stamp, just for taking notes for knowing when you have your idea.
+
+Sacha: Okay. So you don't use Org Capture?
+
+Iannis: I have my Org Capture now. I use it for more than a year or year and-a-half. I have this enormous Capture template complicated several files and it got out of hand and I stopped using it. Now I've written my Org Capture which is here. We can use swoop to find it. Here it is.
+
+Sacha: I see.
+
+Iannis: It's a quick hack. It's [inaudible 0:36:19] but it doesn't matter. But it works perfectly because it's a one-stop thing here.
+
+Sacha: Yes, that works.
+
+Iannis: Tags and here we are. It's in my log and with that tradition, [inaudible 0:36:53] John Wiegley and the others of using a single file. After having made so many other files, I used the many file approach for a while and gotten lost. You're going to know whether this belongs to notes, or to personal, or to-dos, or whatever. Here is one more file and I write everything.
+
+Then like you suggested, also recently in the Emacs Lisp, I saw it just before logging in here. You can use another method to archive your notes somewhere else where they belong.
+
+Sacha: Yes. Org Refile.
+
+Iannis: Yes. You have a central - something like spine chord for that, gone through all notes and then using the distributor things for archiving and organizing [inaudible 0:37:45] without ever losing a main chord.
+
+Sacha: That's true and it takes it faster too getting it out there.
+
+Iannis: Much faster, yes. You have an idea, "Okay, where should I write it? Under home? Or is it under information? Internet? Where should you go?" And you already lost it. It doesn't work.
+
+Sacha: Yes, it may not work. Cool.
+
+Where were we?
+
+Iannis: We go to File. You can see how it's organized actually like this. It does generic packages. You can go to “Generic Packages”, “el-get”, “Bring elisp up-to-date: dash.el” is very beautiful. Magnar's swings dash.
+
+Sacha: Yes. He talked about it. In chat with Magnar Sven, I think he mentioned dash but I actually haven't dug into it myself. What are some of the things you're taking advantage of in it?
+
+Iannis: Dash, it is for Org publish meta which is that other library that is waiting to be alive. At some point I'm going to restart logging with [inaudible 0:39:12], and that point better be soon - something like next week [inaudible 0:39:18] after having projects several times scrapped over tens of [inaudible 0:39:22] old files, the old scrappy way, it's time to really - and then I'm going to use this Org publish meta for that.
+
+You go to any file and publish to any other file that you want, any group of files.
+
+Sacha: Yes. I did it. I actually mentioned Org publish meta and the Org [inaudible 0:39:42] in this because I [inaudible 0:39:43] how to publish different headings to different files. I'm hoping that's what it's for.
+
+Iannis: It's really something one needs. It works but I haven't really crash tested it or tested it out in the field yet. But it's not something I'm pressing a lot so I can't sort of project that. I find it external public commitment too but I guess it's going to happen soon for me. Then we'll see how it really works. It's going to be [inaudible 0:40:19] more because you probably know these things take some while to mature unless you're a genius. There are geniuses out there.
+
+Personal programs, SuperCollider, this kind of person just be clearly. [inaudible 0:40:41] of James McCarthy started off programming his early tools in Macs and he'd be doing other stuff around in music and it was always of high standard. He has his [inaudible 0:40:56] touch. I think it's more of the exception.
+
+Sacha: Yes.
+
+Iannis: This is something I wanted to show you actually. Do you know about switching windows?
+
+Sacha: I know I should be using Windmove or things like that. I always just end up using C-x o. What is it then?
+
+Iannis: I'm in both windows now so we don't see a difference. I go to another one like this one and now I can switch the position of the window, move between the windows and I can go to another one. Maybe this one, open it so I can move with the cursors. It's something I use over time. I can navigate any way that I want and I can change a position. I need to take another one to show you the position.
+
+Maybe like this and I can switch.
+
+Sacha: That's handy.
+
+Iannis: Yes, very handy. I can switch between phase studio buffers, or switch between windows, or switch the position of the windows. It's something again I'd use five minutes or every minute I have to do this. It's extremely convenient.
+
+Sacha: Which package is that? Switch window?
+
+Iannis: Switch window, yes. Here it is. It's actually a combination. It's two headings here. Here is one switched window.
+
+Sacha: I see.
+
+Iannis: Actually I don't use this. This is what we're going to see. If I go XO - well, I don't use it. I don't need it.
+
+Sacha: Yes because you use Windmove instead.
+
+Iannis: It's too slow. All I have to do is use my cursor keys. Let's go there. I don't use this. I just don't like the...
+
+This is what I use. Windmove and Buffmove. [inaudible 0:43:36] packages. Really, really neat stuff. In here I use a whole [inaudible 0:43:42] “icicles”, “menu”, “auto-complete”, “ido”, “helm”, SuperCollider, [inaudible 0:43:51] window. You need to get your feedback from SuperCollider immediately. It's the same but I do move that and I actually use all those different modes like you saw and it's not too much afterall I might say. Projectile too, perfect. Projectile is wonderful.
+
+You get into the habit of creating a Git directory for every piece of work that you do. You got double benefits. You get the [inaudible 0:44:20] git and you've already got another project and you can switch between projects like this. We are [inaudible 0:44:30] and I can go to “tiny”. There I am. I can move the directory and here I am going to switch back of course.
+
+Sacha: Yes. It's been like [inaudible 0:44:46], I think Magnar talked about projectile. It looks really convenient for finding things.
+
+Iannis: Yes. You don't need the speed bar at all.
+
+Sacha: Yes, cool.
+
+Iannis: You don't need the speed bar and with projectile, helm you're totally covered and a bit of ido.
+
+Sacha: I noticed you use ido, and helm, and icicles.
+
+Iannis: Yes. Although I don't use icicles a lot because it's a bit slow and you need to go to regex to actually search better and so it's not that good. For example let's try it.
+
+For Lisp, it's good. I've got all the variables there. But I don't use it. It doesn't work on SuperCollider which is where I would spend most of my time now and it would be useful if it did so I could shoot between classes, methods and things but you can do that also with SuperCollider itself.
+
+Sacha: Yes, okay. You use ido for commands, I saw smex in there, you have helm for swoop.
+
+Iannis: Yes. Because we're not opened in any else. Now we're back. Icicle, keybindings, lacarte also which I hardly use anymore. Smex is what I think. It's made it nicer. Multiple cursors, I absolutely love, I use it every half hour with encoding.
+
+Sacha: Really?
+
+Iannis: Yes, all the time.
+
+Sacha: Awesome. You have to get the hang of it. I figure I'll get the hang of smartparens and then I'll try to get the hang of multiple cursors, or iedit, or these other modes that require syncing.
+
+Key Chords, is that the special character thing?
+
+Iannis: What's it called? The famous something [inaudible 0:47:19]. Something like whitespace. Again, I can go to this whitespace but I don't use it. I really don't use it.
+
+I will use key chords but I use it for a while like in this case, like this. In Org Mode to make this code.
+
+Sacha: Yes, I see that.
+
+Iannis: That's how I write my documentation. This does take me some time.
+
+Sacha: Okay, I see. It gives you additional keyboard shortcuts?
+
+Iannis: Yes.
+
+Sacha: Cool.
+
+Iannis: That I have to use for highlighting my code in SuperCollider. It's here, you see there's a slight...
+
+Sacha: There are different colors. That's really helpful.
+
+Iannis: Yes.
+
+Sacha: I am so turning a lot in the Emacs Lisp mode.
+
+Iannis: Sorry?
+
+Sacha: I have no idea it existed. This is good. Thank you very much.
+
+Iannis: Welcome.
+
+It works very well both with Emacs Lisp, SuperCollider, and then of course there's paredit for Emacs beautiful, for Lisp. For SuperCollider, it doesn't really work consistently but SuperCollider has something that's like paredit light and I don't know where it is, or who that is, but it works beautifully.
+
+The rest is not so interesting maybe. There we are, SuperCollider, Emacs Lisp, Org-mode, making it work with icicles although I don't use them so much anymore. But Org-Babel, Orgmode latex, Org-reveal, Org-impress, these are very main very important tools, I think. Very important tools.
+
+Sacha: You do a lot of presentations with Emacs?
+
+Iannis: Yes. I try to. I haven't actually used them, I must say. It's something I'm looking forward to and I have to practice them. I'm not yet good with them, not even with LaTeX, it takes all the time. I configured it and I use it for a while, then dropped it but for some point, I think I'm going to research.
+
+One thing that I really use a lot is tables.
+
+Sacha: Spreadsheets or just the table function?
+
+Iannis: I use them for everything – for my project management, for complicated project, budget resolution and for quick calculations, for displays. I [inaudible 0:50:46] for fun, for maths, demonstrating the long integers of Emacs and going within hours of [inaudible 0:50:59] like with the famous Graham's number.
+
+Sacha: Do you have any example you can show?
+
+Iannis: Somewhere.
+
+Sacha: Org tables for fun and profit.
+
+Iannis: Let me have a look. I made it online.
+
+Sacha: That's another thing I want to get into more too. The Org table functionality is really deep and you can do all sorts of things with it. You just have to get the hang of the formulas.
+
+Iannis: Yes. I can't find them. It strayed off.
+
+Sacha: That's cool. That's all right.
+
+Iannis: Also for math numbers. I did it for math numbers and the towers of threes or towers of four. Then greater than in Org Mode from the table and put them on screen, online and you would have to scroll horizontally for the number, for about five minutes and that's something [inaudible 0:52:07] not serious but it's something that you can't do otherwise. Not unless you have got Org Mode in Emacs. It's quite unique, actually. It's more unique than it sounds.
+
+To do that was 10 minutes or 15 minutes at most where you just type C-c, C-e and C-h o, you got HTML file and you can use [inaudible 0:52:38] you're set and that's it. I'm a big fan of tables but Org-reveal, I haven't actually used in real life and the Org Mode latex, not yet really. I think it's going to come this year.
+
+Sacha: I think it's fantastic that since you've been working with Emacs for so long and still there's stuff that you're figuring out, there's things that you think, "Oh, maybe this year I'll finally learn how to do this." The point where your Emacs configuration where you're like, "Oh, I actually don't use this anymore. I have things that I have forgotten about."
+
+Obvious question, how do you keep learning more? Where do you go for ideas, where do you go for - what resources do you find helpful?
+
+Iannis: What do I find helpful?
+
+Sacha: Yes. In terms of learning more about Emacs.
+
+Iannis: Well, Emacs-fu and Orgmode I think is a very good place actually. Really, it's quite central. I'm looking around, looking at how the community develops and I think it's out there. I find it when I'm browsing to find things, I find it all over the place. I think it's [inaudible 0:54:11] future.
+
+Sacha: It is. It's very exciting.
+
+Iannis: I think that's what's changing a little bit in the use of the landscape.
+
+There is John Kitchin of course. You probably know from Carnegie Mellon with chemistry stuff.
+
+Sacha: No, I don't. More people I should talk to.
+
+Iannis: Yes. Professor [inaudible 0:54:42] Chemistry and Material Science. He presented about literate programming in Python conference. Because he doesn't go with Python [inaudible 0:54:54]. It's online, you can find it.
+
+Sacha: Awesome, I'm going to go check it out.
+
+Iannis: John Kitchin. Very impressive. He's got data animation going on inside Org Mode live literally from running Python.
+
+Sacha: Wow.
+
+Iannis: I know. Really very good stuff. The whole team and there's the other people that wrote about literate programming that use it and so many other people are checking over. It's almost like a divide between Markdown and Orgmode but I think Orgmode is very good [inaudible 0:55:42].
+
+It's the one that got me back in Emacs that I believe. That's the one but is now putting Emacs. Org Mode is playing a major role in making Emacs widely used. Well, I searched I know Emacs-fu or there's the Emacs Rocks as the other one is a good blog on Emacs but I don't go there a lot.
+
+Sacha: You're too busy customizing Emacs. You're too busy taking Emacs to go read a lot of things probably or playing with SuperCollider. Yes, when you're doing that, you're learning a lot also.
+
+Iannis: I do everything with Emacs of course except reading email which I haven't gotten around to. But web design, everything, all my organization is around, of course.
+
+Sacha: Yes. Because once you got the two, you can customize. As much as you have, you're writing your own interfaces for SuperCollider and other things like that. It's really hard to use.
+
+I guess maybe you have tips for other people?
+
+Iannis: Is this type of user going to get more? Or is it going to stay a minority? That's a question that's at the back of my mind. Because it can tell me more of a mainstream where you're working or is it just “geeks” so to speak [inaudible 0:57:26] of person that can work with this? I don't know.
+
+Sacha: When I asked in the beginning if you've gotten any of your students playing around with Emacs...
+
+Iannis: Some of them very slowly. And even colleagues, sometimes they say or young colleagues say, "That's the only thing I don't want to hear about."
+
+Sacha: I guess all you can do is keep experimenting, and keep customizing, and keep being smug about what we can do with Emacs and eventually people will be like, "Okay, fine. Tell me how you can start it."
+
+Iannis: I don't feel like I need too much to convince anybody. I'm pretty convinced myself but being so convinced, I just wonder what this frame of mind is for the more broader kind of computer user community. Whether this is going to stay like a small but convinced group or whether this type of thinking is slowly going to be rolled and go to other places too. That's my theoretical question about the future of Emacs.
+
+Sacha: I'm happy to see that especially with Org Mode. Right? It's been expanding beyond the usual base of computer geeks, whatever. We have writers, and musicians, and scientists getting into it just because of Org.
+
+Iannis: The person who did the work for parens is a young guy. I forget his name. [inaudible 0:59:06].
+
+Sacha: Matt Mullenweg?
+
+Iannis: No. It's a German type of name. He's a big Emacs user. He's the co-inventor of WordPress. [inaudible 0:59:20] person.
+
+Sacha: Awesome, cool. It might be a minority now but it does look like a lot of people are coming on and it's always the fascinating community because people are coming over with all sorts of hacks - music, or tables, or all sorts of other things that people are doing.
+
+This is great. Thank you so much for showing people the possibility of what you can do when you customize Emacs a bit more. I like the idea of literate music and it's great to see how you can use it even for performance. You can jump back and forth, you can organize things to make it easier for you.
+
+Iannis: Like you mentioned also, Eric [inaudible 1:00:04] Overtone, Clojure [inaudible 1:00:09].
+
+Sacha: Yes. That's all exciting. I'm looking forward to reaching out to the other people that you mentioned, maybe for this Emacs Chat where you get how other people go with it.
+
+Iannis: Yes. Okay.
+
+Sacha: All right then. Thank you so much and have a great day. I'm going to end the broadcast now. Everyone else, thank you for listening, catch you next time. Bye.
+
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
