@@ -1,57 +1,103 @@
-#+SETUPFILE: setup.inc
-#+TITLE: Emacs Chat: Xah Lee (ErgoEmacs)
-#+DATE: <2014-05-02 Fri>
-#+PROPERTY: DISQUS http://sachachua.com/blog/2014/05/emacs-chat-xah-lee-ergoemacs/
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Emacs Chat: Xah Lee (ErgoEmacs)</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<link rel="stylesheet" type="text/css" href="css/emchat.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="js/emchat.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class="sticky contain-to-grid top-menu"><nav class='top-bar'><ul class='links'>
+      <li><a id='home' class='replace home-design' href='/emacs-chats/'>Home</a></li>
+      <li><a id='index' class='replace show-for-medium-up home-design' href='/emacs-chats/theindex.html'>Index</a></li>
+      <li><a id='contact' class='replace home-design' href='http://sachachua.com/blog/contact'>Contact</a></li>
+      <li class="right"><a href='/emacs-chats/sitemap.html'>Sitemap</a></li> 
+      <li class="right"><a href="https://github.com/sachac/emacs-chats">Github</a></li>
+    </ul></nav></div>
+</div>
+<div id="content">
+<h1 class="title">Emacs Chat: Xah Lee (ErgoEmacs)</h1>
+<p>
+I chatted with <a href="http://ergoemacs.org">Xah Lee</a> about how he got started with Emacs, how he’s customized it, and other tips he can share for people who want to learn more.
+</p>
 
-#+index: ErgoEmacs
-
-I chatted with [[http://ergoemacs.org][Xah Lee]] about how he got started with Emacs, how he’s customized it, and other tips he can share for people who want to learn more.
-
-#+begin_html
 <iframe src="//www.youtube.com/embed/rKPKWqvTImA" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-#+end_html
 
-[[http://archive.org/download/EmacsChatXahLee/Emacs_Chat-Xah_Lee.mp3][Want just the audio? You can download the MP3.]]
+<p>
+<a href="http://archive.org/download/EmacsChatXahLee/Emacs_Chat-Xah_Lee.mp3">Want just the audio? You can download the MP3.</a>
+</p>
 
-* Links
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Links</h2>
+<div class="outline-text-2" id="text-1">
+<ul class="org-ul">
+<li><a href="http://ergoemacs.org">http://ergoemacs.org</a>
+</li>
+<li><a href="https://github.com/xahlee/xah_emacs_init">https://github.com/xahlee/xah_emacs_init</a>
+</li>
+<li><a href="https://www.trulyergonomic.com/store/index.php">https://www.trulyergonomic.com/store/index.php</a>
+</li>
+<li><a href="https://github.com/emacsmirror/mwe-log-commands/blob/master/mwe-log-commands.el">https://github.com/emacsmirror/mwe-log-commands/blob/master/mwe-log-commands.el</a>
+</li>
+</ul>
+</div>
+</div>
 
-- http://ergoemacs.org
-- https://github.com/xahlee/xah_emacs_init
-- https://www.trulyergonomic.com/store/index.php
-- https://github.com/emacsmirror/mwe-log-commands/blob/master/mwe-log-commands.el
-
-* Transcript
-
-*Sacha:* Hello and welcome to another episode of Emacs Chat. Today we
-have Xah Lee from http://ergoemacs.org . He'll tell us lots of
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Transcript</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<b>Sacha:</b> Hello and welcome to another episode of Emacs Chat. Today we
+have Xah Lee from <a href="http://ergoemacs.org">http://ergoemacs.org</a> . He'll tell us lots of
 interesting things about custom keyboards, keybindings, publishing
 with Emacs, and so forth. Xah, hello and thank you so much for joining
 us, and thank you as well for all the work you've been working on for
 Emacs. Before I dive into this whole Emacs thing, tell us a bit about
 your life outside of Emacs. What are you interested in?
+</p>
 
-*Xah:* Okay, I'm a big nerd so I'm interested in math. I want to be
+<p>
+<b>Xah:</b> Okay, I'm a big nerd so I'm interested in math. I want to be
 great in math. Basically math and programming, and that's about it.
+</p>
 
-*Sacha:* Cool. I was looking through your config earlier. It has
+<p>
+<b>Sacha:</b> Cool. I was looking through your config earlier. It has
 lambda symbols and epsilons and all that stuff, so it would be great
 to hear more about you [talking over each other 00:54]
+</p>
 
-*Xah:* Yeah, Unicode. I love those math symbols, yes.
+<p>
+<b>Xah:</b> Yeah, Unicode. I love those math symbols, yes.
+</p>
 
-*Sacha:* So, [coming back to] Emacs. You've been using Emacs for a
+<p>
+<b>Sacha:</b> So, [coming back to] Emacs. You've been using Emacs for a
 really long time, I think. I rememeber running into you when I was
 starting Emacs, years and years ago. What got you interested in Emacs
 in the first place?
+</p>
 
-*Xah:* That's an interesting question. I remember you in 2006. That's
+<p>
+<b>Xah:</b> That's an interesting question. I remember you in 2006. That's
 the first time I saw you. I don't know if you remember but I saw you
 on IRC.
+</p>
 
-*Sacha:* Yeah, I remember that.
+<p>
+<b>Sacha:</b> Yeah, I remember that.
+</p>
 
-*Xah:* I got into Emacs around 1998. That's when I started to do web
-dev. I started to learn Perl actually--Perl and UNIX stuff. I got into
+<p>
+<b>Xah:</b> I got into Emacs around 1998. That's when I started to do web
+dev. I started to learn Perl actually&#x2013;Perl and UNIX stuff. I got into
 Emacs because of UNIX; they are kind of together because Emacs is
 usually on UNIX. It's just fascinating because I'm interested in the
 history of computing, so UNIX is a big, big player there. I just read
@@ -63,19 +109,29 @@ they have GPL manifesto of the Free Software Foundation. I thought,
 "Hmm, this is odd, I don't know what that is". So eventually I learned
 UNIX, and I worked in the web dev ecommerce field. I started to use
 Emacs [around] 1998 almost. {? 02:38}
+</p>
 
-*Sacha:* That's a long time ago.
+<p>
+<b>Sacha:</b> That's a long time ago.
+</p>
 
-*Xah:* Yeah, that was the dot-com days--the good old days.
+<p>
+<b>Xah:</b> Yeah, that was the dot-com days&#x2013;the good old days.
+</p>
 
-*Sacha:* What's kept you interested in Emacs all this time? I can't
+<p>
+<b>Sacha:</b> What's kept you interested in Emacs all this time? I can't
 even do the math any more. What have you liked about it?
+</p>
 
-*Xah:* I guess the geekiness is part of it. It's got the entire
-documentation. Well, they call it the self-documenting... well I'll
+<p>
+<b>Xah:</b> I guess the geekiness is part of it. It's got the entire
+documentation. Well, they call it the self-documenting&#x2026; well I'll
 have to look at the Emacs manual ["the extensible, customizable,
 self-documenting, real-time display editor"]. 
+</p>
 
+<p>
 So, I began by reading the tutorial in Emacs C-h t, like everyone
 else. I would just flow through and read everything. One important
 thing about Emacs is that I love it because it's Lisp. I have
@@ -84,12 +140,16 @@ intelligence and all that computer science stuff. I heard about Lisp.
 It's heavily associated with artificial intelligence, but it's in
 Emacs! So that's why I had a strong attraction. I started learning
 Emacs and I wanted to learn it really well.
+</p>
 
-*Sacha:* You've customized Emacs quite thoroughly. For example, with
+<p>
+<b>Sacha:</b> You've customized Emacs quite thoroughly. For example, with
 ErgoEmacs, what got you interested in changing all the keybindings and
 really changing how Emacs works for you?
+</p>
 
-*Xah:* I started customizing only four or five years ago. The first
+<p>
+<b>Xah:</b> I started customizing only four or five years ago. The first
 five years of Emacs, I pretty much didn't do any customization at all.
 Yeah, that's strange I know. I also didn't even know Lisp. I started
 to learn a little bit of Lisp from 2006, but before that 1998 to 2006
@@ -98,24 +158,34 @@ keys. For the keybinding, I think I started because, back in early
 1994, I started using Dvorak. I know you also use Dvorak. You type so
 fast! Like 117 wpm or something like that, I read. My best speed on
 QWERTY back then was only around 90 wpm.
+</p>
 
-*Sacha:* Which is pretty good, you know. A lot of people would love to
+<p>
+<b>Sacha:</b> Which is pretty good, you know. A lot of people would love to
 be able to type at 90 wpm. If that's how fast you were on QWERTY, how
 fast are you now in Dvorak?
+</p>
 
-*Xah:* Oh, my Dvorak is not very fast. The last time I tested, maybe
+<p>
+<b>Xah:</b> Oh, my Dvorak is not very fast. The last time I tested, maybe
 90 would be the maximum. If I wanted to go beyond 90, I would have to
 practice for a month or so.
+</p>
 
-*Sacha:* When it comes to programming, the bottleneck is not really
+<p>
+<b>Sacha:</b> When it comes to programming, the bottleneck is not really
 typing speed. It's how fast you think, and I'm very slow at that.
-*laughs*
+<b>laughs</b>
+</p>
 
+<p>
 Okay, so you changed keyboard layout. But then you still continued to
-use Emacs with very little customization for eight years... and then what
+use Emacs with very little customization for eight years&#x2026; and then what
 got you interested in learning Lisp and customizing it further?
+</p>
 
-*Xah:* Around 2006, I discovered IRC, I know it's much older than
+<p>
+<b>Xah:</b> Around 2006, I discovered IRC, I know it's much older than
 that, but I didn't use it until 2006. I joined #Emacs IRC group. There
 are a huge amount of things I don't know. When I went onto #emacs IRC,
 I was thinking, "I know all these things, I've been using Emacs for
@@ -123,29 +193,39 @@ five years." But they are just constantly saying things that [make me
 think] "Oh, I didn't know that and that is useful", so that got me
 started learning Lisp. "This is something useful you can do this way."
 So I started to put in my [init?]
+</p>
 
-*Sacha:* [So you were] seeing other people's questions or talking
+<p>
+<b>Sacha:</b> [So you were] seeing other people's questions or talking
 about the functions that people are using. How do you go from
 borrowing small snippets of other people's config to writing a whole
 lot of customizations to really change things around?
+</p>
 
-*Xah:* I guess that happens gradually. Before, I thought, "I don't
+<p>
+<b>Xah:</b> I guess that happens gradually. Before, I thought, "I don't
 want to put stuff in my init[?]". You get into this Emacs mindset.
 It's like a black hole: you're going to spend all your life in it. I
-know I've read people--they customize Emacs this and that--but I was
+know I've read people&#x2013;they customize Emacs this and that&#x2013;but I was
 thinking, "I'm not going to do that. This works for me. Plain Emacs is
 just fine." 
+</p>
 
+<p>
 But beginning in 2006, I started to do that [(customize)]. So it was
 gradual. It began with writing notes. I started my Emacs blog about
-that time too. I wanted to write a lot of math symbols, Unicode...
+that time too. I wanted to write a lot of math symbols, Unicode&#x2026;
 Unicode was not that popular at that time. You have to work out how to
 get Emacs to display that many symbols. So I did that, and I posted it
 on the Web. Small notes began that way, and it just grew larger.
+</p>
 
-*Sacha:* Your blog... how does your blog work?  I think it's just HTML?
+<p>
+<b>Sacha:</b> Your blog&#x2026; how does your blog work?  I think it's just HTML?
+</p>
 
-*Xah:* Yeah, I write raw HTML. Back in the 1990s, I used MS Word, but
+<p>
+<b>Xah:</b> Yeah, I write raw HTML. Back in the 1990s, I used MS Word, but
 I decided to just write raw HTML. Then with Emacs, I still start by
 typing in raw HTML. Then there's the HTML mode that's the default
 basic mode. There are some commands there for inserting various tags.
@@ -154,114 +234,166 @@ to add some other tags it doesn't have. The Unicode for that is pretty
 simple, so I started to write that. Then it just grew. I wanted to
 have it so I could just press a key and delete a tag or find a nested
 tag. It just grew.
+</p>
 
-*Sacha:* You've written hundreds and hundreds of pages about Emacs, so
+<p>
+<b>Sacha:</b> You've written hundreds and hundreds of pages about Emacs, so
 it's quite interesting to go through your archive.
+</p>
 
-*Xah:* Thank you. It's a habit. I got sucked into Emacs.
+<p>
+<b>Xah:</b> Thank you. It's a habit. I got sucked into Emacs.
+</p>
 
-*Sacha:* You're constantly learning about Emacs. What are some of the
+<p>
+<b>Sacha:</b> You're constantly learning about Emacs. What are some of the
 resources you use to learn more? Where do you find all these
 interesting things that you write about?
+</p>
 
-*Xah:* In the past few years, I haven't really read much about other
+<p>
+<b>Xah:</b> In the past few years, I haven't really read much about other
 people's work. Before that I was in the IRC. IRC is very helpful.
-There are other resources like Emacs Wiki--that was very helpful--and
+There are other resources like Emacs Wiki&#x2013;that was very helpful&#x2013;and
 the Emacs manual. The other important resource for me was
 newsgroups. gnu.emacs.help, I think, and before that, comp.emacs. So I
 spent a lot of time there. And also, arguing about Emacs stuff!
+</p>
 
-*Sacha:* Yeah, you're quite a controversial person in the Emacs community.
+<p>
+<b>Sacha:</b> Yeah, you're quite a controversial person in the Emacs community.
+</p>
 
-*Xah:* I know. *laugh* I am sorry.
+<p>
+<b>Xah:</b> I know. <b>laugh</b> I am sorry.
+</p>
 
-*Sacha:* No, no, it's good for some people to have strong opinions
+<p>
+<b>Sacha:</b> No, no, it's good for some people to have strong opinions
 about things because then everyone gets to think about that. One of
 those controversial things that people are curious about is changing
 all these keybindings, and changing how Emacs works. But before we
 dive into that, I was curious about the custom keyboards that you've
 also been playing around with.
+</p>
 
-*Xah:* Yes, I was meaning to show you that. I am using this keyboard
-<holds up keyboard to camera>. It's called, Truly Ergonomic Keyboard.
+<p>
+<b>Xah:</b> Yes, I was meaning to show you that. I am using this keyboard
+&lt;holds up keyboard to camera&gt;. It's called, Truly Ergonomic Keyboard.
 It has mechanical keys. They use Cherry MX Brown. It's totally
-symmetric. This is the new one, the one I have <points camera to a
-similar keyboard on Xah's desktop>--that's the one I'm using. I have a
+symmetric. This is the new one, the one I have &lt;points camera to a
+similar keyboard on Xah's desktop&gt;&#x2013;that's the one I'm using. I have a
 video on Youtube that you can look at where I introduce this keyboard. 
+</p>
 
+<p>
 In the past three years, I've had some problems with RSI. So I looked
 around and tried to find out about keyboards, what's good and bad, and
 tried to improve the situation. I got this free actually, and I love
 it. There's also Kinesis and Maltron. Recently, there's Ergodox. Those
 are great. I like symmetric ones. I used Microsoft 4000 or Microsoft
 Natural before.
+</p>
 
-*Sacha:* There's certainly a lot of innovation going on in keyboard
+<p>
+<b>Sacha:</b> There's certainly a lot of innovation going on in keyboard
 design too. It's great to see people coming up with different designs
 and trying them. I see you are taking advantage of all these differt
 keys in your keyboard bindings, the new [inaudible] keys.
+</p>
 
-*Xah:* It would be great if I could... is there a package where I type
+<p>
+<b>Xah:</b> It would be great if I could&#x2026; is there a package where I type
 something and it shows on the side what keys you type? I know there's
 one they use in vim golf.
+</p>
 
-*Sacha:* I haven't actually looked up one for showing the keystrokes
+<p>
+<b>Sacha:</b> I haven't actually looked up one for showing the keystrokes
 yet. I'm sure someone must have written one.
+</p>
 
-*Xah:* In lots of Emacs tutorial videos, they use that. They show the
+<p>
+<b>Xah:</b> In lots of Emacs tutorial videos, they use that. They show the
 keystrokes.
+</p>
 
-*Sacha:* I'm going to look at list-packages. By the way, if anyone
-listening knows the name of this package, you can use the Q&A to tell
+<p>
+<b>Sacha:</b> I'm going to look at list-packages. By the way, if anyone
+listening knows the name of this package, you can use the Q&amp;A to tell
 us which package that is.
+</p>
 
-*Xah:* I installed it for a while, I think it's vim [inaudible]. I
-know who knows, Phillips, and maybe one of the... you might have
+<p>
+<b>Xah:</b> I installed it for a while, I think it's vim [inaudible]. I
+know who knows, Phillips, and maybe one of the&#x2026; you might have
 interviewed him before. They are all Emacs gods.
+</p>
 
-*Sacha:* You mentioned that you had some interesting things to show
+<p>
+<b>Sacha:</b> You mentioned that you had some interesting things to show
 us. Your config is a very large one, so I guess we don't have to walk
 through the entire thing. I went through it this afternoon and I was
 stealing little bits for my own config. What are some particularly
 interesting ways you've customized Emacs to fit you?
+</p>
 
-*Xah:* I know you were going to ask about init files so I have somme
+<p>
+<b>Xah:</b> I know you were going to ask about init files so I have somme
 things here that I prepared to show you, if we can share screens.
 Great. I want to show you.. most of the time today [inaudible]. I
 spend a lot of time writing blogs. This is my Emacs blog.
+</p>
 
-*Sacha:* Is this your todo list as well?
+<p>
+<b>Sacha:</b> Is this your todo list as well?
+</p>
 
-*Xah:* Yeah, kind of. I commented that out. It's for tomorrow, and the
+<p>
+<b>Xah:</b> Yeah, kind of. I commented that out. It's for tomorrow, and the
 next day, about my Emacs blog. So let's select down and uncomment it.
 In any case, I want to show you these commands. 
+</p>
 
-Say I want to capitalise this <highlights a title> and I call this
-command <title becomes capitalised>. Notice that "for" is not
+<p>
+Say I want to capitalise this &lt;highlights a title&gt; and I call this
+command &lt;title becomes capitalised&gt;. Notice that "for" is not
 capitalised, it capitalises for a title: "for" is not capitalised [in
-titles], "of" and so on. Okay so this one... so I press the key... so
+titles], "of" and so on. Okay so this one&#x2026; so I press the key&#x2026; so
 that command is xah-remove-html-tag {CHECKIT}. I just removed HTML
 tags there, and I press another key to make a list out of it and that
 is "that", lines-to-html-list {CHECKIT}. Stop me or ask me any
 questions, because otherwise, I'm going to go into a monologue.
+</p>
 
-*Sacha:* No, no, I think it's really interesting how you've come up
-with little functions that transform the text. I've been using =M-c= to
+<p>
+<b>Sacha:</b> No, no, I think it's really interesting how you've come up
+with little functions that transform the text. I've been using <code>M-c</code> to
 sentence case a string, but I have to go and fix "for" and all these
 other things. That's great. And obiously the way you've rebound
-=<tab> <backspace>= to do something interesting, that's cool too.
+<code>&lt;tab&gt; &lt;backspace&gt;</code> to do something interesting, that's cool too.
+</p>
 
-*Xah:* How do you know?  How did you know I used =<tab> <backspace>=?
+<p>
+<b>Xah:</b> How do you know?  How did you know I used <code>&lt;tab&gt; &lt;backspace&gt;</code>?
+</p>
 
-*Sacha:* When you did =describe-function=, it shows the keybindings.
+<p>
+<b>Sacha:</b> When you did <code>describe-function</code>, it shows the keybindings.
+</p>
 
-*Xah:* Okay, okay, right.  
+<p>
+<b>Xah:</b> Okay, okay, right.  
+</p>
 
-*Sacha:* So you can cycle through the different ways of formatting the
-lines...
+<p>
+<b>Sacha:</b> So you can cycle through the different ways of formatting the
+lines&#x2026;
+</p>
 
-*Xah:* Most of these commands are also in ErgoEmacs. I've used it for
-several years. David Capello, who joined in contributing that code--he
+<p>
+<b>Xah:</b> Most of these commands are also in ErgoEmacs. I've used it for
+several years. David Capello, who joined in contributing that code&#x2013;he
 made a huge amount of contributions. Before it was just a set of
 global keybindings, it was not a major mode at all. Then David Capello
 made it into a robust major mode. Then last year, about January,
@@ -269,29 +401,43 @@ Matthew took over, and he added a ton of things. So it's really
 fantastic now. Unfortunately though, this keyboard doesn't have big
 Alt keys on both sides so I stopped using the mode. I started to use
 my own, for this keyboard.
+</p>
 
-*Sacha:* Yes, it's funny how the keyboard really influences how we
+<p>
+<b>Sacha:</b> Yes, it's funny how the keyboard really influences how we
 work. One of our viewers says, "Relating to Dvorak and the Truly
 keyboard, the third layer of the Neo layout is really good for
 programming." So more layouts, and more code. Anyway, back to
 Emacs.
+</p>
 
-*Xah:* Where was he, on IRC or something?
+<p>
+<b>Xah:</b> Where was he, on IRC or something?
+</p>
 
-*Sacha:* Oh, people can use the Q&A app to ask questions. I keep an
+<p>
+<b>Sacha:</b> Oh, people can use the Q&amp;A app to ask questions. I keep an
 eye on that and I'll bring their questions up when I see them.
+</p>
 
-*Xah:* If I click on that, it will show?
+<p>
+<b>Xah:</b> If I click on that, it will show?
+</p>
 
-*Sacha:* Not any more, because I've just marked the question as
+<p>
+<b>Sacha:</b> Not any more, because I've just marked the question as
 answered. But yes, that's where it would show up.
+</p>
 
-*Xah:* {reading his notes} What does that mean? I don't know? *laughs*
+<p>
+<b>Xah:</b> {reading his notes} What does that mean? I don't know? <b>laughs</b>
 I write a lot of my own commands, but a lot of these are in other
 packages, or part of Emacs. Whenever you recognize something, mention
-it, and remind me. =clean-white-space= is one of those, it just deletes
-all the double blank lines. Emacs has a similar... 
+it, and remind me. <code>clean-white-space</code> is one of those, it just deletes
+all the double blank lines. Emacs has a similar&#x2026; 
+</p>
 
+<p>
 This is my init, it is on github. Oh, this one is cool! I go to an
 image directory. So this is all images, okay, this is my Truly
 ergonomic layout {image of xah's keyboard} so that's an image. If I
@@ -299,124 +445,194 @@ want to scale it, I press a key and call start-direct-scale-image
 {checkit}, let's say 50%, let's say 20% thumbnail, sharpen, yes. Okay,
 success! Success! Now I call dired-jump to go to the file location,
 and I refresh and you can see it's this one.
+</p>
 
-*Sacha:* So it calls Imagemagick or something like that behind the scenes.
+<p>
+<b>Sacha:</b> So it calls Imagemagick or something like that behind the scenes.
+</p>
 
-*Xah:* Yes. It basically just calls the shell command imagemagick. I
+<p>
+<b>Xah:</b> Yes. It basically just calls the shell command imagemagick. I
 have all this in a tutorial format on my website. If you just search
-"dired scale image" on http://ergoemacs.org , I think you'll find it.
+"dired scale image" on <a href="http://ergoemacs.org">http://ergoemacs.org</a> , I think you'll find it.
+</p>
 
-*Sacha:* It must come in really handy when you're putting screen shots on your blog.
+<p>
+<b>Sacha:</b> It must come in really handy when you're putting screen shots on your blog.
+</p>
 
-*Xah:* Yeah, that's right. I do that all the time. This one... I don't
+<p>
+<b>Xah:</b> Yeah, that's right. I do that all the time. This one&#x2026; I don't
 know if you have seen it, probably. I mean, all these aren't my files,
 I'm just mixing [inaudible] into them. Here is Richard Stallman and
 Julian Assange. Have you seen this?
+</p>
 
-*Sacha:* No.
+<p>
+<b>Sacha:</b> No.
+</p>
 
-*Xah:* This is from last year. I guess Richard Stallman went to the UK
+<p>
+<b>Xah:</b> This is from last year. I guess Richard Stallman went to the UK
 to meet him, so they took a photo together. That's the kind of thing I
 might need to make a scaled version of, or whatever, so I created
 those commands.
+</p>
 
-*Sacha:* And then you use SCP or something like that to copy it over?
+<p>
+<b>Sacha:</b> And then you use SCP or something like that to copy it over?
+</p>
 
-*Xah:* SCP?
+<p>
+<b>Xah:</b> SCP?
+</p>
 
-*Sacha:* Sorry, SSH or rsync to copy the files over?
+<p>
+<b>Sacha:</b> Sorry, SSH or rsync to copy the files over?
+</p>
 
-*Xah:* Yes. This is my Emacs blog, right? So I write it. I can press a
+<p>
+<b>Xah:</b> Yes. This is my Emacs blog, right? So I write it. I can press a
 key to preview it. Right now, it's garbage. Let's say I want to write
-this, use this... fantastic! {things happening on screen}
+this, use this&#x2026; fantastic! {things happening on screen}
+</p>
 
-*Sacha:* I was looking at your config. I saw how you have some code to
+<p>
+<b>Sacha:</b> I was looking at your config. I saw how you have some code to
 translate the corner brackets into mark-up. I was wondering
-because your webpages always have the =Ctrl= and =x= and all those
+because your webpages always have the <code>Ctrl</code> and <code>x</code> and all those
 things individually marked up.
+</p>
 
-*Xah:* Yeah. I want to show you that. So, for example, let's say the
-key is =C-x f= whatever that is, I want to press that so that key is..
+<p>
+<b>Xah:</b> Yeah. I want to show you that. So, for example, let's say the
+key is <code>C-x f</code> whatever that is, I want to press that so that key is..
 "that".
+</p>
 
-*Sacha:* You just insert the Unicode characters into it, and you use all these keybindings to make it easier to wrap the text.
+<p>
+<b>Sacha:</b> You just insert the Unicode characters into it, and you use all these keybindings to make it easier to wrap the text.
+</p>
 
-*Xah:* Yes, for example, this one... I want to press another key. This
+<p>
+<b>Xah:</b> Yes, for example, this one&#x2026; I want to press another key. This
 becomes formatted into code. I started to use Unicode in my command
 names.
+</p>
 
-*Sacha:* You have all these conversion functions that actually have
+<p>
+<b>Sacha:</b> You have all these conversion functions that actually have
 arrows in their names.
+</p>
 
-*Xah:* Yeah. So, I press another key, and this key gets turned into
+<p>
+<b>Xah:</b> Yeah. So, I press another key, and this key gets turned into
 what you would see on my Emacs blog. {things happenig on screen}
 Let's view in browser, and it became this nicely formatted thing.
+</p>
 
-*Sacha:* I was wondering how you did that. Basically, when I'm writing
+<p>
+<b>Sacha:</b> I was wondering how you did that. Basically, when I'm writing
 my posts, I use org mode. I use the equals sign a lot to say, "okay
 this part here is going to show up in a fixed-width font." You have so
 much more distinction between the different posts because you're using
 Unicode when you write it, and then you [map] it to specific tags.
+</p>
 
-*Xah:* Yeah, I try to use Unicode. Most of these are not that
+<p>
+<b>Xah:</b> Yeah, I try to use Unicode. Most of these are not that
 consistent, like a system. I just built them one by one over the
 years, and I keep changing them.
+</p>
 
-*Sacha:* That's actually something I'm curious about, because a lot of
-people also... We build our config up one by one, but it's hard to
+<p>
+<b>Sacha:</b> That's actually something I'm curious about, because a lot of
+people also&#x2026; We build our config up one by one, but it's hard to
 keep it all organised. I see that you've actually split up your config
 into multiple files, and you've worked on having a consistent
 keybinding approach to it.
+</p>
 
-*Xah:* Yeah, my config... Mostly I'm the only one who uses it, so I
+<p>
+<b>Xah:</b> Yeah, my config&#x2026; Mostly I'm the only one who uses it, so I
 change keybindings almost every week.
+</p>
 
-*Sacha:* Really?  Wow!
+<p>
+<b>Sacha:</b> Really?  Wow!
+</p>
 
-*Xah:* I have to think about if something is 0.0001% more efficient,
+<p>
+<b>Xah:</b> I have to think about if something is 0.0001% more efficient,
 then I must change to that.
+</p>
 
-*Sacha:* I have a hard time remembering the keybindings I set. I'm
-trying to use =M-SPC= for =ace-jump-mode= and it's still hard to get used
+<p>
+<b>Sacha:</b> I have a hard time remembering the keybindings I set. I'm
+trying to use <code>M-SPC</code> for <code>ace-jump-mode</code> and it's still hard to get used
 to it. And that's only one key binding! You're changing a lot more.
+</p>
 
-*Xah:* I almost use none of the default keybindings. The only ones I
-use are the four arrow keys and =F1= and =C-h=. That's about it. Okay, also
-=Page Up= and =Page Down=. Everything else is my own choice.
+<p>
+<b>Xah:</b> I almost use none of the default keybindings. The only ones I
+use are the four arrow keys and <code>F1</code> and <code>C-h</code>. That's about it. Okay, also
+<code>Page Up</code> and <code>Page Down</code>. Everything else is my own choice.
+</p>
 
-*Sacha:* So how do you practice using the keys for things you use less
+<p>
+<b>Sacha:</b> So how do you practice using the keys for things you use less
 frequently, and what happens when you sit down to use somebody else's
 Emacs?
+</p>
 
-*Xah:* Oh I freeze, like, I don't know what to do. If you take out my
+<p>
+<b>Xah:</b> Oh I freeze, like, I don't know what to do. If you take out my
 keybindings, it's like I'm starting to use Wordpad. So, you have to
 give me ten or fifteen minutes to set up my keybindings. I don't know
 how that would work out if you were working in a company.
+</p>
 
-*Sacha:* Mark (inaudible) says, you can use =mwe-log-commands= . I'm
+<p>
+<b>Sacha:</b> Mark (inaudible) says, you can use <code>mwe-log-commands</code> . I'm
 guessing that's a package, or maybe it's built in. That shows keys and
 commands as they're typed.
+</p>
 
-*Xah:* That's not default, right?  That's a package?
+<p>
+<b>Xah:</b> That's not default, right?  That's a package?
+</p>
 
-*Sacha:* Oh, for me it's =mwe:log-keyboard-commands=.  Hang on a sec...
+<p>
+<b>Sacha:</b> Oh, for me it's <code>mwe:log-keyboard-commands</code>.  Hang on a sec&#x2026;
+</p>
 
-*Xah:* I saw it in =list-packages=.
+<p>
+<b>Xah:</b> I saw it in <code>list-packages</code>.
+</p>
 
-*Sacha:* Okay, so it /is/ a package.  It says, "log keyboard commands
+<p>
+<b>Sacha:</b> Okay, so it <i>is</i> a package.  It says, "log keyboard commands
 to buffer".  That's cool. I should use that.  That's excellent!
+</p>
 
+<p>
 I really love the fact we have package repositories and MELPA and
-Marmalade--just lists and lists of interesting packages to try.
+Marmalade&#x2013;just lists and lists of interesting packages to try.
+</p>
 
-*Xah:* Yeah, MELPA and Marmalade... So many. It's fantastic.
+<p>
+<b>Xah:</b> Yeah, MELPA and Marmalade&#x2026; So many. It's fantastic.
+</p>
 
-*Sacha:* So, you've extensively customized your keyboard shertcuts but
+<p>
+<b>Sacha:</b> So, you've extensively customized your keyboard shertcuts but
  even then you keep changing them, and somehow you just remember
  everything. 
+</p>
 
-*Xah:* Yeah, it's become an obsession. Even for me sometimes it's
- painful, because... for example, let's say there are two keys for a
+<p>
+<b>Xah:</b> Yeah, it's become an obsession. Even for me sometimes it's
+ painful, because&#x2026; for example, let's say there are two keys for a
  command, two choices, one involving a Control, and another one that
  involves F1. Let's say you press F8 8 9 sequence. I have to think
  about it, do analysis to see which is really better. Then if I
@@ -427,119 +643,171 @@ Marmalade--just lists and lists of interesting packages to try.
  sometimes not. Sometimes I have to think about where my analysis went
  wrong, or is it just a habit that I can't throw off yet. It's kind of
  like that.
+</p>
 
-*Sacha:* Sometimes I have to unbind the previous keybinding just to
+<p>
+<b>Sacha:</b> Sometimes I have to unbind the previous keybinding just to
  force myself to use the new one.  It's tough changing your habits.
+</p>
 
-*Xah:* Yeah, it is.  I remember when I was learning Dvorak... I was a
+<p>
+<b>Xah:</b> Yeah, it is.  I remember when I was learning Dvorak&#x2026; I was a
  QWERTY typist. It was extremely painful. It took me two months to
  barely be able to type again.  How long did it take you?
+</p>
 
-*Sacha:* It took me about a month of really slow typing, but it was
+<p>
+<b>Sacha:</b> It took me about a month of really slow typing, but it was
  summer so I didn't need to type that much. I could stay in Dvorak
  more often. That was helpful.
+</p>
 
-*Xah:* I see.  Do you still use Dvorak?  Or do you use both?
+<p>
+<b>Xah:</b> I see.  Do you still use Dvorak?  Or do you use both?
+</p>
 
-*Sacha:* I mostly use Dvorak. Even on other people's computers, I'll
+<p>
+<b>Sacha:</b> I mostly use Dvorak. Even on other people's computers, I'll
  use AutoHotkey to change it quickly, so I can type without having to
  think too much. I can still type on QWERTY.  I'm just less happy
  doing it.
+</p>
 
-*Xah:* That's amazing!
+<p>
+<b>Xah:</b> That's amazing!
+</p>
 
-*Sacha:* You lost your [ability to type on QWERTY]?
+<p>
+<b>Sacha:</b> You lost your [ability to type on QWERTY]?
+</p>
 
-*Xah:* I kind of lost it, because I haven't had the need.  Every time
+<p>
+<b>Xah:</b> I kind of lost it, because I haven't had the need.  Every time
  I went to the library in the nineties, I'd have to hunt and peck.
  People must have thought, "That guy doesn't know how to type." 
  Around 2000, sometimes I had to type on other people's keyboards, so I
  picked up a bit of QWERTY again. It was around 30-40 wpm, and
  ever since, it has stayed there.  If you asked me to type QWERTY now,
  it's probably going to be 10 wpm.
+</p>
 
-*Sacha:* For me, it's really dependent on the keyboard I'm using too.
+<p>
+<b>Sacha:</b> For me, it's really dependent on the keyboard I'm using too.
  For example, I'm very used to typing Dvorak on my laptop keyboard, and
  now my desktop keyboard. I was trying to help someone with Emacs
- and he was on a Mac, and he was in QWERTY, *and* he was in evil-mode.
+ and he was on a Mac, and he was in QWERTY, <b>and</b> he was in evil-mode.
  Even though I use vi and I understand the keyboard shortcuts, my brain
  just couldn't handle all those changes all at the same time.
+</p>
 
-*Xah:* You use vim as well?
+<p>
+<b>Xah:</b> You use vim as well?
+</p>
 
-*Sacha:* Sometimes, but very rarely. Most of the time I
+<p>
+<b>Sacha:</b> Sometimes, but very rarely. Most of the time I
  already have Emacs open.  Maybe if I'm SSHed into some place and I'm
  not opening something through TRAMP, then I'll use vim.
+</p>
 
-*Xah:* How is evil mode?
+<p>
+<b>Xah:</b> How is evil mode?
+</p>
 
-*Sacha:* I don't know.  Evil mode is very popular these days because
+<p>
+<b>Sacha:</b> I don't know.  Evil mode is very popular these days because
  people are coming over from vim, and also because people
  like command mode.  Doesn't ErgoEmacs have a command mode?
+</p>
 
-*Xah:* Yeah, I certainly use that.  Matt, he did great work.  Right
- now [ErgoEmacs] is using a new engine, but it's there as well... but
+<p>
+<b>Xah:</b> Yeah, I certainly use that.  Matt, he did great work.  Right
+ now [ErgoEmacs] is using a new engine, but it's there as well&#x2026; but
  you have to ask them what the command is to invoke that, because it
  has evolved over the years.
+</p>
 
-*Sacha:* I'm still in mostly Emacs bindings, except the parts I've
+<p>
+<b>Sacha:</b> I'm still in mostly Emacs bindings, except the parts I've
  changed, and sometimes I can't remember what I've changed.  I've been
- using John Wiegley's =bind-key= package. That lists all your
+ using John Wiegley's <code>bind-key</code> package. That lists all your
  personal keybindings.  Also, it shows you what that keybinding
  replaced, so when you're trying to tell someone else what keys to
  press, then you realise it actually only works for you.
+</p>
 
- It also has a slightly cleaner syntax for keybindings.  You notice it
- no longer has the =kbd= macro around the actual key.  You can tell it
- to override /everything/ that uses that key.
+<p>
+It also has a slightly cleaner syntax for keybindings.  You notice it
+no longer has the <code>kbd</code> macro around the actual key.  You can tell it
+to override <i>everything</i> that uses that key.
+</p>
 
- So, keybindings are one of the things you've customized, and you have
- a lot of these little functions to make your HTML publishing
- easier. Are there any other particularly interesting things you're
- doing with your Emacs?
+<p>
+So, keybindings are one of the things you've customized, and you have
+a lot of these little functions to make your HTML publishing
+easier. Are there any other particularly interesting things you're
+doing with your Emacs?
+</p>
 
-*Xah:* Let me think... no I don't think so.  I remember your video
+<p>
+<b>Xah:</b> Let me think&#x2026; no I don't think so.  I remember your video
  where your guest was chatting about music or something. No, I don't have
  anything like that.
+</p>
 
-*Sacha:* One thing I was going to ask is that you're using tab for a
+<p>
+<b>Sacha:</b> One thing I was going to ask is that you're using tab for a
  lot of your keyboard shortcuts.  Do you still do indenting, or do you
  just not care?
+</p>
 
-*Xah:* I'll show you how my key works.  I stopped using any chord keys
+<p>
+<b>Xah:</b> I'll show you how my key works.  I stopped using any chord keys
  as much as possible.  At one point I didn't even want to use the
  shift key to type anything any more.
+</p>
 
-*Sacha:* I saw!  You have a lot of translates there that use three
+<p>
+<b>Sacha:</b> I saw!  You have a lot of translates there that use three
  characters to type in a shift character.
+</p>
 
-*Xah:* Yeah, I commented it out.  Every time you make a change like
+<p>
+<b>Xah:</b> Yeah, I commented it out.  Every time you make a change like
  that, it's at odds with the normal library.  It gets harder and
  harder.  My binding is already completely unrecognisable.  Anyway, I
  don't use chords. I use key sequences. One of the keys to
- start it--the "lead key", I think that's what evil mode calls it--one
- of the keys to start it is the =menu= key.  =menu= keys are global.
- The other one for me is =tab=. I chose =tab= because you only have so
+ start it&#x2013;the "lead key", I think that's what evil mode calls it&#x2013;one
+ of the keys to start it is the <code>menu</code> key.  <code>menu</code> keys are global.
+ The other one for me is <code>tab</code>. I chose <code>tab</code> because you only have so
  many keys.  Tab is for {demo on screen?} This command just adds
- brackets... menu... I highlight it and press the key, and it becomes
- that.  Then I select this and press a key and it becomes that... So
+ brackets&#x2026; menu&#x2026; I highlight it and press the key, and it becomes
+ that.  Then I select this and press a key and it becomes that&#x2026; So
  now it's ready to be published in HTML.
+</p>
 
-*Sacha:* I should add more Unicode to my blog.  [laugh] You look like
+<p>
+<b>Sacha:</b> I should add more Unicode to my blog.  [laugh] You look like
  you're having too much fun with it.
+</p>
 
-*Xah:* Yeah, it's so much fun.  I haven't really looked into it much,
+<p>
+<b>Xah:</b> Yeah, it's so much fun.  I haven't really looked into it much,
  but I think Emacs is the best Unicode tool to get information or
  whatever.  You can code this command [audio distorted] and it will
  tell you everything about the Unicode.
+</p>
 
-*Sacha:* I remember I came across =C-x 8 RET= and then I was like
+<p>
+<b>Sacha:</b> I remember I came across <code>C-x 8 RET</code> and then I was like
  "holy cow, we have a snowman in here!" 
- So you have your =menu= for global keybindings, and =tab= for
+ So you have your <code>menu</code> for global keybindings, and <code>tab</code> for
  mode-specific ones.  [Xah types the snowman unicode character (☃ hehe)]
  Yeah, there you go, snowman. [laughter]
+</p>
 
-*Xah:*  So =menu= is the lead key for global, and =tab= is for
+<p>
+<b>Xah:</b>  So <code>menu</code> is the lead key for global, and <code>tab</code> is for
  mode-specific. My plan is that every time I use a mode, any
  special command or key in that mode, I pick out what I want to use
  and set my key for that.  All this is not really planned out.
@@ -547,96 +815,142 @@ Marmalade--just lists and lists of interesting packages to try.
  If one day I have to write in a lot of different languages, I don't
  have time to look at that package, and all the keys it uses, and
  decide which ones I want to change.  That's just going to be cc {?}
+</p>
 
-*Sacha:* I guess maybe that's also where you might say, "I'm going to
+<p>
+<b>Sacha:</b> I guess maybe that's also where you might say, "I'm going to
  remap these keybindings to these other keybindings, so that in
- general, anything that's bound to this..."
+ general, anything that's bound to this&#x2026;"
+</p>
 
-*Xah:* Yeah.
+<p>
+<b>Xah:</b> Yeah.
+</p>
 
-*Sacha:* You tend to add these keybindings a little bit at a time, but
+<p>
+<b>Sacha:</b> You tend to add these keybindings a little bit at a time, but
  somebody installing ErgoEmacs has to deal with all these different
  key bindings right off the bat.  Do you have any tips for people who
  are trying to optimize their use as well?
+</p>
 
-*Xah:* ErgoEmacs is fantastic!
+<p>
+<b>Xah:</b> ErgoEmacs is fantastic!
+</p>
 
-*Sacha:* But it's also hard for people to learn! 
+<p>
+<b>Sacha:</b> But it's also hard for people to learn! 
+</p>
 
-*Xah:* Yeah, I know.  Matthew Fidler is doing the work now, so
+<p>
+<b>Xah:</b> Yeah, I know.  Matthew Fidler is doing the work now, so
 there's a lot of things there.  Right now it tries to be compatible
 with everything.  It actually has an engine.  It doesn't directly
 specify a key.  When you press a key, it goes into whatever mode you
 are in and finds any incompatibilities.
+</p>
 
+<p>
 Right now, there are tens of files.  I don't really know how it works
 these days. It's very complicated.  It's on Github.
+</p>
 
-*Sacha:* So it doesn't actually force you to learn everything from the
+<p>
+<b>Sacha:</b> So it doesn't actually force you to learn everything from the
 begining. You can go into it slowly.
+</p>
 
-*Xah:* Let's see if I can turn it on.  I have my init... no...
+<p>
+<b>Xah:</b> Let's see if I can turn it on.  I have my init&#x2026; no&#x2026;
+</p>
 
-*Sacha:* Never mind.  So everytime you notice a modifier key, you
+<p>
+<b>Sacha:</b> Never mind.  So everytime you notice a modifier key, you
 just add a new keybinding and go from there.  I noticed you have a
 function that makes it very easy to open different files that you've
 recently accessed, so that probably makes it even easier to add new
 keybindings.
+</p>
 
-*Xah:* That's the... Let's say I close my Emacs blog. Now I want to reopen
+<p>
+<b>Xah:</b> That's the&#x2026; Let's say I close my Emacs blog. Now I want to reopen
 my Emacs blog.  I press this key, and it gives me a list of recently
 opened files.
+</p>
 
-*Sacha:* I've been using registers for much the same purpose, but the
+<p>
+<b>Sacha:</b> I've been using registers for much the same purpose, but the
 problem is I have to use single character shortcuts to jump to them
 and I can't overwrite anything in the register.  Having a command
 that prompts you might be the better way to do it.
+</p>
 
-*Xah:* I was using bookmarks, but the issue I find with bookmarks is that
+<p>
+<b>Xah:</b> I was using bookmarks, but the issue I find with bookmarks is that
 there is no key that lets you open one specific file right away. You
 have to navigate down to it first.  Do you know what I mean?  That's
 one thing that got me started to do the one I use now.  Another one I
-use really often is the open recent... =recentf=. It shows the top
+use really often is the open recent&#x2026; <code>recentf</code>. It shows the top
 ten most recent files.
+</p>
 
-*Sacha:* I should totally try that.
+<p>
+<b>Sacha:</b> I should totally try that.
+</p>
 
-*Xah:* You can just press a number and it will jump to that.  I hardly use
-=find-file= anymore, because you have to type the path.
+<p>
+<b>Xah:</b> You can just press a number and it will jump to that.  I hardly use
+<code>find-file</code> anymore, because you have to type the path.
+</p>
 
-*Sacha:* When I was reading your config, I was looking around for keys to
-bind to some of these sequences. I realised my =apps= key is
+<p>
+<b>Sacha:</b> When I was reading your config, I was looking around for keys to
+bind to some of these sequences. I realised my <code>apps</code> key is
 completely unused.  So I can start binding more things.
+</p>
 
-*Xah:* You are on your PC keyboard?
+<p>
+<b>Xah:</b> You are on your PC keyboard?
+</p>
 
-*Sacha:* Yeah, I am.  I actually use the Windows key a lot, so it has to be
-the =apps= key.
+<p>
+<b>Sacha:</b> Yeah, I am.  I actually use the Windows key a lot, so it has to be
+the <code>apps</code> key.
+</p>
 
-*Xah:* Oh, I see.
+<p>
+<b>Xah:</b> Oh, I see.
+</p>
 
-*Sacha:* This is all good.  Keep an eye out for keyboard shortcuts and keep
+<p>
+<b>Sacha:</b> This is all good.  Keep an eye out for keyboard shortcuts and keep
 tweaking things to make them even easier to use.  I really like the
 fact that you have all these little functions that just do that job or
 prompt for more information, and then take you to places to fix
 things.  That's very cool.
+</p>
 
+<p>
 Before I forget, one of the things you mentioned in our email
 conversation, was the Chinese Emacs community.  I don't read Chinese. I
 read a little bit of Japanese. I know from searching on twitter,
 there's a lot of conversation that happens in the non-English Emacs
 communities.  What's it like in the Chinese Emacs community?  What is
 popular?  What am I missing out on by not reading Chinese?
+</p>
 
-*Xah:* Not much actually, because after all it's Emacs, it's in English,
+<p>
+<b>Xah:</b> Not much actually, because after all it's Emacs, it's in English,
 or the engine is in English.  In the last few years there have
-... there are a lot of programmers and companies there, so I was
-actually surprised...  in late 2008 or something, there were a lot of
+&#x2026; there are a lot of programmers and companies there, so I was
+actually surprised&#x2026;  in late 2008 or something, there were a lot of
 Chines people on comp.emacs or gnu.emacs.help. I saw all these
 Chinese names. Some of them write really excellent
-packages -- non-trivial packages.  That's how I started to find out about
+packages &#x2013; non-trivial packages.  That's how I started to find out about
 Chinese people using Emacs.
+</p>
 
+<p>
 So let's see, what can we talk about? They are just the same as here,
 asking questions. Some use Emacs, some use vim. The other thing in the
 Chinese programming community is that there is a huge amount of
@@ -646,42 +960,60 @@ Chinese just by somebody who posts it on some website with their own
 ads. Most of them also read English, but I think Chinese is still more
 natural for them. I try to write Chinese sometimes, but my Chinese
 typing is super slow.
+</p>
 
-*Sacha:* Well, that's great to bring more people into the conversation.
+<p>
+<b>Sacha:</b> Well, that's great to bring more people into the conversation.
+</p>
 
-*Xah:* Yeah, there is one thing... I believe EmacsWiki also supports
+<p>
+<b>Xah:</b> Yeah, there is one thing&#x2026; I believe EmacsWiki also supports
 Chinese, so there is some Chinese in EmacsWiki.  Some people in China
 also have a dedicated Emacs website.
+</p>
 
-*Sacha:* Yeah, EmacsWiki is available in multiple languages.  That's nice.
+<p>
+<b>Sacha:</b> Yeah, EmacsWiki is available in multiple languages.  That's nice.
+</p>
 
-*Xah:* I would have to find out what the URL is...
+<p>
+<b>Xah:</b> I would have to find out what the URL is&#x2026;
+</p>
 
-*Sacha:* It's good to see it growing in popularity, and people having all
+<p>
+<b>Sacha:</b> It's good to see it growing in popularity, and people having all
 sorts of interesting conversations.  I know I often use Google
 translate just to get a sense of what they're talking about because it
 all looks so interesting.
+</p>
 
+<p>
 I've picked up a lot of tips from our conversation.  Things like
 customizing keyboard shortcuts, playing around with things.  Maybe
 someday playing around with some of those keyboard designs you're
 looking into. That might be interesting for a lot of people also.
+</p>
 
+<p>
 What's next for you?  What are you curious about, or what do you want
 to tweak Emacs to become?
+</p>
 
-*Xah:* I hope Emacs can grow -- the Emacs software itself.  Some people are
+<p>
+<b>Xah:</b> I hope Emacs can grow &#x2013; the Emacs software itself.  Some people are
 suggesting using Guile to replace Emacs Lisp. I think that would be
 a great step.  I don't know how good it is.  There is always
 controversy about how good it is.  Emacs has been around for a long
 time. A lot of people, especially younger people, are not familiar
 with it and they aren't going to bother.  Anyway, I hope the Emacs
-Lisp engine improves and gives us lots of functions -- features
+Lisp engine improves and gives us lots of functions &#x2013; features
 comparable to, let's say, Ruby or modern languages, or even Common
 Lisp.  Instead of each of us downloading packages, I hope it will all
 be in Emacs for good, in the future.
+</p>
 
-*Sacha:* I know that even with Emacs Lisp as it is, I still haven't even
+<p>
+<b>Sacha:</b> I know that even with Emacs Lisp as it is, I still haven't even
 reached anywhere near the limits of it. But it's great to see what
 people are doing.  I'll be talking with someone who's working on the
 foreign function interface, and other people are working on getting
@@ -694,42 +1026,100 @@ y'know, since RSI is an occupational hazard for us, that reminder that
 you don't have to put up with keyboard shortcuts that have you press
 four or five keys at the same time.  No, you can just do one after the
 other.  That's a useful reminder.
+</p>
 
+<p>
 Okay, any last words for Emacs Chat listeners?  Any recommendations
 for people you would like to see on this podcast thing?
+</p>
 
-*Xah:* Oh yeah! You've already interviewed most of them. It's hard to
+<p>
+<b>Xah:</b> Oh yeah! You've already interviewed most of them. It's hard to
 think of one right off the bat right now. You plan to have a
 conversation with technomancy, right?
+</p>
 
-*Sacha:* Yes.
+<p>
+<b>Sacha:</b> Yes.
+</p>
 
-*Xah:* Phillips, that would be great. {inaudible} Who else? I don't
-know... oh yeah, the current two leaders of Emacs: Stefan something
-and... I don't know, I think he's Chinese. The current two maintainers
+<p>
+<b>Xah:</b> Phillips, that would be great. {inaudible} Who else? I don't
+know&#x2026; oh yeah, the current two leaders of Emacs: Stefan something
+and&#x2026; I don't know, I think he's Chinese. The current two maintainers
 of Emacs. That would be good.
+</p>
 
-*Sacha:* I will work up the courage, but in the meantime it was good to hear
+<p>
+<b>Sacha:</b> I will work up the courage, but in the meantime it was good to hear
 your story.  Great to hear about how you got into Emacs, how you
 started customizing, and the fact you went eight years without
 customizing it.
+</p>
 
+<p>
 Continue to have fun, and thank you so much for joining us.  I'm going
 to end the broadcast now.  To everyone who tuned in, thanks for
 listening.  The recording will be available on the event page shortly
 after I end this, and also I'll be putting it up along with the
 transcripts (eventually) on emacslife.com.
+</p>
 
+<p>
 Xah, where is the best place to find you online?
+</p>
 
-*Xah:* Twitter, [[http://twitter.com/xah_lee][@xah_lee]] is my handle.
+<p>
+<b>Xah:</b> Twitter, <a href="http://twitter.com/xah_lee">@xah<sub>lee</sub></a> is my handle.
+</p>
 
-*Sacha:* See you all.  Thanks.
+<p>
+<b>Sacha:</b> See you all.  Thanks.
+</p>
 
-*Xah:* Thank you so much, Sacha.
+<p>
+<b>Xah:</b> Thank you so much, Sacha.
+</p>
 
-*Sacha:* Bye.
+<p>
+<b>Sacha:</b> Bye.
+</p>
 
-*Xah:* Bye.
+<p>
+<b>Xah:</b> Bye.
+</p>
 
-#+INCLUDE: "inc/interviews.inc" :lines "3-"
+<hr>
+<p>
+Check out <a href="http://sachachua.com/blog/emacs-chat">Emacs Chat</a> for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? <a href="http://sachachua.com/blog/contact">Get in touch!</a>
+</p>
+</div>
+
+<div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1">Comments</h3>
+<div class="outline-text-3" id="text-2-1">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_url = "http://sachachua.com/blog/2014/05/emacs-chat-xah-lee-ergoemacs/";
+    var disqus_shortname = 'sachac'; // Required - Replace example with your forum shortname
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="back-to-top"><a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a></div>
+</div>
+</body>
+</html>
