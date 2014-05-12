@@ -13,6 +13,7 @@ I chatted with [[http://ergoemacs.org][Xah Lee]] about how he got started with E
 
 [[http://archive.org/download/EmacsChatXahLee/Emacs_Chat-Xah_Lee.mp3][Want just the audio? You can download the MP3.]]
 
+
 * Transcript (in progress)
 
 *Sacha:* Hello and welcome to another episode of Emacs Chat. Today we
@@ -386,7 +387,350 @@ keybindings, it's like I'm starting to use Wordpad. So, you have to
 give me ten or fifteen minutes to set up my keybindings. I don't know
 how that would work out if you were working in a company.
 
-*Sacha:*
+*Sacha:* Mark (inaudible) says, you can use mwe-log-commands . I'm
+guessing that's a package, or maybe it's built in. That shows keys and
+commands as they're typed.
 
+*Xah:* That's not default, right?  That's a package?
+
+*Sacha:* Oh, for me it's mwe:log-keyboard-commands{?}.  Hang on a sec...
+
+*Xah:* I saw it in =list-packages=.
+
+*Sacha:* Okay, so it /is/ a package.  It says, "log keyboard commands
+ to buffer".  That's cool, I should use that.  That's excellent!
+
+I really love the fact we have package repositories and melpa and
+marmalade{?}—just lists and lists of interesting packages to try.
+
+*Xah:* Yeah, melpa and marmalade, so many, it's fantastic.
+
+*Sacha:* So, you've extensively customized your keyboard shertcuts but
+ even then you keep changing them, and somehow you just remember
+ everything. [laugh]
+
+*Xah:* Yeah, it's become an obsession.  Even for me sometimes it's
+ painful, because... for example, let's say there are two keys for a
+ command, two choices, one involving a control and something let's say
+ and another one lets say involves F1, lets say you press F8 8 9{?}
+ sequence.  I have to think about it, do analysis to see which is
+ really better.  Then if I decide, that one is better I try to put it
+ in my init.  That's really frustrating because after I change my
+ habit, every time I need to use that command my fingers are still
+ used to the old binding.  Sometimes after a while I decide it's a
+ good change and I get used to it, but sometimes not, sometimes I have
+ to think about where my analysis went wrong, or is it just a habit
+ that I can't throw off yet.  It's kind of like that.
+
+*Sacha:* Sometimes I have to unbind the previous keybinding just to
+ force myself to use the new one.  It's tough changing your habits.
+
+*Xah:* Yeah, it is.  I remember when I was learning Dvorak, I was a
+ QWERTY typist, it was extremely painful; it took me two months to
+ barely be able to type again.  How long did it take you?
+
+*Sacha:* It took me about a month of really slow typing, but it was
+ summer so I didn't need to type that much, so I could stay in Dvorak
+ more often—so that was helpful.
+
+*Xah:* I see.  Do you still use Dvorak?  Or do you use both?
+
+*Sacha:* I mostly use Dvorak, even on other people's computers I'll
+ use autohotkey to change it quickly, so I can type without having to
+ think to much; but I can still type on QWERTY.  I'm just less happy
+ doing it.
+
+*Xah:* That's amazing!
+
+*Sacha:* You lost your [ability to type on QWERTY]?
+
+*Xah:* I kind of lost it, because I haven't had the need.  Every time
+ I went to the library in the nineties, I'd have to hunt and peck, and
+ people must have thought, "that guy doesn't know how to type", but
+ around 2000 sometimes I had to type on other people's keyboards, so I
+ picked up a bit of QWERTY again, but it was around 30-40 wpm, and
+ ever since it has stayed there.  If you asked me to type QWERTY now,
+ it's probably going to be 10 wpm. [laughter]
+
+*Sacha:* For me it's really dependent on the keyboard I'm using too,
+ for example, I'm very used to typing dvorak on my laptop keyboard, and
+ now my desktop keyboard, but I was trying to help someone on emacs
+ and he was on a mac, and he was in QWERTY, and he was in evil-mode.
+ Even though I use vi, I understand the keyboard shortcuts, my brain
+ just couldn't handle all those changes all at the same time.
+
+*Xah:* You use vim as well?
+
+*Sacha:* Sometimes, but very rarely, because most of the time I
+ already have emacs open.  Maybe if I'm SSH'd into some place and I'm
+ not opening something through cram then I'll use vim.
+
+*Xah:* How is evil mode?
+
+*Sacha:* I don't know.  Evil mode is very popular these days because,
+ obviously people are coming over from vim, and also because people
+ like command mode.  Doesn't Ergo Emacs have a command mode?
+
+*Xah:* Yeah, I certainly use that.  Matt, he did great work.  Right
+ now [Ergo Emacs] is using a new engine, but it's there as well... but
+ you have to ask them what the command is to invoke that, because it
+ has evolved over the years.
+
+*Sacha:* I'm still in mostly emacs bindings, except the parts I've
+ changed, and sometimes I can't remember what I've changed.  I've been
+ using John Riegler{?} =bind-key= package, that lists all your
+ personal keybindings.  Also it shows you what that keybinding
+ replaced, so when you're trying to tell someone else what keys to
+ press, then you realise it actually only works for you!
+
+ It also has a slightly cleaner syntax for keybindings.  You notice it
+ no longer has the kbd macro around the actual key.  You can tell it
+ to override /everything/ that uses that key.
+
+ So, keybindings are one of the things you've customized, and you have
+ a lot of these little functions to make your html publishing
+ easier. Are there any other particularly interesting things you're
+ doing with your emacs?
+
+*Xah:* Let me think... no I don't think so.  I remember your video
+ where your guest was chatting to music or something, no I don't have
+ anything like that.
+
+*Sacha:* One thing I was going to ask is that you're using tab for a
+ lot of your keyboard shortcuts.  Do you still do indenting, or do you
+ just not care?
+
+*Xah:* I'll show you how my key works.  I stopped using any chord keys
+ as much as possible.  At one point I didn't even want to use the
+ shift key to type anything any more.
+
+*Sacha:* I saw!  You have a lot of translates there that use three
+ characters to type in a shift character.
+
+*Xah:* Yeah, I commented it out.  Every time you make a change like
+ that it's at odds with the normal library.  It get's harder and
+ harder.  My binding is already completely unrecognisable.  Anyway, I
+ don't use chords, so I use key sequences, and one of the keys to
+ start it, the "lead key" I think that's what evil mode calls it, one
+ of the keys to start it is the menu{?} key.  Menu{?} keys are global,
+ and the other one for me is tab, I chose tab because you only have so
+ many keys.  Tab is for {demo on screen?} This command just adds
+ brackets... menu... I highlight it and press the key, and it becomes
+ that.  Then I select this and press a key and it becomes that... So
+ now it's ready to be published in html.
+
+*Sacha:* I should add more unicode to my blog.  [laugh] You look like
+ you're having too much fun with.
+
+*Xah:* Yeah, it's so much fun.  I haven't really looked into it much,
+ but I think Emacs is the best unicode tool, to get information or
+ whatever.  You can code this command [audio distorted] and it will
+ tell you everything about the unicode.
+
+*Sacha:* I remember I came across =C-x 8 RET= and then I was like
+ "holy cow, we have a snowman in here!" 
+ So you have your menu for global keybindings, and tab for
+ mode-specific ones.  [Xah types the snowman unicode character (☃ hehe)]
+ Yeah, there you go, snowman. [laughter]
+
+*Xah:*  So menu is the lead key for global, and tab is for
+ mode-specific; and my plan is that every time I use a mode, any
+ special command or key in that mode, I pick out what I want to use
+ and set my key for that.  All this is not really planned out,
+ gradually I do a bit here and there—I'm pretty sure it's not robust.
+ If one day I have to write in a lot of different languages, I don't
+ have time to look at that package, and all the keys it uses, and
+ decide which ones I want to change.  That's just going to be cc {?}
+
+*Sacha:* I guess maybe that's also where you might say, "I'm going to
+ remap these keybindings to these other keybindings, so that in
+ general, anything that's bound to this..."
+
+*Xah:* Yeah.
+
+*Sacha:* You tend to add these keybindings a little bit at a time, but
+ somebody installing ergo emacs has to deal with all these different
+ key bindings right off the bat.  Do you have any tips for people who
+ are trying to optimize their use as well?
+
+*Xah:* Ergo Emacs is... is fantastic! [laughs]
+
+*Sacha:* But it's also hard for people to learn! [laughs]
+
+*Xah:* Yeah, I know.  Matthew Fittler {?} is doing the work now, so
+there's a lot of things there.  Right now it tries to be compatible
+with everything.  It actually has an engine, it doesn't directly
+specify a key.  When you press a key it goes into whatever mode you
+are in and finds any incompatibilities.
+
+Right now there are tens of files.  I don't really know how it works
+these days; it's very complicated.  It's on github.
+
+*Sacha:* So it doesn't actually force you to learn everything from the
+begining; you can go into it slowly.
+
+*Xah:* Let's see if I can turn it on.  I have my init... no...
+
+*Sacha:* Nevermind.  So everytime you notice yourself a modifier key you
+just add a new keybinding and go from there.  I noticed you have a
+function that makes it very easy to open different files, that you've
+recently accessed, so that probably makes it even easier to add new
+keybindings.
+
+*Xah:* That's the... Let's say I close my emacs blog, now I want to reopen
+my emacs blog.  I press this key and it gives me a list of recently
+opened files.
+
+*Sacha:* I've been using registers for much the same purpose, but the
+problem is I have to use single character shortcuts to jump to them
+and I can't overwrite anything in the register.  So having a command
+that prompts you mind be the better way to do it.
+
+*Xah:* I was using bookmarks but the issue I find with bookmarks is that
+there is no key that lets you open one specific file right away, you
+have to navigate down to it first.  Do you know what I mean?  That's
+one thing that got me started to do the one I use now.  Another one I
+use really often is the open recent... =recentf= {?} It shows the top
+ten most recent files.
+
+*Sacha:* I should totally try that.
+
+*Xah:* You can just press a number and it will jump to that.  I hardly use
+find file anymore, because you have to type the path.
+
+*Sacha:* When I was reading your config, I was looking around for keys to
+bind to some of these sequences, and I realised my apps key is
+completely unused.  So I can start binding more things.
+
+*Xah:* You are on your PC keyboard?
+
+*Sacha:* Yeah, I am.  I actually use the windows key a lot, so it has to be
+the apps key.
+
+*Xah:* Oh, I see.
+
+*Sacha:* This is all good.  Keep an eye out for keyboard shortcuts and keep
+tweaking things to make them even easier to use.  I really like the
+fact that you have all these little functions that just do that job or
+prompt for more information, and then take you to places to fix
+things.  That's very cool.
+
+Before I forget, one of the things you mentioned in our email
+conversation, was the Chinese emacs community.  I don't read Chinese, I
+read a little bit of Japanese, so I know from searching on twitter,
+there's a lot of conversation that happens in the non-english Emacs
+communities.  What's it like in the Chinese Emacs community?  What is
+popular?  What am I missing out on by not reading Chinese?
+
+*Xah:* Not much actually, because after all it's Emacs, it's in English,
+or the engine is in English.  In the last few years there have
+... there are a lot of programmers and companies there, so I was
+actually surprised...  in late 2008 or something there were a lot of
+Chines people on comp.emacs or gnu.emacshelp{?}, I saw all these
+Chinese names, and some of them write really excellent
+packages—non-trivial packages.  That's how I started to find out about
+Chinese people using Emacs.
+
+So let's see, what can we talk about?  They are just the same as here:
+asking questions, some use Emacs, some use vim.  The other thing in
+the Chinese programming community is that there is a huge amount of
+copying and translating info.  Like here we have tech crunch, or
+newsmedia or emacs blogs, and you often see that translated into
+Chinese just by somebody, who posts it on some website with their own
+ads.  Most of them also read English, but I think Chinese is still
+more natural for them.  I try to write Chinese sometimes, but my
+Chinese typing is super slow.
+
+*Sacha:* Well, that's great to bring more people into the conversation.
+
+*Xah:* Yeah, there is one thing... I believe Emacs wiki also supports
+Chinese, so there is some Chinese in Emacs wiki.  Some people in China
+also have a dedicated Emacs website.
+
+*Sacha:* Yeah, Emacs wiki is available in multiple languages.  That's nice.
+
+*Xah:* I would have to find out what the URL is...
+
+*Sacha:* It's good to see it growing in popularity, and people having all
+sorts of interesting conversations.  I know I often use google
+translate just to get a sense of what they're talking about because it
+all looks so interesting.
+
+I've picked up a lot of tips from our conversation.  Things like
+customizing keyboard shortcuts, playing around with things.  Maybe
+some day playing around with some of those keyboard designs you're
+looking into; that might be interesting for a lot of people also.
+
+What's next for you?  What are you curious about, or what do you want
+to tweak Emacs to become?
+
+*Xah:* I hope Emacs can grow—the emacs software itself.  Some people are
+suggesting using guile to replace emacs lisp {?} I think that would be
+a great step.  I don't know how good it is.  There is always
+controversy about how good it is.  Emacs has been around for a long
+time, and a lot of people, especially younger people, are not familiar
+with it and they aren't going to bother.  Anyway, I hope the Emacs
+Lisp engine improves, and gives us lots of functions; features
+comparable to, let's say, Ruby or modern languages, or even common
+lisp.  Instead of each of us downloading packages, I hope it will all
+be in Emacs for good, in the future.
+
+*Sacha:* I know that even with Emacs Lisp as it is, I still haven't even
+reached anywhere near the limits of it, but it's great to see what
+people are doing.  I'll be talking with someone who's working on the
+foreign function interface, and other people are working on getting
+{talking at same time} into Emacs.  We'll see where it goes.  In the
+meantime, I'm really glad you've been writing about emacs for so
+long, and you have so much out there.  You've put together a tutorial
+that people can actually buy and download and read through, and I hope
+that gets a lot more people into Emacs Lisp as well.  And, hey,
+y'know, since RSI is an occupational hazard for us, that reminder that
+you don't have to put up with keyboard shortcuts that have you press
+four or five keys at the same time.  No you can just do one after the
+other.  That's a useful reminder.
+
+Okay, any last words for Emacs Chat listeners?  Any recommendations
+for people you would like to see on this podcast thing?
+
+*Xah:* [Asks Sacha to repeat what she said.]
+Oh yeah!  You've already interviewed most of them.  It's hard to think
+of one right off the bat right now.  You plan to have a conversation
+with Technomancy{?}, right?
+
+*Sacha:* Yes.
+
+*Xah:* He's... Phillips, that would be great {huh?} Who else?  I don't
+know... oh yeah, the current two leaders of Emacs: Stefan something
+and... I don't know, I think he's Chinese.  The current two
+maintainers of Emacs.  That would be good.
+
+*Sacha:* I will work up the courage, but in the meantime it was good to hear
+your story.  Great to hear about how you got into Emacs, how you
+started customizing, and the fact you went eight years without
+customizing it.
+
+Continue to have fun, and thank you so much for joining us.  I'm going
+to end the broadcast now.  To everyone who tuned in, thanks for
+listening.  The recording will be available on the event page shortly
+after I end this, and also I'll be putting it up along with the
+transcripts (eventually) on emacslife.com.
+
+Xah, where is the best place to find you online?
+
+*Xah:* Twitter, @xah_lee is my handle.
+
+*Sacha:* See you all.  Thanks.
+
+*Xah:* Thank you so much, Sacha.
+
+*Sacha:* Bye.
+
+*Xah:* Bye.
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
+
+* Transcript Meta
+Total Transcription Time: 5h 0mins +
+editing time: 
+playback time reached: 42:43
+
