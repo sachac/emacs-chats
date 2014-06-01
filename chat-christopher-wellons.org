@@ -1,0 +1,150 @@
+-*- coding: utf-8 -*-
+
+2014-05-30
+
+Emacs Chat: Christopher Wellons (FFI, Emacs internals)
+
+https://www.youtube.com/watch?v=Hr06UDD4mCs
+
+Emacs Chat: Christopher Wellons (FFI, Emacs internals)
+Sacha Chua
+
+original close-caption:
+transcript-emacs-as-python-ide-by-Drew-Werner-2014-05-05-original-caption-cc91a98b.txt
+
+＆ hello and welcome to another emacs chat.
+we have Christopher Wellons,
+who is among other things something that will play emacs tetris in emacs for you.
+
+＆ so, hellow Christopher, thank you for joining us.
+
+• you are welcome.
+
+i initially read your blog post foreign function interface and other things, and i realized you are the same guy who put together C-remote and other really cool interactive things with emacs.
+
+before we get into your emacs and all the interesting things you do with it.
+can you tell us a little bit about who you are outside of em.
+
+• i'm your typical computer geek, i guess. I've been using em for 9 yrs. That's outside of emacs. i run regularly, i'm a runner. i run 3 days a week. i like computer games, and reading. i spend a lot time watching youtube videos actually. that's a big hobby. i find these long, half hour clips, series of …, mostly people playing video games. so i find myself watching other playing video games. a lot of time i can do my own thing while doing that, so it's almost like multitasking that way.
+
+yeah you got the benefit of xxxxxx without xxxxxx doing the hard work.
+
+i noticed on your blog you also make computer games? like robxxxx?
+
+• occasionally. i like participate in xxxx 7 days contest a year. that's a fun thing to do for a week. i like to construct constraints xx, but i only do it for about a week, after that then i forget about that.
+
+hum, a lot fun interests.
+
+you actually started emacs 9 years ago, which is pretty amazing. how did you get into it.
+
+• so i was in an intership in college, at the time. and i was getting a lot more serious about programing. i've been programing for 19 years now. xxx when doing the intership i was getting serious about it, and after that i've been just using keyright xx and some other, some basic stuff.
+
+• and i read probably something richard stallman, or steve yegge xx or some other essays. And i decided to actually look into this emacs thing. and that's what ended up happening. I installed it, was reading all the manuals. I got one of those orelly books, i read that, then i just gradually built up from that point. it became my only text editor quickly.
+
+where you customizing it right away? or you xx using it as a environment for programing as well?
+
+• i was customizing it right away, mostly copy and pasting snippets here and there, because i didn't understand how a lot of it works. This thing wil tell me xx and i drop it into my configuration.
+
+• and it wasn't actually until few years ago, i put my emacs config in source control. so the whole thing is carefully curated now. and i xx miss the whole copy out and i messed a few years there.
+
+so you ended up emacs bankrupcy and you started curating it from scratch xx
+
+• it's pretty close to from scratch. i got heavily redone. we'll take a look at it am sure. i got a little macro to help organize it here and there, and package things up in a nice clean blocks. that happened at the same time i got source control, almost like a rewrite.
+
+now 9 years ago we didn't have lots of the resources we have now, xx about emacs config, no github. i don't remember if emacswiki was around then. you mentioned the book was useful, the oreilly book, what other resources you found helpful.
+
+• after that…, actually i gave the book away years ago, because that's just a beginner book. i gave it to a coworker, hoping to get her into emacs. but since then it's really just been primarily reading the emacs lisp reference manual. there's still so much in that manual i don't know about. I go thru it all the time, and i've gone thru it cover to cover basically. there's still things like detail, and i go back like “oh, i didn't know you could do that”.
+
+yeah, everytime i read the manual, i came across something new. last time i read the emacs manual, i learned how to add unicode characters. there's just so much to learn. probably reading the manual, and reading the source code as well.
+
+you mentioned coworker. you actually have other coworker using emacs too?
+
+• yes, i've got a few coworkers, not many.
+i spend time discussing emacs with them on occasion. kind of sharing notes, and how we do things. what's funny is pretty much all of them have adopted the color theme. the xx theme that comes with emacs.  it seems everybody is using that now. xx i kind of it's fun to see that.  i know that looks familiar when i see their screens.
+
+[laughs] yes it's interesting to see the diffusion of practices when several people use emacs together. you config is on github so we can pickup interesting things off that as well. xx
+
+so you check with other people, learn from source code, xx about the hacking you've been doing about building web servers and other interactive xx you actually build something that can talk to emacs inferior processes? emacs within emacs?
+
+• that was a project a couple weeks ago. xx i haven't announce it “yet” [hand sign on quote].
+
+i'm sorry…
+
+• that's fine.
+
+so you decided to customize it right off the bat, 9 years ago. how did you get to the point when you are comfortable enough with emacs internals to just say “oh i think i would like to have emacs interact live with a web browser”
+
+• that's basically how i came to. i don't know xx almost anything i want it to do right now so i just…. I have an idea, then i'm going to try that, and that becomes my primary focus for a short period of time until i make it work that way.
+
+• to elaborate on that, i got a Steam account, i got something like 200, 300 games in there, but i rarely ever play them, because these programing activities are almost always more fun. like, i can play this game or i can xx play with emacs. it's almost always emacs.
+
+[laughes] yeah you have it. emacs is more addictive than games you can play on Steam. [laughes] i've heard that from other emacs users as well, this is relaxation and fun and intellectual curiosity.
+
+so basically you learned about all these things by having crazy ideas. what xx decides you to use emacs to play tetris on its own. and then digging around and figuring out how to do it.
+
+• so you saw xx tetris mode then?
+
+i just came across that the other day.
+i often show tetris… kind of when you are demonstrating em to other people and you want to boggle their mind about just how much is in emacs. so i normally show things like tetris and xx and xx and also tetris. that drives people crazy.
+
+ok, so, lots really odd and interesting things.
+one other thing people are often curious about is how actually people use emacs. what's your workflow like, what are the different things you configured.
+and you share your config on github,
+btw folks listening you can find cw's github it's
+
+https://github.com/skeeto
+
+but we like to also see i guess the highlights of your config.
+particularly interesting snippets you are using.
+
+• sure. shall i switch to my screencast here then?
+
+humum. and folks, you can ask questions by submitting to the q＆a app or adding them to the event page or if you are on irc there's emacs-chat channel on freenode.
+
+ok! so, you got stuff! [laughes]
+
+---------
+• that's actually my server log. i'll show xx
+so here's my init file.
+you can see that ok?
+
+yeah, i can see it just fine.
+
+• so, something that'll stand out pretty quick… i got this 「with-package」 macro here. you'll see that showing over and over again.
+this is something i wrote myself. there's a bunch of different versions. everybody kinda written their own little version of this because there isn't an official one at this point.
+it sort of groups relations configurations together into blocks.
+sort of having all these lose ends xx kinda dumped in.
+i can say everything related to, for example “uniquify”  goes into this block.
+
+• things related to eshell goes into this block right here.
+
+• and i don't have to risk xx any of the packages, i'll just use elpa and melpa so i don't have to install any of those packages explicitly
+xx
+only it mentions here 「with-package」 it will automatically get installed when emacs starts if it's not installed.
+
+humm, i should use that. i've been using 「use-package」 by john wigley xx but it doesn't do the installs, so the xx this will actually mean it always happens
+
+• xx use-packages xx there's another one of this macros like somebody else's
+there's a few of them out there.
+one's kinda xx
+like if you look at this entry this asterisk
+
+• so the ones without the asterisk are lazily loaded. so, they let emacs load them as late as possible. those with asterisk are force loaded. so... like “uniquify”, i don't want to wait for that to load, i want it just load right away, so its got an asterisk on it.
+same way with 「winner-mode」.
+with winner-mode, you can hop with arrow keys between buffers, i like doing that.
+
+• then there's asterisk on other things that has to do with auto-load
+pretty xx but it's useful for me.
+xx
+i haven't xx for other people to use.
+
+sometimes you have asterisk after package names?
+
+• yeah, that's something changed with package.el, and the latest changes.
+it used to creeate a secondary package called with percent name but dash auto-loads
+and there's a really cool trick where you could 「require」 the auto-load package and you can do some configuration lazily. there's a nice trick, but i got rid of that. there's no longer xx auto-load package xx generated
+
+• so i have to modify my 「with-package」 macro.
+so it has the same xx fact with the asterisk on the package names, i want that effect.
+
+12:41
