@@ -1,328 +1,331 @@
-# Emacs Chat with Phil Hagelberg (Technomancy)
-# Hosted by Sacha Chua
+#+SETUPFILE: setup.inc
+#+TITLE: Emacs Chat: Phil Hagelberg (Better defaults, Clojure, etc.)
+#+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2014/05/emacs-chat-phil-hagelberg/
 
+* Audio and Video
 
-* Transcript
+#+BEGIN_HTML
+<iframe src="//www.youtube.com/embed/Rfg-6jGY8dU" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
 
-*Sacha:* Hello and welcome to another episode of Emacs Chat.  Today's guest is Phil Hagelberg, who you might know as technomancy, and the creator of all sorts of useful things including starter kit — which is now the better defaults package, I think—and other cool stuff related to *clojure*.
+[[https://archive.org/download/EmacsChatPhilHagelberg/Emacs-Chat-Phil-Hagelberg.mp3][Get the MP3]], or [[https://archive.org/details/EmacsChatPhilHagelberg][listen to it on archive.org]]!
 
-Hello Phil, thank you so much for taking the time to join us today.
+Quick links:
 
-*Phil:* Hi, thanks for having me.  I'm really looking forward getting to chat.
+- http://technomancy.us 
+- https://syme.herokuapp.com/
+- http://github.com/technomancy/better-defaults 
+- https://github.com/technomancy/dotfiles/tree/master/.emacs.d 
+- http://leiningen.org/ 
+- http://technomancy.us/171 (heater)
+-  http://atreus.technomancy.us (keyboards)
+
+* STARTED Transcript
+
+*Sacha:* Hello and welcome to another episode of Emacs Chat.  Today's guest is Phil Hagelberg, who you might know as technomancy, and the creator of all sorts of useful things including a starter kit (which is now the better defaults package) and other cool stuff related to Clojure.
+
+Hello, Phil! Thank you so much for taking the time to join us today.
+
+*Phil:* Hi, thanks for having me.  I'm really looking forward to getting to chat.
 
 *Sacha:* Before we dive into why you like Emacs, and what you use it for, I like showing people that we do actually have lives outside of Emacs.  So, can you tell us a little bit about what your life is like?  What else are you interested in?
 
-*Phil:* Sure, yeah.  A big part of what I do is working remotely; I've been doing that since about 2009.  You can see this set up here, this is my converted shed in my back yard—that I like to call "The Code Lab".  So, it's a nice little commute across the back yard.
+*Phil:* Sure, yeah.  A big part of what I do is working remotely. I've been doing that since about 2009.  You can see this set up here, this is my converted shed in my back yard that I like to call "The Code Lab".  So, it's a nice little commute across the back yard.
 
 *Sacha:* That looks like a standing desk.
 
-*Phil:* Yeah, I have a standing desk, and then when I get tired of that I've got the recliner there; going between two extremes.
+*Phil:* Yeah, I have a standing desk, and then when I get tired of that I've got the recliner there. Going between two extremes.
 
-*Sacha:* From your blog I see you are also quite interested in custom keyboards.
+*Sacha:* From your blog, I see you are also quite interested in custom keyboards.
 
-*Phil:* That's right.  I don't know if you can see over here but I've been getting into hardware hacking, and this is my latest project, building these custom ergonomic mechanical keyboards.  I've been having a lot of fun with it.
+*Phil:* That's right.  I don't know if you can see over here but I've been getting into hardware hacking. This is my latest project, building these custom ergonomic mechanical keyboards.  I've been having a lot of fun with it.
 
-*Sacha:* Wow, that's cool.  So, that and kuroku*, and having kids.  How old are your kids now?
+*Sacha:* Wow, that's cool.  So, that and Heroku, and having kids.  How old are your kids now?
 
-*Phil:* I've got a four-year-old and a six-year-old, the older one is getting into school.  Yeah, kind of a hand full.
+*Phil:* I've got a four-year-old and a six-year-old. The older one is getting into school.  Yeah, kind of a handful.
 
-*Sacha:* Somehow, with all of that you find time to work on lots of emacs repositories, and little packages to help people out.  So thank you for sharing that with the community.  I just wanted to find out how you got into emacs in the first place?
+*Sacha:* Somehow, with all of that, you find time to work on lots of Emacs repositories and little packages to help people out.  Thank you for sharing that with the community.  I just wanted to find out... How you got into emacs in the first place?
 
-*Phil:* That would have been around 2003, when I was in university.  I had just learned dvorak and I came down to the choice between Emacs and Vi, and vi has the hkjl and I was looking at it and thinking, "That doesn't make any sense!"  Now I understand that of course you can remap that, but at the time that sent me down the right path.
+*Phil:* That would have been around 2003, when I was in university.  I had just learned Dvorak. It came down to the choice between Emacs and Vi. Vi has the hkjl. I was looking at it and thinking, "That doesn't make any sense!"  Now I understand that of course you can remap that, but at the time, that sent me down the right path.
 
-*Sacha:* That's awesome.  I guess we're all lucky that you did the keyboard switch first, before you picked an editor.
+*Sacha:* That's awesome.  I guess we're all lucky that you did the keyboard switch first before you picked an editor. What got you interested in it, aside from the fact you could use the keybindings and change them around?
 
-What got you interested in it, aside from the fact you could use the keybindings and change them around?
+*Phil:* A big part of it was Emacs Lisp, although I took a while to ramp up on that.  I had experimented unsuccessfully with programs writing programs, meta programming, when I was much younger--in QBasic or something--but when I saw Lisp, it looked like it could actually do it in a way that makes sense.  That really intrigued me.  Once I got into it more, what I really came to appreciate is the live feedback and the notion that you are always interacting with the progrma as it's running. That's such an appealing concept for me.  The programs I use day-to-day, as I started doing more professional work, systems able to interact or reprogram on the fly... It's really a good boost.
 
-*Phil:* A big part of it was emacs lisp, although I took a while to ramp up on that.  I had experimented unsuccessfully with programs writing programs, meta programming, when I was much younger—in qbasic or something— but when I saw lisp, it looked like it could actually do it in a way that makes sense.  That really intrigued me.  Once I got into it more, what I really came to appreciate is the live feedback and the notion that you are always interacting with the progrma as it's running; that's such an appealing concept for me.  The programs I use day-to-day, as I started doing more professional work, sytems able to interact reprogram on the fly is really a good boost{sentence needs work}.
+*Sacha:* You mention REPLS a lot in your blog post. For people knew to Emacs who are listening to this, a REPL is a read-evaluate-print-loop. You type something in and it does stuff.  Clojure is one of the things you use REPLs for, of course, but is there anything else you use REPLS for?
 
-*Sacha:* You mention repls a lot in your blog post—for people knew to Emacs who are listening to this, a repl is a read-evaluate-print-loop: so you type so you type something in and it does stuff.  Clojure is one of the things you use repls for of course, but is there anything else you use repls for?
-
-*Phil:* Sure, yeah.  I've been getting into maintaining an erlang{?} system at work.  That kind of takes it to the next level, because when you look at your repl you are really on a relay {?} communicating with a whole cluster at once, and you can turn on your tracing from your one console session to trace functions across the entire cluster of however many nodes you have.  I've really come to appreciate that... debugging with that system at work.
+*Phil:* Sure, yeah.  I've been getting into maintaining an Erlang system at work.  That kind of takes it to the next level, because when you look at your REPL, you are really communicating with a whole cluster at once.  You can turn on your tracing, from your one console session, to trace functions across the entire cluster of however many nodes you have.  I've really come to appreciate that... debugging with that system at work.
 
 *Sacha:* So does that mean you've managed to convince all of your other coworkers to switch to Emacs?
 
-*Phil:* It's a back and forth we have.  Working remotely, it's really important to be able to collaborate.  The team I'm on is all over this hemisphere, all over North America, so being able SSH in and work together is a big plus.  There are a few vim people in my team, but at least they still have that property of being able to live inside a tmux session.
+*Phil:* It's a back and forth we have.  Working remotely, it's really important to be able to collaborate.  The team I'm on is all over this hemisphere, all over North America, so being able to SSH in and work together is a big plus.  There are a few Vim people in my team, but at least they still have that property of being able to live inside a tmux session.
 
-*Sacha:* Speaking of tmux seven pairing {?} you mention that you've been working on a service to make it easier to pair, and I'd love to later on find out how the Vim people are dealing with that.  I'm sure you pick neutral ground for the editor or whatever you sap {?} every so often.  Do you want to share a little bit of that?  Is there a demo that you can show us?
+*Sacha:* Speaking of tmux and pairing, you mention that you've been working on a service to make it easier to pair. I'd love to find out how the Vim people are dealing with that.  I'm sure you pick neutral ground for the editor or whatever... Swap every so often?  Do you want to share a little bit of that?  Is there a demo that you can show us?
 
-*Phil:* Absolutely.  The idea came from this really neat service called paradot.io {?} that a friend of mine started.  Unfortunately it fell over when cithub deprecated their version 2 API, I think, it didn't get upgraded to the new version.  The way it works is that you give it a repository and a list of people you want to collaborate with and then it will just spit out the VCT node for you.  It will then check out a project and it will do any initialisation you need, and you'll get your personal dot files on there, and put everyone's public key on the machine for you.  Then everyone just SSHs in and can {"conjure two  mexicans"? :p can't hear} It's a really cool idea.  The tricky thing there is his service was ... He put me on the beta list, and I always felt a little reluctant to use it because every time I set something up it was like... he hadn't implemented billing yet, so it was coming out of his credit card.  I thought, "do I really need this?  No, I'll skip this", but it was really useful, especially for a remote worker.  When it fell over, when github turned off their version 2 API, I wondered how hard it would be to bring it back up to speed.  Put then I thought about the billing and that part semmed hard, I don't like the idea of dealing with people's private information.  So I never got around to it until I realised that I could do it in a way that would let the user bring their own {? 8:39} account to it.  So then I can get out of the business of launching these nodes on my account, and just say, "look, here's a way to stream-line it for you", and that's what I ended up doing with Syme.  syme.korukuapp.com{?} is the project.  I'd be glad to do a demo if you are interested.
+*Phil:* Absolutely.  The idea came from this really neat service called pair.io that a friend of mine started.  Unfortunately it fell over when Github deprecated their version 2 API, I think.  It didn't get upgraded to the new version.  The way it works is that you give it a repository and a list of people you want to collaborate with. Then it will just spit out the node for you.  It will then check out a project, and it will do any initialisation you need. You'll get your personal dot files on there, and it will put everyone's public key on the machine for you.  Then everyone just SSHs in and can (inaudible). It's a really cool idea.  
 
-*Sacha:* Sure.  If you hover over the google hangout screen you should see a green icon on the left side that looks like a monitor with an arrow, and then you can use that to share either a specific application or your entire desktop. {I think this sentence is burned into you brain now, Sacha! :P}  And while you're doing that... one of the reasons I was interested in this is that you mentioned in one of your blog posts that you've been helping with these usergroups session working in Emacs, I guess, picking a project and working on it together, using Syme to have everyone working on the same tmux session.
+The tricky thing there is his service was ... He put me on the beta list, and I always felt a little reluctant to use it, because every time I set something up it was like... he hadn't implemented billing yet, so it was coming out of his credit card.  I thought, "Do I really need this?  No, I'll skip this." But it was really useful, especially for a remote worker.  When it fell over, when Github turned off their version 2 API, I wondered how hard it would be to bring it back up to speed.  But then I thought about the billing. That part seemed hard. I don't like the idea of dealing with people's private information.  So I never got around to it, until I realised that I could do it in a way that would let the user bring their own Amazon EC2 account to it.  Then I can get out of the business of launching these nodes on my account and just say, "Look, here's a way to streamline it for you." That's what I ended up doing with Syme.  syme.herokuapp.com is the project.  I'd be glad to do a demo if you are interested.
 
-*Phil:* Yeah.  We use this at the Seattle Clojure group.  It's quite nice for that becauese you can et everyone in the group to join like a github organisation and then I can just say I want all of the group invited, and using the public github API you can pull in all their pblic keys and addh them to the node.
+*Sacha:* Sure.  If you hover over the Google Hangout screen, you should see a green icon on the left side that looks like a monitor with an arrow. Then you can use that to share either a specific application or your entire desktop.   And while you're doing that... one of the reasons I was interested in this is that you mentioned in one of your blog posts that you've been helping with these user group sessions--working in Emacs, I guess, picking a project and working on it together, using Syme to have everyone working on the same tmux session.
 
-Can you see my screen?
+*Phil:* Yeah.  We use this at the Seattle Clojure group.  It's quite nice for that becauese you can get everyone in the group to join like a Github organisation. Then I can just say, I want all of the group invited. Using the public Github API, you can pull in all their public keys and add them to the node. Can you see my screen? I'll go ahead and load up.  
 
-*Sacha:* Yes.  It's got a picture on it, it's got user/project... etcetera etcetera.
-
-*Phil:* I'll go ahead and load up.  This is the repository for the keyboard project, but it can be any open source thing.  I'll go ahead and load that up.  Then you go in here and I can put in 'Sachac' and anyone else i want to invite.  I don't want to put my details in now, but I actually have a node I already launched earlier today that I can jump to.  Once you fill this in it kicks this off 
+This is the repository for the keyboard project, but it can be any open source thing.  I'll go ahead and load that up.  Then you go in here.  I can put in 'sachac' and anyone else I want to invite.  I don't want to put my details in now, but I actually have a node I already launched earlier today that I can jump to.  Once you fill this in, it kicks this off. 
 
 *Sacha:* This is totally a cooking lesson demo...
 
-*Phil:* Which you get eventually.  Fast-forward three or four minutes and what you get is this, it says the node is ready, it sets up a DNS entry for it, and then it shows our two faces here which shows were the ones it's picked up the keys for.
+*Phil:* Which you get eventually.  Fast-forward three or four minutes. What you get is this. It says the node is ready. It sets up a DNS entry for it. Then it shows our two faces here, which shows we're the ones it's picked up the keys for.
 
-*Sacha:* Yes, it has actually picked up my key.  Holy cow!  Let's attach, I'm guessing that' what I need to do.  No there's no session running.
+*Sacha:* Yes, it has actually picked up my key.  Holy cow!  Let's attach. I'm guessing that what I need to do.  No, there's no session running.
 
 *Phil:* I can't remember if I shared the whole desktop or...
 
-*Sacha:* You can unshare and then share again.
-That's cool!  I was in a shared tmux session with somebody else who wanted help with Emacs, because I like to help people one on one as well—it's a great way to get past these minor inconveniences and errors and all that stuff.  The amazing thing is that when you are watching someone work you are like, "how the heck did you do that?", or you could say, "I see you're typing M-x and typing in everything manually.  Do you know about..." and smx {?}
+*Sacha:* You can unshare and then share again. That's cool!  
 
-*Phil:* I just realised I don't have my pub key pair on this machine, so do you want to go ahead and share from yours.?
+I was in a shared tmux session with somebody else who wanted help with Emacs, because I like to help people one on one as well. It's a great way to get past these minor inconveniences and errors and all that stuff.  The amazing thing is that when you are watching someone work, you're like, "How the heck did you do that?" Or you could say, "I see you're typing M-x and typing in everything manually.  Do you know about ido and smex?"
 
-*Sacha:* We don't get the totally cool feature that you can type things and have things happen.
+*Phil:* I just realised I don't have my pub key pair on this machine. Do you want to go ahead and share from yours?
 
-*Phil:* Well, actually I can do it from here on my other thingy.
+*Sacha:* We don't get the totally cool feature where you can type things and have things happen.
 
-*Sacha:* Yeah it's technomancy.238.syme.in. Anyway, for people who are watching this, technomancy is just run a {? 13:03}shared tmux session on an EC2 instance that poeple can ssh to and they can authenticate these things with public keys that are already on github, so it's great for working on a github project together.
+*Phil:* Well, actually I can do it from here, on my other thingy.
 
-*Phil:* So {"blah em ne" 13:17} attached and it shdould load up.
+*Sacha:* Yeah it's technomancy.238.syme.in. Anyway, for people who are watching this, technomancy has just run a shared tmux session on an EC2 instance that poeple can SSH to. They can authenticate these things with public keys that are already on Github, so it's great for working on a Github project together.
+
+*Phil:* So... attached and it should load up.
 
 *Sacha:* Here we go!
 
-*Phil:* Emacs is booting, it's pulling in the packages that Ive preloaded.  So, let's see. 
+*Phil:* Emacs is booting. It's pulling in the packages that Ive preloaded.  Let's see. 
 
-*Sacha:* I'm just going to make my screen a little bigger, too, that would help.
+*Sacha:* I'm just going to make my screen a little bigger, too. That would help.
 
-*Phil:* The first {boot up}? takes a little longer with the packages, could be taking a while.
+*Phil:* The first boot up takes a little longer with the packages. Could be taking a while.
 
-*Sacha:* So, basically it {spins up the easy to instance}? and then it initializes everything from scratch.  And here we are.
+*Sacha:* So, basically it spins up the EC2 instance, and then it initializes everything from scratch.  Here we are.
 
 *Phil:* Yeah. Cool.
 
 *Sacha:* I'm making your computer beep. *laughter*
 
-*Phil:* Then it attaches your dot files from github if you've got a {.symerc}? repository, and it will run {(too quiet 14:17)} and then you can also have project specific files for it your project needed a database or some debian package installed.
+*Phil:* Then it attaches your dot files from Github if you've got a .symerc repository. It will run (inaudible). Then you can also have project-specific files for if your project needed a database or some Debian package installed.
 
 *Sacha:* This would be great if you're quickly working with people. I like the fact that it handles all the pub key stuff automatically.
 
-*Phil:* Yeah, that was a neat discovery that github just exposes those, so you can do... (demonstrates something on screen) you can just throw that straight into your {authorized skews}? entry.
+*Phil:* Yeah, that was a neat discovery that Github just exposes those, so you can do... (demonstrates something on screen) you can just throw that straight into your =~/.ssh/authorized_keys= entry.
 
-*Sacha:* I did not know that.  I'm really happy about the increasing popularity of cloud instances; things like ec2 or digital ocean.  Just this way to quickly spit up something and you dont have to deal with ssh tunnels and letting people have access to your own machine.  This is good, this is all sorts of great stuff.
+*Sacha:* I did not know that.  I'm really happy about the increasing popularity of cloud instances, things like EC2 or Digital Ocean.  Just this way to quickly spin up something. You don't have to deal with SSH tunnels and letting people have access to your own machine.  This is good. This is all sorts of great stuff.
 
-*Phil:* Yeah.  One "gotcha" there is that they're not on your machine but typically if you ssh in and you have ssh forwarding on you can still... {beijing}? basically can answer ssh challenge responses on your behalf, so we had to go in and disable that for Syme; because otherwise where you're paring with someone, as long as you're connected, they could impersonate you.
+*Phil:* Yeah.  One gotcha there is that they're not on your machine, but typically if you SSH in and you have SSH forwarding on you can still (inaudible) - it basically can answer SSH challenge responses on your behalf. We had to go in and disable that for Syme. Otherwise, when you're pairing with someone, as long as you're connected, they could impersonate you.
 
 *Sacha:* Ah... so I probably should disconnect now. *laughs*
 
-*Phil:* No, no, we blocked that from being let in the ssh server config.
-You can do that on a per user basis, there's a little wrapper and theres' also {perl...}? basis.
+*Phil:* No, no, we blocked that from being net in the SSH server config.
+You can do that on a per user basis, there's a little wrapper and there's also (inaudible) basis.
 
-*Sacha:* What this makes me think of, because I've actually been talking to a couple of people about — and let me turn off screen sharing here — I talked to {Nick Ferrier}?, he is also very interested in this idea of swarm coding.  Having a virtual hackathon, and just working on things together.  I was also talking with {Tom Marvel}? whose been getting more people into clojure and emacs, and other things like that.  {Building}? the idea of people being able to *Sacha:*hare and at the same time maybe they have some kind of google hangout or skype conversation going on {back end}? maybe a {zip client}? instead, to be able to talk about code and share tips.  I would love to see more of those session.
+*Sacha:* What this makes me think of, because I've actually been talking to a couple of people about... I talked to Nic Ferrier. He is also very interested in this idea of swarm coding.  Having a virtual hackathon, and just working on things together.  I was also talking with Tom Marble who's been getting more people into Clojure, Emacs, and other things like that.  (inaudible) the idea of people being able to (inaudible) and at the same time, maybe they have some kind of Google Hangout or Skype conversation going on in the back end--aybe a SIP client instead--to be able to talk about code and share tips.  I would love to see more of those sessions.
 
-*Phil:* We've so far only used it for local meetings, but it would be a great tool for something where anyone could pop on from anywhere online.  I haven't had the chance to experiment with that myself but I can see a lot of potential there for exploring programs together, which can be lot of fun.  It's always a little tricky to fnd a good problem to solve together, at least for the clojure group. We've had a few good sessions where we've come up with some really interesting but small problems to solve, but a lot of the time it's hard to find something challenging but not too contrived.  However, if you're working on a real world project, or you want to shoulder-surf on someone who is, then it's fantastic.
+*Phil:* We've so far only used it for local meetings, but it would be a great tool for something where anyone could pop on from anywhere online.  I haven't had the chance to experiment with that myself, but I can see a lot of potential there for exploring programs together, which can be lot of fun.  It's always a little tricky to find a good problem to solve together, at least for the Clojure group. We've had a few good sessions where we've come up with some really interesting but small problems to solve. But a lot of the time, it's hard to find something challenging but not too contrived.  However, if you're working on a real world project, or you want to shoulder-surf on someone who is, then it's fantastic.
 
-*Sacha:* I've seen a couple of live coding screencasts.  Basically, someone is like, "I want to customize emacs to do this...", watch me as I try to figure it out.  I've even recorded one of these myself.  I find it only really becomes watchable, at least for my part, if I speed things up so it looks like I'm typing about four times as fast as I really do.
+*Sacha:* I've seen a couple of live coding screencasts.  Basically, someone is like, "I want to customize Emacs to do this; watch me as I try to figure it out."  I've even recorded one of these myself.  I find it only really becomes watchable, at least for my part, if I speed things up so it looks like I'm typing about four times as fast as I really do.
 
-*Phil:* But if it's live you can ask questions.
+*Phil:* But if it's live, you can ask questions.
 
-*Sacha:* I can see if you're getting stuck on an issue or if you're trying to figure out how to code your way around org or emacs internals or working with repls, maybe you can find an emacs mentor to pair with you.
+*Sacha:* I can see if you're getting stuck on an issue or if you're trying to figure out how to code your way around Org or Emacs internals or working with REPLs, maybe you can find an Emacs mentor to pair with you.
 
-*Phil:* I'm hoping Syme does get used like that.  I wanted to make it as quick as possible to get started, it just takes a few bits of information: your account, your project, and whom you want to work with, and then you should be off to your own instance.
+*Phil:* I'm hoping Syme does get used like that.  I wanted to make it as quick as possible to get started. It just takes a few bits of information: your account, your project, and whom you want to work with. Then you should be off to your own instance. syme.herokuapp.com
 
-*Sacha:* And that "Syne, *SACHA:*Y-N-E, dot..."? (Sacha is spelling "Syme" incorrectly)
+*Phil:* I was really happy with how it ended up being fairly simple once I'd narrowed it down to getting the credentials and doing this on the user's behalf.  It's about a five-hundred line Clojure web application. I'm able to use that when people have questions about a particular technique. I just point them to that.
 
-*Phil:* It's {syme.kurokuapp.com}?
+*Sacha:* Have you written an Emacs interface for it yet?
 
-*Sacha:* Oh there is no app configured at that hosting.  I'm probably not typing it correctly.
+*Phil:* Oh, yeah, that could be interesting.  You could launch it just with M-x.  Yeah, actually I could throw in a (inaudible) on top of that with Github (inaudible)? It shouldn't be out of the question.  That would be interesting as learning (inaudible) project.
 
-*Phil:* Let me pull it up here for you.
-
-*Sacha:* Oh, "Syme", I was misspelling it!
-
-*Phil:* I was really happy with how it ended up being fairly simple once I'd narrowed it down to getting the credentials and doing this on the user's behalf.  It's about a five-hundred line clojure web application, so I'm able to use that when people have questions about a particular technique, I just point them to that.
-
-*Sacha:* Have you written an emacs interface for it yet?
-
-*Phil:* Oh, yeah, that could be interesting.  You could launch it just with M-x.  Yeah, actually I could throw in a {rats API}? on top of that with github {o off}? it shouldn't be out of the question.  That would be interesting as learning {o-off}? project.
-
-*Sacha:* And then it could pick up the current repository you are working in naturally.
+*Sacha:* And then it could pick up the current repository you are working in, naturally.
 
 *Phil:* Yeah, right.
 
-*Sacha:* It's kind of fun how you can tweak all these things and make them more efficient.  I had a nice stroll through your config earlier, and I was very confused because one functions you'd commented out was something that limited the size of your functions.
+*Sacha:* It's kind of fun how you can tweak all these things and make them more efficient.  I had a nice stroll through your config earlier. I was very amused because one function you'd commented out was something that limited the size of your functions.
 
 *Phil:* That's a fun one, yeah, let's see.  I forget what it was called.  Someone in the IRC was saying, "Man, no function should ever be more than twenty-five lines."
-I'm like, "Yeah, that sounds reasonable.  I wonder how hard it would be to enforce that.", and it turns out it's not that hard.  There's the {for change}? hooks or something, where if you throw an error in there the change doesn't actually get applied.  So if you try to write a function that gets to long, it's like, "Nope, sorry.  Delete some lines ."  I don't have that turned on, for obvious reasons, but just as an experiment.
+I'm like, "Yeah, that sounds reasonable.  I wonder how hard it would be to enforce that." It turns out it's not that hard.  There's the =before-change-functions= hooks or something, where if you throw an error in there, the change doesn't actually get applied.  So if you try to write a function that gets too long, it's like, "Nope, sorry.  Delete some lines."  I don't have that turned on, for obvious reasons, but just as an experiment.
 
 *Sacha:* Your config was a lot shorter than I expected.  I guess because you've pushed a lot of it out to packages.
 
-*Phil:* Yeah, that's been my emacs journey in a way.  Back in 2008, I guess, there was {trome's elpa}? was the only package management system, and when I started using it there were still only about twenty packages, and every time you wanted to upload one you had to email him and he would be like, "okay, I've uploaded it", but I could see a lot of potential there.  At the time, a lot of people were just installing off of the Emacs wiki, which made me a little nervous.  At the time I started the Emacs starter kit it was just a git repository, that you cloned and used as your own dot files.  That really took off but over time I've come to appreciate that it's a little too magic I think.  We get a lot of people coming into chat and saying things like, "Aaaah!  It's doing this thing and I don't know why!", for me I think it's great, but tastes vary.  The main thing wasn't that it was doing the wrong thing but it was just this pile of stuff thta they grabbed and they didn't have a deep understanding off.  So, I've started to shy away from that approach and be more about... well, if there's this cool thing you want to share, the emacs package should be the unit of sharing.  It can be documented.  It can do one thing really well.  You can decide, when you're pulling that it, if it's worth the tradeoffs.  You can manage that on a much more granular level.
+*Phil:* Yeah, that's been my Emacs journey in a way.  Back in 2008, I guess, there was tromey's ELPA. It was the only package management system.  When I started using it, there were still only about twenty packages. Every time you wanted to upload one, you had to email him. He would be like, "okay, I've uploaded it". I could see a lot of potential there.  At the time, a lot of people were just installing off the Emacswiki, which made me a little nervous.  At the time I started the Emacs Starter Kit, it was just a git repository that you cloned and used as your own dot files.  That really took off. But over time I've come to appreciate that it's a little too magic, I think.  We get a lot of people coming into chat and saying things like, "Aaaah!  It's doing this thing and I don't know why!". For me, I think it's great, but tastes vary.  The main thing wasn't that it was doing the wrong thing, but it was just this pile of stuff that they grabbed and they didn't have a deep understanding of.  I've started to shy away from that approach and be more about... well, if there's this cool thing you want to share, the Emacs package should be the unit of sharing.  It can be documented.  It can do one thing really well.  You can decide, when you're pulling from it, if it's worth the tradeoffs.  You can manage that on a much more granular level.
 
 *Sacha:* Better defaults, that sort of size.
 
-*Phil:* Yeah.  Better defaults is a library.  I took the starter kit and hacked off anything that could possibly be objectionable.  This is what like, 99% of all emacs users can agree on; this is the way emacs should work.  So, very little magic, and also very little documentation.
+*Phil:* Yeah.  Better defaults is a library.  I took the starter kit and hacked off anything that could possibly be objectionable.  This is what, like, 99% of all Emacs users can agree on. This is the way Emacs should work.  So, very little magic, and also very little documentation.
 
-*Sacha:* It's kind of funny because when you talk about new users benefitting the most from better defaults, I actually think they should keep their menubar on for tho first little while.  It's very similar to the kind of config that I've eventually grown towards: minimal and diminished in some cases for a personal {conscape}?
+*Sacha:* It's kind of funny, because when you talk about new users benefiting the most from better defaults, I actually think they should keep their menubar on for tho first little while.  It's very similar to the kind of config that I've eventually grown towards: minimal and diminished in some cases for a personal (inaudible)?
 
-*Phil:* Yeah, I think the menubar is good in a lot of modes, but from what I've seen, it can be misleading because people assume that everything is in the menu bar and they will sometimes not look beyond that.  Sometimes I'll turn it on if I'm exploring a new mode and I know that mode does a good job of using the menubar — like gnews.  Not having the menu bar can be a little disheartening but encourages you to use the help commands, which are guaranteed to cover everything.  There's room for it, definitely.
+*Phil:* Yeah, I think the menubar is good in a lot of modes. But from what I've seen, it can be misleading because people assume that everything is in the menu bar, and they will sometimes not look beyond that.  Sometimes I'll turn it on if I'm exploring a new mode and I know that mode does a good job of using the menubar, like Gnus.  Not having the menu bar can be a little disheartening, but it encourages you to use the help commands, which are guaranteed to cover everything.  There's room for it, definitely.
 
-*Sacha:* Since you were learning emacs and emacs lisp without the help of all these lovely things, what helped you learn about how to customize emacs to the extent that you have.
+*Sacha:* Since you were learning Emacs and Emacs Lisp without the help of all these lovely things, what helped you learn about how to customize Emacs to the extent that you have?
 
-*Phil:* Probably nothing had as big an impact as the IRC channel.  I started using emacs a little before I used IRC, but I didn't really take off and dig in until that point.  It's so weird, you know what it's like but, it's such a mish-mash of people from all over talking about all kinds of things.
+*Phil:* Probably nothing had as big an impact as the IRC channel.  I started using Emacs a little before I used IRC, but I didn't really take off and dig in until that point.  It's so weird. You know what it's like. It's such a mish-mash of people from all over talking about all kinds of things.
 
-*Sacha:* And occassionally, very rarely, sometimes we manage to talk about Emacs.
+*Sacha:* And occasionally, very rarely, sometimes we manage to talk about Emacs.
 
-*Phil:* Yeah, pretty much.  It's a little ridiculous.  It's a great community, I love hanging out there.  It just exposes you to so many different viewpoints.  Most of the channels I visit on freenode are specific to one language or one application, where you don't get as much diversity of opinion and backgrounds.
+*Phil:* Yeah, pretty much.  It's a little ridiculous.  It's a great community, I love hanging out there.  It just exposes you to so many different viewpoints.  Most of the channels I visit on Freenode are specific to one language or one application, where you don't get as much diversity of opinion and backgrounds.
 
-*Sacha:* It's great for the totally random, "I had no idea emacs could do that", when you somebody's answers to the questions.
-So, IRC — got to be on it.
+*Sacha:* It's great for the totally random, "I had no idea Emacs could do that", when you see somebody's answers to the questions. So, IRC — got to be on it.
 
-*Phil:* Yeah, although it can be a little distracting at times.  If you work remotely it can be this dual, keeps you sane but then that depends on your definition of sanity whether that actually happens or not.  *laughs*
+*Phil:* Yeah, although it can be a little distracting at times.  If you work remotely, it can be this (inaudible). Keeps you sane. But then that depends on your definition of sanity, whether that actually happens or not.  *laughs*
 
-*Sacha:* Are there other interesting snippets in your config?  Also, what have you discarded from it since you've cut it down to such a size.
+*Sacha:* Are there other interesting snippets in your config?  Also, what have you discarded from it, since you've cut it down to such a size?
 
-*Phil:* Let's see.  Well, I was using gnews for a long time and I ended up switching to mu4e which is more like a search-based interface to email, and I like that a lot.  It works really well.  If you're used to gmail and the way that it puts search front and centre it does a good job of that as well.  It's much more accessible than gnews, which can feel like a bit of a dungeon crawl to find what you need.
+*Phil:* Let's see.  Well, I was using Gnus for a long time. I ended up switching to mu4e, which is more like a search-based interface to email, and I like that a lot.  It works really well.  If you're used to Gmail and the way that it puts search front and centre, it does a good job of that as well.  It's much more accessible than Gnus, which can feel like a bit of a dungeon crawl to find what you need.
 
-*Sacha:* It's immensly powerful but also very, very large.
+*Sacha:* It's immensely powerful but also very, very large.
 
-*Phil:* I have tonnes of respect for it, I just ended up on mu4e, it suits my needs better.  Also, mu4e is designed to be asynchronous from the ground up, so you know {blocking calls...}?
+*Phil:* I have tonnes of respect for it. I just ended up on mu4e. It suits my needs better.  Also, mu4e is designed to be asynchronous from the ground up, so you know... blocking calls...
 
-*Sacha:* Gnews has introduces some delays to my workflow sometimes.
+*Sacha:* Gnus has introduced some delays to my workflow sometimes.
 
-*Phil:* Yeah, it's a hard problem not having really solid {Earl Grey tea round the bibs :P 29:20}? 
+*Phil:* Yeah, it's a hard problem not having really solid (inaudible). 
 
-*Sacha:* Now, you've also got another bunch of packages you use in addition to mu4e.  I have your init file in front of me so I can rattle them off and you can tell us about the interesting ones.  Of course you have better defaults, since you have it you might as well take advantage of it.  Clojure paredit, I keep going back to that quote, I think it was Magnar who passed it on to me, "If you are not the kind of person who can deal with paredit or smartparens, you /become/ that kind of person."
+*Sacha:* Now, you've also got another bunch of packages you use in addition to mu4e.  I have your init file in front of me, so I can rattle them off, and you can tell us about the interesting ones.  Of course you have better defaults. Since you have it, you might as well take advantage of it.  Clojure, paredit... I keep going back to that quote, I think it was Magnar who passed it on to me. "If you are not the kind of person who can deal with paredit or smartparens, you /become/ that kind of person."
 
 *Phil:* It's not for everyone, just for the kind of person you should aspire to be.  *laughs*
 
-*Sacha:* What is it like for you?  How do you wrap your brain around not just the slurping and barfing, and all the other things you can do with it?
+*Sacha:* What is it like for you?  How do you wrap your brain around not just the slurping and barfing, but all the other things you can do with it?
 
-*Phil:* The main thing people get tripped up on I think is that paredit will refuse to do certain things.  When it can tell that those poeration will result in broken pairing.
+*Phil:* The main thing people get tripped up on, I think, is that paredit will refuse to do certain things hen it can tell that those operations will result in broken pairing.
 
-*Sacha:* The number of times I've hit C-q close parenthesis.
+*Sacha:* The number of times I've hit C-q )!
 
-*Phil:* Right, yeah.  It's trying to set you on the right path, so it does that by just making sure that all the operations it does are protected. Every time you insert a paren, you have to insert a matching one, and every time you kill, you can only kill up to the end otherwise that would leave your code in an invalid state, and as long as you limit yourself to the commands it knows about it provides this guarantee.  C-w 'kill-region' is not one of those commands, so you have to train yourself to avoid that.  When you use 'kill-region', you're saying, "No, paredit, I know better than you", which is usually not the case.  But once you've internalised that you end up working on a higher level where you're not thinking in terms of characters any more but in terms of expressions.  You're saying, "I want to kill this whole string or this whole form", not, "I want to kill from this point up to this point".  It's higher level commands, I would say.  Especially people who are new to lisp, they think this is so intimidating seeing all these parentheses everywhere, and if you have paredit on it's... it does take some adaptation, but it's no additional mental overhead for you.  You're changing the structure directly.
+*Phil:* Right, yeah.  It's trying to set you on the right path, so it does that by just making sure that all the operations it does are protected. Every time you insert a paren, you have to insert a matching one. Every time you kill, you can only kill up to the end. Otherwise that would leave your code in an invalid state. As long as you limit yourself to the commands it knows about, it provides this guarantee. =C-w= (=kill-region=) is not one of those commands, so you have to train yourself to avoid that.  When you use =kill-region=, you're saying, "No, paredit, I know better than you," which is usually not the case.  But once you've internalised that, you end up working on a higher level where you're not thinking in terms of characters any more, but in terms of expressions.  You're saying, "I want to kill this whole string or this whole form", not, "I want to kill from this point up to this point".  It's higher level commands, I would say.  Especially people who are new to Lisp, they think this is so intimidating, seeing all these parentheses everywhere. If you have paredit on, it's... it does take some adaptation, but it's no additional mental overhead for you.  You're changing the structure directly.
 
 [32:25]
 
-*Sacha:* Okay, so basically just keep at it, and keep your fingers off of C-w, and eventually you'll get the hang of it.
+*Sacha:* Okay, so basically, just keep at it, and keep your fingers off of =C-w=, and eventually you'll get the hang of it.
 
-*Phil:* One thing you can do is unbind C-w temporarily, or change it to another binding.  Actually, one thing I did when I started using my 40% keyboard; this is my travel board that I designed.  You can see it has 42 keys.  I had to move tab way off into the corner, it's not very convenient.  Most programs that are 'unixy', anything running in a terminal will interpret C-i as a tab, because inside a terminal they are literally the same: pressing tab sends a C-i {something code 33:22}? but emacs does the translation, even when it's in a GUI.  I was able to teach my web browser to do the same.  That was great when I was on here but it was so tempting, I kept wanting to push this key here that doesn't actually exist.  So what I ended up doing was taking my regular keyboard that I use when I'm in the office, and plucking out that key, so there's no more key cap there any more.  You learn really quick then.
+*Phil:* One thing you can do is unbind =C-w= temporarily, or change it to another binding.  Actually, one thing I did when I started using my (inaudible) keyboard--this is my travel board that I designed.  You can see it has 42 keys.  I had to move tab way off into the corner. It's not very convenient.  Most programs that are Unix-y, anything running in a terminal will interpret =C-i= as a tab, because inside a terminal, they are literally the same. Pressing =TAB= sends a =C-i= (inaudible), but Emacs does the translation, even when it's in a GUI.  I was able to teach my web browser to do the same.  That was great when I was on here. But it was so tempting... I kept wanting to push this key here that doesn't actually exist.  So what I ended up doing was taking my regular keyboard that I use when I'm in the office, and plucking out that key, so there's no more key cap there any more.  You learn really quick then.
 
-*Sacha:* That's really hardcore.  I remember the time I bound my left control to ring a bell, because I was trying to get used to the capsless control thing.  Negative reinforcement or just making things less functional to force yourself into new ways.  I'm a little curious, because you mentioned 42 keys, but you'd imagine with emacs you'd want to add more keys instead of reducing the number of keys.  How does it work with key chords and stuff?
+*Sacha:* That's really hardcore.  I remember the time I bound my left control to ring a bell, because I was trying to get used to the Caps as control thing.  Negative reinforcement or just making things less functional to force yourself into new ways.  I'm a little curious, because you mentioned 42 keys... You'd imagine, with Emacs, you'd want to add more keys instead of reducing the number of keys.  How does it work with key chords and stuff?
 
-*Phil:* Well a big part of it is that you can see, as with the two here, it just puts way more on your thumbs.  These are control and alt, these are way more accessible, that's shift.  So that doesn't make more room available but it does make it nicer on your hands, but then also most of the punctuation is on the fn layer, so you have to hold down fn and hit the punctuation.  For a lot of the punctuation you need shift for it anyway.  For example, with parentheses you are pressing shift then moving way up to the top right.  On this keyboard the parenteses are on the home row, so it's actually less reaching over all anyway.
+*Phil:* Well, a big part of it is that you can see, as with the two here, it just puts way more on your thumbs.  These are Control and Alt. These are way more accessible. That's Shift.  So that doesn't make more room available, but it does make it nicer on your hands. But then also most of the punctuation is on the Fn layer, so you have to hold down Fn and hit the punctuation.  For a lot of the punctuation, you need shift for it anyway.  For example, with parentheses, you are pressing Shift then moving way up to the top Right.  On this keyboard, the parenteses are on the home row, so it's actually less reaching overall anyway.
 
-*Sacha:* Designed by a lisp programmer.
+*Sacha:* Designed by a Lisp programmer.
 
 *Phil:* Yeah, you can tell.  The front and center are the parentheses.
 
 *Sacha:* I'm surprised you even need a function key.
 
-*Phil:* It still takes three or four weeks to get accustomed to it.  I was even remapping it as I was going, so it wasn't even staying still.  Once you've adjusted to it I'd say it might be slightly slower than a full-sized keyboard, but not by much.
+*Phil:* It still takes three or four weeks to get accustomed to it.  I was even remapping it as I was going, so it wasn't even staying still.  Once you've adjusted to it, I'd say it might be slightly slower than a full-sized keyboard, but not by much.
 
 *Sacha:* Can I ask how quickly you actually type?
 
-*Phil:* Around 100wpm.  I've been throwing it through a loop recently with all this shifting around.  When you're programming there's more punctuation, so you end up going a bit slower.
+*Phil:* Around 100wpm.  I've been throwing it for a loop recently with all this shifting around.  When you're programming, there's more punctuation, so you end up going a bit slower.
 
-*Sacha:* I was talking to Xah Lee last week, and he is constantly changing his keybindings too.  It messes with your brain.  I guess you eventually get used to it.  I've noticed that your actual keybindings in your Emacs configuration are not as long as one would expect with a highly customised keyboard and everything I guess you justleave everything else where they are?
+*Sacha:* I was talking to Xah Lee last week, and he is constantly changing his keybindings too.  It messes with your brain.  I guess you eventually get used to it.  I've noticed that your actual keybindings in your Emacs configuration are not as long as one would expect with a highly customised keyboard and everything. I guess you just leave everything else where they are?
 
-*Phil:* Yes.  A lot of it.  I have Emacs {commandings}? 36:43 and I also use a small program called xbindkeys, which is like binding shell commands in emacs but it works when you're in a browser or outside of emacs — which for me is just the browser.  Get all my music, a lot of stuff gets shifted out to there if I want to have it accessible.
+*Phil:* Yes.  A lot of it.  I have Emacs (inaudible 36:43). I also use a small program called xbindkeys, which is like binding shell commands in Emacs, but it works when you're in a browser or outside of Emacs — which for me is just the browser.  Get all my music... A lot of stuff gets shifted out to there if I want to have it accessible.
 
-When I stopped using the starter kit and switched over to better defaults, I went through with a clear slate and brought back in the ones that I felt like I missed.
+When I stopped using the starter kit and switched over to better-defaults, I went through with a clear slate and brought back in the ones that I felt like I missed.
 
 *Sacha:* It's like declaring Emacs bankruptcy.  Starting with a clean slate and bringing your config slowly back in.
 
-So, that was the digression from paredit... what's idle highlight mode?  I haven't played around with that one.
+So, that was the digression from paredit... what's idle-highlight mode?  I haven't played around with that one.
 
-*Phil:* Oh, yeah, that's another one that actually came out of the Emacs IRC channel.  Someone asked a question about how to... well, basically how it works is when you leave the point on any identifier it will higlight all other instances of that identifier.  It's a thing you see in IDEs fairly often, {Dr Mackit}? does a particularly good job of it because it actually works with {lex}? scope, which is really cool.  Mine is done with regex.  Someone just dropped in on the IRC channel and asked how to do that, and somebody else said, "it can't be that hard, let me just, bu-bu-bu-bu-bup", and they put it in a {gist} or something.  I said, "Do mind if I take that?  Because that's awesome." 
+*Phil:* Oh, yeah, that's another one that actually came out of the Emacs IRC channel.  Someone asked a question about how to... well, basically how it works is when you leave the point on any identifier, it will higlight all other instances of that identifier.  It's a thing you see in IDEs fairly often. (inaudible) does a particularly good job of it because it actually works with lexical scope, which is really cool.  Mine is done with regex.  Someone just dropped in on the IRC channel and asked how to do that. Somebody else said, "it can't be that hard, let me just, bu-bu-bu-bu-bup", and they put it in a Gist or something.  I said, "Do mind if I take that?  Because that's awesome." 
 
-*Sacha:* I'm getting a picture here about how a lot of Emacs customization comes into being.  They're like, "Oh I have this crazy idea"
-"Oh that doesn't seem to be hard.  I'm going to go and spend four hours working on this instead of my actual work."
+*Sacha:* I'm getting a picture here about how a lot of Emacs customization comes into being.  They're like, "Oh, I have this crazy idea." "Oh, that doesn't seem to be hard.  I'm going to go and spend four hours working on this instead of my actual work."
 
-*Phil:* Guilty as charged, I have to admit to that.  I have a paste site called {sepaste} that I wrote back before {gist} launched, during the downtime of this other paste site I was using.  "You know what, why isn't this just static files?  Grr..."  It uses Emacs to html-ise the font lock settings, and then just uses SEP to put it on a webserver, and it doesn't go down.
+*Phil:* Guilty as charged. I have to admit to that.  I have a paste site called (inaudible) that I wrote back before Gist launched, during the downtime of this other paste site I was using.  "You know what, why isn't this just static files?  Grr..."  It uses Emacs to htmlize the font lock settings, and then just uses SCP to put it on a webserver. It doesn't go down.
 
-*Sacha:* So that's how you keep your config small.  You package up these little pieces of functionality and push them out there.  I think it's funny how you're like, "I'll just go and fix this while this other server's down." and make things happen, or, "I'm just going to sit during this flight to San Francisco and bash up these fixes for this repl".  Very cool stuff.
+*Sacha:* So that's how you keep your config small.  You package up these little pieces of functionality and push them out there.  I think it's funny how you're like, "I'll just go and fix this while this other server's down." and make things happen, or, "I'm just going to sit during this flight to San Francisco and bash up these fixes for this REPL".  Very cool stuff.
 
-*Phil:* To be fair, that one i didn't actually end up finishing.  You're probably talking about {cider}?
+*Phil:* To be fair, that one i didn't actually end up finishing.  You're probably talking about Cider?
 
 *Sacha:* Yeah.
 
-*Phil:* I put together a proof of concept, and then I realised it was more complicated than I thought it would be.  I put it out there and someone else ran with it, and I was really glad that they did.  They did a pretty good job.  That's the clojure repl client for Emacs.
+*Phil:* I put together a proof of concept, and then I realised it was more complicated than I thought it would be.  I put it out there and someone else ran with it, and I was really glad that they did.  They did a pretty good job.  That's the Clojure REPL client for Emacs.
 
-*Sacha:* I don't suppose you've got... I know this isn't your normal set up computer, but I don't suppose you have a demo of what lovely clojure or lisp development environment looks like.
+*Sacha:* I don't suppose you've got... I know this isn't your normal set up computer, but I don't suppose you have a demo of what a lovely Clojure or Lisp development environment looks like.
 
 *Phil:* Yeah, I could probably... on the syme node I could pull that up.
 
-*Sacha:* Oh, yeah.  I can switch back to screen sharing on my side.  Alright I'm here.  I will make my screen bigger.  Alright, okay.  Here you go.
+*Sacha:* Oh, yeah.  I can switch back to screen sharing on my side.  All right, I'm here.  I will make my screen bigger. 
 
-*Phil:* This is {line again} the project automation tool, and then I'm going to need, {cyder}, {cyder} being the client for the repl protocol that clojure uses.  It's similar to how slime works, where you have the language runtime, that opens a socket server and then you use Emacs as a client to connect to that.  {multiple... inaudible 41:46}
+*Phil:* This is Leiningen, the project automation tool. Then I'm going to need Cider, Cider being the client for the repl protocol that Clojure uses.  It's similar to how SLIME works, where you have the language runtime that opens a socket server and then you use Emacs as a client to connect to that. (inaudible)
 
 I'm going to apologize up front because I don't know off the top of my if this is getting worked on these particular dot files, but this is going to...
 
-*Sacha:* I was playing around with cyder because I was looking to get into clojure.  It was really easy to get going and it was great because I can actually get it working with org {babbles} literate programming sort of put stuff in blocks and execute them and send them to the code and output them there.
+*Sacha:* I was playing around with Cider because I was looking to get into Clojure.  It was really easy to get going. It was great because I can actually get it working with Org Babel's literate programming... Put stuff in blocks and execute them and send them to the code and output them there.
 
-*Phil:* I haven't played with that myself but, yeah, they've done a good job of looking into various {billing} systems, but it's still in development.  Yeah and actually I just realised this is not going to be the latest version of cyder, which looks quite a bit nicer, but is not available on {inaudible 43:04}
+*Phil:* I haven't played with that myself, but yeah, they've done a good job of looking into various (inaudible) systems, but it's still in development.  Yeah, and actually I just realised this is not going to be the latest version of Cider, which looks quite a bit nicer, but is not available on (inaudible).
 
-*Sacha:* That's okay.  If we can get people to say, "Oh that looks interesting", then they can have their minds totally blown by the newest version, and then we'll have more emacs converts.
+*Sacha:* That's okay.  If we can get people to say, "Oh that looks interesting", then they can have their minds totally blown by the newest version, and then we'll have more Emacs converts.
 
-*Phil:* One of the biggest complaints about clojure development, unfortunately, is that the startup time for the repl is rather high but thypically with clojure on and lisps you end up starting a section for the dayp and you just stay connected for days on end. You typically onlly restart if you have to clear out some bad state or {inaudible 43:48}
+*Phil:* One of the biggest complaints about Clojure development, unfortunately, is that the startup time for the REPL is rather high. But typically, with Clojure on and LISPs, you end up starting a session for the day, and you just stay connected for days on end. You typically only restart if you have to clear out some bad state or (inaudible)
 
-*Sacha:* So it's exactly the emacs startup philosophy then?
+*Sacha:* So it's exactly the Emacs startup philosophy then?
 
-*Phil:* Oh, yeah totally.  That's part of lisp heritage going back to the eighties .
+*Phil:* Oh, yeah, totally.  That's part of Lisp heritage, going back to the eighties.
 
-*Sacha:* Alright so we have this user prompt, and this is where people can put all sorts of things in.
+*Sacha:* So we have this user prompt, and this is where people can put all sorts of things in.
 
-*Phil:* Yeah, and then you open up your {dorse}? files and {inaudible 44:17}
-I have a white background here so this is probably going to look even {uglier}?.
+*Phil:* Yeah, and then you open up your (inaudible) files and (inaudible 44:17). I have a white background here, so this is probably going to look even uglier.
 
 *Sacha:* Oh no, I have a dark background over here.  I can probably change my colours.
 
-*Phil:* I can turn off h-align-mode, which makes {a long... inaudible 44:32}  Yeah it's starting to {inaudible 44:42}
+*Phil:* I can turn off (inaudible), which makes (a long... inaudible 44:32)  Yeah it's starting to (inaudible 44:42)
 
 *Sacha:* It's your standard "hello world!" I suppose.  Oh, there you go, "Oh hi!"
 
-*Phil:* Then you just compile that and change the repl to the nearest {inaudible 45:03} line.  Pass a {qrm}? there.  Yeah, so there's quite a bit more... the newest version has much better stack trace things, we're beginning to put it in.  Something like this, you get... the stack traces are often a complaint with clojure, but the new cyder does a really good job of showing you what you're going to be {inaudible 45:47}
+*Phil:* Then you just compile that and change the REPL to the nearest {inaudible 45:03} line.  Pass a {qrm}? there.  Yeah, so there's quite a bit more... the newest version has much better stack trace things, we're beginning to put it in.  Something like this, you get... the stack traces are often a complaint with Clojure, but the new Cider does a really good job of showing you what you're going to be {inaudible 45:47}
 
-*Sacha:* This is not the representative demo of cyder awesomeness, but it's interesting to see how quickly you spit that up in a fresh ec2 for pairing or other things like that.
+*Sacha:* This is not the representative demo of Cider awesomeness, but it's interesting to see how quickly you spin that up in a fresh EC2 for pairing or other things like that.
 
-*Phil:* Right.  So, typically I ended up kicking this off with non-clojure project but if you use syme to collaborate on a clojure project then it's going to go in and see that this is a clojure project and it's going to install {lime} again, java for you, {inaudible 46:16} open JDK.  So, you wouldn't have to go through the boring {correct libits}? but I think this {mission}? is probably configured pretty well, better defaults is {what I know but I picked this software instead of putting another hack on that, keeping going and make some changes there}
+*Phil:* Right.  So, typically I ended up kicking this off with a non-Clojure project. But if you use syme to collaborate on a Clojure project, then it's going to go in and see that this is a Clojure project, and it's going to install Lein again, java for you, open JDK.  So, you wouldn't have to go through the boring (inaudible) but I think this (inaudible) is probably configured pretty well. Better defaults is what I know, but I picked this software instead of putting another hack on that, keeping on going and make some changes there...
 
 *Sacha:* All sorts of good stuff.
 
-*Phil:* Yeah, it's been useful for me.  {inaudible 46:52} {linegan}
+*Phil:* Yeah, it's been useful for me.  Leiningen.
 
 *Sacha:* You have the shirt.
 
-*Phil:* Yeah.  Part of my job at huroku is maintaining the clojure {spork} for the platform, so I get to work on this, which is one of my big open source projects.  Work which is, {inaudible 47:13}
+*Phil:* Yeah.  Part of my job at Heroku is maintaining the Clojure (inaudible) for the platform, so I get to work on this, which is one of my big open source projects.  Work which is (inaudible).
 
-*Sacha:* Yay, Huroku!  So that's a question then, have you gotten your kids to start using emacs yet?
+*Sacha:* Yay, Heroku!  So that's a question then, have you gotten your kids to start using Emacs yet?
 
-*Phil:* Right, yeah.  That's a great question.  Right now I've started them on learn to type, which is a great prerequisite.  In the meantime there are a couple of things I've been doing.  There is a project called Scratch, which is from the MIT media lab —  so you're familiar — it's a really fascinating drag and drop environment for building programming skills in children and grown-ups that want to have fun too.  It's so immediate and eye-grabbing.  It's so obvious how to put the pieces together.  If you want to get a loop you just grab a loop and bring it over, and you put in the numbers and you say these are the steps you do in between.  It's all based around sprites and characters, so for someone who hasn't done an awful lot of abstract reasoning, it's obvious that this character... instead of manipulating numbers you're saying, "I want to change my x-position and there you go, it's moving.", so kids can get a grasp of things like the cartesian plane, or things like that really intuitively that relates to what they know already.  They're really happy with that.  However, there's an abstraction ceiling to it.  You can't do very much factoring out of functions, things like that, things like recursion.
+*Phil:* Right, yeah.  That's a great question.  Right now I've started them on learning to type, which is a great prerequisite.  In the meantime, there are a couple of things I've been doing.  There is a project called Scratch, which is from the MIT media lab —  so you're familiar. It's a really fascinating drag and drop environment for building programming skills in children and grown-ups that want to have fun too.  It's so immediate and eye-grabbing.  It's so obvious how to put the pieces together.  If you want to get a loop, you just grab a loop and bring it over, and you put in the numbers, and you say these are the steps you do in between.  It's all based around sprites and characters, so for someone who hasn't done an awful lot of abstract reasoning, it's obvious that this character... instead of manipulating numbers you're saying, "I want to change my x-position, and there you go, it's moving." Kids can get a grasp of things like the cartesian plane, or things like that really intuitively that relates to what they know already.  They're really happy with that.  However, there's an abstraction ceiling to it.  You can't do very much factoring out of functions, things like that, things like recursion.
 
 *Sacha:* If you get your four-year-old and your six-year-old understanding recursion, they'll be well ahead of a lot of undergraduates.
 
-*Phil:* It's just tedious not to be able to copy and paste, and things like that.  It's got its strength, in that it's really accessible and appealing.  I've also been looking at {racket} for kind of the next step there, which is a dialect of scheme that has grown to be more than just this small scheme standard, and become a lot more practical.  It also has really fantastic teaching materials for it.  The one that I've been most interested in, that I've started reading for myself, is how to design programs htdp.org.  It talks about programming in really interesting terms in that it starts off with arithmetic, you have your numbers, these are values you can operate on by passing them to functions and you get numbers back, and then it says, "oh by the way, strings are the same way.  Strings are values, you pass them to functions and you get strings back.", and in the same chapter it says, "yeah, and images: same thing.  These are just values."  You can paste an image into the racket repl and it's there, you can assign it to a variable, you can pass it to a function, and you can compose them.  You can say, "I'm going to overlay these; I'm going to put them side-by-side"  The 'aha!' moment for me was just they were saying, to have an image of animation is really just a reduce of a funciton that returns images over a frame range, that's all it takes.  And that's just the first chapter.
+*Phil:* It's just tedious not to be able to copy and paste, and things like that.  It's got its strength in that it's really accessible and appealing.  I've also been looking at Racket for kind of the next step there, which is a dialect of Scheme that has grown to be more than just this small Scheme standard and become a lot more practical.  It also has really fantastic teaching materials for it.  The one that I've been most interested in, that I've started reading for myself, is how to design programs (htdp.org).  It talks about programming in really interesting terms.  It starts off with arithmetic. You have your numbers. These are values you can operate on by passing them to functions and you get numbers back. And then it says, "Oh by the way, strings are the same way.  Strings are values, you pass them to functions and you get strings back." And in the same chapter, it says, "yeah, and images, same thing.  These are just values."  You can paste an image into the Racket REPL and it's there. You can assign it to a variable. You can pass it to a function, and you can compose them.  You can say, "I'm going to overlay these. I'm going to put them side-by-side."  The "aha!" moment for me was just they were saying, to have an image of animation is really just a reduce of a funciton that returns images over a frame range. That's all it takes.  And that's just the first chapter.
 
-*Sacha:* I have to check out racket.
+*Sacha:* I have to check out Racket.
 
 *Phil:* Yeah.  How to Design Programs is that book, and I'm really looking forward to diving deeper into it.  I have a little bit of buffer time while my kids learn to type.  It's time for me to get ahead as the teacher.
 
 *Sacha:* That's wonderful.
 
-*Phil:* It's a lot of fun, yeah.  It's got a nice emacs mode similar to cyder, but for kids I think Dr Racket {IDE... inaudible 51:58} is probably going to be a little more accessible, and I would wait on emacs until there's more of a foundation there.  So they get a little more literacy there.
+*Phil:* It's a lot of fun, yeah.  It's got a nice Emacs mode similar to Cider, but for kids I think Dr Racket {IDE... inaudible 51:58} is probably going to be a little more accessible. I would wait on Emacs until there's more of a foundation there.  So they get a little more literacy there.
 
 *Sacha:* And they can reliably hit two or three keys at the same time.
 
-*Phil:* We've done a little in Dr racket with me driving.  We did some Caeser cyphers, where you do A is 1, B is 2, and you can add an offset.  So they've been sending messages to their grandparents, back and forth, using a code wheel, and I wanted to show them how it would be so much easier writing a program for it.
+*Phil:* We've done a little in Dr Racket with me driving.  We did some Caeser cyphers, where you do A is 1, B is 2, and you can add an offset.  So they've been sending messages to their grandparents, back and forth, using a code wheel, and I wanted to show them how it would be so much easier writing a program for it.
 
 *Sacha:* Great, you're teaching your kids cryptography.  Very, very basic cryptography, but this is all cool.
 
-*Phil:* It's so fun to see how they really get into something like that.  You know, "secret messages".
+*Phil:* It's so fun to see how they really get into something like that.  You know, "secret messages."
 
-*Sacha:* That's wonderful.  So you're helping the kids learn, and you get to see what they struggle with, what they take to, what they really resonate with.  I also like the fact that a lot of your... with better defaults and some of these other packages, you're making emacs easier for other people to get into.  Maybe they're new to emacs and they're trying things out.  At least they don't have to be mystified by all these antiquated options.
+*Sacha:* That's wonderful.  So you're helping the kids learn, and you get to see what they struggle with, what they take to, what they really resonate with.  I also like the fact that a lot of your... with better defaults and some of these other packages, you're making Emacs easier for other people to get into.  Maybe they're new to Emacs and they're trying things out.  At least they don't have to be mystified by all these antiquated options.
 
-*Phil:* Yeah, I like to take usability pretty seriously and see how far I can push it.  That was a big part of what I was doing with lime, in the clojure world and why that took off is that it used to be very tedious to try to get started and {being able} to automate that and being very declaritive goes a long way.  I think we've come a long way since 2008, with packages, the availability and easy installation.  I think there's a lot more it can do.  With the starter kit my plan has been for version 3 to be, like, no software.  Have it just be {prose} documentation.  Where it says, here's where you get started with the built-in tutorials, then when you're done there, here are some pointers to the modes that you would hopefully find the most useful and contribute to the documentation of the individual {nodes} more and try to make sure they're packaged well and easy to get started with.  I haven't made a lot of progress there apart from the better defaults package, which was the first step.
+*Phil:* Yeah, I like to take usability pretty seriously and see how far I can push it.  That was a big part of what I was doing with Lein in the Clojure world. Why that took off is that it used to be very tedious to try to get started . Being able to automate that and being very declarative goes a long way.  I think we've come a long way since 2008, with packages, the availability, and easy installation.  I think there's a lot more it can do.  With the starter kit, my plan has been for version 3 to be, like, no software.  Have it just be prose documentation where it says, here's where you get started with the built-in tutorials, then when you're done there, here are some pointers to the modes that you would hopefully find the most useful. Contribute to the documentation of the individual modes more and try to make sure they're packaged well and easy to get started with.  I haven't made a lot of progress there, apart from the better defaults package, which was the first step.
 
 *Sacha:* I'd love to help out with that, you know.  I'd love to see what your todo list of ideas is.  Actually, since you care a lot about usability and documentation, I was curious if there were some packages you really liked or looked up to because they were well packaged and documented.  What are the stars for you?
 
-*Phil:* I was really impressed by the documentation of magit when I first got started with it.  It was quite thorough for a third party package.  I find the built-in stuff is usually pretty solid — anything that ships with emacs — but with community packages, they can often be hit or miss, and they did a good there with [magit's] info manual.  Slime's manual is really good, if you're doing {inaudible 55:55} lisp.  {fordegus}? is technically built-in but they do a really good job of making sure everything's really thorough.  On the other hand, something I like almost as much as a well documented package, is a package that's so small that it's just obvious.  Idle-highlight I think is that way.  It does what it says on the tin.  You're never going to need to configure it.  It's just one hook and that's it.  There's more that are like that.  I feel like if you can just find your thing and nail it, that's great.  I feel like ido is right on the edge of that but not quite there because there's still some tricky places there.  Say you're using ido and you want to create a new file, but it keeps jumping to an existing file, a lot of newcomers to ido get annoyed and get rid of it.  It's not obvious that you press C-f there and it disable it temporarily.  I don't have a great answer for that, I just wish there was that one thing that would stop being a road block, because ido makes things so much {yuger}? {inaudible 57:42}
+*Phil:* I was really impressed by the documentation of magit when I first got started with it.  It was quite thorough for a third party package.  I find the built-in stuff is usually pretty solid — anything that ships with Emacs — but with community packages, they can often be hit or miss. They did a good there with [magit's] info manual.  SLIME's manual is really good, if you're doing Lisp. (inaudible) is technically built-in, but they do a really good job of making sure everything's really thorough.  On the other hand, something I like almost as much as a well documented package is a package that's so small that it's just obvious.  Idle-highlight is that way.  It does what it says on the tin.  You're never going to need to configure it.  It's just one hook and that's it.  There's more that are like that.  I feel like if you can just find your thing and nail it, that's great.  I feel like Ido is right on the edge of that but not quite there, because there's still some tricky places there.  Say you're using Ido and you want to create a new file, but it keeps jumping to an existing file. A lot of newcomers to Ido get annoyed and get rid of it.  It's not obvious that you press =C-f= there and it disables it temporarily.  I don't have a great answer for that. I just wish there was that one thing that would stop being a road block, because ido makes things so much (inaudible)? {inaudible 57:42}
 
 *Sacha:* Yeah.  Something like that would make it a whole lot easier for everyone to get started with it.  I tend to recommend it to everyone.  Either that or helm, which is actually the one I ended up using.
 
-*Phil:* I've heard good things about that but I haven't actually gotten the chance yet to try it.
+*Phil:* I've heard good things about that, but I haven't actually gotten the chance yet to try it.
 
 *Sacha:* That looks like a massive water jug, by the way.
 
@@ -334,18 +337,20 @@ I have a white background here so this is probably going to look even {uglier}?.
 
 *Sacha:* I see it.  I see something with lights.
 
-*Phil:* You can see that's a relay that is hooked up to this beagle bone black, it's a single board linux computer, and that is controlling the heater via relay with an {xmpb bot} running on there.  So I can just go into my chat and be like, "I need the heat on", so I can go out later today and bring it up.  I can query it too, to try and find out has the heater got a chance to kick in yet.
+*Phil:* You can see that's a relay that is hooked up to this Beagle Bone Black. It's a single board linux computer. That is controlling the heater via relay with an XMPP bot running on there.  So I can just go into my chat and be like, "I need the heat on," so I can go out later today and bring it up.  I can query it too, to try and find out: "Has the heater got a chance to kick in yet?"
 
-*Sacha:* Sorry, you're talking to it through chat.  So you're in the erc and you're telling your shed to be warmer?
+*Sacha:* Sorry, you're talking to it through chat.  So you're in ERC and you're telling your shed to be warmer?
 
 *Phil:* Yep.  *laughter*
 
-I got a kick out of that.  That's actually how I picked up erlang, as I had to use erlang for that, and now I'm using erlang at work so it turned out pretty well.
+I got a kick out of that.  That's actually how I picked up Erlang, as I had to use Erlang for that, and now I'm using Erlang at work. So it turned out pretty well.
 
-*Sacha:* Wow.  Okay, I think that is an excellent point to wrap up on.  You get to the point where you're controlling your environment using emacs.
+*Sacha:* Wow.  Okay, I think that is an excellent point to wrap up on.  You get to the point where you're controlling your environment using Emacs.
 
 *Phil:* I wouldn't have it any other way.
 
 *Sacha:* It would be interesting to see if there's a package for that, and if other people end up using it.
 
 Thank you so much.  I'm going to wrap up over here.  Folks can find this on the event page.  I'll also post it up on http://www.emacslife.com. There will be a transcript at some point as well, which will be interesting as I try to spell all the lovely things that you have mentioned.  Thanks again.  I'm going to stop the broadcast here.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
