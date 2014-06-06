@@ -6,17 +6,17 @@ Emacs Chat: Christopher Wellons (FFI, Emacs internals)
 
 https://www.youtube.com/watch?v=Hr06UDD4mCs
 
+http://sachachua.com/blog/2014/05/emacs-chat-christopher-wellons/
+
 Emacs Chat: Christopher Wellons (FFI, Emacs internals)
+
 Sacha Chua
 
-original close-caption:
-transcript-emacs-as-python-ide-by-Drew-Werner-2014-05-05-original-caption-cc91a98b.txt
-
-＆ hello and welcome to another emacs chat.
+φ hello and welcome to another emacs chat.
 we have Christopher Wellons,
 who is among other things something that will play emacs tetris in emacs for you.
 
-＆ so, hellow Christopher, thank you for joining us.
+φ so, hellow Christopher, thank you for joining us.
 
 • you are welcome.
 
@@ -145,6 +145,382 @@ it used to creeate a secondary package called with percent name but dash auto-lo
 and there's a really cool trick where you could 「require」 the auto-load package and you can do some configuration lazily. there's a nice trick, but i got rid of that. there's no longer xx auto-load package xx generated
 
 • so i have to modify my 「with-package」 macro.
-so it has the same xx fact with the asterisk on the package names, i want that effect.
+so it has the same effect with the asterisk on the package names, i want that effect.
 
 12:41
+
+• so in this case, i want to make sure i load the auto-load of the
+  markdown-mode or something like that, when one of these [file] patterns get
+  opened, it'll open in markdown-mode. the auto-load's already been set. It's something like that. i can't remember the details right now.
+
+φ cool, i like to try.
+
+•
+13:11
+other than that, there's nothing too much special here.
+just a bunch of things i like to use.
+like right here, i can quickly lookup java documentation. i got that down to 【control h j】.
+so normally you can lookup documentation with control h xxx so i can lookup emacs doc.
+or i can do this, i can lookup, let's say i want to lookup 「ArrayList」. i do this, and it'll pop up a browser over here.
+
+φ that's really neat.
+
+• and these are all the packages that's been loaded in this quick jump xx. and what make this work really well was that java doc is ubiquitous. xx packages has java doc package made, so it easy.
+so documentation in this nice format i can jump to.
+xx documentation installed on my machine by that process.
+
+φ yeah that's good stuff. i often findig myself googling for all these, but it's nice to have that, just a quick keyboard shortcut away.
+
+φ one of those thing is multiple-cursors... i hear it's super awesome, but i haven't got my mind around it yet.
+
+• yeah it lets me do this, and modify the stuff i want. xx actually replaced xx i used to do stuff like that with a macro, i write a little macro, like this, [apply to all lines] like that.
+
+• multiple-cursors, that's so much more comfortable.
+
+φ ok, got a hang of it, that's awesome.
+
+[but that's not mine, of course]
+
+• one thing i want to show, is impatient mode, as i was asked about this specifically. so if you visited in your web browser
+
+http://zeus.nullprogram.com:8888/imp/
+
+(
+https://github.com/skeeto/impatient-mode
+Impatient Mode
+See the effect of your HTML as you type it.
+
+http://nullprogram.com/blog/2012/08/20/
+
+)
+
+φ i put the comment in the event so people can find that too
+
+• i should check this myself.
+you'll see
+if you click on the scratch buffer, you'll see a copy of my scratch buffer here. and it has syntax highlighting.
+
+φ that's awesome. how are you using this? what do you use it for?
+
+• so if i need to share my screen with someone remotely, this is easier than going thru a normal screen sharing session like right this minute. i can just turn on impatient-mode, it's already turned on here. and give that url, and they can watch what i'm doing.
+
+its really useful if i pop up a eshell like this. and i can run a shell here and share that too.
+now if i turn on impatient-mode like this, now you be able to see this buffer too.
+
+φ are you bulding a 2-way communication into this at some point?
+
+• no it's just one-way. it's just a collaboration between me and Brian Taylor xx. he's a coworker and a friend of mine.
+
+( Brian Taylor's blog on impatient mode
+http://www.50ply.com/blog/2012/08/13/introducing-impatient-mode/
+)
+
+it's build on the same web server, which i call httpd xx, it's the
+same one skewer uses.
+
+( skewer-mode https://github.com/skeeto/skewer-mode
+
+Skewer: live web development with Emacs Provides live interaction with JavaScript, CSS, and HTML in a web browser. Expressions are sent on-the-fly from an editing buffer to be evaluated in the browser, just like Emacs does with an inferior Lisp process in Lisp modes. )
+
+anytime i'm doing something with emacs that involving the web
+i'm using my little web server.
+
+φ i should try that too. it looks like you put all sort of good uses. you already have a demo of skeywer xx which allows xx easily interact in JavaScript and a browser. i think it's pretty darn cool too.
+
+φ so, impatient-mode... so FFI
+foreign function interfaces, how are you using that? i saw your blog post demonstrating it, but am curious about practical applications if you've explored xx.
+
+• that kinda hit the wall a little bit, as it gets complicated pretty quickly. one problem i'm having… i don't have any real practical uses for it yet, i thought maybe i can run gtk window like that, run a little graphical system that way. but if any body linux users and want gtk applications from a terminal knows that they are really noisy, puts out a lot debugging messages, and that's actually… i haven't made it robust enough
+messages actually interfere my communication with emacs.
+as it goes into sudo terminal and error messages, and they get piped into the same pipe, and because of that it gets in the way.
+
+i haven't done anything significant with that beyond just a little demo, which i can show here really quick.
+
+so am just gonna copy right out of my readme here and drop them here.
+so, whenever you start using ffi, it creates what i call a context numerics and xx processes that's running my little ffi program, and its really simple. it's a stack machine, that i can send strings and basic values to, so i can say i got 「srand」, so here's my function name, here's my function signature, and push all these values into the stack, and pop them off i get them in emacs.
+
+so here i can seed, xx i can run that, and that returns a void right there.
+and i can start generating random numbers.
+
+φ you said ffi communicates with... you said emacs process?
+
+• it's a emacs inferior process.
+if i hop in here… you see those glue program?
+so it's just a c++ program. that's linked with ffi.h right here.
+and it just drives ffi with this really simple-httpd call that chops xx thru a pseudo terminal thru a pipe am using.
+
+simple-httpd https://github.com/skeeto/emacs-web-server
+
+it's just a pretty simple stack machine that makes it work.
+there's a swith for the byte code, and i can push different sizes of integers onto the stack.
+and that created these little glue programs right here 〔ffi-glue〕. so that's what runs in the background.
+
+φ you mentioned you get that to work with a package and i was curious about how it all came together.
+
+• 21:01
+if it's going to be a package, there's complication such as how do you handle that binary.
+that's something i resolved with emacSQL… don't know if you saw that.
+
+so that runs a sub-process in the background. in order to make that work xx there's a package on melpa, it actually ships with c source code. and it will attepm as best as it can to compile that when you install it, so it might take a minute to install because its gonna run a c compiler xx to get that to work. i can try to demostrate it.
+
+this gonna make a sequal database.
+
+so i got this connection object.
+
+this is using, a really cool part of emacs, it came from sedat xx called eieio, which i think is really clever. it's an object system a lot like common lisp clos. so this function, there's also [interface for]  mysql and also postgres one, actually 2 psql drivers, i can do this, this is the database name, called “testing”.
+
+so it'll create this database object that, thanks to eieio, it'll work with all the same, because they are generic functions it'll work with the same functions. so once you have this db object, you don't care what's there anymore, you can just use this emacsql function to make queries on it.
+
+i can say
+
+(emacsql db [:create-table foo ([name id])])
+(emacsql db [:insert-into foo :values])
+
+like this.
+
+notice this is a s-expression, so instead of doing
+
+"SELECT * FROM foo"
+
+i build up these vectors of symbols and it actually compiles into sql expressions.
+i can demostrate that.
+
+so here's a expression,
+
+(emacsql db [:insert-into foo :values ["Chris" 0]])
+
+i can compile that right there
+
+INSERT INTO foo VALUES ('"Chris"', 0);
+
+that's what it gonna compile to.
+
+φ 24:14 wow, that's cool.
+
+• then i can make queries on the db.
+
+(emacsql db [:select * :from foo])
+
+(("Chris" 0))
+
+oh, about the extra quoting. I'm not sure i made the right choice on this.
+anything that's not a number.
+first, 「nil」 maps to 「null」.
+i can insert a null into db just by using a nil there.
+anything not nil or a number, will get printed into a string.
+
+xx
+
+φ now am curious, what got you interested in bulding this in the first place?
+“maybe we should do all these things on db from emacs”, or were you working on a project?
+
+
+• actually it goes back to elfeed, which is my web feed reader.
+so skewer mode is probably my most used emacs packages right now.
+but the most useful for me has been elfeed.
+
+it's a feed reader. i created it after Google Reader shutdown. and i wasn't happy with any of the alternatives, so i thought, i could do better than all these, and i'll write my own, that's what i ended up doing.
+
+
+(
+https://github.com/skeeto/elfeed
+Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS. It requires Emacs 24 and is available for download from MELPA. Elfeed was inspired by notmuch.
+)
+
+• this touches on emacsql xx while at this. so i wrote this in august
+last year, i wrote emacsql around the beginning of this year. back in
+august i wrote elfeed, i needed a db to store all these in. So if i
+clear this out, you gonna see just the last 10 weeks. these are all
+the different entries i've read and looked at.
+
+so in last 10 weeks there's been 2451 entries.
+so these are all stored in the db.
+you see all these tags, the green on the right.
+These tags, i can go into these, look at the content inside.
+here's a real xx purse, way about emacs.
+so i can read them here right inside emacs.
+or i can find …
+
+φ i saw in your screenshot you have images for this too.
+
+• oh yeah. if i pop down, one of these's gonna have images. there you go.
+there's one, this is my own blog. so i can read my own posts right here in emacs.
+and go back and forth between posts here.
+
+so that's where emacsql comes in. I need to store all these info in a db, and efficiently index it.
+if you look down at the bottom here, i press s.
+i got this filter. You see this:
+
+Filter: -junk @10-weeks-ago nullproam
+
+and i start to type my blog name in, and you see it started to filter what you see.
+
+let's say i want to see, everything with the tag +youtube
+
+ Filter: -junk @10-weeks-ago +youtube
+
+and it's all youtube stuff in the last 10 weeks.
+i can narrow it down to 4 weeks, or 1 day ago…
+
+φ i like that. it's xx kinda got quick browsing, thru something like my org data. really cool stuff.
+
+• so i need to search this fast, and i end up writing my own db format.
+
+φ that's like the definition of yak-shaving right there. <laughes>
+
+• there's no db really suitable for this in emacs, that's why i struck out to write emacsql to try to provide a db, so it'll never have to be done again.
+
+and i started to port elfeed to emacsql, it's not finished yet.
+xx am not sure i really want to do that or not, but that's something possible in the future.
+
+φ so sounds like xx your life inside emacs. you read blogs, web browsers, and other things… what else do you do inside emacs?
+
+how xx it's taking over other things you do?
+
+• so i do email too. I prefer “notmuch” as my email client.
+
+φ i heard good things about it. What do you like about it?
+
+• i like … i'm afraid to bring up email [privacy reasons]
+
+• this one should be safe. [results of email search shown]
+
+so you notice, it looks pretty similar to elfeed. You see tags on the right. It actually inspired the interface for elfeed.
+
+i like how fast the searching is, xx
+
+1235 messages in it?
+
+φ i'm going to give it a try. i've been using gnus. i thought it's interesting.
+
+• i did try mu4a. I tried it and i didn't like it as much as “notmuch”.
+
+φ so you use mail… your config mentioned you use calc. do you use it just as a calculator or do you have any other fancy things for it? 
+
+• pretty much as a arbitrary precision calculator.
+
+lots times… what's 2^128
+it's useful. i already have emacs open anyway, so i just jump xx to it.
+
+and if i need to do units, it'll keep tracking it for me.
+s for seconds
+change it to year.
+this is really handy.
+5
+
+φ that's great. i see you got the hang of all these things.
+calc is great, it's like a microcosm in emacs.
+this absurdly powerful and flexible thing.
+
+• it can do calculus.
+it's a full computer algebra system.
+
+it's not fair to call it a calculator really, because it's so much more than that.
+
+φ so you write a lot markdown in your config?
+
+• oh yeah. i write my blog in markdown. all those posts are markdown.
+all the READMEs. 
+i just prefer markdown for all my documentation.
+
+i haven't made the jump to ord-mode yet.
+
+it's been this thing i haven't learned, i've never learned enought about it to make good use of it. i know you love org mode right?
+
+φ i find it to be similarly flexible, right? you can do all sort of things with it.  but you've got lots of things in markdown, basically that's the way your brain works.
+
+i guess org mode is similar, but the syntax is different. there's a little bit of friction to get over.
+
+so, if you are not using org mode, are there other ways you manage your tasks?
+
+• outside of this i'm not actually all that organized.
+i just work from my head lots of the time, more than i should.
+i forget things, not even knowing i forget them.
+
+φ you've written lots of large software, all kept in your head, so… wow.
+
+• there's something about elfeed. i noticed you are writing a post about... you logged all your activities, you track how much time you spending on all these various things.
+
+i actually recently came up with elfeed … on the side of my website, you'll see these lists of places that i recommend checking out. These huge list. i was kinda manually maintaining these lists. until recently, i realized i can tab the elfeed db to fill these out for me. cuz am already maintaining all these stuff in elfeed.
+
+here's how i worked out. here's my blogs. here's where the list come from. a list of blogs i was recommending. i use this function called jekyll insert-url
+and i got a little filter string here
+
+<!-- (jekyll/insert-urls "+blog -product -myself ") -->
+
+so i can just run this. it'll evaluate it right in the buffer.
+
+oh, it's supposed to be working.
+
+φ that's alright, it's the nature of demos, all goes wrong.
+
+• yeah.
+
+φ i see the idea. since you already have all the data anyway you might
+as well … use the same interface for searching for tags or whatever,
+you might even consider kinda capturing ur reading data, and
+organizing reading into a list xx so the stuff you like reeading more actually show up earlier in the list.
+
+• yeah. that's something i should probably track more. as i read things, somehow capture that info and xx put to elfeed. as i got a db right there i can catpure the info and make use of it in the future.
+
+φ the nice thing about emacs… you can do all these instrumentations… xx
+
+cool. so you do a heck lots of things in emacs. so anything you haven't got around to do in emacs yet? <laughes>
+
+• there's a barrier for me to learn new programing languages. this touches on skewer mode. is that. before i get into xx i want a way to set xx a workflow before i like it.
+that's how skwer came about.
+i need to learn JavaScript and web development, and i need to find some workflow in emacs, and i looked at swing.js and it didn't quite do what i was looking for, and ended up writing skewer mode while i learn JavaScript.  
+
+φ <laughs> let me make sure if i understand this correctly. you want to learn JavaScript, so you developed something in emacs that works with js interactiving, using js talking to a browser,
+and writing however many lines of code in js to communicate with emacs process.
+
+• yes.
+
+φ in order to learn js.
+
+• yes.
+it's part of learning. a good exercise too.
+
+φ that's totally awesome. xx i was thinking you've been doing this for a while, like years of experience with js and got really tired of the roundtrip or whatever. so, your first step into this is really cool.
+
+• i can demo how that works real quick.
+so here i say
+
+i use xx pentadactal btw
+
+so i say 「run-skewer」
+and it opens a blank tab here in browser that's connected to emacs
+and i pop up a JavaScript scatch buffer.
+i got a scratch buffer for every language xx
+
+i can write JavaScript expressions
+
+Math.pow(13,2.1)
+
+[result shows under the expression]
+
+there's a repl
+
+φ i love you have lots repls
+
+• yeah. i love repls. i love live systems. steve yegge, he's got a  xx real good essay about live systems xx powerful, i recommend checking that out. you can find on googl pretty quick.
+
+so this is connected to the tab right here. to prove that, i can switch to my js scratch buffer. and i can say, i want the background to be red. 
+and i evaluate just like in emacs lisp. i press control x control e.
+
+φ holy cow.
+
+• and i want js here. i switch to a html buffer.
+selector
+insert the page
+this part is a bit crude
+i haven't got this refined yet. it's got limited use.
+say i want to insert a heading to the page.
+
+and i can eval this <h1> just as if it's a expression. you can see it on the screen.
+
+[some demo of live change of html/css]
+
+φ wow
+
+
