@@ -23,7 +23,7 @@ Getting to know people who use Emacs
 - [[file:chat-janis-mancevics.org][Jānis Mancēvičs]]
 - [[file:chat-john-wiegley.org][John Wiegley]]
 - [[file:chat-magnar-sveen.org][Magnar Sveen (Emacs Rocks)]]
-- [[file:phil-hagelberg][Phil Hagelberg (technomancy)]] - Clojure, Leiningen, Syme (for pair programming), custom keyboards, etc.
+- [[file:phil-hagelberg.org][Phil Hagelberg (technomancy)]] - Clojure, Leiningen, Syme (for pair programming), custom keyboards, etc.
 - [[file:chat-sacha-chua.org][Sacha Chua]]
 - [[file:chat-thomas-kjeldahl-nilsson.org][Thomas Kjeldahl Nilsson]]
 - [[file:chat-tom-marble.org][Tom Marble]]
