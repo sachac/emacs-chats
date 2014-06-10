@@ -42,19 +42,19 @@ rogue-like contests every year. That's a fun thing to do for a week. I
 like the constraints, but I only do it for about a week, then I forget
 about it after that.
 
-Sacha: Hum, a lot fun interests.
+Sacha: You mentioned you started Emacs 9 years ago, which is pretty
+amazing. How did you get into it.
 
-You mentioned you started Emacs 9 years ago, which is pretty amazing.
-How did you get into it.
+Christopher: So I was in an internship in college, and I was getting a
+lot more serious about programming. I've been programming for 19 years
+now. When doing the internship I was getting serious about it, and
+after that I've been just using KeyRight xx and some other, some basic
+stuff.
 
-Christopher: So I was in an internship in college, and I
-was getting a lot more serious about programming. I've been programming
-for 19 years now. When doing the internship I was getting serious
-about it, and after that I've been just using keyright xx and some
-other, some basic stuff.
+2:30
 
-Christopher: And I read probably something by Richard Stallman, or Steve
-Yegge or some other essays. I decided I have to look into
+Christopher: I read probably something by Richard Stallman, or Steve
+Yegge or some other lisp essays. I decided I have to look into
 this Emacs thing, and that's what ended up happening. I installed it,
 was reading all the manuals. I got one of those O'Reilly books, I read
 that, then I just gradually built up from that point. It became my
@@ -99,6 +99,8 @@ reading the source code as well.
 
 You mentioned coworker. You have other coworker who are actually using
 Emacs too?
+
+5:26
 
 Christopher: Yes, I've got a few coworkers. I spend time
 discussing Emacs with them on occasion. Kind of sharing notes, and how
@@ -194,6 +196,8 @@ Christopher: Then there's asterisk on other things that has to do with
 haven't put this out there for other people to use.
 
 Sacha: Sometimes you have asterisk after the package names?
+
+11:55
 
 Christopher: Yeah, that's something changed with =package.el=. It used to create a secondary package called with
 percent name but dash auto-loads and there's a really cool trick where
@@ -297,7 +301,9 @@ the same pipe, and because of that it gets in the way. I haven't done
 anything significant with that beyond just a little demo, which I can
 show here really quick.
 
-so am just going to copy right out of my README here and drop them
+18:45
+
+So am just going to copy right out of my README here and drop them
 here. So, whenever you start using FFI, it has to create what I call a
 context, which is really just a xx
 numerics and xx processes that's running my little FFI
@@ -338,7 +344,7 @@ so that runs a sub-process in the background. In order to make that
 work with SQLite out of the box as a package on MELPA, it ships with C
 source code. It will compile that when you install it, so it might
 take a minute to install because its going to run a c compiler
-syncronously to get that to work. I can try to demonstrate it.
+synchronously to get that to work. I can try to demonstrate it.
 
 I'm going to make a SQLite database. This a connection object.
 
@@ -402,6 +408,8 @@ insert a =null= into database just by using a =nil= there. Anything not
 nil or a number, will get printed into a string, and that whole value
 is inserted into the database.
 
+26:00
+
 Sacha: What got you interested in building this in the first place?
 
 Christopher: It goes back to Elfeed, which is my web feed reader.
@@ -427,6 +435,8 @@ In last 10 weeks there's been 2451 entries. These are all stored in
 the database. You see all these tags, the green on the right. These
 tags, I can go into these, look at the content inside. Here's a real
 xx purse, way about Emacs. So I can read them here right inside Emacs.
+
+28:55
 
 Sacha: I saw in your screenshot you have images for this too.
 
