@@ -608,7 +608,10 @@ So this is connected to the tab right here. To prove that, I can
 switch to my CSS scratch buffer. I want the background
 to be red, and I evaluate just like in Emacs lisp. I press =C-x C-e=.
 
-Christopher: And I want JavaScript here. I switch to a HTML buffer... Selector... insert the page this part is a bit crude I haven't got this refined yet. It's got limited use. Say I want to insert a heading to the page.
+Christopher: And I want JavaScript here. I switch to a HTML buffer...
+Selector... insert the page this part is a bit crude I haven't got
+this refined yet. It's got limited use. Say I want to insert a heading
+to the page.
 
 and I can evaluate this =<h1>= just as if it's an expression. You can
 see it on the screen.
@@ -622,133 +625,131 @@ Sacha: How to you save it afterward?
 Christopher: You can just save the buffer, but that might not be
 sufficient. There's really no way to capture right now.
 
-you can see that it's just building up CSS style sheets on the page,
-it's messy. So am not sure one'd want to capture it now.
+You can see that it's just building up CSS style sheets on the page,
+it's messy. So am not sure one would want to capture it as is.
 
-Sacha: But it's really good for experimentation. I can see how the
-live is really great for feedback. Even hitting the refresh after
-changing the CSS, is just a bit more friction.
+Sacha: It's really good for experimentation. I can see how the live
+workflow is really great for feedback. Even hitting the refresh after
+changing the CSS is just a little bit more friction.
 
 Christopher: Yes, I hate that so much I want to treat web development
 as a live system I can hack while it is being build.
 
-i can do further with this. So here's my blog again, you see this
+I can do further with this. So here's my blog again, you see this
 little green triangle on the top right corner, I can click and toggle
 that. When it's green, that mean Skewer can edit this page. This works
-not just with my blog. There's a little browser extention I wrote to
-make it work with Skewer. I can togle this on any page. For example if
-I'm on Github... although this wont work with Github website because
-they've got security cranked up so much they won't let this work.
+not just with my blog. There's a little browser extension I wrote to
+make it work with Skewer. I can toggle this on any page. For example
+if I'm on Github... although this wont work with Github website
+because they've got security cranked up so much they won't let this
+work.
 
-i can hook into it, and come over to Emacs and execute JavaScript code
+I can hook into it, and come over to Emacs and execute JavaScript code
 on that page, and same for CSS. This way, I can tab into any page and
 do anything to make it work.
 
 Sacha: I have to go to get that setup, definitely.
 
-i guess you use that for a lot development.
+I guess you use that for a lot development?
 
-Christopher: That made JavaScript to be one of my preferred language
-actually. Because, there's webgl now, and html5, canvas. If I need to
-write program live that has a graphical interface, I can hack this up
+Christopher: That made JavaScript one of my preferred language
+actually. Because, there's WebGL now, and HTML5, CANVAS. If I need to
+write a program live that has a graphical interface, I can hack this up
 without ever refreshing a page.
 
-Sacha: You mean like foreign function interface?
+Sacha: You mean like Foreign Function Interface?
 
-Christopher: That's what I was doing before I started this Skewer
-project.
+Christopher: That's what I was doing before I started...
 
-i got is this cool thing with it. If you are familiar with voroni
-diagram. This is webgl. The original ideas was that I can write a
+I got is this cool thing with it. If you are familiar with Voronoi
+diagram. This is WebGL. The original ideas was that I can write a
 shader for each pixel on the screen, it compares to every vertex and
-colors itself appropriately. The gpu is very good at this. I came up
-with a even better version involving 3-dimentional cones and a depth
+colors itself appropriately. The GPU is very good at this. I came up
+with a even better version involving 3-dimensional cones and a depth
 buffer that's a lot faster. That's why I got this out, you can
 actually drag these around, just like this.
 
-it's a little slow on this machine because I'm using plain open source
+It's a little slow on this machine because I'm using plain open source
 drivers which is not as fast as on a machine with real video drivers.
 
-it's pretty fast considering it's not actually doing any evaluation
-with the voroni diagram. There's something called fortune algorithm
-that has sweep lines that travels across and doing all this stuff, but
-this is really just a brute force with the graphics card doing most of
-the work.
+It's pretty fast considering it's not actually [not using Voronoi
+diagram specific algorithm]. There's something called Fortune's
+algorithm that has sweep lines that travels across and doing all this
+stuff, but this is really just a brute force with the graphics card
+doing most of the work.
 
-its developed live with Skewer like this. I can change the shaders and
-update the page while it's running, without refreshing the page.
+Its developed live with Skewer like this. I can change the shaders and
+update the page while it's running, trying things out, without
+refreshing the page.
 
 Sacha: You are working with a lot cool things. One thing I want to
 mention, because it's also really cool too but non-technical. You have
 released all these things into the public domain?
 
-how you made that decision? and how's that played out?
+How you made that decision? What got you interested, and how's that played out?
 
-Christopher: I started using gpl about 7 years ago. I read Richard
-Stallman's freesoftware and free society, and actually have a signed
-version of that. I got really into fsf and got a membership, and
-everything I did was licensned under gpl.
+Christopher: I started out using GPL about 7 years ago. I read Richard
+Stallman's Free Software and free society, and actually have a signed
+version of that. I got really into FSF and got a membership, and
+everything I did was licensed under GPL.
 
-as I got more experience, I find that licenses are cumbersome. If I
+As I got more experience, I find that licenses are cumbersome. If I
 want to use even just a snippet of somebody's code, to formally follow
 the license I gotta list their names, follow all these rules to make
 it work. It's cumbersome to worry about these license stuff all the
 time, especially if the software got large involving all these
-licenses, even if it's just the 3-clause bsd license that just require
-credit, even that is cumbersome. So I decided I didn't want any part
-of that, I just want to make my code as useful as it can be to most
-people as possible. I do that by putting it in public domain. Nobody's
-got any obligation to me when they use this stuff.
+licenses, even if it's just the 3-clause BSD license that just require
+credit. So I decided I didn't want any part of that, I just want to
+make my code as useful as it can be to most people as possible. I do
+that by putting it in public domain. Nobody's got any obligation to me
+when they use this stuff.
 
 Sacha: Thank you for doing that. It's great that you sharing them so
 freely.
 
-do you have any tips for people getting into Emacs internals or
+Do you have any other tips for people getting into Emacs internals or
 playing around with some of these cool stuff?
 
-Christopher: You have Emacs source code, sometimes everything's not
+Christopher: You have Emacs source code, sometimes not everything is
 documented clearly in the docstring, so you might have to dig into
-source code to see how it works, or if you have bugs, a lot of times u
-need to dig into the source code to see what's wrong.
+source code to see how it works, or if you have bugs, a lot of times
+you need to dig into the source code to see what's wrong.
 
-i guess the main resources are... I actually didn't read the Emacs
-manual much ... it's kind of highlevel and not really useful for
-hacking Emacs. The real useful manual is the Emacs lisp reference
-manual. It comes with Emacs. You can see in the info page here. =C-h
-i=
+I actually don't read the Emacs manual much... it's kind of high level
+and not really useful for hacking Emacs. The real useful manual is the
+Emacs Lisp Reference Manual. It comes with Emacs. You can see in the
+info page here. =C-h i=
 
-it covers everything, or almost everything. You can see how big it is.
-This index is 1400 lines.
-
-for example, I want to see how process works. So I can just search the
-string processes and read about how it works.
-
-there's a lot sections and features I'm not aware of and I got
+It covers everything, or almost everything. You can see how big it is.
+This index is 1400 lines. For example, I want to see how process
+works. I can just search the string processes and read about how it
+works. There's a lot sections and features I'm not aware of and I got
 surprised by all the time.
 
-so, use the Emacs lisp reference to see all Emacs can do and you can
+So, use the Emacs Lisp Reference to see all Emacs can do and you can
 hack it. Occasionally you have to dig into Emacs source code to see
 how things work. My recent example of that is, in Elfeed there's a
 bug, where somebody want to use =x-get-selection=. How this function
 is defined depends on what platform you are on. The doc string for
-=x-get-selection= doesn't really cover how each platform works. What's
-convenient about this is there's link to the source code, see this
-`select.el'? I got a keyboard shortcut that can jump right into the
-source code. So you see here's the source code for =x-get-selection=.
+=x-get-selection= doesn't really elaborate how it works for each
+platform. What's convenient about this is there's link to the source
+code, see this `select.el'? I got a keyboard shortcut that can jump
+right into the source code. So you see here's the source code for
+=x-get-selection=.
 
-Sacha: I use `find-function' I find that edebug. Sometimes I find
-myself needing to dig into the C source code as well?
+Sacha: Sometimes I find myself needing to dig into the C source code
+as well?
 
 Christopher: Yeah. That's another way how I got into the Emacs
-internals. I've gotto into 2 lisp interpreters. One of them I wrote,
+internals. I've written 2 lisp interpreters. One of them I wrote,
 which is a crappy toy lisp. Another one is with Brian Taylor I
-mentioned before, we wrote a scheme intepreter together.
+mentioned before, we wrote a scheme interpreter together.
 
-so I have experience of how lisp is put together internally, so I can
+I have experience of how lisp is put together internally, so I can
 look at Emacs and see lots similarities and understand what's going on
-and navigate around.
+and navigate my way around.
 
-Sacha: Did you do this before coming into Emacs?
+Sacha: Did you do lisp before coming into Emacs or the other way around?
 
 Christopher: It's hard to say. It might've been that lisp interested
 me and I got into Emacs initially, but as I said it was 9 years ago I
@@ -756,27 +757,38 @@ started Emacs and it was both lisp and Emacs that got me into it at
 the same time, so I can't remember which came first. They kind of came
 hand-in-hand.
 
-some people online asks “how do you get into Common Lisp?” and one of
+Some people online asks "how do you get into Common Lisp?" and one of
 the answer is Emacs, that's one of the most powerful editor for lisp
 right now.
 
-Sacha: It made sense. Lots people has build very interesting things on
+Sacha: It made sense. Lots people have build very interesting things on
 top of it.
 
-thanks for sharing your workflow. It looks really cool.
+Thanks for sharing your workflow. It looks really cool.
 
 Christopher: Thanks.
 
 Sacha: That certainly gave me lots of things to play around after
-this, and I hop a lot people botth listening and afterward get to play
+this, and I hope a lot people both listening and afterward get to play
 with this too. Thank you again so much for taking your time to share
 you workflow.
 
-another curiosity. I'm doing these Emacs chats for other people to get
-into Emacs. How people use Emacs, how did they got into it, what kind
+Another curiosity. I'm doing these Emacs chats as a way for other people to get
+to how how people use Emacs, how did they got into it, what kind
 of cool things people are working on. Is there anyone you like to see
-in one of this episodes?
+in one of this episode?
 
-Christopher: If I were to pick a name I would say steve purcel? xx
-he's the curator of MELPA right now.
+Christopher: If I were to pick a name I would say Steve Purcell He's the curator of MELPA right now.
+
+( Steve Purcell's Github https://github.com/purcell/emacs.d )
+
+Sacha: Where's the best place for people to find you?
+
+Christopher:  My blog or my Github. You can just email me. If it's related to my packages, you can just open a issue on Github, I get to it pretty quick.
+
+http://nullprogram.com/
+
+https://github.com/skeeto/impatient-mode 
+
+Sacha: Thanks everyone for listening in. You can find the broadcasting on Google Plus events page and it would also be available on http://emacslife.com/ eventually once we get the page and transcript and other good things sorted out, and it would be in public domain as well.
 
