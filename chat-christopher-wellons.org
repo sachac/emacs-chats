@@ -27,7 +27,7 @@ Before we get into how you got into Emacs and all other interesting things you d
 with it, can you tell us a little about who you are outside of Emacs.
 
 *Christopher:* I'm your typical computer geek. I've been using Emacs for
-9 years. I run regularly, I run 3 days a week. I like computer games,
+9 years. I run regularly, 3 days a week. I like computer games
 and reading. I spend a lot time watching YouTube videos actually.
 That's a big hobby. I find these long, half hour clips, mostly people
 playing video games. So I find myself watching others playing video
@@ -36,13 +36,13 @@ almost like multitasking that way.
 
 *Sacha:* I noticed on your blog that you also make computer games?
 
-*Christopher:* Occasionally. I like to participate in this 7-days
-rogue-like contests every year. That's a fun thing to do for a week. I
-like the constraints, but I only do it for about a week, then I forget
-about it after that.
+*Christopher:* Occasionally. I like to participate in this Seven Days
+Roguelike (7DRL) contests every year. That's a fun thing to do for a
+week. I like the constraints, but I only do it for about a week, then
+I forget about it after that.
 
 *Sacha:* You mentioned you started Emacs 9 years ago, which is pretty
-amazing. How did you get into it.
+amazing. How did you get into it?
 
 *Christopher:* So I was in an internship in college, and I was getting a
 lot more serious about programming. I've been programming for 19 years
@@ -64,37 +64,36 @@ programming environment for a while?
 
 *Christopher:* I was customizing it right away, mostly copy and pasting
 snippets here and there, because I didn't understand how a lot of it
-works. For example, the command about how many words in a buffer, and
+works. For example, the command to count how many words in a buffer, and
 I dropped it into my configuration.
 
-*Christopher:* And it wasn't actually until few years ago, I put my
-Emacs config in source control. So the whole thing is carefully
-curated now. there.
+It wasn't actually until few years ago I put my Emacs config in source
+control. So the whole thing is carefully curated now.
 
 *Sacha:* So you ended up with Emacs bankruptcy and you started emacs from scratch?
 
-*Christopher:* It's pretty close to from scratch. I got heavily redone.
-We'll take a look at it am sure. I got a little macro to help organize
-it and package things up in a nice clean blocks. That
-happened at the same time I got source control, almost like a rewrite.
+*Christopher:* It's pretty close to from scratch. It got heavily
+redone. I got a little macro to help me organize it and package things up
+in a nice clean blocks. That happened at the same time I got source
+control, almost like a rewrite.
 
 *Sacha:* Now 9 years ago we didn't have lots of the resources we have now
-about Emacs config: no Github. I don't remember if Emacswiki was
+about Emacs config, no Github... I don't remember if EmacsWiki was
 around then. You mentioned the book was useful, the O'Reilly book,
 what are other resources you found helpful?
 
-*Christopher:* After that..., actually I gave the book away years ago,
-because that's just a beginner book. I gave it to a coworker hoping
-to get her into Emacs. But since then it's really just been primarily
-reading the Emacs lisp reference manual. There's still so much in that
-manual I don't know about. I go through it all the time, and I've gone
-through it cover to cover a couple of times. There's still things like detail,
-and I go back like “oh, I didn't know you could do that”.
+*Christopher:* I gave the book away years ago, because that's just a
+beginner book. I gave it to a coworker hoping to get her into Emacs.
+But since then it's really just been primarily reading the Emacs Lisp
+Reference Manual. There's still so much in that manual I don't know
+about. I go through it all the time and I've gone through it cover to
+cover a couple of times. There's still things like detail, and I go
+back like "oh, I didn't know you could do that".
 
-*Sacha:* Yeah, every time I read the manual, I came across something new. Last
-time I read the Emacs manual, I learned how to add Unicode characters.
-There's just so much to learn. Definitely reading the manual, and
-reading the source code as well.
+*Sacha:* Yeah, every time I read the manual, I came across something
+new. Last time I read the Emacs manual, I learned how to add Unicode
+characters. There's just so much to learn. Definitely reading the
+manual, and reading the source code as well.
 
 You mentioned coworker. You have other coworker who are actually using
 Emacs too?
@@ -107,7 +106,7 @@ we do things. What's funny is pretty much all of them have adopted the
 color theme. The xx theme that comes with Emacs. It seems everybody is
 using that now. That's kind of fun to see that.
 
-*Sacha:* yes it's interesting to see the diffusion of practices when
+*Sacha:* Yes it's interesting to see the diffusion of practices when
 several people use Emacs together. You config is on Github so we can
 pickup interesting things off that as well.
 
@@ -120,8 +119,8 @@ inferior processes?
 announce it yet.
 
 *Sacha:* How did you get to the point when you are comfortable enough with
-Emacs internals to just say “oh I think I would like to have Emacs
-interact live with a web browser”?
+Emacs internals to just say "oh I think I would like to have Emacs
+interact live with a web browser"?
 
 *Christopher:* That's basically how I came to. I know almost anything I
 want it to do right now. If I have an idea, I'm going to try that, and
@@ -162,7 +161,7 @@ Particularly interesting snippets you are using.
 *Christopher:* Sure. Shall I switch to my screencast here then?
 
 *Sacha:* And folks, you can ask questions by submitting to the Q & A app
-or adding them to the event page or if you are on irc there's
+or adding them to the event page or if you are on IRC there's
 emacs-chat channel on Freenode.
 
 *Christopher:* So here's my init file.
@@ -215,7 +214,7 @@ something like that. I can't remember the details right now.
 
 13:11
 
-other than that, there's nothing too much special here. Just a
+Other than that, there's nothing too much special here. Just a
 bunch of things I like to use. Like right here, I can quickly lookup
 java documentation. I got that down to =C-h j=. So normally you can
 lookup documentation with control h so I can lookup Emacs doc. Let's
@@ -254,16 +253,16 @@ a copy of my scratch buffer here. And it has syntax highlighting. (in a web brow
 
 *Sacha:* What do you use it for?
 
-*Christopher:* If I need to share my screen with someone remotely, this
-is easier than going through a normal screen sharing session like
-right this minute. I can just turn on =impatient-mode=, and give that URL, and they can visit that from a
-browser and watch what I'm doing.
+*Christopher:* If I need to share my screen with someone remotely,
+this is easier than going through a normal screen sharing session like
+right this minute. I can just turn on =impatient-mode=, and give that
+URL, and they can visit that from a browser and watch what I'm doing.
 
-Its really useful if I pop up a eshell like this, I can run a
+Its really useful if I pop up a =eshell= like this, I can run a
 shell here and share that too. Now if I turn on impatient-mode like
 this, now you be able to see this buffer too.
 
-*Sacha:* Are you bulding a 2-way communication into this at some point?
+*Sacha:* Are you building a 2-way communication into this at some point?
 
 *Christopher:* No it's just one-way. It's just a collaboration between
 me and Brian Taylor. He's a coworker and a friend of mine.
@@ -276,7 +275,7 @@ same one Skewer uses.
 
 ( skewer-mode https://github.com/skeeto/skewer-mode Skewer: live web development with Emacs Provides live interaction with JavaScript, CSS, and HTML in a web browser. )
 
-anytime I'm doing something with Emacs that involving the web I'm
+Anytime I'm doing something with Emacs that involving the web I'm
 using my little web server.
 
 *Sacha:* I should try that too. It looks like you've put it to all sort
@@ -304,14 +303,14 @@ show here really quick.
 
 So am just going to copy right out of my README here and drop them
 here. So, whenever you start using FFI, it has to create what I call a
-context, which is really just a xx
-numerics and xx processes that's running my little FFI
-program. Its really simple. It's a stack machine that I can send
-strings and basic values to, so I can say I got =srand=, so here's
-my function name, here's the function signature, and it can push all these
-values into the stack, and pop the values off and I get them in Emacs.
+context, which is really just a xx numerics and xx processes that's
+running my little FFI program. Its really simple. It's a stack machine
+that I can send strings and basic values to, so I can say I got
+=srand=, so here's my function name, here's the function signature,
+and it can push all these values into the stack, and pop the values
+off and I get them in Emacs.
 
-so here I can see xx. And I can start generating random numbers.
+So here I can see xx. And I can start generating random numbers.
 
 *Sacha:* You said it's an Emacs process?
 
@@ -357,10 +356,9 @@ object-oriented programming methodology following the CLOS standard)
 
 It's an object system a lot like Common Lisp CLOS.
 
-So this function,
-there's also [interface for] MYSQL and also POSTGRES one, actually 2
-Psql drivers, I can do this, this is the database name, called
-testing.
+So this function, there's also [interface for] MYSQL and also
+PostgreSQL one, actually 2 PostgreSQL drivers, I can do this, this is
+the database name, called testing.
 
 It'll create this database object, thanks to EIEIO, it'll work
 with all the same, because they are generic functions it'll work with
@@ -370,11 +368,15 @@ queries on it.
 
 I can say create-table, like this:
 
+#+BEGIN_SRC emacs-lisp
 (emacsql db [:create-table foo ([name id])])
+#+END_SRC
 
 and I can insert values into it:
 
+#+BEGIN_SRC emacs-lisp
 (emacsql db [:insert-into foo :values])
+#+END_SRC
 
 Notice this is a s-expression, so instead of doing
 
@@ -385,7 +387,9 @@ expressions. I can demonstrate that.
 
 So here's a expression,
 
+#+BEGIN_SRC emacs-lisp
 (emacsql db [:insert-into foo :values ["Chris" 0]])
+#+END_SRC
 
 I can compile that right there.
 
@@ -397,9 +401,10 @@ That's what it compiles to.
 
 *Christopher:* Then I can make queries on the database.
 
+#+BEGIN_SRC emacs-lisp
 (emacsql db [:select * :from foo])
-
 (("Chris" 0))
+#+END_SRC
 
 About the extra quoting. I'm not sure I made the right choice on
 this. Anything that's not a number. First, =nil= maps to =null=. I can
@@ -471,8 +476,9 @@ I started to port Elfeed to EmacSQL, it's not finished yet. Am not
 sure I really want to do that or not, but that's something possible in
 the future.
 
-*Sacha:* So sounds like you spend fair bit of your life inside Emacs. You read blogs, web
-browsers, and other things... what else do you do inside Emacs?
+*Sacha:* So sounds like you spend fair bit of your life inside Emacs.
+You read blogs, web browsers, and other things... what else do you do
+inside Emacs?
 
 *Christopher:* So I do email too. I prefer Notmuch as my email client.
 
@@ -506,10 +512,9 @@ seconds change it to year. This is really handy. 5
 great, it's like a microcosm in Emacs. This absurdly powerful and
 flexible thing.
 
-*Christopher:* It can do calculus. It's a full computer algebra system.
-
-It's not fair to call it a calculator really, because it's so much
-more than that.
+*Christopher:* It can do calculus. It's a full computer algebra
+system. It's not fair to call it a calculator really, because it's so
+much more than that.
 
 *Sacha:* So you write a lot Markdown in your config?
 
@@ -535,10 +540,10 @@ things, not even knowing I forget them.
 *Sacha:* You've to write lots of large software, all kept in your head,
 so... wow.
 
-*Christopher:* There's something about Elfeed. I noticed you are writing
-a post about... You logged all your activities, you track how much
-time you spending on all these various things. I recently came up with
-Elfeed is... on the side of my website, you'll see these lists of
+*Christopher:* There's something about Elfeed. I noticed you are
+writing a post about... You logged all your activities, you track how
+much time you spending on all these various things. I recently came up
+with Elfeed is... on the side of my website, you'll see these lists of
 places (blogs) that I recommend checking out. These huge list. I was
 kind of manually maintaining these lists, until recently, I realized I
 can tab the Elfeed database to fill these out for me, since am already
@@ -548,13 +553,16 @@ Here's how I worked out. Here's my blogs. Here's where the list come
 from. A list of blogs I was recommending. I wrote this function called
 jekyll insert-url and I got a little filter string here
 
+#+BEGIN_SRC emacs-lisp
 <!-- (jekyll/insert-urls "+blog -product -myself ") -->
+#+END_SRC
 
 So I can just run this. It'll evaluate it right in the buffer.
 
 Oh, it's supposed to be working.
 
-*Sacha:* That's alright, it's the nature of all demos, to have something go wrong.
+*Sacha:* That's alright, it's the nature of all demos, to have
+something go wrong.
 
 *Sacha:* I see the idea. Since you already have all the data anyway you
 might as well use the same interface for searching for tags or
@@ -603,7 +611,9 @@ scratch buffer for every language.
 
 I can write JavaScript expressions
 
+#+BEGIN_SRC js
 Math.pow(13,2.1)
+#+END_SRC
 
 [result shows under the expression]
 
@@ -804,3 +814,4 @@ https://github.com/skeeto/impatient-mode
 
 *Sacha:* Thanks everyone for listening in. You can find the broadcasting on Google Plus events page and it would also be available on http://emacslife.com/ eventually once we get the page and transcript and other good things sorted out, and it would be in public domain as well.
 
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
