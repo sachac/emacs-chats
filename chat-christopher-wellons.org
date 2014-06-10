@@ -48,123 +48,116 @@ Sacha: Hum, a lot fun interests.
 You mentioned you started Emacs 9 years ago, which is pretty amazing.
 How did you get into it.
 
-Christopher: So I was in an intership in college, at the time. And I
+Christopher: So I was in an intership in college, and I
 was getting a lot more serious about programing. I've been programing
-for 19 years now. Xxx when doing the intership I was getting serious
+for 19 years now. When doing the intership I was getting serious
 about it, and after that I've been just using keyright xx and some
 other, some basic stuff.
 
-Christopher: And I read probably something Richard Stallman, or Steve
-Yegge xx or some other essays. And I decided to actually look into
-this Emacs thing. And that's what ended up happening. I installed it,
-was reading all the manuals. I got one of those orelly books, I read
+Christopher: And I read probably something by Richard Stallman, or Steve
+Yegge or some other essays. I decided i have to look into
+this Emacs thing, and that's what ended up happening. I installed it,
+was reading all the manuals. I got one of those O'Reilly books, I read
 that, then I just gradually built up from that point. It became my
 only text editor quickly.
 
-Where you customizing it right away? or you xx using it as a
-environment for programing as well?
+Sacha: Where you customizing it right away, or were you using it as a
+programing environment for a while?
 
 Christopher: I was customizing it right away, mostly copy and pasting
 snippets here and there, because I didn't understand how a lot of it
-works. This thing wil tell me xx and I drop it into my configuration.
+works. For example, the command about how many words in a buffer, and
+I dropped it into my configuration.
 
 Christopher: And it wasn't actually until few years ago, I put my
 Emacs config in source control. So the whole thing is carefully
 curated now. And I xx miss the whole copy out and I messed a few years
 there.
 
-So you ended up Emacs bankrupcy and you started curating it from
-scratch xx
+φ So you ended up Emacs bankrupcy and you started emacs from scratch?
 
 Christopher: It's pretty close to from scratch. I got heavily redone.
 We'll take a look at it am sure. I got a little macro to help organize
-it here and there, and package things up in a nice clean blocks. That
+it and package things up in a nice clean blocks. That
 happened at the same time I got source control, almost like a rewrite.
 
-Now 9 years ago we didn't have lots of the resources we have now, xx
-about Emacs config, no github. I don't remember if Emacswiki was
-around then. You mentioned the book was useful, the oreilly book, what
-other resources you found helpful.
+φ Now 9 years ago we didn't have lots of the resources we have now
+about Emacs config: no Github. I don't remember if Emacswiki was
+around then. You mentioned the book was useful, the O'Reilly book,
+what are other resources you found helpful?
 
 Christopher: After that..., actually I gave the book away years ago,
-because that's just a beginner book. I gave it to a coworker, hoping
+because that's just a beginner book. I gave it to a coworker hoping
 to get her into Emacs. But since then it's really just been primarily
 reading the Emacs lisp reference manual. There's still so much in that
-manual I don't know about. I go thru it all the time, and I've gone
-thru it cover to cover basically. There's still things like detail,
+manual I don't know about. I go through it all the time, and I've gone
+through it cover to cover a couple of times. There's still things like detail,
 and I go back like “oh, I didn't know you could do that”.
 
-Yeah, everytime I read the manual, I came across something new. Last
-time I read the Emacs manual, I learned how to add unicode characters.
-There's just so much to learn. Probably reading the manual, and
+φ Yeah, everytime I read the manual, I came across something new. Last
+time I read the Emacs manual, I learned how to add Unicode characters.
+There's just so much to learn. Definitely reading the manual, and
 reading the source code as well.
 
-You mentioned coworker. You actually have other coworker using Emacs
-too?
+You mentioned coworker. You have other coworker who are actually using
+Emacs too?
 
-Christopher: Yes, I've got a few coworkers, not many. I spend time
+Christopher: Yes, I've got a few coworkers. I spend time
 discussing Emacs with them on occasion. Kind of sharing notes, and how
 we do things. What's funny is pretty much all of them have adopted the
 color theme. The xx theme that comes with Emacs. It seems everybody is
-using that now. Xx I kind of it's fun to see that. I know that looks
-familiar when I see their screens.
+using that now. That's kind of fun to see that.
 
-[laughs] yes it's interesting to see the diffusion of practices when
-several people use Emacs together. You config is on github so we can
-pickup interesting things off that as well. Xx
+φ yes it's interesting to see the diffusion of practices when
+several people use Emacs together. You config is on Github so we can
+pickup interesting things off that as well.
 
-So you check with other people, learn from source code, xx about the
+So you check with other people, learn from books and source code. All these
 hacking you've been doing about building web servers and other
-interactive xx you actually build something that can talk to Emacs
-inferior processes? Emacs within Emacs?
+interactive processes you actually build something that can talk to Emacs
+inferior processes?
 
 Christopher: That was a project a couple weeks ago. Xx I haven't
-announce it “yet” [hand sign on quote].
+announce it yet. 
 
-I'm sorry...
-
-Christopher: That's fine.
-
-So you decided to customize it right off the bat, 9 years ago. How did
-you get to the point when you are comfortable enough with Emacs
-internals to just say “oh I think I would like to have Emacs interact
-live with a web browser”
+φ How did you get to the point when you are comfortable enough with
+Emacs internals to just say “oh I think I would like to have Emacs
+interact live with a web browser”?
 
 Christopher: That's basically how I came to. I don't know xx almost
-anything I want it to do right now so I just.... I have an idea, then
+anything I want it to do right now. If I have an idea, 
 I'm going to try that, and that becomes my primary focus for a short
-period of time until I make it work that way.
+period of time until I make it work.
 
 Christopher: To elaborate on that, I got a Steam account, I got
 something like 200, 300 games in there, but I rarely ever play them,
 because these programing activities are almost always more fun. Like,
-I can play this game or I can xx play with Emacs. It's almost always
+I can play this game or I can tinker with Emacs. It's almost always
 emacs.
 
-[laughes] yeah you have it. Emacs is more addictive than games you can
-play on Steam. [laughes] I've heard that from other Emacs users as
-well, this is relaxation and fun and intellectual curiosity.
+φ Emacs is more addictive than games you can play on Steam. I've heard
+that from other Emacs users as well, this is what one do for
+relaxation and fun and intellectual curiosity.
 
 So basically you learned about all these things by having crazy ideas.
-What xx decides you to use Emacs to play tetris on its own. And then
+Like What if i can use Emacs to play Tetris on its own. And then
 digging around and figuring out how to do it.
 
-Christopher: So you saw xx tetris mode then?
+Christopher: So you saw the auto-Tetris mode then?
 
-I just came across that the other day. I often show tetris... kind of
-when you are demonstrating em to other people and you want to boggle
+φ I just came across that the other day. I often show tetris... kind of
+when you are demonstrating Emacs to other people and you want to boggle
 their mind about just how much is in Emacs. So I normally show things
-like tetris and xx and xx and also tetris. That drives people crazy.
+like tetris and doctor and whatever and tetris. That drives people crazy.
 
-Ok, so, lots really odd and interesting things. One other thing people
-are often curious about is how actually people use Emacs. What's your
-workflow like, what are the different things you configured. And you
-share your config on github, Btw folks listening you can find cw's
-github it's
+Lots really odd and interesting things. One other thing people are
+often curious about is how actually people use Emacs. What's your
+workflow like, what are the different things you configured? And you
+share your config on Github.
 
 https://github.com/skeeto
 
-But we like to also see I guess the highlights of your config.
+But we like to see the highlights of your config.
 Particularly interesting snippets you are using.
 
 Christopher: Sure. Shall I switch to my screencast here then?
@@ -173,108 +166,78 @@ Humum. And folks, you can ask questions by submitting to the q＆a app
 or adding them to the event page or if you are on irc there's
 emacs-chat channel on Freenode.
 
-Ok! so, you got stuff! [laughes]
+Christopher: So here's my init file.
 
----------
-Christopher: That's actually my server log. I'll show xx So here's my
-init file. You can see that Okay?
-
-Yeah, I can see it just fine.
-
-Christopher: So, something that'll stand out pretty quick... I got
-this 「with-package」 macro here. You'll see that showing over and
-over again. This is something I wrote myself. There's a bunch of
+Christopher: I got
+this =with-package= macro here. This is something I wrote myself. There's a bunch of
 different versions. Everybody kind of written their own little version
 of this because there isn't an official one at this point. It sort of
-groups relations configurations together into blocks. Sort of having
-all these lose ends xx kind of dumped in. I can say everything related
-to, for example “uniquify” goes into this block.
+groups related configurations together into blocks.
 
-Christopher: Things related to eshell goes into this block right here.
+Christopher: I don't have to list any of the packages sources
+explicitly like ELPA and MELPA. If it is mentioned here =with-package= it will
+automatically get installed when Emacs starts if it's not already
+installed.
 
-Christopher: And I don't have to risk xx any of the packages, i'll
-just use elpa and melpa so I don't have to install any of those
-packages explicitly Xx Only it mentions here 「with-package」 it will
-automatically get installed when Emacs starts if it's not installed.
+φ Humm, I should use that. I've been using =use-package= by John Wigley
+( https://github.com/jwiegley )
+but it doesn't do the installs.
 
-Humm, I should use that. I've been using 「use-package」 by john
-wigley xx but it doesn't do the installs, so the xx this will actually
-mean it always happens
-
-Christopher: Xx use-packages xx there's another one of this macros
-like somebody else's There's a few of them out there. One's kind of xx
-Like if you look at this entry this asterisk
-
-Christopher: So the ones without the asterisk are lazily loaded. So,
-they let Emacs load them as late as possible. Those with asterisk are
-force loaded. So... Like “uniquify”, I don't want to wait for that to
-load, I want it just load right away, so its got an asterisk on it.
-Same way with 「winner-mode」. With winner-mode, you can hop with
-arrow keys between buffers, I like doing that.
+Christopher: There's a few of them out there. Like if you look at this
+entry here, i got this asterisk. So the ones without the asterisk are
+lazily loaded. So, they let Emacs load them as late as possible. Those
+with asterisk are force loaded. I don't want to wait for that to load,
+I want it just load right away, so its got an asterisk on it. Same way
+with =winner-mode=. With winner-mode, you can hop up with arrow keys
+between buffers, I like doing that.
 
 Christopher: Then there's asterisk on other things that has to do with
-auto-load Pretty xx but it's useful for me. Xx I haven't xx for other
-people to use.
+=auto-load=. It's pretty cryptic but it's useful for me. That why I
+haven't put this out there for other people to use.
 
-Sometimes you have asterisk after package names?
+φ Sometimes you have asterisk after the package names?
 
-Christopher: Yeah, that's something changed with package.el, and the
-latest changes. It used to creeate a secondary package called with
+Christopher: Yeah, that's something changed with =package.el=. It used to create a secondary package called with
 percent name but dash auto-loads and there's a really cool trick where
-you could 「require」 the auto-load package and you can do some
+you could =require= the auto-load package and you can do some
 configuration lazily. There's a nice trick, but I got rid of that.
-There's no longer xx auto-load package xx generated
-
-Christopher: So I have to modify my 「with-package」 macro. So it has
-the same effect with the asterisk on the package names, I want that
-effect.
+There's no longer xx auto-load package generated
+So I have to modify my =with-package= macro. So it has
+the same effect, and to do that i have the asterisk on the package names.
 
 12:41
 
 Christopher: So in this case, I want to make sure I load the auto-load
-  of the markdown-mode or something like that, when one of these
-  [file] patterns get opened, it'll open in markdown-mode. The
-  auto-load's already been set. It's something like that. I can't
-  remember the details right now.
-
-Sacha: Cool, I like to try.
+of the =markdown-mode= or, when one of these markdown file get opened,
+it'll open in markdown-mode. The auto-load's already been set. It's
+something like that. I can't remember the details right now.
 
 • 13:11 other than that, there's nothing too much special here. Just a
 bunch of things I like to use. Like right here, I can quickly lookup
 java documentation. I got that down to =C-h j=. So normally you can
-lookup documentation with control h xx so I can lookup Emacs doc. Or
-I can do this, I can lookup, let's say I want to lookup 「ArrayList」.
-I do this, and it'll pop up a browser over here.
-
-Sacha: That's really neat.
+lookup documentation with control h so I can lookup Emacs doc. Let's
+say I want to lookup =ArrayList=. It'll pop up a
+browser over here.
 
 Christopher: And these are all the packages that's been loaded in this
-quick jump xx. And what make this work really well was that java doc
-is ubiquitous. Xx packages has java doc package made, so it easy. So
-documentation in this nice format I can jump to. Xx documentation
-installed on my machine by that process.
+quick jump stuff. And what make this work really well was that Javadoc
+is ubiquitous. Any package has Javadoc package made.
 
-Sacha: Yeah that's good stuff. I often findig myself googling for all
-these, but it's nice to have that, just a quick keyboard shortcut
-away.
+Sacha: Yeah that's good stuff. I often find myself Googling for all
+these details, but it's nice to have that, just a quick keyboard
+shortcut away.
 
-Sacha: One of those thing is multiple-cursors... I hear it's super
+Sacha: multiple-cursors is one of those thing I hear it's super
 awesome, but I haven't got my mind around it yet.
 
-Christopher: Yeah it lets me do this, and modify the stuff I want. Xx
-actually replaced xx I used to do stuff like that with a macro, I
-write a little macro, like this, [apply to all lines] like that.
+Christopher: Yeah it lets me do this, and modify the stuff I want. I
+love that. I used to do stuff like that with a macro, but
+multiple-cursors, that's so much more comfortable.
 
-Christopher: Multiple-cursors, that's so much more comfortable.
+Sacha: That's awesome.
 
-Sacha: Okay, got a hang of it, that's awesome.
-
-[but that's not mine, of course]
-
-Christopher: One thing I want to show, is impatient mode, as I was
+Christopher: One thing I want to show is impatient mode, as I was
 asked about this specifically. So if you visited in your web browser
-
-http://zeus.nullprogram.com:8888/imp/
 
 ( https://github.com/skeeto/impatient-mode Impatient Mode See the
 effect of your HTML as you type it.
@@ -283,84 +246,72 @@ http://nullprogram.com/blog/2012/08/20/
 
 )
 
-Sacha: I put the comment in the event so people can find that too
+Christopher: You'll see if you click on the scratch buffer, you'll see
+a copy of my scratch buffer here. And it has syntax highlighting. (in a web browser)
 
-Christopher: I should check this myself. You'll see if you click on
-the scratch buffer, you'll see a copy of my scratch buffer here. And
-it has syntax highlighting.
+Sacha: What do you use it for?
 
-Sacha: That's awesome. How are you using this? what do you use it for?
+Christopher: If I need to share my screen with someone remotely, this
+is easier than going through a normal screen sharing session like
+right this minute. I can just turn on =impatient-mode=, and give that URL, and they can visit that from a
+browser and watch what I'm doing.
 
-Christopher: So if I need to share my screen with someone remotely,
-this is easier than going thru a normal screen sharing session like
-right this minute. I can just turn on impatient-mode, it's already
-turned on here. And give that url, and they can watch what I'm doing.
-
-its really useful if I pop up a eshell like this. And I can run a
+its really useful if I pop up a eshell like this, I can run a
 shell here and share that too. Now if I turn on impatient-mode like
 this, now you be able to see this buffer too.
 
 Sacha: Are you bulding a 2-way communication into this at some point?
 
 Christopher: No it's just one-way. It's just a collaboration between
-me and Brian Taylor xx. He's a coworker and a friend of mine.
+me and Brian Taylor. He's a coworker and a friend of mine.
 
 ( Brian Taylor's blog on impatient mode
 http://www.50ply.com/blog/2012/08/13/introducing-impatient-mode/ )
 
-it's build on the same web server, which I call httpd xx, it's the
-same one skewer uses.
+it's build on the same web server, which I call simple-httpd, it's the
+same one Skewer uses.
 
-( skewer-mode https://github.com/skeeto/skewer-mode
-
-Skewer: live web development with Emacs Provides live interaction with
-JavaScript, CSS, and HTML in a web browser. Expressions are sent
-on-the-fly from an editing buffer to be evaluated in the browser, just
-like Emacs does with an inferior Lisp process in Lisp modes. )
+( skewer-mode https://github.com/skeeto/skewer-mode Skewer: live web development with Emacs Provides live interaction with JavaScript, CSS, and HTML in a web browser. )
 
 anytime I'm doing something with Emacs that involving the web I'm
 using my little web server.
 
-Sacha: I should try that too. It looks like you put all sort of good
-uses. You already have a demo of skeywer xx which allows xx easily
-interact in JavaScript and a browser. I think it's pretty darn cool
-too.
+Sacha: I should try that too. It looks like you've put it to all sort
+of good uses. You already have video demo of Skewer which allows one
+to easily interact with JavaScript and a browser. I think it's pretty
+darn cool too.
 
-Sacha: So, impatient-mode... So FFI foreign function interfaces, how
-are you using that? I saw your blog post demonstrating it, but am
-curious about practical applications if you've explored xx.
+Sacha: So, impatient-mode and Skewer. FFI --foreign function interfaces--, how are you using that? I saw your blog post demonstrating it, but am curious about practical applications.
 
 Christopher: That kind of hit the wall a little bit, as it gets
-complicated pretty quickly. One problem I'm having... I don't have any
-real practical uses for it yet, I thought maybe I can run gtk window
-like that, run a little graphical system that way. But if any body
-linux users and want gtk applications from a terminal knows that they
-are really noisy, puts out a lot debugging messages, and that's
-actually... I haven't made it robust enough messages actually
-interfere my communication with Emacs. As it goes into sudo terminal
-and error messages, and they get piped into the same pipe, and because
-of that it gets in the way.
+complicated pretty quickly. I don't have any real practical uses for
+it yet, I thought maybe I can run GTK window , run a little graphical
+system that way. But if any body linux users and want GTK applications
+from a terminal knows that they are really noisy, they puts out a lot
+debugging messages. I haven't made it robust enough, those messages
+actually interfere my communication with Emacs. As it goes into sudo
+terminal and error messages and standard IO messages get piped into
+the same pipe, and because of that it gets in the way. i haven't done
+anything significant with that beyond just a little demo, which I can
+show here really quick.
 
-i haven't done anything significant with that beyond just a little
-demo, which I can show here really quick.
+so am just going to copy right out of my README here and drop them
+here. So, whenever you start using FFI, it has to create what I call a
+context, which is really just a xx
+numerics and xx processes that's running my little FFI
+program. Its really simple. It's a stack machine that I can send
+strings and basic values to, so I can say I got =srand=, so here's
+my function name, here's the function signature, and it can push all these
+values into the stack, and pop the values off and I get them in Emacs.
 
-so am just going to copy right out of my readme here and drop them
-here. So, whenever you start using ffi, it creates what I call a
-context numerics and xx processes that's running my little ffi
-program, and its really simple. It's a stack machine, that I can send
-strings and basic values to, so I can say I got 「srand」, so here's
-my function name, here's my function signature, and push all these
-values into the stack, and pop them off I get them in Emacs.
+so here I can see xx. And I can start generating random numbers.
 
-so here I can seed, xx I can run that, and that returns a void right
-there. And I can start generating random numbers.
+Sacha: You said it's an Emacs process?
 
-Sacha: You said ffi communicates with... You said Emacs process?
-
-Christopher: It's a Emacs inferior process. If I hop in here... you
+Christopher: It's an inferior process. If I hop in here... you
 see those glue program? so it's just a c++ program. That's linked with
 ffi.h right here. And it just drives ffi with this really simple-httpd
-call that chops xx thru a pseudo terminal thru a pipe am using.
+call that chops xx through a pseudo terminal through a pipe am using.
 
 simple-httpd https://github.com/skeeto/emacs-web-server
 
@@ -377,7 +328,7 @@ such as how do you handle that binary. That's something I resolved
 with emacSQL... don't know if you saw that.
 
 so that runs a sub-process in the background. In order to make that
-work xx there's a package on melpa, it actually ships with c source
+work xx there's a package on MELPA, it actually ships with c source
 code. And it will attepm as best as it can to compile that when you
 install it, so it might take a minute to install because its going to
 run a c compiler xx to get that to work. I can try to demostrate it.
@@ -431,7 +382,7 @@ Christopher: Then I can make queries on the db.
 (("Chris" 0))
 
 oh, about the extra quoting. I'm not sure I made the right choice on
-this. Anything that's not a number. First, 「nil」 maps to 「null」. I
+this. Anything that's not a number. First, =nil= maps to =null=. I
 can insert a null into db just by using a nil there. Anything not nil
 or a number, will get printed into a string.
 
@@ -442,7 +393,7 @@ first place? “maybe we should do all these things on db from Emacs”,
 or were you working on a project?
 
 Christopher: Actually it goes back to elfeed, which is my web feed
-reader. So skewer mode is probably my most used Emacs packages right
+reader. So Skewer mode is probably my most used Emacs packages right
 now. But the most useful for me has been elfeed.
 
 it's a feed reader. I created it after Google Reader shutdown. And I
@@ -490,7 +441,7 @@ let's say I want to see, everything with the tag +youtube
 and it's all YouTube stuff in the last 10 weeks. I can narrow it down
 to 4 weeks, or 1 day ago...
 
-Sacha: I like that. It's xx kind of got quick browsing, thru something
+Sacha: I like that. It's xx kind of got quick browsing, through something
 like my org data. Really cool stuff.
 
 Christopher: So I need to search this fast, and I end up writing my
@@ -624,11 +575,11 @@ cool. So you do a heck lots of things in Emacs. So anything you
 haven't got around to do in Emacs yet? <laughes>
 
 Christopher: There's a barrier for me to learn new programing
-languages. This touches on skewer mode. Is that. Before I get into xx
+languages. This touches on Skewer mode. Is that. Before I get into xx
 I want a way to set xx a workflow before I like it. That's how skwer
 came about. I need to learn JavaScript and web development, and I need
 to find some workflow in Emacs, and I looked at swing.js and it didn't
-quite do what I was looking for, and ended up writing skewer mode
+quite do what I was looking for, and ended up writing Skewer mode
 while I learn JavaScript.
 
 Sacha: <laughs> let me make sure if I understand this correctly. You
@@ -652,7 +603,7 @@ Christopher: I can demo how that works real quick. So here I say
 
 i use xx pentadactal btw
 
-so I say 「run-skewer」and it opens a blank tab here in browser that's
+so I say =run-skewer= and it opens a blank tab here in browser that's
 connected to Emacs and I pop up a JavaScript scatch buffer. I got a
 scratch buffer for every language xx
 
@@ -703,10 +654,10 @@ as a live system I can hack while it is being build.
 
 i can do further with this. So here's my blog again, you see this
 little green triangle on the top right corner, I can click and toggle
-that. When it's green, that mean skewer can edit this page. This works
+that. When it's green, that mean Skewer can edit this page. This works
 not just with my blog. There's a little browser extention I wrote to
-make it work with skewer. I can togle this on any page. For example if
-I'm on github... although this wont work with github website because
+make it work with Skewer. I can togle this on any page. For example if
+I'm on Github... although this wont work with Github website because
 they've got security cranked up so much they won't let this work.
 
 i can hook into it, and come over to Emacs and execute JavaScript code
@@ -724,7 +675,7 @@ without ever refreshing a page.
 
 Sacha: You mean like foreign function interface?
 
-Christopher: That's what I was doing before I started this skewer
+Christopher: That's what I was doing before I started this Skewer
 project.
 
 i got is this cool thing with it. If you are familiar with voroni
@@ -744,7 +695,7 @@ that has sweep lines that travels across and doing all this stuff, but
 this is really just a brute force with the graphics card doing most of
 the work.
 
-its developed live with skewer like this. I can change the shaders and
+its developed live with Skewer like this. I can change the shaders and
 update the page while it's running, without refreshing the page.
 
 Sacha: You are working with a lot cool things. One thing I want to
