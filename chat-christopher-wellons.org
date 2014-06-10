@@ -35,8 +35,7 @@ playing video games. So I find myself watching others playing video
 games. A lot of time I can do my own thing while doing that, so it's
 almost like multitasking that way.
 
-Sacha: Yeah you got the benefit of xx without xx doing the hard work.
-I noticed on your blog that you also make computer games?
+Sacha: I noticed on your blog that you also make computer games?
 
 Christopher: Occasionally. I like to participate in this 7-days
 rogue-like contests every year. That's a fun thing to do for a week. I
@@ -48,9 +47,9 @@ Sacha: Hum, a lot fun interests.
 You mentioned you started Emacs 9 years ago, which is pretty amazing.
 How did you get into it.
 
-Christopher: So I was in an intership in college, and I
+Christopher: So I was in an internship in college, and I
 was getting a lot more serious about programming. I've been programming
-for 19 years now. When doing the intership I was getting serious
+for 19 years now. When doing the internship I was getting serious
 about it, and after that I've been just using keyright xx and some
 other, some basic stuff.
 
@@ -71,17 +70,16 @@ I dropped it into my configuration.
 
 Christopher: And it wasn't actually until few years ago, I put my
 Emacs config in source control. So the whole thing is carefully
-curated now. And I xx miss the whole copy out and I messed a few years
-there.
+curated now. there.
 
-φ So you ended up Emacs bankrupcy and you started emacs from scratch?
+Sacha: So you ended up with Emacs bankruptcy and you started emacs from scratch?
 
 Christopher: It's pretty close to from scratch. I got heavily redone.
 We'll take a look at it am sure. I got a little macro to help organize
 it and package things up in a nice clean blocks. That
 happened at the same time I got source control, almost like a rewrite.
 
-φ Now 9 years ago we didn't have lots of the resources we have now
+Sacha: Now 9 years ago we didn't have lots of the resources we have now
 about Emacs config: no Github. I don't remember if Emacswiki was
 around then. You mentioned the book was useful, the O'Reilly book,
 what are other resources you found helpful?
@@ -94,7 +92,7 @@ manual I don't know about. I go through it all the time, and I've gone
 through it cover to cover a couple of times. There's still things like detail,
 and I go back like “oh, I didn't know you could do that”.
 
-φ Yeah, everytime I read the manual, I came across something new. Last
+Sacha: Yeah, every time I read the manual, I came across something new. Last
 time I read the Emacs manual, I learned how to add Unicode characters.
 There's just so much to learn. Definitely reading the manual, and
 reading the source code as well.
@@ -108,7 +106,7 @@ we do things. What's funny is pretty much all of them have adopted the
 color theme. The xx theme that comes with Emacs. It seems everybody is
 using that now. That's kind of fun to see that.
 
-φ yes it's interesting to see the diffusion of practices when
+Sacha: yes it's interesting to see the diffusion of practices when
 several people use Emacs together. You config is on Github so we can
 pickup interesting things off that as well.
 
@@ -117,17 +115,17 @@ hacking you've been doing about building web servers and other
 interactive processes you actually build something that can talk to Emacs
 inferior processes?
 
-Christopher: That was a project a couple weeks ago. Xx I haven't
+Christopher: That was a project a couple weeks ago.  I haven't
 announce it yet.
 
-φ How did you get to the point when you are comfortable enough with
+Sacha: How did you get to the point when you are comfortable enough with
 Emacs internals to just say “oh I think I would like to have Emacs
 interact live with a web browser”?
 
-Christopher: That's basically how I came to. I don't know xx almost
-anything I want it to do right now. If I have an idea,
-I'm going to try that, and that becomes my primary focus for a short
-period of time until I make it work.
+Christopher: That's basically how I came to. I know almost anything I
+want it to do right now. If I have an idea, I'm going to try that, and
+that becomes my primary focus for a short period of time until I make
+it work.
 
 Christopher: To elaborate on that, I got a Steam account, I got
 something like 200, 300 games in there, but I rarely ever play them,
@@ -135,7 +133,7 @@ because these programming activities are almost always more fun. Like,
 I can play this game or I can tinker with Emacs. It's almost always
 emacs.
 
-φ Emacs is more addictive than games you can play on Steam. I've heard
+Sacha: Emacs is more addictive than games you can play on Steam. I've heard
 that from other Emacs users as well, this is what one do for
 relaxation and fun and intellectual curiosity.
 
@@ -145,10 +143,10 @@ digging around and figuring out how to do it.
 
 Christopher: So you saw the auto-Tetris mode then?
 
-φ I just came across that the other day. I often show tetris... kind of
+Sacha: I just came across that the other day. I often show Tetris... kind of
 when you are demonstrating Emacs to other people and you want to boggle
 their mind about just how much is in Emacs. So I normally show things
-like tetris and doctor and whatever and tetris. That drives people crazy.
+like Tetris and doctor and whatever and Tetris. That drives people crazy.
 
 Lots really odd and interesting things. One other thing people are
 often curious about is how actually people use Emacs. What's your
@@ -162,24 +160,24 @@ Particularly interesting snippets you are using.
 
 Christopher: Sure. Shall I switch to my screencast here then?
 
-Humum. And folks, you can ask questions by submitting to the q＆a app
+Sacha: And folks, you can ask questions by submitting to the Q & A app
 or adding them to the event page or if you are on irc there's
 emacs-chat channel on Freenode.
 
 Christopher: So here's my init file.
 
-Christopher: I got
-this =with-package= macro here. This is something I wrote myself. There's a bunch of
-different versions. Everybody kind of written their own little version
-of this because there isn't an official one at this point. It sort of
-groups related configurations together into blocks.
+Christopher: I got this =with-package= macro here. This is something I
+wrote myself. There's a bunch of different versions. Everybody kind of
+written their own little version of this because there isn't an
+official one at this point. It sort of groups related configurations
+together into blocks.
 
 Christopher: I don't have to list any of the packages sources
-explicitly like ELPA and MELPA. If it is mentioned here =with-package= it will
-automatically get installed when Emacs starts if it's not already
-installed.
+explicitly like ELPA and MELPA. If it is mentioned here =with-package=
+it will automatically get installed when Emacs starts if it's not
+already installed.
 
-φ Humm, I should use that. I've been using =use-package= by John Wigley
+Sacha: Humm, I should use that. I've been using =use-package= by John Wigley
 ( https://github.com/jwiegley )
 but it doesn't do the installs.
 
@@ -195,7 +193,7 @@ Christopher: Then there's asterisk on other things that has to do with
 =auto-load=. It's pretty cryptic but it's useful for me. That why I
 haven't put this out there for other people to use.
 
-φ Sometimes you have asterisk after the package names?
+Sacha: Sometimes you have asterisk after the package names?
 
 Christopher: Yeah, that's something changed with =package.el=. It used to create a secondary package called with
 percent name but dash auto-loads and there's a really cool trick where
@@ -212,14 +210,16 @@ of the =markdown-mode= or, when one of these Markdown file get opened,
 it'll open in markdown-mode. The auto-load's already been set. It's
 something like that. I can't remember the details right now.
 
-• 13:11 other than that, there's nothing too much special here. Just a
+13:11
+
+other than that, there's nothing too much special here. Just a
 bunch of things I like to use. Like right here, I can quickly lookup
 java documentation. I got that down to =C-h j=. So normally you can
 lookup documentation with control h so I can lookup Emacs doc. Let's
 say I want to lookup =ArrayList=. It'll pop up a
 browser over here.
 
-Christopher: And these are all the packages that's been loaded in this
+And these are all the packages that's been loaded in this
 quick jump stuff. And what make this work really well was that Javadoc
 is ubiquitous. Any package has Javadoc package made.
 
@@ -256,7 +256,7 @@ is easier than going through a normal screen sharing session like
 right this minute. I can just turn on =impatient-mode=, and give that URL, and they can visit that from a
 browser and watch what I'm doing.
 
-its really useful if I pop up a eshell like this, I can run a
+Its really useful if I pop up a eshell like this, I can run a
 shell here and share that too. Now if I turn on impatient-mode like
 this, now you be able to see this buffer too.
 
@@ -268,7 +268,7 @@ me and Brian Taylor. He's a coworker and a friend of mine.
 ( Brian Taylor's blog on impatient mode
 http://www.50ply.com/blog/2012/08/13/introducing-impatient-mode/ )
 
-it's build on the same web server, which I call simple-httpd, it's the
+It's build on the same web server, which I call simple-httpd, it's the
 same one Skewer uses.
 
 ( skewer-mode https://github.com/skeeto/skewer-mode Skewer: live web development with Emacs Provides live interaction with JavaScript, CSS, and HTML in a web browser. )
@@ -281,7 +281,9 @@ of good uses. You already have video demo of Skewer which allows one
 to easily interact with JavaScript and a browser. I think it's pretty
 darn cool too.
 
-Sacha: So, impatient-mode and Skewer. FFI --foreign function interfaces--, how are you using that? I saw your blog post demonstrating it, but am curious about practical applications.
+Sacha: So, impatient-mode and Skewer. FFI --foreign function
+interfaces--, how are you using that? I saw your blog post
+demonstrating it, but am curious about practical applications.
 
 Christopher: That kind of hit the wall a little bit, as it gets
 complicated pretty quickly. I don't have any real practical uses for
@@ -315,7 +317,7 @@ call that chops xx through a pseudo terminal, through a pipe I am using.
 
 simple-httpd https://github.com/skeeto/emacs-web-server
 
-it's just a pretty simple stack machine that makes it work. There's a
+It's just a pretty simple stack machine that makes it work. There's a
 switch for the byte code, and I can push different sizes of integers
 onto the stack. And that created these little glue programs right here
 ffi-glue. So that's what runs in the background.
@@ -369,20 +371,20 @@ and I can insert values into it:
 
 (emacsql db [:insert-into foo :values])
 
-notice this is a s-expression, so instead of doing
+Notice this is a s-expression, so instead of doing
 
 "SELECT * FROM foo"
 
-i build up these vectors of symbols and it actually compiles into SQL
+I build up these vectors of symbols and it actually compiles into SQL
 expressions. I can demonstrate that.
 
-so here's a expression,
+So here's a expression,
 
 (emacsql db [:insert-into foo :values ["Chris" 0]])
 
-i can compile that right there.
+I can compile that right there.
 
-outputs:
+Output:
 
 INSERT INTO foo VALUES ('"Chris"', 0);
 
@@ -394,7 +396,7 @@ Christopher: Then I can make queries on the database.
 
 (("Chris" 0))
 
-oh, about the extra quoting. I'm not sure I made the right choice on
+About the extra quoting. I'm not sure I made the right choice on
 this. Anything that's not a number. First, =nil= maps to =null=. I can
 insert a =null= into database just by using a =nil= there. Anything not
 nil or a number, will get printed into a string, and that whole value
@@ -444,12 +446,13 @@ Let's say I want to see everything with the tag +youtube
 
  Filter: -junk @10-weeks-ago +youtube
 
-and it shows all YouTube stuff in the last 10 weeks. I can narrow it
+It shows all YouTube stuff in the last 10 weeks. I can narrow it
 down to 4 weeks, or 1 day ago.
 
 Sacha: I like that. Really cool stuff.
 
-Christopher: So I need to search this fast, and I end up writing my own database format.
+Christopher: So I need to search this fast, and I end up writing my
+own database format.
 
 Christopher: There's no database really suitable for this in Emacs,
 that's why I struck out to write EmacSQL to try to provide a database,
@@ -470,7 +473,7 @@ Sacha: I heard good things about it. What do you like about it?
 
 Christopher: so you notice, it looks pretty similar to Elfeed. You see tags on the right. It actually inspired the interface for Elfeed.
 
-i like how fast the searching is, how quickly everything is.
+I like how fast the searching is, how quickly everything is.
 
 Sacha: I'm going to give it a try. I've been using GNUS. I thought
 it's interesting.
@@ -496,7 +499,7 @@ flexible thing.
 
 Christopher: It can do calculus. It's a full computer algebra system.
 
-it's not fair to call it a calculator really, because it's so much
+It's not fair to call it a calculator really, because it's so much
 more than that.
 
 Sacha: So you write a lot Markdown in your config?
@@ -784,7 +787,7 @@ Christopher: If I were to pick a name I would say Steve Purcell He's the curator
 
 Sacha: Where's the best place for people to find you?
 
-Christopher:  My blog or my Github. You can just email me. If it's related to my packages, you can just open a issue on Github, I get to it pretty quick.
+Christopher: My blog or my Github. You can just email me. If it's related to my packages, you can just open a issue on Github, I get to it pretty quick.
 
 http://nullprogram.com/
 
