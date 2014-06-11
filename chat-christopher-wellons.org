@@ -261,12 +261,9 @@ love that. I used to do stuff like that with a macro, but
 *Christopher:* Something I did want to show was =impatient-mode= since
 that was asked about specifically. So if you visit in your web browser.
 
-( https://github.com/skeeto/impatient-mode Impatient Mode See the
-effect of your HTML as you type it.
-
-http://nullprogram.com/blog/2012/08/20/
-
-)
+( Impatient Mode. See the effect of your HTML as you type it.
+ https://github.com/skeeto/impatient-mode
+ http://nullprogram.com/blog/2012/08/20/ )
 
 *Christopher:* You'll see if you click on the scratch buffer, you'll
 see a copy of my scratch buffer here. And it has syntax highlighting.
@@ -297,6 +294,8 @@ It's built on the same web server, which I call =simple-httpd=, it's
 the same one Skewer uses.
 
 ( skewer-mode https://github.com/skeeto/skewer-mode Skewer: live web development with Emacs Provides live interaction with JavaScript, CSS, and HTML in a web browser. )
+
+( simple-httpd https://github.com/skeeto/emacs-web-server )
 
 Any time I'm doing something with Emacs that involves the web it's
 using my little web server.
@@ -341,20 +340,18 @@ random numbers.
 *Sacha:* You said it's an inferior Emacs process?
 
 *Christopher:* It's an inferior process. If I hop into here ... you
-see those "glue" program? So it's just a C++ program that's linked
+see those glue program? So it's just a C++ program that's linked
 with libffi right here. And it just drives libffi through this really
 simple protocol that it chats with through a pseudo-terminal, through
 a pipe I am using.
 
-simple-httpd https://github.com/skeeto/emacs-web-server
-
 It's just a pretty simple stack machine that makes it work. There's
-the switch for the "byte code," and I can push different sizes of
+the switch for the "byte code", and I can push different sizes of
 integers onto the stack. And that created this little glue program
 right here "ffi-glue." So that's what runs in the background.
 
-*Sacha:* You mentioned you managed to that to work as a package and I
-was curious about how it all came together.
+*Sacha:* You mentioned you managed to get that to work as a package
+and I was curious about how it all came together.
 
 21:01
 
@@ -362,8 +359,7 @@ was curious about how it all came together.
 such as how do you handle that binary. That's something I resolved
 with EmacSQL.
 
-EmacSQL
-http://https://github.com/skeeto/emacsql
+EmacSQL http://https://github.com/skeeto/emacsql
 
 (EmacSQL is a high-level Emacs Lisp front-end for SQLite (primarily), PostgreSQL, MySQL, and potentially other SQL databases.)
 
@@ -410,7 +406,9 @@ and I can insert values into it:
 
 Notice this is a s-expression, so instead of doing
 
-"SELECT * FROM foo"
+#+BEGIN_SRC sql
+SELECT * FROM foo
+#+END_SRC
 
 I build up these vectors of symbols and it actually compiles into SQL
 expressions. I can demonstrate that.
@@ -826,10 +824,10 @@ this, and I hope a lot people both listening and afterward get to play
 with this too. Thank you again so much for taking your time to share
 you workflow.
 
-Another curiosity. I'm doing these Emacs chats as a way for other people to get
-to how how people use Emacs, how did they got into it, what kind
-of cool things people are working on. Is there anyone you like to see
-in one of this episode?
+Another curiosity. I'm doing these Emacs chats as a way for other
+people to get to how how people use Emacs, how did they got into it,
+what kind of cool things people are working on. Is there anyone you
+like to see in one of this episode?
 
 *Christopher:* If I were to pick a name I would say Steve Purcell He's the curator of MELPA right now.
 
