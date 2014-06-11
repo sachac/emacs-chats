@@ -19,6 +19,7 @@ Getting to know people who use Emacs
 - [[file:chat-avdi-grimm.org][Avdi Grimm (Org-mode, Ruby, etc.)]]
 - [[file:chat-bastien-guerry.org][Bastien Guerry]]
 - [[file:chat-carsten-dominik.org][Carsten Dominik]]
+- [[file:chat-christopher-wellons.org][Christopher Wellons]] - foreign function interface, skewer, impatient-mode
 - [[file:chat-iannis-zannos.org][Iannis Zannos -- Emacs and SuperCollider]]
 - [[file:chat-janis-mancevics.org][Jānis Mancēvičs]]
 - [[file:chat-john-wiegley.org][John Wiegley]]
@@ -29,7 +30,7 @@ Getting to know people who use Emacs
 - [[file:chat-tom-marble.org][Tom Marble]]
 - [[file:chat-xah-lee.org][Xah Lee]]
 
-You can find this site at http://emacslife.com/emacs-chats . Source: http://sachac.github.com/emacs-chats - patches and pull requests much appreciated.
+You can find this site at http://emacslife.com/emacs-chats . Source: http://github.com/sachac/emacs-chats - patches and pull requests much appreciated.
 
 Have a story to share about how you got started with Emacs and what you use it for? Please contact me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]] . Newbies welcome!
 
