@@ -153,6 +153,8 @@ digging around and figuring out how to do it.
 
 *Christopher:* So you saw the autotetris-mode then?
 
+( autotetris-mode https://github.com/skeeto/autotetris-mode )
+
 *Sacha:* I just came across that today. I often show Tetris ... kind
 of when you are demonstrating Emacs to other people and you want to
 boggle their mind about just how much is in Emacs. So I normally show
@@ -162,9 +164,7 @@ and Autotetris, and drive people crazy.
 Lots really odd and interesting things. One of the things that people
 are often curious about is how actually people use Emacs. What's your
 workflow like, what are the different things you've configured? And
-you've shared your config on Github.
-
-https://github.com/skeeto
+you've shared your config on Github. ( https://github.com/skeeto )
 
 But we like to see the highlights of your config. Particularly
 interesting snippets that you like using.
@@ -262,7 +262,7 @@ love that. I used to do stuff like that with a macro, but
 that was asked about specifically. So if you visit in your web browser.
 
 ( Impatient Mode. See the effect of your HTML as you type it.
- https://github.com/skeeto/impatient-mode
+ https://github.com/netguy204/imp.el
  http://nullprogram.com/blog/2012/08/20/ )
 
 *Christopher:* You'll see if you click on the scratch buffer, you'll
@@ -309,6 +309,8 @@ think it's pretty darn cool too.
 functions, how are you using that? I saw your blog post demonstrating
 it, but am curious about the practical applications that you were
 exploring.
+
+( Emacs Lisp Foreign Function Interface https://github.com/skeeto/elisp-ffi )
 
 *Christopher:* That kind of hit the wall a little bit, as it gets
 complicated pretty quickly. I don't have any real practical uses for
@@ -359,9 +361,9 @@ and I was curious about how it all came together.
 such as how do you handle that binary. That's something I resolved
 with EmacSQL.
 
-EmacSQL http://https://github.com/skeeto/emacsql
-
-(EmacSQL is a high-level Emacs Lisp front-end for SQLite (primarily), PostgreSQL, MySQL, and potentially other SQL databases.)
+(EmacSQL http://https://github.com/skeeto/emacsql EmacSQL is a
+ high-level Emacs Lisp front-end for SQLite (primarily), PostgreSQL,
+ MySQL, and potentially other SQL databases.)
 
 So that runs a sub-process in the background. In order to make that
 work with SQLite out of the box as a package on MELPA, it ships with C
@@ -375,9 +377,9 @@ I'm going to make a SQLite database. This a connection object.
 This is using a really cool part of Emacs, it came from CEDET, called
 EIEIO, which I think is really clever.
 
+( EIEIO
 http://cedet.sourceforge.net/eieio.shtml
-
-(EIEIO is an Emacs lisp program which implements a controlled
+EIEIO is an Emacs lisp program which implements a controlled
 object-oriented programming methodology following the CLOS standard)
 
 It's an object system a lot like Common Lisp's CLOS.
@@ -446,9 +448,11 @@ value is inserted into the database.
 
 *Christopher:* It goes back to Elfeed, which is my web feed reader.
 
+(Elfeed
 https://github.com/skeeto/elfeed
-
-(Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS. It requires Emacs 24 and is available for download from MELPA. Elfeed was inspired by notmuch.)
+Elfeed is an extensible web feed reader for Emacs, supporting both
+Atom and RSS. It requires Emacs 24 and is available for download from
+MELPA. Elfeed was inspired by notmuch.)
 
 Skewer mode is probably my most used Emacs package right
 now. But the most useful for me has been Elfeed.
@@ -511,7 +515,7 @@ inside Emacs?
 
 *Christopher:* So I do email too. I prefer Notmuch as my email client.
 
-http://notmuchmail.org/
+( Notmuch http://notmuchmail.org/ )
 
 *Sacha:* I heard good things about it. What do you like about it?
 
@@ -737,7 +741,8 @@ refreshing the page.
 mention, because it's also really cool too but non-technical. You have
 released all these things into the public domain?
 
-How you made that decision? What got you interested, and how's that played out?
+How you made that decision? What got you interested, and how's that
+played out?
 
 *Christopher:* I started out using GPL about 7 years ago. I read Richard
 Stallman's Free Software and free society, and actually have a signed
@@ -800,7 +805,8 @@ I have experience of how lisp is put together internally, so I can
 look at Emacs and see lots similarities and understand what's going on
 and navigate my way around.
 
-*Sacha:* Did you do lisp before coming into Emacs or the other way around?
+*Sacha:* Did you do lisp before coming into Emacs or the other way
+around?
 
 *Christopher:* It's hard to say. It might've been that lisp interested
 me and I got into Emacs initially, but as I said it was 9 years ago I
@@ -812,8 +818,8 @@ Some people online asks "how do you get into Common Lisp?" and one of
 the answer is Emacs, that's one of the most powerful editor for lisp
 right now.
 
-*Sacha:* It made sense. Lots people have build very interesting things on
-top of it.
+*Sacha:* It made sense. Lots people have build very interesting things
+on top of it.
 
 Thanks for sharing your workflow. It looks really cool.
 
@@ -829,18 +835,25 @@ people to get to how how people use Emacs, how did they got into it,
 what kind of cool things people are working on. Is there anyone you
 like to see in one of this episode?
 
-*Christopher:* If I were to pick a name I would say Steve Purcell He's the curator of MELPA right now.
+*Christopher:* If I were to pick a name I would say Steve Purcell He's
+the curator of MELPA right now.
 
 ( Steve Purcell's Github https://github.com/purcell/emacs.d )
 
 *Sacha:* Where's the best place for people to find you?
 
-*Christopher:* My blog or my Github. You can just email me. If it's related to my packages, you can just open a issue on Github, I get to it pretty quick.
+*Christopher:* My blog or my Github. You can just email me. If it's
+related to my packages, you can just open a issue on Github, I get to
+it pretty quick.
 
 http://nullprogram.com/
 
-https://github.com/skeeto/impatient-mode
+https://github.com/skeeto/
 
-*Sacha:* Thanks everyone for listening in. You can find the broadcasting on Google Plus events page and it would also be available on http://emacslife.com/ eventually once we get the page and transcript and other good things sorted out, and it would be in public domain as well.
+*Sacha:* Thanks everyone for listening in. You can find the
+broadcasting on Google Plus events page and it would also be available
+on http://emacslife.com/ eventually once we get the page and
+transcript and other good things sorted out, and it would be in public
+domain as well.
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
