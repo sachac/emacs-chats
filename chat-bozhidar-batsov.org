@@ -254,11 +254,11 @@ Now, one of the things I'm noticing from this conversation is that you've tried 
 
 *Sacha:* Yes, it gets a little weird because you're using [inaudible 0:41:25].
 
-*Bozhidar:* But some of the packages are marked as new. I check them out. Often, some packages are suggested for inclusion in Prelude. I also operate the Twitter handle [[https://twitter.com/emacs_knight][@Emacs_Knight]] and people write to me all the time to promote some new packages, so I obviously try them out before promoting them.
+*Bozhidar:* But some of the packages are marked as new. I check them out. Often, some packages are suggested for inclusion in Prelude. I also operate the Twitter handle =@emacs_knight= (https://twitter.com/emacs_knight) and people write to me all the time to promote some new packages, so I obviously try them out before promoting them.
 
 *Sacha:* Which Twitter handle is that?
 
-*Bozhidar:* =@Emacs_Knight=, like the medieval knight.
+*Bozhidar:* =@emacs_knight=, like the medieval knight.
 
 *Sacha:* I should definitely follow that. Oh, it looks like I'm following that. I see that now. That's great. I'm also looking for package recommendations too. Clearly from Prelude and from the way that you're just using =ace-jump= to jump around and navigate and all that stuff, there's a lot of good code out there to help make Emacs more convenient.
 
@@ -306,7 +306,7 @@ That's good. Awesome. Thank you again so much for sharing your story and your th
 
 *Bozhidar:* Yes.
 
-*Sacha:* And [[https://twitter.com/emacs_knight][@emacs_knight]] for new package notes and other cool things.
+*Sacha:* And =@emacs_knight= for new package notes and other cool things. http://twitter.com/emacs_knight
 
 *Bozhidar:* Yes. But I write a lot more stuff with my regular handle. I'm obviously reachable via email, I try to respond to all questions I get there and GitHub of course recently.
 
