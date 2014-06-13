@@ -26,7 +26,7 @@
 <div id="content">
 <h1 class="title">Emacs Chat: Christopher Wellons (FFI, Emacs internals)</h1>
 <p>
-<a href="http://sachachua.com/blog/2014/05/emacs-chat-christopher-wellons/">Source</a>
+The recording and transcript for this video are in the public domain.
 </p>
 
 <div id="outline-container-sec-1" class="outline-2">
@@ -37,11 +37,8 @@
 <p>
 <b>Sacha:</b> Hello and welcome to another episode of Emacs chat. This time
 with Christopher Wellons, who is, among other things, the author of
-something that will play Tetris in Emacs for you.
-</p>
-
-<p>
-<b>Sacha:</b> Hello Christopher, thank you for joining us.
+something that will play Tetris in Emacs for you. Hello, Christopher,
+thank you for joining us.
 </p>
 
 <p>
@@ -49,25 +46,21 @@ something that will play Tetris in Emacs for you.
 </p>
 
 <p>
-I initially reached out to you because I read your blog post about
-foreign function interfaces and all those other things, and then I
+<b>Sacha:</b> I initially reached out to you because I read your blog post
+about foreign function interfaces and all those other things. Then I
 realized you are the same guy who put together skewer-mode and other
-really, really cool interactive ways to use Emacs.
-</p>
-
-<p>
-But before we dig into how you got into Emacs and all the interesting
-things you do with it, can you tell us a little about who you are
-outside of Emacs?
+really, really cool interactive ways to use Emacs. But before we dig
+into how you got into Emacs and all the interesting things you do with
+it, can you tell us a little about who you are outside of Emacs?
 </p>
 
 <p>
 <b>Christopher:</b> I'm your typical computer geek. I've been using Emacs
 for 9 years. I run regularly, I'm out there 3 days a week. I like
 computer games. I like reading. I spend a lot time watching YouTube
-videos actually. That's a big hobby. I find these long, half an hour
+videos, actually. That's a big hobby. I find these long, half-an-hour
 long clips, mostly people playing video games. So instead of playing
-games myself I watch people play games. A lot of time I can do my own
+games myself, I watch people play games. A lot of time I can do my own
 thing while doing that, so it's almost like multitasking that way.
 </p>
 
@@ -92,9 +85,9 @@ amazing. How did you get into it?
 <p>
 <b>Christopher:</b> So I was on an internship in college, and I was getting
 a lot more serious about programming. I've been programming for 19
-years now. When doing the internship I was getting serious about it,
-and up until that points I'd just been using KWrite and some other,
-some basic stuff.
+years now. When doing the internship I was getting serious about it.
+Up until that point, I'd just been using KWrite and some other, some
+basic stuff.
 </p>
 
 <p>
@@ -105,31 +98,32 @@ some basic stuff.
 <b>Christopher:</b> I read probably something by Richard Stallman, or Steve
 Yegge, some of his Lisp essays. I decided I should look into this
 Emacs thing, and that's what ended up happening. I installed it and
-read the manual. I got one of those O'Reilly Emacs books, I read that,
+read the manual. I got one of those O'Reilly Emacs books. I read that,
 then just gradually built up from that point. It became my only text
 editor quickly.
 </p>
 
 <p>
-<b>Sacha:</b> Where you customizing it right away, or do you start off
+<b>Sacha:</b> Were you customizing it right away, or did you start off
 using it as a programming environment for a while?
 </p>
 
 <p>
 <b>Christopher:</b> I was customizing it right away, mostly copying and
 pasting snippets here and there, because I didn't understand what a
-lot it did. For example, this thing will tell me how many words are in
-a buffer, and I dropped that into my configuration.
+lot of it did. For example, this thing will tell me how many words are
+in a buffer, and I dropped that into my configuration.
 </p>
 
 <p>
-It wasn't until actually a few years ago that I put my Emacs config in
-source control. So the whole thing is carefully curated now.
+It wasn't until actually a few years ago that I started. I put my
+Emacs config in source control. So the whole thing is carefully
+curated now, unlike the mess of files I copied around for a few years there.
 </p>
 
 <p>
-<b>Sacha:</b> So did you end up Emacs bankruptcy then and starting from
-scratch when you started curating into your config.
+<b>Sacha:</b> So did you end up declaring Emacs bankruptcy then and starting from
+scratch when you started curating your config?
 </p>
 
 <p>
@@ -140,10 +134,10 @@ source control, almost like a rewrite.
 </p>
 
 <p>
-<b>Sacha:</b> Now 9 years ago we didn't have a lot of the same resources we
-have now about for learning more about Emacs configuration, no Github
+<b>Sacha:</b> 9 years ago, we didn't have a lot of the same resources we
+have now about for learning more about Emacs configuration. No Github
 &#x2026; I don't remember if EmacsWiki was around then. So you mentioned
-the book was useful, the O'Reilly book, what are other resources you
+the book was useful&#x2013;the O'Reilly book. What are other resources you
 found helpful?
 </p>
 
@@ -167,7 +161,7 @@ well.
 </p>
 
 <p>
-You mentioned coworker. You have other coworkers who are actually
+You mentioned a coworker. You have other coworkers who are actually
 using Emacs too?
 </p>
 
@@ -177,25 +171,25 @@ using Emacs too?
 
 <p>
 <b>Christopher:</b> Yes, I've got a few coworkers. Not many. I spend time
-discussing Emacs with all of them on occasion. Kind of sharing notes,
-and how we do things. What's funny is pretty much all of them have
-adopted the color theme. I went with the "wombat" color theme that
-comes with Emacs. It seems everybody is using that now. That's kind of
+discussing Emacs with all of them on occasion, kind of sharing notes
+on how we do things. What's funny is pretty much all of them have
+adopted the color theme&#x2013;I went with the "wombat" color theme that
+comes with Emacs&#x2013;and it seems everybody is using that now. That's kind of
 fun to see that. "That looks familiar," when I see their screens.
 </p>
 
 <p>
 <b>Sacha:</b> Yes it's interesting to see the diffusion of practices when
 several people who use Emacs work together. Your config is on Github
-so I guess people can pickup interesting tips off that one as well.
+so I guess people can pick up interesting tips off that one as well.
 </p>
 
 <p>
 So you check with other people, learn from books, learn from source
 code. All the hacking you've been doing about building web servers and
-other interactive servers, you actually even put together something
+other interactive servers&#x2026; You actually even put together something
 that can talk to inferior Emacs processes? Or running Emacs within
-Emacs or something of the sort?
+Emacs, or something of the sort?
 </p>
 
 <p>
@@ -217,23 +211,20 @@ period of time until I make it work.
 </p>
 
 <p>
-<b>Christopher:</b> To elaborate on that, I got a Steam account, I've got
-something like 200, 300 games in there, but I rarely ever play them,
-because these little programming activities are almost always more
-fun. Like, I can play this game or I can tinker with Emacs. It's
-almost always Emacs. Tinkering with Emacs sounds like more fun.
+To elaborate on that&#x2026; I got a Steam account. I've got something like
+200, 300 games in there, but I rarely ever play them, because these
+little programming activities are almost always more fun. Like, I can
+play this game, or I can tinker with Emacs. It's almost always Emacs.
+Tinkering with Emacs sounds like more fun.
 </p>
 
 <p>
 <b>Sacha:</b> Emacs is more addictive than games you can play on Steam.
-I've heard that from other Emacs users as well, this is what we do for
-relaxation and fun and intellectual curiosity.
-</p>
-
-<p>
-So basically you learned about all these things by having crazy ideas.
-Like What if I can use Emacs to play Tetris on its own. And then
-digging around and figuring out how to do it.
+I've heard that from other Emacs users as well. This is what we do for
+relaxation and fun and intellectual curiosity. So basically you
+learned about all these things by having crazy ideas. Like: "What if I
+can use Emacs to play Tetris on its own?", and then digging around and
+figuring out how to do it.
 </p>
 
 <p>
@@ -245,23 +236,19 @@ digging around and figuring out how to do it.
 </p>
 
 <p>
-<b>Sacha:</b> I just came across that today. I often show Tetris &#x2026; kind
-of when you are demonstrating Emacs to other people and you want to
-boggle their mind about just how much is in Emacs. So I normally show
-things like Tetris and doctor and whatever and now I can show Tetris
-and Autotetris, and drive people crazy.
+<b>Sacha:</b> I just came across that today. I often show Tetris when you
+are demonstrating Emacs to other people and you want to boggle their
+mind about just how much is in Emacs. So I normally show things like
+Tetris and doctor. Now I can show Tetris and Autotetris, and drive
+people crazy. Lots of really odd and interesting things.
 </p>
 
 <p>
-Lots really odd and interesting things. One of the things that people
-are often curious about is how actually people use Emacs. What's your
-workflow like, what are the different things you've configured? And
-you've shared your config on Github. ( <a href="https://github.com/skeeto">https://github.com/skeeto</a> )
-</p>
-
-<p>
-But we like to see the highlights of your config. Particularly
-interesting snippets that you like using.
+One of the things that people are often curious about is how actually
+people use Emacs. What's your workflow like? What are the different
+things you've configured? You've shared your config on Github. (
+<a href="https://github.com/skeeto">https://github.com/skeeto</a> ), but we'd like to see the highlights of
+your config&#x2013;particularly interesting snippets that you like using.
 </p>
 
 <p>
@@ -270,7 +257,7 @@ interesting snippets that you like using.
 
 <p>
 <b>Sacha:</b> And folks, you can ask questions by submitting to the Q &amp; A
-app or adding them to the event page or if you are on IRC there's
+app or adding them to the event page. Or if you are on IRC, there's
 emacs-chat channel on Freenode.
 </p>
 
@@ -278,12 +265,12 @@ emacs-chat channel on Freenode.
 <b>Christopher:</b> So here is my init file. Something that will stand out
 pretty quick: I've got this <code>with-package</code> macro here. You'll see that
 show up over and over again. This is something I wrote myself. There
-are a bunch of different versions. Everybody's kind of written their
-own little version of this because there isn't an official one at this
-point. It sort of groups related configurations options together into
-a block. So instead of having all this loose stuff just kind of dumped
-in, I can say, "Everything related to Uniquify goes in this block,
-everything related to Eshell is going to go in this block right here."
+are a bunch of different versions. Everybody's written their own
+little version of this because there isn't an official one at this
+point. It groups related configurations options together into a block.
+So instead of having all this loose stuff just dumped in, I
+can say, "Everything related to <code>uniquify</code> goes in this block,
+everything related to <code>eshell</code> is going to go in this block right here."
 </p>
 
 <p>
@@ -294,47 +281,43 @@ if it's not already installed.
 </p>
 
 <p>
-<b>Sacha:</b> Humm, I should use that. I've been using <code>use-package</code> by
-John Wigley ( <a href="https://github.com/jwiegley">https://github.com/jwiegley</a> ) but it doesn't do the
+<b>Sacha:</b> Hmm, I should use that. I've been using <code>use-package</code> by
+John Wiegley ( <a href="https://github.com/jwiegley">https://github.com/jwiegley</a> ) but it doesn't do the
 installs.
 </p>
 
 <p>
 <b>Christopher:</b> I think <code>use-package</code> is another one of these macros
-that somebody else has written and there are a few of them out there.
-Mine's kind of cryptic. Like if you look at this entry here, I got
-this asterisk. So the ones without the asterisk are lazily loaded. So,
-they let Emacs load them with autoload as late as possible. Those with
-asterisk are force loaded. Like uniquify, I don't want to wait for
-something to happen for that to load, I want it just load right away,
-so that it's active, so its got an asterisk on it. Same way with
-<code>winner-mode</code>. With winner-mode, you can hop up with arrow keys back
-and forth between buffers, I like doing that.
+that somebody else has written. There are a few of them out there.
+Mine's kind of cryptic. If you look at this entry here, I got this
+asterisk. So the ones without the asterisk are lazily loaded. They let
+Emacs load them with autoload as late as possible. Those with asterisk
+are force-loaded. Like uniquify - I don't want to wait for something to
+happen for that to load, I want it just load right away, so that it's
+active. So it's got an asterisk on it. Same way with <code>winner-mode</code>.
+With <code>winner-mode</code>, you can hop up with arrow keys back and forth
+between buffers. I like doing that.
 </p>
 
 <p>
-<b>Christopher:</b> Then there's asterisks on other things that has to do
-with <code>auto-load</code>. It's pretty cryptic but it's really useful for me.
-That why I haven't put this out there for other people to use.
+Then there are asterisks on other things that have to do with
+<code>auto-load</code>. It's pretty cryptic, but it's really useful for me. That
+why I haven't put this out there for other people to use.
 </p>
 
 <p>
-<b>Sacha:</b> Sometimes you have asterisk after the package names?
-</p>
-
-<p>
-11:55
+<b>Sacha:</b> Sometimes you have asterisks after the package names?
 </p>
 
 <p>
 <b>Christopher:</b> Yeah, that's something changed with <code>package.el</code>, in
 the latest changes. It used to create a secondary package with the
-same name but <code>-autoloads</code> and there's this really cool trick where
+same name but <code>-autoloads</code>. There's this really cool trick where
 you could <code>require</code> the autoloads package and you can do some
-configuration lazily. There's a nice trick, but I got rid of that.
+configuration lazily. There's a nice trick, but they got rid of that.
 There's no longer this autoloads package that's generated, so I had to
 modify my <code>with-package</code> macro. So it has the same effect, and to do
-that I have the asterisk on the package names when I want that effect.
+that, I have the asterisk on the package names when I want that effect.
 </p>
 
 <p>
@@ -342,8 +325,8 @@ that I have the asterisk on the package names when I want that effect.
 </p>
 
 <p>
-<b>Christopher:</b> So in this case, I want it to make sure I load the
-autoload of the <code>markdown-mode</code> &#x2013; something like that &#x2013; so when any
+<b>Christopher:</b> In this case, I want it to make sure I load the
+autoloads of the <code>markdown-mode</code> &#x2013; something like that &#x2013; so when any
 of these patterns are opened, it will get set in <code>markdown-mode</code>,
 because the autoloads has already been set. It's something like that.
 I can't remember the details right now.
@@ -358,12 +341,12 @@ Other than that, there's not too much special in here. Just a bunch of
 things that I like to use. Like right here, I can quickly lookup Java
 documentation. I got that down to <code>C-h j</code>. So normally you can lookup
 documentation with <code>C-h f</code> so I can lookup Emacs stuff. Let's say I
-want to lookup <code>ArrayList</code>. It'll pop up a browser over here.
+want to look up <code>ArrayList</code>. It'll pop up a browser over here.
 </p>
 
 <p>
-And these are all the packages that's been loaded in this quick jump
-stuff. And what makes this really work well is that Java's Javadoc is
+These are all the packages that's been loaded in this quick jump
+stuff. What makes this really work well is that Java's Javadoc is
 ubiquitous. All these packages have Javadoc packeges made, so
 documentation is in this nice clean format that I can jump to
 anywhere. I can jump into Lombok documentation that's installed
@@ -372,12 +355,12 @@ locally on my machine by this process.
 
 <p>
 <b>Sacha:</b> Yeah that's good stuff. I often find myself Googling for all
-these details, but it's nice to have that, just a quick keyboard
+these details, but it's nice to have that just a quick keyboard
 shortcut away.
 </p>
 
 <p>
-<b>Sacha:</b> <code>multiple-cursors</code> is one of those thing I hear it's super
+<b>Sacha:</b> <code>multiple-cursors</code> is one of those things I hear it's super
 awesome, but I haven't got my mind around it yet.
 </p>
 
@@ -393,19 +376,19 @@ love that. I used to do stuff like that with a macro, but
 
 <p>
 <b>Christopher:</b> Something I did want to show was <code>impatient-mode</code> since
-that was asked about specifically. So if you visit in your web browser.
+that was asked about specifically. So if you visit in your web browser:
 </p>
 
 <p>
-( Impatient Mode. See the effect of your HTML as you type it.
+( Impatient Mode. See your Emacs buffer in a webpage as you type:
  <a href="https://github.com/netguy204/imp.el">https://github.com/netguy204/imp.el</a>
  <a href="http://nullprogram.com/blog/2012/08/20/">http://nullprogram.com/blog/2012/08/20/</a> )
 </p>
 
 <p>
 <b>Christopher:</b> You'll see if you click on the scratch buffer, you'll
-see a copy of my scratch buffer here. And it has syntax highlighting.
-(in a web browser)
+see a copy of my scratch buffer here. And it has syntax highlighting
+in a web browser.
 </p>
 
 <p>
@@ -427,7 +410,8 @@ now you be able to see this buffer too.
 </p>
 
 <p>
-<b>Sacha:</b> Are you building any 2-way communication into this at some point?
+<b>Sacha:</b> Are you building any 2-way communication into this at some
+point?
 </p>
 
 <p>
@@ -442,7 +426,7 @@ friend of mine.
 </p>
 
 <p>
-It's built on the same web server, which I call <code>simple-httpd</code>, it's
+It's built on the same web server, which I call <code>simple-httpd</code>. it's
 the same one Skewer uses.
 </p>
 
@@ -455,22 +439,21 @@ the same one Skewer uses.
 </p>
 
 <p>
-Any time I'm doing something with Emacs that involves the web it's
+Any time I'm doing something with Emacs that involves the web, it's
 using my little web server.
 </p>
 
 <p>
 <b>Sacha:</b> I should try that too. It looks like you've put it to all
-sorts of really good uses. You already have video demoing Skewer which
-allows you to easily interact with the JavaScript in a browser. I
-think it's pretty darn cool too.
+sorts of really good uses. You already have a video demoing Skewer
+which allows you to easily interact with the JavaScript in a browser.
+I think it's pretty darn cool too.
 </p>
 
 <p>
-<b>Sacha:</b> So there's <code>impatient-mode</code> and Skewer. So FFI, foreign
-functions, how are you using that? I saw your blog post demonstrating
-it, but am curious about the practical applications that you were
-exploring.
+So there's <code>impatient-mode</code> and Skewer. So FFI, foreign functions, how
+are you using that? I saw your blog post demonstrating it, but am
+curious about the practical applications that you were exploring.
 </p>
 
 <p>
@@ -483,8 +466,8 @@ complicated pretty quickly. I don't have any real practical uses for
 it yet, I thought maybe I can run a GTK window, and run a little
 graphical system that way. But as anybody who uses Linux and has
 launched GTK applications from a terminal knows that they're really
-noisy, they spits out a lot debugging messages. I haven't made it
-robust enough, those messages actually interfere my communication with
+noisy. They spit out a lot debugging messages. I haven't made it
+robust enough. Those messages actually interfere with my communication with
 Emacs. As it goes into pseudo-terminal and error messages and standard
 messages get piped into the same pipe, and because of that it gets in
 the way. I haven't done anything significant with that beyond just a
@@ -496,18 +479,18 @@ little demo, which I can show here really quick.
 </p>
 
 <p>
-So am just going to copy right out of my README here and drop them
+So I'm just going to copy right out of my README here and drop them
 here. So, whenever you start using the FFI, it has to create what I
 call a context, which is really just an inferior Emacs process that's
-running my little FFI program. Its really simple. It's a stack machine
-that I can send strings and basic values to, so I can say I've got
+running my little FFI program. It's really simple. It's a stack machine
+that I can send strings and basic values to, so I can&#x2026; Say I've got
 <code>srand</code>, so here's my function name, here's the function signature,
 and it can push all these values into the stack, and pop the values
 off and I get them in Emacs.
 </p>
 
 <p>
-So here I can seed. If you know the C function <code>srand</code>, seeds the
+So here I can seed. If you know the C function <code>srand</code>, it seeds the
 random number generator. It returns a void. And I can start generating
 random numbers.
 </p>
@@ -518,7 +501,7 @@ random numbers.
 
 <p>
 <b>Christopher:</b> It's an inferior process. If I hop into here &#x2026; you
-see those glue program? So it's just a C++ program that's linked
+see this glue program? So it's just a C++ program that's linked
 with libffi right here. And it just drives libffi through this really
 simple protocol that it chats with through a pseudo-terminal, through
 a pipe I am using.
@@ -528,7 +511,7 @@ a pipe I am using.
 It's just a pretty simple stack machine that makes it work. There's
 the switch for the "byte code", and I can push different sizes of
 integers onto the stack. And that created this little glue program
-right here "ffi-glue." So that's what runs in the background.
+right here, "ffi-glue." So that's what runs in the background.
 </p>
 
 <p>
@@ -562,17 +545,14 @@ demonstrate it.
 </p>
 
 <p>
-I'm going to make a SQLite database. This a connection object.
-</p>
-
-<p>
-This is using a really cool part of Emacs, it came from CEDET, called
+I'm going to make a SQLite database. This is a connection object.
+This is using a really cool part of Emacs&#x2013;it came from CEDET&#x2013;called
 EIEIO, which I think is really clever.
 </p>
 
 <p>
 ( EIEIO
-<a href="http://cedet.sourceforge.net/eieio.shtml">http://cedet.sourceforge.net/eieio.shtml</a>
+<a href="http://cedet.sourceforge.net/eieio.shtml">http://cedet.sourceforge.net/eieio.shtml</a> 
 EIEIO is an Emacs lisp program which implements a controlled
 object-oriented programming methodology following the CLOS standard)
 </p>
@@ -588,20 +568,20 @@ the database name, called "testing."
 </p>
 
 <p>
-It'll create this database object, thanks to EIEIO, it'll work with
-all the same, because they are generic functions it'll work with the
-same functions. So once you have this database object, you don't care
-what's there anymore, you can just use this same EmacSQL function to
-make queries on it.
+It'll create this database object. Thanks to EIEIO, it'll work with
+all of them the same, because they are generic functions. It'll work
+with the same functions. So once you have this database object, you
+don't care what's there anymore, you can just use this same EmacSQL
+function to make queries on it.
 </p>
 
 <p>
-I can say create-table, like this:
+I can say <code>create-table</code>, like this:
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:create-table</span> foo ([name id])])
+<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:create-table</span> foo ([name id])])
 </pre>
 </div>
 
@@ -611,12 +591,12 @@ and I can insert values into it:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span>])
+<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span>])
 </pre>
 </div>
 
 <p>
-Notice this is a s-expression, so instead of doing
+Notice this is a s-expression, so instead of doing:
 </p>
 
 <div class="org-src-container">
@@ -631,12 +611,12 @@ expressions. I can demonstrate that.
 </p>
 
 <p>
-So here's a expression,
+So here's a expression:
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span> [<span style="font-style: italic;">"Chris"</span> 0]])
+<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span> [<span class="org-string">"Chris"</span> 0]])
 </pre>
 </div>
 
@@ -648,28 +628,30 @@ I can compile that right there.
 Output:
 </p>
 
-<p>
-INSERT INTO foo VALUES ('"Chris"', 0);
-</p>
+<div class="org-src-container">
+
+<pre class="src src-sql">INSERT INTO foo VALUES (<span class="org-string">'"Chris"'</span>, 0);
+</pre>
+</div>
 
 <p>
 That's what it compiles to.
 </p>
 
 <p>
-<b>Christopher:</b> Then I can make queries on the database.
+Then I can make queries on the database.
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:select</span> * <span style="font-weight: bold;">:from</span> foo])
-((<span style="font-style: italic;">"Chris"</span> 0))
+<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:select</span> * <span class="org-builtin">:from</span> foo])
+((<span class="org-string">"Chris"</span> 0))
 </pre>
 </div>
 
 <p>
-About the extra quoting. I'm not sure I made the right choice on this.
-Anything that's not a number. First, <code>nil</code> maps to <code>NULL</code>. I can
+About the extra quoting&#x2026; I'm not sure I made the right choice on
+this. Anything that's not a number. First, <code>nil</code> maps to <code>NULL</code>. I can
 insert a <code>NULL</code> into database just by using a <code>nil</code> there. Anything
 not <code>nil</code> or a number, will get printed into a string, and that whole
 value is inserted into the database.
@@ -696,29 +678,26 @@ MELPA. Elfeed was inspired by notmuch.)
 </p>
 
 <p>
-Skewer mode is probably my most used Emacs package right
-now. But the most useful for me has been Elfeed.
+<code>skewer-mode</code> is probably my most used Emacs package right now. But
+the most useful for me has been Elfeed. I created it after Google
+Reader shutdown. I wasn't happy with any of the alternatives, so I
+thought, I could do better than all these, I'll write my own, that's
+what I ended up doing.
 </p>
 
 <p>
-I created it after Google Reader shutdown. I wasn't happy with any of
-the alternatives, so I thought, I could do better than all these, I'll
-write my own, that's what I ended up doing.
+So I wrote this in August last year, I wrote EmacSQL around the
+beginning of this year. Back in August when I wrote Elfeed, I needed a
+database to store all this stuff in. So if I clear this out, you going
+to see just the last 10 weeks (of blog feed entries). These are all
+the different entries I've read and looked at.
 </p>
 
 <p>
-<b>Christopher:</b> So I wrote this in August last year, I wrote EmacSQL
-around the beginning of this year. Back in August when I wrote Elfeed,
-I needed a database to store all this stuff in. So if I clear this
-out, you going to see just the last 10 weeks (of blog feed entries).
-These are all the different entries I've read and looked at.
-</p>
-
-<p>
-In last 10 weeks there's been 2,451 entries. These are all stored in
-the database. You see all these tags, the green on the right. These
-tags, I can go into these, look at the content inside. Here's an
-Irreal post, that would be likely about Emacs. So I can read them here
+In the last 10 weeks, there's been 2,451 entries. These are all stored
+in the database. You see all these tags, the green on the right&#x2026;
+These tags, I can go into these, look at the content inside. Here's an
+Irreal post that would be likely about Emacs. So I can read them here
 right inside Emacs.
 </p>
 
@@ -732,7 +711,7 @@ right inside Emacs.
 
 <p>
 <b>Christopher:</b> Oh yeah. There you go. There's one, this is my own blog.
-So I can read my own posts right here in Emacs. And go back and forth
+So I can read my own posts right here in Emacs and go back and forth
 between posts here.
 </p>
 
@@ -742,9 +721,9 @@ info, and efficiently index it. If you look down at the bottom here, I
 press s. I got this filter. You see this:
 </p>
 
-<p>
+<pre class="example">
 Filter: -junk @10-weeks-ago nullproam
-</p>
+</pre>
 
 <p>
 I start to type my blog name in, and you see live filtering.
@@ -754,9 +733,9 @@ I start to type my blog name in, and you see live filtering.
 Let's say I want to see everything with the tag +youtube
 </p>
 
-<p>
+<pre class="example">
 Filter: -junk @10-weeks-ago +youtube
-</p>
+</pre>
 
 <p>
 It shows all YouTube stuff in the last 10 weeks. I can narrow it
@@ -773,21 +752,21 @@ own database format.
 </p>
 
 <p>
-<b>Christopher:</b> There's no database really suitable for this in Emacs,
-that's why I struck out to write EmacSQL to try to provide a database,
-so it'll never have to be done again.
+There's no database really suitable for this in Emacs. That's why I
+struck out to write EmacSQL to try to provide a database, so it'll
+never have to be done again.
 </p>
 
 <p>
-I started to port Elfeed to EmacSQL, it's not finished yet. Am not
+I started to port Elfeed to EmacSQL. It's not finished yet. I'm not
 sure I really want to do that or not, but that's something possible in
 the future.
 </p>
 
 <p>
-<b>Sacha:</b> So sounds like you spend fair bit of your life inside Emacs.
-You read blogs, web browsers, and other things&#x2026; what else do you do
-inside Emacs?
+<b>Sacha:</b> So it sounds like you spend fair bit of your life inside
+Emacs. You read blogs, web browsers, and other things&#x2026; what else do
+you do inside Emacs?
 </p>
 
 <p>
@@ -803,47 +782,40 @@ inside Emacs?
 </p>
 
 <p>
-<b>Christopher:</b> so you notice, it looks pretty similar to Elfeed. You see tags on the right. It actually inspired the interface for Elfeed.
+<b>Christopher:</b> You notice it looks pretty similar to Elfeed. We've got
+tags on the right. It actually inspired the interface for Elfeed. I
+like how fast the searching is, how quickly everything works. It's
+really nice to use. It goes back to 2005.
 </p>
 
 <p>
-I like how fast the searching is, how quickly everything is.
+<b>Sacha:</b> I'm going to give it a try. I've been using Gnus, but notmuch sounds very interesting.
 </p>
 
 <p>
-<b>Sacha:</b> I'm going to give it a try. I've been using GNUS. I thought
-it's interesting.
+<b>Christopher:</b> I did try mu4e. I tried it and it wasn't as nice as
+Notmuch. I didn't like it as much as Notmuch.
 </p>
 
 <p>
-<b>Christopher:</b> I did try mu4e. I tried it and I didn't like it as much
-as Notmuch.
-</p>
-
-<p>
-<b>Sacha:</b> So you use mail&#x2026; your config mentioned you use calc. Do you
+<b>Sacha:</b> So you use mail&#x2026; Your config mentioned you use Calc. Do you
 use it just as a calculator or do you have any other fancy things for
 it?
 </p>
 
 <p>
-<b>Christopher:</b> Pretty much as a arbitrary precision calculator.
+<b>Christopher:</b> Pretty much as a arbitrary precision calculator. As you can see, I already have something in there that it was computing. A lot of times&#x2026; I just like&#x2026; Like "What's 2<sup>128</sup>?" I just like being able to do that any time I want, without worrying about precision. It's useful to be able to do these quick calculations. I always have Emacs up anyway, so I can jump to that.
 </p>
 
 <p>
-lots times&#x2026; what's 2<sup>128</sup> it's useful.
-(computes 2<sup>128</sup>)
+And if I need to do units, it'll keep track of units for me. S for
+seconds, change it to year. This is really handy.
 </p>
 
 <p>
-and if I need to do units, it'll keep tracking it for me. S for
-seconds change it to year. This is really handy. 5
-</p>
-
-<p>
-<b>Sacha:</b> That's great. I see the hang of all these things. Calc is
-great, it's like a microcosm in Emacs. This absurdly powerful and
-flexible thing.
+<b>Sacha:</b> That's great. I just have to get the hang of all these
+things. Calc is great, it's like a microcosm in Emacs. This absurdly
+powerful and flexible thing.
 </p>
 
 <p>
@@ -853,7 +825,7 @@ much more than that.
 </p>
 
 <p>
-<b>Sacha:</b> So you write a lot Markdown in your config?
+<b>Sacha:</b> So you write a lot of Markdown, I'm guessing from your config?
 </p>
 
 <p>
@@ -863,53 +835,54 @@ documentation.
 </p>
 
 <p>
-I haven't made the jump to ord-mode yet. I've never learned enough
-about it to make good use of it. I know you love org mode right?
+I haven't made the jump to Org Mode yet. It's been this thing I
+haven't learned. I've never learned enough about it to make good use
+of it. I know you love Org Mode right?
 </p>
 
 <p>
 <b>Sacha:</b> I find it to be similarly flexible. You can do all sort of
-things with it. But you've got lots of things in Markdown, basically
-that's the way your brain works. I guess org mode is similar, but the
+things with it. But you've got lots of things in Markdown. Basically,
+that's the way your brain works. I guess Org Mode is similar, but the
 syntax is different. There's a little bit of friction to get over.
 </p>
 
 <p>
-If you are not using org mode, are there other ways you manage
-your tasks?
+If you're not using Org Mode, are there other ways you manage your
+tasks?
 </p>
 
 <p>
-<b>Christopher:</b> Outside of this I'm not actually all that organized. I
+<b>Christopher:</b> Outside of this, I'm not actually all that organized. I
 just work from my head lots of the time, more than I should. I forget
 things, not even knowing I forget them.
 </p>
 
 <p>
-<b>Sacha:</b> You've to write lots of large software, all kept in your head,
-so&#x2026; wow.
+<b>Sacha:</b> You manage to write a whole lot of rather-large-looking code,
+all kept in your head, so&#x2026; wow.
 </p>
 
 <p>
 <b>Christopher:</b> There's something about Elfeed. I noticed you are
-writing a post about&#x2026; You logged all your activities, you track how
+writing a post about&#x2026; You logged all your activities. You track how
 much time you spending on all these various things. I recently came up
-with Elfeed is&#x2026; on the side of my website, you'll see these lists of
-places (blogs) that I recommend checking out. These huge list. I was
-kind of manually maintaining these lists, until recently, I realized I
-can tab the Elfeed database to fill these out for me, since am already
+with Elfeed&#x2026; On the side of my website, you'll see these lists of
+places (blogs) that I recommend checking out. This huge list. I was
+manually maintaining these lists until recently. I realized I
+can tab the Elfeed database to fill these out for me, since I'm already
 maintaining all these stuff in Elfeed.
 </p>
 
 <p>
-Here's how I worked out. Here's my blogs. Here's where the list come
-from. A list of blogs I was recommending. I wrote this function called
-jekyll insert-url and I got a little filter string here
+Here's how it worked out. Here's my blogs. Here's where the list come
+from, a list of blogs I was recommending. I wrote this function called
+<code>jekyll/insert-urls</code> and I got a little filter string here:
 </p>
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">&lt;!-- (jekyll/insert-urls <span style="font-style: italic;">"+blog -product -myself "</span>) --&gt;
+<pre class="src src-html"><span class="org-comment-delimiter">&lt;!-- </span><span class="org-comment">(jekyll/insert-urls "+blog -product -myself ") </span><span class="org-comment-delimiter">--&gt;</span>
 </pre>
 </div>
 
@@ -922,46 +895,41 @@ Oh, it's supposed to be working.
 </p>
 
 <p>
-<b>Sacha:</b> That's alright, it's the nature of all demos, to have
-something go wrong.
+<b>Sacha:</b> That's all rright. It's the nature of all demos, to have
+something go wrong. I see the idea. Since you already have all the
+data in your reader anyway, you might as well use the same interface
+for searching for tags or whatever. You might even consider kind of
+capturing your reading data, and organizing your list so the stuff
+you like reading more actually does show up earlier in the list.
 </p>
 
 <p>
-<b>Sacha:</b> I see the idea. Since you already have all the data anyway you
-might as well use the same interface for searching for tags or
-whatever, you might even consider kind of capturing your reading data,
-and organizing into a list so the stuff you like reading more show up
-earlier in the list.
+<b>Christopher:</b> Yeah. That's something I should probably track more. As
+I read things or rate them, and somehow capture that info and track
+them in Elfeed. I got a database right there. I can capture the info
+and make use of it in the future.
 </p>
 
 <p>
-<b>Christopher:</b> Yeah. That's something I should probably track more. As I
-read things or rate them and somehow capture that info and track them
-in Elfeed, as I got a database right there I can capture the info and
-make use of it in the future.
-</p>
-
-<p>
-<b>Sacha:</b> Cool. So you do a heck lots of things in Emacs. Anything you
+<b>Sacha:</b> Cool. So you do a heck of lots of things in Emacs. Anything you
 haven't got around to do in Emacs yet?
 </p>
 
 <p>
 <b>Christopher:</b> There's a barrier for me to learn new programming
-languages. This touches on Skewer mode. Is that. Before I get into a
-language I want to have a workflow set up in emacs the way I like it.
-That's how Skewer came about. I need to learn JavaScript and web
-development, and I need to find some workflow in Emacs to make it
-work, and I looked at swing.js and it didn't quite do what I was
-looking for, and ended up writing Skewer mode while I learn
-JavaScript.
+languages. This touches on Skewer mode. Before I get into a language, I
+want to have a workflow set up in Emacs the way I like it. That's how
+Skewer came about. I need to learn JavaScript and web development, and
+I need to find some workflow in Emacs to make it work. I looked at
+swing.js and it didn't quite do what I was looking for. I ended up
+writing Skewer mode while I learned JavaScript.
 </p>
 
 <p>
-<b>Sacha:</b> You want to learn JavaScript, so you developed something in
-Emacs that talk interactivity using JavaScript to a browser, ending up
-writing however many lines of code in JavaScript to communicate with
-Emacs process.
+<b>Sacha:</b> Let me see if I understand this correctly. You want to learn
+JavaScript, so you developed something in Emacs that talk
+interactivity using JavaScript to a browser, ending up writing however
+many lines of code in JavaScript to communicate with the Emacs process.
 </p>
 
 <p>
@@ -977,10 +945,10 @@ Emacs process.
 </p>
 
 <p>
-<b>Sacha:</b> That's totally awesome. I was thinking you've been doing this
-for a while, like years of experience with JavaScript and got really
-tired of the round trip or whatever. So, your first step into this is
-really cool.
+<b>Sacha:</b> That's totally awesome. I would've expected that you've been
+doing this for a while, like years of experience with JavaScript, and
+you got really tired of the round trip or whatever. So, having this be
+your first step into this is really cool.
 </p>
 
 <p>
@@ -988,13 +956,11 @@ really cool.
 </p>
 
 <p>
-So I say <code>run-skewer</code> and it opens a blank tab here in browser that's
-connected to Emacs and I pop up a JavaScript scratch buffer. I got a
-scratch buffer for every language.
-</p>
-
-<p>
-I can write JavaScript expressions
+I use Pentadactyl, by the way, so I can switch around tabs here. I've
+got a vim-like interface to my browser instead of an Emacs interface.
+So I say <code>run-skewer</code> and it opens a blank tab here in a browser
+that's connected to Emacs. I pop up a JavaScript scratch buffer. I
+got a scratch buffer for every language. I've got a scratch for Emacs Lisp.. If I hit <code>C-J</code>&#x2026; <code>C-S</code> to jump to my scratch buffer. If I want to get to Javascript, I hit <code>C-D</code>&#x2026; I don't know why. Something else was conflicting, so I went with <code>C-D</code>. I can write JavaScript expressions:
 </p>
 
 <div class="org-src-container">
@@ -1008,18 +974,18 @@ I can write JavaScript expressions
 </p>
 
 <p>
-There's a REPL
+I've got another&#x2026; That's my other computer, actually. I was working on something and it's still connected. So I can evaluate values here and put them in a buffer. There's also a REPL.
 </p>
 
 <p>
-<b>Sacha:</b> I love the profusion of REPLS you have.
+<b>Sacha:</b> I love the profusion of REPLs you have.
 </p>
 
 <p>
-<b>Christopher:</b> Yeah. I love REPLS. I love live systems. Steve Yegge has
-a real well-done essay about live systems, about why they are
-powerful, I recommend checking that out. You can probably find it on
-Google pretty quick.
+<b>Christopher:</b> Yeah. I love live systems. Steve Yegge has a real
+well-done essay about live systems, about why they are powerful. I
+recommend checking that out. You can probably find it on Google pretty
+quick.
 </p>
 
 <p>
@@ -1029,15 +995,11 @@ to be red, and I evaluate just like in Emacs lisp. I press <code>C-x C-e</code>.
 </p>
 
 <p>
-<b>Christopher:</b> And I want JavaScript here. I switch to a HTML buffer&#x2026;
-Selector&#x2026; insert the page this part is a bit crude I haven't got
-this refined yet. It's got limited use. Say I want to insert a heading
-to the page.
-</p>
-
-<p>
-and I can evaluate this <code>&lt;h1&gt;</code> just as if it's an expression. You can
-see it on the screen.
+<b>Christopher:</b> And I want JavaScript here. I switch to a HTML
+buffer&#x2026; Selector&#x2026; insert the page. This part is a bit crude. I
+haven't got this refined yet. It's got limited use. Say I want to
+insert a heading on the page. I can evaluate this <code>&lt;h1&gt;</code> just as if
+it's an expression. You can see it on the screen.
 </p>
 
 <p>
@@ -1049,7 +1011,7 @@ see it on the screen.
 </p>
 
 <p>
-<b>Sacha:</b> How to you save it afterward?
+<b>Sacha:</b> How do you save it afterward?
 </p>
 
 <p>
@@ -1058,8 +1020,8 @@ sufficient. There's really no way to capture right now.
 </p>
 
 <p>
-You can see that it's just building up CSS style sheets on the page,
-it's messy. So am not sure one would want to capture it as is.
+You can see that it's just building up CSS style sheets on the page.
+It's messy. So I'm not sure one would want to capture it as is.
 </p>
 
 <p>
@@ -1069,18 +1031,18 @@ changing the CSS is just a little bit more friction.
 </p>
 
 <p>
-<b>Christopher:</b> Yes, I hate that so much I want to treat web development
-as a live system I can hack while it is being build.
+<b>Christopher:</b> Yes, I hate that so much. I want to treat web development
+as a live system I can hack while it is being built.
 </p>
 
 <p>
-I can do further with this. So here's my blog again, you see this
-little green triangle on the top right corner, I can click and toggle
-that. When it's green, that mean Skewer can edit this page. This works
+I can go further with this. So here's my blog again. You see this
+little green triangle on the top right corner. I can click and toggle
+that. When it's green, that means Skewer can edit this page. This works
 not just with my blog. There's a little browser extension I wrote to
 make it work with Skewer. I can toggle this on any page. For example
-if I'm on Github&#x2026; although this wont work with Github website
-because they've got security cranked up so much they won't let this
+if I'm on Github&#x2026; although this won't work with Github website
+because they've got security cranked up so much. They won't let this
 work.
 </p>
 
@@ -1095,18 +1057,19 @@ do anything to make it work.
 </p>
 
 <p>
-I guess you use that for a lot development?
+I guess you use that for a lot of development?
 </p>
 
 <p>
-<b>Christopher:</b> That made JavaScript one of my preferred language
-actually. Because, there's WebGL now, and HTML5, CANVAS. If I need to
-write a program live that has a graphical interface, I can hack this up
-without ever refreshing a page.
+<b>Christopher:</b> Yes. It's made JavaScript one of my preferred languages
+to use, actually. There's WebGL now, and you've got HTML5 canvas, and
+you've got all of HTML. If I need to write a program live that has a
+graphical interface, I'm like, "Oh, Javascript and HTML." I can hack
+this up without ever refreshing a page.
 </p>
 
 <p>
-<b>Sacha:</b> You mean like Foreign Function Interface?
+<b>Sacha:</b> You mean like the Voronoi toy thing that we're looking at?
 </p>
 
 <p>
@@ -1115,125 +1078,127 @@ without ever refreshing a page.
 
 <p>
 I got is this cool thing with it. If you are familiar with Voronoi
-diagram. This is WebGL. The original ideas was that I can write a
-shader for each pixel on the screen, it compares to every vertex and
-colors itself appropriately. The GPU is very good at this. I came up
-with a even better version involving 3-dimensional cones and a depth
-buffer that's a lot faster. That's why I got this out, you can
+diagram&#x2026; Each section is everything that's closest to this vertex
+right here. This is WebGL. The original idea was that I can write a
+shader for each pixel on the screen. It compares to every vertex and
+colors itself appropriately. The GPU should be very good at that. I
+came up with a even better version involving 3-dimensional cones and a
+depth buffer. That's a lot faster. That's why I got this out. You can
 actually drag these around, just like this.
 </p>
 
 <p>
 It's a little slow on this machine because I'm using plain open source
-drivers which is not as fast as on a machine with real video drivers.
+drivers that Debian ships, which is not as fast as on a machine with
+real video drivers.
 </p>
 
 <p>
-It's pretty fast considering it's not actually [not using Voronoi
-diagram specific algorithm]. There's something called Fortune's
+It's pretty fast considering it's not doing any sort of exact
+evaluation of the Voronoi diagram. There's something called Fortune's
 algorithm that has sweep lines that travels across and doing all this
-stuff, but this is really just a brute force with the graphics card
-doing most of the work.
+stuff. Tthis is really just a brute force with the graphics card doing
+most of the work.
 </p>
 
 <p>
-Its developed live with Skewer like this. I can change the shaders and
-update the page while it's running, trying things out, without
-refreshing the page.
+It's developed live with Skewer like this. I can change the shaders and
+update the page while it's running and try things out without
+doing that refresh stuff.
 </p>
 
 <p>
 <b>Sacha:</b> You are working with a lot cool things. One thing I want to
-mention, because it's also really cool too but non-technical. You have
-released all these things into the public domain?
-</p>
-
-<p>
-How you made that decision? What got you interested, and how's that
-played out?
+mention because it's also really cool too but non-technical&#x2013;you have
+released all, practically all of your things into the public domain?
+What prompted that decision? What got you interested in it, and how's
+that played out?
 </p>
 
 <p>
 <b>Christopher:</b> I started out using GPL about 7 years ago. I read Richard
-Stallman's Free Software and free society, and actually have a signed
-version of that. I got really into FSF and got a membership, and
+Stallman's Free Software Free Society. I actually have a signed
+version of that right here. I got really into FSF and got a membership, and
 everything I did was licensed under GPL.
 </p>
 
 <p>
-As I got more experience, I find that licenses are cumbersome. If I
+As I got more experience, I found that licenses are cumbersome. If I
 want to use even just a snippet of somebody's code, to formally follow
-the license I gotta list their names, follow all these rules to make
-it work. It's cumbersome to worry about these license stuff all the
-time, especially if the software got large involving all these
-licenses, even if it's just the 3-clause BSD license that just require
-credit. So I decided I didn't want any part of that, I just want to
-make my code as useful as it can be to most people as possible. I do
-that by putting it in public domain. Nobody's got any obligation to me
-when they use this stuff.
+the license, I've got to list their names and follow all these rules
+to make it work. It's cumbersome to worry about licensing licensing
+stuff all the time, especially if you involve more and more works that
+have all their own licenses, even if it's just these 3-clause BSD
+license that just require credit. Even that gets cumbersome. So I
+decided I didn't want any part of that. I just want to make my code as
+useful as it can be to most people as possible. I do that by putting
+it in public domain. Nobody's got any obligation to me when they use
+this stuff.
 </p>
 
 <p>
-<b>Sacha:</b> Thank you for doing that. It's great that you sharing them so
-freely.
+<b>Sacha:</b> Thank you for doing that. There's certainly a lot of stuff
+that people can build on. For example, that web server is probably
+going to get added to my config shortly after this. It's great that
+you sharing them so freely.
 </p>
 
 <p>
-Do you have any other tips for people getting into Emacs internals or
-playing around with some of these cool stuff?
+Do you have any other tips for people who are curious about getting
+into Emacs internals or playing around with some of these cool stuff?
 </p>
 
 <p>
-<b>Christopher:</b> You have Emacs source code, sometimes not everything is
+<b>Christopher:</b> You have Emacs source code. Sometimes not everything is
 documented clearly in the docstring, so you might have to dig into
-source code to see how it works, or if you have bugs, a lot of times
+source code to see how it works, or if you're having bugs, a lot of times
 you need to dig into the source code to see what's wrong.
 </p>
 
 <p>
-I actually don't read the Emacs manual much&#x2026; it's kind of high level
-and not really useful for hacking Emacs. The real useful manual is the
-Emacs Lisp Reference Manual. It comes with Emacs. You can see in the
-info page here. <code>C-h i</code>
+I guess the main resources are.. I actually don't read the Emacs
+manual much at all. It's kind of a high level user thing and not
+really useful for hacking Emacs. The really useful manual is the Emacs
+Lisp Reference Manual. It comes with Emacs. You can see in the info
+page here. <code>C-h i</code>. It's called <code>Elisp</code> at the top level. It covers
+everything, or almost everything. You can see how big it is. This
+index is 1400 lines, and everything is here. You can just search for
+anything in particular. So, like, how do processes work? I can just
+search the string processes and read about how it works. There's a lot
+of sections and features I'm not aware of and I get surprised all the
+time.
 </p>
 
 <p>
-It covers everything, or almost everything. You can see how big it is.
-This index is 1400 lines. For example, I want to see how process
-works. I can just search the string processes and read about how it
-works. There's a lot sections and features I'm not aware of and I got
-surprised by all the time.
-</p>
-
-<p>
-So, use the Emacs Lisp Reference to see all Emacs can do and you can
-hack it. Occasionally you have to dig into Emacs source code to see
-how things work. My recent example of that is, in Elfeed there's a
-bug, where somebody want to use <code>x-get-selection</code>. How this function
-is defined depends on what platform you are on. The doc string for
-<code>x-get-selection</code> doesn't really elaborate how it works for each
-platform. What's convenient about this is there's link to the source
-code, see this `select.el'? I got a keyboard shortcut that can jump
-right into the source code. So you see here's the source code for
-<code>x-get-selection</code>.
+So, yeah, use the Emacs Lisp Reference to see what all of Emacs can do
+and how you can hack it. Occasionally you have to dig into the source
+code of Emacs itself to see how things work. A recent example of that
+is, in Elfeed there's a bug, where if somebody wanted to use
+<code>x-get-selection</code> to get the latest clipboard selection&#x2026; How this
+function is defined depends on what platform you are on. The doc
+string for <code>x-get-selection</code> doesn't really elaborate on how the
+different platforms vary. What's convenient about this is there's link
+to the source code, see this `select.el'? I got a keyboard shortcut
+that can jump right into the source code. So you see here's the source
+code for <code>x-get-selection</code>.
 </p>
 
 <p>
 <b>Sacha:</b> Sometimes I find myself needing to dig into the C source code
-as well?
+as well.
 </p>
 
 <p>
-<b>Christopher:</b> Yeah. That's another way how I got into the Emacs
-internals. I've written 2 lisp interpreters. One of them I wrote,
-which is a crappy toy lisp. Another one is with Brian Taylor I
-mentioned before, we wrote a scheme interpreter together.
+<b>Christopher:</b> Yeah. That's another way I got into the Emacs
+internals. I've written two lisp interpreters. One of them I wrote myself,
+which is a crappy toy lisp. Another one is with the Brian Taylor I
+mentioned before. We wrote a Scheme interpreter together.
 </p>
 
 <p>
-I have experience of how lisp is put together internally, so I can
-look at Emacs and see lots similarities and understand what's going on
-and navigate my way around.
+I have experience of how Lisp is put together internally, so I can
+look at Emacs and see lots of similarities, understand what's going
+on, and navigate my way around.
 </p>
 
 <p>
@@ -1243,25 +1208,22 @@ around?
 
 <p>
 <b>Christopher:</b> It's hard to say. It might've been that lisp interested
-me and I got into Emacs initially, but as I said it was 9 years ago I
-started Emacs and it was both lisp and Emacs that got me into it at
+me and I got into Emacs initially, but as I said, it was nine years ago I
+started Emacs. It was both lisp and Emacs that got me into it at
 the same time, so I can't remember which came first. They kind of came
 hand-in-hand.
 </p>
 
 <p>
-Some people online asks "how do you get into Common Lisp?" and one of
-the answer is Emacs, that's one of the most powerful editor for lisp
+Some people online ask, "How do you get into Common Lisp?" One of
+the answer is Emacs. That's one of the most powerful editors for Lisp
 right now.
 </p>
 
 <p>
-<b>Sacha:</b> It made sense. Lots people have build very interesting things
-on top of it.
-</p>
-
-<p>
-Thanks for sharing your workflow. It looks really cool.
+<b>Sacha:</b> It made sense. Lots of people have built very interesting
+workflows on top of it. Thanks for sharing your workflow. It looks
+really cool.
 </p>
 
 <p>
@@ -1269,22 +1231,22 @@ Thanks for sharing your workflow. It looks really cool.
 </p>
 
 <p>
-<b>Sacha:</b> That certainly gave me lots of things to play around after
-this, and I hope a lot people both listening and afterward get to play
+<b>Sacha:</b> That certainly gives me lots of things to play around with after
+this, and I hope a lot of people both listening live and afterwards get to play
 with this too. Thank you again so much for taking your time to share
 you workflow.
 </p>
 
 <p>
 Another curiosity. I'm doing these Emacs chats as a way for other
-people to get to how how people use Emacs, how did they got into it,
+people to get to how how people use Emacs, how did they get into it,
 what kind of cool things people are working on. Is there anyone you
 like to see in one of this episode?
 </p>
 
 <p>
-<b>Christopher:</b> If I were to pick a name I would say Steve Purcell He's
-the curator of MELPA right now.
+<b>Christopher:</b> If I were to pick a name, I would say Steve Purcell.
+He's the curator of MELPA right now.
 </p>
 
 <p>
@@ -1292,13 +1254,32 @@ the curator of MELPA right now.
 </p>
 
 <p>
-<b>Sacha:</b> Where's the best place for people to find you?
+<b>Sacha:</b> I'll reach out and see if he's interested.
 </p>
 
 <p>
-<b>Christopher:</b> My blog or my Github. You can just email me. If it's
-related to my packages, you can just open a issue on Github, I get to
-it pretty quick.
+<b>Christopher:</b> That's like a witchhunt sort of name. I give you a name, and you go to them and they give you a name.
+</p>
+
+<p>
+<b>Sacha:</b> I find that there's simply no way to keep track of all the cool things that are going on in Emacs. I came across your blog and that's great&#x2026; I don't even remember. You must be on Planet Emacsen, right? 
+</p>
+
+<p>
+<b>Christopher:</b> I don't know if it shows up there or not.
+</p>
+
+<p>
+<b>Sacha:</b> Maybe I should check. It's a great way to discover other people's blogs, but sometimes there are people who are doing cool stuff who don't show up there.
+I'm glad we had this chat. If you're listening and you have a cool story or demo, please feel free to reach out. You can find this stuff at <a href="http://emacslife.com">http://emacslife.com</a> or at <a href="http://sachachua.com">http://sachachua.com</a> - <a href="http://emacslife.com">http://emacslife.com</a> is probably easier to spell.
+Christopher, where's the best place for people to find you?
+</p>
+
+<p>
+<b>Christopher:</b> My blog and on Github, I guess, are the two ways. My
+e-mail address is easy to find. You can just email me. If it's related
+to one of my packages, you can just open a issue on Github. I try to get to those
+pretty quick, although I have a few hanging issues that are unresolved right now. I try to get to them fast.
 </p>
 
 <p>
@@ -1310,11 +1291,17 @@ it pretty quick.
 </p>
 
 <p>
-<b>Sacha:</b> Thanks everyone for listening in. You can find the
-broadcasting on Google Plus events page and it would also be available
-on <a href="http://emacslife.com/">http://emacslife.com/</a> eventually once we get the page and
-transcript and other good things sorted out, and it would be in public
-domain as well.
+<b>Sacha:</b> Github has been great for discovering interesting Emacs
+packages, configuration, all sorts of things. Anyway, that's
+<a href="http://nullprogram.com">http://nullprogram.com</a> and <a href="http://github.com/skeeto">http://github.com/skeeto</a> . 
+</p>
+
+<p>
+All right! Thanks, everyone for listening in. I'm going to end the
+broadcast here. You can find the recording on Google Plus events page.
+It will also be available on <a href="http://emacslife.com/">http://emacslife.com/</a> eventually, once we
+get the page and transcript and other good things sorted out, and all
+of that would be in public domain as well.
 </p>
 
 <hr>
