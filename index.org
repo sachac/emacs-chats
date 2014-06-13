@@ -18,6 +18,7 @@ Getting to know people who use Emacs
 
 - [[file:chat-avdi-grimm.org][Avdi Grimm (Org-mode, Ruby, etc.)]]
 - [[file:chat-bastien-guerry.org][Bastien Guerry]]
+- [[file:chat-bozhidar-batsov.org][Bozhidar Batsov]] - Prelude
 - [[file:chat-carsten-dominik.org][Carsten Dominik]]
 - [[file:chat-christopher-wellons.org][Christopher Wellons]] - foreign function interface, skewer, impatient-mode
 - [[file:chat-iannis-zannos.org][Iannis Zannos -- Emacs and SuperCollider]]

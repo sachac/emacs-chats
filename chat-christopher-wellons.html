@@ -241,6 +241,10 @@ digging around and figuring out how to do it.
 </p>
 
 <p>
+( autotetris-mode <a href="https://github.com/skeeto/autotetris-mode">https://github.com/skeeto/autotetris-mode</a> )
+</p>
+
+<p>
 <b>Sacha:</b> I just came across that today. I often show Tetris &#x2026; kind
 of when you are demonstrating Emacs to other people and you want to
 boggle their mind about just how much is in Emacs. So I normally show
@@ -252,11 +256,7 @@ and Autotetris, and drive people crazy.
 Lots really odd and interesting things. One of the things that people
 are often curious about is how actually people use Emacs. What's your
 workflow like, what are the different things you've configured? And
-you've shared your config on Github.
-</p>
-
-<p>
-<a href="https://github.com/skeeto">https://github.com/skeeto</a>
+you've shared your config on Github. ( <a href="https://github.com/skeeto">https://github.com/skeeto</a> )
 </p>
 
 <p>
@@ -398,7 +398,7 @@ that was asked about specifically. So if you visit in your web browser.
 
 <p>
 ( Impatient Mode. See the effect of your HTML as you type it.
- <a href="https://github.com/skeeto/impatient-mode">https://github.com/skeeto/impatient-mode</a>
+ <a href="https://github.com/netguy204/imp.el">https://github.com/netguy204/imp.el</a>
  <a href="http://nullprogram.com/blog/2012/08/20/">http://nullprogram.com/blog/2012/08/20/</a> )
 </p>
 
@@ -474,6 +474,10 @@ exploring.
 </p>
 
 <p>
+( Emacs Lisp Foreign Function Interface <a href="https://github.com/skeeto/elisp-ffi">https://github.com/skeeto/elisp-ffi</a> )
+</p>
+
+<p>
 <b>Christopher:</b> That kind of hit the wall a little bit, as it gets
 complicated pretty quickly. I don't have any real practical uses for
 it yet, I thought maybe I can run a GTK window, and run a little
@@ -543,11 +547,9 @@ with EmacSQL.
 </p>
 
 <p>
-EmacSQL <a href="http://https://github.com/skeeto/emacsql">http://https://github.com/skeeto/emacsql</a>
-</p>
-
-<p>
-(EmacSQL is a high-level Emacs Lisp front-end for SQLite (primarily), PostgreSQL, MySQL, and potentially other SQL databases.)
+(EmacSQL <a href="http://https://github.com/skeeto/emacsql">http://https://github.com/skeeto/emacsql</a> EmacSQL is a
+ high-level Emacs Lisp front-end for SQLite (primarily), PostgreSQL,
+ MySQL, and potentially other SQL databases.)
 </p>
 
 <p>
@@ -569,11 +571,9 @@ EIEIO, which I think is really clever.
 </p>
 
 <p>
+( EIEIO
 <a href="http://cedet.sourceforge.net/eieio.shtml">http://cedet.sourceforge.net/eieio.shtml</a>
-</p>
-
-<p>
-(EIEIO is an Emacs lisp program which implements a controlled
+EIEIO is an Emacs lisp program which implements a controlled
 object-oriented programming methodology following the CLOS standard)
 </p>
 
@@ -601,7 +601,7 @@ I can say create-table, like this:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:create-table</span> foo ([name id])])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:create-table</span> foo ([name id])])
 </pre>
 </div>
 
@@ -611,7 +611,7 @@ and I can insert values into it:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span>])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span>])
 </pre>
 </div>
 
@@ -636,7 +636,7 @@ So here's a expression,
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span> [<span class="org-string">"Chris"</span> 0]])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span> [<span style="font-style: italic;">"Chris"</span> 0]])
 </pre>
 </div>
 
@@ -662,8 +662,8 @@ That's what it compiles to.
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:select</span> * <span class="org-builtin">:from</span> foo])
-((<span class="org-string">"Chris"</span> 0))
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:select</span> * <span style="font-weight: bold;">:from</span> foo])
+((<span style="font-style: italic;">"Chris"</span> 0))
 </pre>
 </div>
 
@@ -688,11 +688,11 @@ value is inserted into the database.
 </p>
 
 <p>
+(Elfeed
 <a href="https://github.com/skeeto/elfeed">https://github.com/skeeto/elfeed</a>
-</p>
-
-<p>
-(Elfeed is an extensible web feed reader for Emacs, supporting both Atom and RSS. It requires Emacs 24 and is available for download from MELPA. Elfeed was inspired by notmuch.)
+Elfeed is an extensible web feed reader for Emacs, supporting both
+Atom and RSS. It requires Emacs 24 and is available for download from
+MELPA. Elfeed was inspired by notmuch.)
 </p>
 
 <p>
@@ -795,7 +795,7 @@ inside Emacs?
 </p>
 
 <p>
-<a href="http://notmuchmail.org/">http://notmuchmail.org/</a>
+( Notmuch <a href="http://notmuchmail.org/">http://notmuchmail.org/</a> )
 </p>
 
 <p>
@@ -909,7 +909,7 @@ jekyll insert-url and I got a little filter string here
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">&lt;!-- (jekyll/insert-urls <span class="org-string">"+blog -product -myself "</span>) --&gt;
+<pre class="src src-emacs-lisp">&lt;!-- (jekyll/insert-urls <span style="font-style: italic;">"+blog -product -myself "</span>) --&gt;
 </pre>
 </div>
 
@@ -1149,7 +1149,8 @@ released all these things into the public domain?
 </p>
 
 <p>
-How you made that decision? What got you interested, and how's that played out?
+How you made that decision? What got you interested, and how's that
+played out?
 </p>
 
 <p>
@@ -1236,7 +1237,8 @@ and navigate my way around.
 </p>
 
 <p>
-<b>Sacha:</b> Did you do lisp before coming into Emacs or the other way around?
+<b>Sacha:</b> Did you do lisp before coming into Emacs or the other way
+around?
 </p>
 
 <p>
@@ -1254,8 +1256,8 @@ right now.
 </p>
 
 <p>
-<b>Sacha:</b> It made sense. Lots people have build very interesting things on
-top of it.
+<b>Sacha:</b> It made sense. Lots people have build very interesting things
+on top of it.
 </p>
 
 <p>
@@ -1281,7 +1283,8 @@ like to see in one of this episode?
 </p>
 
 <p>
-<b>Christopher:</b> If I were to pick a name I would say Steve Purcell He's the curator of MELPA right now.
+<b>Christopher:</b> If I were to pick a name I would say Steve Purcell He's
+the curator of MELPA right now.
 </p>
 
 <p>
@@ -1293,7 +1296,9 @@ like to see in one of this episode?
 </p>
 
 <p>
-<b>Christopher:</b> My blog or my Github. You can just email me. If it's related to my packages, you can just open a issue on Github, I get to it pretty quick.
+<b>Christopher:</b> My blog or my Github. You can just email me. If it's
+related to my packages, you can just open a issue on Github, I get to
+it pretty quick.
 </p>
 
 <p>
@@ -1301,11 +1306,15 @@ like to see in one of this episode?
 </p>
 
 <p>
-<a href="https://github.com/skeeto/impatient-mode">https://github.com/skeeto/impatient-mode</a>
+<a href="https://github.com/skeeto/">https://github.com/skeeto/</a>
 </p>
 
 <p>
-<b>Sacha:</b> Thanks everyone for listening in. You can find the broadcasting on Google Plus events page and it would also be available on <a href="http://emacslife.com/">http://emacslife.com/</a> eventually once we get the page and transcript and other good things sorted out, and it would be in public domain as well.
+<b>Sacha:</b> Thanks everyone for listening in. You can find the
+broadcasting on Google Plus events page and it would also be available
+on <a href="http://emacslife.com/">http://emacslife.com/</a> eventually once we get the page and
+transcript and other good things sorted out, and it would be in public
+domain as well.
 </p>
 
 <hr>

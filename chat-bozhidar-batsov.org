@@ -1,0 +1,321 @@
+#+SETUPFILE: setup.inc
+#+TITLE: Emacs Chat: Bozhidar Batsov
+#+DATE: <2014-04-25 Fri>
+#+PROPERTY: DISQUS http://sachachua.com/blog/2014/05/emacs-chat-bozhidar-batsov/
+
+Bozhidar Batsov (http://emacsredux.com) shares how he got into Emacs and Emacs Lisp. He also demonstrates cool features from Prelude and Projectile, which are great if you do a lot of programming. Check it out!
+
+* Audio and video
+
+#+BEGIN_HTML
+<iframe src="//www.youtube.com/embed/-8DO0_pqLNA" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+#+END_HTML
+
+Just want the audio? [[https://archive.org/download/EmacsChatBozhidarBatsov/Emacs-Chat-Bozhidar-Batsov.mp3][MP3]]
+
+Quick Links:
+- https://twitter.com/bbatsov 
+- https://twitter.com/emacs_knight 
+- http://emacsredux.com 
+- https://github.com/bbatsov/prelude 
+- https://github.com/bbatsov/projectile 
+- If you like his work, support it through https://www.gittip.com/bbatsov/
+
+Check out [[http://emacslife.com/emacs-chats][Emacs Chat]] for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? [[http://sachachua.com/blog/contact][Get in touch!]]
+
+** Transcript
+
+*Sacha Chua:* Hello, everyone. I'm Sacha Chua and welcome to another episode of Emacs Chat, where we get to meet other geeks who are really interested in Emacs. Today we're talking to Bozhidar Batsov. Sorry, am I pronouncing your name properly?
+
+*Bozhidar Batsov:* You're surprisingly well.
+
+*Sacha:* We'll get proper pronunciations soon. Okay, you can introduce yourself again later.
+
+But anyway, BBatsov is the guy behind Projectile, Prelude (which is an Emacs starter kit), and all sorts of other good stuff. Here we have him. Thanks for joining us today Bozhidar. So how do you pronounce your name?
+
+*Bozhidar:* For a brief moment I think your voice doubled but then it disappeared.
+
+*Sacha:* Oh, I see. I'm not sure if you have the event page playing in the background. Actually, before we begin with all these other cool stuff about Emacs, can you tell us a little bit about what you're interested outside of Emacs? I saw your page mention that you do Rails and Node.js. What else are you interested in?
+
+*Bozhidar:* Outside of programming, my primary interests are sports. I'm a huge football fan--but the European variety of Football, not the North American one.
+
+*Sacha:* Soccer.
+
+*Bozhidar:* Yes. I like [inaudible 0:01:53] drinking beers [inaudible 0:01:58] stuff like that. I read a lot of novels. I listen to a lot of folk music, stuff like that. Nothing extraordinary, I think.
+
+*Sacha:* And you teach in a university, right?
+
+*Bozhidar:* I used to teach at the university, but now I'm on vacation. I enjoy teaching quite a lot, but unfortunately it was taking up quite some of my free time. I decided that I'd be better off working on open-source projects and spending time with my family and friends instead of with the students. Perhaps at some point, I'll be back, but not in the foreseeable future.
+
+*Sacha:* Well, you're still teaching a lot of people. Thanks for writing examples on the [[http://emacsredux.com/][Emacs Redux]] blog. I went through all the blog posts today, and I borrowed quite a lot for my configuration.
+
+How did you get into Emacs in the first place?
+
+*Bozhidar:* Well, this started with my first programming gig about a decade ago. I had to do some C programming for my job. I compared the tooling for Vi and Emacs. Sorry about this. I'm at the office and some colleagues are passing by. 
+Sorry about this once again.
+
+*Sacha:* No, no, it's okay. Thank you for taking the time.
+
+*Bozhidar:* I compared the tooling for Vi into Emacs and I found that ECB, CEDET in general--I'm not sure how it's pronounced in English--offered a superior and experience and CC mode was excellent compared to the very poor support for C programming in Vi. At least to my preferences.
+
+So I started programming in Emacs about a decade ago. At first I didn't clearly understand the environment. I knew next to none Emacs Lisp. I only copy pasted snippets of the quotes from EmacsWiki, from some blog posts. It was very hard for me. I didn't clearly upgrade my Emacs modules until I started working with Emacs Lisp, maybe three or four years later, and I didn't know that much Emacs Lisp then.
+
+Afterwards, I became a Java developer. The Java support in Emacs wasn't that good. I didn't use it for a few years [inaudible 0:04:59] degraded. But three years ago, I became a Ruby developer and I started working in Emacs all the time again. This time around I went Emacs Lisp properly, started working on some open source projects. First I contributed to some, then I created some. Here I am, an Emacs hacker.
+
+*Sacha:* So even if you stepped away from Emacs for three or four years because you're working on Java and probably using Eclipse or some other IDE... I'm glad that you came back, because a lot of the things that you've been working on with the Emacs Lisp have made Emacs a lot better--not just for you, but for a lot of people.
+
+What is it like learning about Emacs Lisp or the other features of Emacs? You mentioned you learned it in the process of programming. Were you in a team that had other Emacs developers? Were you figuring it out on your own?
+
+*Bozhidar:* Yes, I was figuring out stuff only on my own because all of my colleagues were using some integrated development environments. They thought that text editors like Vi and Emacs were remnants of the ancient past.
+
+But at my second job, I had two colleagues who are exceptional Emacs hackers and they taught me quite a lot of stuff. They told me how to write simple Emacs interactive commands. They showed me which are the best resources to learning Emacs. And they told me that the key to understanding Emacs and Emacs Lisp is to have a solid grasp on Common Lisp. So I bought the book “Practical Common Lisp” by Peter Seibel. I hope I pronounced his name correctly, because he's a great hacker. Once I knew Common Lisp, picking up Emacs Lisp was much easier for me because the languages are pretty similar in many regards.
+
+Afterwards, stuff became real easy. Most of the things I have learned on my own, mainly from using the Emacs manual, the Emacs Lisp programming manual and it went from blog posts, the emacs devel [inaudible 0:07:41]... Well, I also found helpful the emacs-devel mailing list where all the core developers hang around. They are not the friendliest bunch, but are extremely knowledgeable. I don't think that one can want more than one can want from them. Extremely knowledgeable hackers. I think that some of them have been hacking for 30 or 40 years on Emacs. They're grandmasters in everything Emacs-related. This is mostly it.
+
+In recent years, GitHub has been the most available learning resource for me because a lot of Emacs projects got moved to GitHub repositories. I like very much to read the code of other Emacs Lisp hackers. There are some really great examples and great people to work from. People like Steve Purcell, [inaudible 0:09:20], Sebastian Wiesner... They're the new generation of Emacs hackers.
+
+[inaudible 0:09:30] I think you did an interview. I checked with him recently as well. He was my hero when I was starting out the second time.
+
+*Sacha:* It's really great that people are sharing their configs, their project code, all of these place that we can learn from how other people are using and customizing Emacs.
+
+You've done a fair bit of this sharing yourself with Prelude, which is that starter kit that has a lot of configuration for all these different modules. Now that you have Prelude which has a lot of these defaults, what's your configuration like now? One line that loads Prelude, or do you have other things in there?
+
+*Bozhidar:* A bit of configuration in my =~/.emacs.d= directory but one can say that I'm using more or less a clean Prelude. I believe that I should eat my own dogfood because you can't develop a project without actually using it. How can you say that it is a good option for the user?
+
+I'm pretty comfortable with all the defaults in Prelude, for obvious reasons. I've set up most of them. I generally don't like calling it a "starter kit" because the main pressure now behind Prelude was not to replicate the Emacs starter kit... you can call it a personalized distribution that is targeting more experienced Emacs users who would rather have a solid foundation ready for them and add their additional configuration options, rather than starting from scratch.
+
+Many of the defaults in Prelude [inaudible 0:11:40] extremely [inaudible 0:11:47] Emacs user. [inaudible 0:11:52] because...
+
+*Sacha:* Let me summarize it, if I understand this correctly. While a lot of other starter kits are meant for newbies who are getting started with Emacs, you've customized Emacs and you've put together this Prelude package so that people who are more experienced, maybe use it for a lot of programming, can have that solid foundation to build on. Is that right?
+
+*Bozhidar:* Yes. More or less, this was my idea. I have no idea whether things go according to my plan or not. I know that a lot of highly experienced users are using Prelude and they find it helpful, which is great. But I have at least originally a different idea in mind.
+
+*Sacha:* Would it be possible to ask you to share your screen and show us some of the interesting things that Prelude does differently, or that you've configured Emacs to do?
+
+*Bozhidar:* Sure.
+
+*Sacha:* If you hover over the Google Hangout screen, you'll see that green icon with the arrow on it and you can use that to share your desktop or a specific application.
+
+*Bozhidar:* Okay. I'm clicking this, nothing happens.
+
+*Sacha:* If nothing happens, we can skip the screen sharing and we can just talk about stuff.
+
+*Bozhidar:* Maybe I'm missing something. Should it be asking me something? A box? Would those help?
+
+*Sacha:* Yes. If you click on the green icon with the arrow on it, it should show another window. So, I'm not sure whether your browser might be blocking pop ups or something like that. If you show another window...
+
+*Bozhidar:* Another window. I'm using a full-screen browser. Maybe this is the problem.
+
+*Sacha:* Okay.
+
+*Bozhidar:* Still nothing. Maybe it won't work on OS X [inaudible 0:15:11].
+
+*Sacha:* All right. In that case, let's skip that part. In the meantime, maybe you can tell me about some of the other things that you've been working on with Emacs. Or alternatively, I have Prelude open here as well. We can browse through it also.
+
+But before we dig into that then, stuff that you can talk about without showing code – Wikimacs, what happened there? The wiki said it's under new management. I don't know what's going on.
+
+*Bozhidar:* Well, things didn't turn out exactly like I planned them to. Basically, I was very frustrated with Emacs Wiki. I think that over time, the content there got extremely disorganized. There are a lot of irrelevant or obsolete entries in the articles. A lot of articles are filled with in-line comments from users which are totally irrelevant to the articles.
+
+Of course, I thought that I can do the things better. I thought that simply, everybody shared my point of view, that if I [deployed] maybe a wiki-based system somewhere, things would magically happen. It didn't go according to my plan. I see significant backlash from the Emacs community that I was trying to fragment it which was kind of disappointing.
+
+*Sacha:* I'm sorry. That was the reaction. I can see your frustration with the fact that some of the Emacs Wiki pages are pretty good but some of them haven't been looked at in a while. I guess with any community Wiki, it's hard to go back and edit things.
+
+One of the things I noticed with WikEmacs that I like was that you're trying to organize things a little bit more logically by skill level. For example, “things for beginners,” “things for intermediate people,” “things for advanced people.” Likewise, with Emacs Redux, you're writing a lot of beginner-intermediate content that really could ease people into this configuration of Emacs.
+
+Granted that it's going to be difficult to either redo something on the scale of Emacs Wiki or reorganize all of that... What else do you think would be really helpful for people to get into Emacs more?
+
+*Bozhidar:* Well, maybe more books like Emacs Redux. I'm not sure because recycling the tutorial idea over and over again obviously doesn't work. I've noticed that most sites that concentrate on beginner resources basically write about the same stuff. We are getting to a point which has been reached at least a hundred times before. We can't go beyond it, which is not optimal, obviously. When I think about it in my mind, it makes sense. But when I try to put it in English, it doesn't make that much sense.
+
+*Sacha:* No. It makes sense. It's like we're going over the same ground again and again. This is how you use Emacs, this is the basics of how you start using it, you can navigate buffers and all of that stuff. So, what would going beyond this look like? What kinds of resources would help people get beyond just the same old tutorials?
+
+*Bozhidar:* Well, there used to be a blog “Emacs [inaudible 0:19:24]” and the book is there but it is inactive which had a lot of such resources, which I call intermediate to advanced usage resources, which showcased a lot of packages that are either bundled with Emacs but not enabled by default or entirely third-party packages. It has a lot of posts about custom functions and commands that can enhance your daily worklow. This was the principal inspiration for my Emacs Redux blog series.
+
+There is another similar blog called “Mastering Emacs” which offers similar resources. I think that this is the way to go. These resources that break new grounds, to say, compared to the usual tutorials about basic Emacs usage. They are not ideal either, because they assume that you know quite a lot about Emacs. But as we already discussed, there are a lot of places when you can pick up the basics. I think that this assumption is not the worst assumption in the world.
+
+*Sacha:* Yes. I like the fact that for example on Emacs Redux, you've been looking at some of the upcoming features and Emacs 24.4, things that intermediate and advanced users might miss out on if they're just upgrading. You're also showing different ways that people can use those books. So it's not so much, “Here's how to get started with Emacs from the beginning but here is the difference and here is how you can take advantage of it.” Cool. More intermediate and advanced resources.
+
+I'm not sure if you want to give screen sharing another try because there are people in the chat channel who would really love to see you walk through your Emacs and try it out.
+
+*Bozhidar:* I don't really know what to do with it myself, but basically nothing happens.
+
+*Sacha:* If we're really brave, you could try refreshing your browser, which I think will get you back into the Hangout. Then I will try to amuse everyone in the five minutes or whatever that it takes while this is happening.
+
+*Bozhidar:* Okay, I will.
+
+*Sacha:* Okay, folks, Bozhidar Batsov will join us again shortly. I hope this all works out.
+
+But in the mean time, if you have any questions, you can ask them if you're watching the live stream by clicking on the Q&A app link that showed up or if you ask questions as comments on the event page, I'll see those too. You can also ask questions in the Emacs Chat channel.
+
+Welcome back. Actually, I never did find out how to pronounce your name properly. How should I say your name?
+
+*Bozhidar:* Well, it is Bozhidar Batsov.
+
+*Sacha:* Okay, fantastic. Let's try that screen sharing again and see if that works.
+
+*Bozhidar:* Okay, the screen sharing is working now.
+
+*Sacha:* All right. Technology! Sometimes it works.
+
+*Bozhidar:* Sometimes it works, yes.
+
+*Sacha:* Would you mind increasing your text scale so that everyone can read things more easily?
+
+*Bozhidar:* Sure. Just a second, because it's asking me for some permissions. You can see my screen, right?
+
+*Sacha:* Yes, I can see your screen. The people on the IRC channel are super happy.
+
+*Bozhidar:* Okay. Is this big enough?
+
+*Sacha:* Yes.
+
+I guess you're sharing your screen and walking us through how you use it, maybe you can think of it as a demo of some of Prelude's cool features. Other people who are experienced programmers, maybe they already have a little bit of an Emacs configuration set up, but if they can see the kinds of things that they can enable by default in Prelude, then they will switch to it, and give you lots of feedback, and enjoy the benefits.
+
+*Bozhidar:* Sure. Here are some of the nice things that are enabled by default in Prelude. For example, the excellent =ace-jump-mode= combined with another Emacs extension, =key-chords=. if I press =jj= very fast, I can go to the beginning of every word in my source buffer starting with the letter “A” for instance. I can jump here, or jump here, or I can go to the beginning for method definition. I think that this is a really cool way to navigate a source buffer because obviously it is extremely tedious to be going over the buffer one by one or character by character. I like jumping around very much. If you do =j= followed by an =l=, you can go to the beginning of every line in the buffer. So I go here. This is nothing special. It is just a couple of packages that are bundled, but this is part of the magic of Prelude that all the cool packages are bundled by default, or at least I hope so.
+
+One of my favorite features is the way that I have overriden the "go to the beginning of line" behaviour. For example, if I'm somewhere in the middle of the line and I press =C-a=, normally I would go to the beginning of the line. But in Prelude, first, I will go to the beginning (the first character of the line) and if I press =C-a= a second time, then I will go to the actual beginning of the line. If I press =C-a= again, I'm toggling between the two. I find this a much better and intuitive behavior for this command because I can't imagine people wanting to go beneath the borders of their text for the time. This is one small enhancement. 
+
+Another is something I picked up from my exile in IntelliJ IDE. The smart way to open a new line beneath the current line, if you press =SHIFT= and =Return= in Prelude, you go up in the same indentation level of the following line. There is a command to do this for the above line as well. I call this =smart-open-line= and =smart-open-line-above=.
+
+*Sacha:* Yes. That will save me from going =C-e= and then =Enter=, right? That's great.
+
+I just wanted to point out earlier that – one of the things I stole from your config was the combination of =ace-jump-mode= and =key-chord-mode=. Because I've been trying =ace-jump-mode= but my problem with it was that I could never remember the keyboard binding because I'd had to put it somewhere. We always run out of keybinding space. But with key-chord-mode and you suggested bindings of using =jj=, or whatever that was to jump that character, that make a lot of sense.
+
+*Bozhidar:* Well, I haven't heard of an English word using having =jj=... It sounds like a safe keybinding to me.
+
+*Sacha:* Yes. And this =C-a= of yours just to go at the beginning of the line also was another one that I found really helpful and I've started using that too.
+
+*Bozhidar:* I'm glad to hear this but I hope that more people find it useful. I have to give credit to Sebastian for devising this because it's not my idea. He sent me this snippet of code and suggested writing in Emacs Redux about it. Sebastian is one of the best Emacs developers I know, a really cool guy. You should interview him as well some time.
+
+*Sacha:* Yes. Okay.
+
+In IRC, a lot of people are like, “Oh wow, this is awesome!” So, keep showing us all sorts of good things that you've felt [inaudible 0:28:29].
+
+*Bozhidar:* Some of the other cool things you can do. See, I have split my frame into two windows. Normally, if I have to go through them, I would have to use =C-x o=, =C-x o= until I reach the one I need, or I can enable the =windmove= package and use something like =shift= + press arrow, which is naturally enabled in Prelude by default. But I don't think this is optimal. 
+
+I like =ace-jump-mode= so much that I've bound =C-x o= to something called =ace-window=. With a single key press, you can go to whatever window you want. You can see that the buffer content gets dimmed, and you see a number in the upper left corner of each window. You press its number, and you go to that window directly. It is extremely handy.
+
+*Sacha:* Yes. It's a good idea to override =C-x o= because I still hit =C-x o= out of sheer muscle memory. If you override it like that, then you're forced to use a more efficient way to work.
+
+*Bozhidar:* Indeed. That's why I actually did it. Some of the other cool tricks I can show you...
+
+For example, the expanding selection. This is one of my favorite packages, but it works better in Lisp. Let me open up something Lispy. I'm obviously using =projectile= to jump to a project and open a file in it. Let me increase the font size. In Prelude, if you press CTRL, followed by an equal repeatedly (=C-==), you see that you mark the entire identifier, then another would mark the entire expression, and one more expansion would mark the outer expression. This is a really cool package. 
+
+In Prelude, there is one more similar package, when you are doing killing (of text of course), one can see that =C-w= is normally bound to =kill-region= and =M-w= should be bound to =copy-region=, but in Prelude, it is not. It is bound to a package called =easy-kill= which lets you combine =M-w= with another character to directly kill a line, a number, a word, something like this. It is very helpful. I use it all the time when I have to get something into the kill ring instead of just destroying it. I think that it's really cool package and more people should be using it. 
+
+One thing that I'd really like to show is debugging Emacs commands, because I know that a lot of people think that debugging Lisp code is really hard, but it's actually really simple, and I think that people will love me for this.
+
+If we have this snippet of code... Let me open a real Lisp buffer. Something is not behaving properly in the scratch buffer. By the way, you can see that I have some fancy completion in Prelude.
+
+*Sacha:* And you have some kind of style checking going on too?
+
+*Bozhidar:* Yes. The style checking is provided by the =Flycheck= package authored by Sebastian, who I mentioned several times. This other completion package is called =company-mode=. It is a much superior alternative to the popular =auto-complete-mode= and it is authored by Dmitry Gutov, who I also mentioned.
+
+So, let us create this simple function command, and in it we just – we have this function. We'll now open interactive Emacs Lisp mode buffer, and we can try it out. It works, but it might not yet work. For example, let me obfuscate this a bit. I'm obviously using =smartparens=, the other branch of that =paredit= church.
+
+*Sacha:* I'm getting a hang of using it too.
+
+*Bozhidar:* I like smartparens a bit more because it works well in many non-Lisp packages.
+
+*Sacha:* Right. I love the fact that you have animated GIFs on your site showing all these little features.
+
+*Bozhidar:* Let me show you about the debugger. Now we see that we have a problem with the names. We can enable the Emacs Lisp debugging instrumentation for our function by doing =C-u C-M-x=. Now when we invoke this function again, we are dropped in the debugger. I don't think that it is obvious, but here you can see the Edebug manual.
+
+I can use the =n= key to jump to the next expression and evaluate it. At the bottom of the screen, you can see that =name= evaluates to ="test"= (a lower-case "test"), and if I evaluate the surrounding expression, it outputs =TEST=. test. You can see that names evaluated here, you can evaluate a random code, if you press =e= you can see the mini buffer, you can evaluate any variable or expression.
+
+*Sacha:* Yes. Edebug is so powerful. By the way, if you can't remember =C-u C-M-x=, it's also the same as =M-x edebug-defun=.
+
+*Bozhidar:* Yes and we can quit of course the debugger with =q=. I think that it's a great tool and more people should be using it. For some reason, it is extremely unknown. Often when I get bug reports on some of my projects, I have to tutor the users quickly how they can instrument and debug that code. I really wish it was a more popular tool. This is enough about debugging.
+
+*Sacha:* Yes. It's really one of those things that will help people get to that intermediate-advanced level. If they become comfortable with using =C-h f= to look at the source code of a function – =find-function= will also do that and then use Edebug to explore how it works and then report bugs, or tweak it, or whatever... It's a great way to learn more about Emacs from the source code itself.
+
+*Bozhidar:* By the way, now that you mentioned going quickly to the source code of a function, most people will do this. They would do =C-h f=, the name of the function.
+
+*Sacha:* I do that.
+
+*Bozhidar:* For example, =projectile-cache=, I think, and they will click the link here in the buffer that opened up. But you can do this more quickly in Prelude. In particular =C-h C-f=.
+
+*Sacha:* Oh, =C-f= is an excellent binding. So, =C-h C-f= is a great binding for find function. Okay, I think I can do that. And I'm thinking you use SLIME as well to make it easier to navigate symbols when you're in Emacs Lisp?
+
+*Bozhidar:* Yes but I'm not using SLIME. I'm using the =elisp-slime-nav= package by Steve Purcell. It is very cool but emulates a small portion of functionality provided by SLIME. It is mostly useful to jump to the definition of functions with =M-.=, but this is something concealed...
+
+*Sacha:* That's in maphash, yes. Maybe something else.
+
+*Bozhidar:* Yes. Let me find something. This is definitely...
+
+*Sacha:* Yes, okay.
+
+*Bozhidar:* Go back with =M-,​= . It is quite helpful. I use it all the time obviously, but at least for the time being, one cannot use the real SLIME for Emacs Lisp.
+
+*Sacha:* Cool. I should definitely check that out because I'm always looking at function definitions.
+
+Now, one of the things I'm noticing from this conversation is that you've tried a lot of packages. How do you come across interesting packages? Do you just look at recommendations? Do you look at the entire long list of Lisp packages?
+
+*Bozhidar:* Often I find packages just by doing a =package-list-packages= and checking out the new section.
+
+*Sacha:* Yes, it gets a little weird because you're using [inaudible 0:41:25].
+
+*Bozhidar:* But some of the packages are marked as new. I check them out. Often, some packages are suggested for inclusion in Prelude. I also operate the Twitter handle [[https://twitter.com/emacs_knight][@Emacs_Knight]] and people write to me all the time to promote some new packages, so I obviously try them out before promoting them.
+
+*Sacha:* Which Twitter handle is that?
+
+*Bozhidar:* =@Emacs_Knight=, like the medieval knight.
+
+*Sacha:* I should definitely follow that. Oh, it looks like I'm following that. I see that now. That's great. I'm also looking for package recommendations too. Clearly from Prelude and from the way that you're just using =ace-jump= to jump around and navigate and all that stuff, there's a lot of good code out there to help make Emacs more convenient.
+
+*Bozhidar:* Other packages, I can recommend are obviously projectile, smartparens – I don't think we have the time to go into it in details, but I think it is really solid alternative to paredit, and it is developed more publicly on GitHub which is always a good thing.
+
+*Sacha:* Yes. One of the things I'm fascinated by, you have another package called =guru-mode= which is the one that forces that you can use the proper Emacs binding for things.
+
+*Bozhidar:* Yes. Here you can see it in action, but it's a tiny package that I wrote only in a few minutes. Actually, I don't have quite as much time as I'd like to work on the Emacs-related stuff. The principal package in which I work the most is obviously Cider because the Clojure community relies fairly much on it. Ever since I started working on Cider, I haven't been working too much on either Prelude, Projectile, nor my other projects like slim mode, [contact] mode, etc. But I do my best to move everything forward and I get a lot of contributions from some really cool folks.
+
+One thing that open source has taught me is that you cannot conquer everything by yourself. You have to set the general tone and hope that you get enough traction, enough support. This is the only way to create something great, because nobody can do anything by himself/herself.
+
+*Sacha:* So tell me about getting that traction. Projectile is quite popular, and Prelude as well. How do you get traction for those? You come up with an idea, you put together something on GitHub, but how do you let people know about it?
+
+*Bozhidar:* I used to blog about Emacs on my personal blog as well. I guess some people found out about some of the packages there. At some point, the blog was linked to Planet Emacs, which increased the blog posts' popularity. I guess every time I create a new package, I post about it on the Emacs subreddit and in the Google+ Emacs community. I obviously tweet from time to time about the things I'm working on. These are the main communication channels that I use to promote a bit. Sort of.
+
+*Sacha:* Stuff worth promoting, so thank you for putting this together and sharing it with people. You were about to say something before I interrupted you?
+
+*Bozhidar:* No. I was just going to say that the popularity of most of my work has grown slowly over a long period of time. Nothing became popular overnight. I created projectile over three or four years ago, when it became a suddenly popular last year. I have no exploration for this whatsoever.
+
+*Sacha:* I remember I heard about it when I chatted with John Wiegley, who showed how he was using it to quickly jump around and look at stuff. It's good stuff. Cool.
+
+You're continuing to work on Cider, and then when you have time, you work on all these other things as well. I've played around with Cider a little bit because someone else I was talking to is very interested in Emacs and Clojure. It's great to see a lot of growth also in the Lisp community as well as in the Emacs community. Maybe we can get more of those people using Emacs instead of LightTable or something else.
+
+*Bozhidar:* I hope so. But I think that this will be hard until the core Emacs development process gets modernized a bit. I think that the main hurdle before mainstream Emacs [adaption] is that things in the Emacs core move slowly. Many people get pretty frustrated about this. More modern projects like Light Table, or Sublime Text, or Atom are moving really really fast, which is a huge advantage for them and a huge disadvantage for Emacs.
+
+*Sacha:* What are some of those core features that you'd like to see in Emacs soon?
+
+*Bozhidar:* Well, for one I'd like to see multithreads approach in my lifetime, but I doubt that will happen. It will be a great to replace the existing Emacs Lisp interpreter with the Guile Emacs lisp interpreter, which will also allow us to use Scheme to write Emacs extensions.
+
+I think that a lot can be done in the UI department as well because on every platform other than with Linux with GTK, Emacs doesn't look pretty at all, which is a shame. I think that there is a lot of room for improvement in the standard Emacs library. I think that we have a lot of legacy code inherited from the Common Lisp era in sections like the Collections API, for instance. I'd much rather have something like the Clojure API, but I don't think that this is ever going to happen. But those small, small – not small issues... I forgot the word. Sorry about this.
+
+*Sacha:* That's okay. It's like your wish list. Might not happen but it would be nice if it did. In the mean time, I guess with the resources that you're putting together with Prelude, Projectile, and Cider, and also Emacs Redux, kind of getting people from that beginner stage and helping people being intermediate and advanced Emacs users. Maybe as the community grows, we'll see more people working on these improvements. That's fantastic.
+
+Quick note. Steve Purcell mentions... Remember when you showed the modified =C-a= that you had for jumping back to the beginning of the line instead of the indentation? He mentions there's also a =back-to-indentation= function that's bound to =M-m= by default.
+
+*Bozhidar:* Yes. I was using it before, but I think that integrating the =back-to-indentation= behavior into =beginning-of-line= makes it easier because now I have to know just one keybinding instead of two. The default keybinding of =back-to-indentation= is not particularly easy to press, especially on a Mac keyboard which have very small meta key, unless you've remapped command to meta.
+
+*Sacha:* It's great to have more and more functions be “do what I mean” right? They might do different things depending on the context, but they do exactly what you think that they should do.
+
+That's good. Awesome. Thank you again so much for sharing your story and your thoughts on this Emacs Chat. Where is the best place that people can find you, or where would you like people to learn more about what you're sharing on Emacs?
+
+*Bozhidar:* Well, they can obviously follow me on Twitter. I'm pretty active there.
+
+*Sacha:* That's [[https://twitter.com/bbatsov][@bbatsov]], right?
+
+*Bozhidar:* Yes.
+
+*Sacha:* And [[https://twitter.com/emacs_knight][@emacs_knight]] for new package notes and other cool things.
+
+*Bozhidar:* Yes. But I write a lot more stuff with my regular handle. I'm obviously reachable via email, I try to respond to all questions I get there and GitHub of course recently.
+
+*Sacha:* You're very active on GitHub with all those issues and resolutions. Thank you for working on all of that.
+
+*Bozhidar:* Yes. I somewhere read that I was 50th or 60th in the world in terms of GitHub activity, but I work on Ruby projects as well. So I guess this helps a bit.
+
+*Sacha:* Yes. Based on your GitHub contribution log, you're in there practically everyday. So wow, thank you for your contributions to the open source community.
+
+All right. I'll include links to your GitHub profile, to Prelude, Projectile and all those other good things. Thank you again for joining us for an Emacs Chat episode. Folks, if you're listening in and you have ideas for other people we should talk to so we can find out how other people use Emacs and what they do with it, please feel free to lead them in the comments or reach out where to find me. This chat plus the transcript eventually will be available on [[http://www.emacslife.com][Emacslife.com]].
+
+Thanks again. I'm going to end the broadcast here since it's 8 o'clock in Sophia. But thanks again and I hope everyone has a great time.
