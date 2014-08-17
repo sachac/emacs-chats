@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Emacs Chat: Harry R. Schwartz</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<link rel="stylesheet" type="text/css" href="css/emchat.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="js/emchat.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class="sticky contain-to-grid top-menu"><nav class='top-bar'><ul class='links'>
+      <li><a id='home' class='replace home-design' href='/emacs-chats/'>Home</a></li>
+      <li><a id='index' class='replace show-for-medium-up home-design' href='/emacs-chats/theindex.html'>Index</a></li>
+      <li><a id='contact' class='replace home-design' href='http://sachachua.com/blog/contact'>Contact</a></li>
+      <li class="right"><a href='/emacs-chats/sitemap.html'>Sitemap</a></li> 
+      <li class="right"><a href="https://github.com/sachac/emacs-chats">Github</a></li>
+    </ul></nav></div>
+</div>
+<div id="content">
+<h1 class="title">Emacs Chat: Harry R. Schwartz</h1>
+<p>
+We chat about EmacsNYC, organizing your configuration, pair programming, and more.
+</p>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Audio and video</h2>
+<div class="outline-text-2" id="text-1">
+We talk about Emacs NYC, organizing your configuration, and more.</p>
+<p><iframe src="//www.youtube.com/embed/I2wOxZOcyD8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" nuan_newframe="true"></iframe>
+
+<p>
+Just want the audio? <a href="http://archive.org/download/EmacsChatHarryRSchwartz/Emacs_Chat-Harry_R_Schwartz.mp3">MP3</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Transcript</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+<b>Sacha Chua</b>: All right. I'm Sacha Chua, and thank you for joining us for another episode of Emacs Life, where we talk to actual Emacs geeks. Today we're talking to Harry Schwartz, who is one of the organizers of Emacs in New York City (or EmacsNYC)&#x2013;which is actually really awesome and has been posting videos of their talks.
+</p>
+
+<p>
+Hello, Harry. Who are you?
+</p>
+
+<p>
+<b>Harry Schwartz</b>: Sacha. I'm Harry Schwartz, as you said. I'm the organizer for EmacsNYC. I'm also a developer at Thoughtbot which is a Ruby on Rails consultancy, located in Boston, New York, and other bunch of other places.
+</p>
+
+<p>
+<b>Sacha</b>: And sponsoring the EmacsNYC Meetups. Thank you very much, Thoughtbot.
+</p>
+
+<p>
+One of the things that we like also digging into is the non-Emacs, non-tech lives of people. Apparently you have nine houseplants?
+</p>
+
+<p>
+<b>Harry</b>: They live right here next to me, as you can see. They need watering mostly. They're good.
+</p>
+
+<p>
+<b>Sacha</b>: What else are you interested in?
+</p>
+
+<p>
+<b>Harry</b>: Let's see. Quite apart from all the computer stuff which is “boring,” I read extensively. I run sometimes. I do all kinds of silly things. I go to far too many meet-ups. That's the predominant thing in my life right now.
+</p>
+
+<p>
+<b>Sacha</b>: Are you the kind of person who organizes a lot of meet-ups, or you tend to go to a lot of meet-ups, and you're like, “Hmm, you know what this this world really needs? An Emacs Meetup.”
+</p>
+
+<p>
+<b>Harry</b>: Exactly. I find myself completely overwhelmed by the schedule of all the meet-ups I want to attend, and I think, “I should add more! That's a good idea.” I'm running the Emacs Meetup, and also I run a Ruby Project Night in New York. We just had our first meet-up on Monday, actually. That's been very good.
+</p>
+
+<p>
+<b>Sacha</b>: Meetup.com lists so many events and it's amazing to see the kind of variety of topics that are out there.
+</p>
+
+<p>
+Emacs. What got you interested in Emacs in the first place?
+</p>
+
+<p>
+<b>Harry</b>: Let's see. In the very first place, when I was a young lad in high school, I had this broken-down old computer that I somehow managed to get Linux on. I thought I should learn one of these editors for it. By purest happenstance, I stumbled across some article about Emacs and thought “Ah! I'll learn that.” So I did. I started learning that and I’ve more or less been with it ever since, actually. I had a brief flirtation with vi in grad school for a year or so, but that passed.
+</p>
+
+<p>
+<b>Sacha</b>: Okay, you started learning about it in high school, but what sorts of things kept you into it? Were you coding right away? What were you playing around with that got you interested in it?
+</p>
+
+<p>
+<b>Harry</b>: I was actually a terrible Emacs user for a very long time. I used it more or less as a notepad with syntax highlighting. It was pretty sad. Then fairly late, maybe five or six years ago, I started really digging into it and was like, “I should learn to use this like a real text editor.” So I did. I've always been really into Lisp. I learned Common Lisp in college, and that was a lot of fun. When, suddenly, all the pieces clicked together, I realized, “Oh, I can write Lisp, and I can be really fussy about my text editor. This is great! This is going to be a lot of fun!” So I did that.
+</p>
+
+<p>
+<b>Sacha</b>: Go ahead.
+</p>
+
+<p>
+<b>Harry</b>: Well then of course I learned about Org Mode, Magit, and all the other thousands of wonderful packages&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: That's actually a really encouraging sort of evolution because a lot of people feel, oh, they're not really using Emacs as they're just using it without customizing it, or Lisp is scary.” And you have been okay with using it just as it is for a long time, and then realizing you got into Emacs customization because you already knew Lisp and you were comfortable with it. This is something that you can apply to it, that's actually a fairly unusual path. A lot of people go to it the other way around. They start customizing it and they're like, “Okay, parentheses. I can deal.”
+</p>
+
+<p>
+<b>Harry</b>: It's amazing how many different approaches people take to getting into Emacs. I've known a number of people who have gotten into it just for Org Mode which is – I mean I get it, Org Mode is awesome but I'm surprised that they learned Emacs for that purpose alone. Of course there are all kinds of other purposes too [inaudible]. I just want to read Clojure and I've got an editor of [inaudible]. [Inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: Yes. When it came to learning how to customize Emacs, now you have a blog post about it, you have the video recording of your talk at the EmacsNYC, but how did you start learning it? You had the background of Lisp that you could take advantage of, but what other resources did you find helpful when you're learning Emacs?
+</p>
+
+<p>
+<b>Harry</b>: Let's see… When I first got started, well, I kind of had some ideas that there were these people out there that were really good at the Emacs, and that I should probably figure out what they were doing. So I started looking at blog posts that were tips about Emacs because I didn't know what I didn't know. I thought I’d try and find some [inaudible].
+</p>
+
+<p>
+I remember, early on, I stumbled across Steve Yegge’s post of ten things that you have to do. Remap Caps Lock to Ctrl, which of course you have to do right now. I can't use anyone’s keyboard that doesn't do that. Let's see what else that's there. C-w, the backward-kill word and other things like that I still use. That's super helpful. And then just a number of other things like that. Just Googling around for lists of tricks, StackOverflow folks, all kinds of little things. Eventually, it all gelled into a coherent whole. [inaudible]
+</p>
+
+<p>
+<b>Sacha</b>: Exploring blog posts and StackOverflow tips and all these other stories, I guess, about how people are using it, and configuration snippets. Now with so many people in the meetup, you can just bounce ideas off each other, look over other people's configs. How large is the EmacsNYC membership?
+</p>
+
+<p>
+<b>Harry</b>: There are well over 100 people in the Meetup group, but as anyone who follows meetups knows, those numbers are basically fake. In practice, we get 30-40 people at the meetup. Sometimes fewer, rarely more, but still!
+</p>
+
+<p>
+<b>Sacha</b>: Wow. I think my first experience of being around a lot of Emacs geeks was at that Emacs Conference that they had in London. It was just amazing that you could actually have more than one other person who uses Emacs in a room.
+</p>
+
+<p>
+<b>Harry</b>: Man. When are we doing another one of those, by the way?
+</p>
+
+<p>
+<b>Sacha</b>: Apparently when someone steps up to organize it. Hint, hint.
+</p>
+
+<p>
+<b>Harry</b>: If only a major city would be a good bet for at.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Somewhere where people don't immediately think “winter.”
+</p>
+
+<p>
+<b>Harry</b>: Great! Canada, hey. I don't know about that, but we'll see. It sounds like an awful lot of work. I don't want to completely rule it out.
+</p>
+
+<p>
+<b>Sacha</b>: It's only about twice the size of your regular meetup. You can do that, right?
+</p>
+
+<p>
+<b>Harry</b>: I can do it [inaudible]. We'll see.
+</p>
+
+<p>
+<b>Sacha</b>: Although now with London also having quite active meetups, it will be interesting to see how many more people will come out and share tips and swap. But also even just connecting online&#x2026; I love the fact that you're posting videos. Being able to catch up on all these really cool talks&#x2026; I think that's great.
+</p>
+
+<p>
+By the way, if people are listening to this and have not actually seen one of these videos yet, <a href="http://emacsnyc.org">EmacsNYC.org</a> has lovely, lovely recordings. More than that, I really like how you've put together this list of suggested topics, things that you're curious about. Have you had a lot of people step up and say, “Yes, I could do a talk about that.”?
+</p>
+
+<p>
+<b>Harry</b>: Yes, we've got a number of folks. We have the next few meetups booked. There's no big risk of speakers. It's a little scary for this month and I haven't actually posted this month yet because we've had speakers who had to cancel at the last minute. So, someone else immediately steps up. We're all set for a little while.
+</p>
+
+<p>
+When I first started the meetup group&#x2026; When you join the group, it asks some questions, as groups do. This one says, in particular, "Are you interested in giving a talk? Do you have any ideas on what you'd be talking about?” It also says, "What's your experience level?" I wrote that list of suggested topics because so many people will join a group and then they'd say, “What's your experience level with Emacs?” “Intermediate. I've been using it for 26 years.” “Is there anything you would like to talk about?” “Oh, I don't know. I don't think I know much of anything.” It's like, “Of course you do! Of course you do.” “[inaudible]. Just tell me about that.” So we get a number of things like that, so I thought I should make a list of topics because I don't think people realize how much they know and how much they can share.
+</p>
+
+<p>
+<b>Sacha</b>: For sure. That's awesome.
+</p>
+
+<p>
+<b>Harry</b>: Yes. That's a nice way when someone says, “Hey, I'm interested in speaking. I'll be good for this.”
+</p>
+
+<p>
+<b>Sacha</b>: Yes. So what's the experience mix like? Is it mostly intermediate people who have been using Emacs for 26 years? Beginners? What's the range like?
+</p>
+
+<p>
+<b>Harry</b>: Well, everyone classifies themselves as intermediate. That doesn't mean anything. But yes, we have a number of people who are fairly rookie, which is terrific, and of course we have a number of people with large full beards that got into fights with Richard Stallman back in the day. It's terrific too. It's a pretty good mix.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. It's amazing to see how diverse the community is in terms of why people get into it, why people stay in it, and what people are exploring. We're going to the exploring bit a little later because I'd love to see how you've configured your Emacs and hear your stories about what you've tweaked it to do. But for other people who are considering starting an Emacs Meetup, what was the process like for you? Did you already know a lot of Emacs users before that?
+</p>
+
+<p>
+<b>Harry</b>: Nope. Not at all. A little backstory. Thoughtbot is a company where almost everyone uses Vi. It's very Vim-centric shop&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: And you still got them to sponsor it. Wow!
+</p>
+
+<p>
+<b>Harry</b>: Yes, I know! Right? They're great at sponsoring [inaudible]. That's been super helpful. I was an Emacs guy, and there was one other Emacs guy who happened also to be at the New York office, and it was Eric Collins, my co-organizer. One day we sort of thoug, “You know, we should really be an Emacs group. We should just have an Emacs group.” “Well, we could just start one. How hard is it to make a Meetup group? Just a few clicks on a website, right?” It's a little bit more complicated, but not that much more complicated.
+</p>
+
+<p>
+What you need are: Some kind of web presence. Either you have a Meetup.com group, or a real website – we actually do both just because some people don't want to be on Meetup. That's fine. You need food, almost always. Food is a big draw. If you're going to host a meetup at a dinner time, you need food. It's true. We usually do pizza because pizza is the canonical meetup food. That works pretty well. You need some kind of space. In our case, Thoughtbot works out of a company called [inaudible] which is a coworking space, and they're perfectly happy to host meetups to get people in to check it out. That worked out perfectly too.
+</p>
+
+<p>
+If you want to go the extra mile and record them, which you totally should, you just need some kind of camera, and ideally some good audio. You also need someone with video production experience. In our case, Thoughtbot has our very own in-house producer because Thoughtbot produces a lot of educational content. Tom Obarski produces each and every one of our videos. I can get up all of our raw files, send them to him and say, “Please, please make this video,” and he comes out with something awesome everytime. He has been a terrific help.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. You've got a website, you've got food, you've got a venue, and you've got a fantastic video person.
+</p>
+
+<p>
+<b>Harry</b>: Exactly. That last one is a little bit harder to find, but the first three [inaudible]. It's not as hard as you might think it is to start one.
+</p>
+
+<p>
+<b>Sacha</b>: Okay.
+</p>
+
+<p>
+<b>Harry</b>: I highly recomemnd it.
+</p>
+
+<p>
+<b>Sacha</b>: I probably shouldn't ask you how much time it takes, but just to let people know what they're getting into, how much time does it take you to organize things given that you have an easy venue sorted out?
+</p>
+
+<p>
+<b>Harry</b>: It's really not that bad. In the very beginning, when I was getting the site together, wewere planning out how we're going to do stuff, that was some fairly significant time. I'd say I probably put in 10 or 20 hours all told, setting stuff up. That's also giving the talk for the first one. So that&#x2026; 30 hours. But after that, really, it's coordinating a speaker, which is maybe half an hour per meetup. It's not bad. Updating the website, sending off the videos, really, the time commitment is probably a couple of hours per meet up. Not bad at all. Plus the meetup itself. You get there a little early, set up the AV stuff. There's a little trivial stress about that, but it's not that bad.
+</p>
+
+<p>
+<b>Sacha</b>: So I guess you'll be checking out the Meetup API and figure out how to interface to it from Emacs.
+</p>
+
+<p>
+<b>Harry</b>: You can actually. Yes. You can actually just [inaudible]. Maybe I should just clone that. Right now I'm mirroring it like a sucker. I have this really simple website set up with Jekyll, Markdown&#x2026; I keep thinking maybe I should just build a little app. I happen to work at this Rails consultancy and I happen to do Rails all day, so maybe I could just do that.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. So now if anyone else wants to start a meetup, they can just clone your Jekyll repository off Github and have at it.
+</p>
+
+<p>
+<b>Harry</b>: You really can with all that stuff available online. Feel free to download it and run with it.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. Not scary, definitely worth it. Sounds like you guys are having tons and tons of fun.
+</p>
+
+<p>
+What kinds of tips are you picking up from the talks so far? Give us a quick summary of the ones that you've been having.
+</p>
+
+<p>
+<b>Harry</b>: All amazing stuff. In the most recent one, we did basically LOGO in Emacs. Our speaker had implemented his own version of turtle graphics inside of Emacs. Turtle graphics, for those who don't know, are when you have a turtle and it sort of has a pencil attached to its tail. It can either raise or lower the pencil, and it can walk in a direction for a given distance. At a certain point it can make a turn, at certain angle. If you have this turtle on a piece of paper, you can draw pretty much anything. You can do line drawings with arbitrary complexity.
+</p>
+
+<p>
+So he implemented turtle graphics in Emacs. Part of that involved generating an EPM file and then displaying it on the fly, which you can just do with 10 lines of Elisp, which I hadn't even heard about. It was awesome. [inaudible].
+</p>
+
+<p>
+For me personally, the thing that's probably most changed in my workflow is we had a really excellent talk on Evil Mode and I decided to check that out again. I had fooled around with that a while ago, and kind of decided, “It isn't for me. I don't think I need this.” But I was prompted to give it a shot again. This time it took. So now I'm using Emacs with Evil Mode. So I'm using the most complex editor you can possibly use. It's wonderful.
+</p>
+
+<p>
+<b>Sacha</b>: It's becoming increasingly popular, especially with a lot of people switching over, or really just because Evil Mode has built a lot of that movement into it, that kind of, “Okay, do this over this span of text.” It works out really well for a lot of people. 
+</p>
+
+<p>
+<b>Harry</b>: Look at this. They've supported registers. Man, oh man! [inaudible] editors. But that's pretty cool.
+</p>
+
+<p>
+<b>Harry</b>: That's been a big change in my [inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: Well, I'd love to&#x2026; Perhaps if you want to share your screen and take us through your config or how you use Emacs, you can demonstrate some of the things that you like the most about Evil Mode and other things you've configured.
+</p>
+
+<p>
+If you hover over at the left side of your Google Hangouts window, you should see a green screen-sharing icon that looks like a monitor with arrow on it. You can use that to share your window.
+</p>
+
+<p>
+<b>Harry</b>: Okay. I should let you know that I'm already upset with you.
+</p>
+
+<p>
+<b>Sacha</b>: Why?
+</p>
+
+<p>
+<b>Harry</b>: You've made me sign up for a Google Plus account. I've been avoiding this for so long.
+</p>
+
+<p>
+<b>Sacha</b>: Sorry.
+</p>
+
+<p>
+<b>Harry</b>: It's fine. [Inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: You can un-sign-up for it right after, I guess.
+</p>
+
+<p>
+<b>Harry</b>: [inaudible]. I certainly will. I'm a grumpy old man. There we go. I got all kinds of stuff in here.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, you do. This is wonderful. In fact this is an excellent opportunity to point out that thing that I noticed right away when I was reading your configuration file off Github. You organize your file with all these functions. Then at the end, you call all the functions, which is an interesting pattern. In the pre-interview, you said that you had strong opinions about this, so please feel free to share your strong opinion.
+</p>
+
+<p>
+<b>Harry</b>: Very strong opinions about this. In my day job&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: Sorry, can you increase the font size a little bit so people can see that? Perfect.
+</p>
+
+<p>
+<b>Harry</b>: Better? In my day job, I write Ruby all day. That's what I do. In the Ruby world, it's considered good practice not to really use comments. Instead, it's suggested that when you have something that wants commenting, you probably have a method that's too long or a class that's too long, and you should probably break that into small parts and give it some kind of useful name. Comments&#x2026; People often say that comments are just lies waiting to happen.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I can see that.
+</p>
+
+<p>
+<b>Harry</b>: Yes. Something will change your code, and you'll forget to change your comment. Now you have this comment which is lying to you. People will try to read your comments to get some sense of your code and it'll be a disaster. If you break this up into small named methods without comments, like treat-camelcase-as-separate-words, that pretty well tells you what that function does, but it also is evaluated. If I change that, then it will throw an error at me. It will call me on it. [Inaudible] because it combines the convenience, it combines the clarity of comments with the certainty that it will never break.
+</p>
+
+<p>
+<b>Sacha</b>: This prevents you from being tempted to change the implementation in such a way that it drifts from what's described in the function name because you still have to update the function call later on also.
+</p>
+
+<p>
+<b>Harry</b>: Exactly, which is especially what I think is odd in Emacs [inaudible]. I use a couple of comments, but that's okay. I think that's interesting from the perspective of Emacs, just because in the Emacs community, we have Org Mode. So there's a lot of interest in literate programming, and especially in literate configs. I see those all over the Internet and I think they're super cool to read through, but I keep thinking: "What happens if you change them?" That must be a mess. I'm not sure. I feel a little bit better about this.
+</p>
+
+<p>
+<b>Sacha</b>: Well, it's always good to have different patterns to choose from. Literate programming might work really well for some people, and this kind of also literate programming, in a sense, because you've got the descriptions in there, but it's coded in, might work really well for other people. It seems to be working really well for you.
+</p>
+
+<p>
+<b>Harry</b>: I'm certain. I don't mean to say that's not a good approach, but that's a [inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: Very cool. And you've got a whole bunch of things in here. You've got ido and smex&#x2026;
+</p>
+
+<p>
+<b>Harry</b>: Yes. I've got ido-mode running which gives me all these vertical [inaudible]. My computer got snippy. Every now and then that happens.
+</p>
+
+<p>
+<b>Harry</b>: Getting to be an old machine. But yes, I have ido mode, and I have a vertical version for that. [Inaudible]. Let's see. Obviously I have the visual bell. There's all kinds of stuff that I do. We can run through the list here.
+</p>
+
+<p>
+<b>Sacha</b>: There's a pi in your mode line. What's that about?
+</p>
+
+<p>
+<b>Harry</b>: Oh yes, that. There's a really cool thing you can do. What is it called? I think I have that in lisp ui? Yeah, probably. So there is a certain thing that you can do to – if you're [inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: The downsides of having a config in lots of little files.
+</p>
+
+<p>
+<b>Harry</b>: I know, right? It's all coming back to bite me now. There's a particular trick that you can do. It's called diminishing mode, I think.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I remember that.
+</p>
+
+<p>
+<b>Harry</b>: I wonder [inaudible]. Ah. All the archives are here. What a disaster.
+</p>
+
+<p>
+<b>Sacha</b>: That's okay. You don't have to track it down. It's a symbol for diminish mode, which at some point you will [inaudible].
+</p>
+
+<p>
+<b>Harry</b>: [inaudible] that's where I have it.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, paredit. That makes sense.
+</p>
+
+<p>
+<b>Harry</b>: Here we go. Here we are. I use diminish-minor-mode, which is an awesome mode. When you have a whole bunch of things here in your mode line that you don't really need in the mode line, you can use diminish mode to make them shorter and [inaudible]. In my case, I also use Unicode characters in here. Haskell-mode is lambda=, Lisp mode is lambda. I use pi for paredit mode. I use fancy lambdas in here too, which is a fun trick. 
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I saw your config to font-lock that in.
+</p>
+
+<p>
+<b>Harry</b>: It's kind of silly, but it entertains me.
+</p>
+
+<p>
+<b>Sacha</b>: Cool. Sorry, I got distracted by interesting things in mode lines.
+</p>
+
+<p>
+<b>Harry</b>: Sure, no problem.
+</p>
+
+<p>
+<b>Sacha</b>: What are the highlights of your config? What are you really happy about having configured?
+</p>
+
+<p>
+<b>Harry</b>: Let's see. I do love the mode-line thing. I just set this up, which is every time I create a file that is in a directory that doesn't exist, it prompts me to create it. That's wonderful. I think a bunch of [inaudible]. I don't think there's a lot of really cool stuff in my dot files. I use cask to manage dependencies which is just the best [inaudible]
+</p>
+
+<p>
+<b>Sacha</b>: It's cutting in and out audio-wise, oh no!
+</p>
+
+<p>
+<b>Harry</b>: Oh no!
+</p>
+
+<p>
+<b>Sacha</b>: Okay, we're back at least temporarily. Okay, cask, okay.
+</p>
+
+<p>
+<b>Harry</b>: Cask, of course. Snippets. I don't think there's really that much in here that's crazily different.
+</p>
+
+<p>
+<b>Sacha</b>: I think that because you spend all your day working with Rails, you probably have a pretty nifty setup. I'm not sure if you can quickly spin up a project to show us how you interact with everything and how it all works?
+</p>
+
+<p>
+<b>Harry</b>: Sure. First of all, I'm just showing my config for this, I use chruby to switch between [inaudible]. rcodetools is an awesome tool that I learned about Avdi Grimm and his many wonderful blog posts about it. Rcodetools supplies xmpfilter, which is a tool that you can use in Ruby to, given special comments, run the code in the buffer and then display the output. Yes, super nice.
+</p>
+
+<p>
+Actually, I think I was just fooling around with something. I was implementing a tool to do static typing in Ruby, like to verify your type signature. This is just a tool that I'm just fooling around with. This will never be released or anything, but it's a really fun thing to do. If I change something here&#x2026; Suppose I add 7 and 7 and run C-c C-c, it gives me the output here.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, it updated the comment to add that.
+</p>
+
+<p>
+<b>Harry</b>: Exactly. All you need to do is [inaudible] comment, C-c C-c and then the value is listed.
+</p>
+
+<p>
+<b>Sacha</b>: That's really nifty. I heard from Avdi that he uses it for writing blog posts, books, and things like that. Do you write a lot as well, or are you just using it for just personal evaluation?
+</p>
+
+<p>
+<b>Harry</b>: For just evaluation of coding?
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Harry</b>: Yes. For xmpfilter, I pretty much only use it for code. I write in Emacs, of course, but I don't think I use any special tooling. I use Org sometimes and Markdown sometimes, but nothing specially interesting.
+</p>
+
+<p>
+<b>Sacha</b>: What's the name of this thing again that you're using to update that?
+</p>
+
+<p>
+<b>Harry</b>: It is xmpfilter. gem install rcodetools if I remember correctly.
+</p>
+
+<p>
+<b>Sacha</b>: Cool. Xmpfilter and gem install rcodetools. I should check that out. It does look kind of handy.
+</p>
+
+<p>
+<b>Harry</b>: It is super handy. I never use irb any more, basically, because I can just run things in here, or pry for that matter. [Inaudible] mode that you can [inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: This kind of interactivity, being able to try things out while you're coding, is certainly becoming a lot more popular. You mentioned you work with Clojure as well, right?
+</p>
+
+<p>
+<b>Harry</b>: I work with a little bit of clojure. I'm technically a Clojure noob, but that's something I've been playing with a little bit more.
+</p>
+
+<p>
+<b>Sacha</b>: I've been working on learning Clojure too. The availability of all these REPLs (or read-evaluate-print-loops) to try things out right away, or even as you're coding to just execute it and have it in the buffer like the way eval-last-sexp works&#x2026; It's just amazing.
+</p>
+
+<p>
+<b>Harry</b>: I know. Isn't that terrific? I use Cider mode for doing Clojure. Back when I used to write Common Lisp in school, I used Slime a lot for that. Slime is sort of the granddaddy of those modes, I think. It's a really cool tool. I could probably barely remember how to use it these days any more since it's been so long, but at the time, it was awesome.
+</p>
+
+<p>
+<b>Sacha</b>: So there's Ruby. There's a little bit of Clojure. You mentioned Haskell–-I think I saw that in your config&#x2013;and Python.
+</p>
+
+<p>
+<b>Harry</b>: Yes, a little bit of Haskell. I have so many languages that I want to really get into, but I'm sort of just dabbling around. That's unfortunate. Sadly, Haskell falls into that category.
+</p>
+
+<p>
+<b>Sacha</b>: That's cool. It's fun to dabble and explore. Anyway, going back to Rails&#x2026; You use rcodetools. Rinari, I guess, for the navigation?
+</p>
+
+<p>
+<b>Harry</b>: Yes. Let's se,e what else do I have here. I use Rinari, which is terrific. Rinari is a minor mode for Rails applications. It lets you skip around between controllers, views, and models, all very, very quickly. It's sort of equivalent, for Vim users, to Rails.vim, which is a great plugin. It just lets you move around and create things very quickly. It's really aimed for that.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. Do all those modes work really well with evil mode, or do you have to remap things to get everything to make sense?
+</p>
+
+<p>
+<b>Harry</b>: Almost everything works very well. There were in the beginning a couple little things that made me crazy, but mostly it's not too bad. I think I have a whole bunch of mappings. Not too many. I map C-p to projectile-find-file just because C-p is a popular Vim plugin. I find myself using Vim a lot on other people's computers. Thoughtbot pairs a lot.
+</p>
+
+<p>
+<b>Sacha</b>: How does that work? When you're pairing with other people&#x2026; I guess because everyone else uses Vim, you're just like, “Okay, I'll get along with using Vim.”
+</p>
+
+<p>
+<b>Harry</b>: Yes. When I'm using other people's configuration, I just sort of suck it up and use Vim. It's not that bad. I can use it. It's fine.
+</p>
+
+<p>
+<b>Sacha</b>: Do you ever get to pair with Eric because he uses Emacs too?
+</p>
+
+<p>
+<b>Harry</b>: I do, yes. We pair together very often.
+</p>
+
+<p>
+<b>Sacha</b>: What's it like?
+</p>
+
+<p>
+<b>Harry</b>: It's a lot of fun. Pairing in general is&#x2026; Structured pairing, we each have our own monitors, we each have our own keyboards, but those monitors are plugged into one machine. That's a nice way to do it, I think. It's pretty swell. We just have enough differences in how we configure things that sometimes we drive each other a little bit crazy.
+</p>
+
+<p>
+<b>Sacha</b>: Are you both in Evil Mode?
+</p>
+
+<p>
+<b>Harry</b>: I only switched to Evil Mode a couple months ago and I haven't paired with Eric since then. He is in for a surprise. For the last few months, I've been teaching at a Rails bootcamp. It's one of my company's clients. Just been all teaching all the time. I've actually written very little code lately. It's a shame.
+</p>
+
+<p>
+<b>Sacha</b>: That should be interesting. One of the other things we often hear from people is that they're worried about customizing their configuration because when it comes to pairing with other people, it's just a little bit of a, “Okay, wait. It's actually this key,” or a different way of working. It can be a challenge, I hear.
+</p>
+
+<p>
+<b>Harry</b>: It can be, sometimes, but it's also just terrific. Eric does things with his config that I don't do at all. Eric uses ERC to get into IRC. He did a talk about that, actually. It's available on <a href="http://EmacsNYC.org">EmacsNYC.org</a>. He uses ERC for IRC and I don't, but I'm sort of playing with it a little bit. I'm starting to use it more, at his prompting (or I was when we still worked side by side fairly often). But yes, it's a great way to get exposed to new different things. If you're pairing with someone, man, you learn so much so fast about they configure things.
+</p>
+
+<p>
+<b>Sacha</b>: For sure. What are some of the other interesting tips you've picked up from watching him work, or working with him while pairing?
+</p>
+
+<p>
+<b>Harry</b>: Let's see. We've had all kinds of fights about things. One thing that I use that he doesn't use&#x2013;I need to get to a non-Lisp mode for this, let me use my typechecker here&#x2013;I have M-up and M-down bound to drag a line around, and he didn't. He saw me do that and he was like, “What are you doing? How are you doing that?” I said, “Oh, man, this is great. I just figured this out.” There are all kinds of silly little things that you'll get used to, and when you're in the little world of your own configuration, you lose track of what you did is cool and sometimes miss out on other people if it's cool.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. That's one of the reasons why I really like people either presenting stuff or even just recording screencasts of them doing something. Then when they're doing something, sometimes it's just this little thing they take for granted that you're like, “Holy cow! What is that?” It's just watching over someone's shoulder as they're working, and seeing all these things that you didn't even know could be done, or didn't even think of looking for.
+</p>
+
+<p>
+<b>Harry</b>: Exactly. Right? I love pairing for that. It's so rare that you get to fool around with someone else's configuration. Everyone posts their dot files now, it seems like, but when you're looking at some dot files, you're not really&#x2026; it's like looking at sheet of music. It doesn't really give you an idea of how it sounds in operation. It's just not the same thing. Yes, pairing of people, it's terrific.
+</p>
+
+<p>
+<b>Sacha</b>: The dragging of the lines is one thing that people have noticed about your configuration. Has Eric or have other people flagged anything else as, “Holy cow! How do you do that?” or other interesting snippets that are in your config?
+</p>
+
+<p>
+<b>Harry</b>: Let's see. I have a lot of odd keybindings I have in here. So many.
+</p>
+
+<p>
+<b>Sacha</b>: No kidding.
+</p>
+
+<p>
+<b>Harry</b>: Let's see. Multiple cursors [inaudible]&#x2026; If you've seen that in operation&#x2026; Let's see if I can remember [inaudible]. If you do [inaudible] cool stuff at multiple cursors. Let's see. Expand-region, that's kind of a neat one. I haven't used that recently, just because using Evil Mode doesn't make it too necessary, but it's still quite slick.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. That's expand-region at work.
+</p>
+
+<p>
+<b>Harry</b>: Yes. Pretty cool plugin, pretty cool package. I do this, which I think is just a good thing. I found that every time I split a window, what I really mean to do is split a window and then switch to the other window. That's just a trivial improvement.
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Harry</b>: The dragging of keys&#x2026; I have M-n to capture a todo. I use Org for some TODO management. I don't do it as much now as I used to, but I used to use Org Mode for TODOs very extensively.
+</p>
+
+<p>
+<b>Sacha</b>: What are you moving to instead?
+</p>
+
+<p>
+<b>Harry</b>: Well, funny thing. I used Org Mode very extensively when I lived in Boston. I only moved to New York about seven months ago. In Boston, most of the trains have cell reception. If I'm typing on my smartphone, I can type in a task and use an application called Drafts in iOS to append that to a file in Dropbox, which is where I save my dot files. That was terribly convenient if you're into GTD, ubiquitous capture. If I wanted to take note of something that's happening on me on the train, oh boy, it's so easy to do it. [Inaudible]. I could just type a little message, send it off, and that would be appended to a file.
+</p>
+
+<p>
+In New York, the cell reception on trains is not quite as good, and that's kind of been the tiny little thing that it took me to move away from Org Mode. Such a small thing. 
+</p>
+
+<p>
+What I'm using now is pencil and paper. I have a terribly cheap little
+notebook that has a lot of todos. It's approximately the old journal
+style, but it's not really, just totally fine with that little thing.
+But that's been working almost as well. I wasn't using Org Mode. I
+wasn't using many very advanced features of Org Mode, so that's why it
+was so easy to make the switch, I think.
+</p>
+
+<p>
+<b>Sacha</b>: I still often write little things on paper, but then I use
+Org to do long-range planning, the things I'm going to forget.
+</p>
+
+<p>
+<b>Harry</b>: Yes, [inaudible]. I have a weekly review period where I go through it and move things around on lists. I haven't lost track of most things. Every now and then, but that's my own fault.
+</p>
+
+<p>
+<b>Sacha</b>: It looks like you're doing a quite fair number of other
+things inside Emacs as well. You do your own mail inside Emacs? Does
+that still happen?
+</p>
+
+<p>
+<b>Harry</b>: Sometimes.
+</p>
+
+<p>
+<b>Sacha</b>: You don't have to demonstrate it because mail can be a funny thing, but it's interesting to see mu4e in there.
+</p>
+
+<p>
+<b>Harry</b>: Yes. I can play with mu4e. As part of my ongoing “getting off Google” project, I've been using mu4e for my email. I use FastMail, and that syncs very nicely because they use real IMAP and all that. Yes, mu4e isn't too bad. I haven't used terrible extensively, but so far so good.
+</p>
+
+<p>
+<b>Sacha</b>: And you mentioned ERC. Are there other unexpected non-programming things that you tend to do with Emacs that other people might be surprised by or say, “Oh, I didn't know a text editor could do that!”
+</p>
+
+<p>
+<b>Harry</b>: Well, let's see. I use Magit for Git. It's just amazing. Obviously, I use a terminal inside Emacs, which is also terrific. I don't think I do that many things that are that amusing.
+</p>
+
+<p>
+<b>Sacha</b>: This is the problem that you described earlier! “Oh, I've been using Emacs for 26 years but I don't really know what I can talk about.”
+</p>
+
+<p>
+<b>Harry</b>: You know, I'm just an intermediate user. Actually, I have one thing that I have been playing with, which is&#x2026; I built a search mode. Foo bar baz&#x2026; if I hit search, it searches.
+</p>
+
+<p>
+<b>Sacha</b>: Okay, so that's browse-url. You basically just type in the keyword, and it uses browse-url to look up?
+</p>
+
+<p>
+<b>Harry</b>: Yeah, that's all there is to it. I wrote a little mode called engine-mode, which had a little macro for creating these guys. I might even have that. Here we go.
+</p>
+
+<p>
+<b>Sacha</b>: Cool.
+</p>
+
+<p>
+<b>Harry</b>: Yes. engine-mode is a little mode I made. It lets you define engines, search engines, and a search string associated with them. So if you're interested in searching a whole bunch of things very quickly from your editor, you can do that that way. If you have some text selected and you want to search for it, then you can do that. That's kind of cool. Or it can just prompt you [inaudible]. So that's kind of a convenient way.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, it's the idea of a command line for the web, right? I see you've got all these different keywords set up so that you can easily search a specific engine.
+</p>
+
+<p>
+<b>Harry</b>: Yes, it's a little bit convenient. That's called engine-mode. It's on MELPA actually. If you want to fool around with that, feel free.
+</p>
+
+<p>
+<b>Sacha</b>: Cool, I think I will.
+</p>
+
+<p>
+<b>Harry</b>: Awesome. By the way, getting things on the MELPA and writing packages, that is not nearly as hard as I thought it would be.
+</p>
+
+<p>
+<b>Sacha</b>: A lot of people think it's like, “Oh, there's a lot of things to do, code to update and whatever.” It's really that you fork it, you copy someone else's configuration, tweak it slightly&#x2026;
+</p>
+
+<p>
+<b>Harry</b>: Right. And then a polite person says, “Oh, hey, you have a little error in your macro here. Here's how you do it.” 
+</p>
+
+<p>
+<b>Sacha</b>: I know! Then he's like, “This is how you make it more Emacs Lisp-style-ish.”
+</p>
+
+<p>
+<b>Harry</b>: It's educational. It's not super hard, and everyone can use your stuff. What a great thing.
+</p>
+
+<p>
+<b>Sacha</b>: Absolutely. So cool. That's probably a good talk for one of your EmacsNYC sessions. Look how easy it is to&#x2026; “Look, I will submit the package to MELPA in real time.”
+</p>
+
+<p>
+<b>Harry</b>: “And Purcell come along and approve it! It will be great!”
+</p>
+
+<p>
+<b>Sacha</b>: There are so many packages in MELPA and the other repositories. It's Christmas everyday. I'm looking at all the stuff that's posted. Have you come across interesting packages and you're like, “Okay, I want to try this out. I want to see what it's like.”?
+</p>
+
+<p>
+<b>Harry</b>: Everytime I go into package-list-packages, I find something that's like, “What is this? How did I not know about this?” I read Emacs Redux, and I see the most amazing things on there. Just yesterday or this morning, I saw a git time machine. Did you happen to see that post?
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I read Planet Emacsen as well. I think he syndicates it, but I'm not sure. Emacs Redux is cool.
+</p>
+
+<p>
+<b>Harry</b>: Sure, yes. git-timemachine. If you're in a file in a git managed repository, you hit M-x git-timemachine and then n and p will take you to the next and previous versions of that file. Amazing! It's so cool.
+Yes. Everyday there's something new and interesting.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I think that feeling of “Amazing! This is so cool!”&#x2013;that's the sort of thing that really gets people a lot deeper into Emacs and keeps people exploring it, learning more about it, and sharing. That's a feeling that I get from watching the EmacsNYC videos. Again, I'm glad that you're sharing that and I can't wait to see what you and the other people will post in the future.
+</p>
+
+<p>
+<b>Harry</b>: We've got a couple of really good ones coming up.
+</p>
+
+<p>
+<b>Sacha</b>: I'm looking forward to that. Along those lines, what other things would you like to do with Emacs? What's on your horizon of Emacs awesomeness?
+</p>
+
+<p>
+<b>Harry</b>: Oh man. I'll tell you what I saw recently. I saw a wonderful talk on Lisp machines and Genera. Did you know about Lisp Machines at all?
+</p>
+
+<p>
+<b>Sacha</b>: I know about Lisp Machines in the abstract. I've never played around with one, but Emacs is pretty darn close to interesting tiny microcosm of one. But Genera, I haven't looked into.
+</p>
+
+<p>
+<b>Harry</b>: Yes, it's amazing. Like 25 years ago, there were these machines that were, like, Emacs the OS, but you can change anything all the way down. You can change running stuff in the kernel through your editor. That's interesting. Exaggerating slightly, but wow! It's pretty powerful stuff. They had this amazing online help system. I want some stuff like that. I want to learn some more about that whole culture. There was a whole Lisp Machine culture, once upon a time, that's sort of gone. I want to learn more about it and see how much of that we can make use of.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. If you have something as powerful and as flexible as Emacs, you'll be able to keep tweaking it and customizing it&#x2013;but to have that power extend all the way down, that would be quite cool.
+</p>
+
+<p>
+<b>Harry</b>: Sure. Obviously you can't really do that these days any more, but still, there's a lot of inspiration in there.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Lisp Machines. It will be really cool if Emacs could do even more of this. Is there anything else on your configuration wish list?
+</p>
+
+<p>
+<b>Harry</b>: Configuration wish list. I can't think of anything off the top of my head actually. The next thing I'd like to do, the next little project I have in mind, is integrating my blog with Emacs a little bit better. I suddenly found myself writing blog posts again lately. It's a bit of a hassle to do it through the command line. I use a tool called Poole, which manages Jekyll posts like [inaudible]. I'd love to have something right there in Emacs where I can hit a certain key combination, and it will pop up a new draft. That's something I'd like to do. I don't think it will take more than about an hour, but I keep putting it off. [Inaudible] should do it.
+</p>
+
+<p>
+<b>Sacha</b>: There seems to be a popular workflow around Org and Jekyll. That might be something to look into.
+</p>
+
+<p>
+<b>Harry</b>: I keep thinking to convert my whole blog over to Org, but the downside is I've got a few hundred posts now. It sounds exhausting.
+</p>
+
+<p>
+<b>Sacha</b>: I don't remember if Pandoc has Org as an output form yet&#x2026;
+</p>
+
+<p>
+<b>Harry</b>: I know. I was thinking about Pandoc. There are still some little things I would need to change. It might do the trick.
+</p>
+
+<p>
+<b>Sacha</b>: But I'm certainly in favor of you doing more writing. Any tools to support that, awesome!
+</p>
+
+<p>
+<b>Harry</b>: Yes, I'd really like to.
+</p>
+
+<p>
+<b>Sacha</b>: If people are interested at finding you, is Harryrschwartz is your domain?
+</p>
+
+<p>
+<b>Harry</b>: Yes. <a href="http://HarryRSchwartz.com">HarryRSchwartz.com</a> is me. Also, of course, <a href="http://EmacsNYC.org">EmacsNYC.org</a> is the website.
+</p>
+
+<p>
+<b>Sacha</b>: Allow me to spell that for people who are listening to the audio and going, “What?” HarryRSchwartz.com.
+</p>
+
+<p>
+<b>Harry</b>: That's right.
+</p>
+
+<p>
+<b>Sacha</b>: That's fantastic. It's got links to your GitHub and where people can find your config, email, LinkedIn, [inaudible] too. Yes, all that lovely stuff.
+</p>
+
+<p>
+<b>Harry</b>: Send me emails and let's go nuts. It will be great.
+</p>
+
+<p>
+<b>Sacha</b>: And if you're lucky enough to be in New York, attend the meetups. You can meet Harry in person and listen (and give!) all these interesting talks.
+</p>
+
+<p>
+<b>Harry</b>: Definitely. We could always use more attendees. That would be terrific.
+</p>
+
+<p>
+<b>Sacha</b>: All right. Thank you so much for sharing your config and your story. Again, also thank you to you and Eric for organizing EmacsNYC and sharing videos which are phenomenal and very, very inspiring. Yes, thanks for being to Emacs Chat as well.
+</p>
+
+<p>
+<b>Harry</b>: Yes, thank you so much for the opportunity. This is terrific.
+</p>
+
+<p>
+<b>Sacha</b>: All right.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="back-to-top"><a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a></div>
+</div>
+</body>
+</html>

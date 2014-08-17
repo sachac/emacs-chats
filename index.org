@@ -21,6 +21,7 @@ Getting to know people who use Emacs
 - [[file:chat-bozhidar-batsov.org][Bozhidar Batsov]] - Prelude
 - [[file:chat-carsten-dominik.org][Carsten Dominik]]
 - [[file:chat-christopher-wellons.org][Christopher Wellons]] - foreign function interface, skewer, impatient-mode
+- [[file:chat-harry-r-schwartz.org][Harry R. Schwartz]] - EmacsNYC, organizing your configuration, pair programming
 - [[file:chat-iannis-zannos.org][Iannis Zannos -- Emacs and SuperCollider]]
 - [[file:chat-janis-mancevics.org][Jānis Mancēvičs]]
 - [[file:chat-john-wiegley.org][John Wiegley]]
