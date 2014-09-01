@@ -11,7 +11,6 @@ Just want the audio? [[http://archive.org/download/20140810EmacsChatMickeyPeters
 
 #+BEGIN_HTML
 <iframe src="//www.youtube.com/embed/JA4dqmDFt5Y" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-</div>
 #+END_HTML
 
 * Transcript
