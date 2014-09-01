@@ -20,10 +20,11 @@ Just want the audio? [[http://archive.org/download/20140810EmacsChatMickeyPeters
 
 *Mickey*: Hello, everyone.
 
-*Sacha*: I've been reading Mickey's blog for ages and ages now and it's always interesting to see how people are learning about Emacs, how people are digging into the advanced features, and becoming better at use in Emacs, but also it's really cool to just meet other people who use Emacs in the first place.
-So before we dig into all things Emacs-related, what else are you interested in? You camera image right now is super fancy and professionally very precise. You have to feel the thing going on here.
+*Sacha*: I've been reading Mickey's blog for ages and ages now. It's always interesting to see how people are learning about Emacs, how people are digging into the advanced features and becoming better at using Emacs. Also, it's really cool to just meet other people who use Emacs in the first place.
 
-*Mickey*: Yes. Basically I hooked up my DSLR camera because I don't actually have a webcam. So instead of having my phone holding out for an hour, it's just not very good.
+So before we dig into all things Emacs-related, what else are you interested in? Your camera image right now is super fancy and professional. You have this depth of field thing going on here.
+
+*Mickey*: Yes. Basically I hooked up my DSLR camera because I don't actually have a webcam. So instead of having my phone holding out for an hour... It's just not very good.
 
 *Sacha*: Okay. Photography is one of your interests.
 
@@ -31,87 +32,100 @@ So before we dig into all things Emacs-related, what else are you interested in?
 
 *Sacha*: What are the other things that you're into outside of Emacs?
 
-*Mickey*: Well, I love cooking. That will be [inaudible] main hobby. Oh, I take it quite seriously as well. The seaweed cooking and all these fancy stuff. I really like cooking, photography and obviously computers. I'm a professional software developer by day, the arts generally. I live in London so there's plenty of things that you can see.
+*Mickey*: Well, I love cooking. That will be my other main hobby. Oh, I take it quite seriously as well. Sous vide cooking and all this fancy stuff. I really like cooking, photography, and obviously computers. I'm a professional software developer by day. The arts, generally. I live in London, so there's plenty of things that you can see.
 
-*Sacha*: Yes. [inaudible] to do and see and even an Emacs meetup to go to [inaudible] and cooking, I remember seeing some of those ORG mode mailing list discussions about using Emacs in cooking.
+*Sacha*: Yes. Plenty of things to do and see, and even an Emacs meetup to go to (for which we are very envious). And cooking! I remember seeing some of those Org Mode mailing list discussions about using Emacs in cooking.
 
 *Mickey*: Really? That's interesting.
 
-*Sacha*: Yes, because it's easy of course to store recipes in there and if you have your recipes in tables, then you can do some fancy things with some measurement, combining ingredients for multiple recipes and so forth.
-I'm into cooking as well but clearly not as meaty as you are in terms of [inaudible].
+*Sacha*: Yes, because it's easy of course to store recipes in there. If you have your recipes in tables, then you can do some fancy things with units of measurement, combining ingredients for multiple recipes, and so forth. I'm into cooking as well but clearly not as geeky as you are in terms of sous vide.
 
-*Mickey*: [inaudible] how it is. The great thing about cooking is that you don't need a whole lot to get started, you just need some good ingredients.
+*Mickey*: Oh, you know how it is. The great thing about cooking is that you don't need a whole lot to get started. You just need some good ingredients.
 
-*Sacha*: Yes. And speaking of getting started in ingredients, how did you get into Emacs in the first place? I saw the story briefly on your blog about being told by someone that Vim is the one true editor and therefore being stubborn about – you've been going off – tell me the story.
+*Sacha*: Yes. And speaking of getting started and ingredients, how did you get into Emacs in the first place? I saw the story briefly on your blog about being told by someone that Vim is the one true editor and therefore being stubborn about it and going off... Tell me the story.
 
-*Mickey*: Basically, I think like a lot of people. You expand your mind a little bit when you go to university. So, I studied computer science. The lecturers there were obviously in two camps, or in the Vim or the Emacs camp and everyone's like, “You need to use Emacs. You need to use Vim.” I'm at a point where I haven't made up my mind yet.
-It's hanging out in local computer society where there's no shortage of opinions and everyone is like, “You have to use Vim. If you're not Vim, you're not cool.” Certain definitions of cool anyway. Obviously being the contrarian that I am, I immediately decided to pick Emacs instead. It's actually quite fortuitous that it sort of end up at that point and time, in that computer lab. Otherwise, I would not have been able to use Emacs, I don't think.
-Yes, I picked it up and well, I actually started off with XEmacs, not GNU Emacs because back then, still they're more about contention as to which one was the better one. But I quickly realized that GNU Emacs was the best one. So starting in Emacs 22 or 21.7 or something, I started GNU Emacs and I pretty much remained on that ever since. There aren't that many people who use Emacs back then and I suppose because it has a very big learning curve about it. I guess we'll be talking about that in a moment as well.
-I was completely very happy to stand still, I ended up using Emacs.
+*Mickey*: Basically, I think, like a lot of people, you expand your mind a little bit when you go to university. I studied computer science. The lecturers there were obviously in two camps. You're either in the Vim or the Emacs camp. Everyone's like, “You need to use Emacs." "You need to use Vim.” I'm at a point where I haven't made up my mind yet. So I was hanging out in the local computer society, where there's no shortage of opinions. Everyone is, like, “You have to use Vim. If you're not Vim, you're not cool.” For certain definitions of cool, anyway. Obviously, being the contrarian that I am, I immediately decided to pick Emacs instead. It's actually quite fortuitous that I ende up at that point in time in that computer lab. Otherwise, I would not have been able to use Emacs, I don't think.
 
-*Sacha*: Were you the kind of climbing that learning curve on your own, were there at least a few other people?
+So yes, I picked it up. I actually started off with XEmacs, not GNU Emacs, because back then... Still, there's some contention as to which one was the better one. But I quickly realized that GNU Emacs was the best one. So starting in Emacs 22 or 21.7 or something, I started GNU Emacs, and I pretty much remained on that ever since. Therewearen't that many people who used Emacs back then. I suppose because it has a very big learning curve, but I guess we'll be talking about that in a moment as well.
 
-*Mickey*: Actually, I'm entirely self-taught with Emacs. I never had anyone to teach me Emacs aside from what I could sit and find on the internet. But even Emacs, the community has changed a lot even in five years and back when I started which is about 2003, there's a lot fewer materials out there. It's really just a matter of straightening together bits and pieces here and there. EmacsWiki was around, I think and just sort of playing around with it.
-It's a steep learning curve and I feel there was a long period where I didn't really improve a lot. You're just using the arrow keys, sort of trying to remember the most basic [inaudible], using the menu bar and all that to get around.
+It was completely by happenstance that I ended up using Emacs.
 
-*Sacha*: It was really just the sheer contrarian force of will that got you from the first couple of years by yourself?
+*Sacha*: Were you climbing that learning curve on your own? Were there at least a few other people?
 
-*Mickey*: Oh yes. People would definitely say, “Yes, that's Mickey.”
+*Mickey*: Actually, I'm entirely self-taught with Emacs. I never had anyone to teach me Emacs aside from what I could sit and find on the Internet. But even Emacs--the community--has changed a lot, even in five years. Back when I started (which was about 2003), there was a lot fewer materials out there. It was really just a matter of scraping together bits and pieces here and there. EmacsWiki was around, I think. Just sort of playing around with it.
+
+It's a steep learning curve. I feel there was a long period where I didn't really improve a lot. You're just using the arrow keys, trying to remember the most basic of settings, using the menu bar and all that to get around.
+
+*Sacha*: It was really just the sheer contrarian force of will that got you through the first couple of years by yourself?
+
+*Mickey*: Oh yes. People who know me would definitely say, “Yes, that's Mickey.”
 
 *Sacha*: So you mentioned the EmacsWiki. Were there any other resources that you found really helpful when you're getting started?
 
-*Mickey*: No, not one. Newsgroups, I guess. I see [inaudible] as well which was fairly helpful back then but I didn't really know what to ask for. The thing about Emacs is you need to know what you're looking for. When you don't know what the others can really do, it's hard to go out there and say, “Well, I want to learn how to do this.”
-So I primarily used it for Python. Learning Python, I did as well and you start adding things to it. I start out with outline mode actually until someone told me about ORG mode. You're an expert in ORG mode, so you know what it's like. You go, “Oh, this is a lot better than outline mode.” Then you start doing your timetables, you start estimating your projects, and then it pretty goes by crazy from that on.
+*Mickey*: No, not one. Newsgroups, I guess. The IRC channel as well, which was fairly helpful back then. But I didn't really know what to ask for. The thing about Emacs is you need to know what you're looking for. When you don't know what the editor can really do, it's hard to go out there and say, “Well, I want to learn how to do this.”
 
-*Sacha*: Okay. You're using it for real work like Python and project management and other things. Those are the kind of things I guess that made you curious about what else you can do with it or help you stumble across ideas or features that you could implement.
-I hear you when you talk about how difficult it is to find things when you don't even know what you're looking for. That's one of the things that I really appreciate your blog for, Mastering Emacs is this great source of blog post that make you go, “I have no idea.” Of course, Emacs can probably do something but I have no idea how useful it is that if you do something like that and you do a great job of explaining things.
+I primarily used it for Python. Learning Python I did as well. You start adding things to it. I started out with Outline Mode, actually, until someone told me about Org Mode. You're an expert in Org Mode, so you know what it's like. You go, “Ooh, this is a lot better than Outline Mode.” Then you start doing your timetables in it, you start estimating your projects in it, and then it goes like crazy from then on.
+
+*Sacha*: Okay. You're using it for real work like Python and project management and other things. Those are the kind of things, I guess, that made you curious about what else you can do with it, or helped you stumble across ideas or features that you could implement.
+
+I hear you when you talk about how difficult it is to find things when you don't even know what you're looking for. That's one of the things that I really appreciate your blog for. Mastering Emacs is this great source of blog posts that make you go, “I have no idea--of course, Emacs could probably do something like that, but I had no idea how useful it is to do something like that." You do a great job of explaining things.
 
 *Mickey*: Thank you.
 
-*Sacha*: If you're teaching yourself all of these things and you [inaudible] helping people out of questions, answering maybe occasional – or sharing occasional weird idea or, “Hey, that's so cool!” “I made it.” How else are you finding out more about the interesting things you can do in Emacs?
+*Sacha*: If you're teaching yourself all of these things and newsgroups tend to be focused more on helping people out with questions, answering or sharing the occasional weird idea, or, “Hey, that's so cool! I made this.” How else are you finding out more about the interesting things you can do in Emacs?
 
-*Mickey*: Yes. I think everyone has this linchpin moment where you sort of go, “Now I get Emacs.” Maybe there are all of it because it's a big, big editor but you sort of reach a point where you know how to get more information. Not necessarily but, “Wow!”
-Sacha, you must have gotten to the point out where you're like, “Well, here is a new mode. I kind of know how to install it. Okay, it's made easy with packets advantages.”
+*Mickey*: Yes. I think everyone has this linchpin moment where you go, “Now I get Emacs.” Maybe not all of it. It's a big, big editor. But you reach a point where you know how to get more information. Not necessarily, but “Whoa! Yeah!”
+
+Sacha, you must have gotten to the point out where you're like, “Well, here is a new mode. I kind of know how to install it." Okay, it's made easier with package managers.
 
 *Sacha*: “That's so awesome!” I know.
 
-*Mickey*: I know how to install it, let me play around, I know where to look for the help in it and I know how to list the keybindings, new slide function and all that stuff to help me find out more about things. I got to a point where I'm sort of pretty proficient in it and said to myself, “I want to keep learning more.”
-Everytime I thought I was doing something quite inefficient, I would go out in my way to try and solve that problem in more Emacsy way, which obviously means you get to chart all kinds of crazy things that you can drag into Emacs – email being a good one and that's the multi project that I think a lot of people end up abandoning. Yes, you just start adding, and adding, and adding.
-It was about 2011, just a few years before that, I just started to having an ORG mode file to keep track of what I call blog ideas, or things I would tell other people about. I just started adding thing after thing, after thing to this thing and the list just keeps going.
-Then I have a job where I'm at a [inaudible] and he was trying to learn Emacs, having moved there from Vim. But his means are very different from mine being primarily to a system administrative DBA. He was like all the mxshell, “That looks really cool. How do you start using that?” and he sort of encouraged me to start writing about it actually. That's actually where the blog comes from.
-Just starting to learn more by investigating and exploring. The info manual is actually a great place. Just pick a random topic, read up about it. It's not going to be enough but you start playing around with it and eventually the knowledge improves. Right?
+*Mickey*: I know how to install it. Let me play around. I know where to look for the help in it and I know how to list the keybindings. Use find-function and all that stuff to help me find out more about things. I got to a point where I'm  pretty proficient in it. I said to myself, “I want to keep learning more.”
+Every time I thought I was doing something quite inefficient, I would go out of my way to try and solve that problem in a more Emacsy way, which obviously means you get to chart all kinds of crazy things that you can drag into Emacs--email being a good one. That's the multi-year project that I think a lot of people end up abandoning. Yes, you just start adding, and adding, and adding.
 
-*Sacha*: It's good bedtime reading, and you know it's something, everytime you go through it, maybe it's also because that people keep adding things. Then once you're done with the info manual, you can read the help files, the other info manuals for other packages, you can then end up reading a source code and you lack about the interesting functions people have written and you're like, “Oh, if I take this and this, and I switch it together, I get something that pretty and new.”
+It was about 2011, just a few years before that, I just started having an Org Mode file to keep track of what I called blog ideas, or things I would tell other people about. I just started adding thing after thing after thing to this thing. The list just keeps going.
 
-*Mickey*: Well, I think that's the big problem as well with the info manual which is a great job sort of giving you basic expositions saying, “Well, here is what this is supposed to do.” But it doesn't tell you how you use it in the real world, how you map all these different things together. That's what I call workflow basically where you learn to combine tools and techniques to basically do things like learning to use ORG mode in a professional manner, be it time tracking, whatever, or using Dired to better handle the file – just little things that really add up to a lot of value.
+Then I had a job where I met a DBA chap and he was trying to learn Emacs, having moved there from Vim. But his needs were very different from mine, being primarily a system administrator/DBA. He was like, "Oh, that M-x shell, that looks really cool. How do you start using that?” He encouraged me to start writing about it. That's actually where the blog comes from--just starting to learn more by investigating and exploring. 
 
-*Sacha*: I think that's an important point because it's the workflow that really distinguish advanced piece of Emacs. You have all these components and chart, they're great to know about and it's really seeing how other people put it together or you look at those components and imagine how you put them together in your own workflow that makes the difference.
-You mentioned getting to that [inaudible], that point where it suddenly gelled, light show, that the angels descended from the heavens and says, “This is what Emacs is all about.”
+The info manual is actually a great place. Just pick a random topic. Read up about it. It's not going to be enough, but you start playing around with it and eventually the knowledge accrues. Right?
+
+*Sacha*: It's good bedtime reading. You learn something every time you go through it. Maybe it's also because that people keep adding things. Then once you're done with the info manual, you can read the help files, the other info manuals for other packages. You can then end up reading the source code and you laugh about the interesting functions people have written. You're like, “Oh, if I take this and this, and I smoosh them together, I get something new.”
+
+*Mickey*: Well, I think that's the big problem as well with the info manual. It does a great job giving you basic expositions saying, “Well, here is what this is supposed to do.” But it doesn't tell you how you use it in the real world, how you map all these different things together. That's what I call workflow, basically, where you learn to combine tools and techniques to do things like learning to use Org Mode in a professional manner, be it time tracking, whatever, or using Dired to better handle files. Just little things that really add up to a lot of value.
+
+*Sacha*: I think that's an important point because it's the workflow that really distinguish advanced use of Emacs. You have all these components which are great to know about. It's really seeing how other people put it together, or being able to look at those components and imagine how you'll put them together in your own workflow that makes the difference.
+
+You mentioned getting to that linchpin moment, that point where it suddenly gels, the light shone, the angels descended from the heavens and said, “This is what Emacs is all about.”
 
 *Mickey*: Yes, absolutely.
 
-*Sacha*: Part of that was because you figured out how to find your way around the documentation. Were there any other “Aha!” moments or things that help you, get to that level of understanding the workflows and the possibilities?
+*Sacha*: Part of that was because you figured out how to find your way around the documentation. Were there any other “Aha!” moments or things that helped you figure out--get to that level of understanding the workflows and the possibilities?
 
-*Mickey*: Let's see. Being able to do a [inaudible] of eLisp, you don't have to be an expert, you don't even have to be able to write your own modes or anything like that but just understanding the basic syntax and for most people, I think is the gateway drive if you like is adding keybindings, then these little snippets to set settings in a mode book. That's how it starts and then you go, “Well...” Especially if you're not really a programmer, admittedly, it will probably be a lot harder if you're not.
-But then you start looking at the source code because you learn and you can just click around in the help thing to jump around. Then you start reading [inaudible], “I can tweak this a little bit.” It's that why I found [inaudible] where you get to a point where you sort of accrued enough knowledge and you feel reasonably comfortable navigating but there's still things that I don't fully understand very well. ORG mode is very complex. There's lots of workflows that you can really learn.
-I never really mastered email either. I have to advance and set a CEDET which is in Emacs now in some form, which is hyper advanced but I could never really crack that up.
+*Mickey*: Let's see. Being able to do a modicum of Elisp. You don't have to be an expert. You don't even have to be able to write your own modes or anything like that. But just understanding the basic syntax... For most people, I think, the gateway drug, if you like, is adding keybindings, then these little snippets to set settings in a mode hook. That's how it starts. And then you go, “Well...” Especially if you're already a programmer. Admittedly, it will probably be a lot harder if you're not.
 
-*Sacha*: Yes, 10 years and you still feel like a newbie sometimes.
+But then you start looking at the source code, because you learn that you can just click around in the help thing to jump around. Then you start reading the code and you go, “Ohh, I can tweak this a little bit.” It's death by a thousand cuts, isn't it? If you can call it that. Where you get to a point where you've accrued enough knowledge and you feel reasonably comfortable navigating. 
+
+But there's still things that I don't fully understand very well. Org Mode is very complex. There's lots of workflows that you can really learn. I haven't really mastered email either, I have to admit. And CEDET, which is in Emacs now in some form, which is hyper-advanced, but I could never really crack that nut.
+
+*Sacha*: Yes. Ten years and you still feel like a newbie sometimes.
 
 *Mickey*: Yes, absolutely.
 
 *Sacha*: Give me some specifics. Tell me the story of your first couple of customizations. What got you to fall in love with it?
 
-*Mickey*: What was it? I suppose it was the fact that it does everything. It may not be the best at everything but it can do everything. Things like shell mode integration was very useful. Even things like being able to sort of share, to opt you to grab and have it hyperlink all the matches will be a good example. But it's mostly the little things. It's not even a programming mode to themselves because lots of editors do that but few editors lets you shell out to something and get the result back, and have it set through Emacs, or regular expressions that you can combine with s-expressions to create screen side effect written replacements to do all kinds of crazy things.
-It's all the little things I think but shell mode is probably the big one for me because I use it all the time.
+*Mickey*: What was it? I suppose it was the fact that it does everything. It may not be the best at everything, but it can do everything. Things like shell mode integration was very useful. Even things like being able to shell out to grep and have it hyperlink all the matches will be a good example. 
 
-*Sacha*: Okay. In [inaudible] mode, because it's so interesting to see people's workflows in action. You can think about this, too. You might prepare the segment but would you mind say, walking to your configuration or how you use things and really show things off to people who are like, “Well, Emacs sounds cool but what can you really do with it?” And show off a bit.
+But it's mostly the little things. It's not even the programming mode themselves because lots of editors do that, but few editors let you shell out to something and get the result back, and have it fed through Emacs, or regular expressions that you can combine with s-expressions to create strange side-effect-ridden replacements to do all kinds of crazy things.
+
+It's all the little things I think. But shell mode is probably the big one for me because I use it all the time.
+
+*Sacha*: Okay. And on that note, because it's so interesting to see people's workflows in action... You can think about this, too. You might not have prepared this segment. But would you mind say, walking through your configuration or how you use things and really show things off to people who are like, “Well, Emacs sounds cool but what can you really do with it?” Show off a bit.
 
 *Mickey*: Oh, now I'm being put on the spot.
 
 *Sacha*: Or you can also just say, “This is really cool. This is how I've set it up for me.”
 
-*Mickey*: Well, I can share some of the things that I really like about it perhaps. Let me just click a few button to get the desktop up here. There we go.
+*Mickey*: Well, I can share some of the things that I really like about it perhaps. Let me just click a few buttons to get the desktop up here. There we go.
 
 *Sacha*: Awesome.
 
@@ -127,249 +141,274 @@ It's all the little things I think but shell mode is probably the big one for me
 
 *Sacha*: No, it's fine the way it is.
 
-*Mickey*: I like shell mode because you can edit. It's just a text buffer. A lot of people like Eshell which is also nice. We also have Eshell which is Emacs' own internal shell, also great and I do like that as well. But I find that having used this one for 10 years, it's pretty much what stick to my mind most. It's a useful tool and the fact that I can edit is perhaps the biggest one.
-You can do things like “ls” and then you can “[inaudible] shell.” Let's see what's it called [inaudible]. It's normally bound to c-x, c-o but we bind it, you can paste it. So you can quickly copy out that from a command into your kill [inaudible] which is very handy.
+*Mickey*: I like shell mode because you can edit it. It's just a text buffer. A lot of people like Eshell, which is also nice. We also have Eshell, which is Emacs' own internal shell, also great. I do like that as well. But I find that having used this one for ten years, it's pretty much what sticks to my mind most. It's a useful tool, and the fact that I can edit is perhaps the biggest one.
+You can do things like “ls” and then you can output to kill ring. Let's see what's it called [inaudible]. It's normally bound to C-x C-o, but I rebind it. So you can go into a buffer and you can paste it. So you can quickly copy the output from a command into your kill ring, which is very handy.
 
-*Sacha*: I didn't know that you could do that. I always just end up c-spacing and then going all the way back up.
+*Sacha*: I didn't know that you could do that. I always just end up C-SPCing and then going all the way back up.
 
-*Mickey*: Yes, exactly. There's one thing to keep in mind though because shell mode is just literally dumb. What it can't do is – it could only guess. It actually does that by looking at your prompt. If your prompt were to appear anywhere in it, it will break the flow of it basically, but it generally works. That's very useful.
-What I like about it is [inaudible] will use the current directory variable, default directory to see it. If you've got dirtrack-mode enabled, the shell will keep track of the directory you're in which obviously needs to be able to do by looking at to see the character. If you go into / tmp, it will track the directory which is very useful if you use ido, whatever a lot, it basically builds it into one.
+*Mickey*: Yes, exactly. There's one thing to keep in mind though, because shell mode is just literally dumb. What it can't do is... It could only guess. It actually does that by looking at your prompt. If your prompt were to appear anywhere in it, it will break the flow of it, basically, but it generally works. That's very useful.
+
+What I like about it is in general, =ido= will use the current directory variable, =default-directory=, to seed it. If you've got dirtrack-mode enabled, the shell will keep track of the directory you're in, which obviously it needs to be able to do by looking at the tilde character. If you go into =/tmp=, it will track the directory, which is very useful if you use ido a lot. It basically builds it into one.
+
 Let's see, what else do I do? Well, one thing that I like a lot but I don't see a lot of people use...
 
-*Sacha*: It seems like you're the kind of person who would benefit from ido-flex and smex.
+*Sacha*: It seems like you're the kind of person who would benefit from =ido-flex= and =smex=.
 
-*Mickey*: You know what? I actually try to get into using that but the problem I had with it was – I haven't tried in a few years – but a few years ago, it had a little bit of a lag starting up and silly like it may sound, that really put me off.
-I generally try not to type commands into mx, I save that for very rare one-off commands that I don't do very often. It's just manually setting a mode in a buffer for instance or come and kill output which for most people will be bound to c-s, c-o, while I have it bound to just remove everything instead of just copying it.
-One thing I want to talk a little bit about perhaps are transposition commands.
+*Mickey*: You know what? I actually try to get into using that, but the problem I had with it was – I haven't tried in a few years – but a few years ago, it had a little bit of a lag starting up, and silly like it may sound, that really put me off.
+
+I generally try not to type commands into M-x. I save that for very rare one-off commands that I don't do very often. It's just manually setting a mode in a buffer for instance or =comint-kill-output=, which for most people will be bound to =C-x C-o=, while I have it bound to just remove everything instead of just copying it.
+
+One thing I want to talk a little bit about are transposition commands.
 
 *Sacha*: Yes. Could you increase your text size, sir?
 
 *Mickey*: Sorry, yes. Absolutely. There we go.
+
 Let's say we're right here. Transposition is basically swapping the characters around the point. One thing that confuses some people is where the point actually is, but it's actually right here.
 
 *Sacha*: Before.
 
-*Mickey*: Sounds dumb. I know it's a dumb thing to point out but a lot of people aren't entirely [inaudible] on one or the other side as far as the transposition commands go. But it's the left. If you do c-t, it will transposition the characters. Not the most useful one, you might think but if you're at the end and you do your usual typo where you swap the last two characters, you can just type c-t and it will swap the one you need to be to your left. I use that all the time.
-Another one I use all the time is transpose words which I have linked to...
+*Mickey*: Sounds dumb. I know it's a dumb thing to point out but a lot of people aren't entirely sure if it's on one or the other side as far as the transposition commands go. But it's the left. If you do =C-t=, it will transposition the characters. Not the most useful one, you might think but if you're at the end and you do your usual typo where you swap the last two characters, you can just type =C-t= and it will swap the ones you need to be to your left. I use that all the time.
 
-*Sacha*: M-t.
+Another one I use all the time is =transpose-words= which I have linked to...
 
-*Mickey*: M-t, that's right. The transposed words uses something called Emacs' syntax table which is basically that way of listing out all the different characters and what they're supposed to mean in the different mode. In certain mode, ; might be a special characters but in other modes, it might not.
-In Python for instance, it is. If I type m-t now...
+*Sacha*: =M-t=.
 
-*Sacha*: You technically [inaudible] the quotes too.
+*Mickey*: =M-t=, that's right. The =transpose-words= uses something called Emacs' syntax table which is basically a way of listing out all the different characters and what they're supposed to mean in a different mode. In certain modes, =;= might be a special character, but in other modes, it might not. In Python, for instance, it is. If I type =M-t= now...
 
-*Mickey*: Yes. Actually it's clever enough to see the quote symbols. The : is a special but not irrelevant one. It actually only lives at words. If you were to do a-b, that happens to be in valid Python right now but if I then type m-t here, it won't transpose the whole thing. It will just do the two words because -, it breaks the word basically.
-What you can also do is c-n-t which transposes the entire s-expression and that does it like that by swapping the s-expressions around. Not terribly useful here but if you go back and then do m-t, swap the whole thing. This is one thing that you can sit down and learn the rules but I find that just trying to use it over and over again in all kinds of different circumstances to use it to mentally map it, is perhaps easier to do.
+*Sacha*: And it kept it within the quotes too!
 
-*Sacha*: You start off with knowing that there is a better more Emacsy way to do it and you're like, “Okay, what's the keybinding for that one again?” You look it up a couple of times and eventually just remember and then you get to the point perhaps where you don't even think about, “Oh, I had to use this operation to get my text and where I wanted to be. I just need this, and this, and this.”
+*Mickey*: Yes. Actually, it's clever enough to see the quote symbols as quote symbols. The =:= is a special but not irrelevant one. It actually only looks at words. If you were to do =a-b=--that happens to be invalid Python right now--but if I then type =M-t= here, it won't transpose the whole thing. It will just do the two words because =-= breaks the word, basically.
 
-*Mickey*: Exactly. I've talked a little bit about it on the blog before which is the concept of and an s-expression command. Let me see if I can zoom in here.
-The word s-expression I think when people were new to Emacs immediately assume that it only deals with Lisp or at best balance parentheses. But Emacs is a little bit more clever or I should say most mode developers other than clever because they enable you to use these commands where you wouldn't otherwise think so.
-For instance, let's say I've decided that this dictionary needs to go and I wanted to have a list instead. I can type c-m-u for ctrl and up and it jumps to the top. If you then combine it with c-m-k, the ctrl, M, kill, you kill the entire s-expression which is bound by the two braces. Now obviously that's quite handy but if you're at the end of it, you can just type like that which is basically negative argument and then type K. It's the backward.
+What you can also do is =C-M-t=, which transposes the entire s-expression, and that does it like that, by swapping the s-expressions around. Not terribly useful here, but if you go back and then do =M-t=, you swap the whole thing. This is one thing that... You can sit down and learn the rules, but I find that just trying to use it over and over again in all kinds of different circumstances until you mentally map it is perhaps easier to do.
 
-*Sacha*: I always end up doing a backwards expand by doing that. I should check that out.
+*Sacha*: You start off with knowing that there is a better, more Emacsy way to do it, and you're like, “Okay, what's the keybinding for that one again?” You look it up a couple of times, and eventually you just remember, and then you get to the point, perhaps, where you don't even think about, “Oh, I have to use this operation to get my text and where I wanted to be. I just do this, and this, and this.”
 
-*Mickey*: The funny thing is I use the negative thing all the time because it's surprisingly useful as a way of sort of killing backwards multiple times instead of just moving your point around. When I see really skilled Vim users move around, they're a lot more concerned about tailoring movement and delete commands to the exact task by bounding lines of characters. I almost never do that. I look at purely as, “Can I kill by balanced expression? Can I kill by word?” Obviously, word “kill” is bound to c-backspace. That's nice and easy and forward kill has been bound to m-d which is also very useful.
-But one thing that I like people find surprising is that going up and down makes it very easy to move around, and kill, and drag around. Even though Emacs is not known for being a module editor, provided you understand that these s-expression commands exist, you can actually use them in a surprising amount of places that you wouldn't otherwise think. S-expressions are the ones I use all the time.
-Now, there are some really good modes up there now. I haven't had time to sit down and play with them. There's paredit and [inaudible] and all these other ones out that to do this. Well, paredit, Sacha, that's the one for Emacs Lisp itself. But there was that other one that has [inaudible].
+*Mickey*: Exactly. I've talked a little bit about it on the blog before, which is the concept of an s-expression command. Let me see if I can zoom in here.
+The word s-expression, I think... When people who are new to Emacs see it, they immediately assume that it only deals with Lisp, or at best, balanced parentheses. But Emacs is a little bit more clever, or I should say most mode developers are a little bit more clever, because they enable you to use these commands where you wouldn't otherwise think so.
 
-*Sacha*: Smartparens has gradually taking over the rest of the modes too.
+For instance, let's say I've decided that this dictionary needs to go and I wanted to have a list instead. I can type =C-M-u= for control meta up and it jumps to the top. If you then combine it with =C-M-k=, the control meta kill, you kill the entire s-expression which is bound by the two braces. Now obviously that's quite handy. But if you're at the end of it, you can just type =M--= like that which is basically negative argument, and then type =C-M-k=. It's backward.
 
-*Mickey*: Exactly. But there's one that sort of adds all these cool slurping features to general purpose modes which is quite handy. But yes, I use this all the time and I consider that to be – I don't know if I can use Emacs again if I didn't have them. They're really, really, really important commands.
+*Sacha*: I always end up doing a =backward-sexp= when I'm doing that. I should check that out.
 
-*Sacha*: What I'm hearing is that when you can get past just thinking of text as characters and you start working in larger syntax units, you're seeing your program as this syntax-free, even understanding how the computer understands it and that gives you a lot of tools for working around, getting around and doing things with it.
+*Mickey*: The funny thing is I use the negative thing all the time because it's surprisingly useful as a way of killing backwards multiple times instead of just moving your point around. When I see really skilled Vim users move around, they're a lot more concerned about tailoring movement and delete commands to the exact task by counting lines oor characters. I almost never do that. I look at purely as, “Can I kill by balanced expression? Can I kill by word?” Obviously, word kill is bound to =C-backspace=, so that's nice and easy. Forward kill has been bound to =M-d=, which is also very useful.
+
+But one thing that a lot of people find surprising is that going up and down makes it very easy to move around, and kill, and drag around. Even though Emacs is not known for being a modal editor, provided you understand that these s-expression commands exist, you can actually use them in a surprising amount of places that you wouldn't otherwise think. S-expressions are the ones I use all the time.
+
+Now, there are some really good modes out there now. I haven't had time to sit down and play with them. There's Paredit and Lispy and all these other ones out that to do this. Well, Paredit, Sacha, that's the one for Emacs Lisp itself. But there was that other one that has [inaudible].
+
+*Sacha*: Smartparens is gradually taking over the rest of the modes too.
+
+*Mickey*: Exactly. But there's one that adds all these cool slurping features to general purpose modes which is quite handy. But yes, I use this all the time and I consider that to be... I don't know if I can use Emacs again if I didn't have them. They're really, really, really important commands.
+
+*Sacha*: What I'm hearing is that when you can get past just thinking of text as characters and you start working in larger syntax units, you're seeing your program as a syntax tree, even, understanding how the computer understands it... That gives you a lot of tools for working, getting around and doing things with it.
 
 *Mickey*: Yes, exactly. That's exactly it. This sort of thing just makes Emacs quite a versatile text editor is that you can just...
 
-*Sacha*: So how many years did it take you to kind of switch to this mindset?
+*Sacha*: So how many years did it take you to switch to this mindset?
 
-*Mickey*: I think I'm pretty good at adapting new things provided – I can't say it was simple – but not too customizable things. There's a reason why I haven't picked up all the well of the new things that sort of come out which it figures I just don't have time to sit down and rewrite all my custom code, tons into the old stuff and all that stuff. I am perhaps a little bit behind the curve in that sense but it also means that I think I fully mastered a lot of the basic editing and movement commands.
-I find that what slows me down is actually thinking more than the writing. When I'm not on camera, I can actually write reasonably fast.
+*Mickey*: I think I'm pretty good at adapting new things, provided they're sort of--I hesitate to use the word "simple"--not too customizable things. There's a reason why I haven't picked up on a lot of the new things that have come out. I just don't have time to sit down and rewrite all my custom code, [inaudible] into the old stuff. I am perhaps a little bit behind the curve in that sense, but it also means that... I think I've fully mastered a lot of the basic editing and movement commands. I find that what slows me down is actually thinking more than the writing. When I'm not on camera, I can actually write reasonably fast.
 
 *Sacha*: Well, I type pretty quickly but I write very slowly.
 
 *Mickey*: Yes, I know what you mean.
 
-*Sacha*: It's funny how that mix up.
+*Sacha*: It's funny how that works out.
 
-*Mickey*: I know what you mean. I end up spending quite a bit of time on these little things which I find extremely useful. Another one that I find very useful is the mark command. Normally I have I have visible mark mode. Normally I would have a little program installed that would show me where the markup is but sadly I have it hidden so I can't show that. But what I use a lot is the ability to jump around from places I've been before.
+*Mickey*: I know what you mean. I end up spending quite a bit of time on these little things which I find extremely useful. Another one that I find very useful is the mark command. Normally I have visible mark mode. Normally I would have a little program installed that would show me where the marker is, but sadly I have it hidden, so I can't show that. But what I use a lot is the ability to jump around from places I've been before.
 
-*Sacha*: Oh! Pop-to-mark-command? Right?
+*Sacha*: Oh! =pop-to-mark-command=? Right?
 
-*Mickey*: That's right. That's c-space which sets the mark and then c-u to c-space which jumps to the last one.
+*Mickey*: That's right. That's =C-SPC= which sets the mark and then =C-u C-SPC= which jumps to the last one.
 
-*Sacha*: Oh, and you might like – I found this Emacs little snippet, it might even come from you. I can't remember but when you get c-u-space and you keep hitting space to go back to the previous ones?
+*Sacha*: Oh, and you might like--I found this Emacs Lisp snippet, it might have even come from you, I can't remember--but when you get C-u C-SPC and you keep hitting SPC to go back to the previous ones?
 
 *Mickey*: That's nice, yes.
 
 *Sacha*: It's a super useful tweak.
 
-*Mickey*: I normally have a [inaudible] command bound to M and the [inaudible] command but unfortunately Ubuntu in their infinite wisdom have decided that this key cannot be rebound from inside the operating system and I can't [inaudible] figure how to do it otherwise. I have to let that key go. But probably mark is extremely useful. I might jump down to the end, I can type c-u, c-space to go back to where I was, which is if you're moving around a lot in the buffer, that's extremely useful.
-Let's see, what else do I do that's useful? Well, I use dired a lot. I like dired. A lot of people don't use it very much and I recently wrote an article about how to get more out of it by using find-name-dired. Let me see if I can do that. Does that give you anything useful?
+*Mickey*: I normally have a cheat command bound to =M-~=, but unfortunately Ubuntu in their infinite wisdom have decided that this key cannot be rebound from inside the operating system and I can't be bothered to figure how to do it otherwise. I had to let that key go. But popping mark is extremely useful. I might jump down to the end. I can type =C-u C-SPC= to go back to where I was. If you're moving around a lot in the buffer, that's extremely useful.
+
+Let's see, what else do I do that's useful? Well, I use Dired a lot. I like Dired. A lot of people don't use it very much. I recently wrote an article about how to get more out of it by using =find-name-dired=. Let me see if I can do that. Does that give you anything useful?
 
 *Sacha*: Yes.
 
-*Mickey*: So if you go to the command, let's see if I can add find-name-dired. What that lets you do is it takes a find command. I can move find command, you give it a starting directory and then you give it a standard blobbing pattern basically and it will go through and it will get all the files that match whatever your find criteria is. Of course there's absolutely nothing stopping you from constructing a more elaborate find query with greater than sizes, and less than, and all that stuff.
-It basically lets you mark and add all these files in different directories. I just do it with one big unified dired session. That will in many ways replace your standard find and xargs command workflow from the command line. That's very [inaudible].
+*Mickey*: So if you go to the command... let's see if I can... =find-name-dired=. What that lets you do is it takes a find command. You give it a starting directory and then you give it a standard globbing pattern. It will go through and it will get all the files that match whatever your find criteria is. Of course there's absolutely nothing stopping you from constructing a more elaborate find query with greater than sizes, and less than, and all that stuff.
+It basically lets you mark and add all these files in different directories. I just do it with one big unified dired session. That will in many ways replace your standard find and xargs command workflow from the command line. That's very useful.
 
-*Sacha*: Is find-name-dired compatible with a writable dired awesomeness?
+*Sacha*: Is find-name-dired compatible with the writable dired awesomeness?
 
 *Mickey*: Is it compatible with what? Sorry?
 
-*Sacha*: You know how dired or c-x, c-q will [inaudible] dired buffer editable.
+*Sacha*: You know how wdired or =C-x C-q= will toggle the dired buffer editable.
 
 *Mickey*: Yes. That should work. I [inaudible] to renaming things in [inaudible]. But yes, that should work.
-Basically the mode of operation here is dired will work with anything that follows this command. It's actually possible to manually write – should you be so inclined – this or to get the output from the LS command which is -d which I believe is a magic switch [inaudible] dired thing to come out and run off like this and provided the syntax is okay, you tell it, “This is a virtual dired.” Let's see.
+
+Basically the mode of operation here is dired will work with anything that follows this command. It's actually possible to manually write – should you be so inclined – this, or to get the output from the =ls= command which has =-d=, which I believe is a magic switch--no, =-o=-- to make the dired thing come out right. Provided the syntax is okay, you tell it, “This is a virtual dired.” Let's see.
 
 *Sacha*: That's cool.
 
-*Mickey*: Yes. Basically virtual dired mode is a basic you want to do if you [inaudible]. That's basically what you want. If someone is giving you a text file that's full of LS things and you want to mop by it or search by it or whatever, you can basically go into virtual dired mode which assumes that it's got a real dired buffer. It will instead use your default directory and any absolute relative pass appended to the filename to determine how to go about working on it.
+*Mickey*: Yes. Virtual dired mode is what you want to do if you... That's basically what you want, if someone is giving you a text file that's full of =ls= things and you want to mark by it or search by it or whatever, you can basically go into =virtual-dired-mode= which assumes that it's got a real dired buffer. It will instead use your default directory and any absolute or relative paths appended to the filename to determine how to go about working on it.
 
 *Sacha*: Wow.
 
-*Mickey*: Again, no one uses dired. I won't profess to be an expert on it myself but it's worth learning. It's really worth learning. It's a very useful tool and I do use discover which I wrote myself. I don't know exactly if it really show up okay. It's basically this which is basically a bit like magit which I'm sure you've used many times, Sacha. As you can see it looks very familiar because it's based in Emacs, its keymode interface.
-I've added this, I created this for dired. So you can now go in, you can get all the different commands available to you in dired and you can just quickly at a glance see what they are which is very useful for helping you learn to use dired.
+*Mickey*: Again, no one uses dired. I won't profess to be an expert on it myself. But it's worth learning. It's really worth learning. It's a very useful tool and I do use =discover=, which I wrote myself. I don't know exactly if... it won't really show up okay. It's basically a bit like magit's key mode interface, which I'm sure you've used many times, Sacha. As you can see it looks very familiar because it's basically magit's key mode interface.
 
-*Sacha*: I do simply set up guide key and run my configuration because there are some prefixes that you're like, “What?” But it's great because the discoverability of Emacs is certainly challenged. You don't even know what's out there.
+I've added this. I created this for dired. So you can now go in. You can get all the different commands available to you in dired. You can just quickly at a glance see what they are, which is very useful for helping you learn to use dired.
 
-*Mickey*: Exactly. But that's what I like about it. It's the fact that you'll bump into someone who may not have been using Emacs all that long. They'll show you a great trick you've never heard about and I find that really useful. That's what I like about Emacs. It's all these little things like being able to combine all these things with dired for instance which is a very powerful paradigm.
-If you're not a master at using find, well, make slightly want to search criteria and then filter it manually using Emacs and some filtering and search routines and dired, and [inaudible].
+*Sacha*: I just set up =guide-key= in my configuration because there are some prefix keys where you're like, “What?” But it's great because the discoverability of Emacs is certainly a challenge. You don't even know what's out there.
 
-*Sacha*: Are there any other particularly interesting snippets in your configuration or workflow? [inaudible] configuration because if you're putting off trying new things because your configuration is so awesome.
+*Mickey*: Exactly. But that's what I like about it. It's the fact that you'll bump into someone who may not have been using Emacs all that long. They'll show you a great trick you've never heard about. I find that really useful. That's what I like about Emacs. It's all these little things like being able to combine all these things with Dired, for instance, which is a very powerful paradigm.
+If you're not a master at using =find=, well, make slightly wider search criteria and then filter it manually using Emacs's own filtering and search routines and dired, and Bob's your uncle.
 
-*Mickey*: No. I would say it's more that you know how people – I don't know if this chat on the blog that I'm using [inaudible] Emacs [inaudible] he was the one to use the particular phrase for the first time. Let's see what do I have here? There should be something here.
-What I have here, it's just a bunch of crap, really. [inaudible] my own work but mostly it's just sort of like I could [inaudible] stuff. This one is useful. This one would insert the buffer file name from another buffer, insert-other-buffer-file-name which when I run it, I'll give it using [inaudible] I buffered and it will give me the full file path.
+*Sacha*: Are there any other particularly interesting snippets in your configuration or workflow? Especially your configuration, because if you're putting off trying new things because your configuration is so awesome...
 
-*Sacha*: Yes, I can see how that ends up being quite handy. I think you're in the shell?
+*Mickey*: No. I would say it's more that... You know how people – I don't know [inaudible] declaring Emacs bankruptcy [inaudible]. Let's see what do I have here? There should be something here.
 
-*Mickey*: I do use them on the file. Yes, sometimes it might be the Python shell and something like that and it exceeded a file named to some function that I already have open. Instead of tagging it out, I just do it like this. That's primarily what it's for.
-I also have this. I think this is actually – what I found with that one is I've actually changed it so it uses [inaudible] by default. [inaudible] interface. Actually a lot of people don't notice [inaudible]. Rx-builder obviously lets you build any [inaudible].
+What I have here, it's just a bunch of crap, really. Not disparaging my own work, but mostly it's just sort of like a grab bag of random stuff. This one is useful. This one would insert the buffer file name from another buffer, insert-other-buffer-file-name, which when I run it, I'll give it (using ido) a buffer, and it will give me the full file path.
 
-*Sacha*: I know [inaudible] regular expressions.
+*Sacha*: Yes, I can see how that ends up being quite handy, especially if you're in shell.
 
-*Mickey*: Yes. I do normally do that. I have a custom one bound to that. I use rx-builder if I'm building for modes like with fairly complicated things. I'll tend to use that but I always have to keep the manual open because I'm going to really remember the syntax.
-A lot of people don't know that rx-builder or re-builder, you can actually change the syntax mode that exist which is quite handy. It's not just stuck using the building default one. I have a fixed X amount and an equivalent fix this, and fix this, fix that which acts like a tidy tool to clean up the code. Quite useful as I'm getting one big line dump.
+*Mickey*: I do use it a lot. Sometimes I might be in the Python shell or something like that. I need to feed a file name to some function that I already have open. Instead of typing it out, I just do it like this. That's primarily what it's for.
 
-*Sacha*: I want to go back to that re-builder in case people aren't familiar with that because you have people who haven't tried it maybe. Re-builder lets you interactively build regular expressions and you can see what it matches and what it doesn't match in your buffer right away. Super handy if you're trying to match some things but not others.
+I also have this. I think this is actually... what I found with that one is I've actually changed it so it uses =rx= by default. [inaudible] interface. Actually a lot of people don't know this. =rx-builder= obviously lets you build any [inaudible].
 
-*Mickey*: Yes. It's great. It doesn't work very well in large buffers. It will actually sort of stop placing the overlays but it's a very useful tool. The one problem I had with it is I always forget what a quick command is. So, I always do c-f, c-q which is just a read only but it really should be c-c, c-q into this. Although there is a useful command in there, something like [inaudible] of the regular expression. C-p I think. C-p says it's like a buffer. C-w, yes. You type c-c, c-w, you paste but it will paste lisp-friendly version which is quite handy if you doing that a lot. [inaudible].
+*Sacha*: I know. I just end up writing regular regular expressions.
+
+*Mickey*: Yes. I do normally do that. I have a custom one bound to that. I use =rx-builder= if I'm building for modes like with fairly complicated things. I'll tend to use that. But I always have to keep the manual open because I can never really remember the syntax.
+
+A lot of people don't know that =rx-builder= or =re-builder=, you can actually change the syntax mode that it uses, which is quite handy. It's not just stuck using the built-in default one. I have a =fix-xml= and an equivalent fix this, fix that which calls out to a tidy tool to clean up the code. Quite useful if I'm getting one big line dump.
+
+*Sacha*: I want to go back to that =re-builder= in case people aren't familiar with that because you have people who haven't tried it, maybe. =Re-builder= lets you interactively build regular expressions and you can see what it matches and what it doesn't match in your buffer right away. Super handy if you're trying to match some things but not others.
+
+*Mickey*: Yes. It's great. It doesn't work very well in large buffers. It will actually stop placing the overlays. But it's a very useful tool. The one problem I had with it is I always forget what the quit command is. So I always do =C-x C-q=, which is just read only, but it really should be =C-c C-q=, which quits. Although there is a useful command in there, something like [inaudible] of the regular expression. =C-p= I think. =C-p= says it's [inaudible] buffer. =C-w=, yes. You type =C-c C-w= and you paste it, but it will paste a Lisp-friendly version, which is quite handy if you're doing that a lot. So that's useful.
 
 *Sacha*: Yes. I always end up counting slashes.
 
-*Mickey*: That's the thing. By default you can actually have a printout double-slashes so you don't have to do that yourself which is quite useful.
-What else do I have? This is what I'm using now which is why I'm so adamant about not wanting to change too much. I'm actually using the old skeleton mode before smartparens and all that came around which is the way that you [inaudible] bound actually work. Going about inserting bound parentheses and all that.
+*Mickey*: That's the thing. By default, you can actually have a printout double-slashes so you don't have to do that yourself, which is quite useful.
 
-*Sacha*: I [inaudible] hang of smartparens. It's awesome. I'm not good enough to thinking it yet.
+What else do I have? This is what I'm using now, which is why I'm so
+adamant about not wanting to change too much. I'm actually using the
+old skeleton mode--before smartparens and all that came around--which
+is the way that you [inaudible] balanced [inaudible] actually work. Going about
+inserting balanced parentheses and all that.
 
-*Mickey*: No but I have that problem with paredit as well. It's really hard to memorize all these different ones.
-That doesn't look [inaudible] to anyone. Oh yes, kill-ring-save. This is a good one. Normally c-w requires that you have something marked before it works. This one, if it is that c-w with nothing marked, it just kills the entire line. Now it is also bound to c-shift-backspace but I find c-w easier because it just works fine. It still works if these things are selected but actually I almost never do this. If I want to kill something, I'd kill it by [inaudible]. That's very good.
-I got this from EmacsWiki many years ago. It basically makes iMenu use ido instead which is quite handy.
+*Sacha*: I am very slowly getting the hang of Smartparens. It's awesome. I'm not good enough to think in it yet.
+
+*Mickey*: No, but I have that problem with paredit as well. It's really hard to memorize all these different ones.
+
+That doesn't look too relevant to anyone... Oh yes, =kill-ring-save=. This is a good one. Normally, =C-w= requires that you have something marked before it works. This one, if you just type =C-w= with nothing marked, it just kills the entire line. Now, it is also bound to =C-shift-backspace=, but I find =C-w= easier, because it just works fine. It still works if these things are selected but actually, I almost never do this. If I want to kill something, I'd kill it by s-expression. That's very good.
+
+I got this from EmacsWiki many years ago. It basically makes imenu use ido instead, which is quite handy.
 
 *Sacha*: Perfect sense.
 
-*Mickey*: What else do I have? Well, I got this which is like a custom font-locking for Python mode. If I type...
+*Mickey*: What else do I have? Well, I've got this which is like a custom font-locking for Python mode. If I type...
 
 *Sacha*: If you have any todos and things like that.
 
-*Mickey*: It's just quite useful.
-What else do I have? I write lots of stuff or I use it for a while and I don't need it anymore and I just leave it in. [inaudible]. Well, you know how it is. It keeps adding up, and adding up, and adding up.
+*Mickey*: It will highlight it in red. It's just quite useful.
 
-*Sacha*: Yes. I found that organizing my config into about sections helped me a lot because then at least when I was going through my config to write or save the functions that I just put together, I could at least realize that I had already written the exact same function.
+What else do I have? I write lots of stuff once, then I use it for a while, then I don't need it any more and I just leave it in, which is why this is an absolute nightmare. Well, you know how it is. It keeps adding up, and adding up, and adding up.
 
-*Mickey*: Well, that's the problem I have. I do actually have many files with all kinds of stuff in there. But I find that after 10 years, I've never actually deleted my entire thing and started over since I've started using Emacs. So, there's a lot of stuff in there you never really seem to get rid of.
-Because I'm self-employed contractor, I work in very varying companies. One of them, I'll be using Oracle all the time, so I need everything set up for Oracle. Other times I'm just using – you really don't know so you end up with a lot of stuff that you keep around in case you might need it again.
-What else do I have that's interesting? I got smart stamp which is basically as you move around with point, if I hold down m-p-n, it will take the word that point this on and build between them. Without any sort of font, nothing like that – it's great if you're browsing around in code and you go all interactive once that variable or whatever declared. Let's go look around and see where it is, there's some stuff here, so that's where I use it for. That's really good. I use that all the time, all day everyday.
+*Sacha*: Yes. I found that organizing my config into rough sections helped me a lot, because then at least when I'm going through my config to write or save the functions that I just put together, I could at least realize that I had already written the exact same function.
 
-*Sacha*: I'm getting the sense that your config accretes as you come up with little ideas or things that you can do more efficiently or ways that you can tweak things. Then it just keeps on growing. Sometimes you remember what's in there, sometimes not but if you ever run out of blog post ideas, I'm sure you can just go through your config and pick suggestions.
+*Mickey*: Well, that's the problem I have. I do actually have many files with all kinds of stuff in there. But I find that after ten years, I've never actually deleted my entire thing and started over, since I've started using Emacs. So, there's a lot of stuff in there you never really seem to get rid of.
 
-*Mickey*: Exactly. It is a big problem as in it. It's a tough one. I think that's what it covers the things that I haven't yet talk about in the blog in my terms of things particularly the transposition. I've been writing a little bit about that subject privately that I'm planning on [inaudible] at some point because I don't think people are already using transposition enough which I think is a real shame.
+Because I'm a self-employed contractor, I'll work in very varying companies. In one of them, I'll be using Oracle all the time, so I need everything set up for Oracle. Other times I'm just using Postgres. You really don't know, so you end up with a lot of stuff that you keep around in case you might need it again.
 
-*Sacha*: I don't remember and I really should have checked beforehand, is your config posted on the web anywhere?
+What else do I have that's interesting? I've got smartscan which is basically... As you move around with point, if I hold down =M-p= and =-n=, it will take the word that point is on and go between them. Without any sort of prompt, nothing like that... It's great if you're browsing around in code and you go, oh, "Interactive?" or "Where's that variable or whatever declared? Let's go look around and see where it is." There's some stuff here, so that's where I use it for. That's really good. I use that all the time, all day everyday.
 
-*Mickey*: No. It's not posted anywhere. Mostly because there are some personal stuff in there that I need to clean out but then I need to make sure that what I keep online and what privately, I still kept separately.
+*Sacha*: I'm getting the sense that your config accretes as you come up with little ideas or things that you can do more efficiently or ways that you can tweak things. Then it just keeps on growing. Sometimes you remember what's in there, sometimes not, but if you ever run out of blog post ideas, I'm sure you can just go through your config and pick suggestions.
+
+*Mickey*: Exactly. It is a big problem, isn't it. It's a tough one. I think that covers the things that I haven't yet talked about on the blog in terms of things, particularly the transposition. I've been writing a little bit about that subject privately that I'm planning on publishing at some point, because I don't think people are really using transposition enough, which I think is a real shame.
+
+*Sacha*: I don't remember and I really should have checked beforehand--is your config posted on the web anywhere?
+
+*Mickey*: No. It's not posted anywhere. Mostly because there are some personal stuff in there that I need to clean out but then I need to make sure that what I keep online and what I keep privately are still kept separately.
 
 *Sacha*: The way that I handle it is I just have an Emacs secrets .el file that I load.
 
-*Mickey*: Aha, that's a good idea. Yes, I like that idea actually. I've been thinking about doing something like that but the problem I have is if I go to this one, I actually have a whole bunch of crap that sort of ties into my Emacs. Like I'll go to a new computer because I fork all over the place and I'll type a few commands, sort of bootstrap pass, it will set up things or download and install various stuff, all this is fairly automated in a very [inaudible] way. I've been meaning to move it all to [inaudible] or something but I really get that around to it because it's just time-consuming.
+*Mickey*: Aha, that's a good idea. Yes, I like that idea actually. I've been thinking about doing something like that, but the problem I have is if I go to this one, I actually have a whole bunch of crap that sort of ties into my Emacs. Like I'll go to a new computer because I work all over the place and I'll type a few commands, sort of bootstrap paths, it will set up things or download and install various stuff, all this is fairly automated in a very rudimentary way. I've been meaning to move it all to [inaudible] or something, but I haven't really gotten around to it because it's just time-consuming.
 
-*Sacha*: That's kind of funny. People tend to think, “Oh, it's just a config.” How other people make sense of it when you don't see the workflow? But really actually, when you read through other people's config, you're like, “Oh, I never knew that function existed or this thing could be configured that way.” Like rebuilder actually does have a way that you can set your default syntax.
-It's always fine looking through other people's config.
+*Sacha*: That's kind of funny. People tend to think, “Oh, it's just a config.” How other people make sense of it when you don't see the workflow? But really, when you read through other people's config, you're like, “Oh, I never knew that function existed or this thing could be configured that way.” Like =re-builder= actually does have a way that you can set your default syntax.
+It's always fun looking through other people's config.
 
-*Mickey*: Absolutely. But that's the thing. I want to clean mine up so it's actually useful because if I just dump it out there, you'd be like, “There's no information about what one stuff does.” I'll have to clean it up first because I want to make sure you can get a good impression of it.
-Let me show you one thing that I don't think a lot of people have done before which is really quite cool. I went to Wikipedia a long time ago and I found a list of the most commonly misspelled or mistyped words and I decided to build a global abbreviation that replaces the misspelled one with the correct one. It seem to have gone missing.
+*Mickey*: Absolutely. But that's the thing. I want to clean mine up so it's actually useful, because if I just dump it out there, people would be like, “It's fairly uncommented. There's no information about what a lot of stuff does.” I'll have to clean it up first because I want to make sure you can get a good impression of it.
 
-*Sacha*: Clearly you've been tracking well anyway.
+Let me show you one thing that I don't think a lot of people have done before which is really quite cool. I went to Wikipedia a long time ago and I found a list of the most commonly misspelled or mistyped words. I decided to build a global abbreviation that replaces the misspelled one with the correct one. It seem to have gone missing.
 
-*Mickey*: Yes. I was just looking around where I put the file but it seems I've misplaced it. That's a shame. I'm going to show you that.
+*Sacha*: Clearly you've been typing well anyway.
 
-*Sacha*: That's okay. It's a good idea and there's something similar working with autohotkey. So when I mistyped something, it just automatically corrects it. But it certainly change that.
+*Mickey*: Yes. I was just looking around where I put the file, but it seems I've misplaced it. That's a shame. I was going to show you that.
 
-*Mickey*: But it's actually really great because it's a [inaudible] it just replace it without telling me so I don't even notice it. It's very silent, quiet, it just works – unlike the spelling system which is also great. It doesn't require any interaction from me, it just works at the background so I find that extremely useful.
+*Sacha*: That's okay. It's a good idea and there's something similar working with Autohotkey. So when I mistype something, it just automatically corrects it. But it's [inaudible] change that.
 
-*Sacha*: Yes. Functions that silently make you smarter or at least sound smarter.
+*Mickey*: But it's actually really great because it's abbrev, it just replaces it without telling me, so I don't even notice it. It's very silent, quiet, it just works. Unlike the spelling system (which is also great), it doesn't require any interaction from me. It just works in the background. I find that extremely useful.
 
-*Mickey*: Yes, pretty much. [inaudible] actions and all that. I know it's great. It's a little bit annoying. If you use the word “resume” in [inaudible] and it replace it with resume.
+*Sacha*: Yes. Functions that silently make you smarter, or at least sound smarter.
+
+*Mickey*: Yes, pretty much. It even does the accents and all that. I know, it's great. It's a little bit annoying. If you use the word “resume” in a coding sense, and it replaces it with rêsumê.
 
 *Sacha*: You can always take that one out of your dictionary.
 
-*Mickey*: I know but you'll be surprised, more often I find myself not catching that when I'm writing it. [inaudible].
+*Mickey*: I know! But you'll be surprised, more often I find myself not catching that when I'm writing it. [inaudible].
 
-*Sacha*: I used to always switch to the input back and forth say [inaudible] prefix and then I found out that you can just use c-x-8 and then you can set add access to characters.
+*Sacha*: I used to always switch to the input method for latin-1-prefx, and then I found out that you can just use =C-x 8= and you can use that to add accents to characters.
 
-*Mickey*: Oh yes, that's really great. I really like c-x-8. It's a great one actually because you can type in unicode, snowman, all these symbol type of things. It's fun, it's really good fun. On Emacs it's great when it goes support [inaudible] to work and that's one thing I actually really appreciate because sometimes you don't get to work in UTF-8 if you're getting files from [inaudible] or something like that. You need to be able to work with them. Have it saved and render correctly. That's [inaudible].
+*Mickey*: Oh yes, that's really great. I really like =C-x 8=. It's a great one actually because you can type in Unicode snowman (☃), all these symbol type of things. It's fun, it's really good fun. And Emacs has great Unicode support [inaudible]. That's one thing I actually really appreciate, because sometimes you don't get to work in UTF-8 if you're getting files from Thailand or something like that. You need to be able to work with them, have it saved and render correctly. That's pretty useful.
 
-*Sacha*: What I'm getting from this entire conversation is that road to mastering Emacs is basically use it all the time, think about how you're using it and when you're doing things that are inefficient, there are probably more Emacsy ways to do things. On occasion, just read through stuff to be inspired by things that you didn't even know that you're doing inefficiently.
+*Sacha*: What I'm getting from this entire conversation is that road to mastering Emacs is basically: use it all the time, think about how you're using it, and when you're doing things that are inefficient, there are probably more Emacs-y ways to do things. On occasion, just read through stuff to be inspired by things that you didn't even know that you're doing inefficiently.
 
-*Mickey*: Yes, exactly. Just sort of keeping your eyes and ears open, EmacsWiki is a great resource now as well. I highly recommend that anyone who doesn't use it use it because you'll learn a lot of just sort of random snippets but you can take them, play around with them and see if you can find a way to work it into your lifestyle.
+*Mickey*: Yes, exactly. Just keeping your eyes and ears open. EmacsWiki is a great resource now as well. I highly recommend that anyone who doesn't use it use it, because you'll learn a lot of random snippets. You can take them, play around with them, and see if you can find a way to work it into your lifestyle.
 
 *Sacha*: I really like the way that the EmacsWiki has that random page link.
 
 *Mickey*: Yes. I didn't even know that. That's pretty cool.
 
-*Sacha*: Okay, now you know. Also if you hit it too often – because I end up going through all that stuff – like 10 or so random pages, I think if you try to reach the EmacsWiki too quickly, it tells you to slow down.
+*Sacha*: Okay, now you know. Also if you hit it too often – because I end up going through all that stuff – like ten or so random pages... I think if you try to reach the EmacsWiki too quickly, it tells you to slow down.
 
 *Mickey*: You're just being a good student. You shouldn't get punished for that.
 
-*Sacha*: The other thing I'm considering actually in terms of EmacsWiki being a great resource is you can actually check it out as a Git repository.
+*Sacha*: The other thing I was considering actually, EmacsWiki being a great resource... is you can actually check it out as a Git repository.
 
 *Mickey*: Really?
 
 *Sacha*: Yes. You can systematically just read through everything. It is very large.
 
-*Mickey*: I also recommend – there was one good page that I found very useful when I'm still learning Emacs but when I started out anyway was the random tips and tricks page. It's just one liner but there's really fun ones in there. That just make you think. You may not find it useful but at least you know it's there so if you do need it or you do want to learn how to do it, you know where you can find it which you'll find very useful.
-But I think the [inaudible], Sacha, with Emacs in general – I'm just going to switch back to my camera here – I think the problem with it is inevitably, that you end up in a situation where you've exhausted all your resources in terms of learning Emacs and I think learning Emacs is perhaps too hard. Not that people shouldn't do it but that it is too hard in some ways because there isn't really a lot of great information that take you from the very beginnings.
-I wrote my very first article that was like “Getting Started with Emacs”, but looking back at it through 45 years of writing blog entries, I realized that actually, I don't think it was useful as I thought it was back then if that makes sense. When I started the blog a few years ago, I could approach my company of publishers to write a book basically, at the time I didn't have the time but over the past year, I was to slowly been working towards writing a book on Emacs.
-That's part of the reason why [inaudible] on the blog as well. The blog will remain free and I will keep posting on it but I figured it will be easier for me to do sort of bigger, longer expositions in general things' work. Unlike my blog, get it professionally copy, edited as well.
-Say what you want but that's still a nice thing.
+*Mickey*: I also recommend--there was one good page that I found very useful when I'm still learning Emacs... well, I'm still learning Emacs, but when I started out, anyway--the random tips and tricks page. It's just one liners, but there's really fun ones in there that just make you think. You may not find it useful, but at least you know it's there, so if you do need it or you do want to learn how to do it, you know where you can find it, which I find really useful.
+
+But I think the problem, Sacha, with Emacs in general – I'm just going to switch back to my camera here – I think the problem with it is inevitably, that you end up in a situation where you've exhausted all your resources in terms of learning Emacs. I think learning Emacs is perhaps too hard. Not that people shouldn't do it, but that it is too hard in some ways because there isn't really a lot of great information that take you from the very beginnings.
+
+I wrote my very first article that was like “Getting Started with Emacs”, but looking back at it through four to five years of writing blog entries, I realized that actually, I don't think it was useful as I thought it was back then, if that makes sense. When I started the blog a few years ago, I got approached by a couple of publishers to write a book. At the time I didn't have the time, but over the past year, I've slowly been working towards writing a book on Emacs.
+That's part of the reason why I haven't been as active on the blog as well. The blog will remain free and I will keep posting on it, but I figured it will be easier for me to do sort of bigger, longer expositions on how generally things work, and unlike my blog, get it professionally copy-edited as well.
+Say what you want, but that's still a nice thing.
 
 *Sacha*: You can hire an editor so there's no...
 
-*Mickey*: Exactly but I think there's a real demand for that. I've been working on this for about a year and-a-half, on and off a little bit. But the real problem I've had is actually deciding the topics. Should it be straight from beginners? Should it be something that targets a little bit more intermediate? I don't know. I'm [inaudible] people think actually.
+*Mickey*: Exactly, but I think there's a real demand for that. I've been working on this for about a year and a half, on and off a little bit. But the real problem I've had is actually deciding the topics. Should it be straight from beginners? Should it be something that targets a little bit more intermediate? I don't know. I'd like to hear what people think actually.
 
-*Sacha*: Well, from when I hear this, there's a real kind of demand, not just for the same beginner's guide as it would seem but really, how do you take it to the next step and how do you get that linchpin go, that “Aha! This is how Emacs really works. This is how I can use it for whatever workflows that I can imagine.” Something like that but that's focused on mastering Emacs that help people feel confident and combining different parts of it or even inventing their own tools. I think that would be very much welcome.
+*Sacha*: Well, from when I hear this, there's a real pent-up demand not just for the same beginner's guides as you've been seeing, but really, how do you take it to the next step and how do you get that linchpin moment, that “Aha! This is how Emacs really works. This is how I can use it for whatever workflows that I can imagine.” Something like that, that's focused on mastering Emacs, that helps people feel confident in combining different parts of it or even inventing their own tools. I think that would be very much welcome.
 
-*Mickey*: Yes, absolutely. I don't know, you've done a lot work on that and ORG mode as well. You actually [inaudible] done drawing [inaudible] which I've been thus far too lazy to attempt that.
-I use the [inaudible] that I created myself, just an Excel spreadsheet with commands once people want to come up to you and said, “Hey, that's really helped me learn ORG mode.” But what has made your ORG mode skills that good? Was it perseverance?
+*Mickey*: Yes, absolutely. I don't know, you've done a lot work on that and Org Mode as well. You've actually gone and drawn cheat sheets. I've been thus far too lazy to attempt that. Do you find that people...? I use the cheat sheet that I created myself, just an Excel spreadsheet with commands. Lots of people must have come up to you and said, “Hey, that's really helped me learn Org mode.” But what has made your Org mode skills that good? Was it perseverance?
 
-*Sacha*: I think it's also just looking at other people's workflows and saying, “Hey, that's really cool.” And I think the challenge here is really is that there are so many workflows, there aren't so many things that no one book and no one website can cover all the different things that people can know or even need to know.
-I guess what I like about say, the reading guide that you have on your site or the other things that you [inaudible] putting together is that giving people a map. Because when you're a beginner, you have no idea what [inaudible] in and what makes sense to combine. But really when somebody you says, “If you're interested in this, you can learn this, and this, and this.” And that makes it more manageable and less intimidating.
-Then when you've learned those three things, this fourth thing actually becomes really easy to do.
+*Sacha*: I think it's also just looking at other people's workflows and saying, “Hey, that's really cool.” And I think the challenge here is really is that there are so many workflows. There are so many things that no one book and no one website can cover all the different things that people can know or even need to know.
 
-*Mickey*: Exactly. That's how I find it as well. But I think there's [inaudible] scares in the Emacs community. It's with the very old-timers who we're not writing the editor for anyone except ourselves which is a valid point. I'm not disputing that but I don't know. There's a reason why a lot of people pick up editors like Sublime Text and so on.
-And funny enough I was actually working with a guy a few months ago who was really skilled in Sublime Text. We spent ages customizing it as well, I'm like thinking, “Damn, I thought these things were just plug and play.” No. It just goes to show that there are people out there willing to tinker with their editors and Emacs is a tinker editor. So I wonder, “What would it take to capture these people's imaginations and make them consider the fairly steep learning curve to start out with?”
+I guess what I like about, say, the reading guide that you have on your site or the other things that you can slowly start putting together, is that giving people a map. Because when you're a beginner, you have no idea what order to learn things in and what makes sense to combine. But really when somebody says, “If you're interested in this, you can learn this, and this, and this.” And that makes it more manageable and less intimidating. "Then when you've learned those three things, this fourth thing actually becomes really easy to do."
 
-*Sacha*: I like the way that Screencast, blog posts and people writing not just about features but how they're using those features, those kind of inspired me to say okay, getting there, requires learning new [inaudible] learning a little bit of Emacs Lisp and all these parentheses but it's worth it because they can see how it's worth it to other people.
+*Mickey*: Exactly. That's how I find it as well. But I think there's a big schism in the Emacs community between the very old-timers who--"we're not writing the editor for anyone except ourselves," which is a valid point. I'm not disputing that. But I don't know. There's a reason why a lot of people pick up editors like Sublime Text and so on.
 
-*Mickey*: Yes, absolutely. Which is why I sort of switch to more workflow-orientated blog posting style as well. I want to at least try to work in a few examples of how I use it, it's to think people get more out of that than just one long rant by me about some topic.
+And funny enough, I was actually working with a guy a few months ago who was really skilled in Sublime Text. We spent ages customizing it as well. I'm like thinking, “Damn, I thought these things were just plug and play.” No. It just goes to show that there are people out there willing to tinker with their editors, and Emacs is a tinkerer's editor. So I wonder, what would it take to capture these people's imaginations and make them consider the fairly steep learning curve to start out with?
 
-*Sacha*: It will be interesting to see that and also interesting to see how you flow some of the different topics in a book.
-I was looking on the wicked cool Emacs collection of snippets too but I find the challenge was that everytime I posted about something, people saw, “Oh, that's a great idea. Let me change the source codes to make it even easier to configure so you don't need three line and you don't need my 30 lines of code. You just need one configuration variable.” Writing for it and [inaudible] can be an interesting challenge.
+*Sacha*: I like the way that screencasts and blog posts of people writing not just about features but how they're using those features, those kind of inspired people to say okay, getting there requires learning new keyboard shortcuts and learning a little bit of Emacs Lisp, and all these parentheses, but it's worth it because they can see how it's worth it to other people.
 
-*Mickey*: Yes, absolutely. The problem is people want my theme for some reason – the color scheme. And it's never been a theme. I think it was made way back in the day before the themes existed but I get people ask me before and I'm like, “I'll get around to releasing it. It's just that if I release it, I have to maintain it as well.” Because they want the packaging, then I have to version it, I have to put it in the right place. It's all these little things but it just take up time. But it's a good thing and I think the Emacs community has really, really changed in the last few years starting with the package managers, Github and all these things.
-And I think Emacs has only been a friendly community but it's an easier community to get into, I think now than it was.
+*Mickey*: Yes, absolutely. Which is why I switched to more workflow-orientated blog posting style as well. I want to at least try to work in a few examples of how I use it. I think people get more out of that than just one long rant by me about some topic.
 
-*Sacha*: I think so with Meetups, and YouTube, Screencast, and all these wonderful ways.
+*Sacha*: It will be interesting to see that, and also interesting to see how you flow through the different topics in a book. I was working on a Wicked Cool Emacs collection of snippets too, but I found the challenge was that every time I posted about something, people thought, “Oh, that's a great idea. Let me change the source code to make it even easier to configure, so you don't need 30 lines of code, you just need one configuration variable.” Writing for a moving target can be an interesting challenge.
+
+*Mickey*: Yes, absolutely. The problem is people want my theme for some reason – the color scheme. And it's never been a theme. I think it was made way back in the day before the themes existed, but I get people asking me for it. I'll get around to releasing it. It's just that if I release it, I have to maintain it as well. Because they want the packaging, then I have to version it, I have to put it in the right place. It's all these little things, but it just take up time. But it's a good thing. I think the Emacs community has really, really changed in the last few years starting with the package managers, Github and all these things. I think Emacs has always been a friendly community, but it's an easier community to get into than it was.
+
+*Sacha*: I think so with Meetups, and YouTube screencasts, and all these wonderful ways.
 
 *Mickey*: Exactly. More ways for the community to bond with one another.
 
@@ -377,7 +416,6 @@ And I think Emacs has only been a friendly community but it's an easier communit
 
 *Mickey*: Thanks a lot, Sacha. You, too. Absolutely.
 
-*Sacha*: Okay, I'll see you around and everyone listening to Emacs, thanks for coming too. Bye!
-Published by Google Drive–Report Abuse–Updated automatically every 5 minutes
+*Sacha*: Okay, I'll see you around. Everyone listening to Emacs Chat, thanks for coming too. Bye!
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"
