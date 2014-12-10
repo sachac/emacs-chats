@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Emacs Chat: Karl Voit</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/foundation/css/foundation.min.css"></link>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/org-export.css"></link>
+<link rel="stylesheet" type="text/css" href="http://sachachua.com/blog/wp-content/themes/sacha-v3/style.css"></link>
+<link rel="stylesheet" type="text/css" href="css/emchat.css"></link>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script><script src="js/emchat.js"></script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div class="sticky contain-to-grid top-menu"><nav class='top-bar'><ul class='links'>
+      <li><a id='home' class='replace home-design' href='/emacs-chats/'>Home</a></li>
+      <li><a id='index' class='replace show-for-medium-up home-design' href='/emacs-chats/theindex.html'>Index</a></li>
+      <li><a id='contact' class='replace home-design' href='http://sachachua.com/blog/contact'>Contact</a></li>
+      <li class="right"><a href='/emacs-chats/sitemap.html'>Sitemap</a></li> 
+      <li class="right"><a href="https://github.com/sachac/emacs-chats">Github</a></li>
+    </ul></nav></div>
+</div>
+<div id="content">
+<h1 class="title">Emacs Chat: Karl Voit</h1>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">Audio and Video</h2>
+<div class="outline-text-2" id="text-1">
+<iframe width="560" height="315" src="//www.youtube.com/embed/SaKPr4J0K2I" frameborder="0" allowfullscreen></iframe>
+
+<p>
+Want just the audio? <a href="http://archive.org/download/20141203EmacsChatKarlVoit/2014-12-03-Emacs-Chat-Karl-Voit.mp3">Download the MP3</a>
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2">Topics and links</h2>
+<div class="outline-text-2" id="text-2">
+<ul class="org-ul">
+<li>Org Mode
+</li>
+<li><a href="https://github.com/novoid/Memacs">https://github.com/novoid/Memacs</a>
+</li>
+<li><a href="https://github.com/novoid/lazyblorg">https://github.com/novoid/lazyblorg</a>
+</li>
+<li><a href="https://github.com/novoid/dot-emacs">https://github.com/novoid/dot-emacs</a>
+</li>
+<li><a href="http://karl-voit.at">http://karl-voit.at</a>
+</li>
+<li><a href="http://twitter.com/n0v0id">http://twitter.com/n0v0id</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3">Transcript</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+<b>Sacha:</b> Hello and welcome to another episode of Emacs Chat, where we get to meet other people who use Emacs and find out what got them into it, how they use it, and other cool things. Today's guest is Karl Voit, who is totally awesome, and is doing interesting things involving pulling outside information into Emacs. Hello, Karl.
+</p>
+
+<p>
+<b>Karl:</b> Hello, Sacha.
+</p>
+
+<p>
+<b>Sacha:</b> Before we dig into all the cool Emacs stuff, tell me a little bit more about&#x2026; First, what are you interested in outside of Emacs? Who are you?
+</p>
+
+<p>
+<b>Karl:</b> Well, I am located in Austria, so I am from Europe. I have a different timezone than you have. My interest is basically personal information management. I'm not interested in Emacs as itself, but Emacs and especially Org Mode is a very, very cool tool to use. So therefore I'm using Emacs.
+</p>
+
+<p>
+I love to optimize things. I love to organize things. I love to learn about new methods. I love to learn about new tools, and I always did so. This way, I was introduced to Emacs Org Mode. Well, if I remember correctly, the first feature I was looking into was defining dependencies between todos. Todos which require previous work, for example, do not show up on my agenda. This was the first killer feature why I started with Org Mode.
+</p>
+
+<p>
+<b>Sacha:</b> Let me dig a bit into your interest in personal information management and your life before Org Mode. You sent this lovely Org outline of all the different things that we could talk about. You've gone through a lot of different personal information management tools. Paper, you've mentioned Filofax, and Hipster PDA (which I had a lot of fun with as well before), all the way through PDAs.
+</p>
+
+<p>
+Tell me a little bit more. What was it like getting used to all these systems and then trying Emacs Org Mode? What was it like for you, making that shift?
+</p>
+
+<p>
+<b>Karl:</b> Well, my big motivation for this is laziness. I hate forgetting things. So I tend to write them down and forget them afterward. Another big motivation for me is curiosity, playing around with tools, new methods&#x2026; I'd like to optimize my life so that I don't have to remember all those stuff I have to do for the day. I just look at my agenda and it tells me what I have planned for today.
+</p>
+
+<p>
+Yes, as you mentioned, when I was in school, I started with a simple paper Filofax. I designed my own pages for this Filofax. It was probably end of the 90s when I started to use Palm OS devices - for example, Handspring and Palm T3 devices. Then I switched over to a Linux-based PDA which was a Sharp Zaurus. Then I switched back to Palm OS. Of course, nowadays I'm using Android together with a couple of other tools.
+</p>
+
+<p>
+For example, I love Tasker, which is very cool on Android. Of course I made the bridge over to Org Mode via Memacs, you already mentioned.
+</p>
+
+<p>
+<b>Sacha:</b> Which I'm definitely looking forward to learning more about.
+</p>
+
+<p>
+You've got this long-running interest in personal information management. Your wonderful back story emailed to me also includes your history of getting into Emacs. How was that for you? You wrote about getting into it in the 90s, but how did you get started?
+</p>
+
+<p>
+<b>Karl:</b> With Emacs? Actually, I can't remember. I was thinking about it, of course, but I can't remember what was the reason to start with Emacs. Probably, somebody recommended it to me. I was not paying attention on choice of an editor back then. But it turned out really pretty good. It had the same features I was accustomed to before. But at the early stage, when I was using Emacs, I was no power user of Emacs. I just used the very, very basic things of an editor. Probably I was using the mouse all the time. I can't remember, actually.
+</p>
+
+<p>
+For various reasons, I switched over to Vim at the beginning of&#x2013;I guess it was 2003 or something like that. Then I was using Vim instead of Emacs all the time. I guess it was 2011 when somebody showed me Org Mode, and yes, that was it. Since then I was doing Emacs again. 
+</p>
+
+<p>
+This time, I did it better than the first time. This time, I sat down and learned about the basic principles, about the keyboard shortcuts, and how to adapt them and so forth. Not just copy and paste from the Internet, and then wondering why something is broken or something like that. I started to learn about Emacs, and Elisp especially. But I'm not very familiar with Elisp. I still have to learn a lot to understand Elisp code. For the next couple of weeks, I plan to learn how to debug issues I have with Org Mode by myself.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I hear from a lot of people that learning how to customize Emacs through Emacs Lisp is what gets them really into it. You basically started off with trying it out, using it as a basic editor. You spent 10 years or something like that using Vim instead. Then when you found that Org Mode really fit the way that you wanted to view your personal information management, that gave you enough reason to come back into Emacs.
+</p>
+
+<p>
+<b>Karl:</b> Well, Org Mode is the best piece of software I found so far. I always say Org Mode is a big pile of LEGO bricks where you can build whatever you want out of it, and there is an infinite number of LEGO bricks. Everybody has a different kind of thing going on with Org Mode. To everybody, Org Mode is something different. I like this. I like this very much, and it suits my workflow very well.
+</p>
+
+<p>
+<b>Sacha:</b> Now were you figuring this out on your own, or were you learning from other people? Were other people also using Org and Emacs close to you?
+</p>
+
+<p>
+<b>Karl:</b> Well, I followed the Org Mode mailing via Usenet (Gmane). There I learned a lot, because other people's issues are my issues as well, most of the time. I follow Reddit. There are some important postings there. Of course, we have a very strong open source community in Graz, which I like very much. We have Linux days. I also give talks there. I already gave three talks about Org Mode and held workshops and so forth. With all those guys here in Graz, you get to learn of many new features you were not aware of.
+</p>
+
+<p>
+<b>Sacha:</b> Wonderful. Speaking of new features, David Bremner has a question about Memacs and Mobile Org.
+</p>
+
+<p>
+<b>Karl:</b> Sure.
+</p>
+
+<p>
+<b>Sacha:</b> He says, “It sounds like you don't use Mobile Org, but rather something else - Memacs? Did you try Mobile Org out? If so what made you decide against it?”
+</p>
+
+<p>
+<b>Karl:</b> No, no, no. Actually I'm using Mobile Org. I'm using Mobile Org a lot but only for&#x2026; seldom&#x2026; I look up my Org Mode pages on my mobile phone. Most of the time, I use it for capturing webpages and newspaper articles I read online into Org Mode.
+</p>
+
+<p>
+But Memacs is something different. With Memacs, I'm able to integrate a lot of different sources into my Org Mode. Memacs is also part of my mobile workflow. There is a module called “simple phone log”, where I am able to scan the phone call log and generate Org Mode files out of it. Therefore all my phone calls appear on my agenda.
+</p>
+
+<p>
+<b>Sacha:</b> Wow. I've got to figure out how to do that. 
+</p>
+
+<p>
+One of the things that we like doing during these Emacs Chats is digging into exactly what does that look like, how does that feel like&#x2026; Do you want to jump into the screen-sharing, image-looking-at, explaining part of this conversation? And then we can dig into the other cool stuff that you mentioned in your email later. Please show us how Memacs, and Org Mode and all that stuff comes together.
+</p>
+
+<p>
+<b>Karl:</b> Okay. I'm going to share the screen now.
+</p>
+
+<p>
+<b>Sacha:</b> We can see your screen. Perfect.
+</p>
+
+<p>
+<b>Karl:</b> You see the screen? Cool. Actually with Memacs, I'm able to have an agenda that doesn't look only like this&#x2026; oh, cool. With screen sharing, I'm not able to open the PDF file. “Not enough storage is available.” Cool.
+</p>
+
+<p>
+<b>Sacha:</b> That's interesting. Maybe your drive is full?
+</p>
+
+<p>
+<b>Karl:</b> No, no, no.
+</p>
+
+<p>
+<b>Sacha:</b> Stop screen sharing first, open the file, and then come back with screen sharing. How's that?
+</p>
+
+<p>
+<b>Karl:</b> Yes. “Not enough storage is available to process this.” Very funny.
+</p>
+
+<p>
+<b>Sacha:</b> I will proceed to verbally juggle and otherwise distract the audience while you deal with technical issues.
+</p>
+
+<p>
+Okay, while you're sorting that out, other interesting things that I picked up from your email is this organizing information, which you can probably tell it's one of my interests as well. When you've accumulated a lot of notes or research or other things like that, how do you make sense of it? How do you organize it so that you can get information and also see that big picture?
+</p>
+
+<p>
+You've mentioned here in this email under Personal Information Management, something called Tagstore or TagTrees. Can you tell us a little bit more about how you organize massive quantities of information?
+</p>
+
+<p>
+<b>Karl:</b> Well, for text, I have to mention that I was doing a PhD thesis at the university, which was very, very great. I enjoyed it very much. This was my topic. My topic was, “How to organize files and folders other than in the strict hierarchy of folders.” Everybody is used to the strict folder hierarchy. It was developed in the 50s, I guess, and everybody is using them nowadays, despite the fact that this does not scale very well.
+</p>
+
+<p>
+So I developed a method where I'm using tagging for files, within the usual file system. It works on every machine. I generate so-called “TagTrees”. Those TagTrees are actually folder hierarchies generated out of the text. This way, you are able to relocate any information by an arbitrary combination of text you have used for this information. This was my research work. 
+</p>
+
+<p>
+I did a research platform prototype, and this prototype was called “Tagstore.” With this prototype, I was able to come up with numbers, because I confronted ordinary computer users with it and let them file and refind files. I asked them questions and so forth. Basically this was my PhD research work. 
+</p>
+
+<p>
+But personally, I'm using some kind of different approach, because the TagTrees/Tagstore approach is more or less for the common computer user with no deeper knowledge whatsoever.
+</p>
+
+<p>
+I'm using a different, very, very low tech method to manage my files. I tried to keep it on the minimum, so that it works independent of my current system. I try to be independent of my system. So I'm using like OS X, I'm using Linux, and I'm using Windows at work. Therefore, the smallest common thing which is available everywhere, on every system, is the file system itself.
+</p>
+
+<p>
+I try to have very, very long file names, very descriptive file names. I add date stamps, time stamps and tags, directly into those file names.
+</p>
+
+<p>
+<b>Sacha:</b> That's exactly how I ended up doing things too. Because the file name is really easy to copy, you don't have to keep a separate metadata store.
+</p>
+
+<p>
+<b>Karl:</b> Exactly.
+</p>
+
+<p>
+<b>Sacha:</b> Copying it into different systems&#x2026; For example, I keep my sketches in Dropbox, Flickr, and Evernote. At least, if the metadata is with the file name, it's all there.
+</p>
+
+<p>
+<b>Karl:</b> Exactly. It is independent of your backup methods. Each and every backup method doesn't lose metadata you are adding in some kind of fancy system. 
+</p>
+
+<p>
+Because I'm a very lazy guy, I tend to keep the effort on a very minimum level. Therefore, I wrote a couple of tools which are very handy to cope with this kind of system. They are all on my GitHub page. For example, “date2name” is a very simple Python tool adding date stamps and time stamps in front of the file name.
+</p>
+
+<p>
+Then I have “appendfilename”, which I'm using very often for adding descriptive sentences to photographs and so forth. My system for tagging, I'm using “ &#x2013; “ at the end of a file name. That's my separator. Afterwards, each and every word is a tag. If you're lazy as I am, you do not want to rename all those files manually. I wrote a tool called “filetag” which is able to tag one or several file with the same or multiple set of tags, and so forth.
+</p>
+
+<p>
+<b>Sacha:</b> When I found out that you can toggle read-only in a Dired buffer and then just edit the file names there, I went a little trigger-happy and I renamed a whole bunch of my files and put tags in them.
+</p>
+
+<p>
+But speaking of files, were you able to open that PDF that you wanted to show us earlier?
+</p>
+
+<p>
+<b>Karl:</b> Sure, yes.
+</p>
+
+<p>
+<b>Sacha:</b> All right. While Karl is bringing out screen sharing, if you're watching this video live, you can ask questions using the Q&amp;A functionality that shows up somewhere when you're watching it.
+</p>
+
+<p>
+All right, here you go.
+</p>
+
+<p>
+<b>Karl:</b> Are you seeing my Adobe?
+</p>
+
+<p>
+<b>Sacha:</b> Yes, I am.
+</p>
+
+<p>
+<b>Karl:</b> Here is an example of an ordinary day with one presentation, which usually is the case when you're using something like Outlook or something like that without Memacs. Basically, if you go to the “15 September 2008”, there was one presentation about something that was called “tagstore”, and that's it. 
+</p>
+
+<p>
+But if you have something like Memacs, the same date looks different. On this screen, you see additional information from text messages, from emails, and so forth. The story goes that 13:35, I sent a text message to somebody, “Don't forget the presentation at Karl:00pm.” When I click on the phone number, I get to my old contact entry of this person of course.
+</p>
+
+<p>
+With this information I know that my colleague here, Peter, was joining the presentation as well. Then there is the presentation starting and during the presentation. There is a JPEG picture. I usually don't even rename those pictures any more, because when there is a JPEG which was done during a presentation, it's more or less one of the slides or the presenting person. Therefore I have a connection between the presentation and even an unnamed or not renamed photograph.
+</p>
+
+<p>
+Then the next one, let's see, is a tweet of mine. "Tagstore is pretty clever." Actually, with this entry, I am aware of what I was thinking back then, even when I can't remember what the presentation was about. Then I have a Delicious bookmark from the Tagstore homepage. I stored it during the presentations, so I have the connection there.
+</p>
+
+<p>
+Next at 15:53, I wrote an email about “Tagstore slides and features for life-logging.” So I was referring to the person presenting that Tagstore slides. I want to get Tagstore slides. I have a comment about life-logging and so forth. And if I click on it, of course, I get to the email body. So I have the connection between the presentation and the email.
+</p>
+
+<p>
+Well, that's it basically. It goes on like this. There is a phone call. There is even a Git commit at 17:42 where I edit some ideas from the presentation to some repository, and so forth. 
+</p>
+
+<p>
+The basic idea is even if you have all this information, you're not able to use them properly if you don't have the connection between them. Memacs is providing a temporal connection, because everything which was happening on this day is combined on the agenda of that day. So, I don't have to combine them by myself. 
+</p>
+
+<p>
+It is very important to notice that I don't have any kind of additional effort to get this agenda, because all those Memacs modules are indexing my information fully automatically. There is only a one-time effort to set up a Memacs module, let's say for text messages or for emails, or something like that. Then it works, basically, as long as the system you're using is not changing in any way.
+</p>
+
+<p>
+<b>Sacha:</b> Let me see if I get this straight. You've got this magical Python Memacs script that just pulls in all these information and timestamps it with the date and exports it to Org Mode format so that you can include that in your agenda files?
+</p>
+
+<p>
+<b>Karl:</b> Exactly.
+</p>
+
+<p>
+<b>Sacha:</b> You have this lovely display of basically your time line with everything in it.
+</p>
+
+<p>
+<b>Karl:</b> Exactly, yes.
+</p>
+
+<p>
+Memacs is not very sophisticated because basically it's exactly the thing you already told us. I'm trying to pass some kind of data and if it's ASCII, I'm very happy about it. And around this information, I generate very, very, very basic headings in Org Mode style. Those headings I've written into Org Mode archive files, so I'm not distracted on my normal agenda with all these vast amounts of information. As long as I don't activate my archive mode on my agenda, I don't see any Memacs at all.
+</p>
+
+<p>
+<b>Sacha:</b> You use it when you're looking back and you're trying to figure out what happened that day.
+</p>
+
+<p>
+<b>Karl:</b> Exactly. Well, 99% of all these collected data, I'm not interested of course, that's for sure. But the 1% I'm interested in in the future, I cannot tell what it is. As long as there is no effort in collecting and indexing it manually, I thought, I'm fine with it.
+</p>
+
+<p>
+<b>Sacha:</b> Can you tell me a brief story of maybe one time this was really useful for you? What was your 1% experience?
+</p>
+
+<p>
+<b>Karl:</b> I'm sure you can recall several events where you were wondering if you had stored a bookmark with a certain topic and something like that. So I tend to look out for some information, for some keyword, for a person. Then I probably do a <code>helm-do-grep</code> (I guess it's the command) for this topic. Then lots of information pop up associated with this. I always have the possibility to click on a time or a date stamp and get the agenda of that day. There is more information associated with them and so forth.
+</p>
+
+<p>
+It's more or less navigating in my own files, in my own information.
+</p>
+
+<p>
+<b>Sacha:</b> You gave me a short list of the kinds of information that Memacs is automatically pulling in for you. You've got files, photographs, bank account transactions I guess, your sleeping hours, working hours, reminders, charge times, miscellaneous places, text messages, phone calls, Usenet postings, tweets, emails, all the webpages I guess that you browsed, Git and svn commits, and bookmarks. Wow! That's a really long list.
+</p>
+
+<p>
+<b>Karl:</b> Yes. I can share my screen once again so that everybody can see what we are talking about. This is the list you are referring to.
+</p>
+
+<p>
+That's my set up. There are a couple of more Memacs modules you can use, but these are the information I tend to find very handy to have indexed. 
+</p>
+
+<p>
+My bank statements&#x2026; There are a couple of modules like bank statements which are not fully automatic. From time to time&#x2013;I guess my schedule duration is three months or something like that&#x2013;I have to download all my bank statements into CSV format, and these files get indexed for example. 
+</p>
+
+<p>
+My tweets are fully automatically indexed by a module. My emails of course, when I archive my emails from my inbox, they get indexed.
+</p>
+
+<p>
+This is a very interesting thing, the webpages, because I not only get the URLs of the webpage I'm visiting in my browser in my Memacs agenda, but when I click on this URL on my agenda, I actually get the content in my browser which was available back then when I visited the page. Actually, I'm storing the full webpages. Each and every webpage gets stored on my computer. So, I can take a look how Amazon was looking two years ago. When I have a time stamp when I was doing an inquiry about some new hardware I'm going to buy, I'm able to look up on my Memacs what information I was looking up at the browser at this specific time. Even if the webpage isn't up anymore, I can get the information. Of course, if you have a desktop search engine, you can type in any keyword, and you get all the content of each and every webpage you were reading, which is quite handy.
+</p>
+
+<p>
+<b>Sacha:</b> That sounds really useful, actually. I often find myself trying to retrace my steps. Since you can deal with hard disk space, you can add more space, it makes sense to just save everything, especially if you can save it automatically.
+</p>
+
+<p>
+<b>Karl:</b> Yes, exactly. A couple of years ago, we met the point where you are not able to produce more data than which is able to be stored on a hard disk. If you don't look at video for now, you're not able to produce as many information that you're not able to buy a hard disk where everything can be stored on it.
+</p>
+
+<p>
+<b>Sacha:</b> Cool, very cool. That's the consumption and automated tracking side of it. The other piece that you mentioned was being able to very easily blog from Org and get stuff out there. What does that workflow look like? What do you do?
+</p>
+
+<p>
+<b>Karl:</b> Well, I can show you. If I want to do a new blog post, I create a new heading like this, and then I enter a heading. This is a todo until that blog is finished. Then I tag it with “:blog:”. You can add additional text. Let's say “Emacs”, or “Software”, or something like that, or PIM. Then I write the blog post on there. Then I have to give a property ID, which is always time stamped. And emacs-chat. Timestamp followed by description at my site. Then I have to mark it as “Done”, and that's basically it. This is a new blog post. It's converted to HTML and uploaded to my webpage, fully automatically.
+</p>
+
+<p>
+<b>Sacha:</b> Okay, when you say fully automatically, how does it actually work?
+</p>
+
+<p>
+<b>Karl:</b> Okay. To be fair&#x2026; Let's stop the screen sharing. It's not very important for you to seeing my Emacs. To be fair, at this very moment, Lazyblorg (which is the name of the software I'm programming, which is written in Python) is still work in progress. But it works. You can look at my webpage (<a href="http://karl-voit.at">http://karl-voit.at</a>), and everything you see there is a result of the direct export from Lazyblorg from my Org files to my blog.
+</p>
+
+<p>
+At the moment, I do it manually because I have some debugging going on, some checking and so forth. But there is no reason not to do it automatically with a cron job or something like that. There are a lot of cool, cool features in the pipeline. At the holidays, I hope I'm going to implement some of them.
+</p>
+
+<p>
+It's very, very cool to have a blog system where I can add a blog entry whenever I want. So, I don't have one single Org Mode file which contains all my blog entries. I have the file with my hardware inventory. For example, if I bought some fancy new gadget, I can blog there. If in my Org contact page, I want to blog about a person, I can blog there directly at the entry of the person and so forth. So the blog entries are scattered over my Org Mode files. This is what I wanted to have, and this was one of the reasons I started to implement a blogging system by my own. 
+</p>
+
+<p>
+Of course, there are a lot of cool blogging systems out there, but none of them was as lazy as Lazyblorg. I guess none of them was able to add the feature where I was able to blog wherever I want.
+</p>
+
+<p>
+<b>Sacha:</b> I like that idea of being able to just include the blog entries as part of your regular outline. Whether you're putting it as an entry underneath the contact, or you've got several headings down in a project and you're putting your blog post underneath that, that makes a lot of sense.
+</p>
+
+<p>
+I was looking at the README for Lazyblorg. It talks about just basically processing the entire Org file looking for all these tag headings and exporting those to HTML, which is an interesting approach for sure. 
+</p>
+
+<p>
+I tend to use Org2Blog. I just take a specific heading (which I can write anywhere) and it takes that heading, that subtree, and synchronizes it with WordPress. But it still requires that I have WordPress, and updating it can be a little bit funky. You just  export everything and go. That's really cool.
+</p>
+
+<p>
+<b>Karl:</b> It has the disadvantage that I have to write my own Org Mode parser in Python, because my Lisp knowledge is not that great. I had to use Python for it. Writing an Org Mode parser in a different language than Elisp, it's kind of work. I had to define a subset of Org Mode syntax in order to do it.
+</p>
+
+<p>
+<b>Sacha:</b> What I'm getting from talking to you about Memacs and Lazyblorg is that you actually like Python a lot, or you use it very comfortably, and so you end up building all these little tools that work with Emacs.
+</p>
+
+<p>
+<b>Karl:</b> I would not consider myself being in programming. I'm not that experienced, but Python is the language which does not hurt that much out of languages for example.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I guess if you wanted to do things more in Emacs Lisp, a package like an elnode might be an interesting approach where you could maybe serve the blog post directly from Emacs or you could tell Emacs to do something and Emacs will do the exporting for you or whatever.
+</p>
+
+<p>
+But there are a lot of different ways to do it, and certainly writing a simple parser using just a syntax that you use (because you don't have to make it deal with all of the things you can do with Org, you can just deal with the stuff that you use in Org), that makes perfect sense.
+</p>
+
+<p>
+<b>Karl:</b> Exactly.
+</p>
+
+<p>
+<b>Karl:</b> Yes. Those syntax elements, I want to enlarge, of course. For example there is missing lists and tables, and these are very important things to me. So I hope that this year, I'm able to add support for tables and simple lists as well.
+</p>
+
+<p>
+<b>Sacha:</b> Can you get around it by calling Emacs in batch mode, just saying “export this region from this position to that position”?
+</p>
+
+<p>
+<b>Karl:</b> Yes. I was thinking about this as well. You have to know that when I parse Org Mode and generate all these HTML pages, there is a lot of additional stuff going on. I have features like hidden pages, so that I'm able to publish blog entries and only the people I send the link to the entry, those people are able to read it and nobody else.
+</p>
+
+<p>
+Of course, I'm generating RSS and Atom feeds and so forth. I was thinking about this, and I was thinking about adopting other generating tools out there. There are a lot of advantages for this approach, but then on the other hand, I was thinking about what I want to have in terms of features. A lot of those features I wanted to have required that I have total control of the generating process by myself.
+</p>
+
+<p>
+<b>Sacha:</b> I see. You can find tools that do most of what you want, but then there's the remaining 10% where you say, “I really want it to do this.” So you end up writing the whole thing instead.
+</p>
+
+<p>
+<b>Karl:</b> Exactly. I wanted the perfect blog system for my requirements. It looks pretty great, and I'm very proud using it. Yes, it works so far. It's cool.
+</p>
+
+<p>
+<b>Sacha:</b> You've obviously put a lot of thought into how you use Org, which makes sense with your interest in Personal Information Management. Are there other parts of Emacs that you've played around with or tweaked to that kind of extent?
+</p>
+
+<p>
+<b>Karl:</b> What do you mean for example? Writing?
+</p>
+
+<p>
+<b>Sacha:</b> Are there other package that you really like?
+</p>
+
+<p>
+<b>Karl:</b> Oh, other packages? Sure. There are a couple of packages for Python programming, but I'm still in an evaluation phase where I am playing around with completion packages and so forth. But I can send you the link to my Emacs config which is on GitHub. <a href="http://github.com/novoid/dot-emacs">http://github.com/novoid/dot-emacs</a>
+</p>
+
+<p>
+If anybody is interested on what modes I'm using, a couple of weeks ago, I transferred all my Emacs config to Orgstruct or something like that. So there is folding, and there is a heading called “modes.” If you extract it, then you see all those modes I'm using. And I'm using a lot of modes other than Org Mode.
+</p>
+
+<p>
+<b>Sacha:</b> Which is great because one of the things I actually really enjoy about this Emacs Chats is looking at people's configuration, just getting a sense of all the different things that people use, but also how they're using them. It's one thing to read a config, and another thing for someone to say, “Oh, yes I had this config because of this, and I use it because it works well with that.” Would you be willing to walk me through your configuration and point out the things that you are happy you've configured?
+</p>
+
+<p>
+<b>Karl:</b> Sure. Let me try to start my Emacs config.
+</p>
+
+<p>
+<b>Sacha:</b> For the people who are watching the video, you can find his config at <a href="http://github.com/novoid/dot-emacs">http://github.com/novoid/dot-emacs</a>.
+</p>
+
+<p>
+<b>Karl:</b> Sorry about the name. Okay, are you seeing my config file?
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I can see your screen.
+</p>
+
+<p>
+<b>Karl:</b> Cool. There are some general stuff, like disable the menu and so forth, toolbar. I'm using the zenburn theme for now. Many people are interested in themes, I've read on the Internet. Then I have some config, some files in different folders. This is my basic config for that. I have to use UTF-8 (Unicode). You might know that I'm German-speaking person, so umlauts and special characters are very important to me.
+</p>
+
+<p>
+Then for keyboard shortcuts, I use something – I don't know what it's called – some prefix command. Defined prefix command and it's called <code>my-map</code>, so that I'm able to prefix all of my commands with <code>C-c C-, </code>. The rest of my commands are only using the <code>my-map</code> and therefore I'm able to extract my own commands very easily.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, I almost forget which commands have overwritten, which is I end up using <code>describe-personal-keybindings</code>, but this is great.
+</p>
+
+<p>
+<b>Karl:</b> Exactly. I'm very keen on using prefixes for example. I have system-wide snippets, snippets for inserting date and time stamps and so forth. Everywhere, I have a predefined prefix so that it doesn't corrupt with any feature of program I'm using.
+</p>
+
+<p>
+<b>Sacha:</b> One of the techniques I'm experimenting with now is using <code>key-chord-mode</code>, to use it as a prefix for commands. Instead of binding a command directly to the two-character combination, I end up using that to just then figure all these other shortcuts. It's interesting. Keeps my fingers off the control keys.
+</p>
+
+<p>
+<b>Karl:</b> Okay, the next section is about switching systems. I'm using the very same configuration on different kind of systems, and therefore I have all those functions to be able to switch on and switch off certain functionality depending on the system.
+</p>
+
+<p>
+<b>Sacha:</b> That must have been an interesting challenge, getting the same Emacs to run in so many different systems.
+</p>
+
+<p>
+<b>Karl:</b> Well, actually, it wasn't that hard at all. I try it out and everything which crashed, I disabled on my Windows system. That was basically my workflow.
+</p>
+
+<p>
+<b>Sacha:</b> All right. So you have a lot of conditionals based on that.
+</p>
+
+<p>
+<b>Karl:</b> Font size. I'd like to have a slightly greater font size than default. This is how I set it when starting. This is my Python set up. You see it's only for two systems. My “powerplantwindows” and my “gary”, which is my Linux box using this configuration. What is in here, “pyflakes” for checking the commands&#x2026;
+</p>
+
+<p>
+Actually, this is not that much. I had more in it, but I had some issues with it. Therefore, I kept it at a minimum for this time. Then, not so much these days, but actually I'm very keen on using LaTeX and this is my AuCTeX set up. It's very basic, so nothing special here.
+</p>
+
+<p>
+Here, I define system-specific browsers. Then there is a “flyspell” configuration, but I'm actually having issues here, because on some systems, it's <code>german8</code>, and on another system I have to use <code>en-german</code>. So I have to separate it. I actually have to debug this issue.
+</p>
+
+<p>
+<b>Sacha:</b> Wow. Yes, dealing with all those little issues. Yes.
+</p>
+
+<p>
+<b>Karl:</b> Oh, and I love <code>yasnippet</code>. I have very many yasnippet templates and I use them all the time. I love using yasnippet template together with Org Mode. I have whole templates for big projects, for re-occurring events.
+</p>
+
+<p>
+For example, I like to organize evenings at the comedy club. Therefore, I have every time there is the same workflow. Inviting people, reserving the tickets, and so forth, and sending out reminding emails. There is a very cool snippet I use which has all those information in it. It's very, very great help to me.
+</p>
+
+<p>
+<b>Sacha:</b> I should look into that because basically I've been using Org capture templates for the same kind of idea. You have this standard set up for a note or a project or whatever. But it sounds like yasnippet would be a more flexible approach for a lot of this stuff.
+</p>
+
+<p>
+<b>Karl:</b> Yes, absolutely.
+</p>
+
+<p>
+<b>Sacha:</b> Can you show me an example of one of these yasnippets? Like how would you use it in terms of your Org file?
+</p>
+
+<p>
+<b>Karl:</b> Okay. I hope it works, because the system is behaving some kind of weird with the screen sharing turned on. I have to look in my list. This is the list of things. For example, “Packliste” is a simple list to remind me what to take with me when I travel. For example, I want to do scuba diving and so forth.
+</p>
+
+<p>
+<b>Sacha:</b> That's a great idea.
+</p>
+
+<p>
+<b>Karl:</b> I need that from time to time. Especially things that don't occur that much. Very handy when you have something you can hold on.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, for sure.
+</p>
+
+<p>
+<b>Karl:</b> For example, a contacts template for a person might be interesting. 
+</p>
+
+<p>
+Here is the comedy club template. Let's take a look at this one. So I have to do a little bit of translation here. “Kuenstler” means the artist.
+</p>
+
+<p>
+<b>Sacha:</b> So cool.
+</p>
+
+<p>
+<b>Karl:</b> Title is, “About me and my dog.” That's the location. This is the number of seats I'm going to reserve. Let's take a big table. This is the day of the event. Actually, this is going to be on the 24th. This is the day of the email reminder. Usually, that's a couple of days upfront. No, that's the first email, and this is the day of the reminder.
+</p>
+
+<p>
+<b>Sacha:</b> Wow.
+</p>
+
+<p>
+<b>Karl:</b> That reminds one day after it. That's it. I have to collapse it in order to show you.
+</p>
+
+<p>
+<b>Sacha:</b> I want to point out something really cool here, for either people who are listening or whatever. The fact that yasnippet lets you define fields, and then as you type in those fields to replace the text that was there, it can update other copies of the fields. It works out really well with Org Mode.
+</p>
+
+<p>
+In this case, for example, you had the artist name show up in the title as well as in that small list of data points you had, and you had the various dates of things also turn up in the scheduled items later on. That's really cool.
+</p>
+
+<p>
+The way that I have been doing this before with Org Mode templates was to set up the fields. As you filled in the thing, it would prompt you for the next item and so forth. But by using yasnippet, you can fill things in basically any order, you can leave things blank, and that's a pretty powerful way to do it.
+</p>
+
+<p>
+<b>Karl:</b> And you can have a default text for each and everything. For example, here is the todo item for sending out the first email. I'm not using Emacs for email. I'm using “Mutt” on my server, and I have a list called “kabarettinteressierte”, so people interested in comedy. Actually I also have the email for this e-mails.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome.
+</p>
+
+<p>
+<b>Karl:</b> Which is generated from the information I entered above. So I don't have to type all these things every time. I just have to copy and paste in my terminal. Basically, that's it. All those deadlines, and of course the properties. 
+</p>
+
+<p>
+There's a blocking property. As long as it does not send out the first email, the second email doesn't make sense at all. It is the blocker for it.
+</p>
+
+<p>
+<b>Sacha:</b> That is really cool. I am glad I asked about yasnippet. Okay, using yasnippet to give you dynamic templates for things and making your life easier by basically just putting all that information together for you so you can just copy and paste. That is actually really cool.
+</p>
+
+<p>
+<b>Karl:</b> Laziness. As I told you, one of the greatest motivations to me is being lazy. It's pretty fun. Because of this laziness, I invest much effort into things like this. Creating some kind of automation and so forth often requires more effort than actually doing the stuff later on. But it's more fun.
+</p>
+
+<p>
+<b>Sacha:</b> Yes, it is a lot more fun, and you get to learn interesting things along the way. Especially if you find yourself doing something again and again, it can be quite worthwhile. Emacs is a perfect place of course to do this. Emacs is great because you can be as lazy as you want.
+</p>
+
+<p>
+Okay, so what's next for you? What are the next things that you're working on or trying to figure out? You mentioned getting more into Emacs Lisp, which will help you be even lazier. How are you going about doing that? What could help?
+</p>
+
+<p>
+<b>Karl:</b> Well, actually, over the last two or three years, I collected a lot of tutorials and tips and tricks on the mailing list. I just have to learn it. I have to go through it. I have a couple of issues with Org Mode by now. It's not very efficient to me to post all my issues on the mailing list and hope that somebody takes time and helps me. It's more efficient when I'm able to get to the core of the problem by myself. This is one of the biggest advantages I'm going to get when I'm learning to debug Elisp issues by myself. 
+</p>
+
+<p>
+Of course, implement more features for Lazyblorg is very high on my todo list, and learning and trying out new modes. For example, I came across some PDF edit modes for example which look very, very cool. I'm not very convinced yet, but I have to definitely try it out by myself. Lots or modes are out there to be tried out.
+</p>
+
+<p>
+<b>Sacha:</b> I know. Every or so often I go through <code>list-packages</code>, even the ones that I have installed that I've never tried. I get carried away. Like, “Cool, this looks great.” For example, I recently looked at my packages list and realized that the <code>all</code> package which lets you do an occur to search for matching lines but then it lets you edit those lines&#x2026; There is the <code>all</code> package that does that, but also <code>helm-swoop</code> will do that, too.
+</p>
+
+<p>
+<b>Karl:</b> Exactly.
+</p>
+
+<p>
+<b>Sacha:</b> There's always a different way to do something.
+</p>
+
+<p>
+Okay, more Emacs Lisp, especially in terms of Emacs Lisp debugging, getting into how other people's code works and how to improve your own. All of that is very useful. 
+</p>
+
+<p>
+Are there things that you're having a hard time figuring out, or basically you've got everything you need, you just have to sit down and use your holidays to have fun with this?
+</p>
+
+<p>
+<b>Karl:</b> Exactly.
+</p>
+
+<p>
+Well, my system isn't finished yet. The method I'm organizing information in almost all my files change with my requirements. It's a constant discovery story going on. How to do it better? Is this what I thought one year before? Is this still valid or should I change my workflow? Are there any pretty stupid things I have to automate and so forth?
+</p>
+
+<p>
+When I have an issue I want to optimize, then as a second step, I'm thinking about the tool to use. Most of the time, it's Org Mode, but sometimes it's a Python script forth. I'm trying to define what is the issue, the problem, and then as a second step, I'm trying to choose the best tool for this job.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I wonder what Pandoc is written in, because I think it's got an Org parser in it already that you might be able to scavenge for your stuff. So, looking at all these opportunities to automate and seeing what else you can do to tweak things.
+</p>
+
+<p>
+One of the other things that I'm curious about&#x2013;and I will take advantage of the minutes that we have before wrapping up&#x2013;is aside from the technical stuff, I'm really interested in that Personal Information Management. How do you start managing these really large outlines? You generate a lot of text, right? And you probably end up having these really long outlines as well, with tags and all that stuff. How do you make sense of it?
+</p>
+
+<p>
+<b>Karl:</b> In terms of how to organize the headings and so forth?
+</p>
+
+<p>
+<b>Sacha:</b> Something like that.
+</p>
+
+<p>
+<b>Karl:</b> Fun fact is before we started the interview, I was looking at your <a href="http://sachachua.com/blog/2014/12/can-improve-organize-notes-org-mode/">blog entry</a>, the most recent one where you described how you organize, what headings and so forth. 
+</p>
+
+<p>
+I do it pretty similar. I tend to have a special kind of Org Mode files. For example, my contact file is a file of its own. My paper references is a file of on its own, and so forth. But if I have a file for a project or my job and so forth, I tend to have big headings like shorts, notes, projects and events. But it's not that strict.
+</p>
+
+<p>
+Most of the time in notes, I have some references, some kind of knowledge I want to keep and which I want to find with grep. Shorts are todos which are independent of anything else. This are basically short todos which I can do right now. Projects, like you, are using combinations of todos which are referring to one combined topic. Events are all events which don't fit anywhere else.
+</p>
+
+<p>
+That's more or less my system. It was way more elaborated a couple of months or years. I tried to simplify it, because it was of no use to overdo this organizing stuff. Because with cool features like <code>helm-do-grep</code> or sparse trees, I use very often, and of course various sets of agendas, I'm able to find and relocate information very easily. Therefore I try to keep the organizing level at minimum.
+</p>
+
+<p>
+<b>Sacha:</b> That's good news, because that means I don't have to worry too much about organizing things myself as long as I can get used to the tools for finding anything again. I'm guessing it's a lot more of just searches, Org Agenda, and grep as you mentioned, compared to making explicit links between things, or tagging lots of things the same, or whatever. Do you still use a lot of tags then?
+</p>
+
+<p>
+<b>Karl:</b> Yes. I'm using tags very often, but I have to admit I'm not using them very often to relocate information. But I'm looking into coming up with methods to enforce this more often, because I find tags very useful. I love deriving sparse trees by tags for example.
+</p>
+
+<p>
+<b>Sacha:</b> Can you give me an example? That's one of the things I'm trying to get the hang of more myself. I use a lot of search but I don't use tags as much as I think I should.
+</p>
+
+<p>
+<b>Karl:</b> Probably most important use for tags is responsibilities. For example at work, I have todos scattered around on my Org Mode files which rely on certain people. I tend to give tags for people. So, I'm able to derive a sparse tree where I get all open issues with Bob, let's say.
+</p>
+
+<p>
+<b>Sacha:</b> That makes perfect sense now. It also leads to yet another question. So, using Org Mode with other people around, have you convinced anyone else to use Emacs and Org? Do you share your files?
+</p>
+
+<p>
+<b>Karl:</b> Sure. I love to give talks. I love to help other people in workshops and so forth. I had the great fun of conducting an Org Mode introductional workshop two years ago for 10 people. And the Gratz Linux days, I was able to show what I was doing with Org Mode and Emacs to a lot of other people and so forth.
+</p>
+
+<p>
+I'm enjoying sharing my knowledge, sharing tips and tricks, and helping other people start with this very complicated thing like Org Mode. Everybody tends to get overwhelmed by the sheer amount of functions and so forth. If you take it slowly and you only stop with three features you are using&#x2013;for example, simple lists and outline, that's it&#x2013;then it's not that complicated at all.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I find that giving people something small to start with and focus on, getting them used to that first&#x2013;start with lists, then deal with subtrees and headings, and then tags and so forth&#x2013;you can help them get into it gradually, so it's not as overwhelming.
+</p>
+
+<p>
+That's wonderful. I guess for more tips and tricks and ideas, people can find you on Twitter <a href="http://twitter.com/n0v0id">http://twitter.com/n0v0id</a>.
+</p>
+
+<p>
+<b>Karl:</b> Yes. It's actually novoid but the Twitter alias with the "o" was already occupied, so I had to take the zeroes.
+</p>
+
+<p>
+<b>Sacha:</b> And <a href="http://karl-voit.at">http://karl-voit.at</a>.
+</p>
+
+<p>
+Fantastic. Thank you so much for being on this Emacs Chat and sharing all those great Org Mode stories and examples.
+</p>
+
+<p>
+<b>Karl:</b> Thank you so much.
+</p>
+
+<p>
+<b>Sacha:</b> Recording will be up on the event page after this. We'll post them on my blog as well. I am definitely looking forward to playing around with some of the ideas. I don't think I can get Memacs to do all the cool things you're doing, but I am probably coming up with something similar, because it looks like a great idea.
+</p>
+
+<p>
+Thanks again. I'm going to wrap up here and see you all next time.
+</p>
+
+<p>
+<b>Karl:</b> See you.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div class="back-to-top"><a href="#top">Back to top</a> | <a href="mailto:sacha@sachachua.com">E-mail me</a></div>
+</div>
+</body>
+</html>

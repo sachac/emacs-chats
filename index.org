@@ -25,6 +25,7 @@ Getting to know people who use Emacs
 - [[file:chat-iannis-zannos.org][Iannis Zannos -- Emacs and SuperCollider]]
 - [[file:chat-janis-mancevics.org][Jānis Mancēvičs]]
 - [[file:chat-john-wiegley.org][John Wiegley]]
+- [[file:chat-karl-voit.org][Karl Voit]] - lifelogging with Memacs, Lazyblorg, Yasnippet, Org Mode
 - [[file:chat-magnar-sveen.org][Magnar Sveen (Emacs Rocks)]]
 - [[file:chat-mickey-petersen.org][Mickey Petersen (Mastering Emacs)]]
 - [[file:phil-hagelberg.org][Phil Hagelberg (technomancy)]] - Clojure, Leiningen, Syme (for pair programming), custom keyboards, etc.

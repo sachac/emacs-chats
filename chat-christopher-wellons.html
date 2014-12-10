@@ -581,7 +581,7 @@ I can say <code>create-table</code>, like this:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:create-table</span> foo ([name id])])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:create-table</span> foo ([name id])])
 </pre>
 </div>
 
@@ -591,7 +591,7 @@ and I can insert values into it:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span>])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span>])
 </pre>
 </div>
 
@@ -601,7 +601,7 @@ Notice this is a s-expression, so instead of doing:
 
 <div class="org-src-container">
 
-<pre class="src src-sql">SELECT * FROM foo
+<pre class="src src-sql"><span style="font-weight: bold;">SELECT</span> * <span style="font-weight: bold;">FROM</span> foo
 </pre>
 </div>
 
@@ -616,7 +616,7 @@ So here's a expression:
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:insert-into</span> foo <span class="org-builtin">:values</span> [<span class="org-string">"Chris"</span> 0]])
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:insert-into</span> foo <span style="font-weight: bold;">:values</span> [<span style="font-style: italic;">"Chris"</span> 0]])
 </pre>
 </div>
 
@@ -630,7 +630,7 @@ Output:
 
 <div class="org-src-container">
 
-<pre class="src src-sql">INSERT INTO foo VALUES (<span class="org-string">'"Chris"'</span>, 0);
+<pre class="src src-sql"><span style="font-weight: bold;">INSERT</span> <span style="font-weight: bold;">INTO</span> foo <span style="font-weight: bold;">VALUES</span> (<span style="font-style: italic;">'"Chris"'</span>, 0);
 </pre>
 </div>
 
@@ -644,8 +644,8 @@ Then I can make queries on the database.
 
 <div class="org-src-container">
 
-<pre class="src src-emacs-lisp">(emacsql db [<span class="org-builtin">:select</span> * <span class="org-builtin">:from</span> foo])
-((<span class="org-string">"Chris"</span> 0))
+<pre class="src src-emacs-lisp">(emacsql db [<span style="font-weight: bold;">:select</span> * <span style="font-weight: bold;">:from</span> foo])
+((<span style="font-style: italic;">"Chris"</span> 0))
 </pre>
 </div>
 
@@ -882,7 +882,7 @@ from, a list of blogs I was recommending. I wrote this function called
 
 <div class="org-src-container">
 
-<pre class="src src-html"><span class="org-comment-delimiter">&lt;!-- </span><span class="org-comment">(jekyll/insert-urls "+blog -product -myself ") </span><span class="org-comment-delimiter">--&gt;</span>
+<pre class="src src-html"><span style="font-weight: bold; font-style: italic;">&lt;!-- </span><span style="font-weight: bold; font-style: italic;">(jekyll/insert-urls "+blog -product -myself ") </span><span style="font-weight: bold; font-style: italic;">--&gt;</span>
 </pre>
 </div>
 
