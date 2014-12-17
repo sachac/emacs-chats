@@ -1,0 +1,222 @@
+#+TITLE: Emacs Chats
+#+OPTIONS: toc:nil
+
+* Introduction
+
+The Emacs community has a lot of amazing people, although we rarely
+get to meet face to face. It’s great to get a sense of what people are
+like, so here are some casual chats with other Emacs geeks. You can
+also find these transcripts online (along with the videos and links)
+at http://emacslife.com/emacs-chats .
+
+Got an Emacs story or workflow demo to share? Please get in touch with
+me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]] . I'd love to have you on the show!
+
+- Sacha Chua
+
+Last updated: 2014-12-10
+
+#+TOC: headlines 1
+
+#+BEGIN_COMMENT
+,** Avdi Grimm
+,#+INCLUDE: chat-avdi-grimm.org  :minlevel 2
+#+END_COMMENT
+
+* Bastien Guerry - Gnus, Org
+
+In this chat, Bastien tells stories about getting started in Emacs,
+reading his mail/news/blogs in Gnus, and hacking his life with Org.
+
+[[https://www.youtube.com/embed/fnk0TJC7iJI][Video]] - [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs Chat - Bastien Guerry and Sacha Chua.mp3][Audio]]
+
+#+INCLUDE: chat-bastien-guerry.org :lines "30-423" :minlevel 2
+
+* Bozhidar Batsov - Emacs Lisp, Prelude, Projectile
+
+Bozhidar Batsov (http://emacsredux.com) shares how he got into Emacs and Emacs Lisp. He also demonstrates cool features from Prelude and Projectile, which are great if you do a lot of programming. Check it out!
+
+Quick Links:
+- https://twitter.com/bbatsov 
+- https://twitter.com/emacs_knight 
+- http://emacsredux.com 
+- https://github.com/bbatsov/prelude 
+- https://github.com/bbatsov/projectile 
+- If you like his work, support it through https://www.gittip.com/bbatsov/
+
+[[http://www.youtube.com/embed/-8DO0_pqLNA][Video]] - [[https://archive.org/download/EmacsChatBozhidarBatsov/Emacs-Chat-Bozhidar-Batsov.mp3][Audio]]
+
+#+INCLUDE: chat-bozhidar-batsov.org :lines "27-322" :minlevel 2
+
+* Carsten Dominik - Org, Calc
+
+[[http://player.vimeo.com/video/62629506?color=ffffff][Video]] - [[http://archive.org/download/CarstenDominik/Carsten Dominik.mp3][Audio]]
+
+Carsten Dominik created Org Mode. In this Emacs Chat, he talks about
+the beginning of Org Mode, Calc, and how he uses Emacs.
+
+#+INCLUDE: chat-carsten-dominik.org :minlevel 2 :lines "31-569"
+
+* Christopher Wellons - Skewer, impatient-mode, foreign function interfaces
+
+Christopher Wellons (http://nullprogram.com, http://github.com/skeeto/) started using Emacs nine years ago and has built all sorts of nifty customizations since, including something that plays Tetris for you. He demonstrates the benefits of having an HTTP server running inside Emacs by using Skewer to interact with a web browser and Impatient-mode to share his syntax-highlighted buffer through the Web. In addition, he covers foreign function interfaces, packages, and other good things. 
+
+Links:
+
+- https://github.com/skeeto/impatient-mode
+- https://github.com/skeeto/.emacs.d 
+- https://github.com/skeeto/autotetris-mode
+- https://github.com/skeeto/emacsql 
+- https://github.com/skeeto/elisp-ffi
+
+#+INCLUDE: chat-christopher-wellons.org  :lines "25-881" :minlevel 2
+
+* Harry R. Schwartz - EmacsNYC
+
+We chat about EmacsNYC, organizing your configuration, pair programming, and more.
+
+[[http://www.youtube.com/embed/I2wOxZOcyD8][Video]] - [[http://archive.org/download/EmacsChatHarryRSchwartz/Emacs_Chat-Harry_R_Schwartz.mp3][Audio]]
+
+#+INCLUDE: chat-harry-r-schwartz.org :lines "17-446" :minlevel 2
+
+* Iannis Zannos - Music with SuperCollider
+
+Some of the code mentioned in during the chat:
+
+- his [[https://github.com/iani/emacs-prelude][Emacs configuration]] (Prelude meets org-mode)
+- [[https://github.com/iani/tiny-sc][Compact but powerful tools for SuperCollider, with Emacs Org-mode intergration]]
+
+[[http://www.youtube.com/embed/0F8aCbC9z3A][Video]] - [[http://archive.org/download/EmacsChatIannisZannos/Emacs-Chat_Iannis-Zannos.mp3][Audio]]
+
+#+INCLUDE: chat-iannis-zannos.org :lines "28-479" :minlevel 2
+
+* Janis Mancevics - literate programming, Unity, code folding
+
+Chatting with [[https://plus.google.com/u/0/114888672958382153886][Jānis Mancēvičs]] about literate programming, Unity game development, and code folding.
+
+[[http://www.youtube.com/embed/HOy4h0a_0TI][Video]] - [[https://ia902503.us.archive.org/11/items/EmacsChatJanisMancevics/Emacs-Chat-Janis-Mancevics.mp3][Audio]]
+
+#+INCLUDE: chat-janis-mancevics.org :lines "21-874" :minlevel 2
+
+* John Wiegley - Emacs Lisp, development, Org Mode
+
+We talk about the Emacs community, learning Emacs, keeping up to date, dealing with data overload, and managing information.
+
+[[https://www.youtube.com/watch?v=ytNsHmRLZGM][Video]] - [[https://archive.org/download/20120612EmacsChatJohnWiegley/2012-06-12-Emacs-Chat-John-Wiegley.mp3][Audio]]
+
+#+INCLUDE: chat-john-wiegley.org :lines "17-822" :minlevel 2
+
+* Karl Voit - lifelogging, blogging, snippets, and information management
+
+- Org Mode
+- https://github.com/novoid/Memacs
+- https://github.com/novoid/lazyblorg
+- https://github.com/novoid/dot-emacs
+- http://karl-voit.at
+- http://twitter.com/n0v0id
+
+#+INCLUDE: chat-karl-voit.org :lines "24-396" :minlevel 2
+
+* Mickey Petersen - Mastering Emacs, advanced topics, syntactic thinking
+
+Mickey Petersen chats about Mastering Emacs, learning advanced topics, navigating by expressions, and making the most of dired and shell. You can find him at [[http://masteringemacs.org]] or [[http://twitter.com/mickeynp]].
+
+[[http://www.youtube.com/embed/JA4dqmDFt5][Video]] - [[http://archive.org/download/20140810EmacsChatMickeyPetersen/2014-08-10_Emacs_Chat-Mickey_Petersen.mp3][Audio]]
+
+#+INCLUDE: chat-mickey-petersen.org :lines "17-419" :minlevel 2
+
+* Phil Hagelberg - configuration, Clojure, keyboards
+
+- http://technomancy.us 
+- https://syme.herokuapp.com/
+- http://github.com/technomancy/better-defaults 
+- https://github.com/technomancy/dotfiles/tree/master/.emacs.d 
+- http://leiningen.org/ 
+- http://technomancy.us/171 (heater)
+- http://atreus.technomancy.us (keyboards)
+
+[[http://www.youtube.com/embed/Rfg-6jGY8dU][Video]] - [[https://archive.org/download/EmacsChatPhilHagelberg/Emacs-Chat-Phil-Hagelberg.mp3][Audio]]
+
+#+INCLUDE: chat-phil-hagelberg.org :lines "25-355" :minlevel 2
+
+* Sacha Chua - getting started, learning, community
+
+After I chatted with Bastien Guerry about Emacs, he asked me if he could interview me
+for the same series.
+
+- http://sachachua.com
+- http://sachachua.com/dotemacs
+
+[[http://www.youtube-nocookie.com/embed/_Ro7VpzQNO4][Video]] - [[https://archive.org/download/EmacsChatSachaChuawithBastienGuerry/Emacs Chat - Sacha Chua (with Bastien Guerry).mp3][Audio]]
+
+#+INCLUDE: chat-sacha-chua.org  :lines "24-717" :minlevel 2
+
+* Tom Marble - time tracking, LaTeX, invoices
+
+Tom Marble's doing this pretty nifty thing with Org Mode, time tracking,
+LaTeX, and invoice generation. Also, Clojure & Emacs, and other good
+things. Enjoy!
+
+- [[https://twitter.com/tmarble][Tom Marble (tmarble) on Twitter]]
+- [[https://github.com/tmarble/timesheet.el][Timesheet.el]] on GitHub
+
+[[http://www.youtube.com/embed/-6bpx-6zyOI][Video]] - [[https://ia902502.us.archive.org/16/items/EmacsChatTomMarble/Emacs-Chat-Tom-Marble.mp3][Audio]]
+
+#+INCLUDE: chat-tom-marble.org :lines "30-951" :minlevel 2
+
+* Xah Lee - configuration
+
+I chatted with [[http://ergoemacs.org][Xah Lee]] about how he got started with Emacs, how he’s customized it, and other tips he can share for people who want to learn more.
+
+- http://ergoemacs.org
+- https://github.com/xahlee/xah_emacs_init
+- https://www.trulyergonomic.com/store/index.php
+- https://github.com/emacsmirror/mwe-log-commands/blob/master/mwe-log-commands.el
+
+[[http://www.youtube.com/embed/rKPKWqvTImA][Video]] - [[http://archive.org/download/EmacsChatXahLee/Emacs_Chat-Xah_Lee.mp3][Audio]]
+
+#+INCLUDE: chat-xah-lee.org :lines "24-134" :minlevel 2
+
+#+BEGIN_COMMENT
+,* Magnar Sveen
+[[http://www.youtube-nocookie.com/embed/87tjF_mYvpE][Video]] - [[https://archive.org/download/201311EmacsChatMagnarSveenEmacsRocks/201311-Emacs-Chat-Magnar-Sveen-EmacsRocks.mp3][Audio]]
+,
+,** Thomas Kjeldahl Nilsson
+,
+,#+INCLUDE: chat-thomas-kjeldahl-nilsson.org :minlevel 2
+,
+,** Tom Marble
+,
+,#+INCLUDE: chat-tom-marble.org :minlevel 2
+,
+,** Xah Lee
+,
+,
+,
+#+END_COMMENT
+* End matter
+
+I'll add more Emacs Chat transcripts to this e-book as I revise and
+format them. You can get the latest version of this e-book from
+http://sachachua.com/emacs-chats-ebook (EPUB, MOBI). If you'd like to share your
+workflow and story on an upcoming Emacs Chat episodes, please get in
+touch with me at [[mailto:sacha@sachachua.com][sacha@sachachua.com]].
+
+This e-book, the Emacs Chat recordings, and the transcripts are free
+under the Creative Commons Attribution License. The part for
+Christopher Wellons is in the public public domain. I do the Emacs
+Chats because I think we learn a lot from peeking over people's
+shoulders. I get them transcribed because I think it's important for
+people to be able to search for information or focus on just the parts
+they want. I put together this EPUB in case people want to read the
+interviews offline.
+
+Transcribing technical talks and conversations takes time and money.
+(When I get tired of listening to my own voice, I pay other people for
+transcripts.) If you'd like to show your appreciation and encourage me
+to keep getting things transcribed, you can buy this on a
+pay-what-you-want basis: http://sachachua.com/emacs-chats-ebook . If
+you do, you can sign up for e-mail notifications when I post updates
+(including adding new interviews). Thank you!
+
+- Sacha Chua
