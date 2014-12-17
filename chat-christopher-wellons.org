@@ -3,6 +3,14 @@
 #+DATE: <2014-05-30 Fri>
 #+PROPERTY: DISQUS http://sachachua.com/blog/2014/05/emacs-chat-christopher-wellons/
 
+Christopher Wellons (nullprogram.com, github.com/skeeto/) started using Emacs nine years ago and has built all sorts of nifty customizations since, including something that plays Tetris for you. He demonstrates the benefits of having an HTTP server running inside Emacs by using Skewer to interact with a web browser and Impatient-mode to share his syntax-highlighted buffer through the Web. In addition, he covers foreign function interfaces, packages, and other good things. 
+
+- https://github.com/skeeto/impatient-mode
+- https://github.com/skeeto/.emacs.d 
+- https://github.com/skeeto/autotetris-mode
+- https://github.com/skeeto/emacsql 
+- https://github.com/skeeto/elisp-ffi
+
 The recording and transcript for this video are in the public domain.
 
 * Audio and Video
@@ -10,6 +18,10 @@ The recording and transcript for this video are in the public domain.
 #+BEGIN_HTML
 <iframe width="560" height="315" src="//www.youtube.com/embed/Hr06UDD4mCs" frameborder="0" allowfullscreen></iframe>
 #+END_HTML
+
+[[http://archive.org/download/EmacsChatChristopherWellons/Emacs_Chat-Christopher_Wellons.mp3][Download the MP3]]
+
+* Transcript
 
 *Sacha:* Hello and welcome to another episode of Emacs chat. This time
 with Christopher Wellons, who is, among other things, the author of

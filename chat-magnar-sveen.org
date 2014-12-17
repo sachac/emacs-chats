@@ -63,7 +63,7 @@ Podcast: [[http://archive.org/download/201311EmacsChatMagnarSveenEmacsRocks/2013
 
 ** Transcript
 
-*Sacha:* Hello Magnar Sveen and thank you so much for joining us for Emacs chat. As I mentioned, there are people in the #Emacs-chat channel on IRC who will also ask questions and actually, hang on a second. Let me post that here in case they want to join us live in case they wanted to ask their questions in person.
+*Sacha:* Hello Magnar Sveen and thank you so much for joining us for Emacs chat. As I mentioned, there are people in the #Emacs-chat channel on IRC who will also ask questions and actually, hang on a second. Let me post that here, in case they want to join us live, in case they wanted to ask their questions in person.
 
 *Magnar:* Yes.
 
@@ -77,9 +77,9 @@ Podcast: [[http://archive.org/download/201311EmacsChatMagnarSveenEmacsRocks/2013
 
 *Sacha:* Okay, wow!
 
-*Magnar:* That is the truth with some modifications because I use it for five years in the university but at that time I was only using it as a notepad with weird keybindings. In those five years I've programmed Java in Emacs and I never used it as anything else. Just saving, and copy-pasting with weird keybindings.
-I had some experience before I started using it for a few years ago.
-I use it mainly for work, I do programming both for work and as a hobby. I spend quite a lot of time in Emacs of course.
+*Magnar:* That is the truth with some modifications because I use it for five years in the university, but at that time I was only using it as a notepad with weird keybindings. In those five years I've programmed Java in Emacs and I never used it as anything else. Just saving, and copy-pasting with weird keybindings.
+
+I had some experience before I started using it for a few years ago. I use it mainly for work, I do programming both for work and as a hobby. I spend quite a lot of time in Emacs of course.
 
 *Sacha:* Are there a lot of other people at work who use Emacs, or are you basically doing it on your own?
 
@@ -95,7 +95,8 @@ I use it mainly for work, I do programming both for work and as a hobby. I spend
 
 *Sacha:* Yes.
 
-*Magnar:* I spent four years, maybe, using TextMate and really liking it, but as we all know it was abandonware pretty much and I have been looking for some other editor for quite a while. Maybe six months or so. I was quite unsure if I wanted the modal editing of Vim - or Emacs.
+*Magnar:* I spent four years, maybe, using TextMate and really liking it, but as we all know it was abandonware pretty much. I have been looking for some other editor for quite a while. Maybe six months or so. I was quite unsure if I wanted the modal editing of Vim - or Emacs.
+
 The thing that really got me going with Emacs was the extensibility. I love tweaking my tools. I used to spend quite a lot of time playing World of Warcraft. I think two years on my life pretty much I went to World of Warcraft on the evenings and I think I spent almost as much time tweaking the UI of the World of Warcraft as I did playing it.
 
 *Sacha:* So Emacs was a perfect fit for you then?
@@ -279,7 +280,7 @@ Okay, Emacs. This is init.el. I know some people who use Org-mode and Babel to g
 
 *Sacha:* Yes.
 
-*Magnar:* Along with i-do work going on. Let's see.
+*Magnar:* Along with ido work going on. Let's see.
 
 *Sacha:* Yes. I did it.
 

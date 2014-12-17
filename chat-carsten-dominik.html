@@ -57,9 +57,1086 @@ Podcast: <a href="http://archive.org/download/CarstenDominik/Carsten%20Dominik.m
 </p>
 </div>
 </div>
+
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Transcript: Coming Soon</h2>
+<h2 id="sec-2">Transcript</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+<b>Sacha:</b> Hello. Hi. This is Sacha.
+</p>
+
+<p>
+<b>Carsten:</b> Hi, Sacha. I'm putting on my headphones. Is that useful? I think the sound is better like this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I have my headphones on too. I am super excited to talk to you, because you are one of my Emacs heroes.
+</p>
+
+<p>
+<b>Carsten:</b> That's great. I'm also excited to talk to you because I've been reading your blog for&#x2026; I don't know, is it 10 years now or whatever?
+</p>
+
+<p>
+<b>Sacha:</b> Yes, it has been.
+</p>
+
+<p>
+<b>Carsten:</b> And that has always been a lot of fun.
+</p>
+
+<p>
+<b>Sacha:</b> My blogging has come about just because of Emacs and Planner.
+</p>
+
+<p>
+<b>Carsten:</b> I remember, yes.
+</p>
+
+<p>
+<b>Sacha:</b> &#x2026;and now I moved to Emacs in Org Mode and that's all due to you. So thank you, and thank you for taking the time.
+</p>
+
+<p>
+<b>Carsten:</b> I'm sure this will be fun.
+</p>
+
+<p>
+<b>Sacha:</b> I'm doing these chats with other Emacs geeks because it's nice getting to know the people and the stories behind how people are using Emacs. I find that we learn so much when we're peeking over someone else's shoulder as they use Emacs or as they talk about how they use Emacs. That's why I've really enjoyed talking to people like John, Thomas, and the others. I would love to hear about your story, how you got started, how you use Emacs, maybe how you configured it, and other cool things you learned along the way.
+</p>
+
+<p>
+<b>Carsten:</b> Okay. Well, yes, sure. I can get started.
+</p>
+
+<p>
+Well, I started with some other flavor of Emacs, many years ago, when I was still doing my PhD in Berlin. That's where I come from, Berlin. There was the Astronomic Institute, and there was a geek there who basically installed the first computers there. There were all Atari computers at the time, so nothing more fancy. He was a fan of MicroEmacs. I don't know if you know MicroEmacs. That's Emacs flavor which Linus Torvalds actually uses, I think, right now. It's not totally unrelated to Emacs, but it has similar standard basic keybindings, and it's a smaller thing. 
+</p>
+
+<p>
+So that geek in that institute introduced me to MicroEmacs, and I started using it as my editor. It actually also had an extension language. I started writing some macros for it because programming was just fun. I got started programming using pocket calculators and stuff like this. Really, I was actually in a club where we were doing a programming of HP and Texas Instruments calculators.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome.
+</p>
+
+<p>
+<b>Carsten:</b> So I started programming some things. I was writing my thesis at that time. So I was writing the thesis in LaTeX, and I started to put some basic LaTeX support into this editor. I also implemented a spellchecker, which was basically just linking through to the Linux, to the Unix spell command below and just checking individual words and doing stuff like this.
+</p>
+
+<p>
+That's how I got started. I actually pushed it pretty far. I worked a couple of years on MicroEmacs, but then really hit the limit. The macro language there is kind of nice, but it doesn't really reach farther. If you want to do something more complicated, you will really reach your limit.
+</p>
+
+<p>
+So, when I left Berlin, I went for postdoc to America. I started with the real Emacs. I've never looked back. That really taught me, I think, something really basic, because at that time I made the decision that I would never start using an inferior tool. It doesn't really make sense. For example, I didn't use Awk, I used Perl, because I knew that if you try to program something with Awk, you will just hit your head against the wall at some point. Perl is just so open-ended that whatever you want to do, you will be able to do in this language.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> I think it's the same is true for Emacs. Basically, just completely unlimited. Whatever you want to do is there.
+</p>
+
+<p>
+Okay, then I started using Emacs. I think it was mostly XEmacs at the time, because I think that was in the early 90s. Emacs was kind of a slow-going, extremely long release cycle. XEmacs was much more happening, so I was doing that.
+</p>
+
+<p>
+I'm really a guy who&#x2013;I hate repetitive task. If you ask me to do something, if I can find a way to write a program to do it and that will not take more than twice the time to do it by hand, I will go with the programming because I just hate that so much, to do something repetitive. Just started writing little things. Initially mostly also LaTeX and tech-related, because this was how I was writing my stuff. It sounded like this is the most useful stuff.
+</p>
+
+<p>
+In a way, with my Emacs programming, it's really scratch-my-own-itch approach. All over these years, I've written really a huge amount of Emacs code. It was always something which I needed, then in a way it got out of hand because it was so much fun. If you get feedback from a community&#x2013;I'm sure you'll know that exactly from your Planner times&#x2013;you can easily get carried away.
+</p>
+
+<p>
+<b>Sacha:</b> You've definitely gotten carried away, it seems. Everyone I talked to, they're like&#x2026; Org is really something that's taking over people's lives, and it's worked its way into how they work. That's fantastic.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. It's really amazing to hear from real-world people who actually use it. At some point you only think that there's this kind of geeky group of followers which we have, but then you find out that the guy next door is giving a course about reproducible research, and wants to talk about Org Mode and stuff like this. This can be a lot of fun.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. Reproducible research, literate configuration, and a lot of other things are coming out of this. What are some of the other unusual or awesome things you've heard about in terms of people using your code?
+</p>
+
+<p>
+<b>Carsten:</b> If you're now talking about Org Mode in particular, I think this reproducible research stuff is really great. In particular, these code embedding and code evaluation things is something which actually totally took me by surprise. I would have never thought about this. I think I actually implemented, sort of, putting in examples and maybe source code snippets with some highlighting, because I thought that look nice.
+</p>
+
+<p>
+But then Eric Schulte came along and just ran with it, and together it was done. Davidson implemented all these execution stuff, which I would never have thought about. It was completely new for me. That is awesome. And then the other thing which is being worked on right now in Org Mode, I think a lot, is the exporter.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> It's a complete revamp. I don't know how up to date you are about this discussion. But the entire set of exporters which go out to HTML, and to LaTeX, and to ASCII, and to what have you, are being totally revamped with a basic parser design.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> There's actually also an interesting story behind it, because when we started this Org Mode, I remember that quite early I got in touch with John Wiegley, the famous John Wiegley that everybody is talking about. He actually at the time offered to use Muse as the backend for doing the exporting.
+</p>
+
+<p>
+At the time, I was thinking about this, but on the other hand, I had Bastien Guerry moving in, and he was writing a LaTeX exporter. So, I didn't really want to sort of throw out all his code. In the end, I didn't really make a decision, and that meant that we weren't going the Muse way.
+</p>
+
+<p>
+I think now, after ten years – I think that's 10 years ago or so – this has paid off, because I think now the parser model which has been implemented in Org Mode by Nicolas Goaziou is actually a better and more abstract way to go than even the Muse exporter was. I think in this sense in the end, this was a good decision. But it has taken a long time. You have to admit: we had all these exporters. I think we had five or six different backends. And each exporter has had its own parser.
+</p>
+
+<p>
+<b>Sacha:</b> I know.
+</p>
+
+<p>
+<b>Carsten:</b> And so that means if somebody in the code was changing or if somebody had a little bug or so, then we had to change this in five different places in five different ways. So they were never quite compatible, and things like this. This is all about to change now. I'm really excited about this. Bastien, Nicolas, and all the people who have been working on this right now&#x2026; I'm looking forward to this when this will be finally rolled out in release 8.0. I think it's coming out in a few days.
+</p>
+
+<p>
+<b>Sacha:</b> I'm very excited about that, too. The export functionality is one of the things that Avdi was talking about in terms of technical authoring. It is really awesome to have all of that come from Org.
+</p>
+
+<p>
+<b>Carsten:</b> For myself, Org Mode, I do use it for project planning and for brainstorming. All my writing, I do in it. That's also one of the reasons why there's just a number of little convenient editing functionalities. In a way, I basically use it as my fundamental mode, so I don't have files in text-mode anymore. This is basically the basic mode I go to when I want to just throw out some thoughts and restructure them.
+</p>
+
+<p>
+That was really at the beginning. So when we started, when I started doing it, it was about making an outline and being able to restructure this and throw things around. The planning came actually a little bit later.
+</p>
+
+<p>
+It's actually quite funny because at the time, I kind of had a bad conscience towards you and John. I was rolling into this area where people had done such amazing work putting together Planner. Originally I never had the intention to sort of write [inaudible].
+</p>
+
+<p>
+<b>Sacha:</b> No. It worked out perfectly. I remember because I was struggling with Planner mode's approach of having everything in multiple files. Then having Org with a single file, and a good agenda mode, and all of that stuff made a lot of things so much easier.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. It's just a completely different approach, basically, towards the same project, towards the same problem.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. We totally jumped ship with everyone else. We're like, “Okay! This is good.”
+</p>
+
+<p>
+<b>Carsten:</b> That was amazing. When I heard that both John and you had stepped over, that was amazing.
+</p>
+
+<p>
+<b>Sacha:</b> That's one of the interesting things about the Emacs community, right? There's just so much going on, and so many good ideas coming out at all the time. Clearly, Org was one of the nice, amazing contributions.
+</p>
+
+<p>
+But how about when you're using Emacs, what are some of the other things that you use Emacs with?
+</p>
+
+<p>
+<b>Carsten:</b> The point when I really found out how amazing Emacs is, was when I discovered the calculator.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> At the time, I was working in America at another institute. They had this great set up, because this was an institute behind a fence, so everybody who was in there was completely security-approved. Inside, everything basically was easily accessible for everything.
+</p>
+
+<p>
+For example, they had a printer queue there. You could just take a document and print it to that queue. At the next morning, this thing would be bound as a book on your table.
+</p>
+
+<p>
+<b>Sacha:</b> Wow.
+</p>
+
+<p>
+<b>Carsten:</b> Or you could print images to a slide printer, and they would make slides out of it and just put it back on your table. That was really fantastic.
+</p>
+
+<p>
+I used that to print a couple of manuals. I was just casually looking at a Calc manual and then printed it. It came back like a pile this size. It was this gigantic book. It totally sucked me in. I took this book and I read it over the weekend, from the first to the last page, the entire book, because I thought it was written so amazing.
+</p>
+
+<p>
+<b>Sacha:</b> It's hilarious.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. I started reading the code which is amazing. Everybody always says that codes should be documented, it should have lots of comments, it should have documentation things. Well, you would be amazed. I don't know if you have ever looked at the code of Calc. There are no comments in there, there are no documentation strings for most of the functions, but you can still read it. This amazed me so much.
+</p>
+
+<p>
+It told me that a person who has enough clarity in their head when writing code, they even can make code readable without putting a lot of extra commands and documentations. So it was really amazing. I totally fell in love with this program and just started studying and using it. I'm using it to this day.
+</p>
+
+<p>
+It's such an amazing marriage of two worlds. On the one hand, he has made this &#x2013;– he started out&#x2013;actually maybe just a little detour, if you read his introduction toward the manual or to the tutorial, he said that he was just trying to write this in order to find out what – I don't know, whatever it was, 2 to the power of 10 or 32 or so &#x2013; he couldn't do this on a normal calculator, so he wanted to do this. He chose Emacs Lisp, because he decided this is just an editor extension language, so he would truly hit a wall very soon, and then this project will be over. It never did, apparently.
+</p>
+
+<p>
+On the one hand, he implemented this amazing functionality. It's like a poor man's Mathematica. It's of course not as good as Mathematica for complex stuff, but it does 3-D matrix operations, it does some analytic operations, integration, differentiation&#x2026; All implemented there. And it was written in a time when Emacs didn't even have floating point numbers.
+</p>
+
+<p>
+<b>Sacha:</b> Wow.
+</p>
+
+<p>
+<b>Carsten:</b> It only had integers. He implemented arbitrary precision integers with lists of numbers and he implemented arbitrary floating points calculation with this thing. Today, I think Calc has not been re-written to make use of the internal floating points. All the floating point operations are actually hand-implemented. It's crazy. There's all this complex stuff in there. 
+</p>
+
+<p>
+But on the other hand, he keeps the simple calculator interface. If you use Mathematica, for example, then you have to type all these commands. That's just a lot of typing. The commands you're putting in are complex. While with the Calc calculator in Emacs, it's still you press a key and you get an action, just like you have it on a calculator.
+</p>
+
+<p>
+You press the logarithmic key, and logarithm will be calculated. In Calc, it's usually two keys. Usually, it's sort of a category key like arithmetic or matrix or so. Then the second key for the command. It's extremely fast. 
+</p>
+
+<p>
+It has the best way to work with units of numbers. I'm an astronomer so we deal with big numbers and having the right units ready&#x2026; when I sit here with my students, very often they come with something with an idea or so, and then I just turn around to my Emacs and make a little estimate using the unit calculation facilities. It's really the fastest and best way to do this. I totally love this. 
+</p>
+
+<p>
+I have an iPad. The one reason why I hate is that I cannot have Emacs on it just for the calculator. This is how good this program is. It's amazing. I always have the feeling it's not known well enough. This is why I use this chance to make a big advertisement for it, because it's an amazing program. It's really mind-blowing.
+</p>
+
+<p>
+<b>Sacha:</b> So have you gotten all the rest of your students hooked on Emacs to use Calc?
+</p>
+
+<p>
+<b>Carsten:</b> Well, yes, I know many of them use Emacs. I know that. There was one student who actually picked it up only in order to be able to do his unit calculations. And of course the other stuff in Emacs which I wrote myself was of course all related to doing science, to write scientific papers. As I already said, there's a couple of stuff which I did for writing LaTeX, in particular, for doing bibliographies and cross-referencing of LaTeX documents. That's one partt.
+</p>
+
+<p>
+Then there's another thing that I took over maintenance of a package which interacted with basically a programming language which is used by many astronomers for data processing. It's called IDL. It's a proprietary language, unfortunately with extremely expensive license fees which you have to pay. This is unfortunate. That's why I'm still using a very old version of it.
+</p>
+
+<p>
+But there's an Emacs mode which interacts with it, and which does syntax highlighting. You can run it from within Emacs. It just gets us one step closer to the ideal of never having to leave Emacs during the entire day.
+</p>
+
+<p>
+<b>Sacha:</b> So there's Org, there's Calc, there's IDL. What other things let you stay in Emacs almost the entire day?
+</p>
+
+<p>
+<b>Carsten:</b> Any kind of programming, and then using the debugger as a programming environment. I do that in Emacs. I do that. I'm not doing my mail in Emacs. I used to use VM for a while. I think a couple of years I used VM. But I stopped doing this because I'm doing most of my email now on a laptop on a train while I'm offline. I think for offline work&#x2013;at least the last time I looked&#x2013;for offline mail work, it wasn't really as good. I don't know if that works now with [inaudible] so it's possible. I stopped doing this. I have an Apple laptop so I use the Mail program there.
+</p>
+
+<p>
+Yes, programming, writing, drafting papers, also drafting presentations. I don't make the full presentation but sort of the collection of the ideas. Outlines, I think really the ideal companion to thinking, and brainstorming, and throwing out your ideas. This is really a big part of my day. 
+</p>
+
+<p>
+Also, when I take notes&#x2013;I'm no longer in lectures because I moved to the other side. I have give lectures now instead of listening the lectures. So that's good. One advantage. But in meetings, taking notes, putting down action items and stuff like this, I use that all the time. This is stuff which I use. 
+</p>
+
+<p>
+What else? I don't browse the web inside Emacs. Even though that used to be possible as well. I don't know.
+</p>
+
+<p>
+<b>Sacha:</b> W3M. I use that a lot before too.
+</p>
+
+<p>
+<b>Carsten:</b> W3M or what is it called?
+</p>
+
+<p>
+<b>Sacha:</b> There's a W3 which is all-Emacs Lisp, a web browser entirely in Emacs Lisp. And then there's W3M, which I think had an external library that's responsible and that it integrated with. Which is actually really cool to browse stuff with, because you'd strip out all the other junk.
+</p>
+
+<p>
+<b>Carsten:</b> It's fast. Are you using it inside Emacs?
+</p>
+
+<p>
+<b>Sacha:</b> I used to. I sometimes use that when I need to work with a keyword macro and lots of pages, if I don't need Javascript. Because the Javascript thing really screws stuff up. Many many websites now are highly dependent on Javascript. But I've done that. I've also done the offline mail thing before with Gnus and OfflineIMAP.
+</p>
+
+<p>
+<b>Carsten:</b> So how did you do that? With Gnus and with OfflineIMAP?
+</p>
+
+<p>
+<b>Sacha:</b> Yes. OfflineIMAP grabs all your mail. Then you use something like Postfix or Sendmail&#x2013;one of those&#x2013;to queue your mail. From Emacs' point of view, you're online, because it's checking an IMAP server, it's checking your mail there for your incoming mail, and it's sending mail out. It's just that your system holds on to all the mail until you're back online.
+</p>
+
+<p>
+<b>Carsten:</b> Okay. Maybe I should give that another shot at some point.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> That's interesting.
+</p>
+
+<p>
+Yes, you mentioned keyboard macros, of course, absolute power user tool. Yes, I use that all the time.
+</p>
+
+<p>
+<b>Sacha:</b> Or a quick Emacs Lisp function to do some text manipulation. It's amazing to have all those tools.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. As I said, even if I have to go through a program and make a couple of replacements, I'd rather write a little function than doing it by hand.
+</p>
+
+<p>
+Other stuff which I use&#x2026; I use TRAMP to edit files on different computers. I find that extremely useful. I've always thought about taking up ERC, IRC basically, and use Emacs for this. But I never really have. I'm a little bit fearful that this will be too much of a time-waster.
+</p>
+
+<p>
+<b>Sacha:</b> That's true. Once the Emacs channel sees you&#x2026; Goodness, you'll get a lot of comments and questions. The Org Mode channel on Freenode is very active from time to time. Of course, the Emacs channel has a great community as well.
+</p>
+
+<p>
+I have my Emacs set up now to connect to IRC in the background. Then if there's any activity or if people mention me, then it shows up in my mode line. Sometimes I'll flip through it if I'm procrastinating something else.
+</p>
+
+<p>
+<b>Carsten:</b> It sounds like some set up which you should put into your next blog post.
+</p>
+
+<p>
+<b>Sacha:</b> But actually, because Org can easily remind you what your current task is supposed to be, I found that it isn't too distracting.
+</p>
+
+<p>
+<b>Carsten:</b> Okay.
+</p>
+
+<p>
+<b>Sacha:</b> It's kind of occasionally hearing about interesting Emacs things that you wouldn't have come across yourself, because people are asking questions and answering them.
+</p>
+
+<p>
+<b>Carsten:</b> Yes and sometimes you just need to procrastinate a little bit, and you can be helpful and give somebody else some advice. I think that can also be fun.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. But you have that in all those other places also where you bump into other Emacs geeks. You're active in the mailing list, in the newsgroups. Where else do you learn about Emacs?
+</p>
+
+<p>
+<b>Carsten:</b> Well, I have an RSS feed in my unfortunately dying Google Reader which looks for this kind of stuff. I have to find a replacement. That's what I do. I read your blog. Did I mention that before? 
+</p>
+
+<p>
+There are some stuff on there that seems great. I think it's called Emacs Rocks! or so that I think is a series of short screencasts which is a lot of fun. It's kind of crazy stuff what he picks there, but he has a great way of showing his stuff off. I love that. That's what I do.
+</p>
+
+<p>
+One of the things I sometimes still have trouble with is colors. Right now I've discovered the solarized color scheme. Do you know that for Emacs?
+</p>
+
+<p>
+<b>Sacha:</b> That's very popular.
+</p>
+
+<p>
+<b>Carsten:</b> I think it's actually pretty. Maybe I'm going to try that out for a while. I love <code>fullscreen-mode</code> actually, which now finally also works with Emacs 24. It seems to work on Mac as well. You never tried that?
+</p>
+
+<p>
+<b>Sacha:</b> No, I haven't.
+</p>
+
+<p>
+<b>Carsten:</b> That's great. It just makes your Emacs window fullscreen. It puts away menu bar, toolbar, and everything. Fullscreen, so you don't see anything else, and then you can focus on writing. It can be useful.
+</p>
+
+<p>
+<b>Sacha:</b> I've had the menu bar, and the tool bar, and all of that stuff disabled for a while now. But we all accumulate these little customizations, and then someone goes off and packages them, which is nice.
+</p>
+
+<p>
+You said your Emacs file is not ready for public consumption?
+</p>
+
+<p>
+<b>Carsten:</b> I saw you doing one of the other chats, I saw you go through somebody's Emacs file.
+</p>
+
+<p>
+<b>Sacha:</b> John shared his and Thomas shared his as well. We can certainly walk through under that. Or on the other hand, if you're like, “It's a total mess and I don't want to show any of this.”
+</p>
+
+<p>
+<b>Carsten:</b> I think it's also not so interesting. I think, in the end, my Emacs customization is relatively basic stuff, stuff which you have shown off before. I really think so. I use Emacs the basic way it is, and then mostly extensions which actually I have written myself.
+</p>
+
+<p>
+<b>Sacha:</b> That's the difference.
+</p>
+
+<p>
+<b>Carsten:</b> Because they are the ones that exactly do what I want and so on.
+</p>
+
+<p>
+<b>Sacha:</b> There you go. The difference here is a lot of people have really big Emacs files. You package your Emacs customizations as packages.
+</p>
+
+<p>
+<b>Carsten:</b> That's a nice way of putting it. And send it out. Exactly.
+</p>
+
+<p>
+<b>Sacha:</b> It just also happens, I guess, that the defaults are the way that you work.
+</p>
+
+<p>
+<b>Carsten:</b> That's a very good point. If you write your own package, then you get to decide what's the default setting of all those variables. Of course, they are what I like. Even though I'm not in control currently of Org Mode. Right now it's Bastien's doing. He's doing a great job.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. It's always fantastic to see a package grow up, get other maintainers. Other people add their own spin to it. You keep getting the benefits without having to do as much hard work.
+</p>
+
+<p>
+<b>Carsten:</b> Exactly. The mailing list for Org Mode, I think that there's currently at 60 or 70 mails a day. Something like this is really crazy.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I check in every so often. There's a lot of volume, but there's also a lot of good configuration snippets, new features that show up, and like, “Oh, yes, I didn't know we did this.”
+</p>
+
+<p>
+<b>Carsten:</b> We never split the mailing list into help and development or so. We just kept everything together. It's kind of fun.
+</p>
+
+<p>
+What else do I use? Let me just think about it. I used to use Gnus as a news reader, but then unfortunately, I sort of stopped reading Usenet news because it was really too much. I have a couple of mailing lists which I subscribed to, and then that just gets filtered out in my email stuff. Really going on Usenet and reading the stuff, I sort of stopped that. It's just too much.
+</p>
+
+<p>
+<b>Sacha:</b> I have it still set up with some of the Emacs news groups, but then I forget for long periods of time. Then I was like, “Okay, time to go back in there and start looking around.” But it's easy to forget.
+</p>
+
+<p>
+<b>Carsten:</b> The other thing is, of course, Gmane, where you can so nicely search all the old stuff. You can just go back. If you missed something, you just go back far enough and look stuff up there. That's also possible. 
+</p>
+
+<p>
+What else do I use? Well, I can open my file but I'm not going to show it to you.
+</p>
+
+<p>
+<b>Sacha:</b> That's all right.
+</p>
+
+<p>
+<b>Carsten:</b> As I said. But actually, of course, I do use Babel to tangle it. You asked me that question in the run up to this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> So I certainly do this, but there's really very little interesting stuff. As I said, IDL is this programming language where there's this interface which I also worked on. I use that a lot. I do a little bit of encryption, but not systematically. I have one or two files which I read encrypted. There's this automatic decryption thing when you open it in Emacs. Basically my password file is a file which is an encrypted file, which I keep in this way. 
+</p>
+
+<p>
+Flyspell stuff.
+</p>
+
+<p>
+BBDB&#x2026; I used to be a big user of BBDB. It's also a little bit decreased, because I do my mail now in Apple mail and the interaction with that contact manager is not that good anymore.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I also had extensive notes in BBDB. I had it hooked into Gnus so that every time I sent mail, it would update the BBDB record as well, with the subject line. But since I moved to Google Mail and Google Contacts, I haven't really been doing the synchronization as much, which is a pity.
+</p>
+
+<p>
+<b>Carsten:</b> Google Contacts is really the best place, because I think that has the largest range of synchronization possibilities. All kinds of stuff that's good. While I'm also a big Git user and Magit user, but I think you have discussed this before, so maybe this is not so interesting.
+</p>
+
+<p>
+<b>Sacha:</b> It is awesome. All of that. Don't worry about repeating anything. Again, Emacs is awesome. People will use different parts of its awesomeness.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Magit is really good. It's also because of the integration with the change log entry creation and stuff like this. That actually that may be interesting. If you write an Emacs package will be part of Emacs, Emacs of course requires you to produce changelog entries in the right form at hand. So you have this special changelog file which you have to do. For really a number of years, we basically had to do double bookkeeping in Org Mode because we had a version&#x2026;
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I heard about that recent mix, the recent shift.
+</p>
+
+<p>
+<b>Carsten:</b> We had a versioning system, and then we are still keeping all these changelogs. Even worse, when it came towards release time, I would actually go through and look at all the changes, and then sort of more or less by hand, produce all those changelog entries. Sometimes I would only produce half and hope that the Emacs maintainer wouldn't notice.
+</p>
+
+<p>
+That was really terrible. And the way we do it now is we only use Git. No changelog files. We just enforce that the description of the change in the git commit message has to be formatted in a way that it will work as a changelog entry. And then in the end, at release time, we just have a script which uses Git to extract all the things and put them into a changelog file. This is really a very simple solution but very effective.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> That's how we do this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. People are just talking about that in the Emacs channel today. If you're doing that double bookkeeping, like, “Okay, changelog. Yes, there's a merge conflict. I know.”
+</p>
+
+<p>
+<b>Carsten:</b> Exactly. That was a useful thing. That's already basically all the set up which I have in my Emacs file. I'm sure it's much more limited than what many other people have. But that doesn't keep me from using it everyday for many hours. I think my day is split half between mail and Emacs. I think these are the two things which I look at. That's it.
+</p>
+
+<p>
+<b>Sacha:</b> What do you wish you could do with Emacs that you're currently not doing?
+</p>
+
+<p>
+<b>Carsten:</b> What do I wish I could do with Emacs that I'm currently not doing? It's a good question. Sometimes when I use Org files to write down notes, I would like to be able to make a drawing.
+</p>
+
+<p>
+<b>Sacha:</b> Do you know about Artist mode?
+</p>
+
+<p>
+<b>Carsten:</b> I have tried it. It's extremely cool. I actually started writing extensions to artist mode to make it a bit&#x2026; See, I have these ideas when I sit in the colloquium in our institute as a guy is discussing something. I'm taking notes. Then I would like to make&#x2026; He has a beautiful image. I just would like to make a drawing with a few lines.
+</p>
+
+<p>
+I've tried to use Artist mode for this but I couldn't get it fast enough so that it would actually be feasible to do this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. It actually surprisingly works well with a tablet PC.I have a screen that swivels around and becomes a tablet. So when you're drawing on the screen, that actually draws in Artist mode as well.
+</p>
+
+<p>
+<b>Carsten:</b> Oh, so maybe I should throw away my iPad and get an Android. What are you using then?
+</p>
+
+<p>
+<b>Sacha:</b> No, no. I have a tablet PC. So it's a Lenovo X220. It's a proper computer and I can run Emacs on it. It's heavy.
+</p>
+
+<p>
+<b>Carsten:</b> That's like as if you would sort of take your mouse in order to draw in Artist mode and just follow these lines?
+</p>
+
+<p>
+<b>Sacha:</b> But you're drawing on the screen, so it is more convenient. I came across that because I was giving a talk on Emacs to the local Linux users group. Naturally, we got derailed by people joking about, “Oh, can you do this?” It was like, “Yes, there's a mode for that. Let's give it a try.”
+</p>
+
+<p>
+<b>Carsten:</b> There's always a mode for this.
+</p>
+
+<p>
+<b>Sacha:</b> And I was surprised it worked.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. That is great. Even xkcd has realized that Emacs has it for everything. I think one or two xkcd jokes are about Emacs, I remember.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. There was the butterfly one which actually made its way into Emacs as a command. Then there was the one that you'd linked to recently, with the workflow.
+</p>
+
+<p>
+<b>Carsten:</b> Yes, exactly.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> Oh, you saw that. I thought it was so awesome with the workflow, because this is the truth, isn't it?
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> I mean whenever you make a change, somebody will say, “This breaks my workflow.”
+</p>
+
+<p>
+<b>Sacha:</b> Especially in Emacs where we do these convoluted things to tailor it exactly to fit how we work.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Actually, I'm also using Eshell every now and then. I think that's also John's, is that right?
+</p>
+
+<p>
+<b>Sacha:</b> Yes it is.
+</p>
+
+<p>
+<b>Carsten:</b> Did he write this? It's crazy enough for John to have done this. It's amazing. It's amazing what he has been doing, this kind of stuff. That's what I'm using.
+</p>
+
+<p>
+What else would I like? Also in the sense of being able to draw, sometimes it would be nice to pull in a little image and just drop it there. Is that possible?
+</p>
+
+<p>
+<b>Sacha:</b> You're telling me. Org's got in-line image support, right?
+</p>
+
+<p>
+<b>Carsten:</b> I know you can, but can you sort of pull it in and drop it? I'm thinking a good competing program for note-taking would be Evernote.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I think it would be great to have drag-and-drop functionality.
+</p>
+
+<p>
+<b>Carsten:</b> Just for an image. Sometimes a note would be helped by an image, and you can of course put in a link, but to just have a little image in that file might be useful.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I think that sounds like an excellent Org feature request.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Maybe it could be done in a way that it actually is in the file, is a link, and then we use the attachment feature for Org Mode to put it somewhere in a related directory. We could think about this.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> That's great.
+</p>
+
+<p>
+Another thing I'm using are the tables in Org Mode quite a bit, to capture a little bit of data, to throw it around, if I don't feel like using Excel for this but just something smaller.
+</p>
+
+<p>
+<b>Sacha:</b> Every so often, I go through the Org manual and the source code. I was like, “Oh yes. Hey, look, we can do column equations and other things here. Holy cow!”
+</p>
+
+<p>
+<b>Carsten:</b> Yes, that is possible. The table editor, I think, needs a rewrite. I've looked at that code recently because there was a bug report. I wasn't able to fix this bug because it was so convoluted and hard to maintain. There's this one thing which I think is great in Emacs and which I have used too much sometimes. In Emacs, if you have dynamic scoping, you can basically write a let statement and assign a variable, make a variable and assign a new value to it, and then call some other functions. In this way, you change the background in which this other function will work. It's not a parameter which you actually hand to that function, but it changed the background, and then you can make it something crazy. This can be really powerful, but of course, also dangerous, because it reduces maintainability if you use these hidden ways of communicating to another function.
+</p>
+
+<p>
+I've made use of this sometimes too often. I think in the table editor, that has caused problem. I'm thinking, it's a one project if I ever have a chunk of time, like a week or two where I don't really have to do anything else, to just sit down and rewrite the thing in a cleaner way. That will be fun.
+</p>
+
+<p>
+I find programming in Emacs Lisp totally relaxing. Did you also have this when you were doing so much? It's like a cooling off and hanging down. Once you get really proficient in it, it becomes an easy and very engaging and nice little exercise. I just use this as a way to relax sometimes.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome. Yes. I totally get where you're coming from. It's great because you can easily do things. You can reach out and you can combine different packages, play around with internals and just smoosh them together, tweak things to make things fit you.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Quite often, when I have students come in and they want to do a little project, and then they want to program, and then there's a discussion about which programming language to use. In the institute, we often have a discussion, “We should train our students more in programming language, which language would be the right one?”
+</p>
+
+<p>
+I always think it doesn't really matter, because if you know one programming language, you know them all. But there's one exception, and that's Lisp. I think Lisp is the one language which is really different from all the others, because the concept is really completely the other way around. If you write Lisp well, then you hardly ever assign values to variables because, there's just one flow through this chain of forms and function calls in which way this is organized.
+</p>
+
+<p>
+I think that's one of the reasons why I started to learn it, because I thought that was an interesting concept.
+</p>
+
+<p>
+<b>Sacha:</b> So you work with a ton of Lisp. What do you do in terms of debugging, refactoring it? Have you come across any great tips? Or is it just edebug all the way?
+</p>
+
+<p>
+<b>Carsten:</b> It's edebug basically. That's what I use. Profiling. That is really the key. To find the bugs, it's just edebug. But then when you have written the code, just make it a habit to profile stuff which you have written and to see where it's spending its time. That, I think, is also a good way to debug. Often that means it's spending its time with something which is not really useful or necessary, so you have done this is in a bad way. It's a great way to educate yourself to do good programming.
+</p>
+
+<p>
+Profiling teaches you a lot about yourself, programming style, and where you should pay attention. Because otherwise, you can spend days of making a little corner of your code nice and smooth and work better, to basically no outside effect. Sometimes you can put in an hour&#x2026; I remember that we had these issues in the past. The agenda was extremely slow at some point. There have been several steps to really speed this up. Bastien has recently worked on this. A couple of years ago, we basically sped everything up by a factor of 10 or 20, by just finding a couple of stupid things. Things that were not done in a good way.
+</p>
+
+<p>
+That comes out of a profile. Because you never know. You just sit there, you wait for the thing, it takes 20 seconds to give you something, and you have no idea why. The Emacs profile works really well. Have you ever used it?
+</p>
+
+<p>
+<b>Sacha:</b> Sometimes. After John and I talked&#x2013;he talked about profiling his init file so he can start really streamlining it. I was like, "That's great." I don't actually restart Emacs that often, but it's great to be able to see the numbers right next to all the code. That is cool.
+</p>
+
+<p>
+<b>Carsten:</b> That's actually interesting. I restart Emacs very often. In this way, I'm a bad Emacs citizen.
+</p>
+
+<p>
+<b>Sacha:</b> No. He mentioned that he does that he can make sure that errors don't accumulate and that things&#x2026; My problem is that sometimes I make a lot of Emacs changes and then I'm like, “Okay, time for &#x2013;debug-init because I broke something.”
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Everybody says always, “Emacs is so stable and so good, so you should only start it once in the morning.” But I don't really mind. Two or three-second startup time is not a major problem, I think. I restart it to sort of get it out of the way. I also don't like to accumulate hundreds of buffers. Then it takes a bit more time to switch to another buffer or so. I restart it.
+</p>
+
+<p>
+But also I think another reason is because I keep hacking at stuff. It's then good to restart to have a clean state, to know what's actually going on, that you're not delivering something with it or something. That can happen. If you change a file and then you load something. In particular, Org Mode, for example, is built into Emacs, but of course, there's also the development version, and you just have to be sure that you are loading the right file. There are all these issues with load path shadowing and so forth. So you have to be careful about that.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I can imagine.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Maybe I can ask you?
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> Today I was looking for a program to change the size of the font in Emacs, just step-wise, like a little command to increase it.
+</p>
+
+<p>
+<b>Sacha:</b> <code>C-+</code>.
+</p>
+
+<p>
+<b>Carsten:</b> <code>C-+</code>. You got to be kidding me.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. It's <code>text-scale-increase</code>.
+</p>
+
+<p>
+<b>Carsten:</b> <code>text-scale-increase</code>. I was looking for this and I couldn't find it. Let me just write it down.
+</p>
+
+<p>
+<b>Sacha:</b> It's basically <code>C-+</code>, <code>C--</code> does this like text scaling thing.
+</p>
+
+<p>
+<b>Carsten:</b> I don't have these bindings here right now. But if I know the command then, that's great. Thank you. It's good.
+</p>
+
+<p>
+<b>Sacha:</b> I use my old version of this.
+</p>
+
+<p>
+<b>Carsten:</b> Because in fullscreen mode, I want to increase the font size, maybe just temporarily a little bit, clack, clack, clack. Okay, text scaling. Good. Learned something today.
+</p>
+
+<p>
+<b>Sacha:</b> It's hard for me to tell now which keybindings are mine and which ones are Emacs'.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. That is sometimes the problem. Also, they change it. That happens as they change it. So you get new version of Emacs and they have changed something, and you don't see it because you have already overloaded it in a different way.
+</p>
+
+<p>
+<b>Sacha:</b> Also because I have one of those large configurations where I forget things that I've already put in there. Like, “Oh yes, why am I defining my own <code>count-words</code> with it?” It now exists in Emacs.
+</p>
+
+<p>
+<b>Carsten:</b> Does it? I have my own, too.
+</p>
+
+<p>
+<b>Sacha:</b> There you go. <code>Count-words</code> has finally made it into Emacs 24.
+</p>
+
+<p>
+<b>Carsten:</b> I didn't hear that.
+</p>
+
+<p>
+<b>Sacha:</b> It's in <code>simple.el</code>.
+</p>
+
+<p>
+<b>Carsten:</b> Does it work?
+</p>
+
+<p>
+<b>Sacha:</b> Apparently so.
+</p>
+
+<p>
+<b>Carsten:</b> Because one of the problems of course is, lots of stuff which I write is written in LaTeX. They have lots of command stuff which I would prefer not to count.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. You still probably need your own. I remember coming across it because I like looking at Emacs Wiki and other people's configuration. I end up accumulating all these snippets here and there. But yes, sometimes everybody needs to re-implement <code>count-words</code>.
+</p>
+
+<p>
+<b>Carsten:</b> Are you using Babel to tangle your init file or not?
+</p>
+
+<p>
+<b>Sacha:</b> I did the lazy thing. I just installed Emacs Starter Kit, so I let that do all the, “Okay, load the Sacha.el etc., etc.” and then it handles my configuration file. I think it does byte compiling as well, automatically, so I don't have to remember to do that myself.
+</p>
+
+<p>
+<b>Carsten:</b> Do you byte-compile your init file? I don't do this.
+</p>
+
+<p>
+<b>Sacha:</b> I don't remember. I basically leave it to Emacs starter kit to do that.
+</p>
+
+<p>
+<b>Carsten:</b> To do whatever is right.
+</p>
+
+<p>
+<b>Sacha:</b> But it does auto-tangle for me which is nice because then I don't have to remember to republish.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. That's a noise. You have to turn it on. That's important.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I share the Org file and the generated Emacs file and all of that stuff through Dropbox, so people could easily get to it even after.. Whenever I change my config, it's up there already.
+</p>
+
+<p>
+<b>Carsten:</b> So you have it in your public folder so people could grab it?
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I basically have a secret file where all my passwords are, but you can always include that without including everything else.
+</p>
+
+<p>
+<b>Carsten:</b> Yes.
+</p>
+
+<p>
+<b>Sacha:</b> So the rest of my config is public, which is great because I have accidentally deleted stuff before. It's nice to be able to search the Internet.
+</p>
+
+<p>
+<b>Carsten:</b> Yes, that's right. Accidentally delete? I hope you have your configuration on the Git.
+</p>
+
+<p>
+<b>Sacha:</b> It's actually slightly more annoying, because I'm stuck on Windows for these drawing programs that I like using with my tablet. So it's not as easy to set up this lovely version control thing. I have Git. I use it for source code but I actually don't have my config in it yet. I should do that.
+</p>
+
+<p>
+<b>Carsten:</b> Yes, I think you should. You could always go back.
+</p>
+
+<p>
+<b>Sacha:</b> And then you can see the history of your configuration changes as well, which is interesting.
+</p>
+
+<p>
+But one of the things I have started doing&#x2013;you've probably come across this in my blog&#x2013;I'm starting to use Org-Drill to remember to remember what's in my configuration.
+</p>
+
+<p>
+<b>Carsten:</b> I've never used Org Drill. I know it exists. Does it work?
+</p>
+
+<p>
+<b>Sacha:</b> It's actually really helpful. I've been using it to study for various tests as well. I used to use Flashcard before. Flashcard.el did that kind of spaced repetition too. The nice thing about Emacs of course is you could hack things around. With flashcard, I'd set it up to show me a fortune cookie every time I got something correct. Then once I had gone through the entire fortune file, I think I had it set up to show me cute pictures of kittens from Cute Overload or something like that.
+</p>
+
+<p>
+<b>Carsten:</b> That keeps you motivated.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. Emacs is an eminently hackable thing.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. I just love it. I remember that at some point, we had the discussion about "Is it useful to use something as complex as for example Org Mode, or is it better to use something which is very bare bones and basics and not get distracted by configuring your tool?"
+</p>
+
+<p>
+I was about to think about it if I didn't agree with people who wanted to have – so that you can't use your system to procrastinate. But on the other hand, I really came on to the side that I actually want my computer to work exactly how I want it.
+</p>
+
+<p>
+<b>Sacha:</b> Yes.
+</p>
+
+<p>
+<b>Carsten:</b> You know what my prompt is on my terminal window? It's, “Sir?” Like an English butler, it would ask you what to do next. I like this kind of attitude of my computer towards me, to just stand there, and wait, and then do exactly what I want. That's how it should be.
+</p>
+
+<p>
+<b>Sacha:</b> It is very tempting to just spend all of that time customizing Emacs and looking at other people's stuff, writing all those little hacks for your packages or whatever. But it pays off because then you don't have to think about it so much. You just work the way that you work.
+</p>
+
+<p>
+<b>Carsten:</b> Yes, exactly. There are days where you have to self-censor and stop yourself. But normally, I agree. I just use this stuff in downtime when I couldn't really do something else otherwise anyway.
+</p>
+
+<p>
+<b>Sacha:</b> As you said, it's your form of relaxation.
+</p>
+
+<p>
+<b>Carsten:</b> It totally is. It's my hobby. Like other people would knit or something like this.
+</p>
+
+<p>
+<b>Sacha:</b> That's awesome. I've never quite thought about it like knitting, but I can see how it is.
+</p>
+
+<p>
+<b>Carsten:</b> I think it's very close to knitting.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. I can see that now.
+</p>
+
+<p>
+<b>Carsten:</b> Pretty much like it. It keeps your brain engaged that maybe knitting doesn't so much. I don't know. I'm not a big knitter.
+</p>
+
+<p>
+<b>Sacha:</b> Yes and then you get the benefits whenever you're working too. So, it's very productive work. That said, I could probably spend hours just going through the random pages in Emacs Wiki. Yes, there are temptations.
+</p>
+
+<p>
+<b>Carsten:</b> Sounds like fun.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. Thanks for sharing your stories.
+</p>
+
+<p>
+<b>Carsten:</b> That was a lot of fun.
+</p>
+
+<p>
+<b>Sacha:</b> Will we get to see you at the conference on March 30?
+</p>
+
+<p>
+<b>Carsten:</b> I have actually no idea which conference you are talking about.
+</p>
+
+<p>
+<b>Sacha:</b> What? You're kidding.
+</p>
+
+<p>
+<b>Carsten:</b> I'm sorry. Probably not. Is there a conference in which I should know about?
+</p>
+
+<p>
+<b>Sacha:</b> The Emacs conference thing which they're organizing in London.
+</p>
+
+<p>
+<b>Carsten:</b> I see. No, I'm not going to be there. I have so many conferences to go to. No, I'm not coming. Unfortunately. I'm sorry.
+</p>
+
+<p>
+<b>Sacha:</b> Yes. A couple of people are Skyping in with their talks. I'm looking forward to a chance to see more than three Emacs geeks in the same room which will be a mind-boggling experience. But I'm sure there will be other ones, and maybe I'll get to see you face-to-face then.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. That would be awesome.
+</p>
+
+<p>
+I would just like to say also thank you to you, Sacha. I think you really have been an inspiration in the sense that you have been so visible and so public with your Emacs stuff and in general as a person. I've enjoyed this a lot. It was always very nice to read stuff about you.
+</p>
+
+<p>
+<b>Sacha:</b> Emacs is so amazing. I feel like I barely scratched the surface, even though I've been using it for so long and gotten to know so many of these amazing packages. There's just always so much more coming out. It's an incredible community to belong to.
+</p>
+
+<p>
+<b>Carsten:</b> Yes. Get started with Calc. Take a look at this thing.
+</p>
+
+<p>
+<b>Sacha:</b> There you go. That's [inaudible].
+</p>
+
+<p>
+<b>Carsten:</b> Exactly.
+</p>
+
+<p>
+<b>Sacha:</b> I remember reading the manual, then laughing out loud.
+</p>
+
+<p>
+<b>Carsten:</b> Yes, the manual is very funny as well. Just tutorial at the manual and yes, it's really nice.
+</p>
+
+<p>
+<b>Sacha:</b> I will go check that out. I want to see if there are other thing we can do to make it easier for newcomers to Emacs to get started. So certainly, showing real people using Emacs and helping people learn. Right up there in that list.
+</p>
+
+<p>
+<b>Carsten:</b> Okay.
+</p>
+
+<p>
+<b>Sacha:</b> Thank you again. See you around.
+</p>
+
+<p>
+<b>Carsten:</b> Thank you, Sacha. This was fun and good luck.
+</p>
+
+<p>
+<b>Sacha:</b> This was fun. Bye.
+</p>
+
+<p>
+<b>Carsten:</b> Good bye.
+</p>
+
 <hr>
 <p>
 Check out <a href="http://sachachua.com/blog/emacs-chat">Emacs Chat</a> for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? <a href="http://sachachua.com/blog/contact">Get in touch!</a>

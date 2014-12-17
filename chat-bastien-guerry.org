@@ -2,6 +2,8 @@
 #+TITLE: Emacs Chat: Bastien Guerry
 #+DATE: <2014-04-25 Fri>
 #+PROPERTY: DISQUS http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/
+#+PROPERTY: VIDEO https://www.youtube.com/embed/fnk0TJC7iJI
+#+PROPERTY: AUDIO https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs Chat - Bastien Guerry and Sacha Chua.mp3
 
 [[http://sachachua.com/blog/2013/05/emacs-chat-bastien-guerry/][Source]]
 
@@ -15,16 +17,7 @@ Enjoy!
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fnk0TJC7iJI" frameborder="0" allowfullscreen></iframe>
 #+END_HTML
 
-Want just the audio? You can get MP3s or OGG from [[https://archive.org/details/EmacsChatBastienGuerryAndSachaChua][archive.org]].
-
-#+BEGIN_HTML
-<div class="powerpress_player" id="powerpress_player_8453">
-<audio class="powerpress-mejs-audio" controls="controls" src="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3" preload="none">
-<a href="https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
-</div>
-#+END_HTML
-
-Podcast: [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3][Play in new window]] | [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3][Download]]
+Want just the audio? You can get MP3s or OGG from [[https://archive.org/details/EmacsChatBastienGuerryAndSachaChua][archive.org]], or [[https://archive.org/download/EmacsChatBastienGuerryAndSachaChua/Emacs%20Chat%20-%20Bastien%20Guerry%20and%20Sacha%20Chua.mp3][download the MP3]].
 
 * Transcript
 

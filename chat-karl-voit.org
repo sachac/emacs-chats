@@ -393,3 +393,5 @@ Fantastic. Thank you so much for being on this Emacs Chat and sharing all those 
 Thanks again. I'm going to wrap up here and see you all next time.
 
 *Karl:* See you.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"

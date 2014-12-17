@@ -17,14 +17,7 @@ other Emacs geeks! =)
 
 [[http://vimeo.com/61912848][Thomas Kjeldahl Nilsson -- Emacs chat]] from [[http://vimeo.com/user1851927][Sacha Chua]] on [[http://vimeo.com][Vimeo]].
 
-#+BEGIN_HTML
-<div class="powerpress_player" id="powerpress_player_2523">
-<audio class="powerpress-mejs-audio" controls="controls" src="https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3" preload="none">
-<a href="https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3']);" title="Play" target="_blank"><img src="http://sachachua.com/blog/wp-content/plugins/powerpress/play_audio.png" title="Play" alt="Play" style="border:0;" /></a></audio>
-</div>
-#+END_HTML
-#+INDEX: Org-mode - outlining
-#+INDEX: ERC - at work
+[[https://archive.org/download/EmacsThomasKjeldahlNilsson/Emacs%20-%20Thomas%20Kjeldahl%20Nilsson.mp3][Audio]]
 
 Links:
 

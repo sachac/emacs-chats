@@ -2,6 +2,7 @@
 (package-initialize)
 (require 'ox-publish)
 (require 'htmlize)
+(setq org-export-with-section-numbers nil)
 
 (setq-default buffer-file-coding-system 'utf-8)
 
@@ -24,6 +25,13 @@
 
 (defvar emchat-postamble "<div class=\"back-to-top\"><a href=\"#top\">Back to top</a> | <a href=\"mailto:sacha@sachachua.com\">E-mail me</a></div>")
 (defvar emchat-postamble-alternative "<div class='footer'>Copyright 2013-2014 %a (%v HTML) - Creative Commons Attribution License.<br>Last updated %C. <br>Built with %c.</div>")
+
+(defvar emchat-epub-html-head "")
+(defvar emchat-epub-preamble "")
+(defvar emchat-epub-postamble "")
+(defvar emchat-epub-postamble-alternative "<div class='footer'>Copyright 2013-2014 %a (%v HTML) - Creative Commons Attribution License.<br>Last updated %C. <br>Built with %c.</div>")
+
+
 
 (defvar emchat-directory (file-name-directory (or load-file-name buffer-file-name))
 	"Location of files.")
@@ -49,7 +57,7 @@
       `("orgfiles"
          :base-directory ,emchat-directory
          :base-extension "org"
-         :exclude "tasks.org"       ; regexp
+         :exclude "\\(tasks\\|epub\\).org"       ; regexp
          :publishing-directory ,emchat-directory
          :publishing-function emchat-org-html-publish-to-html
          :recursive t
@@ -65,5 +73,29 @@
          :with-timestamp t
          :htmlized-source t
          ))
+(add-to-list 'org-publish-project-alist
+      `("orgfiles-epub"
+        :base-directory ,emchat-directory
+        :exclude "."
+        :include "epub.org"
+        :publishing-directory ,emchat-directory
+        :publishing-function emchat-org-html-publish-to-html
+        :recursive t
+        :html-head-include-default-style nil
+        :html-head-include-scripts nil
+        :html-head ,emchat-epub-html-head
+        :html-preamble ,emchat-epub-preamble
+        :html-postamble ,emchat-epub-postamble
+        :auto-sitemap t                  ; Generate sitemap.org automagically...
+        :sitemap-filename "sitemap.org"  ; Call it sitemap.org (it's the default)...
+        :sitemap-title "Sitemap"         ; With title 'Sitemap'.
+        :makeindex t
+        :with-timestamp t
+        :htmlized-source t
+        ))
 (add-to-list 'org-publish-project-alist '("emchat" :components ("orgfiles")))
 
+(defun sacha/export-emacs-chat-epub ()
+  (let ((org-confirm-babel-evaluate nil))
+    (find-file "epub.org")
+    (org-export-to-file 'html "epub.html")))

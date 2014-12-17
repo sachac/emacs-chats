@@ -8,7 +8,6 @@ We chat about EmacsNYC, organizing your configuration, pair programming, and mor
 * Audio and video
 
 #+begin_html
-We talk about Emacs NYC, organizing your configuration, and more.</p>
 <p><iframe src="//www.youtube.com/embed/I2wOxZOcyD8" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen" nuan_newframe="true"></iframe>
 #+end_html
 
@@ -444,3 +443,5 @@ Yes. Everyday there's something new and interesting.
 *Harry*: Yes, thank you so much for the opportunity. This is terrific.
 
 *Sacha*: All right.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"

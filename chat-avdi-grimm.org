@@ -45,8 +45,10 @@ Links mentioned in the video:
 - [[http://kieranhealy.org/resources/emacs-starter-kit/][An Emacs Starter Kit for the Social Sciences]]
 - [[http://devblog.avdi.org/2012/06/22/use-revision-control-annotation-in-your-editor/][Use revision control annotation in your editor | Virtuous Code]]
 
-Podcast: [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Play in new window]] | [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Download]]
+Podcast: [[https://archive.org/download/EmacsSachaChuaAvdiGrimm/Emacs%20-%20Avdi%20Grimm.mp3][Download]]
 
-* Transcript: Coming Soon
+* Transcript
+
+
 
 #+INCLUDE: "inc/interviews.inc" :lines "3-"

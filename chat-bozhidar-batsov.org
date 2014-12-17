@@ -319,3 +319,6 @@ That's good. Awesome. Thank you again so much for sharing your story and your th
 All right. I'll include links to your GitHub profile, to Prelude, Projectile and all those other good things. Thank you again for joining us for an Emacs Chat episode. Folks, if you're listening in and you have ideas for other people we should talk to so we can find out how other people use Emacs and what they do with it, please feel free to lead them in the comments or reach out where to find me. This chat plus the transcript eventually will be available on [[http://www.emacslife.com][Emacslife.com]].
 
 Thanks again. I'm going to end the broadcast here since it's 8 o'clock in Sophia. But thanks again and I hope everyone has a great time.
+
+#+INCLUDE: "inc/interviews.inc" :lines "3-"
+

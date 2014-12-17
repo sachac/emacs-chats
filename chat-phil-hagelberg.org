@@ -19,9 +19,9 @@ Quick links:
 - https://github.com/technomancy/dotfiles/tree/master/.emacs.d 
 - http://leiningen.org/ 
 - http://technomancy.us/171 (heater)
--  http://atreus.technomancy.us (keyboards)
+- http://atreus.technomancy.us (keyboards)
 
-* STARTED Transcript
+* Transcript
 
 *Sacha:* Hello and welcome to another episode of Emacs Chat.  Today's guest is Phil Hagelberg, who you might know as technomancy, and the creator of all sorts of useful things including a starter kit (which is now the better defaults package) and other cool stuff related to Clojure.
 
