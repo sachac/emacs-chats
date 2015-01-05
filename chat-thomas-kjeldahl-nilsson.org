@@ -30,9 +30,7 @@ Links:
 
 * Transcript
 
-Sacha: This is Sacha Chua, talking with Thomas Nilsson about Emacs.
-
-So you started in the university with a couple of friends but how did it get other people in the company to use Emacs?
+Sacha: This is Sacha Chua, talking with Thomas Nilsson about Emacs. So you started in the university with a couple of friends, but how did you get other people in the company to use Emacs?
 
 Thomas: Actually, they were fairly hardcore Emacs users.
 
@@ -42,19 +40,15 @@ Thomas: I'd already gotten back into Emacs recently and at that point, I figured
 
 Sacha: What do you mean by going “all in?” What were some of the things that you picked up again or changed?
 
-Thomas: Well, I guess several Emacs users have the same feeling that you start using it for a coding or something and it gradually starts eating other stuff. It just seem like everything you do at some point.
+Thomas: Well, I guess several Emacs users have the same feeling that you start using it for coding or something, and it gradually starts eating other stuff. It just seems like everything you do at some point.
 
 Sacha: Such as?
 
-Thomas: I was a really big mind map user.
+Thomas: I was a really big mind map user a couple of years ago. Then I found Org Mode, and now I don't use mind maps anymore.
 
-Sacha: Oh, yes.
+Sacha: After building something for mind maps that was actually pretty interesting and graphical, I guess, plain text. Yes.
 
-Thomas: A couple of years ago. Then I found Org mode and now I don't use mind maps anymore.
-
-Sacha: After building something for mind maps, that was actually pretty interesting in graphical, I guess in text. Yes.
-
-So, there's Org which it seems everyone lets Org take up their life. Are there other interesting things that you played around with Emacs?
+So, there's Org which--it seems everyone lets Org take up their life. Are there other interesting things that you played around with Emacs?
 
 Thomas: Apart from Org?
 
@@ -64,7 +58,7 @@ Thomas: Are you one of the maintainers on Org?
 
 Sacha: No. [Inaudible]?
 
-Thomas: No? Okay. On Org IRC mode for Emacs?
+Thomas: No? Okay. ERC? The IRC mode for Emacs?
 
 Sacha: Yes, I use that a lot. I think John Wiegley was involved in that one.
 
@@ -72,33 +66,33 @@ Thomas: Right.
 
 Sacha: It's pretty cool, I use that often too.
 
-Thomas: Yes, I use it everyday. We use IRC quite a lot in our company, so I basically have an IRC session going in Org, to a Mac session on a server.
+Thomas: Yes, I use it everyday. We use IRC quite a lot in our company, so I basically have an IRC session going in ERC, in a tmux session on a server.
 
-Sacha: Oh, I see. It stays there even if we get disconnected?
+Sacha: Oh, I see. It stays there even if you get disconnected.
 
 Thomas: Right. It's persistent.
 
 Sacha: Yes. It's amazing to have so many things in Emacs.
 
-Sorry, the cat is being a bit of a pain. [Inaudible] on the table. Cat.
+Sorry, the cat is being a bit of a pain. [Inaudible] He's on the table. Cat.
 
-And then with other people in your company, what's that like when they're working on Emacs and you're working with Emacs? Do you people have a pair program or do you have yourself a config with them?
+And then with other people in your company, what's that like when they're working on Emacs and you're working with Emacs? Do you people ever pair program or do you have a similar config with them?
 
-Thomas: Yes. We swap config files and we do some pair programming. It's both a blessing and a curse but part of which is Emacs.
+Thomas: Yes. We swap config files and we do some pair programming. It's both a blessing and a curse when your partner uses Emacs.
 
 Sacha: Okay, how is it a blessing?
 
-Thomas: Well, of course we can swap config and it's quite easy to sit down at other people's [inaudible] because you're basically familiar with their basic set up. But the issue is that of course every Emacs set up diverges even though everyone starts at the same place. My colleague Christian sits down with my desk and unbearably, he finds some set of [inaudible] there.
+Thomas: Well, of course we can swap config. It's quite easy to sit down at other people's editors because you're basically familiar with their basic set up. But the issue is that, of course, every Emacs set up diverges, even though everyone starts at the same place. My colleague Christian sits down at my desk, and invariably, he finds some set of hotkey that's not there.
 
-Sacha: Yeah. That's a lot of things I hear when people are working with other people's Emacs'. We get so used to our old shortcuts, you can't imagine Emacs without them.
+Sacha: Yeah. Other things I hear when people are working with other people's Emacses. We get so used to our own shortcuts, we can't imagine Emacs without them.
 
-Thomas: I read that. This is maybe a common problem with Lisps as well generally because sometimes Lisp projects tend to diverge a lot from each other because it's so easy to extend just like Emacs.
+Thomas: I read that this is maybe a common problem with Lisps as well, generally, because sometimes Lisp projects tend to diverge a lot from each other, because it's so easy to extend. Just like Emacs.
 
-Sacha: What are some of the interesting configurations snippets that you've picked up from other people?
+Sacha: What are some of the interesting configuration snippets that you've picked up from other people?
 
 Thomas: I think I'll have to open my Org file.
 
-Sacha: Oh, if you don't mind, I'd love a walkthrough with what you got there. I'm always curious about people's configuration and it's all interesting when you hear people explain why. I think in Skype, you can switch over the screen sharing if you like.
+Sacha: Oh, if you don't mind, I'd love a walkthrough with what've you got there. I'm always curious about people's configuration. It's always interesting when you hear people explain why. I think in Skype, you can switch over the screen sharing, if you like.
 
 Thomas: Right. I think I'll just open my config first. I actually have my Emacs config in that Org file.
 
@@ -106,11 +100,11 @@ Sacha: It's an excellent practice.
 
 Thomas: Yes. It's the closest I've gotten to literate programming, I think. Now I'll just have to figure out how to share this.
 
-Sacha: If you go back to Skype window and hover over it, there should be a + sign. Add right next to the red Hangout then and you can see “add,” “send,” or “share.” If you click on the + sign, you can then screencast. The video will put out but then I'd get to see your screen which is good.
+Sacha: If you go back to the Skype window and hover over it, there should be a + sign. Right next to the red "hangup" button, you should see “add,” “send,” or “share.” If you click on the + sign, you can then screencast. The video will cut out, but then I'd get to see your screen which is good.
 
 Thomas: You need Skype Premium to share screens?
 
-Sacha: No. You should be able to share it. If you just turn off the video.
+Sacha: No. You should be able to share it if you just turn off the video.
 
 Thomas: Right. Do I turn off your video?
 
@@ -132,15 +126,15 @@ Thomas: Is it big enough?
 
 Sacha: Yes. Perfect. I really like the fact that using Org for your config gives you folding.
 
-Thomas: Yes, exactly. I stole this set up or the basic set up from one of my colleagues. Probably to that I have everything spread across lots of different files. I really like using incremental search just to jump around. It's nice to have it in one place.
+Thomas: Yes, exactly. I stole this set up--or the basic set up--from one of my colleagues. Prior to that, I had everything spread across lots of different files. I really like using incremental search just to jump around. It's nice to have it in one place.
 
 Sacha: Yes. What are the particularly interesting things about your set up that you're proud of or that really help you?
 
-Thomas: Well, I haven't created that much myself but I stole a lot of great stuff.
+Thomas: Well, I haven't created that much myself, but I've stolen a lot of great stuff.
 
 Sacha: Which is how we do all of it. So, that's cool.
 
-Thomas: Exactly. Let's see, Emacs Server Mode or Emacs Demon?
+Thomas: Exactly. Let's see... Emacs Server Mode or Emacs Daemon?
 
 Sacha: Yes.
 
@@ -154,7 +148,7 @@ Thomas: There we go. Sorry.
 
 Sacha: That's all right.
 
-Thomas: Yes. Emacs is the server or Demon mode is really great. I think I picked that up from Avdi Grimm. He had this series of screencast where he bit of his own Emacs set up. So I basically followed along with that recently.
+Thomas: Yes. Emacs is the server. Daemon mode is really great. I think I picked that up from Avdi Grimm. He had this series of screencasts where he rebuild his own Emacs set up. So I basically followed along with that recently.
 
 Sacha: Nice. The Emacs Reboot Series.
 
@@ -172,27 +166,27 @@ Sacha: I do that as well. I use that a lot, too. Yes.
 
 Thomas: It's great. It's not much more there. YAML, Markdown, Ace-jump?
 
-Sacha: I saw the keyboard shortcut you bound to that and I was like jealous because you've got all these accented characters. That's nice.
+Sacha: I saw the keyboard shortcut you bound to that. I was jealous because you've got all these accented characters. That's nice.
 
 Thomas: Have you used Ace-jump at all?
 
-Sacha: A little bit. That's one of the things that's on – because my configuration is also in Org, I'm using Org Drill to try to remember certain features that I've added to my config. Ace-jump is one of them. It's great, I can see how it will be useful. I just have to get the keyboard shortcut burnt into my brain.
+Sacha: A little bit. That's one of the things that's on... Because my configuration is also in Org, I'm using Org Drill to try to remember certain features that I've added to my config. Ace-jump is one of them. It's great. I can see how it will be useful. I just have to get the keyboard shortcut burnt into my brain.
 
 Thomas: That's actually exactly the same situation I'm in.
 
-Sacha: Yes. The way that I'm dealing with it right now is using SPCd repetition. Org Drill remembers how easy or hard you find an item and it will remind you at the appropriate time intervals to review it.
+Sacha: Yes. The way that I'm dealing with it right now is using spaced repetition. Org Drill remembers how easy or hard you find an item. It will remind you at the appropriate time intervals to review it.
 
 Thomas: Right. That sounds really useful.
 
 Sacha: You should check it out. It's actually pretty cool.
 
-Thomas: Cool. I usually harvest lots of stuff that looks good and put it in my config files and in my cheat sheets. But the problem is actually going back, and revising, and learning all that stuff.
+Thomas: Cool. I usually harvest lots of stuff that look good. I put it in my config files and in my cheat sheets. But the problem is actually going back, and revising, and learning all that stuff.
 
-Sacha: Yes. Later if there's time I'll show you how I've been using it and how to set it up.
+Sacha: Yes. Later, if there's time, I'll show you how I've been using it and how to set it up.
 
 Thomas: Cool.
 
-Sacha: But again, I'd love to know about the other interesting things about your Emacs set up there especially actually also things that you're still trying to figure out, or the things that you're looking forward to hacking into your config.
+Sacha: I'd love to know about the other interesting things about your Emacs set up there. Especially things that you're still trying to figure out, or the things that you're looking forward to hacking into your config.
 
 Thomas: Yes. Let's see. I'll skip a couple of this. I stole a really cool Magit set up.
 
@@ -202,59 +196,61 @@ Thomas: Yes. But I'm actually not sure how this makes my Magit mode different fr
 
 Sacha: I should check that out.
 
-Thomas: Yes. Let's see. Regex builder?
+Thomas: Yes. Let's see. Regex builder? 
 
 Sacha: Oh yes.
 
-Thomas: Is that useful? I don't use it that often but when I do need it, it's really handy. Basically that's your type Regex in the mini buffer if I remember it correctly and it will show up all the matches in your current buffer. It's a nice way to interactively check your Regex.
+Thomas: Is that useful? I don't use it that often but when I do need it, it's really handy. Basically lets you type a regex in the mini-buffer, if I remember correctly, and it will show all the matches in your current buffer. It's a nice way to interactively check your regex.
 
-Expand-region, this is one of those extensions that I actually need to get into my muscle memory.
+Expand-region. This is one of those extensions that I actually need to get into my muscle memory.
 
 Sacha: I haven't used that yet.
 
-Thomas: Yeah, basically I think I'll actually have to call it using...
+Thomas: Yeah, basically... I think I'll actually have to call it using...
 
 Sacha: That could be why it's not in your muscle memory.
 
-Thomas: I know. I can have it in my config correct, I think. But it basically lets you expand your selection to the next scope of whatever mode you're in.
+Thomas: I know. I don't actually have it in my config right now, I think. But it basically lets you expand your selection to the next scope of whatever mode you're in.
 
-Sacha: Yes, starting with a word and then going to the expression and so forth.
+Sacha: Yes, starting with a word, and then going to the expression, and so forth.
 
 Thomas: Yeah. Up to the class, and up to the module, and so forth.
 
-Sacha: Yes. I can see how that are very useful.
+Sacha: Yes. I can see how that will be very useful.
 
-Thomas: Yes. Yet another run that I use frequently so it's not part of my muscle memory but I'm getting there. Ruby Mode, that's pretty basic. I do most of my development in Ruby these days.
+Thomas: Yes. Yet another one that I use too infrequently, so it's not part of my muscle memory, but I'm getting there. 
+
+Ruby Mode, that's pretty basic. I do most of my development in Ruby these days.
 
 Sacha: Yes. Are you using Rinari and similar things as well?
 
-Thomas: I tried it briefly but I don't actually remember why I didn't stick with it. I think just briefly and I found out that Rinari-rgrep and Findin-project was good enough for me.
+Thomas: I tried it briefly, but I don't actually remember why I didn't stick with it. I found out that rinari-rgrep and find-in-project was good enough for me.
 
-Sacha: It's true. I often forget to use the keyboard shortcuts that Rinari provides to jump to classes or to models, and views, and control based on what you're working at. But it's great to see so much work being done to make development in these different environments easier.
+Sacha: It's true. I often forget to use the keyboard shortcuts that Rinari provides to jump to classes or to models and views and controllers based on what you're looking at. But it's great to see so much work being done to make development in these different environments easier.
 
-Thomas: It's fascinating to see how much... it seems to me that Emacs has gotten more momentum that these last couple of years. I didn't feel that the last time I used it regularly.
+Thomas: It's fascinating to see how much... It seems to me that Emacs has gotten more momentum that these last couple of years. It didn't feel that active the last time I used it regularly.
 
 Sacha: Oh, what do you think is making the difference?
 
-Thomas: I'm not sure but I think part of it is that there seems to be a sort of general exodus from big items to more classic old school editors. I think lots of Ruby people use TextMate earlier and then TextMate seem like it was going into Maintenance Mode or maybe pretty nice entirely and at that point lots of people migrated to Sublime, Vi and Emacs. But I'm not sure where the other people are coming from.
+Thomas: I'm not sure, but I think part of it is that there seems to be a sort of general exodus from big IDEs to more classic old school editors. I think lots of Ruby people used TextMate earlier, and then TextMate seem like it was going into maintenance mode, or maybe [inaudible] entirely. At that point, lots of people migrated to Sublime, Vi, and Emacs. But I'm not sure where the other people are coming from.
 
-Sacha: In your company, do you have new people coming in or don't know Emacs yet?
+Sacha: In your company, do you have new people coming in who don't know Emacs yet?
 
-Thomas: Well, of the current, people in the company are already Emacs users or boss before they came to the company. We're quite small so it's not a big issue yet. But that's actually something I think about, what happens when we start to get significant amount of people who don't use Emacs?
+Thomas: Well, all of the current people in the company are already Emacs users or was before they came to the company. We're quite small, so it's not a big issue yet. But that's actually something I think about. What happens when we start to get significant amount of people who don't use Emacs?
 
-Sacha: Or you can make Emacs part of your hiring requirements. “Must be able to learn Emacs.”
+Sacha: Or you can make Emacs part of your hiring requirements. “Must be willing to learn Emacs.”
 
-Thomas: I actually read somewhere, I think Steve Yegge, if you're familiar with him, I think he wrote that at Amazon at one point have their customer support system written in Emacs Lisp. Just having big companies and issue it seems.
+Thomas: I actually read somewhere that--I think Steve Yegge, if you're familiar with him?--I think he wrote that at Amazon at one point had their customer support system written in Emacs Lisp. Just having big company isn't an issue, it seems.
 
-Sacha: Yes. I'm always curious about what people can do to make Emacs even friendlier or easier for people to pick up or to help more people get to know that Emacs is actually really wonderful. If you can think of things that might help, I'd love to hear about them, too.
+Sacha: Yes. I'm always curious about what people can do to make Emacs even friendlier or easier for people to pick up, or to help more people get to know that Emacs is actually really wonderful. If you can think of things that might help, I'd love to hear about them, too.
 
 Thomas: The Starter Kit seem to be a good way to start for lots of people.
 
-Sacha: Yeah. I like the fact that the popularity of the Starter Kit and also keeping your Emacs configuration as an Org file makes it super easy to share like the way that you've shared your GitHub Emacs configuration.
+Sacha: Yeah. I like the fact that the popularity of the Starter Kit... And also keeping your Emacs configuration as an Org file makes it super easy to share, like the way that you've shared your GitHub Emacs configuration.
 
-It's kind of the same sharing about Emacs but it looks better and it sort of encourages people to document their Emacs configuration even just a little bit.
+It's kind of the same as sharing your .emacs, but it looks better. It sort of encourages people to document their Emacs configuration, even just a little bit.
 
-Thomas: Yeah. I think it beats the process that everyone followed a couple of years ago where you basically went to Emacs Wiki and started [inaudible].
+Thomas: Yeah. I think it beats the process that everyone followed a couple of years ago, where you basically went to the EmacsWiki and started cargo-culting.
 
 Sacha: Yes, I hear that.
 
@@ -262,47 +258,43 @@ Thomas: One of my colleagues compared it to going down the street and picking up
 
 Sacha: That is a fascinating metaphor. Okay.
 
-Thomas: But yes, I can continue to think through that.
+Thomas: But yes, I can continue stepping through that set up.
 
 Sacha: Please do.
 
-Thomas: I dabble enclosure so I've got just the basic Clojure Mode and the REPL there. That's part of why I found Emacs again a couple of years ago. I started playing with Clojure and in the Clojure community, Emacs pretty much is the default editor.
+Thomas: I dabble in Clojure, so I've got just the basic Clojure Mode and the REPL there. That's part of why I found Emacs again a couple of years ago. I started playing with Clojure. In the Clojure community, Emacs pretty much is the default editor.
 
 Sacha: That's excellent.
 
-Thomas: So it's some basic look and feel of stuff.
+Thomas: So some basic look and feel of stuff. I'm a big Solarized fan. There's another big theme called Zenburn, I think, which I also used to use, but I don't think that looks as good.
 
-Sacha: That makes sense.
-
-Thomas: I'm a big Solarized fan. There's another big theme called [inaudible] I think which I also use but I don't think that looks as good.
-
-Sacha: I should try Solarized. I hear such good things about it. I'm currently using color theme hover.
+Sacha: I should try Solarized. I hear such good things about it. I'm currently using color-theme-hober.
 
 Thomas: Yes.
 
 Sacha: Yes.
 
-Thomas: I like Electric-pair which basically inserts matching the limiters like quotes, parentheses and stuff like that.
+Thomas: I like electric-pair which basically inserts matching delimiters like quotes, parentheses, and stuff like that.
 
-Sacha: I never quite gotten used to that in IDEs that I use but I can see how it can be helpful especially when you're writing Lisp.
+Sacha: I never quite gotten used to that in IDEs that I use, but I can see how it can be helpful, especially when you're writing Lisp.
 
-Thomas: Yes, exactly. The Electric-pair Mode is basically a hold over from when I use TextMate because that TextMate does that in most of its basic modes.
+Thomas: Yes, exactly. The electric-pair mode is basically a hold over from when I used TextMate, because TextMate does that in most of its basic modes.
 
 Found some font stuff, pretty wonderful.
 
 Sacha: Yes.
 
-Thomas: And the chrome. UTF-8 is fairly important for us known Americans.
+Thomas: Pretty much turned off all the chrome. UTF-8 is fairly important for us non-Americans.
 
-Sacha: I have been much annoyed by searching between char sets. I have some files or I'd switch between one of the ISO code pages and UTF-8 and now my text is horribly scrambled.
+Sacha: I have been much annoyed by switching between charsets. I had some files, I'd switch between one of the ISO codepages and UTF-8, and now my text is horribly scrambled.
 
-Thomas: I use to end up a lot in the same situation especially in the university. We used to end up with, “Oh, what's the flavor of Latin and code?”
+Thomas: I use to end up a lot in the same situation, especially in the university. We used to end up with, “Oh, what flavor of Latin encoding?”
 
-I got the yes or no questions. Auto-refresh auto-revert buffers. That's pretty useful. Most of my stuff is in Dropbox so sometimes I just walk between my laptop and my desktop and I basically got the lot of the same stuff open in both machines.
+Cut the yes or no questions. Auto-refresh, auto-revert buffers. That's pretty useful. Most of my stuff is in Dropbox, so sometimes I just walk between my laptop and my desktop, and I basically got a lot of the same stuff open in both machines.
 
 Sacha: I've never thought about using it that way. Cool.
 
-Thomas: Yeah, it works fairly well. The one thing you have to be careful about this to put big Git repositories in Dropbox because if you don't give it time to properly update, it seems to corrupt them so be careful.
+Thomas: Yeah, it works fairly well. The one thing you have to be careful about this to put big Git repositories in Dropbox because if you don't give it time to properly update, it seems to corrupt them. So be careful.
 
 Sacha: Oh, no.
 
@@ -314,71 +306,65 @@ Thomas: That's just notes.
 
 Sacha: I see all those little fixes. Yes.
 
-Thomas: This one, I'm actually not sure if I need anymore. I put this in a long, long time ago and I haven't verified if it's still an issue in current versions of Emacs.
+Thomas: This one, I'm actually not sure if I need anymore. I put this in a long, long time ago. I haven't verified if it's still an issue in current versions of Emacs.
 
-Sacha: I don't get bothered by it but I do remember seeing in the Emacs channel the other day, someone was trying to figure out how to get the scroll by one line only. I guess people are still annoyed with it.
+Sacha: I don't get bothered by it, but I do remember seeing in the Emacs channel the other day, someone was trying to figure out how to get it to scroll by one line only. I guess people are still annoyed with it.
 
-Thomas: Exactly. I get really annoyed by chunky multi-line scrolling if I'm not actually scrolling that way actively. No backup- and #auto-save files because that's...
+Thomas: Exactly. I get really annoyed by chunky multi-line scrolling if I'm not actually scrolling that way actively. 
+
+No backup- and #auto-save files because that's...
 
 Sacha: That's very popular configuration. Right.
 
-Thomas: Yes. That's basically what we use in [inaudible].
+Thomas: Yes. That's basically what we use Git for, isn't it?
 
 Sacha: Yes.
 
-Thomas: Auto-refresh in Dired so it will refresh itself when anything happens. Got the Splash Screen. Tweaked the width. Some more intelligent line breaks. I don't actually remember how this felt before I used this because lots of these configurations I put in a long, long time ago and they've just stuck with me.
+Thomas: Auto-refresh in Dired, so it will refresh itself when anything happens. Cut the Splash Screen. Tweak the width. Some more intelligent line breaks. I don't actually remember how this felt before I used this because lots of these configurations I put in a long, long time ago, and they've just stuck with me.
 
-Sacha: I guess you like default into Truncate-line Mode. So instead of having all those long log lines or whatever, it just goes off the edge of the screen.
+Sacha: I guess you like defaulting into truncate-line mode, so instead of having all those long log lines or whatever, it just goes off the edge of the screen.
 
 Thomas: Yes, that's right. Tell Org Mode to try to make code snippets pretty...
 
 Sacha: It's not doing it.
 
-Thomas: Well, [inaudible] I should say.
-
-Sacha: Yeah.
-
-Thomas: Indent after each hit.
+Thomas: Well, [inaudible] I should say. Indent after each hit.
 
 Sacha: Although I still use some of it, just doing quotes.
 
-Thomas: Yes. I usually work on my Linux desktop but some of my tweaks are Mac-specific. I used to be an all-Mac user but I started drifting over to Linux instead. This is some remains of my Mac set up.
+Thomas: Yes. I usually work on my Linux desktop, but some of my tweaks are Mac-specific. I used to be an all-Mac user, but I've started drifting over to Linux instead. This is some remains of my Mac set up.
 
-Sacha: Yeah. It's so nice that you can still keep it in your configuration, just put up appropriate win around it.
+Sacha: Yeah. It's so nice that you can still keep it in your configuration, just put up an appropriate when around it.
 
-Thomas: Yes, exactly. So, I got this specific font, some stuff, some tweaks to my metakey and stuff like that. I already start forgetting to Org Mode stuff. This is one of my standard options for exporting from Org to HTML.
+Thomas: Yes, exactly. So, I got this specific font, some stuff, some tweaks to my meta key, and stuff like that. Here we start getting into Org Mode stuff. This is one of my standard options for exporting from Org to HTML. That basically removes the “Exported by Thomas in Emacs” section at the end of every HTML.
 
-Sacha: Yes.
+Keybindings... I'm not sure how exciting this is.
 
-Thomas: That basically removes the “Exported by Thomas” in Emacs section at the end of every HTML.
-
-Keybindings I'm not sure how exciting this is.
-
-Sacha: Well, it's kind of interesting to see how you use the execute extended command to make meta-x likely more useful. It's likely to make it available else where. That one is kind of cool.
+Sacha: Well, it's kind of interesting to see how you use the execute extended command to make M-x slightly more useful, to make it available else where. That one is kind of cool.
 
 Thomas: Yes. It's basically to not have to fight with my Mac keyboard when I'm outside my Linux VM.
 
-Sacha: I have the same C-+, C--, that's just font size. [Inaudible].
+Sacha: I have the same C-+, C-- to adjust font size. [Inaudible].
 
-Thomas: I think that one came from the Emacs Starter Kit. Actually a lot of my stuff are from there and a couple of other sources. One of my mentors apart from the Starter Kit, this Magnar's set up. The guy who makes the Emacs Rocks videos.
+Thomas: I think that one came from the Emacs Starter Kit. Actually, a lot of my stuff is from there and a couple of other sources. One of my mentors, apart from the Starter Kit, is Magnar's set up -- the guy who makes the Emacs Rocks videos.
 
 Sacha: Oh yes.
 
 Thomas: He's got a huge Emacs directory. I stole a lot from him actually.
 
-Sacha: I should check that out. Oh yeah, that's actually one of the things I'm really curious about. So you've mentioned Emacs Wiki that you regularly raid for configuration, you steal config from your co-workers and from Magnar. Where else are you getting interesting Emacs ideas?
+Sacha: I should check that out. Oh yeah, that's actually one of the things I'm really curious about. So you've mentioned Emacs Wiki that you regularly raid for configuration. You steal config from your co-workers and from Magnar. Where else are you getting interesting Emacs ideas?
 
 Thomas: Magnar actually has a new blog called “What the .emacs.d!?”
 
 Sacha: I don't know about that. I should go check that out.
 
-Thomas: Yeah. It's basically just a sort of a Tumblr blog-ish where you see posts, small snippets from his own configuration. It's basically one sort of configuration for each blog post.
+Thomas: Yeah. It's basically just a sort of a Tumblr blog-ish where he posts small snippets from his own configuration. It's basically one sort of configuration for each blog post.
 
-Let me see. Where else do I find stuff? Actually I haven't stolen that much in the couple of months but I usually end up in Emacs Wiki when I start googling for stuff I need to set up for myself to sound of a corner of a workflow I want.
+Let me see. Where else do I find stuff? Actually I haven't stolen that much in the couple of months, but I usually end up in EmacsWiki when I start Googling for stuff I need to set up for myself to sand off a corner of a workflow I want.
 
-Sacha: Yes. I usually check out Planet Emacsen once in a while because sometimes a blog post have pretty interesting configuration snippets.
+Sacha: Yes. I usually check out Planet Emacsen once in a while, because sometimes blog posts have pretty interesting configuration snippets.
 
-Thomas: Yeah. I think I've got that in my RssReader actually.
+Thomas: Yeah. I think I've got that in my RSS reader, actually.
 
 Where else do I find stuff?
 
@@ -390,27 +376,27 @@ Sacha: There's a lot.
 
 Thomas: I tend to overdo it.
 
-Let's see. Here is my custom stuff. I actually don't touch that much compared to some people I know but I try to make do with basically the default modes and default keybindings as far as possible and then I sound off the most painful corners or the stuff that's very custom. I started going down the path of creating custom keybindings for everything but that may not be possible to sit in defaults config.
+Let's see. Here is my custom stuff. I actually don't touch that much compared to some people I know. I try to make do with basically the default modes and default keybindings as far as possible. Then I sand off the most painful corners or the stuff that's very custom. I started going down the path of creating custom keybindings for everything, but that made it impossible to sit in a default config.
 
-Sacha: Yes. Since you've got the case where you need to use [inaudible] with other people's editors.
+Sacha: Yes. Since you've got the case where you need to need to spend time with other people's editors.
 
 Thomas: Yes, exactly.
 
 Sacha: That makes sense.
 
-Thomas: Or their Emacs config on a server somewhere.
+Thomas: Or a bare Emacs config on a server somewhere.
 
-Sacha: But you're not editing things that are crap?
+Sacha: What, you're not editing things through TRAMP?
 
 Thomas: Always. I should do it more often.
 
-Sacha: Well, you got that. You've got that bit of junk there for the [inaudible].
+Sacha: Well, you've got that. You've got that bit of chunk there for the sudo as root.
 
-One of the things I was really curious about was that minimalist blogging workflow that you've got there because it's different. I use Org to blog to post on WordPress site but you're actually just generating the static site.
+One of the things I was really curious about was that minimalist blogging workflow that you've got there, because it's different. I use Org2blog to post on a WordPress site, but you're actually just generating the static site.
 
-Thomas: Yes. I actually just wanted to get away from WordPress. Both because I just found it more neat. Everything on static files, I don't have much dynamic contents and I didn't want the headache of keeping the WordPress site updated or patched and all that stuff. I have to go through my Org file blog stuff.
+Thomas: Yes. I actually just wanted to get away from WordPress, both because I just found it more neat to have everything on static files... I don't have much dynamic content and I didn't want the headache of keeping the WordPress site updated or patched and all that stuff. I'd be happy to go through my Org file blog stuff.
 
-Sacha: Well, you cheat a little bit because you've got the config in there but then you're using a [raid] task to actually generate and deploy the site.
+Sacha: Well, you cheat a little bit, because you've got the config in there but then you're using a Rake task to actually generate and deploy the site.
 
 Thomas: Yes.
 
@@ -418,171 +404,151 @@ Sacha: The generating part, would you be comfortable sharing that with me?
 
 Thomas: Sure. Let's see. Where did I actually put it? Here you go.
 
-It's basically just two tasks: generate and deploy. The deployment is just an rsync and a generation, I set the folders. I haven't actually looked at this code for a long while so it's interesting to see what I did there. So, I basically got a source and directory where I got a couple of standards HTML files and a directory of Org files which are my blog posts. These are my blog posts and I got the template Org file which basically is what I use to start creating a new one.
+It's basically just two tasks: generate and deploy. The deployment is just an rsync. The generation, I set up the folders. I haven't actually looked at this code for a long while, so it's interesting to see what I did there. So, I basically got a source directory where I got a couple of standard HTML files, and a directory of Org files which are my blog posts. These are my blog posts. I got the template Org file, which basically is what I use to start creating a new one.
 
-What I actually do is I copy over the assets, images, stylesheets, javascript, stuff like that. I got the standard layout. If I wanted to be a good boy and do everything the proper way, I would use ERB, the temporary library but it's actually just a single layout with that one field that's substituted. So, nevermind. Then I got a single function to generate the actual files. What do I actually do in every one of these?
+What I actually do is I copy over the assets: images, stylesheets, Javascript, stuff like that. I've got the standard layout. If I wanted to be a good boy and do everything the proper way, I would use ERB, the Ruby templating library, but it's actually just a single layout with that one field that's substituted. So, never mind. Then I got a single function to generate the actual files. What do I actually do in every one of these?
 
 Sacha: I see that. You've got to transform the Org files.
 
-Thomas: Yeah, exactly. I just got static Html-export.el Emacs Lisp snippets which I call with Emacs batch. This is actually something we do in our company as well. We got pipelines where we call Emacs in batch mode.
+Thomas: Yeah, exactly. I just got static html-export Emacs Lisp snippets, which I call with emacs --batch. This is actually something we do in our company as well. We got pipelines where we call Emacs in batch mode to create documentation and stuff that's generated from standard Org files.
 
-Sacha: That's awesome.
+Sacha: That's awesome. Oh, then I see how you've done it. You generate it and then you use Nokogiri to parse it.
 
-Thomas: To create documentation and stuff that's generated from standard Org files.
-
-Sacha: Oh, then I see how you've done it. You generate it and then you use [inaudible] to parse it.
-
-Thomas: Yeah exactly.
+Thomas: Yeah, exactly.
 
 Sacha: I was wondering because the idea...
 
-Thomas: I basically massage it after I generate.
+Thomas: I basically massage it after I generate it.
 
-Sacha: Because I was wondering whether you are parsing the Org files directly using Ruby which would be awesome if you figure out how to do that, but certainly working with that generated HTML like you're doing is a great way to do that.
+Sacha: Because I was wondering whether you are parsing the Org files directly using Ruby, which would be awesome if someone figured out how to do that, but certainly working with that generated HTML like you're doing is a great way to do that.
 
-Thomas: Yes. I think I've started parsing Org files one or two times and then just felt, “Well, why not just leverage what I've got?” And massage it to be more that I need. It's not pretty but it works. I'm basically just massaging my stuff, the difference between the standard exported_html and my blog posts and I get some metadata from...
-
-Sacha: Yes, I see.
-
-Thomas: ...the old header.
+Thomas: Yes. I think I've started parsing Org files one or two times and then just felt, "Well, why not just leverage what I've got and massage it to be more of what I need?" It's not pretty, but it works. I'm basically just massaging my stuff, the difference between the standard exported HTML and my blog posts. I get some metadata from the old header. So that's basically it.
 
 Sacha: Wow.
 
-Thomas: So that's basically it.
-
-In my blogging set up I just call out to the Rake file. You can see that I've actually [inaudible] some stuff and forgot that it's there.
+Thomas: In my blogging set up, I just call out to the Rake file. You can see that I've actually cargo-culted some stuff and forgotten that it's there.
 
 Sacha: There you go. So it's good that we're having this.
 
-Thomas: Going through Jacmoe, I guess.
+Thomas: Going through [inaudible], I guess.
 
 Sacha: I'm guessing.
 
-Thomas: My whole set up is basically just something to create a new blog post, something to generate the whole site from scratch and something to deploy. And all of these are just shelves out to the Rake file.
+Thomas: My whole set up is basically just something to create a new blog post, something to generate the whole site from scratch, and something to deploy. And all of these are just shells out to the Rake file.
 
-Sacha: I guess you could do it as pure Emacs Lisps solution with published budget but hey, if a [inaudible] is easier to write, then all falls with the head, right?
+Sacha: I guess you could do it as pure Emacs Lisp solution with publish-project, but hey, if a Rake task is easier to write, then full-speed ahead, right?
 
-Thomas: In my experience you basically fall back to the most common or comfortable thing you need to do. You're just lacking something up and actually at this point I was relearning Emacs Lisp so I've been toggling jobs to do it or [inaudible] in Emacs. I did both.
+Thomas: In my experience, you basically fall back to the most common or comfortable thing you need to do when you're just hacking something up. Actually, at this point, I was relearning Emacs Lisp, so I didn't have the chops to do it all natively in Emacs. But it works.
 
 Sacha: It's just fine.
 
-Thomas: So, let's see. As you can tell I have a really low threshold for creating new Org files.
+Thomas: So, let's see. As you can tell, I have a really low threshold for creating new Org files.
 
-Sacha: Yes, I noticed that which is actually quite different because most of the people I've talked to – with two because we just talked to two people over Skype about Emacs – but the people tend towards the really big Org file that contains everything. So it's fascinating to see how – I guess you're slipping things up and then using Grep or Awk, or something like that to search?
+Sacha: Yes, I noticed that. Which is actually quite different because most of the people I've talked to – well, the *two*, because I've just talked to two people over Skype about Emacs – but people tend towards the really big Org file that contains everything. So it's fascinating to see how... I guess you're splitting things up, and then using grep, ack, or something like that to search?
 
 Thomas: Yeah.
 
 Sacha: How do you make it manageable?
 
-Thomas: Well, some stuff I do have in large Org files. Personal todo files, all my todo lists and both at work and at home, they're both in a one big file each. But I find that a lot of Org files are really one-off. Meeting notes, sometimes I write emails in Org first and stuff like that. I don't want all that in a single file so I just use Grep in my Org file directory to recover stuff.
+Thomas: Well, some stuff I do have in large Org files. Personal todo files, all my todo lists and both at work and at home, they're both in a one big file each. But I find that a lot of Org files are really one-off. Meeting notes... Sometimes I write emails in Org first, and stuff like that. I don't want all that in a single file, so I just use grep in my Org file directory to recover stuff.
 
 Sacha: That's interesting. I should try that, too.
 
-I tend to use Org Capture for all of that but you're right. It means that your main Org file gets a little crufty. But I guess you could have a temporary Org file and have it capture there or [inaudible] but your present set up works just fine.
+I tend to use org-capture for all of that, but you're right. It means that your main Org file gets a little crufty. But I guess you could have a temporary Org file and have it captured there, or [inaudible], but your present set up works just fine.
 
-Thomas: I'm a bit of a need freak so I like compartmentalizing stuff in different files.
+Thomas: I'm a bit of a neat freak so I like compartmentalizing stuff in different files.
 
-Sacha: I think you can actually get Org Capture to put that in, like using its Redefining function to determine the filename to save things too. That's mainly using the Org Capture keyboard shortcuts so that you can have multiple templates to choose from. That might be something useful.
+Sacha: I think you can actually get org-capture to put that in... like using a user-defined function to determine the filename to save things to. That's mainly using the org-capture keyboard shortcuts so that you can have multiple templates to choose from. That might be something useful.
 
-Thomas: Yes, I'm actually done looking into that. Actually let me make a note with that. Create a file.
+Thomas: Yes, I actually might look into that. Actually, let me make a note of that. Create a file.
 
 Sacha: Yes, see it in action.
 
 Thomas: Like this.
 
-Sacha: And also if you do that, then you can make your template include prompts or automatic information, right?
+Sacha: And also, if you do that, then you can make your template include prompts or automatic information, right?
 
 Thomas: Yeah.
 
-Sacha: So then you can just fill in the minibuffer prompts and then keep going. Okay, there you go. This is what happens when Emacs geeks get together, “Oh, I like this.”
+Sacha: So then you can just fill in the minibuffer prompts, and then keep going. Okay, there you go. This is what happens when Emacs geeks get together, “Oh, I like this.”
 
-Thomas: Exactly. That sometimes is a bit of a productivity [inaudible] at the company.
+Thomas: Exactly. That sometimes is a bit of a productivity killer at the company.
 
-Sacha: You [inaudible] like, “Oh, wouldn't it be nice if Emacs did this?” And then two hours later...
+Sacha: All the yak-shaving! “Oh, wouldn't it be nice if Emacs did this?” And then two hours later...
 
-Thomas: Yes. There's absolutely standard situation sometimes where we can just figure out that, “Oh, we could just do that with Org.” Yeah.
+Thomas: Yes. There's also the standard situation, sometimes, where we just figure out that, “Oh, we could just do that with Org.” Yeah.
 
 Sacha: I think it's a net positive. Think about all the time-saving that you get out of Emacs. So it's worth investing a little bit of time to make it even better.
 
-Thomas: Yes. I think the most fascinating thing about Emacs is that it's such a low threshold for improving your workflow. I used to use Eclipse when I mostly did Java as a consultant and extending Eclipse, I think some people that I know have talked about creating plugins but no one actually do.
+Thomas: Yes. I think the most fascinating thing about Emacs is that it's such a low threshold for improving your workflow. I used to use Eclipse when I mostly did Java as a consultant. Extending Eclipse--I think some people that I know have talked about creating plugins, but no one actually do.
 
-Sacha: Yes. I've never come across – small talk in other environments will have a lot of that self modification too but Emacs has been so amazing in terms of that customized building or ease of customized building once you have get your hands on the Emacs Lisp. I've never come across anything else quite like it.
-
-Thomas: Yeah.
-
-Sacha: Which is great.
+Sacha: Yes. I've never come across--Smalltalk and other environments will have a lot of that self-modification too... But Emacs has been so amazing in terms of that customizability or ease of customizability once you get your hands on Emacs Lisp. I've never come across anything else quite like it. Which is great.
 
 Thomas: I can't think of anything off the bat either.
 
-Sacha: Yeah. I wish more things are like that.
+Sacha: Yeah. I wish more things were like that.
 
-Okay, you've got a function for writing, you've got a function to Dired the directory that you got all these Org files in.
+Okay, you've got a function for writing. You've got a function to Dired the directory that you got all these Org files in.
 
-Thomas: Yeah, exactly. So that's basically just the keybinding to Dired to open a directory like this. These are on my Org files.
+Thomas: Yeah, exactly. So that's basically just the keybinding to Dired open a directory like this. These are oll my Org files.
 
 Sacha: You have a lot.
 
-Thomas: Yes. I think I created a couple of them every week. Yeah, the directory is growing.
+Thomas: Yes. I think I create a couple of them every week. Yeah, the directory is growing.
 
-Sacha: That's another thing, right? If you use a user-defined function to help you figure out the filename, the directory structure, maybe you might even get it to – like the way that Date Trees works in Org. Org Capture by Date Tree let's you see file things by year, and month, and day. You might have your function create a directory hierarchy of year and month to make it even easier to archive files you're not quite using anymore.
+Sacha: That's another thing, right? If you use a user-defined function to help you figure out the filename, the directory structure, maybe you might even get it to... Like the way that Date Trees works in Org? org-capture, by default, with date tree, lets you see file things by year, and month, and day. You might have your function create a directory hierarchy of year and month to make it even easier to archive files you're not quite using anymore.
 
-Thomas: That's actually something I should be doing more in Org Mode because I actually not used the Agenda or Dates support.
+Thomas: That's actually something I should be doing more in Org Mode because I've actually not used the Agenda or Date support.
 
 Sacha: Oh, that's interesting. So you're using it mainly as an outliner?
 
 Thomas: Yeah, basically.
 
-Sacha: And of course the publishing side of it, too. That's cool.
+Sacha: And of course, the publishing side of it, too. That's cool.
 
-Thomas: My colleagues use Agenda Mode and stuff like that much more actively. I should do that as well but I haven't found the time to get that workflow yet.
+Thomas: My colleagues use Agenda Mode and stuff like that much more actively. I should do that as well, but I haven't found the time to get that workflow yet.
 
-Let's see. There's a couple of stuff here which are just warmups for specific projects. Not this one, Kill Trailing WhiteSPC.
+Let's see. There's a couple of stuff here which are just warmups for specific projects. Not this one, kill-trailing-whitespace. I basically have to have this in or one of my colleagues will kill me.
 
-Sacha: Yes.
+Sacha: Oh, that makes sense. I guess it could also be a git pre-commit hook, but it's better to have the editor take care of it.
 
-Thomas: Yeah. I basically have to have this in or one of my colleagues will kill me.
-
-Sacha: Oh, that makes sense. I guess it could also Git Pre-commit hook but it's better to have the editor take care of it.
-
-Thomas: Yeah, exactly. One thing I started doing is to set up some basic functions just to get the context of some of my projects quickly. When you start working on a project, you usually have a standard set of files open. You open a todo file and you open some [inaudible], or templates, or whatever so I started creating functions that gets me into the context more quickly.
+Thomas: Yeah, exactly. One thing I started doing is to set up some basic functions just to get the context of some of my projects quickly. When you start working on a project, you usually have a standard set of files open. You open a todo file and you open some views, or templates, or whatever. So I started creating functions that get me into the context more quickly.
 
 Sacha: Someone observed everyone in Emacs reinvents their own version of project management.
 
 Thomas: Yeah, exactly.
 
-Sacha: Like I do Find-file a lot so I have different keystrokes bound to different file trees. It lets you do the Ido-find-file thing but if you slap out the file cache variable, then you can have it look in different trees for the files.
+Sacha: Like I tend to use ido-find-file a lot, so I have different keystrokes bound to different file trees. It lets you do the ido-find-file thing but if you swap out the file cache variable, then you can have it look in different trees for the files.
 
-Thomas: That's cool. That's really interesting. I usually use [C-d] to just go to the working directory of whatever projects I use.
+Thomas: That's cool. That's really interesting. I usually use C-d to just go to the working directory of whatever projects I use.
 
-Sacha: I guess it's actually a way with Ruby, with Rails and other platforms that tend to have an idea about how they want you to organize your files, or subdirectories are easier to get to. I do have the convenience with just being able to say, “Find me this file somewhere. I don't really care where it is.”
+Sacha: I guess especially with Ruby on Rails, and other platforms that tend to have an idea about how they want you to organize your files, subdirectories are easier to get to. I do like the convenience with just being able to say, “Find me this file somewhere. I don't really care where it is.”
 
-Thomas: Exactly. That was actually something I missed when I went back to Emacs from TextMate because TextMate, it has a really good find-file from this working projects, from this working directory and downloads set up which I don't think you get that out of the box in Emacs. I use find filename projects for that.
+Thomas: Exactly. That was actually something I missed when I went back to Emacs from TextMate.  TextMate has a really good find file from this working projects, from this working directory and downloads set up. I don't think you get that out of the box in Emacs. I use find-file-in-project for that.
 
 Sacha: Yes. That's another nice little tidbit that might be worth exploring.
 
-Thomas: Yeah.
-
-Some standard works set up. These are my standard channels.
+Thomas: Yeah. Some standard ERC set up. These are my standard channels.
 
 Sacha: And you check Twitter from Emacs?
 
-Thomas: Yes. I'm not a big fan of the web interface that Twitter has these days. I'm not sure if it's my browser or if something's broken in there and that stuff but it doesn't work very well so I just check my Twitter from Emacs.
+Thomas: Yes. I'm not a big fan of the web interface that Twitter has these days. I'm not sure if it's my browser or if something's broken in their stuff, but it doesn't work very well, so I just check my Twitter from Emacs.
 
-Sacha: There's a way to post to Twitter from Emacs and I actually used it. I think one time I was experimenting with hooking Org up to it. So if you wanted to go the other way, you can do that, too.
+Sacha: There's a way to post to Twitter from Emacs. I've actually used it. I think one time I was experimenting with hooking Org up to it. So if you wanted to go the other way, you can do that, too.
 
 Thomas: Oh, cool.
 
-Sacha: This is different from your published config by the way.
+Sacha: This is different from your published config, by the way.
 
-Thomas: Yes. I have to cut down my modem and [inaudible] than others. I'm a huge fan of both Avdi and Reginald but sometimes they tweet a lot [inaudible] down.
+Thomas: Yes. I have to cut down my volume and some are more verbose than others. I'm a huge fan of both Avdi and Reginald, but sometimes they tweet a lot [inaudible] down.
 
 Sacha: Okay. That's hilarious.
 
-Thomas: Let's see. I'm almost done with my set up. The Tramp sudo-edit, edit via sudo is basically just the hack I found at Magnar's set up which uses Tramp to local host so you get root access to your file.
+Thomas: Let's see. I'm almost done with my set up. The Tramp sudo-edit, edit via sudo is basically just the hack I found at Magnar's set up, which uses Tramp to localhost so you get root access to your file.
 
 Sacha: Yes.
 
-Thomas: Move lines up and down. Yeahs, this is a classic Cargoculting from Emacs Wiki so it's basically just a mode to move stuff around. I'm not actually sure if it works on my Mac set up.
+Thomas: Move lines up and down. Yeahs, this is a classic cargo-culting from EmacsWiki. It's basically just a mode to move stuff around. I'm not actually sure if it works on my Mac set up.
 
 Sacha: It does to an extent.
 
@@ -592,13 +558,13 @@ Sacha: Yes.
 
 Thomas: I rarely use Emacs in my Mac host system these days. It's always a toss up if stuff works or not.
 
-Sacha: That's awesome. Thanks for walking me through that. If you got a couple of minutes, I can show you the snippets of my config that I mentioned. Let me see if my Emacs starts up again and I can switch over to sharing my screen.
+Sacha: That's awesome. Thanks for walking me through that. If you've got a couple of minutes, I can show you the snippets of my config that I mentioned. Let me see if my Emacs starts up again and I can switch over to sharing my screen.
 
 Thomas: I love to.
 
-Sacha: My Emacs is loading up. Oh, no! I broke my Emacs config. This is the sometimes a challenge but okay.
+Sacha: My Emacs is loading up. Oh, no! I broke my Emacs config. This is sometimes a challenge.
 
-So I mentioned Org Drill which lets me say, “Okay, ace-jump mode. Use package.” I've bound it to C-c SPC and what Org Drill does is it lets you – basically I press space, I say, “How well did I remember it?” “Zero? Hey, I completely forgot that I bound it to C-c SPC.” And the file is like, “Yes, you got that. Remind me again in nine days.” So depending on how you answer, say for example, if I say I completely forgot it, it will remind me again in this drill until I say, “Okay, I got that. I remember it now.”
+So I mentioned Org Drill, which lets me say, “Okay, ace-jump mode. Use package.” I've bound it to C-c SPC. What Org Drill does is it lets you... Basically I press space, I say, “How well did I remember it?” Zero means I completely forgot that I bound it to C-c SPC. And five is like, “Yes, I got that. Remind me again in nine days.” So depending on how you answer, say for example, if I say I completely forgot it, it will remind me again in this drill until I say, “Okay, I got that. I remember it now.”
 
 Thomas: Cool. Do you use one of those learning algorithms where it's spacing for each time?
 
@@ -608,29 +574,29 @@ Thomas: Cool.
 
 Sacha: So that's pretty cool.
 
-And then the other thing I mentioned was Ido-find-file here. File cache, plus Ido-find-file, lets you do stuff and then I have a Sacha file cache setup tree which I think I defined somewhere. I have it in my secret config file which means my [colors] config file is missing this macro and everyone is like, “What?” Which basically does, it swaps out the file cache alist depending on the project that I want to go to.
+And then the other thing I mentioned was ido-find-file here. File cache plus ido-find-file lets you do stuff. Then I have a sacha/file-cache-setup-tree which I think I defined somewhere. I have it in my secret config file. Which means my published config file is missing this macro, and everyone is like, “What?” Which basically does, it swaps out the file-cache-alist depending on the project that I want to go to.
 
 Thomas: Right.
 
-Sacha: Anyway, I have to go fetch that from my Emacs secrets. I store my passwords and other things in a separate file because that's how my config gets published. I think you got GPG encryption in your – you use that for Org, I guess?
+Sacha: Anyway, I have to go fetch that from my Emacs secrets. I store my passwords and other things in a separate file because otherwise all my config gets published. I think you got GPG encryption in your... You use that for Org, I guess?
 
 Thomas: Yes. We started using it for Org. We barely started using it. I actually keep my passwords and stuff like that in KeePass.
 
 Sacha: Yes. I use LastPass, too.
 
-Thomas: Yes. But I guess nothing is stopping you from keeping it in Org files anymore once I got the encryption set up.
+Thomas: Yes. But I guess nothing is stopping you from keeping it in Org files any more, once I got the encryption set up.
 
-Sacha: So that's mostly what I got in my config that you might be interested in. Just the find-file is kind of useful. I don't think I have any projects that I'm using. As you can tell, I've been tinkering on with my Emacs config but I remember it to be pretty useful when I was on that.
+Sacha: So that's mostly what I got in my config that you might be interested in. Just the find-file is kind of useful. I don't think I have any projects that I'm using. As you can tell, I've been tinkering around with my Emacs config, but I remember it to be pretty useful when I was on that.
 
-Actually let me see if I've got... I have too many windows open. Hang on. Sometimes Windows drives me slightly crazy. The nice thing about having stuff on Google is that Google could help me find my config.
+Actually, let me see if I've got... I have too many windows open. Hang on. Sometimes Windows drives me slightly crazy. The nice thing about having stuff on Google is that Google can help me find my config.
 
 Thomas: Yeah, exactly.
 
-Sacha: There, File-cache setup tree, a macro that sets up the cache, loads it up and then creates a function that it's like Sacha/file-cache-ido-find- file but for that specific project and then it finds a specified keyboard shortcut to it.
+Sacha: There, file-cache-setup-tree, a macro that sets up the cache, loads it up and then creates a function like sacha/file-cache-ido-find-file, but for that specific project. Then it binds a specified keyboard shortcut to it.
 
 Thomas: That's really cool. I'll think of that.
 
-Sacha: Yes. Little things that are worth the try. I like talking to people about Emacs because sometimes you come across interesting ideas and also it's fascinating to see the people who are actually using Emacs. You're lucky because you got a company of other people like you who can swap Emacs tips with but a lot of people are... maybe the only Emacs geeks I know on real life.
+Sacha: Yes. Little things that are worth the try. I like talking to people about Emacs because sometimes you come across interesting ideas. Also, it's fascinating to see the people who are actually using Emacs. You're lucky because you've got a company of other people like you who can swap Emacs tips with, but a lot of people are maybe the only Emacs geeks they know in real life.
 
 Thomas: Yes. There's actually a growing number of people locally using Emacs here in Oslo. There was a meetup a couple of weeks ago.
 
@@ -640,7 +606,7 @@ Thomas: Of Emacs users.
 
 Sacha: Really? What is that like?
 
-Thomas: I'm not sure because I wasn't able to attend. It was the [inaudible] meetup of the Emacs.
+Thomas: I'm not sure because I wasn't able to attend. It was the inaugural meetup of the Emacs group.
 
 Sacha: How cool.
 
@@ -650,9 +616,9 @@ Sacha: That's awesome. Will you be able to make it out to the conference that's 
 
 Thomas: No, sorry. I really wanted to but...
 
-Sacha: It's a bit of stretch for so many people too. Easter weekend, London and all of that. But I figured that you'd be one of those people in a city where I haven't really bumped into lot of other Emacs people. I think it would be interesting to see a lot of people face to face. We'll see.
+Sacha: It's a bit of stretch for so many people too. Easter weekend, London and all of that. But I figured I'd be one of those people in a city where I haven't really bumped into lot of other Emacs people. I think it would be interesting to see a lot of people face to face. We'll see.
 
-But it was nice chatting with you and learning more about your config. I certainly got a lot more out of that than simply reading it on my own and thanks for sharing.
+But it was nice chatting with you and learning more about your config. I certainly got a lot more out of that than simply reading it on my own. Thanks for sharing.
 
 Thomas: Yes, it was nice to speak to you.
 
@@ -664,41 +630,37 @@ Sacha: Okay. You can click on the + sign and take back sharing and show us.
 
 Thomas: That's fine. I did some notes before the meeting.
 
-This is basically just stuff that I've thought about for a long time so it was quick to get it down. Spreadsheet and Agenda stuff. I think you already mentioned that. Just actually using Org to deal with dates and todos and stuff like that.
+This is basically just stuff that I've thought about for a long time, so it was quick to get it down. Spreadsheet and Agenda stuff. I think you already mentioned that. Just actually using Org to deal with dates and todos and stuff like that.
 
-Sacha: But the spreadsheet support with Org with Org Table is surprisingly rich. You can column formulas and all of that stuff.
+Sacha: The spreadsheet support with Org with Org Table is surprisingly rich. You can do column formulas and all of that stuff.
 
 Thomas: One of my colleagues uses it fairly actively.
 
 Sacha: Oh, wow.
 
-Thomas: I've started playing using it for time tracking but not much beyond that.
+Thomas: I've started playing using it for time tracking, but not much beyond that.
 
-Sacha: You mentioned that in your config. I guess using Org Clock. Interesting to see that.
+Sacha: You mentioned that in your config, I guess using org-clock. Interesting to see that.
 
 Okay, Spreadsheets and Agendas.
 
-Thomas: Yes. Email would be nice. I haven't exactly found something that works really well for me yet. I think I use Gnus briefly in university but Gnus is its own beast, I guess.
+Thomas: Yes. Email would be nice. I haven't exactly found something that works really well for me yet. I think I used Gnus briefly in university, but Gnus is its own beast, I guess.
 
-Sacha: It is really big but I really liked it back when I was using it. I always have problems because I'm stuck on Windows for drawing programs. But I remember when I was in a Linux system, Gnus with scoring and all these things was really awesome.
+Sacha: It is really big, but I really liked it back when I was using it. I always have problems because I'm stuck on Windows for drawing programs. But I remember when I was in a Linux system, Gnus with scoring and all these things was really awesome.
 
-Thomas: Yes. One thing I really miss from TextMate, also that TextMate had a preview mode for HTML where it basically embedded web kits. I think it was a web kit frame and beside a code so you could live edit your HTML and see the changes live in the other frame.
+Thomas: Yes. One thing I really miss from TextMate was that TextMate had a preview mode for HTML, where it basically embedded Webkit. I think it was a Webkit frame beside your code, so you could live-edit your HTML and see the changes live in the other frame.
 
-Sacha: Nice. Well, one way to work around that I guess would be to have a keyboard shortcut maybe that use browse URL. I think someone has even gotten a kind of browser interaction for running Javascript in the browser. So there might be a way to communicate with the process.
+Sacha: Nice. Well, one way to work around that, I guess, would be to have a keyboard shortcut, maybe, that used browse-url. I think someone has even gotten a kind of browser interaction for running Javascript in the browser. So there might be a way to communicate with the process.
 
-Thomas: You basically go direct in the Javascript directory?
+Thomas: You basically go direct--Javascript direct? Cool.
 
-Sacha: Yes.
+Sacha: I haven't looked into it. When I was in that situation, I just used a keyboard shortcut to flip over to another window, refresh the page, and then come back to Emacs.
 
-Thomas: Cool.
-
-Sacha: I haven't looked into it. When I was in a situation, I just use the keyboard shortcut to flip over to another window, refresh the page and then I come back to Emacs.
-
-Thomas: Yes. I ended up with something similar. I just tiled the browser next to Emacs and set up some sort of plugin and Firefox do auto-refresh.
+Thomas: Yes. I ended up with something similar. I just tiled the browser next to Emacs and set up some sort of plugin in Firefox to do auto-refresh.
 
 Sacha: Yes, that works out quite nicely too.
 
-Thomas: But of course you always wanted to have everything in Emacs. I like to try Android development some time. I read about people setting up their Emacs configs to basically shell outs to [inaudible] and the [inaudible] tools Cool.
+Thomas: But of course, you always wanted to have everything in Emacs. I'd like to try Android development sometime. I read about people setting up their Emacs configs to basically shell out to Ant and the command-line tools.
 
 Sacha: Yeah.
 
@@ -706,13 +668,13 @@ Thomas: And I never really got over the hump of using terminals inside Emacs.
 
 Sacha: Using term or something like that?
 
-Thomas: I usually use something called terminator in Linux which is just beefed up Xterm window and I use [shedshell] with a lot of customizations. I've tried calling out to my standard terminal inside Emacs but it seems to be tripped up by autocompletion and stuff like that. There's always some sort of subtle difference which trips me up.
+Thomas: I usually use something called terminator in Linux, which is just a beefed up Xterm window, and I use zshell with a lot of customizations. I've tried calling out to my standard terminal inside Emacs, but it seems to be tripped up by autocompletion and stuff like that. There's always some sort of subtle difference which trips me up.
 
-Sacha: I guess that's okay too. I tend to use Eshell for a lot of little things but if I need Ansi escape sequences to work, then I had to use term or something like that. Ansi-term.
+Sacha: I guess that's okay too. I tend to use Eshell for a lot of little things, but if I need ANSI escape sequences to work, then I had to use term or something like that. ansi-term.
 
 Thomas: There's no new one-stop solution yet?
 
-Sacha: Not that I've come across but Avdi is telling me he uses terminal programs inside Emacs a lot so he might be someone to talk to.
+Sacha: Not that I've come across, but Avdi was telling me he uses terminal programs inside Emacs a lot, so he might be someone to talk to.
 
 Thomas: Cool.
 
