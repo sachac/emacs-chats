@@ -92,7 +92,7 @@ And then with other people in your company, what's that like when they're workin
 
 *Thomas*: I think I'll have to open my Org file.
 
-*Sacha*: Oh, if you don't mind, I'd love a walkthrough with what've you got there. I'm always curious about people's configuration. It's always interesting when you hear people explain why. I think in Skype, you can switch over the screen sharing, if you like.
+*Sacha*: Oh, if you don't mind, I'd love a walkthrough with what you've got there. I'm always curious about people's configuration. It's always interesting when you hear people explain why. I think in Skype, you can switch over the screen sharing, if you like.
 
 *Thomas*: Right. I think I'll just open my config first. I actually have my Emacs config in that Org file.
 
