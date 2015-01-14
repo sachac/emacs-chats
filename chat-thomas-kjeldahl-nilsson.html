@@ -70,8 +70,1336 @@ Links:
 </div>
 
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2">Transcript: Coming Soon</h2>
+<h2 id="sec-2">Transcript</h2>
 <div class="outline-text-2" id="text-2">
+<p>
+<b>Sacha</b>: This is Sacha Chua, talking with Thomas Nilsson about Emacs. So you started in the university with a couple of friends, but how did you get other people in the company to use Emacs?
+</p>
+
+<p>
+<b>Thomas</b>: Actually, they were fairly hardcore Emacs users.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, wonderful.
+</p>
+
+<p>
+<b>Thomas</b>: I'd already gotten back into Emacs recently and at that point, I figured, “Okay, it's time to go all in.”
+</p>
+
+<p>
+<b>Sacha</b>: What do you mean by going “all in?” What were some of the things that you picked up again or changed?
+</p>
+
+<p>
+<b>Thomas</b>: Well, I guess several Emacs users have the same feeling that you start using it for coding or something, and it gradually starts eating other stuff. It just seems like everything you do at some point.
+</p>
+
+<p>
+<b>Sacha</b>: Such as?
+</p>
+
+<p>
+<b>Thomas</b>: I was a really big mind map user a couple of years ago. Then I found Org Mode, and now I don't use mind maps anymore.
+</p>
+
+<p>
+<b>Sacha</b>: After building something for mind maps that was actually pretty interesting and graphical, I guess, plain text. Yes.
+</p>
+
+<p>
+So, there's Org which&#x2013;it seems everyone lets Org take up their life. Are there other interesting things that you played around with Emacs?
+</p>
+
+<p>
+<b>Thomas</b>: Apart from Org?
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: Are you one of the maintainers on Org?
+</p>
+
+<p>
+<b>Sacha</b>: No. [Inaudible]?
+</p>
+
+<p>
+<b>Thomas</b>: No? Okay. ERC? The IRC mode for Emacs?
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I use that a lot. I think John Wiegley was involved in that one.
+</p>
+
+<p>
+<b>Thomas</b>: Right.
+</p>
+
+<p>
+<b>Sacha</b>: It's pretty cool, I use that often too.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, I use it everyday. We use IRC quite a lot in our company, so I basically have an IRC session going in ERC, in a tmux session on a server.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, I see. It stays there even if you get disconnected.
+</p>
+
+<p>
+<b>Thomas</b>: Right. It's persistent.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. It's amazing to have so many things in Emacs.
+</p>
+
+<p>
+Sorry, the cat is being a bit of a pain. [Inaudible] He's on the table. Cat.
+</p>
+
+<p>
+And then with other people in your company, what's that like when they're working on Emacs and you're working with Emacs? Do you people ever pair program or do you have a similar config with them?
+</p>
+
+<p>
+<b>Thomas</b>: Yes. We swap config files and we do some pair programming. It's both a blessing and a curse when your partner uses Emacs.
+</p>
+
+<p>
+<b>Sacha</b>: Okay, how is it a blessing?
+</p>
+
+<p>
+<b>Thomas</b>: Well, of course we can swap config. It's quite easy to sit down at other people's editors because you're basically familiar with their basic set up. But the issue is that, of course, every Emacs set up diverges, even though everyone starts at the same place. My colleague Christian sits down at my desk, and invariably, he finds some set of hotkey that's not there.
+</p>
+
+<p>
+<b>Sacha</b>: Yeah. Other things I hear when people are working with other people's Emacses. We get so used to our own shortcuts, we can't imagine Emacs without them.
+</p>
+
+<p>
+<b>Thomas</b>: I read that this is maybe a common problem with Lisps as well, generally, because sometimes Lisp projects tend to diverge a lot from each other, because it's so easy to extend. Just like Emacs.
+</p>
+
+<p>
+<b>Sacha</b>: What are some of the interesting configuration snippets that you've picked up from other people?
+</p>
+
+<p>
+<b>Thomas</b>: I think I'll have to open my Org file.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, if you don't mind, I'd love a walkthrough with what've you got there. I'm always curious about people's configuration. It's always interesting when you hear people explain why. I think in Skype, you can switch over the screen sharing, if you like.
+</p>
+
+<p>
+<b>Thomas</b>: Right. I think I'll just open my config first. I actually have my Emacs config in that Org file.
+</p>
+
+<p>
+<b>Sacha</b>: It's an excellent practice.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. It's the closest I've gotten to literate programming, I think. Now I'll just have to figure out how to share this.
+</p>
+
+<p>
+<b>Sacha</b>: If you go back to the Skype window and hover over it, there should be a + sign. Right next to the red "hangup" button, you should see “add,” “send,” or “share.” If you click on the + sign, you can then screencast. The video will cut out, but then I'd get to see your screen which is good.
+</p>
+
+<p>
+<b>Thomas</b>: You need Skype Premium to share screens?
+</p>
+
+<p>
+<b>Sacha</b>: No. You should be able to share it if you just turn off the video.
+</p>
+
+<p>
+<b>Thomas</b>: Right. Do I turn off your video?
+</p>
+
+<p>
+<b>Sacha</b>: If we both turn off video, that should be okay.
+</p>
+
+<p>
+<b>Thomas</b>: All right.
+</p>
+
+<p>
+<b>Sacha</b>: It's probably a good idea to double-check just in case they've done funny things.
+</p>
+
+<p>
+<b>Thomas</b>: Okay, I'll turn off the video. Let's see, share screen. Yes.
+</p>
+
+<p>
+<b>Sacha</b>: Okay, all right, I see that now. Thank you.
+</p>
+
+<p>
+<b>Thomas</b>: Cool.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. Yes, I see that.
+</p>
+
+<p>
+<b>Thomas</b>: Is it big enough?
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Perfect. I really like the fact that using Org for your config gives you folding.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, exactly. I stole this set up&#x2013;or the basic set up&#x2013;from one of my colleagues. Prior to that, I had everything spread across lots of different files. I really like using incremental search just to jump around. It's nice to have it in one place.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. What are the particularly interesting things about your set up that you're proud of or that really help you?
+</p>
+
+<p>
+<b>Thomas</b>: Well, I haven't created that much myself, but I've stolen a lot of great stuff.
+</p>
+
+<p>
+<b>Sacha</b>: Which is how we do all of it. So, that's cool.
+</p>
+
+<p>
+<b>Thomas</b>: Exactly. Let's see&#x2026; Emacs Server Mode or Emacs Daemon?
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: That's great.
+</p>
+
+<p>
+Sorry, I just have to let the cat in. Pardon.
+</p>
+
+<p>
+<b>Sacha</b>: Many Emacs people are cat people, it's kind of funny.
+</p>
+
+<p>
+<b>Thomas</b>: There we go. Sorry.
+</p>
+
+<p>
+<b>Sacha</b>: That's all right.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Emacs is the server. Daemon mode is really great. I think I picked that up from Avdi Grimm. He had this series of screencasts where he rebuild his own Emacs set up. So I basically followed along with that recently.
+</p>
+
+<p>
+<b>Sacha</b>: Nice. The Emacs Reboot Series.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, it's okay. Let's see. YASnippets?
+</p>
+
+<p>
+<b>Sacha</b>: I use YASnippet, too.
+</p>
+
+<p>
+<b>Thomas</b>: I used to be a TextMate user for a couple of years.
+</p>
+
+<p>
+<b>Sacha</b>: You figured out how to get it to play nicely with a tab expansion. I'm going to go back to your config later. Thanks for sending me the URL on Google, too.
+</p>
+
+<p>
+<b>Thomas</b>: I suspect that a lot of people have this carbon copy in their set up. Let's see what else. Ido.
+</p>
+
+<p>
+<b>Sacha</b>: I do that as well. I use that a lot, too. Yes.
+</p>
+
+<p>
+<b>Thomas</b>: It's great. It's not much more there. YAML, Markdown, Ace-jump?
+</p>
+
+<p>
+<b>Sacha</b>: I saw the keyboard shortcut you bound to that. I was jealous because you've got all these accented characters. That's nice.
+</p>
+
+<p>
+<b>Thomas</b>: Have you used Ace-jump at all?
+</p>
+
+<p>
+<b>Sacha</b>: A little bit. That's one of the things that's on&#x2026; Because my configuration is also in Org, I'm using Org Drill to try to remember certain features that I've added to my config. Ace-jump is one of them. It's great. I can see how it will be useful. I just have to get the keyboard shortcut burnt into my brain.
+</p>
+
+<p>
+<b>Thomas</b>: That's actually exactly the same situation I'm in.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. The way that I'm dealing with it right now is using spaced repetition. Org Drill remembers how easy or hard you find an item. It will remind you at the appropriate time intervals to review it.
+</p>
+
+<p>
+<b>Thomas</b>: Right. That sounds really useful.
+</p>
+
+<p>
+<b>Sacha</b>: You should check it out. It's actually pretty cool.
+</p>
+
+<p>
+<b>Thomas</b>: Cool. I usually harvest lots of stuff that look good. I put it in my config files and in my cheat sheets. But the problem is actually going back, and revising, and learning all that stuff.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Later, if there's time, I'll show you how I've been using it and how to set it up.
+</p>
+
+<p>
+<b>Thomas</b>: Cool.
+</p>
+
+<p>
+<b>Sacha</b>: I'd love to know about the other interesting things about your Emacs set up there. Especially things that you're still trying to figure out, or the things that you're looking forward to hacking into your config.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Let's see. I'll skip a couple of this. I stole a really cool Magit set up.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Magit is awesome.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. But I'm actually not sure how this makes my Magit mode different from the regular one because I've only almost used it.
+</p>
+
+<p>
+<b>Sacha</b>: I should check that out.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Let's see. Regex builder? 
+</p>
+
+<p>
+<b>Sacha</b>: Oh yes.
+</p>
+
+<p>
+<b>Thomas</b>: Is that useful? I don't use it that often but when I do need it, it's really handy. Basically lets you type a regex in the mini-buffer, if I remember correctly, and it will show all the matches in your current buffer. It's a nice way to interactively check your regex.
+</p>
+
+<p>
+Expand-region. This is one of those extensions that I actually need to get into my muscle memory.
+</p>
+
+<p>
+<b>Sacha</b>: I haven't used that yet.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, basically&#x2026; I think I'll actually have to call it using&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: That could be why it's not in your muscle memory.
+</p>
+
+<p>
+<b>Thomas</b>: I know. I don't actually have it in my config right now, I think. But it basically lets you expand your selection to the next scope of whatever mode you're in.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, starting with a word, and then going to the expression, and so forth.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah. Up to the class, and up to the module, and so forth.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I can see how that will be very useful.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Yet another one that I use too infrequently, so it's not part of my muscle memory, but I'm getting there. 
+</p>
+
+<p>
+Ruby Mode, that's pretty basic. I do most of my development in Ruby these days.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Are you using Rinari and similar things as well?
+</p>
+
+<p>
+<b>Thomas</b>: I tried it briefly, but I don't actually remember why I didn't stick with it. I found out that rinari-rgrep and find-in-project was good enough for me.
+</p>
+
+<p>
+<b>Sacha</b>: It's true. I often forget to use the keyboard shortcuts that Rinari provides to jump to classes or to models and views and controllers based on what you're looking at. But it's great to see so much work being done to make development in these different environments easier.
+</p>
+
+<p>
+<b>Thomas</b>: It's fascinating to see how much&#x2026; It seems to me that Emacs has gotten more momentum that these last couple of years. It didn't feel that active the last time I used it regularly.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, what do you think is making the difference?
+</p>
+
+<p>
+<b>Thomas</b>: I'm not sure, but I think part of it is that there seems to be a sort of general exodus from big IDEs to more classic old school editors. I think lots of Ruby people used TextMate earlier, and then TextMate seem like it was going into maintenance mode, or maybe [inaudible] entirely. At that point, lots of people migrated to Sublime, Vi, and Emacs. But I'm not sure where the other people are coming from.
+</p>
+
+<p>
+<b>Sacha</b>: In your company, do you have new people coming in who don't know Emacs yet?
+</p>
+
+<p>
+<b>Thomas</b>: Well, all of the current people in the company are already Emacs users or was before they came to the company. We're quite small, so it's not a big issue yet. But that's actually something I think about. What happens when we start to get significant amount of people who don't use Emacs?
+</p>
+
+<p>
+<b>Sacha</b>: Or you can make Emacs part of your hiring requirements. “Must be willing to learn Emacs.”
+</p>
+
+<p>
+<b>Thomas</b>: I actually read somewhere that&#x2013;I think Steve Yegge, if you're familiar with him?&#x2013;I think he wrote that at Amazon at one point had their customer support system written in Emacs Lisp. Just having big company isn't an issue, it seems.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I'm always curious about what people can do to make Emacs even friendlier or easier for people to pick up, or to help more people get to know that Emacs is actually really wonderful. If you can think of things that might help, I'd love to hear about them, too.
+</p>
+
+<p>
+<b>Thomas</b>: The Starter Kit seem to be a good way to start for lots of people.
+</p>
+
+<p>
+<b>Sacha</b>: Yeah. I like the fact that the popularity of the Starter Kit&#x2026; And also keeping your Emacs configuration as an Org file makes it super easy to share, like the way that you've shared your GitHub Emacs configuration.
+</p>
+
+<p>
+It's kind of the same as sharing your .emacs, but it looks better. It sort of encourages people to document their Emacs configuration, even just a little bit.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah. I think it beats the process that everyone followed a couple of years ago, where you basically went to the EmacsWiki and started cargo-culting.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I hear that.
+</p>
+
+<p>
+<b>Thomas</b>: One of my colleagues compared it to going down the street and picking up used pieces of gum off the sidewalk.
+</p>
+
+<p>
+<b>Sacha</b>: That is a fascinating metaphor. Okay.
+</p>
+
+<p>
+<b>Thomas</b>: But yes, I can continue stepping through that set up.
+</p>
+
+<p>
+<b>Sacha</b>: Please do.
+</p>
+
+<p>
+<b>Thomas</b>: I dabble in Clojure, so I've got just the basic Clojure Mode and the REPL there. That's part of why I found Emacs again a couple of years ago. I started playing with Clojure. In the Clojure community, Emacs pretty much is the default editor.
+</p>
+
+<p>
+<b>Sacha</b>: That's excellent.
+</p>
+
+<p>
+<b>Thomas</b>: So some basic look and feel of stuff. I'm a big Solarized fan. There's another big theme called Zenburn, I think, which I also used to use, but I don't think that looks as good.
+</p>
+
+<p>
+<b>Sacha</b>: I should try Solarized. I hear such good things about it. I'm currently using color-theme-hober.
+</p>
+
+<p>
+<b>Thomas</b>: Yes.
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: I like electric-pair which basically inserts matching delimiters like quotes, parentheses, and stuff like that.
+</p>
+
+<p>
+<b>Sacha</b>: I never quite gotten used to that in IDEs that I use, but I can see how it can be helpful, especially when you're writing Lisp.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, exactly. The electric-pair mode is basically a hold over from when I used TextMate, because TextMate does that in most of its basic modes.
+</p>
+
+<p>
+Found some font stuff, pretty wonderful.
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: Pretty much turned off all the chrome. UTF-8 is fairly important for us non-Americans.
+</p>
+
+<p>
+<b>Sacha</b>: I have been much annoyed by switching between charsets. I had some files, I'd switch between one of the ISO codepages and UTF-8, and now my text is horribly scrambled.
+</p>
+
+<p>
+<b>Thomas</b>: I use to end up a lot in the same situation, especially in the university. We used to end up with, “Oh, what flavor of Latin encoding?”
+</p>
+
+<p>
+Cut the yes or no questions. Auto-refresh, auto-revert buffers. That's pretty useful. Most of my stuff is in Dropbox, so sometimes I just walk between my laptop and my desktop, and I basically got a lot of the same stuff open in both machines.
+</p>
+
+<p>
+<b>Sacha</b>: I've never thought about using it that way. Cool.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, it works fairly well. The one thing you have to be careful about this to put big Git repositories in Dropbox because if you don't give it time to properly update, it seems to corrupt them. So be careful.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, no.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Blinking cursor, Highlight the current line&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: I see that.
+</p>
+
+<p>
+<b>Thomas</b>: That's just notes.
+</p>
+
+<p>
+<b>Sacha</b>: I see all those little fixes. Yes.
+</p>
+
+<p>
+<b>Thomas</b>: This one, I'm actually not sure if I need anymore. I put this in a long, long time ago. I haven't verified if it's still an issue in current versions of Emacs.
+</p>
+
+<p>
+<b>Sacha</b>: I don't get bothered by it, but I do remember seeing in the Emacs channel the other day, someone was trying to figure out how to get it to scroll by one line only. I guess people are still annoyed with it.
+</p>
+
+<p>
+<b>Thomas</b>: Exactly. I get really annoyed by chunky multi-line scrolling if I'm not actually scrolling that way actively. 
+</p>
+
+<p>
+No backup- and #auto-save files because that's&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: That's very popular configuration. Right.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. That's basically what we use Git for, isn't it?
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: Auto-refresh in Dired, so it will refresh itself when anything happens. Cut the Splash Screen. Tweak the width. Some more intelligent line breaks. I don't actually remember how this felt before I used this because lots of these configurations I put in a long, long time ago, and they've just stuck with me.
+</p>
+
+<p>
+<b>Sacha</b>: I guess you like defaulting into truncate-line mode, so instead of having all those long log lines or whatever, it just goes off the edge of the screen.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, that's right. Tell Org Mode to try to make code snippets pretty&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: It's not doing it.
+</p>
+
+<p>
+<b>Thomas</b>: Well, [inaudible] I should say. Indent after each hit.
+</p>
+
+<p>
+<b>Sacha</b>: Although I still use some of it, just doing quotes.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I usually work on my Linux desktop, but some of my tweaks are Mac-specific. I used to be an all-Mac user, but I've started drifting over to Linux instead. This is some remains of my Mac set up.
+</p>
+
+<p>
+<b>Sacha</b>: Yeah. It's so nice that you can still keep it in your configuration, just put up an appropriate when around it.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, exactly. So, I got this specific font, some stuff, some tweaks to my meta key, and stuff like that. Here we start getting into Org Mode stuff. This is one of my standard options for exporting from Org to HTML. That basically removes the “Exported by Thomas in Emacs” section at the end of every HTML.
+</p>
+
+<p>
+Keybindings&#x2026; I'm not sure how exciting this is.
+</p>
+
+<p>
+<b>Sacha</b>: Well, it's kind of interesting to see how you use the execute extended command to make M-x slightly more useful, to make it available else where. That one is kind of cool.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. It's basically to not have to fight with my Mac keyboard when I'm outside my Linux VM.
+</p>
+
+<p>
+<b>Sacha</b>: I have the same C-+, C&#x2013; to adjust font size. [Inaudible].
+</p>
+
+<p>
+<b>Thomas</b>: I think that one came from the Emacs Starter Kit. Actually, a lot of my stuff is from there and a couple of other sources. One of my mentors, apart from the Starter Kit, is Magnar's set up &#x2013; the guy who makes the Emacs Rocks videos.
+</p>
+
+<p>
+<b>Sacha</b>: Oh yes.
+</p>
+
+<p>
+<b>Thomas</b>: He's got a huge Emacs directory. I stole a lot from him actually.
+</p>
+
+<p>
+<b>Sacha</b>: I should check that out. Oh yeah, that's actually one of the things I'm really curious about. So you've mentioned Emacs Wiki that you regularly raid for configuration. You steal config from your co-workers and from Magnar. Where else are you getting interesting Emacs ideas?
+</p>
+
+<p>
+<b>Thomas</b>: Magnar actually has a new blog called “What the .emacs.d!?”
+</p>
+
+<p>
+<b>Sacha</b>: I don't know about that. I should go check that out.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah. It's basically just a sort of a Tumblr blog-ish where he posts small snippets from his own configuration. It's basically one sort of configuration for each blog post.
+</p>
+
+<p>
+Let me see. Where else do I find stuff? Actually I haven't stolen that much in the couple of months, but I usually end up in EmacsWiki when I start Googling for stuff I need to set up for myself to sand off a corner of a workflow I want.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I usually check out Planet Emacsen once in a while, because sometimes blog posts have pretty interesting configuration snippets.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah. I think I've got that in my RSS reader, actually.
+</p>
+
+<p>
+Where else do I find stuff?
+</p>
+
+<p>
+<b>Sacha</b>: The Emacs channel is a great way to overhear people talking about specific modes or things like that.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I drop in there occasionally. I think my problem with IRC is that I either don't follow it enough or there's too much of them.
+</p>
+
+<p>
+<b>Sacha</b>: There's a lot.
+</p>
+
+<p>
+<b>Thomas</b>: I tend to overdo it.
+</p>
+
+<p>
+Let's see. Here is my custom stuff. I actually don't touch that much compared to some people I know. I try to make do with basically the default modes and default keybindings as far as possible. Then I sand off the most painful corners or the stuff that's very custom. I started going down the path of creating custom keybindings for everything, but that made it impossible to sit in a default config.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Since you've got the case where you need to need to spend time with other people's editors.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, exactly.
+</p>
+
+<p>
+<b>Sacha</b>: That makes sense.
+</p>
+
+<p>
+<b>Thomas</b>: Or a bare Emacs config on a server somewhere.
+</p>
+
+<p>
+<b>Sacha</b>: What, you're not editing things through TRAMP?
+</p>
+
+<p>
+<b>Thomas</b>: Always. I should do it more often.
+</p>
+
+<p>
+<b>Sacha</b>: Well, you've got that. You've got that bit of chunk there for the sudo as root.
+</p>
+
+<p>
+One of the things I was really curious about was that minimalist blogging workflow that you've got there, because it's different. I use Org2blog to post on a WordPress site, but you're actually just generating the static site.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I actually just wanted to get away from WordPress, both because I just found it more neat to have everything on static files&#x2026; I don't have much dynamic content and I didn't want the headache of keeping the WordPress site updated or patched and all that stuff. I'd be happy to go through my Org file blog stuff.
+</p>
+
+<p>
+<b>Sacha</b>: Well, you cheat a little bit, because you've got the config in there but then you're using a Rake task to actually generate and deploy the site.
+</p>
+
+<p>
+<b>Thomas</b>: Yes.
+</p>
+
+<p>
+<b>Sacha</b>: The generating part, would you be comfortable sharing that with me?
+</p>
+
+<p>
+<b>Thomas</b>: Sure. Let's see. Where did I actually put it? Here you go.
+</p>
+
+<p>
+It's basically just two tasks: generate and deploy. The deployment is just an rsync. The generation, I set up the folders. I haven't actually looked at this code for a long while, so it's interesting to see what I did there. So, I basically got a source directory where I got a couple of standard HTML files, and a directory of Org files which are my blog posts. These are my blog posts. I got the template Org file, which basically is what I use to start creating a new one.
+</p>
+
+<p>
+What I actually do is I copy over the assets: images, stylesheets, Javascript, stuff like that. I've got the standard layout. If I wanted to be a good boy and do everything the proper way, I would use ERB, the Ruby templating library, but it's actually just a single layout with that one field that's substituted. So, never mind. Then I got a single function to generate the actual files. What do I actually do in every one of these?
+</p>
+
+<p>
+<b>Sacha</b>: I see that. You've got to transform the Org files.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly. I just got static html-export Emacs Lisp snippets, which I call with emacs &#x2013;batch. This is actually something we do in our company as well. We got pipelines where we call Emacs in batch mode to create documentation and stuff that's generated from standard Org files.
+</p>
+
+<p>
+<b>Sacha</b>: That's awesome. Oh, then I see how you've done it. You generate it and then you use Nokogiri to parse it.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly.
+</p>
+
+<p>
+<b>Sacha</b>: I was wondering because the idea&#x2026;
+</p>
+
+<p>
+<b>Thomas</b>: I basically massage it after I generate it.
+</p>
+
+<p>
+<b>Sacha</b>: Because I was wondering whether you are parsing the Org files directly using Ruby, which would be awesome if someone figured out how to do that, but certainly working with that generated HTML like you're doing is a great way to do that.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I think I've started parsing Org files one or two times and then just felt, "Well, why not just leverage what I've got and massage it to be more of what I need?" It's not pretty, but it works. I'm basically just massaging my stuff, the difference between the standard exported HTML and my blog posts. I get some metadata from the old header. So that's basically it.
+</p>
+
+<p>
+<b>Sacha</b>: Wow.
+</p>
+
+<p>
+<b>Thomas</b>: In my blogging set up, I just call out to the Rake file. You can see that I've actually cargo-culted some stuff and forgotten that it's there.
+</p>
+
+<p>
+<b>Sacha</b>: There you go. So it's good that we're having this.
+</p>
+
+<p>
+<b>Thomas</b>: Going through [inaudible], I guess.
+</p>
+
+<p>
+<b>Sacha</b>: I'm guessing.
+</p>
+
+<p>
+<b>Thomas</b>: My whole set up is basically just something to create a new blog post, something to generate the whole site from scratch, and something to deploy. And all of these are just shells out to the Rake file.
+</p>
+
+<p>
+<b>Sacha</b>: I guess you could do it as pure Emacs Lisp solution with publish-project, but hey, if a Rake task is easier to write, then full-speed ahead, right?
+</p>
+
+<p>
+<b>Thomas</b>: In my experience, you basically fall back to the most common or comfortable thing you need to do when you're just hacking something up. Actually, at this point, I was relearning Emacs Lisp, so I didn't have the chops to do it all natively in Emacs. But it works.
+</p>
+
+<p>
+<b>Sacha</b>: It's just fine.
+</p>
+
+<p>
+<b>Thomas</b>: So, let's see. As you can tell, I have a really low threshold for creating new Org files.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, I noticed that. Which is actually quite different because most of the people I've talked to – well, the <b>two</b>, because I've just talked to two people over Skype about Emacs – but people tend towards the really big Org file that contains everything. So it's fascinating to see how&#x2026; I guess you're splitting things up, and then using grep, ack, or something like that to search?
+</p>
+
+<p>
+<b>Thomas</b>: Yeah.
+</p>
+
+<p>
+<b>Sacha</b>: How do you make it manageable?
+</p>
+
+<p>
+<b>Thomas</b>: Well, some stuff I do have in large Org files. Personal todo files, all my todo lists and both at work and at home, they're both in a one big file each. But I find that a lot of Org files are really one-off. Meeting notes&#x2026; Sometimes I write emails in Org first, and stuff like that. I don't want all that in a single file, so I just use grep in my Org file directory to recover stuff.
+</p>
+
+<p>
+<b>Sacha</b>: That's interesting. I should try that, too.
+</p>
+
+<p>
+I tend to use org-capture for all of that, but you're right. It means that your main Org file gets a little crufty. But I guess you could have a temporary Org file and have it captured there, or [inaudible], but your present set up works just fine.
+</p>
+
+<p>
+<b>Thomas</b>: I'm a bit of a neat freak so I like compartmentalizing stuff in different files.
+</p>
+
+<p>
+<b>Sacha</b>: I think you can actually get org-capture to put that in&#x2026; like using a user-defined function to determine the filename to save things to. That's mainly using the org-capture keyboard shortcuts so that you can have multiple templates to choose from. That might be something useful.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, I actually might look into that. Actually, let me make a note of that. Create a file.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, see it in action.
+</p>
+
+<p>
+<b>Thomas</b>: Like this.
+</p>
+
+<p>
+<b>Sacha</b>: And also, if you do that, then you can make your template include prompts or automatic information, right?
+</p>
+
+<p>
+<b>Thomas</b>: Yeah.
+</p>
+
+<p>
+<b>Sacha</b>: So then you can just fill in the minibuffer prompts, and then keep going. Okay, there you go. This is what happens when Emacs geeks get together, “Oh, I like this.”
+</p>
+
+<p>
+<b>Thomas</b>: Exactly. That sometimes is a bit of a productivity killer at the company.
+</p>
+
+<p>
+<b>Sacha</b>: All the yak-shaving! “Oh, wouldn't it be nice if Emacs did this?” And then two hours later&#x2026;
+</p>
+
+<p>
+<b>Thomas</b>: Yes. There's also the standard situation, sometimes, where we just figure out that, “Oh, we could just do that with Org.” Yeah.
+</p>
+
+<p>
+<b>Sacha</b>: I think it's a net positive. Think about all the time-saving that you get out of Emacs. So it's worth investing a little bit of time to make it even better.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I think the most fascinating thing about Emacs is that it's such a low threshold for improving your workflow. I used to use Eclipse when I mostly did Java as a consultant. Extending Eclipse&#x2013;I think some people that I know have talked about creating plugins, but no one actually do.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I've never come across&#x2013;Smalltalk and other environments will have a lot of that self-modification too&#x2026; But Emacs has been so amazing in terms of that customizability or ease of customizability once you get your hands on Emacs Lisp. I've never come across anything else quite like it. Which is great.
+</p>
+
+<p>
+<b>Thomas</b>: I can't think of anything off the bat either.
+</p>
+
+<p>
+<b>Sacha</b>: Yeah. I wish more things were like that.
+</p>
+
+<p>
+Okay, you've got a function for writing. You've got a function to Dired the directory that you got all these Org files in.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly. So that's basically just the keybinding to Dired open a directory like this. These are oll my Org files.
+</p>
+
+<p>
+<b>Sacha</b>: You have a lot.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I think I create a couple of them every week. Yeah, the directory is growing.
+</p>
+
+<p>
+<b>Sacha</b>: That's another thing, right? If you use a user-defined function to help you figure out the filename, the directory structure, maybe you might even get it to&#x2026; Like the way that Date Trees works in Org? org-capture, by default, with date tree, lets you see file things by year, and month, and day. You might have your function create a directory hierarchy of year and month to make it even easier to archive files you're not quite using anymore.
+</p>
+
+<p>
+<b>Thomas</b>: That's actually something I should be doing more in Org Mode because I've actually not used the Agenda or Date support.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, that's interesting. So you're using it mainly as an outliner?
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, basically.
+</p>
+
+<p>
+<b>Sacha</b>: And of course, the publishing side of it, too. That's cool.
+</p>
+
+<p>
+<b>Thomas</b>: My colleagues use Agenda Mode and stuff like that much more actively. I should do that as well, but I haven't found the time to get that workflow yet.
+</p>
+
+<p>
+Let's see. There's a couple of stuff here which are just warmups for specific projects. Not this one, kill-trailing-whitespace. I basically have to have this in or one of my colleagues will kill me.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, that makes sense. I guess it could also be a git pre-commit hook, but it's better to have the editor take care of it.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly. One thing I started doing is to set up some basic functions just to get the context of some of my projects quickly. When you start working on a project, you usually have a standard set of files open. You open a todo file and you open some views, or templates, or whatever. So I started creating functions that get me into the context more quickly.
+</p>
+
+<p>
+<b>Sacha</b>: Someone observed everyone in Emacs reinvents their own version of project management.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly.
+</p>
+
+<p>
+<b>Sacha</b>: Like I tend to use ido-find-file a lot, so I have different keystrokes bound to different file trees. It lets you do the ido-find-file thing but if you swap out the file cache variable, then you can have it look in different trees for the files.
+</p>
+
+<p>
+<b>Thomas</b>: That's cool. That's really interesting. I usually use C-d to just go to the working directory of whatever projects I use.
+</p>
+
+<p>
+<b>Sacha</b>: I guess especially with Ruby on Rails, and other platforms that tend to have an idea about how they want you to organize your files, subdirectories are easier to get to. I do like the convenience with just being able to say, “Find me this file somewhere. I don't really care where it is.”
+</p>
+
+<p>
+<b>Thomas</b>: Exactly. That was actually something I missed when I went back to Emacs from TextMate.  TextMate has a really good find file from this working projects, from this working directory and downloads set up. I don't think you get that out of the box in Emacs. I use find-file-in-project for that.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. That's another nice little tidbit that might be worth exploring.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah. Some standard ERC set up. These are my standard channels.
+</p>
+
+<p>
+<b>Sacha</b>: And you check Twitter from Emacs?
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I'm not a big fan of the web interface that Twitter has these days. I'm not sure if it's my browser or if something's broken in their stuff, but it doesn't work very well, so I just check my Twitter from Emacs.
+</p>
+
+<p>
+<b>Sacha</b>: There's a way to post to Twitter from Emacs. I've actually used it. I think one time I was experimenting with hooking Org up to it. So if you wanted to go the other way, you can do that, too.
+</p>
+
+<p>
+<b>Thomas</b>: Oh, cool.
+</p>
+
+<p>
+<b>Sacha</b>: This is different from your published config, by the way.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I have to cut down my volume and some are more verbose than others. I'm a huge fan of both Avdi and Reginald, but sometimes they tweet a lot [inaudible] down.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. That's hilarious.
+</p>
+
+<p>
+<b>Thomas</b>: Let's see. I'm almost done with my set up. The Tramp sudo-edit, edit via sudo is basically just the hack I found at Magnar's set up, which uses Tramp to localhost so you get root access to your file.
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: Move lines up and down. Yeahs, this is a classic cargo-culting from EmacsWiki. It's basically just a mode to move stuff around. I'm not actually sure if it works on my Mac set up.
+</p>
+
+<p>
+<b>Sacha</b>: It does to an extent.
+</p>
+
+<p>
+<b>Thomas</b>: Sort of.
+</p>
+
+<p>
+<b>Sacha</b>: Yes.
+</p>
+
+<p>
+<b>Thomas</b>: I rarely use Emacs in my Mac host system these days. It's always a toss up if stuff works or not.
+</p>
+
+<p>
+<b>Sacha</b>: That's awesome. Thanks for walking me through that. If you've got a couple of minutes, I can show you the snippets of my config that I mentioned. Let me see if my Emacs starts up again and I can switch over to sharing my screen.
+</p>
+
+<p>
+<b>Thomas</b>: I love to.
+</p>
+
+<p>
+<b>Sacha</b>: My Emacs is loading up. Oh, no! I broke my Emacs config. This is sometimes a challenge.
+</p>
+
+<p>
+So I mentioned Org Drill, which lets me say, “Okay, ace-jump mode. Use package.” I've bound it to C-c SPC. What Org Drill does is it lets you&#x2026; Basically I press space, I say, “How well did I remember it?” Zero means I completely forgot that I bound it to C-c SPC. And five is like, “Yes, I got that. Remind me again in nine days.” So depending on how you answer, say for example, if I say I completely forgot it, it will remind me again in this drill until I say, “Okay, I got that. I remember it now.”
+</p>
+
+<p>
+<b>Thomas</b>: Cool. Do you use one of those learning algorithms where it's spacing for each time?
+</p>
+
+<p>
+<b>Sacha</b>: Yes. That's precisely what Org Drill does. 
+</p>
+
+<p>
+<b>Thomas</b>: Cool.
+</p>
+
+<p>
+<b>Sacha</b>: So that's pretty cool.
+</p>
+
+<p>
+And then the other thing I mentioned was ido-find-file here. File cache plus ido-find-file lets you do stuff. Then I have a sacha/file-cache-setup-tree which I think I defined somewhere. I have it in my secret config file. Which means my published config file is missing this macro, and everyone is like, “What?” Which basically does, it swaps out the file-cache-alist depending on the project that I want to go to.
+</p>
+
+<p>
+<b>Thomas</b>: Right.
+</p>
+
+<p>
+<b>Sacha</b>: Anyway, I have to go fetch that from my Emacs secrets. I store my passwords and other things in a separate file because otherwise all my config gets published. I think you got GPG encryption in your&#x2026; You use that for Org, I guess?
+</p>
+
+<p>
+<b>Thomas</b>: Yes. We started using it for Org. We barely started using it. I actually keep my passwords and stuff like that in KeePass.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. I use LastPass, too.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. But I guess nothing is stopping you from keeping it in Org files any more, once I got the encryption set up.
+</p>
+
+<p>
+<b>Sacha</b>: So that's mostly what I got in my config that you might be interested in. Just the find-file is kind of useful. I don't think I have any projects that I'm using. As you can tell, I've been tinkering around with my Emacs config, but I remember it to be pretty useful when I was on that.
+</p>
+
+<p>
+Actually, let me see if I've got&#x2026; I have too many windows open. Hang on. Sometimes Windows drives me slightly crazy. The nice thing about having stuff on Google is that Google can help me find my config.
+</p>
+
+<p>
+<b>Thomas</b>: Yeah, exactly.
+</p>
+
+<p>
+<b>Sacha</b>: There, file-cache-setup-tree, a macro that sets up the cache, loads it up and then creates a function like sacha/file-cache-ido-find-file, but for that specific project. Then it binds a specified keyboard shortcut to it.
+</p>
+
+<p>
+<b>Thomas</b>: That's really cool. I'll think of that.
+</p>
+
+<p>
+<b>Sacha</b>: Yes. Little things that are worth the try. I like talking to people about Emacs because sometimes you come across interesting ideas. Also, it's fascinating to see the people who are actually using Emacs. You're lucky because you've got a company of other people like you who can swap Emacs tips with, but a lot of people are maybe the only Emacs geeks they know in real life.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. There's actually a growing number of people locally using Emacs here in Oslo. There was a meetup a couple of weeks ago.
+</p>
+
+<p>
+<b>Sacha</b>: A meetup?
+</p>
+
+<p>
+<b>Thomas</b>: Of Emacs users.
+</p>
+
+<p>
+<b>Sacha</b>: Really? What is that like?
+</p>
+
+<p>
+<b>Thomas</b>: I'm not sure because I wasn't able to attend. It was the inaugural meetup of the Emacs group.
+</p>
+
+<p>
+<b>Sacha</b>: How cool.
+</p>
+
+<p>
+<b>Thomas</b>: We'll see [inaudible].
+</p>
+
+<p>
+<b>Sacha</b>: That's awesome. Will you be able to make it out to the conference that's coming up on March 30?
+</p>
+
+<p>
+<b>Thomas</b>: No, sorry. I really wanted to but&#x2026;
+</p>
+
+<p>
+<b>Sacha</b>: It's a bit of stretch for so many people too. Easter weekend, London and all of that. But I figured I'd be one of those people in a city where I haven't really bumped into lot of other Emacs people. I think it would be interesting to see a lot of people face to face. We'll see.
+</p>
+
+<p>
+But it was nice chatting with you and learning more about your config. I certainly got a lot more out of that than simply reading it on my own. Thanks for sharing.
+</p>
+
+<p>
+<b>Thomas</b>: Yes, it was nice to speak to you.
+</p>
+
+<p>
+<b>Sacha</b>: To round it off, what are some of the things that you're looking for to figuring out in Emacs? What are some of the ways you want to improve your config?
+</p>
+
+<p>
+<b>Thomas</b>: I actually think I got a list somewhere.
+</p>
+
+<p>
+<b>Sacha</b>: Okay. You can click on the + sign and take back sharing and show us.
+</p>
+
+<p>
+<b>Thomas</b>: That's fine. I did some notes before the meeting.
+</p>
+
+<p>
+This is basically just stuff that I've thought about for a long time, so it was quick to get it down. Spreadsheet and Agenda stuff. I think you already mentioned that. Just actually using Org to deal with dates and todos and stuff like that.
+</p>
+
+<p>
+<b>Sacha</b>: The spreadsheet support with Org with Org Table is surprisingly rich. You can do column formulas and all of that stuff.
+</p>
+
+<p>
+<b>Thomas</b>: One of my colleagues uses it fairly actively.
+</p>
+
+<p>
+<b>Sacha</b>: Oh, wow.
+</p>
+
+<p>
+<b>Thomas</b>: I've started playing using it for time tracking, but not much beyond that.
+</p>
+
+<p>
+<b>Sacha</b>: You mentioned that in your config, I guess using org-clock. Interesting to see that.
+</p>
+
+<p>
+Okay, Spreadsheets and Agendas.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. Email would be nice. I haven't exactly found something that works really well for me yet. I think I used Gnus briefly in university, but Gnus is its own beast, I guess.
+</p>
+
+<p>
+<b>Sacha</b>: It is really big, but I really liked it back when I was using it. I always have problems because I'm stuck on Windows for drawing programs. But I remember when I was in a Linux system, Gnus with scoring and all these things was really awesome.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. One thing I really miss from TextMate was that TextMate had a preview mode for HTML, where it basically embedded Webkit. I think it was a Webkit frame beside your code, so you could live-edit your HTML and see the changes live in the other frame.
+</p>
+
+<p>
+<b>Sacha</b>: Nice. Well, one way to work around that, I guess, would be to have a keyboard shortcut, maybe, that used browse-url. I think someone has even gotten a kind of browser interaction for running Javascript in the browser. So there might be a way to communicate with the process.
+</p>
+
+<p>
+<b>Thomas</b>: You basically go direct&#x2013;Javascript direct? Cool.
+</p>
+
+<p>
+<b>Sacha</b>: I haven't looked into it. When I was in that situation, I just used a keyboard shortcut to flip over to another window, refresh the page, and then come back to Emacs.
+</p>
+
+<p>
+<b>Thomas</b>: Yes. I ended up with something similar. I just tiled the browser next to Emacs and set up some sort of plugin in Firefox to do auto-refresh.
+</p>
+
+<p>
+<b>Sacha</b>: Yes, that works out quite nicely too.
+</p>
+
+<p>
+<b>Thomas</b>: But of course, you always wanted to have everything in Emacs. I'd like to try Android development sometime. I read about people setting up their Emacs configs to basically shell out to Ant and the command-line tools.
+</p>
+
+<p>
+<b>Sacha</b>: Yeah.
+</p>
+
+<p>
+<b>Thomas</b>: And I never really got over the hump of using terminals inside Emacs.
+</p>
+
+<p>
+<b>Sacha</b>: Using term or something like that?
+</p>
+
+<p>
+<b>Thomas</b>: I usually use something called terminator in Linux, which is just a beefed up Xterm window, and I use zshell with a lot of customizations. I've tried calling out to my standard terminal inside Emacs, but it seems to be tripped up by autocompletion and stuff like that. There's always some sort of subtle difference which trips me up.
+</p>
+
+<p>
+<b>Sacha</b>: I guess that's okay too. I tend to use Eshell for a lot of little things, but if I need ANSI escape sequences to work, then I had to use term or something like that. ansi-term.
+</p>
+
+<p>
+<b>Thomas</b>: There's no new one-stop solution yet?
+</p>
+
+<p>
+<b>Sacha</b>: Not that I've come across, but Avdi was telling me he uses terminal programs inside Emacs a lot, so he might be someone to talk to.
+</p>
+
+<p>
+<b>Thomas</b>: Cool.
+</p>
+
+<p>
+<b>Sacha</b>: Cool. Well, awesome. Thank you so much for sharing. I'm looking forward to playing around with all the things that I'm going to steal from your config.
+</p>
+
+<p>
+<b>Thomas</b>: Likewise.
+</p>
+
+<p>
+<b>Sacha</b>: I know. Thanks again for reaching out.
+</p>
+
+<p>
+<b>Thomas</b>: No problem. I had a really good time talking to you.
+</p>
+
+<p>
+<b>Sacha</b>: All right then. See you around.
+</p>
+
+<p>
+<b>Thomas</b>: See you.
+</p>
+
+<p>
+<b>Sacha</b>: Bye.
+</p>
+
+<p>
+<b>Thomas</b>: Bye.
+</p>
+
 <hr>
 <p>
 Check out <a href="http://sachachua.com/blog/emacs-chat">Emacs Chat</a> for more interviews like this. Got a story to tell about how you learned about or how you use Emacs? <a href="http://sachachua.com/blog/contact">Get in touch!</a>

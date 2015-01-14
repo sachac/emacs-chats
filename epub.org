@@ -177,13 +177,14 @@ I chatted with [[http://ergoemacs.org][Xah Lee]] about how he got started with E
 
 #+INCLUDE: chat-xah-lee.org :lines "24-134" :minlevel 2
 
+** Thomas Kjeldahl Nilsson
+
+#+INCLUDE: chat-thomas-kjeldahl-nilsson.org :minlevel 2 :lines "32-696"
+
 #+BEGIN_COMMENT
 ,* Magnar Sveen
 [[http://www.youtube-nocookie.com/embed/87tjF_mYvpE][Video]] - [[https://archive.org/download/201311EmacsChatMagnarSveenEmacsRocks/201311-Emacs-Chat-Magnar-Sveen-EmacsRocks.mp3][Audio]]
 ,
-,** Thomas Kjeldahl Nilsson
-,
-,#+INCLUDE: chat-thomas-kjeldahl-nilsson.org :minlevel 2
 ,
 ,** Tom Marble
 ,
